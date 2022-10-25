@@ -1,0 +1,25 @@
+{	
+	"combatMedium":{
+		"volantian_virtuous_standard":10
+	},
+	"carrierMedium":{
+		"volantian_seraph_support":10
+	},
+	"freighterMedium":{
+		"volantian_cherub_standard":10	
+	},
+	"combatLarge":{
+		"volantian_throne_standard":10,
+		"volantian_paladin_standard":10,
+		"volantian_blameless_standard":10,
+		"volantian_curator_standard":10
+	},
+	"combatSmall":{
+		"volantian_metatron_strike":10,
+		"volantian_virtuous_standard":10,
+		"volantian_rapture_standard":10
+	},
+	"combatCapital":{
+		"volantian_archangel_standard":10
+	},
+}

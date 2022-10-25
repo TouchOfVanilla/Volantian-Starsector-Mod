@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="vri">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/jars/vri.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,27 @@
+{
+    "id":"TouchOfVanilla_vri", # For the convenience of troubleshooters, include your name and the mod name, not just an acronym.
+	"name":"Volantian Reclamation Initiative", # Displayed to the player
+	"author":"TouchofVanilla",
+    "utility":"false",
+	"version":"1.0.0",
+	"description":"Le funny cat.",
+    "gameVersion": "0.95.1a-RC6", 
+  	"jars":["jars/vri.jar"],
+	  	"dependencies": [
+        #{
+        #    "id": "lw_lazylib",
+        #    "name": "LazyLib",
+        #    #"version": "2.7b"
+        #},
+        #{
+        #    "id": "MagicLib",
+        #    "name": "MagicLib",
+        #    #"version": "0.34"
+        #},
+        #{
+        #    "id": "shaderLib",
+        #    "name": "GraphicsLib",
+        #    #"version": "1.5.1"
+        #}
+    ],
+}

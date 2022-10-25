@@ -1,0 +1,232 @@
+{
+  "hullName": "Blameless",
+  "hullId": "volantian_blameless",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/blameless.png",
+  "style": "HIGH_TECH",
+  "height": 254,
+  "width": 236,
+  "center": [112, 121.5],
+  "collisionRadius": 180,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 170,
+  "viewOffset": 0,
+  "builtInMods": [
+    "fourteenth",
+    "eis_microforge",
+    "eis_indomitable"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS 014",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [54, 47]
+    },
+    {
+      "id": "WS 016",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [53.5, -47]
+    },
+    {
+      "id": "WS0003",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [65.5, 0]
+    },
+    {
+      "id": "WS0004",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [42.5, 0],
+      "renderOrderMod": 99
+    },
+    {
+      "id": "WS0012",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 143,
+      "angle": -90,
+      "locations": [-38.5, -59]
+    },
+    {
+      "id": "WS0013",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 148,
+      "angle": 180,
+      "locations": [-50, 23]
+    },
+    {
+      "id": "WS0014",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 148,
+      "angle": 180,
+      "locations": [-50.5, -23]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 143,
+      "angle": 84.5,
+      "locations": [-38.5, 59]
+    },
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [86.5, 0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-88.5, 8.5],
+      "length": 138,
+      "width": 19,
+      "angle": 180,
+      "contrailSize": 19,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-70, 49.5],
+      "length": 115,
+      "width": 17,
+      "angle": 168.5,
+      "contrailSize": 128,
+      "style": "EIS_LTBOOST"
+    },
+    {
+      "location": [-71.5, -50],
+      "length": 115,
+      "width": 17,
+      "angle": -167.5,
+      "contrailSize": 128,
+      "style": "EIS_LTBOOST"
+    },
+    {
+      "location": [-71, -50],
+      "length": 65,
+      "width": 35,
+      "angle": -168.5,
+      "contrailSize": 128,
+      "style": "EIS_BOOST"
+    },
+    {
+      "location": [-69, 50],
+      "length": 65,
+      "width": 35,
+      "angle": 168.5,
+      "contrailSize": 128,
+      "style": "EIS_BOOST"
+    },
+    {
+      "location": [-88.5, -8],
+      "length": 138,
+      "width": 17,
+      "angle": -180,
+      "contrailSize": 17,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-62, -71.5],
+      "length": 215.950043,
+      "width": 16.920799,
+      "angle": -167.5,
+      "contrailSize": 16.920799,
+      "style": "EIS_LTBOOST"
+    },
+    {
+      "location": [-62, 71.5],
+      "length": 215.950043,
+      "width": 16.920799,
+      "angle": 167.5,
+      "contrailSize": 16.920799,
+      "style": "EIS_LTBOOST"
+    },
+    {
+      "location": [-39, -89],
+      "length": 157.867386,
+      "width": 15.018485,
+      "angle": -165,
+      "contrailSize": 15.018485,
+      "style": "EIS_LTBOOST"
+    },
+    {
+      "location": [-39, 89],
+      "length": 157.867386,
+      "width": 15.018485,
+      "angle": 165,
+      "contrailSize": 15.018485,
+      "style": "EIS_LTBOOST"
+    }
+  ],
+  "bounds": [
+    -94, -14,
+    -92, -25.5,
+    -70.5, -35.5,
+    -109, -38,
+    -117, -49.5,
+    -98.5, -60,
+    -65, -63.5,
+    -59.5, -76.5,
+    -36, -78.5,
+    -42.5, -95.5,
+    -38, -108,
+    -10, -102,
+    10.5, -106,
+    32, -92,
+    51, -77.5,
+    60, -71.5,
+    81, -63,
+    78, -54.5,
+    61, -54.5,
+    61, -41,
+    132, -24,
+    135, -10,
+    96.5, -11.5,
+    98, 13,
+    135, 12,
+    128.5, 23,
+    60, 39.5,
+    61, 54.5,
+    78.5, 54.5,
+    81, 63,
+    50, 78,
+    32, 94.5,
+    9, 105.5,
+    -18, 102,
+    -40.5, 107.5,
+    -38, 80,
+    -59.5, 76.5,
+    -63, 64,
+    -98.5, 62,
+    -117, 51.5,
+    -109, 40,
+    -70.5, 37.5,
+    -92, 27.5,
+    -94, 16,
+    -71.5, 1
+  ]
+}

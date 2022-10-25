@@ -1,0 +1,141 @@
+{
+  "hullName": "Virtuous",
+  "hullId": "volantian_virtuous",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/virtuous.png",
+  "style": "HIGH_TECH",
+  "height": 135,
+  "width": 162,
+  "center": [81, 57.5],
+  "collisionRadius": 102,
+  "shieldCenter": [9.5, -0],
+  "shieldRadius": 84,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 20,
+      "angle": -0,
+      "locations": [23, -47]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 20,
+      "angle": 0,
+      "locations": [23, 47]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -90,
+      "locations": [-2.5, -33]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 90,
+      "locations": [-2.5, 33]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 10,
+      "angle": 0,
+      "locations": [33.5, -0]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -26.5, 1,
+        -22, 1
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-30.5, 28],
+      "length": 54.5,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-30.5, -28],
+      "length": 54.5,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-26, 41.5],
+      "length": 4.4,
+      "width": 19.49,
+      "angle": 166.5,
+      "contrailSize": 19.49,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-26, -41.5],
+      "length": 4.4,
+      "width": 19.49,
+      "angle": -166.5,
+      "contrailSize": 19.49,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -56.5, 0,
+    -52.5, -8.5,
+    -32, -23,
+    -23.5, -50.5,
+    -9, -50.5,
+    7.5, -80,
+    19, -77.5,
+    18, -63,
+    28, -56,
+    29, -30,
+    47, -29.5,
+    50, -24.5,
+    46, -23,
+    77, -11.5,
+    75, -5,
+    43.5, -4,
+    43.5, 4,
+    75, 5,
+    77, 11.5,
+    46, 23,
+    50, 24.5,
+    47, 29.5,
+    29, 30,
+    28, 56,
+    18, 63,
+    19, 77.5,
+    7.5, 80,
+    -9, 50.5,
+    -23.5, 50.5,
+    -32, 23,
+    -52.5, 8.5,
+    -56.5, -0
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "variantId": "volantian_cherub_standard",
+  "hullId": "volantian_cherub",
+  "displayName": "Standard",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "augmentedengines",
+    "expanded_cargo_holds",
+    "shielded_holds"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "pdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}
