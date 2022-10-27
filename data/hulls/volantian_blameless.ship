@@ -4,17 +4,15 @@
   "hullSize": "CRUISER",
   "spriteName": "graphics/ships/blameless.png",
   "style": "HIGH_TECH",
-  "height": 254,
-  "width": 236,
+  "height": 261,
+  "width": 225,
   "center": [112, 121.5],
   "collisionRadius": 180,
   "shieldCenter": [0, -0],
   "shieldRadius": 170,
   "viewOffset": 0,
   "builtInMods": [
-    "fourteenth",
-    "eis_microforge",
-    "eis_indomitable"
+    "auxiliarythrusters"
   ],
   "weaponSlots": [
     {

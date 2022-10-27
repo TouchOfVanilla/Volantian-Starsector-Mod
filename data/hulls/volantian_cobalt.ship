@@ -1,0 +1,157 @@
+{
+  "hullName": "Cobalt (VRI)",
+  "hullId": "volantian_cobalt",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/cobalt_vri.png",
+  "style": "HIGH_TECH",
+  "height": 220,
+  "width": 172,
+  "center": [86, 110],
+  "collisionRadius": 154.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 125,
+  "viewOffset": 0,
+  "builtInMods": [
+    "advancedcore"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 12,
+      "angle": 0,
+      "locations": [33, 39]
+    },
+    {
+      "id": "WS0002",
+      "size": "LARGE",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 12,
+      "angle": -0,
+      "locations": [33, -39]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 93,
+      "angle": 0,
+      "locations": [-31.5, 71]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 93,
+      "angle": -0,
+      "locations": [-31.5, -71]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 127,
+      "angle": 90,
+      "locations": [-59, 58]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 127,
+      "angle": -90,
+      "locations": [-59, -58]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-85.5, 12],
+      "length": 91.5,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-85.5, -12],
+      "length": 91.5,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-108, 29.5],
+      "length": 87,
+      "width": 11,
+      "angle": 180,
+      "contrailSize": 11,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-108, -29.5],
+      "length": 87,
+      "width": 11,
+      "angle": -180,
+      "contrailSize": 11,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-101.5, 43.5],
+      "length": 3.34,
+      "width": 19.709999,
+      "angle": 161.5,
+      "contrailSize": 19.709999,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-101.5, -43.5],
+      "length": 3.34,
+      "width": 19.709999,
+      "angle": -161.5,
+      "contrailSize": 19.709999,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -71, -5,
+    -85, -5,
+    -87, -14.5,
+    -77, -22.5,
+    -107, -23.5,
+    -99, -52.5,
+    -21, -86,
+    -17, -76,
+    4, -75,
+    4, -62,
+    78.5, -51,
+    79, -39.5,
+    94, -38.5,
+    107, -27,
+    102, -6.5,
+    57, -6.5,
+    57, 6.5,
+    102, 6.5,
+    107, 27,
+    94, 38.5,
+    79, 39.5,
+    78.5, 51,
+    4, 62,
+    4, 75,
+    -17, 76,
+    -21, 86,
+    -99, 52.5,
+    -107, 23.5,
+    -77, 22.5,
+    -87, 14.5,
+    -85, 5,
+    -71, 5
+  ]
+}
