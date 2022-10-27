@@ -1,0 +1,180 @@
+{
+  "hullName": "Sunder (VRI)",
+  "hullId": "volantian_sunder",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/sunder_vri.png",
+  "style": "MIDLINE",
+  "height": 192,
+  "width": 112,
+  "center": [56, 85],
+  "collisionRadius": 111,
+  "shieldCenter": [11, 0],
+  "shieldRadius": 128,
+  "viewOffset": 100,
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [27, 48],
+      "position": [
+        51,
+        80
+      ]
+    },
+    {
+      "id": "WS 002",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [29, 30],
+      "position": [
+        121,
+        50
+      ]
+    },
+    {
+      "id": "WS 003",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [42, 0],
+      "position": [
+        131,
+        0
+      ]
+    },
+    {
+      "id": "WS 004",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [29, -30],
+      "position": [
+        121,
+        -50
+      ]
+    },
+    {
+      "id": "WS 005",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [27, -48],
+      "position": [
+        51,
+        -75
+      ]
+    },
+    {
+      "id": "WS 006",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 190,
+      "angle": 75,
+      "locations": [11, 18],
+      "position": [
+        -22,
+        65
+      ]
+    },
+    {
+      "id": "WS 007",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 190,
+      "angle": -75,
+      "locations": [11, -18],
+      "position": [
+        -24,
+        -65
+      ]
+    },
+    {
+      "id": "WS 008",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 180,
+      "locations": [-50, 0],
+      "position": [
+        -124,
+        0
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-79, 33],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-85, 17],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-85, -17],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-79, -33],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    99, 13,
+    49, 30,
+    36, 16,
+    24, 51,
+    10, 51,
+    -2, 16,
+    -36, 33,
+    -49, 25,
+    -57, 40,
+    -76, 38,
+    -82, 14,
+    -58, 0,
+    -82, -11,
+    -75, -37,
+    -58, -40,
+    -48, -23,
+    -39, -31,
+    -2, -16,
+    11, -49,
+    22, -49,
+    35, -14,
+    49, -29,
+    100, -11,
+    41, 0
+  ]
+}
