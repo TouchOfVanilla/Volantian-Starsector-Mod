@@ -13,7 +13,7 @@ Cobalt (VRI),volantian_cobalt,Artillery Cruiser,High Tech,highenergyfocus,14,500
 Rapture,volantian_rapture,Pulse Frigate,High Tech,volantian_rapturepulse,7,2000,500,2100,,180,50,0,179,200,175,125,350,250,FRONT,,165,0.22,1,,,10,25,25,20,1,20,11,45000,10,20,240,0.25,7,7,,,,,,,COMBAT,"midline_bp, merc",1,0.5,2,2,,1
 Sunder (VRI),volantian_sunder,Destroyer,High Tech,highenergyfocus,10,4000,250,7500,8333,500,105,0,90,80,60,30,30,350,FRONT,,300,0.4,1.2,,,50,70,80,50,2,25,9,45000,5,15,300,0.25,11,11,,,,,,,COMBAT,"midline_bp, merc",1,0.5,2,3,,301
 Fury (VRI),volantian_fury,Light Cruiser,High Tech,microburn,14,5000,600,9000,12000,600,120,0,90,100,80,30,60,650,OMNI,,180,0.3,0.7,,,60,120,60,80,3,27,9,115000,4,12,420,0.25,20,20,,,,,,,COMBAT,"midline_bp, merc",1,0.7,2,3,,414
-Radiant (VRI),volantian_radiant,Converted Battleship,High Tech,displacer,30,20000,1500,25000,37500,1500,320,0,40,30,20,7,10,3500,OMNI,,270,0.4,0.6,,,100,200,250,400,10,40,8,500000,3,15,720,0.25,60,60,,,,,,,COMBAT,"midline_bp, merc",1,0.4,2,4,,509
+Radiant (VRI),volantian_radiant,Converted Battleship,High Tech,displacer,30,20000,1500,25000,37500,2000,320,0,40,30,20,7,10,3500,OMNI,,270,0.4,0.6,,,100,200,250,400,10,40,8,500000,3,15,720,0.25,60,60,,,,,,,COMBAT,"midline_bp, merc",1,0.4,2,4,,509
 Kite (VRI),volantian_kite,Shuttle,High Tech,maneuveringjets,3,900,150,1400,1000,80,25,0,140,150,75,45,85,120,OMNI,,150,0.5,0.8,,,2,30,30,15,1,15,9,4000,5,20,180,0.25,2,2,,,,,,,COMBAT,"midline_bp, merc",1,0.75,2,2,,217
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #funny reamnante shieeps,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
