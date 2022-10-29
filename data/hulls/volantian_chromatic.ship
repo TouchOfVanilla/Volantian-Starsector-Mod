@@ -1,0 +1,187 @@
+{
+  "hullName": "Chromatic",
+  "hullId": "volantian_chromatic",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/Chromatic.png",
+  "style": "HIGH_TECH",
+  "height": 413,
+  "width": 338,
+  "center": [169, 174],
+  "collisionRadius": 223,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 186.5,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 141,
+      "angle": 0,
+      "locations": [1, 59]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 141,
+      "angle": -0,
+      "locations": [1, -59]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 180,
+      "locations": [-22.5, 98]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -180,
+      "locations": [-22.5, -98]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 145,
+      "angle": -90,
+      "locations": [58, -69]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 145,
+      "angle": 90,
+      "locations": [58, 69]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 125,
+      "angle": -90,
+      "locations": [-46, -77]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 125,
+      "angle": 90,
+      "locations": [-46, 77]
+    },
+    {
+      "id": "WS0009",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 132,
+      "angle": 0,
+      "locations": [25, -0]
+    },
+    {
+      "id": "WS0010",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 140,
+      "angle": 0,
+      "locations": [95, -0]
+    },
+    {
+      "id": "WS0011",
+      "size": "LARGE",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [147, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-92, 24],
+      "length": 91.5,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-92, -24],
+      "length": 91.5,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-87, 44],
+      "length": 137.5,
+      "width": 24,
+      "angle": 180,
+      "contrailSize": 24,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-87, -44],
+      "length": 137.5,
+      "width": 24,
+      "angle": -180,
+      "contrailSize": 24,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -104, -6.5,
+    -90.5, -16,
+    -86.5, -55,
+    -134, -59.5,
+    -108, -66.5,
+    -101, -96.5,
+    -119.5, -100,
+    -128, -115,
+    -107.5, -132.5,
+    -52, -150,
+    -5.5, -143.5,
+    2.5, -135,
+    -11.5, -129,
+    30.5, -92,
+    69, -91.5,
+    93.5, -72.5,
+    82.5, -51.5,
+    148.5, -30,
+    148.5, 30,
+    82.5, 51.5,
+    93.5, 72.5,
+    69, 91.5,
+    30.5, 92,
+    -11.5, 129,
+    2.5, 135,
+    -5.5, 143.5,
+    -52, 150,
+    -107.5, 132.5,
+    -128, 115,
+    -119.5, 100,
+    -101, 96.5,
+    -108, 66.5,
+    -134, 59.5,
+    -86.5, 55,
+    -90.5, 16,
+    -104, 6.5
+  ]
+}
