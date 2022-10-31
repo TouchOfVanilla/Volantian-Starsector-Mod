@@ -1,9 +1,9 @@
 {
 	id:"vri",
-	"displayName":"Volantian Reclamation Initiative",
+	"displayName":"VRI",
 	"displayNameWithArticle":"the VRI",
-	"displayNameLong":"Volantians",
-	"displayNameLongWithArticle":"the Volantians",
+	"displayNameLong":"Volantian",
+	"displayNameLongWithArticle":"the Volantian",
 	"entityNamePrefix":"Volantian",
 	"personNamePrefix":"Volantian",
 	"personNamePrefixAOrAn":"a",
@@ -42,12 +42,12 @@
 	},
 	# ships the faction gets access to when importing S&W out-of-faction
 	"shipsWhenImporting":{
-		"tags":["remnant"],
+		"tags":["remnant","VRI_bp"],
 		"hulls":[
 		],
 	},
 	"knownShips":{
-		"tags":["VRI_bp"],
+		"tags":["VRI_bp","remnant"],
 		"hulls":[
 		],
 	},
@@ -100,7 +100,7 @@
 	},
 	"priorityWeapons":{
 		"tags":[],
-		"weapons":[
+		"weapons":[vol_cryocannon
 		],
 	},
 	"knownHullMods":{
@@ -182,8 +182,19 @@
 	},
 	"ranks":{
 		"ranks":{
+		        "spaceAdmiral":{"name":"Head Curator"},
+        	    "spaceCommander":{"name":"Curator"},
+        	    "factionleader":{"name":"Arch-Curator"}
 		},
 		"posts":{
+		        "factionleader":{"name":"Arch-Curator"},
+		        "patrolCommander":{"name":"Patrol Secretary"},
+		        "fleetCommander":{"name":"Fleet Secretary"},
+		        "baseCommander":{"name":"Base Secretary"}
+
+
+
+
 		},
 	},
 	"custom":{
@@ -193,9 +204,15 @@
 		"fightToTheLast":false, # order a full assault instead of retreating, in most cases
 	},	
 	"fleetTypeNames":{
-		"patrolSmall":"Slightly Funny Fleet",
-		"patrolMedium":"Moderately Funny Fleet",
-		"patrolLarge":"Extremely Funny Fleet",
-		"battlestation":"Funny Nexus",
-	},
+		"patrolSmall":"Security Patrol",
+		"patrolMedium":"Sentry Flotilla",
+		"patrolLarge":"Heavy Enforcement Fleet",
+
+		"trade":"Commerce Fleet",
+		"tradeLiner":"Transit Convoy",
+		"tradeSmuggler":"Suspicious Fleet",
+		"smalltrader":"Mercantile Fleet",
+
+		"taskForce":"Vanguard Fleet"
+	}
 },

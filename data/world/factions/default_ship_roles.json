@@ -19,12 +19,14 @@
 		"volantian_curator_standard":10,
 		"volantian_cobalt_standard":10,
 		"volantian_fury_standard":10,
-		"volantian_chromatic_standard":10
+		"volantian_chromatic_standard":10,
+		"volantian_incursor_standard":10
 	},
 	"combatSmall":{
 		"volantian_metatron_strike":10,
 		"volantian_virtuous_standard":10,
-		"volantian_rapture_standard":10
+		"volantian_rapture_standard":10,
+		"volantian_sandalphon_standard":10
 	},
 	"combatCapital":{
 		"volantian_archangel_standard":10,
