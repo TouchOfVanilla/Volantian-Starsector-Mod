@@ -1,0 +1,130 @@
+{
+    "playableFaction":true,
+    "corvusCompatible":true,
+	"ngcTooltip":"Touch fluffy tail.",
+    "rebelFleetSuffix":"Traitors",
+    
+	"asteroidMiningFleetName":"Scavenger",
+    "gasMiningFleetName":"Collecter",
+    "invasionFleetName":"Vanguard",
+    "responseFleetName":"Response",
+    "invasionSupportFleetName":"Auxillary",
+    "defenceFleetName":"Guardian",
+	"suppressionFleetName":"Peacekeeping Fleet",
+	"noSyncRelations":false,
+	"noStartingContact":true,
+    "marketSpawnWeight":1,
+	"invasionFleetSizeMod":0.05,
+	"responseFleetSizeMod":0.05,
+	"invasionPointMult":1.05,
+	"vengeanceFleetSizeMult":1.05,
+	"factionIdForHqResponse":"vri",
+	"freeMarket":true,
+	"specialForcesMaxFleets":1,
+	"specialForcesPointMult":1.75,
+	"specialForcesSizeMult":1.75,
+	"stabilizeCommodities":["food", "hand_weapons", "supplies"],
+    "startRelationships":{
+		"blade_breakers":  -1.00,
+		"hegemony":-1.00,
+		"luddic_church": -1.00,
+		"luddic_path":-1.00,
+		"mayasura": -1.00,
+		"persean":0.5,
+		"pirates": -0.5,
+		"remnant":0,
+		"tahlan_legioinfernalis":-1.00,
+		"tritachyon": 0.50
+		
+	},
+    
+	
+    "maxRelationships":{
+		"blade_breakers": -1.00,
+		"mayasura": -1,
+		"remnant":0,
+		"tahlan_legioinfernalis": -0.5
+	},
+	
+	
+    "alignments":{
+        "technocratic":1,
+        "hierarchial":1,
+        "militarist":1,
+        "diplomatic":-0.25,
+        "ideological":0.25
+  
+	},
+	
+	"diplomacyTraits":["pacifist", "stalwart", "neutralist", "lowprofile", "helps_allies"],
+	
+    "groundBattleSettings":{
+		"attackMult":1.1,
+		"damageTakenMult":0.9,
+        "moraleDamageTakenMult":0.9
+    },
+
+    "colonyExpeditionChance":1,
+    "colonyTargetValuator":"exerelin.campaign.colony.IndustrialColonyTargetValuator",
+    
+    "specialForcesNamerClass":"exerelin.campaign.intel.specialforces.namer.PlanetNamer",
+
+    "startShipsSolo":[
+		["volantian_metatron_strike"],
+		["volantian_kite_standard"],
+		["volantian_virtuous_standard"]
+	],
+
+    "startShipsCombatSmall":[
+      ["volantian_virtuous_standard", "volantian_metatron_strike", "volantian_kite_standard"]
+	
+    ],
+
+	"startShipsCombatLarge":[
+	  ["volantian_blameless_standard", "volantian_seraph_support", "volantian_cobalt_standard"],
+	  ["volantian_radiant_standard", "volantian_fury_standard", "volantian_virtuous_standard"]
+    ],
+	
+    "startShipsCarrierSmall":[
+		["eis_audacious_standard", "wolf_hegemony_CS", "eis_courageous_standard"]
+	],
+
+    "startShipsCarrierLarge":[
+		["volantian_paladin_standard", "volantian_illuminator_standard", "volantian_virtuous_standard"],
+		["volantian_paladin_standard", "volantian_seraph_support", "volantian_virtuous_standard"]
+	],
+	
+	"startShipsTradeSmall":[
+		["volantian_virtuous_standard", "buffalo_Standard", "volantian_sunder_standard"]
+	],
+	
+    "startShipsTradeLarge":[
+		["volantian_cherub_standard", "gemini_Standard", "volantian_virtuous_standard"]
+	],
+	
+    "startShipsSuper":[
+		["volantian_rapture_standard"]
+	],
+
+	
+    "startSpecialItems":[
+		[["VRI_package", ""]]
+    ],
+    
+    "defenceStations":[
+        {"ids":["orbitalstation", "battlestation", "starfortress"]},
+        {"ids":["orbitalstation_mid", "battlestation_mid", "starfortress_mid"], "weight":0.5}
+    ],
+    
+    "industrySeeds":[
+		{"id":"militarybase", "mult":2},
+        {"id":"orbitalworks", "mult":0.1},
+        {"id":"fuelprod", "mult":0.1},
+        {"id":"lightindustry", "mult":0.1}
+    ],
+    
+    "bonusSeeds":[
+        {"id":"population_upsize", "count":1},
+        {"id":"nanoforge_pristine", "count":1}
+    ]
+}
