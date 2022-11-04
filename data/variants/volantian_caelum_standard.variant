@@ -1,0 +1,25 @@
+{
+  "variantId": "volantian_caelum_standard",
+  "hullId": "volantian_caelum",
+  "displayName": "Standard",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "heavyburst",
+        "WS0002": "heavyburst",
+        "WS0003": "heavyburst",
+        "WS0004": "heavyburst"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

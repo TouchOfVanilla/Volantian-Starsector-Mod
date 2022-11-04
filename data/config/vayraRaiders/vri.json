@@ -1,0 +1,37 @@
+{
+	"raiderFactionId":"vri", # String, faction id
+	
+	"onlySpawnWhenVisibleInIntelTab":true, # OPTIONAL Boolean, default false. CAN be modified by scripts in-game
+	# if true, will only spawn when the parent controls at least 1 (one) non-hidden market and is visible in intel tab, if false will NOT be reaped by reaper script (i.e. will always spawn bases like vanilla)
+	"startEnabled":false, # OPTIONAL Boolean, default true. CAN be modified by scripts in-game
+	
+	"isFirebase":true, # OPTIONAL Boolean, default false
+	# Firebases spawn in the same system as their target
+	
+	"createBounty":true, # OPTIONAL Boolean, default false - creates bounty for killing the base
+	
+	"freePort":true, # OPTIONAL Boolean, default true
+	
+	"spawnNonEventFleets":false, # DEPRECATED, DOES NOTHING NOW
+	
+	"raiderActivityString":"Volantian Smuggling", # OPTIONAL String, default "<personOrEntityPrefix> Raider Activity"
+	
+		},
+		
+	"raiderBaseConditionsAndIndustries":[ # OPTIONAL List<String>, default “Frontier”, “No Atmosphere”, “Population”, “Spaceport”, “Military Base”, “Orbital Works”
+		"heavybatteries", 
+		"no_atmosphere",
+		"population",
+		"spaceport",
+		"militarybase",
+		"orbitalworks"
+		"commerce"
+		],
+
+	# Fleet names are set in the .faction file, under the "merc" fleet types
+
+	# Base names will be combined with a random other word. idk where they come from
+    "raiderBaseTypeNames":[		
+		"Outpost",
+
+}

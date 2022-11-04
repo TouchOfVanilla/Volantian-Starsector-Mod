@@ -1,0 +1,148 @@
+{
+  "hullName": "Caelum",
+  "hullId": "volantian_caelum",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/ships/Caelum.png",
+  "style": "HIGH_TECH",
+  "height": 260,
+  "width": 216,
+  "center": [108, 130],
+  "collisionRadius": 147.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 145,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 46,
+      "locations": [77, 33]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -46,
+      "locations": [77, -33]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 132,
+      "locations": [-56, 51]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -132,
+      "locations": [-56, -51]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-119, 35],
+      "length": 167.5,
+      "width": 27,
+      "angle": 180,
+      "contrailSize": 27,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-119, -35],
+      "length": 167.5,
+      "width": 27,
+      "angle": -180,
+      "contrailSize": 27,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-110, 57.5],
+      "length": 140.5,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-110, -57.5],
+      "length": 140.5,
+      "width": 14,
+      "angle": -180,
+      "contrailSize": 14,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-75, 103.5],
+      "length": 108.5,
+      "width": 11,
+      "angle": 180,
+      "contrailSize": 11,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-75, -103.5],
+      "length": 108.5,
+      "width": 11,
+      "angle": -180,
+      "contrailSize": 11,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-74, 91.5],
+      "length": 89,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-74, -91.5],
+      "length": 89,
+      "width": 6,
+      "angle": -180,
+      "contrailSize": 6,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -129, -2.5,
+    -110.5, -62.5,
+    -92.5, -67.5,
+    -88.5, -78,
+    -72.5, -87,
+    -75.5, -108,
+    -3, -90,
+    11.5, -91,
+    19.5, -101.5,
+    82, -74,
+    111, -62,
+    108.5, -39,
+    128, -27.5,
+    119, -3,
+    119, 3,
+    128, 27.5,
+    108.5, 39,
+    111, 62,
+    82, 74,
+    19.5, 101.5,
+    11.5, 91,
+    -3, 90,
+    -75.5, 108,
+    -72.5, 87,
+    -88.5, 78,
+    -92.5, 67.5,
+    -110.5, 62.5,
+    -129, 2.5
+  ]
+}

@@ -199,9 +199,9 @@
 	},
 	"custom":{
 		"engageWhenEvenStrength":true,
-		"allowsTransponderOffTrade":true, # to prevent cargoscan dialog from "patrols"
+		"allowsTransponderOffTrade":true,
 		"postsNoBounties":false,
-		"fightToTheLast":false, # order a full assault instead of retreating, in most cases
+		"fightToTheLast":false
 	},	
 	"fleetTypeNames":{
 		"patrolSmall":"Security Patrol",

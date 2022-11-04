@@ -1,0 +1,111 @@
+{
+  "hullName": "Shepherd(VRI)",
+  "hullId": "volantian_shepherd",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/sheperd_vri.png",
+  "style": "HIGH_TECH",
+  "height": 92,
+  "width": 78,
+  "center": [39, 45],
+  "collisionRadius": 70,
+  "shieldCenter": [1, 0],
+  "shieldRadius": 70,
+  "viewOffset": 0,
+  "builtInMods": [
+    "civgrade",
+    "surveying_equipment",
+    "repair_gantry"
+  ],
+  "builtInWings": [
+    "borer_wing"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS 007",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": -83,
+      "locations": [-3, -23]
+    },
+    {
+      "id": "WS 008",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 20,
+      "angle": 0,
+      "locations": [27, -19]
+    },
+    {
+      "id": "WS 003",
+      "size": "SMALL",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [
+        -3, 19,
+        12, 19,
+        26, 19
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-40, 20],
+      "length": 48,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-40, -19],
+      "length": 48,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-22, 35],
+      "length": 4,
+      "width": 2,
+      "angle": 140,
+      "contrailSize": 128,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-30, 33],
+      "length": 4,
+      "width": 3,
+      "angle": 145,
+      "contrailSize": 128,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-22, -33],
+      "length": 4,
+      "width": 2,
+      "angle": 220,
+      "contrailSize": 128,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-30, -32],
+      "length": 4,
+      "width": 3,
+      "angle": 215,
+      "contrailSize": 128,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    34, 28,
+    32, -28,
+    -31, -27,
+    -32, 26
+  ]
+}

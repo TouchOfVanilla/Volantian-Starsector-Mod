@@ -17,11 +17,11 @@ Radiant (VRI),volantian_radiant,Converted Battleship,Volantian,displacer,30,2000
 Kite (VRI),volantian_kite,Shuttle,Volantian,maneuveringjets,3,900,150,1400,1000,80,25,0,140,150,75,45,85,120,OMNI,,150,0.5,0.8,,,2,30,30,15,1,15,9,4000,5,20,180,0.25,2,2,,,,,,,COMBAT,"VRI_bp, merc",1,0.75,2,2,,217
 Sandalphon,volantian_sandalphon,Corvette,Volantian,displacer,5,1500,150,5000,1875,500,55,,200,130,100,60,120,200,FRONT,,150,0.4,0.8,,,15,30,50,20,1,20,10,12000,10,20,180,0.25,5,5,,,,,,,COMBAT,"VRI_bp, merc",1,0.5,2,2,,200
 Incursor,volantian_incursor,Carrier Freighter,Volantian,flarelauncher_active,14,6000,750,8000,6000,600,120,3,80,60,40,20,25,800,OMNI,,180,0.5,0.8,,,150,250,600,60,3,20,8,120000,3,12,360,0.25,20,20,,,,,,,CARRIER,"VRI_bp, merc",1,0.5,2,3,,407
-Shepherd (VRI),volantian_shepherd,Drone Tender,Volantian,flarelauncher_active,4,1200,200,1500,1250,100,23,1,90,120,70,90,180,200,OMNI,,90,0.5,1.2,,,15,30,100,40,1,40,9,10000,8,20,240,0.25,3,3,33,,,,,,CARRIER,"VRI_bp, merc",1,0.5,2,2,,216
+Shepherd (VRI),volantian_shepherd,Drone Tender,Volantian,maneuveringjets,4,1200,200,1500,1250,100,23,1,90,120,70,90,180,200,OMNI,,90,0.5,1.2,,,15,30,100,40,1,40,9,10000,8,20,240,0.25,3,3,33,,,,,,CARRIER,"VRI_bp, merc",1,0.5,2,2,,216
 Medusa (VRI),volantian_medusa,Destroyer,Volantian,displacer,12,3000,300,6000,6667,400,95,,100,90,60,40,100,300,OMNI,,120,0.3,0.6,,,35,50,50,40,2,20,9,60000,5,20,300,0.25,12,12,,,,,,,COMBAT,"VRI_bp, merc",1,0.7,2,3,,309
 Caelum,volantian_caelum,Cryosleeper,Volantian,fortressshield,30,18000,1500,25000,31250,1250,120,,30,15,10,5,5,3500,OMNI,,360,0.6,0.6,,,25,5000,300,300,10,30,7,1500000,4,20,720,0.25,60,60,,,,,,,FREIGHTER,"VRI_bp, merc",0.5,0.6,2,4,,504
-Chromatic (VRI),volantian_chromatic_vri,Converted Battlecruiser,Volantian,highenergyfocus,28,8500,775,14000,16000,625,170,2,30,20,20,15,20,3000,OMNI,,240,0.4,0.6,,,0,0,50,20,4,5,9,300000,5,15,540,0.25,34,34,,,,,,,COMBAT,"VRI_bp, merc",1,0.1,2,3,,
-Lancet,volantian_lancet,Fast Destroyer,Volantian,microburn,9,2800,250,5400,5833,350,85,,100,100,80,35,80,250,OMNI,,150,0.3,0.7,,,20,40,40,60,2,30,10,20000,5,15,300,0.25,8,8,,,,,,,COMBAT,"VRI_bp, merc",1,0.7,2,3,,319
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #funny reamnante shieeps,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Chromatic,volantian_chromatic,Drone Battlecruiser,Remnant,highenergyfocus,28,8500,775,14000,16000,625,170,2,30,20,20,15,20,3000,OMNI,,240,0.4,0.6,,,0,0,50,20,4,5,9,300000,5,15,540,0.25,34,34,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX","remnant, auto_rec",1,0.1,2,3,,414.1
