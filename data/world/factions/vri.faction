@@ -2,8 +2,8 @@
 	id:"vri",
 	"displayName":"VRI",
 	"displayNameWithArticle":"the VRI",
-	"displayNameLong":"Volantian",
-	"displayNameLongWithArticle":"the Volantian",
+	"displayNameLong":"Volantian Reclamation Initiative",
+	"displayNameLongWithArticle":"the Volantian Reclamation Initiative",
 	"entityNamePrefix":"Volantian",
 	"personNamePrefix":"Volantian",
 	"personNamePrefixAOrAn":"a",
@@ -42,23 +42,23 @@
 	},
 	# ships the faction gets access to when importing S&W out-of-faction
 	"shipsWhenImporting":{
-		"tags":["remnant","VRI_bp"],
+		"tags":["remnant","VRI_bp","hightech_bp","midline_bp"],
 		"hulls":[
 		],
 	},
 	"knownShips":{
-		"tags":["VRI_bp","remnant"],
+		"tags":["VRI_bp","hightech_bp","base_bp"],
 		"hulls":[
 		],
 	},
 	# listing ships here will make the faction mostly use them even if other hulls become available
 	"priorityShips":{
-		"tags":[],
+		"tags":["VRI_bp"],
 		"hulls":[
 		],
 	},
 	"knownFighters":{
-		"tags":["remnant"],
+		"tags":["remnant","hightech_bp"],
 		"fighters":[
 		],
 	},
