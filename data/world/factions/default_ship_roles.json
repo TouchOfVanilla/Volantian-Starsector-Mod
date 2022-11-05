@@ -2,7 +2,8 @@
 	"combatMedium":{
 		"volantian_virtuous_standard":10,
 		"volantian_sunder_standard":10,
-		"volantian_medusa_standard":10
+		"volantian_medusa_standard":10,
+		"volantian_lancet_standard":10
 	},
 	"personnelSmall":{
 		"volantian_kite_standard":10,
