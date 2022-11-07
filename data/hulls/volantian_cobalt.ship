@@ -38,8 +38,8 @@
       "size": "SMALL",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 93,
-      "angle": 0,
+      "arc": 203,
+      "angle": 43,
       "locations": [-31.5, 71]
     },
     {
@@ -47,8 +47,8 @@
       "size": "SMALL",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 93,
-      "angle": -0,
+      "arc": 203,
+      "angle": -43,
       "locations": [-31.5, -71]
     },
     {
@@ -56,8 +56,8 @@
       "size": "SMALL",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 127,
-      "angle": 90,
+      "arc": 252,
+      "angle": 109.5,
       "locations": [-59, 58]
     },
     {
@@ -65,8 +65,8 @@
       "size": "SMALL",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 127,
-      "angle": -90,
+      "arc": 252,
+      "angle": -109.5,
       "locations": [-59, -58]
     }
   ],

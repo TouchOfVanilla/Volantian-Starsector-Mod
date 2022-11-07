@@ -1,7 +1,7 @@
 {
-  "variantId": "volantian_metatron_strike",
+  "variantId": "volantian_metatron_standard",
   "hullId": "volantian_metatron",
-  "displayName": "Strike",
+  "displayName": "Standard",
   "goalVariant": false,
   "fluxCapacitors": 7,
   "fluxVents": 10,

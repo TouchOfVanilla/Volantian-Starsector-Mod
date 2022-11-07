@@ -1,6 +1,6 @@
 {
-  "variantId": "volantian_throne_standard",
-  "hullId": "volantian_throne",
+  "variantId": "volantian_claymore_standard",
+  "hullId": "volantian_claymore",
   "displayName": "Standard",
   "goalVariant": false,
   "fluxCapacitors": 20,

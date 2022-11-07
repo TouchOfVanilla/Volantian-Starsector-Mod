@@ -3,11 +3,13 @@
   "hullId": "volantian_incursor",
   "displayName": "Standard",
   "goalVariant": false,
-  "fluxCapacitors": 0,
-  "fluxVents": 0,
+  "fluxCapacitors": 8,
+  "fluxVents": 20,
   "quality": 1,
   "permaMods": [],
-  "hullMods": [],
+  "hullMods": [
+    "expanded_deck_crew"
+  ],
   "weaponGroups": [
     {
       "autofire": false,
@@ -17,11 +19,17 @@
         "WS0002": "lrpdlaser",
         "WS0003": "lrpdlaser",
         "WS0004": "lrpdlaser",
+        "WS0005": "harpoon_single",
+        "WS0006": "harpoon_single",
         "WS0007": "ionpulser",
         "WS0008": "ionpulser"
       }
     }
   ],
   "modules": [],
-  "wings": []
+  "wings": [
+    "broadsword_wing",
+    "broadsword_wing",
+    "cobra_wing"
+  ]
 }

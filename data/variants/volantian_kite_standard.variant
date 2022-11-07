@@ -4,10 +4,13 @@
   "displayName": "Standard",
   "goalVariant": false,
   "fluxCapacitors": 0,
-  "fluxVents": 0,
+  "fluxVents": 3,
   "quality": 1,
   "permaMods": [],
-  "hullMods": [],
+  "hullMods": [
+    "auxiliarythrusters",
+    "expanded_cargo_holds"
+  ],
   "weaponGroups": [
     {
       "autofire": false,

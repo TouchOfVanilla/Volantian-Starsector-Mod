@@ -3,11 +3,14 @@
   "hullId": "volantian_fury",
   "displayName": "Standard",
   "goalVariant": false,
-  "fluxCapacitors": 0,
-  "fluxVents": 0,
+  "fluxCapacitors": 3,
+  "fluxVents": 30,
   "quality": 1,
   "permaMods": [],
-  "hullMods": [],
+  "hullMods": [
+    "fluxdistributor",
+    "hardenedshieldemitter"
+  ],
   "weaponGroups": [
     {
       "autofire": false,
@@ -15,7 +18,7 @@
       "weapons": {
         "WS 000": "pulselaser",
         "WS 001": "pulselaser",
-        "WS 002": "sabotpod",
+        "WS 002": "typhoon",
         "WS 003": "irpulse",
         "WS 004": "irpulse",
         "WS 005": "lrpdlaser",

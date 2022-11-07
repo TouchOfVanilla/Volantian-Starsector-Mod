@@ -1,9 +1,9 @@
 {
-  "variantId": "volantian_paladin_standard",
-  "hullId": "volantian_paladin",
+  "variantId": "volantian_gauntlet_standard",
+  "hullId": "volantian_gauntlet",
   "displayName": "Standard",
   "goalVariant": false,
-  "fluxCapacitors": 2,
+  "fluxCapacitors": 4,
   "fluxVents": 30,
   "quality": 1,
   "permaMods": [],
@@ -45,7 +45,6 @@
   "wings": [
     "cobra_wing",
     "cobra_wing",
-    "talon_wing",
     "talon_wing"
   ]
 }

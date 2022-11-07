@@ -1,8 +1,8 @@
 {
-  "hullName": "Paladin",
-  "hullId": "volantian_paladin",
+  "hullName": "Gauntlet",
+  "hullId": "volantian_gauntlet",
   "hullSize": "CRUISER",
-  "spriteName": "graphics/ships/paladin.png",
+  "spriteName": "graphics/ships/gauntlet.png",
   "style": "HIGH_TECH",
   "height": 240,
   "width": 180,
@@ -80,8 +80,8 @@
       "size": "SMALL",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 122,
-      "angle": 90,
+      "arc": 228,
+      "angle": 137,
       "locations": [-46, 47]
     },
     {
@@ -89,8 +89,8 @@
       "size": "SMALL",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 122,
-      "angle": -90,
+      "arc": 228,
+      "angle": -137,
       "locations": [-46, -47]
     },
     {
@@ -98,8 +98,8 @@
       "size": "SMALL",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 111,
-      "angle": 90.5,
+      "arc": 224,
+      "angle": 131,
       "locations": [-77, 48]
     },
     {
@@ -107,8 +107,8 @@
       "size": "SMALL",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 111,
-      "angle": -90.5,
+      "arc": 224,
+      "angle": -131,
       "locations": [-77, -48]
     },
     {

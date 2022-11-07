@@ -3,8 +3,8 @@
   "hullId": "volantian_lancet",
   "displayName": "Standard",
   "goalVariant": false,
-  "fluxCapacitors": 1,
-  "fluxVents": 0,
+  "fluxCapacitors": 3,
+  "fluxVents": 20,
   "quality": 1,
   "permaMods": [],
   "hullMods": [

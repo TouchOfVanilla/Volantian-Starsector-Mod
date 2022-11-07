@@ -1,8 +1,8 @@
 {
-  "hullName": "Archangel",
-  "hullId": "volantian_archangel",
+  "hullName": "Shamshir",
+  "hullId": "volantian_shamshir",
   "hullSize": "CAPITAL_SHIP",
-  "spriteName": "graphics/ships/archangel.png",
+  "spriteName": "graphics/ships/shamshir.png",
   "style": "HIGH_TECH",
   "height": 395,
   "width": 210,
@@ -107,7 +107,7 @@
       "size": "SMALL",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 153,
+      "arc": 262,
       "angle": 81.5,
       "locations": [-95.5, 39.5]
     },
@@ -116,7 +116,7 @@
       "size": "SMALL",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 153,
+      "arc": 262,
       "angle": -81.5,
       "locations": [-95.5, -39.5]
     },
@@ -125,7 +125,7 @@
       "size": "SMALL",
       "type": "BALLISTIC",
       "mount": "TURRET",
-      "arc": 145,
+      "arc": 222,
       "angle": 137,
       "locations": [-130, 33.5]
     },
@@ -134,7 +134,7 @@
       "size": "SMALL",
       "type": "BALLISTIC",
       "mount": "TURRET",
-      "arc": 145,
+      "arc": 222,
       "angle": -137,
       "locations": [-130, -33.5]
     },
@@ -151,27 +151,27 @@
   "engineSlots": [
     {
       "location": [-178.5, 36.5],
-      "length": 30,
-      "width": 10,
+      "length": 107.5,
+      "width": 21,
       "angle": 180,
-      "contrailSize": 30,
-      "style": "LOW_TECH"
+      "contrailSize": 21,
+      "style": "HIGH_TECH"
     },
     {
       "location": [-178.5, -36.5],
-      "length": 30,
-      "width": 10,
+      "length": 107.5,
+      "width": 21,
       "angle": -180,
-      "contrailSize": 30,
-      "style": "LOW_TECH"
+      "contrailSize": 21,
+      "style": "HIGH_TECH"
     },
     {
       "location": [-178, -0],
-      "length": 30,
-      "width": 10,
+      "length": 115.5,
+      "width": 14,
       "angle": 180,
-      "contrailSize": 30,
-      "style": "LOW_TECH"
+      "contrailSize": 14,
+      "style": "HIGH_TECH"
     }
   ],
   "bounds": [

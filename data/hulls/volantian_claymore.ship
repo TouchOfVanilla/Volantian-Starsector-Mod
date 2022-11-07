@@ -1,8 +1,8 @@
 {
-  "hullName": "Throne",
-  "hullId": "volantian_throne",
+  "hullName": "Claymore",
+  "hullId": "volantian_claymore",
   "hullSize": "CRUISER",
-  "spriteName": "graphics/ships/throne.png",
+  "spriteName": "graphics/ships/claymore.png",
   "style": "HIGH_TECH",
   "height": 238,
   "width": 243,

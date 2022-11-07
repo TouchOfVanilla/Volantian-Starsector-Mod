@@ -149,7 +149,7 @@
 		
 		"aggression":3, # doesn't matter since automated ships are super aggressive regardless
 		
-		"combatFreighterProbability":0,     				# instead of some portion of the freighters in a fleet
+		"combatFreighterProbability":1,     				# instead of some portion of the freighters in a fleet
 		"combatFreighterCombatUseFraction":1,				# as part of the normal combat lineup
 		"combatFreighterCombatUseFractionWhenPriority":1,   # as part of normal combat lineup, when marked as priority ship
 		"autofitRandomizeProbability":0.25,
@@ -170,14 +170,24 @@
 	#"internalComms":"hegemony_internal",
 	"portraits":{
 		"standard_male":[
-			"graphics/portraits/portrait_ai1b.png",
-			"graphics/portraits/portrait_ai2b.png",
-			"graphics/portraits/portrait_ai3b.png",
+			"graphics/portraits/vol_portrait1.png",
+            "graphics/portraits/vol_portrait2.png",
+            "graphics/portraits/vol_portrait3.png",
+            "graphics/portraits/vol_portrait4.png",
+            "graphics/portraits/vol_portrait5.png",
+            "graphics/portraits/vol_portrait6.png",
+            "graphics/portraits/vol_portrait7.png",
+            "graphics/portraits/vol_portrait8.png",
 		],
 		"standard_female":[
-			"graphics/portraits/portrait_ai1b.png",
-			"graphics/portraits/portrait_ai2b.png",
-			"graphics/portraits/portrait_ai3b.png",
+            "graphics/portraits/vol_portrait1.png",
+            "graphics/portraits/vol_portrait2.png",
+            "graphics/portraits/vol_portrait3.png",
+            "graphics/portraits/vol_portrait4.png",
+            "graphics/portraits/vol_portrait5.png",
+            "graphics/portraits/vol_portrait6.png",
+            "graphics/portraits/vol_portrait7.png",
+            "graphics/portraits/vol_portrait8.png",
 		],
 	},
 	"ranks":{

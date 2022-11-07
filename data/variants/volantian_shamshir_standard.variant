@@ -1,6 +1,6 @@
 {
-  "variantId": "volantian_archangel_standard",
-  "hullId": "volantian_archangel",
+  "variantId": "volantian_shamshir_standard",
+  "hullId": "volantian_shamshir",
   "displayName": "Standard",
   "goalVariant": false,
   "fluxCapacitors": 34,

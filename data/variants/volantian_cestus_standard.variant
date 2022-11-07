@@ -1,16 +1,14 @@
 {
-  "variantId": "volantian_seraph_support",
-  "hullId": "volantian_seraph",
-  "displayName": "Support",
+  "variantId": "volantian_cestus_standard",
+  "hullId": "volantian_cestus",
+  "displayName": "Standard",
   "goalVariant": false,
   "fluxCapacitors": 0,
-  "fluxVents": 28,
+  "fluxVents": 16,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "magazines",
-    "hardenedshieldemitter",
-    "fluxdistributor"
+    "magazines"
   ],
   "weaponGroups": [
     {
