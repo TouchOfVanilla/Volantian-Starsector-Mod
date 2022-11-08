@@ -1,0 +1,18 @@
+{
+	"id":"vol_clovercannon_shot",
+	"specClass":"projectile",
+	"onHitEffect":"data.weapons.scripts.VRI_weapon_clover",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":60.0,
+	"width":50.0,
+	"hitGlowRadius":10,
+	"fadeTime":0.3,
+	"fringeColor":[200,0,0,255],
+	"coreColor":[255,255,255,200],
+	"textureType":"SMOOTH",  # only needed for BEAM spawnType
+	"textureScrollSpeed":-256,
+	"pixelsPerTexel":5.0,
+	"passThroughMissiles":true,
+}
