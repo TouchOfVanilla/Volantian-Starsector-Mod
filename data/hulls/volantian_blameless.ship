@@ -131,7 +131,7 @@
       "width": 17,
       "angle": 168.5,
       "contrailSize": 128,
-      "style": "EIS_LTBOOST"
+      "style": "HIGH_TECH"
     },
     {
       "location": [-71.5, -50],
@@ -139,7 +139,7 @@
       "width": 17,
       "angle": -167.5,
       "contrailSize": 128,
-      "style": "EIS_LTBOOST"
+      "style": "HIGH_TECH"
     },
     {
       "location": [-71, -50],
@@ -147,7 +147,7 @@
       "width": 35,
       "angle": -168.5,
       "contrailSize": 128,
-      "style": "EIS_BOOST"
+      "style": "HIGH_TECH"
     },
     {
       "location": [-69, 50],
@@ -155,7 +155,7 @@
       "width": 35,
       "angle": 168.5,
       "contrailSize": 128,
-      "style": "EIS_BOOST"
+      "style": "HIGH_TECH"
     },
     {
       "location": [-88.5, -8],
@@ -171,7 +171,7 @@
       "width": 16.920799,
       "angle": -167.5,
       "contrailSize": 16.920799,
-      "style": "EIS_LTBOOST"
+      "style": "HIGH_TECH"
     },
     {
       "location": [-62, 71.5],
@@ -179,7 +179,7 @@
       "width": 16.920799,
       "angle": 167.5,
       "contrailSize": 16.920799,
-      "style": "EIS_LTBOOST"
+      "style": "HIGH_TECH"
     },
     {
       "location": [-39, -89],
@@ -187,7 +187,7 @@
       "width": 15.018485,
       "angle": -165,
       "contrailSize": 15.018485,
-      "style": "EIS_LTBOOST"
+      "style": "HIGH_TECH"
     },
     {
       "location": [-39, 89],
@@ -195,7 +195,7 @@
       "width": 15.018485,
       "angle": 165,
       "contrailSize": 15.018485,
-      "style": "EIS_LTBOOST"
+      "style": "HIGH_TECH"
     }
   ],
   "bounds": [
