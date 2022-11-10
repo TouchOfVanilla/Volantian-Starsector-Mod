@@ -11,6 +11,9 @@
   "shieldCenter": [0.5, 1.5],
   "shieldRadius": 234.5,
   "viewOffset": 0,
+  "builtInMods": [
+    "VRI_FluxNetwork"
+  ],
   "weaponSlots": [
     {
       "id": "WS0001",

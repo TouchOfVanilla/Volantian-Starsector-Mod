@@ -11,6 +11,9 @@
   "shieldCenter": [0, -0],
   "shieldRadius": 134.5,
   "viewOffset": 0,
+  "builtInMods": [
+    "VRI_FluxNetwork"
+  ],
   "builtInWings": [
     "terminator_wing"
   ],
