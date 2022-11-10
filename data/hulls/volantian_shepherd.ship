@@ -14,7 +14,8 @@
   "builtInMods": [
     "civgrade",
     "surveying_equipment",
-    "repair_gantry"
+    "repair_gantry",
+    "VRI_FluxNetwork"
   ],
   "builtInWings": [
     "borer_wing"
