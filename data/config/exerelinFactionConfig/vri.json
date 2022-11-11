@@ -76,22 +76,18 @@
 	],
 
     "startShipsCombatSmall":[
-      ["volantian_virtuous_standard", "volantian_metatron_strike", "volantian_kite_standard"]
+      ["volantian_virtuous_standard", "volantian_metatron_standard", "volantian_kite_standard"]
 	
     ],
 
 	"startShipsCombatLarge":[
-	  ["volantian_blameless_standard", "volantian_seraph_support", "volantian_cobalt_standard"],
+	  ["volantian_blameless_standard", "volantian_cestus_standard", "volantian_cobalt_standard"],
 	  ["volantian_radiant_standard", "volantian_fury_standard", "volantian_virtuous_standard"]
     ],
-	
-    "startShipsCarrierSmall":[
-		["eis_audacious_standard", "wolf_hegemony_CS", "eis_courageous_standard"]
-	],
 
     "startShipsCarrierLarge":[
-		["volantian_paladin_standard", "volantian_illuminator_standard", "volantian_virtuous_standard"],
-		["volantian_paladin_standard", "volantian_seraph_support", "volantian_virtuous_standard"]
+		["volantian_gauntlet_standard", "volantian_illuminator_standard", "volantian_virtuous_standard"],
+		["volantian_gauntlet_standard", "volantian_cestus_standard", "volantian_virtuous_standard"]
 	],
 	
 	"startShipsTradeSmall":[

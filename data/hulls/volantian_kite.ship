@@ -12,7 +12,9 @@
   "shieldRadius": 58,
   "viewOffset": 0,
   "builtInMods": [
-    "civgrade"
+    "civgrade",
+    "VRI_FluxNetwork",
+    "VES"
   ],
   "weaponSlots": [
     {

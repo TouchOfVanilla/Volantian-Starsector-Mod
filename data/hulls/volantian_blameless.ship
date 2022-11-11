@@ -12,7 +12,9 @@
   "shieldRadius": 170,
   "viewOffset": 0,
   "builtInMods": [
-    "auxiliarythrusters"
+    "auxiliarythrusters",
+    "VRI_FluxNetwork",
+    "VES"
   ],
   "weaponSlots": [
     {
@@ -57,8 +59,8 @@
       "size": "MEDIUM",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 143,
-      "angle": -90,
+      "arc": 267,
+      "angle": -126.5,
       "locations": [-38.5, -59]
     },
     {
@@ -66,7 +68,7 @@
       "size": "SMALL",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 148,
+      "arc": 268,
       "angle": 180,
       "locations": [-50, 23]
     },
@@ -75,7 +77,7 @@
       "size": "SMALL",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 148,
+      "arc": 251,
       "angle": 180,
       "locations": [-50.5, -23]
     },
@@ -84,8 +86,8 @@
       "size": "MEDIUM",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 143,
-      "angle": 84.5,
+      "arc": 250,
+      "angle": 136,
       "locations": [-38.5, 59]
     },
     {
@@ -96,6 +98,24 @@
       "arc": 10,
       "angle": 0,
       "locations": [86.5, 0]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 222,
+      "angle": 77,
+      "locations": [14.5, 41]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 222,
+      "angle": -77,
+      "locations": [14.5, -41]
     }
   ],
   "engineSlots": [
@@ -113,7 +133,7 @@
       "width": 17,
       "angle": 168.5,
       "contrailSize": 128,
-      "style": "EIS_LTBOOST"
+      "style": "HIGH_TECH"
     },
     {
       "location": [-71.5, -50],
@@ -121,7 +141,7 @@
       "width": 17,
       "angle": -167.5,
       "contrailSize": 128,
-      "style": "EIS_LTBOOST"
+      "style": "HIGH_TECH"
     },
     {
       "location": [-71, -50],
@@ -129,7 +149,7 @@
       "width": 35,
       "angle": -168.5,
       "contrailSize": 128,
-      "style": "EIS_BOOST"
+      "style": "HIGH_TECH"
     },
     {
       "location": [-69, 50],
@@ -137,7 +157,7 @@
       "width": 35,
       "angle": 168.5,
       "contrailSize": 128,
-      "style": "EIS_BOOST"
+      "style": "HIGH_TECH"
     },
     {
       "location": [-88.5, -8],
@@ -153,7 +173,7 @@
       "width": 16.920799,
       "angle": -167.5,
       "contrailSize": 16.920799,
-      "style": "EIS_LTBOOST"
+      "style": "HIGH_TECH"
     },
     {
       "location": [-62, 71.5],
@@ -161,7 +181,7 @@
       "width": 16.920799,
       "angle": 167.5,
       "contrailSize": 16.920799,
-      "style": "EIS_LTBOOST"
+      "style": "HIGH_TECH"
     },
     {
       "location": [-39, -89],
@@ -169,7 +189,7 @@
       "width": 15.018485,
       "angle": -165,
       "contrailSize": 15.018485,
-      "style": "EIS_LTBOOST"
+      "style": "HIGH_TECH"
     },
     {
       "location": [-39, 89],
@@ -177,7 +197,7 @@
       "width": 15.018485,
       "angle": 165,
       "contrailSize": 15.018485,
-      "style": "EIS_LTBOOST"
+      "style": "HIGH_TECH"
     }
   ],
   "bounds": [

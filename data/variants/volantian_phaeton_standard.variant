@@ -1,0 +1,27 @@
+{
+  "variantId": "volantian_phaeton_standard",
+  "hullId": "volantian_phaeton",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 5,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [
+    "auxiliary_fuel_tanks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "lightdualmg",
+        "WS 002": "lightdualmg",
+        "WS 003": "lightdualmg",
+        "WS 004": "lightdualmg"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

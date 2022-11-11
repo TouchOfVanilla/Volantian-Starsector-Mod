@@ -4,13 +4,12 @@
   "displayName": "Standard",
   "goalVariant": false,
   "fluxCapacitors": 0,
-  "fluxVents": 0,
+  "fluxVents": 7,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
     "augmentedengines",
-    "expanded_cargo_holds",
-    "shielded_holds"
+    "expanded_cargo_holds"
   ],
   "weaponGroups": [
     {

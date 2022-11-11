@@ -3,23 +3,26 @@
   "hullId": "volantian_sunder",
   "displayName": "Standard",
   "goalVariant": false,
-  "fluxCapacitors": 20,
+  "fluxCapacitors": 2,
   "fluxVents": 20,
   "quality": 1,
   "permaMods": [],
-  "hullMods": [],
+  "hullMods": [
+    "fluxdistributor",
+    "targetingunit"
+  ],
   "weaponGroups": [
     {
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS 001": "sabot",
-        "WS 002": "ioncannon",
+        "WS 001": "hammer",
+        "WS 002": "ionpulser",
         "WS 003": "autopulse",
-        "WS 004": "ioncannon",
-        "WS 005": "sabot",
-        "WS 006": "lightdualac",
-        "WS 007": "lightdualac",
+        "WS 004": "ionpulser",
+        "WS 005": "hammer",
+        "WS 006": "lightneedler",
+        "WS 007": "lightneedler",
         "WS 008": "lightdualmg"
       }
     }

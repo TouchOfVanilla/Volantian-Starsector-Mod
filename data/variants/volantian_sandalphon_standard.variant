@@ -3,11 +3,13 @@
   "hullId": "volantian_sandalphon",
   "displayName": "Standard",
   "goalVariant": false,
-  "fluxCapacitors": 0,
-  "fluxVents": 0,
+  "fluxCapacitors": 3,
+  "fluxVents": 10,
   "quality": 1,
   "permaMods": [],
-  "hullMods": [],
+  "hullMods": [
+    "magazines"
+  ],
   "weaponGroups": [
     {
       "autofire": false,

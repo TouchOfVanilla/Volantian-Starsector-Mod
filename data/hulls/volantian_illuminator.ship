@@ -11,6 +11,10 @@
   "shieldCenter": [0, -0],
   "shieldRadius": 109,
   "viewOffset": 0,
+  "builtInMods": [
+    "VRI_FluxNetwork",
+    "VES"
+  ],
   "weaponSlots": [
     {
       "id": "WS0001",
@@ -35,7 +39,7 @@
       "size": "SMALL",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 154,
+      "arc": 202,
       "angle": -180,
       "locations": [-18.5, -18]
     },
@@ -44,7 +48,7 @@
       "size": "SMALL",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 154,
+      "arc": 202,
       "angle": 180,
       "locations": [-18.5, 18]
     },

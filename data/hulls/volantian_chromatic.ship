@@ -35,8 +35,8 @@
       "size": "MEDIUM",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 150,
-      "angle": 180,
+      "arc": 126,
+      "angle": 0,
       "locations": [-24, 98]
     },
     {
@@ -44,8 +44,8 @@
       "size": "MEDIUM",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 150,
-      "angle": -180,
+      "arc": 126,
+      "angle": -0,
       "locations": [-24, -98]
     },
     {
@@ -53,8 +53,8 @@
       "size": "SMALL",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 145,
-      "angle": -90,
+      "arc": 230,
+      "angle": -60.5,
       "locations": [57, -69]
     },
     {
@@ -62,8 +62,8 @@
       "size": "SMALL",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 145,
-      "angle": 90,
+      "arc": 230,
+      "angle": 60.5,
       "locations": [57, 69]
     },
     {
@@ -71,8 +71,8 @@
       "size": "SMALL",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 125,
-      "angle": -90,
+      "arc": 269,
+      "angle": -128,
       "locations": [-47, -76.5]
     },
     {
@@ -80,8 +80,8 @@
       "size": "SMALL",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 125,
-      "angle": 90,
+      "arc": 269,
+      "angle": 128,
       "locations": [-47, 76.5]
     },
     {
@@ -116,8 +116,8 @@
       "size": "SMALL",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 125,
-      "angle": 0,
+      "arc": 292,
+      "angle": 110,
       "locations": [-33.5, 60]
     },
     {

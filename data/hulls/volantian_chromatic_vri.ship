@@ -11,6 +11,10 @@
   "shieldCenter": [0, -0],
   "shieldRadius": 186.5,
   "viewOffset": 0,
+  "builtInMods": [
+    "VRI_FluxNetwork",
+    "VES"
+  ],
   "weaponSlots": [
     {
       "id": "WS0001",
@@ -36,7 +40,7 @@
       "type": "ENERGY",
       "mount": "TURRET",
       "arc": 150,
-      "angle": 180,
+      "angle": 0,
       "locations": [-24, 98]
     },
     {
@@ -45,7 +49,7 @@
       "type": "ENERGY",
       "mount": "TURRET",
       "arc": 150,
-      "angle": -180,
+      "angle": -0,
       "locations": [-24, -98]
     },
     {
@@ -53,8 +57,8 @@
       "size": "SMALL",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 145,
-      "angle": -90,
+      "arc": 230,
+      "angle": -64,
       "locations": [58, -69]
     },
     {
@@ -62,8 +66,8 @@
       "size": "SMALL",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 145,
-      "angle": 90,
+      "arc": 230,
+      "angle": 64,
       "locations": [58, 69]
     },
     {
@@ -71,8 +75,8 @@
       "size": "SMALL",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 125,
-      "angle": -0,
+      "arc": 268,
+      "angle": -148.5,
       "locations": [-45.5, -77]
     },
     {
@@ -80,8 +84,8 @@
       "size": "SMALL",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 125,
-      "angle": 0,
+      "arc": 268,
+      "angle": 148.5,
       "locations": [-45.5, 77]
     },
     {
@@ -116,8 +120,8 @@
       "size": "SMALL",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 125,
-      "angle": 0,
+      "arc": 280,
+      "angle": 123.5,
       "locations": [-41, 129]
     },
     {
@@ -125,8 +129,8 @@
       "size": "SMALL",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 125,
-      "angle": -0,
+      "arc": 280,
+      "angle": -123.5,
       "locations": [-41, -129]
     },
     {
@@ -134,7 +138,7 @@
       "size": "SMALL",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 180,
+      "arc": 292,
       "angle": 180,
       "locations": [-101, -0]
     }

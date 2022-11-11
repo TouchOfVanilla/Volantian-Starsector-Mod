@@ -88,6 +88,6 @@ public class VRI_shipSystem_rapturepulse extends BaseShipSystemScript {
 
 		return null;
                 
-        }
+	}
         
 }
