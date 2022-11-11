@@ -11,6 +11,10 @@
   "shieldCenter": [0, 0],
   "shieldRadius": 133,
   "viewOffset": 0,
+  "builtInMods": [
+    "VES",
+    "VRI_FluxNetwork"
+  ],
   "builtInWings": [
     "spark_wing",
     "spark_wing"

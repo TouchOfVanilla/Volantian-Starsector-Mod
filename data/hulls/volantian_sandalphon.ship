@@ -12,7 +12,8 @@
   "shieldRadius": 57,
   "viewOffset": 0,
   "builtInMods": [
-    "VRI_FluxNetwork"
+    "VRI_FluxNetwork",
+    "VES"
   ],
   "builtInWeapons": {
     "WS0001": "autopulse"

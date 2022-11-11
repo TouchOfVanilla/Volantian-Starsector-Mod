@@ -15,7 +15,8 @@
     "civgrade",
     "surveying_equipment",
     "repair_gantry",
-    "VRI_FluxNetwork"
+    "VRI_FluxNetwork",
+    "VES"
   ],
   "builtInWings": [
     "borer_wing"

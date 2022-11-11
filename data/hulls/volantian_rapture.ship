@@ -12,8 +12,9 @@
   "shieldRadius": 73.5,
   "viewOffset": 0,
   "builtInMods": [
-      "VRI_FluxNetwork"
-    ],
+    "VRI_FluxNetwork",
+    "VES"
+  ],
   "weaponSlots": [
     {
       "id": "WS0002",

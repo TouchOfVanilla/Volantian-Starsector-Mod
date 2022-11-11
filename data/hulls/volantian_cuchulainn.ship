@@ -15,7 +15,8 @@
     "advancedoptics",
     "delicate",
     "high_maintenance",
-    "VRI_FluxNetwork"
+    "VRI_FluxNetwork",
+    "VES"
   ],
   "weaponSlots": [
     {

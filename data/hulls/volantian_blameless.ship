@@ -13,7 +13,8 @@
   "viewOffset": 0,
   "builtInMods": [
     "auxiliarythrusters",
-    "VRI_FluxNetwork"
+    "VRI_FluxNetwork",
+    "VES"
   ],
   "weaponSlots": [
     {
