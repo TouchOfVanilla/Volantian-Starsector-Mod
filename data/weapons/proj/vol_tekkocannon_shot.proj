@@ -1,0 +1,18 @@
+{
+	"id":"vol_tekkocannon_shot",
+	"specClass":"projectile",
+	# "onHitEffect":"",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":30.0,
+	"width":4.0,
+	"hitGlowRadius":10,
+	"fadeTime":0.3,
+	"fringeColor":[40,250,245,255],
+	"coreColor":[255,255,255,200],
+	"textureType":"SMOOTH",  # only needed for BEAM spawnType
+	"textureScrollSpeed":-256,
+	"pixelsPerTexel":5.0,
+	"passThroughMissiles":true,
+}
