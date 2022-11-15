@@ -42,7 +42,7 @@ public class VRI_weapon_clover implements OnHitEffectPlugin{
                 counter = 0;
                 explosion.setDamageType(DamageType.FRAGMENTATION);
                 explosion.setMinDamage(300);
-                explosion.setMinDamage(200);
+                explosion.setMaxDamage(300);
                 engine.spawnDamagingExplosion(explosion, projectile.getSource(), point);
             }
             else {

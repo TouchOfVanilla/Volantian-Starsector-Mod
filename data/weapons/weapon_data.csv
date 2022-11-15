@@ -5,6 +5,7 @@ Clover Driver Cannon,vol_clovercannon,2,,2500,700,,120,20,0,20,11,,,,ENERGY,130,
 Harpe Cannon,vol_harpecannon,2,,3000,900,,320,,0,15,13,,,,KINETIC,400,,0.3,1.5,1,0,0,5,2,5,,1200,,,,,,,,,,,Anti Shield,,,,,,,,,,70
 Tekko Cannon,vol_tekkocannon,1,,200,250,,20,,1,75,4,,,,FRAGMENTATION,2,,0,0.1,3,0.01,0,10,1,5,,900,,,,,,PD,,,,,Point Defense,,,,,,,,,,71
 Pata Autocannon,vol_pataautocannon,1,,400,600,,25,,1,40,5,,,,ENERGY,25,,0,0.25,2,0,0,3,1,5,,800,,,,,,,,,,,General,,,,,,,,,,72
+Phosphene Lance,vol_phosphenelance,3,,10000,1000,1700,,300,0,15,25,,,,ENERGY,,1900,0.3,1.25,1,5,,,,,10000,,,,,,,,,,,,Strike,,,,,"On hit, triggering an explosion dealing %s Fragmentation damage",1000,,,,73
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

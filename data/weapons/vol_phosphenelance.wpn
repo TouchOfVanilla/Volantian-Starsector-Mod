@@ -1,0 +1,59 @@
+{
+  "id": "vol_phosphenelance",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "beamEffect": "data.weapons.scripts.VRI_weapon_phosphene",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "turretSprite": "graphics/weapons/vol_phosphenelance_turret_base.png",
+  "turretGlowSprite": "graphics/weapons/vol_phosphenelance_turret_glow.png",
+  "hardpointSprite": "graphics/weapons/vol_phosphenelance_hardpoint_base.png",
+  "hardpointGlowSprite": "graphics/weapons/vol_phosphenelance_hardpoint_glow.png",
+  "glowColor": [
+    125,
+    255,
+    185,
+    255
+  ],
+  "hitGlowRadius": 0,
+  "turretOffsets": [
+    22.5,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    22.5,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "fringeColor": [
+    0,
+    255,
+    0,
+    225
+  ],
+  "coreColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "width": 44,
+  "textureType": ROUGH,
+  "textureScrollSpeed": 72,
+  "pixelsPerTexel": 5,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER,
+    MISSILE_FF,
+    MISSILE_NO_FF
+  ],
+  "fireSoundOne": "laser_intro",
+  "fireSoundTwo": "laser_loop"
+}

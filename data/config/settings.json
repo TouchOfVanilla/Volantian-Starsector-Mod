@@ -68,6 +68,11 @@
 		"blueprint_packages":{
 			"VRI_package":"graphics/factions/VRI_Flag2.png"
 		},
-		
+
+	"graphics": {
+		"fx": {
+			"vol_phosphene_explosion": "graphics/fx/vol_phosphene_explosion.png",
+		}
+	}
 }
 
