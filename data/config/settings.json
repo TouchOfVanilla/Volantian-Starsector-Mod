@@ -72,7 +72,8 @@
 	"graphics": {
 		"fx": {
 			"vol_phosphene_explosion": "graphics/fx/vol_phosphene_explosion.png",
-		}
+			"vol_lucern_explosion": "graphics/fx/vol_lucern_explosion.png",
+			"vol_katti_explosion": "graphics/fx/vol_katti_explosion.png"}
 	}
 }
 

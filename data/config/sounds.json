@@ -1,0 +1,36 @@
+{
+	"music":{
+		####################################
+		# "source" can also be a directory #
+		####################################
+
+	},
+	"vol_katti_explosion":[
+		{"file": "sounds/vol_katti_explosion.ogg", "pitch": 0.9, "volume": 1},
+		{"file": "sounds/vol_katti_explosion.ogg", "pitch": 0.95, "volume": 1},
+		{"file": "sounds/vol_katti_explosion.ogg", "pitch": 1, "volume": 1},
+		{"file": "sounds/vol_katti_explosion.ogg", "pitch": 1.05, "volume": 1},
+		{"file": "sounds/vol_katti_explosion.ogg", "pitch": 1.1, "volume": 1},
+	],
+	"vol_katti_fire":[
+		{"file": "sounds/vol_katti_fire.ogg", "pitch": 0.9, "volume": 1},
+		{"file": "sounds/vol_katti_fire.ogg", "pitch": 0.95, "volume": 1},
+		{"file": "sounds/vol_katti_fire.ogg", "pitch": 1, "volume": 1},
+		{"file": "sounds/vol_katti_fire.ogg", "pitch": 1.05, "volume": 1},
+		{"file": "sounds/vol_katti_fire.ogg", "pitch": 1.1, "volume": 1},
+	],
+	"vol_lucern_fire":[
+		{"file": "sounds/vol_lucern_fire.ogg", "pitch": 0.9, "volume": 1},
+		{"file": "sounds/vol_lucern_fire.ogg", "pitch": 0.95, "volume": 1},
+		{"file": "sounds/vol_lucern_fire.ogg", "pitch": 1, "volume": 1},
+		{"file": "sounds/vol_lucern_fire.ogg", "pitch": 1.05, "volume": 1},
+		{"file": "sounds/vol_lucern_fire.ogg", "pitch": 1.1, "volume": 1},
+	],
+	"vol_mirv_fire":[
+		{"file": "sounds/vol_mirv_fire.ogg", "pitch": 0.9, "volume": 1},
+		{"file": "sounds/vol_mirv_fire.ogg", "pitch": 0.95, "volume": 1},
+		{"file": "sounds/vol_mirv_fire.ogg", "pitch": 1, "volume": 1},
+		{"file": "sounds/vol_mirv_fire.ogg", "pitch": 1.05, "volume": 1},
+		{"file": "sounds/vol_mirv_fire.ogg", "pitch": 1.1, "volume": 1},
+	]
+}
