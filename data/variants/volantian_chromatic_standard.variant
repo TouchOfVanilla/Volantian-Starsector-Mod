@@ -3,33 +3,32 @@
   "hullId": "volantian_chromatic",
   "displayName": "Standard",
   "goalVariant": false,
-  "fluxCapacitors": 4,
+  "fluxCapacitors": 13,
   "fluxVents": 30,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "fluxdistributor",
     "hardenedshieldemitter",
-    "magazines"
+    "targetingunit"
   ],
   "weaponGroups": [
     {
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "phasebeam",
-        "WS0002": "phasebeam",
-        "WS0003": "phasebeam",
-        "WS0004": "phasebeam",
-        "WS0005": "ioncannon",
-        "WS0006": "ioncannon",
-        "WS0007": "pdburst",
-        "WS0008": "pdburst",
-        "WS0009": "autopulse",
-        "WS0010": "autopulse",
+        "WS0001": "vol_harpecannon",
+        "WS0002": "vol_harpecannon",
+        "WS0003": "gravitonbeam",
+        "WS0004": "gravitonbeam",
+        "WS0005": "pdlaser",
+        "WS0006": "pdlaser",
+        "WS0007": "pdlaser",
+        "WS0008": "pdlaser",
+        "WS0009": "tachyonlance",
+        "WS0010": "guardian",
         "WS0011": "cyclone",
-        "WS0012": "lrpdlaser",
-        "WS0013": "lrpdlaser"
+        "WS0012": "pdlaser",
+        "WS0013": "pdlaser"
       }
     }
   ],

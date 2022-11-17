@@ -7,9 +7,9 @@ Tekko Cannon,vol_tekkocannon,1,,200,250,,20,,1,75,4,,,,FRAGMENTATION,2,,0,0.1,3,
 Pata Autocannon,vol_pataautocannon,1,,400,600,,25,,1,40,5,,,,ENERGY,25,,0,0.25,2,0,0,3,1,5,,800,,,,,,,,,,,General,,,,,,,,,,72
 Phosphene Lance,vol_phosphenelance,3,,10000,1000,1700,,300,0,15,25,,,,ENERGY,,1900,0.3,1.25,1,5,,,,,10000,,,,,,,,,,,,Strike,,,,,"On hit, triggering an explosion dealing %s Fragmentation damage",1000,,,,73
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Lucern launcher,vol_lucern,1,,3000,2000,,1000,,15,15,10,12,,,ENERGY,0,,0,8,4,0.25,0,0,0,0,,300,100,8,150,,,STRIKE,,,,,Strike,Fast,Poor,,,,,,,TRUE,74
+Katti MRM (Double),vol_katti,1,,150,1500,,1500,,20,10,3,2,,,ENERGY,0,,0,1,1,0,0,0,0,0,,100,40,4,350,,,STRIKE,,,,,Strike,Medium,None,,,Second-stage hits on hull or armor create additional explosion dealing %s High Explosive damage,700,,,TRUE,75
+Katti Barrage,vol_kattibarrage,1,,1500,1500,,1500,,30,10,22,20,,,ENERGY,0,,0,5,4,0.2,0,0,0,0,,100,40,4,350,,,STRIKE,,,,,Strike,Medium,None,,,Second-stage hits on hull or armor create additional explosion dealing %s High Explosive damage,700,,,TRUE,76
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
