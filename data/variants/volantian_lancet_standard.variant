@@ -3,12 +3,13 @@
   "hullId": "volantian_lancet",
   "displayName": "Standard",
   "goalVariant": false,
-  "fluxCapacitors": 3,
+  "fluxCapacitors": 13,
   "fluxVents": 20,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "hardenedshieldemitter"
+    "hardenedshieldemitter",
+    "targetingunit"
   ],
   "weaponGroups": [
     {
@@ -17,8 +18,8 @@
       "weapons": {
         "WS0001": "lrpdlaser",
         "WS0002": "lrpdlaser",
-        "WS0003": "ionpulser",
-        "WS0004": "ionpulser",
+        "WS0003": "heavyblaster",
+        "WS0004": "heavyblaster",
         "WS0005": "sabotpod",
         "WS0006": "sabotpod"
       }

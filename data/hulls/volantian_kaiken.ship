@@ -1,0 +1,210 @@
+{
+  "hullName": "Kaiken",
+  "hullId": "volantian_kaiken",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/kaiken.png",
+  "style": "HIGH_TECH",
+  "height": 200,
+  "width": 340,
+  "center": [170, 100],
+  "collisionRadius": 184.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 174.5,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 221,
+      "angle": 37,
+      "locations": [24, 106]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 221,
+      "angle": -37,
+      "locations": [24, -106]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 271,
+      "angle": 32.5,
+      "locations": [-24, 80]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 271,
+      "angle": -32.5,
+      "locations": [-24, -80]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 0,
+      "locations": [3, 43]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -0,
+      "locations": [3, -43]
+    },
+    {
+      "id": "WS0007",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 320,
+      "angle": -180,
+      "locations": [-37.5, 15]
+    },
+    {
+      "id": "WS0008",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 320,
+      "angle": 180,
+      "locations": [-37.5, -15]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        45.5, 66,
+        33.5, 28.5
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        29.5, -27.5,
+        47, -64
+      ]
+    },
+    {
+      "id": "LB 3",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -54.5, 77.5,
+        -32.5, 106.5
+      ]
+    },
+    {
+      "id": "LB 4",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -54.5, -72.5,
+        -32, -100
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-65, 49],
+      "length": 80.5,
+      "width": 15,
+      "angle": 180,
+      "contrailSize": 15,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-65, -49],
+      "length": 80.5,
+      "width": 15,
+      "angle": -180,
+      "contrailSize": 15,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-53.5, 40.5],
+      "length": 76.5,
+      "width": 13,
+      "angle": 180,
+      "contrailSize": 13,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-53.5, -40.5],
+      "length": 76.5,
+      "width": 13,
+      "angle": -180,
+      "contrailSize": 13,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-25.5, 145.5],
+      "length": 4.81,
+      "width": 20.01,
+      "angle": -157.5,
+      "contrailSize": 20.01,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-25.5, -145.5],
+      "length": 4.81,
+      "width": 20.01,
+      "angle": 157.5,
+      "contrailSize": 20.01,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -52, -13,
+    -34, -30.5,
+    -92.5, -71.5,
+    -49, -130,
+    -25.5, -137.5,
+    -26.5, -168,
+    20.5, -166.5,
+    93.5, -122.5,
+    73.5, -104,
+    78, -73,
+    54, -20.5,
+    54, 20.5,
+    78, 73,
+    73.5, 104,
+    93.5, 122.5,
+    20.5, 166.5,
+    -26.5, 168,
+    -25.5, 137.5,
+    -49, 130,
+    -92.5, 71.5,
+    -34, 30.5,
+    -52, 13
+  ]
+}
