@@ -6,9 +6,6 @@
   "size": "LARGE",
   "turretSprite": "graphics/weapons/vol_surik_turret_base.png",
   "hardpointSprite": "graphics/weapons/vol_surik_hardpoint_base.png",
-  "renderHints": [
-    RENDER_LOADED_MISSILES
-  ],
   "turretOffsets": [
     18.5,
     0
