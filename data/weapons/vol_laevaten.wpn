@@ -1,0 +1,61 @@
+{
+  "id": "vol_laevaten",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "turretSprite": "graphics/weapons/vol_laevaten_turret_base.png",
+  "turretGlowSprite": "graphics/weapons/vol_laevaten_turret_glow.png",
+  "hardpointSprite": "graphics/weapons/vol_laevaten_hardpoint_base.png",
+  "hardpointGlowSprite": "graphics/weapons/vol_laevaten_hardpoint_glow.png",
+  "glowColor": [
+    135,
+    125,
+    255,
+    255
+  ],
+  "hitGlowRadius": 0,
+  "turretOffsets": [
+    46,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    46,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "fringeColor": [
+    135,
+    125,
+    255,
+    255
+  ],
+  "coreColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "width": 20,
+  "textureType": [
+    "graphics/fx/vol_laevaten_beam.png",
+    "graphics/fx/vol_laevaten_beam.png"
+  ],
+  "textureScrollSpeed": 10,
+  "pixelsPerTexel": 5,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER,
+    MISSILE_FF,
+    MISSILE_NO_FF
+  ],
+  "fireSoundOne": "laser_intro",
+  "fireSoundTwo": "laser_loop"
+}
