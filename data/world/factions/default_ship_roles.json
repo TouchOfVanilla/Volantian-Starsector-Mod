@@ -22,7 +22,8 @@
 		"volantian_chromatic_standard": 10,
 		"volantian_cobalt_standard": 10,
 		"volantian_gauntlet_standard": 10,
-		"volantian_chromatic_vri_standard": 10
+		"volantian_chromatic_vri_standard": 10,
+		"volantian_pelta_standard": 10
 	},
 	"combatCapital": {
 		"volantian_radiant_standard": 10,
@@ -47,13 +48,15 @@
 		"volantian_cestus_standard": 10
 	},
 	"carrierLarge": {
-		"volantian_gauntlet_standard": 10
+		"volantian_gauntlet_standard": 10,
+		"volantian_pelta_standard": 10
 	},
 	"phaseSmall": {
 	},
 	"phaseMedium": {
 	},
 	"phaseLarge": {
+		"volantian_cuchulainn_standard":10
 
 	},
 	"phaseCapital": {
