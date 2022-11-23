@@ -6,7 +6,6 @@
 	"version":"1.0.0",
 	"description":"Le funny cat.",
     "gameVersion": "0.95.1a-RC6",
-    "modPlugin":"data.scripts.VRI_ModPlugin",
   	"jars":["jars/vri.jar"],
     "modPlugin": "data.scripts.VRI_ModPlugin",
   "dependencies": [

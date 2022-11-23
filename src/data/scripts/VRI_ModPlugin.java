@@ -28,11 +28,11 @@ public class VRI_ModPlugin extends BaseModPlugin {
     public void onGameLoad(boolean wasEnabledBefore) {
         boolean loadIntoExistingSave = MagicSettings.getBoolean("TouchOfVanilla_vri", "loadIntoExistingSave");
         if (loadIntoExistingSave) {
-            boolean isVRIEnabled = MagicSettings.getBoolean("TouchOfVanilla_vri", "enableVRIFaction");
+
             boolean haveNexerelin = Global.getSettings().getModManager().isModEnabled("nexerelin");
             Map<String, Object> data = Global.getSector().getPersistentData();
 
-            if ((!haveNexerelin || SectorManager.getManager().isCorvusMode()) && isVRIEnabled && !data.containsKey("VRI_generated")) {
+            if ((!haveNexerelin || SectorManager.getManager().isCorvusMode()) && !data.containsKey("VRI_generated")) {
                 new VRIGen().generate(Global.getSector());
                 data.put("VRI_generated", "Version 1.0");
             }
