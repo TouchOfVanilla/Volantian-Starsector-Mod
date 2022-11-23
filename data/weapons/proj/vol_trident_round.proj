@@ -1,0 +1,16 @@
+{
+	"id":"vol_trident_round",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":180.0,
+	"width":9.5,
+	"fadeTime":0.3,
+	"fringeColor":[255,10,70,255],
+	"coreColor":[255,25,75,255],
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"passThroughMissiles":true,
+	"bulletSprite":"graphics/missiles/vol_trident_round.png"
+}
