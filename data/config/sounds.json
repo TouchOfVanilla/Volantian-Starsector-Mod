@@ -32,5 +32,12 @@
 		{"file": "sounds/vol_surik_fire.ogg", "pitch": 1, "volume": 1},
 		{"file": "sounds/vol_surik_fire.ogg", "pitch": 1.05, "volume": 1},
 		{"file": "sounds/vol_surik_fire.ogg", "pitch": 1.1, "volume": 1},
-	]
+	],
+	"vol_trident_fire":[
+		{"file": "sounds/vol_trident_fire_01.ogg", "pitch": 0.9, "volume": 1},
+		{"file": "sounds/vol_trident_fire_01.ogg", "pitch": 0.95, "volume": 1},
+		{"file": "sounds/vol_trident_fire_01.ogg", "pitch": 1, "volume": 1},
+		{"file": "sounds/vol_trident_fire_01.ogg", "pitch": 1.05, "volume": 1},
+		{"file": "sounds/vol_trident_fire_01.ogg", "pitch": 1.1, "volume": 1},
+]
 }
