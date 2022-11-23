@@ -7,7 +7,8 @@
 	"description":"Le funny cat.",
     "gameVersion": "0.95.1a-RC6", 
   	"jars":["jars/vri.jar"],
-	  	"dependencies": [
+    "modPlugin": "data.scripts.VRI_ModPlugin",
+  "dependencies": [
         #{
         #    "id": "lw_lazylib",
         #    "name": "LazyLib",
