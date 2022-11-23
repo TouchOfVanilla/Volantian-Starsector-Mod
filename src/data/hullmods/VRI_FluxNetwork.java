@@ -48,8 +48,8 @@ public class VRI_FluxNetwork extends BaseHullMod {
 		stats.getShieldDamageTakenMult().modifyMult(spec.getId(), 1f-shieldeff);
 
 		if (ship == Global.getCombatEngine().getPlayerShip()) {
-			Global.getCombatEngine().maintainStatusForPlayerShip("fluxnetworkwpn", "graphics/icons/hullsys/fortress_shield.png", "Weapon Eff ", "+" + wpneff + "%", false);
-			Global.getCombatEngine().maintainStatusForPlayerShip("fluxnetworkshld", "graphics/icons/hullsys/fortress_shield.png", "Shield Eff ", "+" + shieldeff + "%", false);
+			Global.getCombatEngine().maintainStatusForPlayerShip("fluxnetworkwpn", "graphics/icons/hullsys/fortress_shield.png", "Weapon Eff ", "+" + wpneff*100f + "%", false);
+			Global.getCombatEngine().maintainStatusForPlayerShip("fluxnetworkshld", "graphics/icons/hullsys/fortress_shield.png", "Shield Eff ", "+" + shieldeff*100f + "%", false);
 		}
 	}
 
