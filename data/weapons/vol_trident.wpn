@@ -1,13 +1,12 @@
 {
-  "id": "gauss",
+  "id": "vol_trident",
   "specClass": "projectile",
   "projectileSpecId": "vol_trident_round",
-  "type": "BALLISTIC",
-  "size": "LARGE",
+  "type": "HYBRID",
+  "size": "MEDIUM",
   "displayArcRadius": 1200,
   "turretSprite": "graphics/weapons/vol_trident_turret_base.png",
   "turretGlowSprite": "graphics/weapons/vol_trident_turret_base_glow.png",
-  "turretGunSprite": "graphics/weapons/vol_trident_turret_base.png",
   "hardpointSprite": "graphics/weapons/vol_trident_hardpoint_base.png",
   "hardpointGlowSprite": "graphics/weapons/vol_trident_hardpoint_base_glow.png",
   "glowColor": [
