@@ -68,7 +68,7 @@
 		],
 	},
 	"knownWeapons":{
-		"tags":["base_bp", "lowtech_bp", "midline_bp", "hightech_bp", "missile_bp", "remnant"],
+		"tags":["base_bp", "lowtech_bp", "midline_bp", "hightech_bp", "missile_bp", "remnant", "VRI_bp"],
 		"weapons":[
 			"lightneedler",
 			"railgun",
@@ -99,7 +99,7 @@
 		],
 	},
 	"priorityWeapons":{
-		"tags":[],
+		"tags":["VRI_bp"],
 		"weapons":[vol_cryocannon
 		],
 	},
