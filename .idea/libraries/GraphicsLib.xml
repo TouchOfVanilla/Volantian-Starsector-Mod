@@ -1,10 +1,10 @@
 <component name="libraryTable">
   <library name="GraphicsLib">
     <CLASSES>
-      <root url="jar://$USER_HOME$/Documents/Starsector/mods/GraphicsLib/jars/Graphics.jar!/" />
+      <root url="jar://D:/Games/Starsector/mods/GraphicsLib/jars/Graphics.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="file://$USER_HOME$/Documents/Starsector/mods/GraphicsLib/javadoc" />
+      <root url="file://D:/Games/Starsector/mods/GraphicsLib/javadoc" />
     </JAVADOC>
     <SOURCES />
   </library>
