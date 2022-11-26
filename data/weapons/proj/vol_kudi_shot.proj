@@ -1,0 +1,33 @@
+{
+	"id":"vol_kudi_shot",
+	"specClass":"projectile",
+	# "onHitEffect":"",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":30.0,
+	"width":20.0,
+	"hitGlowRadius":10,
+	"fadeTime":0.3,
+	"fringeColor":[40,250,245,255],
+	"coreColor":[255,255,255,200],
+	"textureType":"SMOOTH",  # only needed for BEAM spawnType
+	"textureScrollSpeed":-256,
+	"pixelsPerTexel":5.0,
+	"passThroughMissiles":true,
+	"behaviorSpec":{"behavior":"PROXIMITY_FUSE",
+    					"range":35,
+    					#"vsMissileRange":100,
+    					"explosionSpec":{"duration":0.1f,
+    									 "radius":50,
+    									 "coreRadius":35, # full damage within core radius - also equal to proximity fuse range
+    									 "collisionClass":PROJECTILE_FF,
+    									 "collisionClassByFighter":PROJECTILE_FIGHTER,
+    									 "particleSizeMin":3.0,
+    									 "particleSizeRange":3.0,
+    									 "particleDuration":1,
+    									 "particleCount":100,
+    									 "particleColor":[255,155,155,255],
+    									 "sound":"explosion_flak"},
+    					}
+}

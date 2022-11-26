@@ -11,6 +11,9 @@
   "hardpointGlowSprite": "graphics/weapons/vol_harpecannon_hardpoint_glow.png",
   "hardpointGunSprite": "graphics/weapons/vol_harpecannon_hardpoint_recoil.png",
   "visualRecoil":3.0,  # the gun sprites are only used if this is non-0
+  "renderHints": [
+      "RENDER_BARREL_BELOW"
+    ],
   "glowColor": [
     135,
     0,
