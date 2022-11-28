@@ -34,11 +34,11 @@
 		{"file": "sounds/vol_surik_fire.ogg", "pitch": 1.1, "volume": 1},
 	],
 	"vol_trident_fire":[
-		{"file": "sounds/vol_trident_fire_01.ogg", "pitch": 0.9, "volume": 1},
-		{"file": "sounds/vol_trident_fire_01.ogg", "pitch": 0.95, "volume": 1},
-		{"file": "sounds/vol_trident_fire_01.ogg", "pitch": 1, "volume": 1},
-		{"file": "sounds/vol_trident_fire_01.ogg", "pitch": 1.05, "volume": 1},
-		{"file": "sounds/vol_trident_fire_01.ogg", "pitch": 1.1, "volume": 1},
+		{"file": "sounds/vol_trident_fire.ogg", "pitch": 0.9, "volume": 1},
+		{"file": "sounds/vol_trident_fire.ogg", "pitch": 0.95, "volume": 1},
+		{"file": "sounds/vol_trident_fire.ogg", "pitch": 1, "volume": 1},
+		{"file": "sounds/vol_trident_fire.ogg", "pitch": 1.05, "volume": 1},
+		{"file": "sounds/vol_trident_fire.ogg", "pitch": 1.1, "volume": 1},
 	],
 	"vol_kudi_fire":[
 		{"file": "sounds/vol_kudi_fire.ogg", "pitch": 0.9, "volume": 1},
@@ -60,5 +60,33 @@
 		{"file": "sounds/vol_kastane_fire.ogg", "pitch": 1, "volume": 1},
 		{"file": "sounds/vol_kastane_fire.ogg", "pitch": 1.05, "volume": 1},
 		{"file": "sounds/vol_kastane_fire.ogg", "pitch": 1.1, "volume": 1},
+	],
+	"vol_tekkocannon_fire":[
+		{"file": "sounds/vol_tekkocannon_fire.ogg", "pitch": 0.9, "volume": 1},
+		{"file": "sounds/vol_tekkocannon_fire.ogg", "pitch": 0.95, "volume": 1},
+		{"file": "sounds/vol_tekkocannon_fire.ogg", "pitch": 1, "volume": 1},
+		{"file": "sounds/vol_tekkocannon_fire.ogg", "pitch": 1.05, "volume": 1},
+		{"file": "sounds/vol_tekkocannon_fire.ogg", "pitch": 1.1, "volume": 1},
+	],
+	"vol_monoblade_fire":[
+		{"file": "sounds/vol_monoblade_fire.ogg", "pitch": 0.9, "volume": 1},
+		{"file": "sounds/vol_monoblade_fire.ogg", "pitch": 0.95, "volume": 1},
+		{"file": "sounds/vol_monoblade_fire.ogg", "pitch": 1, "volume": 1},
+		{"file": "sounds/vol_monoblade_fire.ogg", "pitch": 1.05, "volume": 1},
+		{"file": "sounds/vol_monoblade_fire.ogg", "pitch": 1.1, "volume": 1},
+	],
+	"vol_monoblade_charge":[
+		{"file": "sounds/vol_monoblade_charge.ogg", "pitch": 0.9, "volume": 1},
+		{"file": "sounds/vol_monoblade_charge.ogg", "pitch": 0.95, "volume": 1},
+		{"file": "sounds/vol_monoblade_charge.ogg", "pitch": 1, "volume": 1},
+		{"file": "sounds/vol_monoblade_charge.ogg", "pitch": 1.05, "volume": 1},
+		{"file": "sounds/vol_monoblade_charge.ogg", "pitch": 1.1, "volume": 1},
+	],
+	"vol_monoblade_impact":[
+		{"file": "sounds/vol_monoblade_impact.ogg", "pitch": 0.9, "volume": 1},
+		{"file": "sounds/vol_monoblade_impact.ogg", "pitch": 0.95, "volume": 1},
+		{"file": "sounds/vol_monoblade_impact.ogg", "pitch": 1, "volume": 1},
+		{"file": "sounds/vol_monoblade_impact.ogg", "pitch": 1.05, "volume": 1},
+		{"file": "sounds/vol_monoblade_impact.ogg", "pitch": 1.1, "volume": 1},
 	]
 }

@@ -1,0 +1,19 @@
+{
+	"id":"vol_monoblade_shot",
+	"specClass":"projectile",
+	"onHitEffect":"data.weapons.scripts.VRI_weapon_monoblade",
+	"onFireEffect": "data.weapons.scripts.VRI_weapon_monoblade",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":60.0,
+	"width":70.0,
+	"hitGlowRadius":40,
+	"fadeTime":0.1,
+	"fringeColor":[200,0,0,255],
+	"coreColor":[255,0,0,200],
+	"textureType":"SMOOTH",  # only needed for BEAM spawnType
+	"textureScrollSpeed":-256,
+	"pixelsPerTexel":2.0,
+	"passThroughMissiles":true,
+}
