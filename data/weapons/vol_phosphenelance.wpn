@@ -54,6 +54,6 @@
     MISSILE_FF,
     MISSILE_NO_FF
   ],
-  "fireSoundOne": "laser_intro",
-  "fireSoundTwo": "laser_loop"
+  "fireSoundOne": "vol_phosphene_fire",
+  "fireSoundTwo": "vol_phosphene_loop"
 }

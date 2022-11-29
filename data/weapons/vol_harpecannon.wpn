@@ -51,5 +51,6 @@
       100
     ]
   },
-  "fireSoundTwo": "cryoblaster_fire"
+  "fireSoundOne": "vol_harpe_charge",
+  "fireSoundTwo": "vol_harpe_fire"
 }

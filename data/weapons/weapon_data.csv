@@ -1,22 +1,22 @@
 name,id,tier,rarity,base value,range,damage/second,damage/shot,emp,impact,turn rate,OPs,ammo,ammo/sec,reload size,type,energy/shot,energy/second,chargeup,chargedown,burst size,burst delay,min spread,max spread,spread/shot,spread decay/sec,beam speed,proj speed,launch speed,flight time,proj hitpoints,autofireAccBonus,extraArcForAI,hints,tags,groupTag,tech/manufacturer,for weapon tooltip>>,primaryRoleStr,speedStr,trackingStr,turnRateStr,accuracyStr,customPrimary,customPrimaryHL,customAncillary,customAncillaryHL,noDPSInTooltip,number
 tastethesun,volantian_flashbang_sys,1,,1000,2000,0,0,10000,0,0,0,1,0.01,1,KINETIC,1,,5,1,1,0,0,0,0,0,,0,,,,,,DO_NOT_AIM,midline_bp,,,,,,,,,,,,,,
-Cryonic Pulse Cannon,vol_cryocannon,3,,10000,1000,,250,,0,10,22,15,1,3,ENERGY,150,,0,0.2,3,0.1,0,10,2,5,,1000,,,,,,CONSERVE_1,"VRI_bp, energy5",,,,General,,,,,,,,,,40
-Clover Driver Cannon,vol_clovercannon,2,,2500,700,,120,20,0,20,11,,,,ENERGY,130,,0.6,0,2,0.2,,,,,,900,,,,,,,"VRI_bp, energy7",,,,General,,,,,Create an explosion dealing %s Fragmentation damage on the %s hit,300 | 10th,,,,69
-Harpe Cannon,vol_harpecannon,2,,3000,900,,320,,0,15,13,,,,KINETIC,400,,0.3,1.5,1,0,0,5,2,5,,1200,,,,,,,"VRI_bp, kinetic5",,,,Anti Shield,,,,,,,,,,70
-Tekko Cannon,vol_tekkocannon,1,,200,250,,20,,1,75,4,,,,FRAGMENTATION,2,,0,0.1,3,0.01,0,10,1,5,,900,,,,,,PD,"VRI_bp, pd7",,,,Point Defense,,,,,,,,,,71
-Pata Autocannon,vol_pataautocannon,1,,400,600,,25,,1,40,5,,,,ENERGY,25,,0,0.25,2,0,0,3,1,5,,800,,,,,,,"VRI_bp, energy3",,,,General,,,,,,,,,,72
-Phosphene Lance,vol_phosphenelance,3,,10000,1000,1700,,300,0,15,25,,,,ENERGY,,1900,0.3,1.25,1,5,,,,,10000,,,,,,,,"VRI_bp, beam10",,,,Strike,,,,,"On hit, triggering an explosion dealing %s Fragmentation damage",1000,,,,73
+Cryonic Pulse Cannon,vol_cryocannon,3,,10000,1000,,250,,40,10,22,15,1,3,ENERGY,150,,0,0.2,3,0.1,0,10,2,5,,1000,,,,,,CONSERVE_1,"VRI_bp, energy21",,,,General,,,,,,,,,,40
+Clover Driver Cannon,vol_clovercannon,2,,2500,700,,120,20,30,20,11,,,,ENERGY,130,,0.6,0,2,0.2,,,,,,900,,,,,,,"VRI_bp, energy8",,,,General,,,,,Create an explosion dealing %s Fragmentation damage on the %s hit,300 | 10th,,,,69
+Harpe Cannon,vol_harpecannon,2,,3000,900,,320,,10,15,13,,,,KINETIC,400,,0.3,1.5,1,0,0,5,2,5,,1200,,,,,,,"VRI_bp, kinetic5",,,,Anti Shield,,,,,,,,,,70
+Tekko Cannon,vol_tekkocannon,1,,200,250,,20,,20,75,4,,,,FRAGMENTATION,2,,0,0.1,3,0.01,0,10,1,5,,900,,,,,,PD,"VRI_bp, pd7",,,,Point Defense,,,,,,,,,,71
+Pata Autocannon,vol_pataautocannon,1,,400,600,,25,,20,40,5,,,,ENERGY,25,,0,0.25,2,0,0,3,1,5,,800,,,,,,,"VRI_bp, energy3",,,,General,,,,,,,,,,72
+Phosphene Lance,vol_phosphenelance,3,,10000,1000,1700,,300,60,15,25,,,,ENERGY,,1900,0.3,1.25,1,5,,,,,10000,,,,,,,,"VRI_bp, energy21, beam21",,,,Strike,,,,,"On hit, triggering an explosion dealing %s Fragmentation damage",1000,,,,73
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Lucern launcher,vol_lucern,1,,3000,2000,,1000,,15,15,10,12,,,ENERGY,0,,0,8,4,0.25,0,0,0,0,,300,100,8,150,,,STRIKE,"VRI_bp, missile6, LR",,,,Strike,Fast,Poor,,,,,,,TRUE,74
 Katti MRM (Double),vol_katti,1,,150,1500,,1500,,20,10,3,2,,,ENERGY,0,,0,1,1,0,0,0,0,0,,100,40,4,350,,,STRIKE,"VRI_bp, strike8",,,,Strike,Medium,None,,,Second-stage hits on hull or armor create additional explosion dealing %s High Explosive damage,700,,,TRUE,75
 Katti Barrage,vol_kattibarrage,1,,1500,1500,,1500,,30,10,22,20,,,ENERGY,0,,0,5,4,0.2,0,0,0,0,,100,40,4,350,,,STRIKE,"VRI_bp, strike9",,,,Strike,Medium,None,,,Second-stage hits on hull or armor create additional explosion dealing %s High Explosive damage,700,,,TRUE,76
 Surik MIRV,vol_surik,1,,5000,2000,,800,150,40,10,27,10,,,ENERGY,0,,0,8,1,0,0,0,0,0,,300,40,12,350,,,"DO_NOT_AIM, CONSERVE_5","VRI_bp, utility7, LR",,,,Torpedo,Medium,Good,,,,,,,TRUE,77
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Laevaten Ion Caster,vol_laevaten,1,,10000,900,2600,,3500,0,10,27,3,0.5,3,ENERGY,,3500,0,0.2,0.2,0.4,0,0,0,0,10000,,,,,,,"STRIKE, DO_NOT_CONSERVE","VRI_bp, beam8",,,,Disabler,,,,,,,,,,78
+Laevaten Ion Caster,vol_laevaten,1,,10000,900,2600,,3500,0,10,27,3,0.5,3,ENERGY,,3500,0,0.2,0.2,0.4,0,0,0,0,10000,,,,,,,"STRIKE, DO_NOT_CONSERVE","VRI_bp, energy20, beam21",,,,Disabler,,,,,,,,,,78
 Trident Railgun,vol_trident,3,,5000,1100,,175,,100,20,16,,,,KINETIC,220,,0.35,1,1,,0,3,1,2,,1600,,,,,,,"VRI_bp, kinetic8, LR",,,,Anti Shield,,,,,Hits on hull or armor trigger a secondary explosive payload dealing %s High Explosive damage,75,,,,79
 Kudi Cannon,vol_kudi,1,,1000,500,,80,,10,40,8,,,,ENERGY,75,,0,0.8,1,,2,10,1,10,,700,,,,,,PD,"VRI_bp, pd8",,,,Point Defense,,,,,,,,,,80
 Quad Opalescent PD System,vol_opalescent,1,,5000,700,,80,,20,35,20,,,,ENERGY,100,,0,0.35,2,0.05,0,0,0,0,,1000,,,,,,"PD, ANTI_FTR","VRI_bp, pd19",,,,Point Defense,,,,,,,,,,81
-Duel Kastane Blaster,vol_kastane,1,,3000,800,,50,500,10,20,12,,,,ENERGY,100,,0.8,0,2,0.5,2,8,1,3,,300,,,,,,STRIKE,"VRI_bp, energy8",,,,Disabler,,,,,Fires slow moving projectiles,,,,,82
+Duel Kastane Blaster,vol_kastane,1,,3000,800,,50,500,10,20,12,,,,ENERGY,100,,0.8,0,2,0.5,2,8,1,3,,300,,,,,,STRIKE,"VRI_bp, energy7",,,,Disabler,,,,,Fires slow moving projectiles,,,,,82
 Monoblade Plasma Driver,vol_monoblade,1,,8000,1200,,1700,,30,10,28,,,,FRAGMENTATION,900,,0.8,3.4,1,0,0,0,0,0,,3000,,,,,,STRIKE,"VRI_bp, energy20",,,,Finisher,Extreme,,,,,,,,,83
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
