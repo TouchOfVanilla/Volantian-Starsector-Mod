@@ -1,0 +1,62 @@
+{
+  "id": "vol_halon",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "MEDIUM",
+  "collisionClass": "RAY_FIGHTER",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "turretSprite": "graphics/weapons/vol_halon_turret_base.png",
+  "turretGlowSprite": "graphics/weapons/vol_halon_turret_glow.png",
+  "hardpointSprite": "graphics/weapons/vol_halon_hardpoint_base.png",
+  "hardpointGlowSprite": "graphics/weapons/vol_halon_hardpoint_glow.png",
+  "glowColor": [
+    255,
+    175,
+    0,
+    255
+  ],
+  "hitGlowRadius": 0,
+  "turretOffsets": [
+    29,
+    -6,
+    29,
+    6
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    29,
+    -6,
+    29,
+    6
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "fringeColor": [
+    255,
+    175,
+    0,
+    225
+  ],
+  "coreColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "width": 5,
+  "darkCore":false,
+  "textureType": SMOOTH,
+  "textureScrollSpeed": 72,
+  "pixelsPerTexel": 5,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER
+  ],
+  "fireSoundOne": "guardian_pd_fire"
+}
