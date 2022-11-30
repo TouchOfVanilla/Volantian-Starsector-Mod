@@ -1,0 +1,55 @@
+{
+  "variantId": "volantian_claymore_assault",
+  "hullId": "volantian_claymore",
+  "displayName": "Assault",
+  "goalVariant": false,
+  "fluxCapacitors": 19,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "missleracks",
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "vol_surik"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "vol_surik"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "vol_tekkocannon",
+        "WS0007": "vol_tekkocannon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "vol_harpecannon",
+        "WS0002": "vol_harpecannon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "vol_kudi"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}
