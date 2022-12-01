@@ -42,6 +42,23 @@ public class VRI_missle_lucern implements OnHitEffectPlugin{
                     0.3f,
                     0.8f
             );
+
+            if (shieldHit) {
+                engine.spawnEmpArcPierceShields(
+                        projectile.getSource(),
+                        point,
+                        projectile.getDamageTarget(),
+                        projectile.getDamageTarget(),
+                        DamageType.ENERGY,
+                        0,
+                        200,
+                        100000,
+                        "tachyon_lance_emp_impact",
+                        10f,
+                        new Color(250, 0, 210, 255),
+                        new Color(255, 255, 255, 255)
+                );
+            }
         }
     }
 }

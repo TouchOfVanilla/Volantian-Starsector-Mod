@@ -1,0 +1,51 @@
+{
+  "variantId": "volantian_fury_assaults",
+  "hullId": "volantian_fury",
+  "displayName": "Assault",
+  "goalVariant": false,
+  "fluxCapacitors": 6,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxdistributor",
+    "hardenedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 001": "vol_lucern",
+        "WS 002": "vol_lucern"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 000": "vol_clovercannon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "vol_pataautocannon",
+        "WS 004": "vol_pataautocannon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 005": "vol_tekkocannon",
+        "WS 006": "vol_tekkocannon",
+        "WS 007": "vol_tekkocannon",
+        "WS 008": "vol_tekkocannon"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

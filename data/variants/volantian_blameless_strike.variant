@@ -1,0 +1,69 @@
+{
+  "variantId": "volantian_blameless_strike",
+  "hullId": "volantian_blameless",
+  "displayName": "Strike",
+  "goalVariant": false,
+  "fluxCapacitors": 12,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "hardenedshieldemitter",
+    "heavyarmor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 014": "vol_lucern",
+        "WS 016": "vol_lucern"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "vol_kattibarrage"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "vol_cryocannon",
+        "WS0004": "vol_cryocannon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "vol_tekkocannon",
+        "WS0006": "vol_tekkocannon",
+        "WS0013": "vol_tekkocannon",
+        "WS0014": "vol_tekkocannon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "vol_kudi",
+        "WS0012": "vol_kudi"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": []
+}
