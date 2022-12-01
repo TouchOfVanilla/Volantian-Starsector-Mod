@@ -3,6 +3,7 @@
   "specClass": "beam",
   "type": "ENERGY",
   "size": "LARGE",
+  "beamEffect": "data.weapons.scripts.VRI_weapon_laevaten",
   "collisionClass": "RAY",
   "collisionClassByFighter": "RAY_FIGHTER",
   "turretSprite": "graphics/weapons/vol_laevaten_turret_base.png",
@@ -56,6 +57,6 @@
     MISSILE_FF,
     MISSILE_NO_FF
   ],
-  "fireSoundOne": "laser_intro",
-  "fireSoundTwo": "laser_loop"
+  "fireSoundOne": "vol_laevaten_fire",
+  "fireSoundTwo": "vol_laevaten_loop"
 }

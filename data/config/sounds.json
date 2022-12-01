@@ -130,5 +130,19 @@
 		{"file": "sounds/vol_pataautocannon_fire.ogg", "pitch": 1, "volume": 1},
 		{"file": "sounds/vol_pataautocannon_fire.ogg", "pitch": 1.05, "volume": 1},
 		{"file": "sounds/vol_pataautocannon_fire.ogg", "pitch": 1.1, "volume": 1},
+	],
+	"vol_laevaten_fire":[
+		{"file": "sounds/vol_laevaten_fire.ogg", "pitch": 0.9, "volume": 1},
+		{"file": "sounds/vol_laevaten_fire.ogg", "pitch": 0.95, "volume": 1},
+		{"file": "sounds/vol_laevaten_fire.ogg", "pitch": 1, "volume": 1},
+		{"file": "sounds/vol_laevaten_fire.ogg", "pitch": 1.05, "volume": 1},
+		{"file": "sounds/vol_laevaten_fire.ogg", "pitch": 1.1, "volume": 1},
+	],
+	"vol_laevaten_loop":[
+		{"file": "sounds/vol_laevaten_loop.ogg", "pitch": 0.9, "volume": 1},
+		{"file": "sounds/vol_laevaten_loop.ogg", "pitch": 0.95, "volume": 1},
+		{"file": "sounds/vol_laevaten_loop.ogg", "pitch": 1, "volume": 1},
+		{"file": "sounds/vol_laevaten_loop.ogg", "pitch": 1.05, "volume": 1},
+		{"file": "sounds/vol_laevaten_loop.ogg", "pitch": 1.1, "volume": 1},
 	]
 }
