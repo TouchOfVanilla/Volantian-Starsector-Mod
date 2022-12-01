@@ -8,7 +8,7 @@
 	"combatMedium": {
 		"volantian_sunder_standard": 10,
 		"volantian_lancet_standard": 10,
-		"volantian_illuminator_standard": 10,
+		"volantian_illuminator_standard": 10, "volantian_illuminator_assault": 10,
 		"volantian_cestus_standard": 10,
 		"volantian_medusa_standard": 10,
 		"volantian_incursor_standard": 10,
@@ -16,17 +16,17 @@
 		"volantian_lancet_xiv_standard":10
 	},
 	"combatLarge": {
-		"volantian_blameless_standard": 10,
-		"volantian_fury_standard": 10,
-		"volantian_claymore_standard": 10,
+		"volantian_blameless_standard": 10, "volantian_blameless_strike": 10,
+		"volantian_fury_standard": 10, "volantian_fury_assaults": 10,
+		"volantian_claymore_standard": 10, "volantian_claymore_assault": 10,
 		"volantian_chromatic_standard": 10,
-		"volantian_cobalt_standard": 10,
-		"volantian_gauntlet_standard": 10,
-		"volantian_chromatic_vri_standard": 10,
+		"volantian_cobalt_standard": 10, "volantian_cobalt_strike": 10,
+		"volantian_gauntlet_standard": 10, "volantian_gauntlet_assault": 10, "volantian_gauntlet_support": 10,
+		"volantian_chromatic_vri_standard": 10, "volantian_chromatic_vri_strike": 10,
 		"volantian_pelta_standard": 10
 	},
 	"combatCapital": {
-		"volantian_radiant_standard": 10,
+		"volantian_radiant_standard": 10, "volantian_radiant_strike": 10,
 		"volantian_shamshir_standard": 10
 	},
 	"combatFreighterSmall": {
@@ -35,20 +35,20 @@
 		"volantian_incursor_standard": 10
 	},
 	"combatFreighterLarge": {
-		"volantian_claymore_standard": 10
+		"volantian_claymore_standard": 10, "volantian_claymore_assault": 10
 	},
 	"civilianRandom": {
 		"volantian_kite_standard": 10
 	},
 	"carrierSmall": {
 		"volantian_shepherd_standard": 10,
-		"volantian_virtuous_standard": 10
+		"volantian_virtuous_standard": 10, "volantian_virtuous_assault": 10
 	},
 	"carrierMedium": {
 		"volantian_cestus_standard": 10
 	},
 	"carrierLarge": {
-		"volantian_gauntlet_standard": 10,
+		"volantian_gauntlet_standard": 10, "volantian_gauntlet_assault": 10, "volantian_gauntlet_support": 10,
 		"volantian_pelta_standard": 10
 	},
 	"phaseSmall": {

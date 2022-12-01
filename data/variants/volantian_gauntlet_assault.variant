@@ -4,7 +4,7 @@
   "displayName": "Assault",
   "goalVariant": false,
   "fluxCapacitors": 30,
-  "fluxVents": 2,
+  "fluxVents": 1,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
@@ -55,8 +55,8 @@
   ],
   "modules": [],
   "wings": [
-    "thunder_wing",
-    "broadsword_wing",
-    "broadsword_wing"
+    "claw_wing",
+    "claw_wing",
+    "claw_wing"
   ]
 }
