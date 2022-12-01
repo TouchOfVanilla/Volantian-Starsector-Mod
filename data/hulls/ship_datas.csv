@@ -28,7 +28,7 @@ Cuchulainn (VRI),volantian_cuchulainn,Phase Cruiser,Volantian,displacer,20,7000,
 Wolf (VRI),volantian_wolf,Frigate,Volantian,displacer,5,1500,150,2250,1875,150,55,,150,130,100,60,120,200,FRONT,,150,0.4,0.8,,,15,30,50,20,1,20,10,12000,10,20,180,0.25,5,5,,,,,,,COMBAT,"VRI_bp, merc",,0.5,2,2,,200
 Lancet (XIV),volantian_lancet_xiv,Fast Destroyer,XIV Battlegroup,ammofeed,9,2800,750,6400,5833,550,105,,100,100,80,35,80,250,FRONT,,160,0.3,0.7,,,20,40,40,60,2,30,10,20000,5,15,300,0.25,8,8,,,,,,,COMBAT,XIV_bp,1,0.7,2,3,,319
 Pelta,volantian_pelta,Support Carrier,Volantian,damper,15,10000,1250,4000,4000,200,125,4,45,20,10,10,10,2000,OMNI,,150,0.4,1,,,200,300,100,60,4,15,8,125000,4,12,420,0.25,20,20,,,,,,,"CARRIER, COMBAT, NO_AUTO_ESCORT","VRI_bp, merc",,0.4,2,3,,410
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Lancet (LT),volantian_lancet_lt,Long-Range Destroyer,Low Tech,ammofeed,9,2800,750,6400,5833,550,105,,100,100,80,35,80,250,FRONT,,160,0.3,0.7,,,20,40,40,60,2,30,10,20000,5,15,300,0.25,8,8,,,,,,,COMBAT,lt_bp,1,0.7,2,3,,319
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #funny reamnante shieeps,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
