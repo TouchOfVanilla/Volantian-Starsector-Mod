@@ -12,7 +12,6 @@
   "shieldRadius": 178,
   "viewOffset": 0,
   "builtInMods": [
-    "advancedoptics",
     "delicate",
     "high_maintenance",
     "VRI_FluxNetwork",

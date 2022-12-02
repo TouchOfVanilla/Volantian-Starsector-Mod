@@ -20,7 +20,7 @@
     {
       "id": "WS 001",
       "size": "SMALL",
-      "type": "MISSILE",
+      "type": "SYNERGY",
       "mount": "HARDPOINT",
       "arc": 6,
       "angle": 0,
@@ -29,7 +29,7 @@
     {
       "id": "WS 002",
       "size": "SMALL",
-      "type": "MISSILE",
+      "type": "SYNERGY",
       "mount": "HARDPOINT",
       "arc": 6,
       "angle": 0,
@@ -38,7 +38,7 @@
     {
       "id": "WS 003",
       "size": "SMALL",
-      "type": "BALLISTIC",
+      "type": "ENERGY",
       "mount": "TURRET",
       "arc": 200,
       "angle": 0,

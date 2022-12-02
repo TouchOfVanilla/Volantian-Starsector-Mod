@@ -8,7 +8,6 @@
   "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "extendedshieldemitter",
     "fluxdistributor",
     "hardenedshieldemitter",
     "heavyarmor"
@@ -17,27 +16,28 @@
     {
       "autofire": false,
       "mode": "LINKED",
+      "weapons": {
+        "WS 014": "vol_harpecannon",
+        "WS 016": "vol_harpecannon",
+        "WS0002": "heavyburst",
+        "WS0003": "vol_trident",
+        "WS0004": "vol_trident",
+        "WS0005": "vol_pataautocannon",
+        "WS0006": "vol_pataautocannon",
+        "WS0012": "heavyburst",
+        "WS0013": "vol_pataautocannon",
+        "WS0014": "vol_pataautocannon"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
       "weapons": {}
     },
     {
       "autofire": false,
       "mode": "LINKED",
-      "weapons": {
-        "WS 014": "pulselaser",
-        "WS 016": "pulselaser",
-        "WS0002": "pdburst",
-        "WS0012": "pdburst",
-        "WS0013": "pdburst",
-        "WS0014": "pdburst"
-      }
-    },
-    {
-      "autofire": false,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0003": "autopulse",
-        "WS0004": "autopulse"
-      }
+      "weapons": {}
     },
     {
       "autofire": false,

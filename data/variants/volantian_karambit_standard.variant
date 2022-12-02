@@ -1,14 +1,13 @@
 {
-  "variantId": "volantian_cherub_standard",
-  "hullId": "volantian_cherub",
+  "variantId": "volantian_karambit_standard",
+  "hullId": "volantian_karambit",
   "displayName": "Standard",
   "goalVariant": false,
   "fluxCapacitors": 0,
-  "fluxVents": 7,
+  "fluxVents": 5,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "augmentedengines",
     "expanded_cargo_holds"
   ],
   "weaponGroups": [
@@ -16,7 +15,10 @@
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "pdlaser"
+        "WS0001": "vol_pataautocannon",
+        "WS0002": "vol_pataautocannon",
+        "WS0003": "vol_pataautocannon",
+        "WS0004": "miningblaster"
       }
     }
   ],

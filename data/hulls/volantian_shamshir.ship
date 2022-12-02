@@ -21,7 +21,7 @@
       "size": "SMALL",
       "type": "BALLISTIC",
       "mount": "TURRET",
-      "arc": 142,
+      "arc": 143,
       "angle": 68,
       "locations": [151, 15]
     },
@@ -30,7 +30,7 @@
       "size": "SMALL",
       "type": "BALLISTIC",
       "mount": "TURRET",
-      "arc": 142,
+      "arc": 143,
       "angle": -68,
       "locations": [151, -15]
     },
@@ -39,7 +39,7 @@
       "size": "SMALL",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 152,
+      "arc": 208,
       "angle": 69.5,
       "locations": [122.5, 26.5]
     },
@@ -48,7 +48,7 @@
       "size": "SMALL",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 152,
+      "arc": 208,
       "angle": -69.5,
       "locations": [122.5, -26.5]
     },
@@ -111,7 +111,7 @@
       "size": "SMALL",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 262,
+      "arc": 161,
       "angle": 81.5,
       "locations": [-95.5, 39.5]
     },
@@ -120,7 +120,7 @@
       "size": "SMALL",
       "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 262,
+      "arc": 161,
       "angle": -81.5,
       "locations": [-95.5, -39.5]
     },

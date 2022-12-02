@@ -11,6 +11,9 @@
   "shieldCenter": [1, 1],
   "shieldRadius": 140,
   "viewOffset": 0,
+  "builtInWings": [
+    "spark_wing"
+  ],
   "weaponSlots": [
     {
       "id": "WS 002",

@@ -9,7 +9,6 @@
 		"volantian_sunder_standard": 10,
 		"volantian_lancet_standard": 10,
 		"volantian_illuminator_standard": 10, "volantian_illuminator_assault": 10,
-		"volantian_cestus_standard": 10,
 		"volantian_medusa_standard": 10,
 		"volantian_incursor_standard": 10,
 		"volantian_moray_standard": 10,
@@ -46,13 +45,15 @@
 		"volantian_virtuous_standard": 10, "volantian_virtuous_assault": 10
 	},
 	"carrierMedium": {
-		"volantian_cestus_standard": 10
+
 	},
 	"carrierLarge": {
 		"volantian_gauntlet_standard": 10, "volantian_gauntlet_assault": 10, "volantian_gauntlet_support": 10,
-		"volantian_pelta_standard": 10
+		"volantian_pelta_standard": 10,
+		"volantian_kaiken_standard":10
 	},
 	"phaseSmall": {
+		"volantian_rapture_standard": 10
 	},
 	"phaseMedium": {
 	},
@@ -66,10 +67,11 @@
 		"volantian_kite_standard": 10
 	},
 	"freighterMedium": {
+		"volantian_karambit_standard": 10
 
 	},
 	"freighterLarge": {
-		"volantian_cherub_standard": 10
+		"volantian_karambit_standard": 10
 	},
 	"tankerSmall": {
 	},

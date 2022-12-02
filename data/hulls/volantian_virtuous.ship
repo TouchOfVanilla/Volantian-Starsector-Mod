@@ -15,6 +15,9 @@
     "VRI_FluxNetwork",
     "VES"
   ],
+  "builtInWings": [
+    "terminator_wing"
+  ],
   "weaponSlots": [
     {
       "id": "WS0001",
