@@ -13,7 +13,8 @@
 		"volantian_medusa_standard": 10,
 		"volantian_incursor_standard": 10,
 		"volantian_moray_standard": 10,
-		"volantian_lancet_xiv_standard":10
+		"volantian_lancet_xiv_standard":10,
+		"volantian_lancet_lt_standard":10
 	},
 	"combatLarge": {
 		"volantian_blameless_standard": 10, "volantian_blameless_strike": 10,
