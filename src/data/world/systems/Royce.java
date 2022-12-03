@@ -3,9 +3,12 @@ package data.world.systems;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.*;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
+import com.fs.starfarer.api.campaign.econ.MarketConditionAPI;
 import com.fs.starfarer.api.campaign.econ.MarketImmigrationModifier;
 import com.fs.starfarer.api.impl.campaign.ids.*;
 import com.fs.starfarer.api.impl.campaign.population.PopulationComposition;
+import com.fs.starfarer.api.impl.campaign.procgen.PlanetConditionGenerator;
+import com.fs.starfarer.api.impl.campaign.procgen.StarAge;
 import com.fs.starfarer.api.impl.campaign.terrain.AsteroidFieldTerrainPlugin;
 import com.fs.starfarer.api.util.Misc;
 import data.world.VRIGen;
@@ -36,6 +39,8 @@ public class Royce {
         StarSystemAPI system = sector.createStarSystem("Royce");
         system.getLocation().set(23000, -17000);
         //system.setLightColor(new Color(31,247,182, 100));
+        system.setEnteredByPlayer(true);
+        Misc.setAllPlanetsSurveyed(system, true);
 
         PlanetAPI RoyceStar = system.initStar("vri_star_royce", // unique id for this star
                 "star_yellow", // id in planets.json
@@ -100,6 +105,7 @@ public class Royce {
                 true,
                 //junk and chatter
                 true);
+        Volantis_market.setSurveyLevel(MarketAPI.SurveyLevel.FULL);
 
         //Azor
         PlanetAPI Azor = system.addPlanet("vri_planet_Azor",
@@ -111,6 +117,20 @@ public class Royce {
                 200f,
                 90f);
         Azor.setCircularOrbit(Volantis, 100, azorDist,100);
+        Misc.initConditionMarket(Azor);
+        MarketAPI Azor_market = Azor.getMarket();
+        Azor_market.setPlanetConditionMarketOnly(true);
+        Azor_market.addCondition(Conditions.NO_ATMOSPHERE);
+        Azor_market.addCondition(Conditions.LOW_GRAVITY);
+        Azor_market.addCondition(Conditions.ORE_SPARSE);
+        Azor_market.addCondition(Conditions.RARE_ORE_MODERATE);
+        Azor_market.setSurveyLevel(MarketAPI.SurveyLevel.FULL);
+        Azor_market.setPrimaryEntity(Azor);
+        Azor.setMarket(Azor_market);
+        for (MarketConditionAPI mc : Azor_market.getConditions())
+        {
+            mc.setSurveyed(true);
+        }
 
         //Cryosleeper Station "Hypnos VEF-413/6
         SectorEntityToken CyrosleeperStructure = system.addCustomEntity("vri_cryosleeper", "Cryosleeper Station \"Hypnos VEF-413/6\"", "vri_cryosleeper_station", "vri");
@@ -166,6 +186,7 @@ public class Royce {
                 //junk and chatter
                 true);
         Desmond_market.getIndustry(Industries.HEAVYINDUSTRY).setSpecialItem(new SpecialItemData(Items.CORRUPTED_NANOFORGE, null));
+        Desmond_market.setSurveyLevel(MarketAPI.SurveyLevel.FULL);
 
         //Asteroid field
         SectorEntityToken RoyceAF1 = system.addTerrain(Terrain.ASTEROID_FIELD,

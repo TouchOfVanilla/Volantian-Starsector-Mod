@@ -28,8 +28,7 @@
         "WS0010": "guardian",
         "WS0011": "cyclone",
         "WS0012": "pdlaser",
-        "WS0013": "pdlaser",
-        "WS0014": "lrpdlaser"
+        "WS0013": "pdlaser"
       }
     }
   ],

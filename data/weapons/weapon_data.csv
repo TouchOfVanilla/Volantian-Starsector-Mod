@@ -4,7 +4,7 @@ Cryonic Pulse Cannon,vol_cryocannon,3,,10000,1000,,250,,40,10,22,15,1,3,ENERGY,1
 Clover Driver Cannon,vol_clovercannon,2,,2500,700,,120,20,30,20,11,,,,ENERGY,130,,0.6,0,2,0.2,,,,,,900,,,,,,,"VRI_bp, energy8",,,,General,,,,,Create an explosion dealing %s Fragmentation damage on the %s hit,300 | 10th,,,,69
 Harpe Cannon,vol_harpecannon,2,,3000,900,,320,,10,15,13,,,,KINETIC,400,,0.3,1.5,1,0,0,5,2,5,,1200,,,,,,,"VRI_bp, kinetic5",,,,Anti Shield,,,,,,,,,,70
 Tekko Cannon,vol_tekkocannon,1,,200,250,,20,,20,75,4,,,,FRAGMENTATION,2,,0,0.1,3,0.01,0,10,1,5,,900,,,,,,PD,"VRI_bp, pd7",,,,Point Defense,,,,,,,,,,71
-Pata Autocannon,vol_pataautocannon,1,,400,600,,25,,20,40,5,,,,ENERGY,25,,0,0.25,2,0,0,3,1,5,,800,,,,,,,"VRI_bp, energy3",,,,General,,,,,,,,,,72
+Pata Autocannon,vol_pataautocannon,1,,400,600,,50,,20,40,5,,,,ENERGY,50,,0,0.5,2,0,0,3,1,5,,800,,,,,,,"VRI_bp, energy3",,,,General,,,,,,,,,,72
 Phosphene Lance,vol_phosphenelance,3,,10000,1000,1700,,300,60,15,26,,,,ENERGY,,1900,0.3,1.25,1,5,,,,,10000,,,,,,,,"VRI_bp, energy21, beam21",,,,Strike,,,,,"On hit, triggering an explosion dealing %s Fragmentation damage",1000,,,,73
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Lucern launcher,vol_lucern,1,,3000,2000,,1000,,15,15,10,12,,,ENERGY,0,,0,8,4,0.25,0,0,0,0,,350,200,8,300,,,STRIKE,"VRI_bp, strike9, utility7, missile14",,,,Strike,Fast,Poor,,,"Hits on shield generate shield-penetrating arc, dealing extra EMP damage",,,,TRUE,74

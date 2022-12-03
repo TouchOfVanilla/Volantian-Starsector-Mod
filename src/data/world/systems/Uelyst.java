@@ -3,8 +3,11 @@ package data.world.systems;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.*;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
+import com.fs.starfarer.api.campaign.econ.MarketConditionAPI;
 import com.fs.starfarer.api.impl.campaign.ids.*;
 import com.fs.starfarer.api.impl.campaign.terrain.AsteroidFieldTerrainPlugin;
+import com.fs.starfarer.api.impl.campaign.terrain.BaseRingTerrain;
+import com.fs.starfarer.api.util.Misc;
 import data.world.VRIGen;
 
 import java.awt.*;
@@ -16,20 +19,22 @@ public class Uelyst {
     final float NocturneDist = 3800;
     final float GeirDist = 1000;
     final float SubA1Dist = 3000;
-    final float subA1StationDist = 100;
+    final float ringDist = 5000;
     final float asteroids1Dist = 5050f;
     final float dust1Dist = 5000f;
     final float dust2Dist = 4000f;
     final float jumpFringeDist = 8000f;
     final float jumpCenterDist = 4000f;
     final float comDist = 8500;
-    final float navDist = 3000;
+    final float navDist = 2000;
     final float sensorDist = 4200;
 
     public void generate(SectorAPI sector) {
         StarSystemAPI system = sector.createStarSystem("Uelyst");
         system.getLocation().set(22000, -20000);
         //system.setLightColor(new Color(31,247,182, 100));
+        system.setEnteredByPlayer(true);
+        Misc.setAllPlanetsSurveyed(system, true);
 
         PlanetAPI UelystStar = system.initStar("vri_star_uelyst", // unique id for this star
                 "star_blue_supergiant", // id in planets.json
@@ -88,6 +93,7 @@ public class Uelyst {
                 //junk and chatter
                 false);
         SubA1_market.getIndustry(Industries.MINING).setSpecialItem(new SpecialItemData(Items.PLASMA_DYNAMO, null));
+        SubA1_market.setSurveyLevel(MarketAPI.SurveyLevel.FULL);
 
         //Geir's Slab
         PlanetAPI Geir = system.addPlanet("vri_planet_Geir",
@@ -155,6 +161,7 @@ public class Uelyst {
                 true,
                 //junk and chatter
                 true);
+        Geir_market.setSurveyLevel(MarketAPI.SurveyLevel.FULL);
 
         //Nocturne
         SectorEntityToken NocturneStation = system.addCustomEntity("vri_nocturne", "Nocturne", "vri_remnant_station", "vri");
@@ -197,6 +204,7 @@ public class Uelyst {
                 false,
                 //junk and chatter
                 false);
+        Nocturne_market.setSurveyLevel(MarketAPI.SurveyLevel.FULL);
 
         //Asteroid field
         SectorEntityToken UelystAF1 = system.addTerrain(Terrain.ASTEROID_FIELD,
@@ -217,6 +225,10 @@ public class Uelyst {
         //Dust belt
         system.addRingBand(UelystStar, "misc", "rings_dust0", 256f, 0, Color.gray, 256f, dust2Dist, 330f);
         system.addRingBand(UelystStar, "misc", "rings_dust0", 256f, 0, Color.white, 256f, dust2Dist, 310f);
+
+        //Ring
+        SectorEntityToken ring = system.addTerrain(Terrain.RING, new BaseRingTerrain.RingParams(200 + 256, ringDist, null, "Uelyst's Disk"));
+        ring.setCircularOrbit(UelystStar, 0, 0, 100);
 
         //add Comm relay
         SectorEntityToken MakeshiftRelay = system.addCustomEntity("vri_comm_relay_makeshift", // unique id

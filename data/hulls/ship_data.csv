@@ -29,7 +29,7 @@ Wolf (VRI),volantian_wolf,Frigate,Volantian,displacer,5,1500,v,2250,1875,150,55,
 Lancet (XIV),volantian_lancet_xiv,Fast Destroyer,XIV Battlegroup,ammofeed,9,2800,750,6400,5833,550,105,,100,100,80,35,80,250,FRONT,,160,0.3,0.7,,,20,40,40,60,2,30,10,20000,5,15,300,0.25,8,8,,,,,,,COMBAT,XIV_bp,1,0.7,2,3,,319
 Pelta,volantian_pelta,Support Carrier,Volantian,damper,15,10000,1250,4000,4000,200,125,4,45,20,10,10,10,2000,OMNI,,150,0.4,1,,,200,300,100,60,4,15,8,125000,4,12,420,0.25,20,20,,,,,,,"CARRIER, COMBAT, NO_AUTO_ESCORT","VRI_bp, merc",1,0.4,2,3,,410
 Lancet (LT),volantian_lancet_lt,Long-Range Destroyer,Low Tech,ammofeed,9,2800,750,6400,5833,550,105,,100,100,80,35,80,250,FRONT,,160,0.3,0.7,,,20,40,40,60,2,30,10,20000,5,15,300,0.25,8,8,,,,,,,COMBAT,lt_bp,1,0.7,2,3,,319
-Karambit,volantian_karambit,Blockade Runner,Volantian,flarelauncher_active,5,6000,900,6000,8000,400,45,,60,40,20,12,12,1400,OMNI,,90,0.3,1.2,,,30,80,600,900,3,300,8,80000,3,20,420,0.25,15,15,,,,,,,"CIVILIAN, FREIGHTER","vrI_bp, merc",1,0.5,2,3,,411.3
+Karambit,volantian_karambit,Blockade Runner,Volantian,flarelauncher_active,5,6000,900,6000,8000,400,45,,60,40,20,12,12,1400,OMNI,,90,0.3,1.2,,,30,80,600,900,3,300,8,80000,3,20,420,0.25,15,15,,,,,,,"CIVILIAN, FREIGHTER","VRI_bp, merc",1,0.5,2,3,,411.3
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #funny reamnante shieeps,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
