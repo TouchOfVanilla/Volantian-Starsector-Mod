@@ -3,7 +3,7 @@
   "hullId": "volantian_karambit",
   "hullSize": "CRUISER",
   "spriteName": "graphics/ships/Karambit.png",
-  "style": "HIGH_TECH",
+  "style": "VOLANTIAN",
   "height": 380,
   "width": 200,
   "center": [100.5, 177.5],

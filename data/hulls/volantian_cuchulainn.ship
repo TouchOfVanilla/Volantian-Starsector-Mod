@@ -3,7 +3,7 @@
   "hullId": "volantian_cuchulainn",
   "hullSize": "CRUISER",
   "spriteName": "graphics/ships/cuchulainn_vri.png",
-  "style": "HIGH_TECH",
+  "style": "VOLANTIAN",
   "height": 308,
   "width": 234,
   "center": [117, 143],

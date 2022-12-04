@@ -9,19 +9,19 @@
   "permaMods": [],
   "hullMods": [
     "hardenedshieldemitter",
-    "targetingunit"
+    "fluxdistributor"
   ],
   "weaponGroups": [
     {
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "lrpdlaser",
-        "WS0002": "lrpdlaser",
-        "WS0003": "heavyblaster",
-        "WS0004": "heavyblaster",
-        "WS0005": "sabotpod",
-        "WS0006": "sabotpod"
+        "WS0001": "vol_pataautocannon",
+        "WS0002": "vol_pataautocannon",
+        "WS0003": "vol_kastane",
+        "WS0004": "vol_kastane",
+        "WS0005": "vol_lucern",
+        "WS0006": "vol_lucern"
       }
     }
   ],

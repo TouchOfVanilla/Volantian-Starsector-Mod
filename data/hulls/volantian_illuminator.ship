@@ -3,7 +3,7 @@
   "hullId": "volantian_illuminator",
   "hullSize": "DESTROYER",
   "spriteName": "graphics/ships/illuminator.png",
-  "style": "HIGH_TECH",
+  "style": "VOLANTIAN",
   "height": 231,
   "width": 267,
   "center": [133, 122.5],

@@ -3,7 +3,7 @@
   "hullId": "volantian_gauntlet",
   "hullSize": "CRUISER",
   "spriteName": "graphics/ships/gauntlet.png",
-  "style": "HIGH_TECH",
+  "style": "VOLANTIAN",
   "height": 240,
   "width": 180,
   "center": [90, 120],

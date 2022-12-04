@@ -3,7 +3,7 @@
   "hullId": "volantian_kite",
   "hullSize": "FRIGATE",
   "spriteName": "graphics/ships/kite_vri.png",
-  "style": "MIDLINE",
+  "style": "VOLANTIAN",
   "height": 66,
   "width": 82,
   "center": [41, 28],
@@ -52,7 +52,7 @@
       "width": 8,
       "angle": 180,
       "contrailSize": 50,
-      "style": "MIDLINE"
+      "style": "HIGH_TECH"
     },
     {
       "location": [-27, 13],
@@ -60,7 +60,7 @@
       "width": 10,
       "angle": 180,
       "contrailSize": 68,
-      "style": "MIDLINE"
+      "style": "HIGH_TECH"
     },
     {
       "location": [-27, -13],
@@ -68,7 +68,7 @@
       "width": 10,
       "angle": 180,
       "contrailSize": 68,
-      "style": "MIDLINE"
+      "style": "HIGH_TECH"
     },
     {
       "location": [-21, -28],
@@ -76,7 +76,7 @@
       "width": 8,
       "angle": 180,
       "contrailSize": 50,
-      "style": "MIDLINE"
+      "style": "HIGH_TECH"
     },
     {
       "location": [-16, -36],
@@ -84,7 +84,7 @@
       "width": 6,
       "angle": 210,
       "contrailSize": 128,
-      "style": "MIDLINE"
+      "style": "HIGH_TECH"
     },
     {
       "location": [-16, 36],
@@ -92,7 +92,7 @@
       "width": 6,
       "angle": 150,
       "contrailSize": 128,
-      "style": "MIDLINE"
+      "style": "HIGH_TECH"
     },
     {
       "location": [-22, -20],
@@ -100,7 +100,7 @@
       "width": 6,
       "angle": 185,
       "contrailSize": 128,
-      "style": "MIDLINE"
+      "style": "HIGH_TECH"
     },
     {
       "location": [-22, 21],
@@ -108,7 +108,7 @@
       "width": 6,
       "angle": 175,
       "contrailSize": 128,
-      "style": "MIDLINE"
+      "style": "HIGH_TECH"
     }
   ],
   "bounds": [

@@ -3,7 +3,7 @@
   "hullId": "volantian_caelum",
   "hullSize": "CAPITAL_SHIP",
   "spriteName": "graphics/ships/Caelum.png",
-  "style": "HIGH_TECH",
+  "style": "VOLANTIAN",
   "height": 260,
   "width": 216,
   "center": [108, 130],
@@ -12,7 +12,8 @@
   "shieldRadius": 145,
   "viewOffset": 0,
   "builtInMods": [
-    "VRI_FluxNetwork"
+    "VRI_FluxNetwork",
+    "VES"
   ],
   "weaponSlots": [
     {

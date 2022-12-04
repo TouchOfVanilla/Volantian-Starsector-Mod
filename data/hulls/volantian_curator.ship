@@ -3,7 +3,7 @@
   "hullId": "volantian_curator",
   "hullSize": "CRUISER",
   "spriteName": "graphics/ships/curator.png",
-  "style": "HIGH_TECH",
+  "style": "VOLANTIAN",
   "height": 280,
   "width": 132,
   "center": [66, 140],
@@ -12,7 +12,10 @@
   "shieldRadius": 151,
   "viewOffset": 0,
   "builtInMods": [
-    "VRI_FluxNetwork"
+    "VRI_FluxNetwork",
+    "VES",
+    "repair_gantry",
+    "surveying_equipment"
   ],
   "weaponSlots": [
     {

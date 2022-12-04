@@ -3,7 +3,7 @@
   "hullId": "volantian_shamshir",
   "hullSize": "CAPITAL_SHIP",
   "spriteName": "graphics/ships/shamshir.png",
-  "style": "HIGH_TECH",
+  "style": "VOLANTIAN",
   "height": 395,
   "width": 210,
   "center": [104.5, 184],

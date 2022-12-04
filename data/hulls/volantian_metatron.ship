@@ -3,7 +3,7 @@
   "hullId": "volantian_metatron",
   "hullSize": "FRIGATE",
   "spriteName": "graphics/ships/metatron.png",
-  "style": "HIGH_TECH",
+  "style": "VOLANTIAN",
   "height": 98,
   "width": 112,
   "center": [56, 37.5],

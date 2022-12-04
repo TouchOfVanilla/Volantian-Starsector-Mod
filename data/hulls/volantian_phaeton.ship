@@ -3,7 +3,7 @@
   "hullId": "volantian_phaeton",
   "hullSize": "DESTROYER",
   "spriteName": "graphics/ships/phaeton_vri.png",
-  "style": "HIGH_TECH",
+  "style": "VOLANTIAN",
   "coversColor": "255,180,170,255",
   "height": 234,
   "width": 120,

@@ -3,7 +3,7 @@
   "hullId": "volantian_shepherd",
   "hullSize": "FRIGATE",
   "spriteName": "graphics/ships/sheperd_vri.png",
-  "style": "HIGH_TECH",
+  "style": "VOLANTIAN",
   "height": 92,
   "width": 78,
   "center": [39, 45],

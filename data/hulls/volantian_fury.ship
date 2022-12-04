@@ -3,7 +3,7 @@
   "hullId": "volantian_fury",
   "hullSize": "CRUISER",
   "spriteName": "graphics/ships/fury_vri.png",
-  "style": "HIGH_TECH",
+  "style": "VOLANTIAN",
   "height": 230,
   "width": 140,
   "center": [70, 110],

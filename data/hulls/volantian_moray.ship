@@ -3,7 +3,7 @@
   "hullId": "volantian_moray",
   "hullSize": "DESTROYER",
   "spriteName": "graphics/ships/moray_vri.png",
-  "style": "HIGH_TECH",
+  "style": "VOLANTIAN",
   "height": 128,
   "width": 88,
   "center": [44, 64],

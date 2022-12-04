@@ -3,7 +3,7 @@
   "hullId": "volantian_sandalphon",
   "hullSize": "FRIGATE",
   "spriteName": "graphics/ships/sandie.png",
-  "style": "HIGH_TECH",
+  "style": "VOLANTIAN",
   "height": 110,
   "width": 66,
   "center": [33, 53.5],

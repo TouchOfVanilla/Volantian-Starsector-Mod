@@ -3,7 +3,7 @@
   "hullId": "volantian_incursor",
   "hullSize": "CRUISER",
   "spriteName": "graphics/ships/vol_incursor.png",
-  "style": "HIGH_TECH",
+  "style": "VOLANTIAN",
   "height": 253,
   "width": 174,
   "center": [87, 126.5],

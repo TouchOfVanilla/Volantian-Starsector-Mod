@@ -3,7 +3,7 @@
   "hullId": "volantian_pelta",
   "hullSize": "CRUISER",
   "spriteName": "graphics/ships/pelta.png",
-  "style": "HIGH_TECH",
+  "style": "VOLANTIAN",
   "height": 198,
   "width": 248,
   "center": [111, 88],
@@ -11,6 +11,10 @@
   "shieldCenter": [1, 1],
   "shieldRadius": 140,
   "viewOffset": 0,
+  "builtInMods": [
+    "VES",
+    "VRI_FluxNetwork"
+  ],
   "builtInWings": [
     "spark_wing"
   ],

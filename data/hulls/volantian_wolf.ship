@@ -3,7 +3,7 @@
   "hullId": "volantian_wolf",
   "hullSize": "FRIGATE",
   "spriteName": "graphics/ships/wolf_vri.png",
-  "style": "HIGH_TECH",
+  "style": "VOLANTIAN",
   "height": 96,
   "width": 52,
   "center": [26, 42],

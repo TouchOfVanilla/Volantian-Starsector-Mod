@@ -3,7 +3,7 @@
   "hullId": "volantian_virtuous",
   "hullSize": "FRIGATE",
   "spriteName": "graphics/ships/virtuous.png",
-  "style": "HIGH_TECH",
+  "style": "VOLANTIAN",
   "height": 135,
   "width": 162,
   "center": [81, 57.5],

@@ -3,7 +3,7 @@
   "hullId": "volantian_chromatic",
   "displayName": "Standard",
   "goalVariant": false,
-  "fluxCapacitors": 8,
+  "fluxCapacitors": 13,
   "fluxVents": 30,
   "quality": 1,
   "permaMods": [],
@@ -28,8 +28,7 @@
         "WS0010": "guardian",
         "WS0011": "cyclone",
         "WS0012": "pdlaser",
-        "WS0013": "pdlaser",
-        "WS0014": "lrpdlaser"
+        "WS0013": "pdlaser"
       }
     }
   ],

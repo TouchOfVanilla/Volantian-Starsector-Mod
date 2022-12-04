@@ -3,7 +3,7 @@
   "hullId": "volantian_radiant",
   "hullSize": "CAPITAL_SHIP",
   "spriteName": "graphics/ships/radiant_vri.png",
-  "style": "HIGH_TECH",
+  "style": "VOLANTIAN",
   "height": 324,
   "width": 316,
   "center": [158, 126],

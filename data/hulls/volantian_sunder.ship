@@ -3,7 +3,7 @@
   "hullId": "volantian_sunder",
   "hullSize": "DESTROYER",
   "spriteName": "graphics/ships/sunder_vri.png",
-  "style": "MIDLINE",
+  "style": "VOLANTIAN",
   "height": 192,
   "width": 112,
   "center": [56, 85],

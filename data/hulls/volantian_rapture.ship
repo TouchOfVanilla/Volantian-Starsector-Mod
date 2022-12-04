@@ -3,7 +3,7 @@
   "hullId": "volantian_rapture",
   "hullSize": "FRIGATE",
   "spriteName": "graphics/ships/rapture.png",
-  "style": "HIGH_TECH",
+  "style": "VOLANTIAN",
   "height": 150,
   "width": 100,
   "center": [50, 75],

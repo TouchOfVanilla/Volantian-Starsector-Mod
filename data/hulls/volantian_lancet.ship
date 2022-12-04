@@ -3,7 +3,7 @@
   "hullId": "volantian_lancet",
   "hullSize": "DESTROYER",
   "spriteName": "graphics/ships/lancet.png",
-  "style": "HIGH_TECH",
+  "style": "VOLANTIAN",
   "height": 172,
   "width": 126,
   "center": [63, 80],
@@ -13,7 +13,8 @@
   "viewOffset": 0,
   "builtInMods": [
     "VRI_FluxNetwork",
-    "VES"
+    "VES",
+    "targetingunit"
   ],
   "weaponSlots": [
     {

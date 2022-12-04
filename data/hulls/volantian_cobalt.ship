@@ -3,7 +3,7 @@
   "hullId": "volantian_cobalt",
   "hullSize": "CRUISER",
   "spriteName": "graphics/ships/cobalt_vri.png",
-  "style": "HIGH_TECH",
+  "style": "VOLANTIAN",
   "height": 220,
   "width": 172,
   "center": [86, 110],

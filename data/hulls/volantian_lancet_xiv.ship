@@ -13,7 +13,7 @@
   "viewOffset": 0,
   "builtInMods": [
     "fourteenth",
-    "ballistic_rangefinder"
+    "targetingunit"
   ],
   "weaponSlots": [
     {

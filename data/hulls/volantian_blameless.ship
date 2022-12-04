@@ -3,7 +3,7 @@
   "hullId": "volantian_blameless",
   "hullSize": "CRUISER",
   "spriteName": "graphics/ships/blameless.png",
-  "style": "HIGH_TECH",
+  "style": "VOLANTIAN",
   "height": 261,
   "width": 225,
   "center": [112, 121.5],

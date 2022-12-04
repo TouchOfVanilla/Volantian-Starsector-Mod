@@ -3,7 +3,7 @@
   "hullId": "volantian_claymore",
   "hullSize": "CRUISER",
   "spriteName": "graphics/ships/claymore.png",
-  "style": "HIGH_TECH",
+  "style": "VOLANTIAN",
   "height": 238,
   "width": 243,
   "center": [121.5, 123.5],
