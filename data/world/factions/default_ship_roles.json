@@ -1,74 +1,72 @@
 {
 	"combatSmall": {
-		"volantian_sandalphon_standard": 10,
-		"volantian_virtuous_standard": 10,
-		"volantian_metatron_standard": 10,
-		"volantian_wolf_standard": 10
+		"volantian_sandalphon_standard": 9,
+		"volantian_virtuous_standard": 7,
+		"volantian_wolf_standard": 8,
+		"volantian_moray_standard": 8
 	},
 	"combatMedium": {
 		"volantian_sunder_standard": 10,
 		"volantian_lancet_standard": 10,
 		"volantian_illuminator_standard": 10, "volantian_illuminator_assault": 10,
 		"volantian_medusa_standard": 10,
-		"volantian_incursor_standard": 10,
-		"volantian_moray_standard": 10,
 		"volantian_lancet_xiv_standard":10,
-		"volantian_lancet_lt_standard":10
+		"volantian_lancet_lt_standard":10,
+		"volantian_metatron_standard": 9
 	},
 	"combatLarge": {
-		"volantian_blameless_standard": 10, "volantian_blameless_strike": 10,
-		"volantian_fury_standard": 10, "volantian_fury_assaults": 10,
-		"volantian_claymore_standard": 10, "volantian_claymore_assault": 10,
-		"volantian_chromatic_standard": 10,
-		"volantian_cobalt_standard": 10, "volantian_cobalt_strike": 10,
-		"volantian_gauntlet_standard": 10, "volantian_gauntlet_assault": 10, "volantian_gauntlet_support": 10,
-		"volantian_chromatic_vri_standard": 10, "volantian_chromatic_vri_strike": 10,
-		"volantian_pelta_standard": 10
+		"volantian_blameless_standard": 10, "volantian_blameless_strike": 15,
+		"volantian_fury_standard": 10, "volantian_fury_assaults": 15,
+		"volantian_claymore_standard": 10, "volantian_claymore_assault": 15,
+		"volantian_chromatic_standard": 8,
+		"volantian_cobalt_standard": 5, "volantian_cobalt_strike": 8,
+		"volantian_gauntlet_standard": 10, "volantian_gauntlet_assault": 5,
+		"volantian_chromatic_vri_standard": 10, "volantian_chromatic_vri_strike": 15
 	},
 	"combatCapital": {
-		"volantian_radiant_standard": 10, "volantian_radiant_strike": 10,
-		"volantian_shamshir_standard": 10
+		"volantian_radiant_standard": 5, "volantian_radiant_strike": 10,
+		"volantian_shamshir_standard": 20
 	},
 	"combatFreighterSmall": {
 	},
 	"combatFreighterMedium": {
-		"volantian_incursor_standard": 10
+		"volantian_incursor_standard": 8
 	},
 	"combatFreighterLarge": {
-		"volantian_claymore_standard": 10, "volantian_claymore_assault": 10
+		"volantian_claymore_standard": 8, "volantian_claymore_assault": 8
 	},
 	"civilianRandom": {
-		"volantian_kite_standard": 10
 	},
 	"carrierSmall": {
-		"volantian_shepherd_standard": 10,
+		"volantian_shepherd_standard": 8,
 		"volantian_virtuous_standard": 10, "volantian_virtuous_assault": 10
 	},
 	"carrierMedium": {
-
+		"volantian_gauntlet_standard": 8,
+		"volantian_gauntlet_support": 8,
+		"volantian_pelta_standard": 8,
+		"volantian_kaiken_standard":8
 	},
 	"carrierLarge": {
-		"volantian_gauntlet_standard": 10, "volantian_gauntlet_assault": 10, "volantian_gauntlet_support": 10,
+		"volantian_gauntlet_assault": 12,
 		"volantian_pelta_standard": 10,
-		"volantian_kaiken_standard":10
+		"volantian_kaiken_standard":15
 	},
 	"phaseSmall": {
-		"volantian_rapture_standard": 10
+		"volantian_rapture_standard": 5
 	},
 	"phaseMedium": {
+		"volantian_cuchulainn_standard":10
 	},
 	"phaseLarge": {
-		"volantian_cuchulainn_standard":10
-
 	},
 	"phaseCapital": {
 	},
 	"freighterSmall": {
-		"volantian_kite_standard": 10
+		"volantian_kite_standard": 5
 	},
 	"freighterMedium": {
 		"volantian_karambit_standard": 10
-
 	},
 	"freighterLarge": {
 		"volantian_karambit_standard": 10
@@ -81,19 +79,21 @@
 	"tankerLarge": {
 	},
 	"personnelSmall": {
-		"volantian_kite_standard": 10
+		"volantian_shepherd_standard": 5,
+		"volantian_kite_standard": 5,
+		"volantian_sandalphon_standard": 6
 	},
 	"personnelMedium": {
 	},
 	"personnelLarge": {
-		"volantian_caelum_standard": 10
+		"volantian_caelum_standard": 5
 	},
 	"linerSmall": {
 	},
 	"linerMedium": {
 	},
 	"linerLarge": {
-		"volantian_caelum_standard": 10
+		"volantian_caelum_standard": 5
 	},
 	"tug": {
 	},
