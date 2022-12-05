@@ -3,25 +3,43 @@
   "hullId": "volantian_cobalt",
   "displayName": "Standard",
   "goalVariant": false,
-  "fluxCapacitors": 13,
+  "fluxCapacitors": 22,
   "fluxVents": 30,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "ballistic_rangefinder",
-    "fluxdistributor"
+    "fluxdistributor",
+    "auxiliarythrusters"
   ],
   "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "vol_phosphenelance"
+      }
+    },
     {
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "gauss",
-        "WS0002": "gauss",
-        "WS0003": "lrpdlaser",
-        "WS0004": "lrpdlaser",
-        "WS0005": "lrpdlaser",
-        "WS0006": "lrpdlaser"
+        "WS0005": "vol_harpecannon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "vol_lucern"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "vol_tekkocannon",
+        "WS0003": "vol_tekkocannon",
+        "WS0004": "vol_tekkocannon"
       }
     }
   ],
