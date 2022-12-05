@@ -3,7 +3,36 @@
 		####################################
 		# "source" can also be a directory #
 		####################################
-
+		"music_vol_market_neutral":[
+			{
+				"source":"sounds/music",
+				"volume":0.7,
+				"files":[
+					"Vol_Neutral_Interaction.ogg",
+				],
+				"randomStart":false,
+			},
+		],
+		"music_vol_market_hostile":[
+			{
+				"source":"sounds/music",
+				"volume":1.5,
+				"files":[
+					"Vol_Hostile_Interaction.ogg",
+				],
+				"randomStart":false,
+			},
+		],
+		"music_vol_market_friendly":[
+			{
+				"source":"sounds/music",
+				"volume":0.6,
+				"files":[
+					"Vol_Friendly_Interaction.ogg",
+				],
+				"randomStart":false,
+			},
+		],
 	},
 	"vol_katti_explosion":[
 		{"file": "sounds/vol_katti_explosion.ogg", "pitch": 0.9, "volume": 0.7},

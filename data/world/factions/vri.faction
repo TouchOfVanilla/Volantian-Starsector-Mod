@@ -164,9 +164,17 @@
 
 	"illegalCommodities":[
 	],
-	"music":{
-		"encounter_hostile":"music_tritach_encounter_hostile",
-	},	
+	"music": {
+        "theme": "music_vic_market_neutral",
+
+        "market_neutral": "music_vol_market_neutral",
+        "market_hostile": "music_vol_market_hostile",
+        "market_friendly": "music_vol_market_friendly",
+
+        "encounter_neutral": "music_vol_market_neutral",
+        "encounter_hostile": "music_vol_market_hostile",
+        "encounter_friendly": "music_vol_market_friendly",
+    },
 	#"internalComms":"hegemony_internal",
 	"portraits":{
 		"standard_male":[
