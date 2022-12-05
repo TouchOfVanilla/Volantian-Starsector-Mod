@@ -8,7 +8,7 @@
 	"combatMedium": {
 		"volantian_sunder_standard": 10,
 		"volantian_lancet_standard": 10,
-		"volantian_illuminator_standard": 10, "volantian_illuminator_assault": 10,
+		"volantian_cestus_standard": 10,
 		"volantian_medusa_standard": 10,
 		"volantian_lancet_xiv_standard":10,
 		"volantian_lancet_lt_standard":10,
@@ -45,7 +45,8 @@
 		"volantian_gauntlet_standard": 8,
 		"volantian_gauntlet_support": 8,
 		"volantian_pelta_standard": 8,
-		"volantian_kaiken_standard":8
+		"volantian_kaiken_standard": 8,
+		"volantian_kaiken_vri_standard": 10
 	},
 	"carrierLarge": {
 		"volantian_gauntlet_assault": 12,
