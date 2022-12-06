@@ -18,8 +18,6 @@ public class MissionDefinition extends VRI_BaseRandomBattle {
     public void defineMission(MissionDefinitionAPI api) {
         super.defineMission(api);
 
-        System.out.println("running");
-
         String playerFaction = "vri";
         String enemyFaction = FACTIONS.pick().toString();
 

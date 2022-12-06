@@ -1,0 +1,29 @@
+{
+	"id":"vol_guardianarccore",
+	"type":"ENGINE_MOD",
+	"aiType":"MANEUVERING_JETS",
+
+    "effectColor1":[255,150,255,200],
+    "effectColor2":[255,175,255,255],
+	
+	"statsScript":"data.shipsystems.scripts.VRI_shipSystem_guardianarccore",
+
+    "useSound":"system_emp_emitter_activate",
+    "loopSound":"system_emp_emitter_loop",
+    "outOfUsesSound":"engine_disabled",
+
+    "flameoutOnImpactChance":0,
+
+    "clampTurnRateAfter":true,
+    "clampMaxSpeedAfter":false,
+
+    "engineGlowLengthMult":1,
+    "engineGlowWidthMult":1,
+    "engineGlowGlowMult":2,
+
+    "aiHints":{
+        "activeSpeedIncrease":50,
+        "burstMovementPotential":0,
+        "averageSpeedIncrease":25,
+    }
+}
