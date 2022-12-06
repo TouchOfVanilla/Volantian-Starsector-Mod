@@ -111,6 +111,24 @@
         -28.5, -11.5,
         -24, -11
       ]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 27,
+      "angle": 135,
+      "locations": [53, 16.5]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 27,
+      "angle": -135,
+      "locations": [53, -16.5]
     }
   ],
   "engineSlots": [

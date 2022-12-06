@@ -74,6 +74,24 @@
         118, -6,
         118, 6
       ]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 116,
+      "angle": 55.5,
+      "locations": [83.5, 48.5]
+    },
+    {
+      "id": "WS0007",
+      "size": "MEDIUM",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 116,
+      "angle": -55.5,
+      "locations": [83.5, -48.5]
     }
   ],
   "engineSlots": [

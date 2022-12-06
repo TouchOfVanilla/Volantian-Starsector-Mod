@@ -60,6 +60,22 @@
       "angle": -180,
       "contrailSize": 30,
       "style": "HIGH_TECH"
+    },
+    {
+      "location": [-32.5, 25],
+      "length": 7.5,
+      "width": 28,
+      "angle": -161,
+      "contrailSize": 28,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-32.5, -25],
+      "length": 7.5,
+      "width": 28,
+      "angle": 161,
+      "contrailSize": 28,
+      "style": "HIGH_TECH"
     }
   ],
   "bounds": [

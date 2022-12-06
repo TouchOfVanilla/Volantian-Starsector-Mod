@@ -23,7 +23,7 @@
       "mount": "TURRET",
       "arc": 134,
       "angle": 91,
-      "locations": [-8.5, 49.5]
+      "locations": [-8, 50]
     },
     {
       "id": "WS0002",
@@ -32,7 +32,7 @@
       "mount": "TURRET",
       "arc": 134,
       "angle": -99.5,
-      "locations": [-8.5, -50.5]
+      "locations": [-8, -50]
     },
     {
       "id": "WS0003",
@@ -41,7 +41,7 @@
       "mount": "TURRET",
       "arc": 129,
       "angle": 0,
-      "locations": [12.5, 31.5]
+      "locations": [13, 32]
     },
     {
       "id": "WS0004",
@@ -50,7 +50,7 @@
       "mount": "TURRET",
       "arc": 129,
       "angle": -0,
-      "locations": [12.5, -32.5]
+      "locations": [13, -32]
     },
     {
       "id": "WS0005",
@@ -59,7 +59,7 @@
       "mount": "HARDPOINT",
       "arc": 20,
       "angle": 0,
-      "locations": [80.5, 19.5]
+      "locations": [82, 20]
     },
     {
       "id": "WS0006",
@@ -68,7 +68,7 @@
       "mount": "HARDPOINT",
       "arc": 20,
       "angle": -0,
-      "locations": [80.5, -20.5]
+      "locations": [82, -20]
     },
     {
       "id": "WS0008",
@@ -77,7 +77,7 @@
       "mount": "TURRET",
       "arc": 182,
       "angle": -180,
-      "locations": [-68.5, 0]
+      "locations": [-68, -0]
     },
     {
       "id": "WS0007",
@@ -86,12 +86,12 @@
       "mount": "TURRET",
       "arc": 129,
       "angle": 0,
-      "locations": [12, -0]
+      "locations": [11, -0]
     }
   ],
   "engineSlots": [
     {
-      "location": [-72, -47],
+      "location": [-76, -48],
       "length": 119,
       "width": 22,
       "angle": 180,
@@ -99,7 +99,7 @@
       "style": "LOW_TECH"
     },
     {
-      "location": [-72, 47],
+      "location": [-76.5, 48.5],
       "length": 119,
       "width": 22,
       "angle": -180,
@@ -107,7 +107,7 @@
       "style": "LOW_TECH"
     },
     {
-      "location": [-79, -30.5],
+      "location": [-71.5, -17.5],
       "length": 86,
       "width": 19,
       "angle": 180,
@@ -115,7 +115,7 @@
       "style": "LOW_TECH"
     },
     {
-      "location": [-79, 30.5],
+      "location": [-72, 17],
       "length": 86,
       "width": 19,
       "angle": -180,

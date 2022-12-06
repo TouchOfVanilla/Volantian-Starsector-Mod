@@ -52,6 +52,24 @@
         12, 19,
         26, 19
       ]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HARDPOINT",
+      "arc": 20,
+      "angle": 50,
+      "locations": [29, 29.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HARDPOINT",
+      "arc": 20,
+      "angle": 50,
+      "locations": [22, 31]
     }
   ],
   "engineSlots": [
