@@ -35,3 +35,4 @@ Kaiken (VRI),volantian_kaiken_vri,Converted Supercarrier,Volantian,recalldevice,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Chromatic,volantian_chromatic,Drone Battlecruiser,Remnant,highenergyfocus,28,8500,775,14000,16000,1000,210,0,30,20,20,15,20,3000,OMNI,,240,0.4,0.6,,,0,0,50,20,4,5,9,300000,5,15,540,0.25,34,34,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX","remnant, auto_rec",1,0.1,2,3,,414.1
 Kaiken,volantian_kaiken,Drone Supercarrier,Remnant,recalldevice,28,18000,1650,12000,12500,500,260,4,30,15,15,6,6,3500,OMNI,,180,0.4,1,,,700,1500,300,300,15,20,7,375000,3,12,720,0.25,40,40,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX","remnant, auto_rec",1,0.4,2,4,,507
+Lumen (XIV),volantian_lumen_xiv,Droneship,Remnant,displacer,8,1000,150,2000,2500,200,35,,140,250,200,90,270,150,OMNI,,150,0.4,0.6,,,0,0,40,40,1,40,11,30000,5,10,360,0.25,4,4,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX","remnant, auto_rec",,0.5,2,2,,226

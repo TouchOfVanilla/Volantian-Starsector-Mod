@@ -1,0 +1,107 @@
+{
+  "hullName": "Lumen (XIV)",
+  "hullId": "volantian_lumen_xiv",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/lumen_xiv.png",
+  "style": "HIGH_TECH",
+  "height": 82,
+  "width": 92,
+  "center": [46, 42],
+  "collisionRadius": 80,
+  "shieldCenter": [-2, 0],
+  "shieldRadius": 72,
+  "viewOffset": 0,
+  "builtInMods": [
+    "automated",
+    "fourteenth"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS 006",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 20,
+      "locations": [21, 30]
+    },
+    {
+      "id": "WS 007",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": -20,
+      "locations": [21, -30]
+    },
+    {
+      "id": "WS 008",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [32, 14]
+    },
+    {
+      "id": "WS 009",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [32, -13]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-37, -26],
+      "length": 12.5,
+      "width": 30,
+      "angle": 164.5,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-37, 26],
+      "length": 12.5,
+      "width": 30,
+      "angle": -164.5,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-29, 6],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-29, -6],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -6, 25,
+    20, 45,
+    40, 26,
+    33, 6,
+    21, 5,
+    21, -4,
+    34, -4,
+    39, -26,
+    20, -44,
+    -6, -25,
+    -25, -45,
+    -40, -36,
+    -22, 0,
+    -39, 37,
+    -25, 45
+  ]
+}
