@@ -3,12 +3,12 @@
   "hullId": "volantian_fury",
   "displayName": "Assault",
   "goalVariant": false,
-  "fluxCapacitors": 6,
+  "fluxCapacitors": 3,
   "fluxVents": 30,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "fluxdistributor",
+    "auxiliarythrusters",
     "hardenedshieldemitter"
   ],
   "weaponGroups": [
@@ -32,16 +32,16 @@
       "mode": "LINKED",
       "weapons": {
         "WS 003": "vol_pataautocannon",
-        "WS 004": "vol_pataautocannon"
+        "WS 007": "vol_pataautocannon"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
+        "WS 004": "vol_tekkocannon",
         "WS 005": "vol_tekkocannon",
         "WS 006": "vol_tekkocannon",
-        "WS 007": "vol_tekkocannon",
         "WS 008": "vol_tekkocannon"
       }
     }

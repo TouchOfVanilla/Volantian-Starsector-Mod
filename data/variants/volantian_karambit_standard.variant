@@ -8,17 +8,18 @@
   "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "expanded_cargo_holds"
+    "expanded_cargo_holds",
+    "efficiency_overhaul"
   ],
   "weaponGroups": [
     {
-      "autofire": false,
+      "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "vol_pataautocannon",
-        "WS0002": "vol_pataautocannon",
-        "WS0003": "vol_pataautocannon",
-        "WS0004": "miningblaster"
+        "WS0001": "vol_tekkocannon",
+        "WS0002": "vol_tekkocannon",
+        "WS0003": "vol_tekkocannon",
+        "WS0004": "vol_tekkocannon"
       }
     }
   ],
