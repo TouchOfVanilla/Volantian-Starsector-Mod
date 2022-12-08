@@ -4,7 +4,7 @@
   "displayName": "Standard",
   "goalVariant": true,
   "fluxCapacitors": 10,
-  "fluxVents": 5,
+  "fluxVents": 10,
   "quality": 0.5,
   "permaMods": [],
   "hullMods": [
@@ -15,7 +15,6 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS 001": "lightdualmg",
         "WS 002": "lightdualmg",
         "WS 003": "lightdualmg",
         "WS 004": "lightdualmg"
