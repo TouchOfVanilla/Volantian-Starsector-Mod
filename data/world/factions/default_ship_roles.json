@@ -21,11 +21,12 @@
 		"volantian_chromatic_standard": 8,
 		"volantian_cobalt_standard": 11, "volantian_cobalt_strike": 8,
 		"volantian_gauntlet_standard": 10, "volantian_gauntlet_assault": 5,
-		"volantian_chromatic_vri_standard": 10, "volantian_chromatic_vri_strike": 15
+		"volantian_chromatic_vri_standard": 10, "volantian_chromatic_vri_strike": 15,
 	},
 	"combatCapital": {
 		"volantian_radiant_standard": 5, "volantian_radiant_strike": 10,
-		"volantian_shamshir_standard": 20
+		"volantian_shamshir_standard": 20,
+		"volantian_paramerion_standard": 10
 	},
 	"combatFreighterSmall": {
 	},
@@ -60,6 +61,7 @@
 		"volantian_cuchulainn_standard":10
 	},
 	"phaseLarge": {
+		"volantian_paramerion_standard": 10
 	},
 	"phaseCapital": {
 	},

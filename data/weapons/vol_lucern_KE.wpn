@@ -1,0 +1,55 @@
+{
+  "id": "vol_lucern_KE",
+  "specClass": "projectile",
+  "projectileSpecId": "vol_lucern_KE_msl",
+  "type": "MISSILE",
+  "size": "MEDIUM",
+  "turretSprite": "",
+  "hardpointSprite": "",
+  "turretOffsets": [
+    10,
+    5,
+    0,
+    0,
+    -11,
+    0
+  ],
+  "turretAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    10,
+    5,
+    0,
+    0,
+    -11,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "SMOKE",
+  "smokeSpec": {
+    "particleSizeMin": 20,
+    "particleSizeRange": 20,
+    "cloudParticleCount": 3,
+    "cloudDuration": 1,
+    "cloudRadius": 10,
+    "blowbackParticleCount": 3,
+    "blowbackDuration": 0.5,
+    "blowbackLength": 30,
+    "blowbackSpread": 10,
+    "particleColor": [
+      200,
+      200,
+      200,
+      100
+    ]
+  },
+  "fireSoundTwo": "vol_lucern_fire"
+}

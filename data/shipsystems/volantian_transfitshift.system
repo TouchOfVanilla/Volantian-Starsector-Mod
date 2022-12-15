@@ -1,0 +1,29 @@
+{
+	"id":"volantian_transfixshift",
+	"type":"ENGINE_MOD",
+	"aiType":"MANEUVERING_JETS",
+	
+	"statsScript":"data.shipsystems.scripts.VRI_shipSystem_transfixshift",
+
+    "flameoutOnImpactChance":0,
+
+    "engineGlowColor":[100,255,200,255],
+    "engineGlowContrailColor":[100,255,200,25],
+    "engineGlowLengthMult":1.5,
+    "engineGlowWidthMult":1,
+    "engineGlowGlowMult":2,
+
+    "fadeActivationSoundOnChargedown":true,
+    "useSound":"system_maneuvering_jets",
+    "loopSound":"system_maneuvering_jets_loop",
+    "outOfUsesSound":"engine_disabled",
+
+    "clampTurnRateAfter":true,
+    "clampMaxSpeedAfter":false,
+
+    "aiHints":{
+        "activeSpeedIncrease":100,
+        "burstMovementPotential":200,
+        "averageSpeedIncrease":20,
+    }
+}
