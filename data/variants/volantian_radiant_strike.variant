@@ -2,7 +2,7 @@
   "variantId": "volantian_radiant_strike",
   "hullId": "volantian_radiant",
   "displayName": "Strike",
-  "goalVariant": false,
+  "goalVariant": true,
   "fluxCapacitors": 12,
   "fluxVents": 50,
   "quality": 1,

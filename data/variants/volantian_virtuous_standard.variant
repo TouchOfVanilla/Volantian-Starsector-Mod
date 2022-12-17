@@ -2,7 +2,7 @@
   "variantId": "volantian_virtuous_standard",
   "hullId": "volantian_virtuous",
   "displayName": "Standard",
-  "goalVariant": false,
+  "goalVariant": true,
   "fluxCapacitors": 2,
   "fluxVents": 10,
   "quality": 1,

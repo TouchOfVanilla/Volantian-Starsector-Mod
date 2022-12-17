@@ -2,7 +2,7 @@
   "variantId": "volantian_blameless_strike",
   "hullId": "volantian_blameless",
   "displayName": "Strike",
-  "goalVariant": false,
+  "goalVariant": true,
   "fluxCapacitors": 12,
   "fluxVents": 30,
   "quality": 1,

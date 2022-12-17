@@ -2,7 +2,7 @@
   "variantId": "volantian_virtuous_assault",
   "hullId": "volantian_virtuous",
   "displayName": "Assault",
-  "goalVariant": false,
+  "goalVariant": true,
   "fluxCapacitors": 3,
   "fluxVents": 10,
   "quality": 1,

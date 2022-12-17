@@ -2,7 +2,7 @@
   "variantId": "volantian_fury_standard",
   "hullId": "volantian_fury",
   "displayName": "Standard",
-  "goalVariant": false,
+  "goalVariant": true,
   "fluxCapacitors": 6,
   "fluxVents": 30,
   "quality": 1,

@@ -2,7 +2,7 @@
   "variantId": "volantian_sunder_standard",
   "hullId": "volantian_sunder",
   "displayName": "Standard",
-  "goalVariant": false,
+  "goalVariant": true,
   "fluxCapacitors": 2,
   "fluxVents": 20,
   "quality": 1,

@@ -2,7 +2,7 @@
   "variantId": "volantian_claymore_standard",
   "hullId": "volantian_claymore",
   "displayName": "Standard",
-  "goalVariant": false,
+  "goalVariant": true,
   "fluxCapacitors": 20,
   "fluxVents": 30,
   "quality": 1,

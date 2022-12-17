@@ -2,7 +2,7 @@
   "variantId": "volantian_fury_assaults",
   "hullId": "volantian_fury",
   "displayName": "Assault",
-  "goalVariant": false,
+  "goalVariant": true,
   "fluxCapacitors": 3,
   "fluxVents": 30,
   "quality": 1,

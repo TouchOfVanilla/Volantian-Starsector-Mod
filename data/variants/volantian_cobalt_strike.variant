@@ -2,7 +2,7 @@
   "variantId": "volantian_cobalt_strike",
   "hullId": "volantian_cobalt",
   "displayName": "Strike",
-  "goalVariant": false,
+  "goalVariant": true,
   "fluxCapacitors": 25,
   "fluxVents": 30,
   "quality": 1,

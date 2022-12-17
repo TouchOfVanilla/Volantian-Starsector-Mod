@@ -2,7 +2,7 @@
   "variantId": "volantian_radiant_standard",
   "hullId": "volantian_radiant",
   "displayName": "Standard",
-  "goalVariant": false,
+  "goalVariant": true,
   "fluxCapacitors": 29,
   "fluxVents": 40,
   "quality": 1,

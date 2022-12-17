@@ -2,7 +2,7 @@
   "variantId": "volantian_sandalphon_standard",
   "hullId": "volantian_sandalphon",
   "displayName": "Standard",
-  "goalVariant": false,
+  "goalVariant": true,
   "fluxCapacitors": 3,
   "fluxVents": 10,
   "quality": 1,

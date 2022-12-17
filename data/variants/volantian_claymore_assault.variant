@@ -2,7 +2,7 @@
   "variantId": "volantian_claymore_assault",
   "hullId": "volantian_claymore",
   "displayName": "Assault",
-  "goalVariant": false,
+  "goalVariant": true,
   "fluxCapacitors": 19,
   "fluxVents": 30,
   "quality": 1,

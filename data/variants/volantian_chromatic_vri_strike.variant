@@ -2,7 +2,7 @@
   "variantId": "volantian_chromatic_vri_strike",
   "hullId": "volantian_chromatic_vri",
   "displayName": "Strike",
-  "goalVariant": false,
+  "goalVariant": true,
   "fluxCapacitors": 15,
   "fluxVents": 30,
   "quality": 1,

@@ -2,7 +2,7 @@
   "variantId": "volantian_shamshir_standard",
   "hullId": "volantian_shamshir",
   "displayName": "Standard",
-  "goalVariant": false,
+  "goalVariant": true,
   "fluxCapacitors": 34,
   "fluxVents": 40,
   "quality": 1,

@@ -2,7 +2,7 @@
   "variantId": "volantian_gauntlet_support",
   "hullId": "volantian_gauntlet",
   "displayName": "Suport",
-  "goalVariant": false,
+  "goalVariant": true,
   "fluxCapacitors": 0,
   "fluxVents": 15,
   "quality": 1,

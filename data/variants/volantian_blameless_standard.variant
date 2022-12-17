@@ -2,7 +2,7 @@
   "variantId": "volantian_blameless_standard",
   "hullId": "volantian_blameless",
   "displayName": "Standard",
-  "goalVariant": false,
+  "goalVariant": true,
   "fluxCapacitors": 8,
   "fluxVents": 30,
   "quality": 1,

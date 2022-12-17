@@ -2,7 +2,7 @@
   "variantId": "volantian_kite_standard",
   "hullId": "volantian_kite",
   "displayName": "Standard",
-  "goalVariant": false,
+  "goalVariant": true,
   "fluxCapacitors": 0,
   "fluxVents": 3,
   "quality": 1,

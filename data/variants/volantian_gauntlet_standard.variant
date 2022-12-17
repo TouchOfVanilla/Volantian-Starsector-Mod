@@ -2,7 +2,7 @@
   "variantId": "volantian_gauntlet_standard",
   "hullId": "volantian_gauntlet",
   "displayName": "Standard",
-  "goalVariant": false,
+  "goalVariant": true,
   "fluxCapacitors": 4,
   "fluxVents": 30,
   "quality": 1,

@@ -2,7 +2,7 @@
   "variantId": "volantian_chromatic_standard",
   "hullId": "volantian_chromatic",
   "displayName": "Standard",
-  "goalVariant": false,
+  "goalVariant": true,
   "fluxCapacitors": 13,
   "fluxVents": 30,
   "quality": 1,

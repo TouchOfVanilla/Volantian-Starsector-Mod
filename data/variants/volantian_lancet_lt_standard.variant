@@ -2,7 +2,7 @@
   "variantId": "volantian_lancet_lt_standard",
   "hullId": "volantian_lancet_lt",
   "displayName": "Standard",
-  "goalVariant": false,
+  "goalVariant": true,
   "fluxCapacitors": 2,
   "fluxVents": 20,
   "quality": 1,

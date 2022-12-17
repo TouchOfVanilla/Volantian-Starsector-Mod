@@ -2,7 +2,7 @@
   "variantId": "volantian_incursor_standard",
   "hullId": "volantian_incursor",
   "displayName": "Standard",
-  "goalVariant": false,
+  "goalVariant": true,
   "fluxCapacitors": 8,
   "fluxVents": 20,
   "quality": 1,

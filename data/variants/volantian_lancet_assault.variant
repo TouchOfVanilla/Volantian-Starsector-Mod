@@ -2,7 +2,7 @@
   "variantId": "volantian_lancet_assault",
   "hullId": "volantian_lancet",
   "displayName": "Assault",
-  "goalVariant": false,
+  "goalVariant": true,
   "fluxCapacitors": 11,
   "fluxVents": 20,
   "quality": 1,

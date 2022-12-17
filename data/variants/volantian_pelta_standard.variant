@@ -2,7 +2,7 @@
   "variantId": "volantian_pelta_standard",
   "hullId": "volantian_pelta",
   "displayName": "Standard",
-  "goalVariant": false,
+  "goalVariant": true,
   "fluxCapacitors": 17,
   "fluxVents": 0,
   "quality": 1,

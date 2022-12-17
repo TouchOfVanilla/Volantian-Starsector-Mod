@@ -2,7 +2,7 @@
   "variantId": "volantian_karambit_standard",
   "hullId": "volantian_karambit",
   "displayName": "Standard",
-  "goalVariant": false,
+  "goalVariant": true,
   "fluxCapacitors": 0,
   "fluxVents": 5,
   "quality": 1,

@@ -2,7 +2,7 @@
   "variantId": "volantian_kaiken_standard",
   "hullId": "volantian_kaiken",
   "displayName": "Standard",
-  "goalVariant": false,
+  "goalVariant": true,
   "fluxCapacitors": 37,
   "fluxVents": 40,
   "quality": 1,

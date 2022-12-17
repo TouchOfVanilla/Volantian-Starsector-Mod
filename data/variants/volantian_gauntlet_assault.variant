@@ -2,7 +2,7 @@
   "variantId": "volantian_gauntlet_assault",
   "hullId": "volantian_gauntlet",
   "displayName": "Assault",
-  "goalVariant": false,
+  "goalVariant": true,
   "fluxCapacitors": 30,
   "fluxVents": 1,
   "quality": 1,

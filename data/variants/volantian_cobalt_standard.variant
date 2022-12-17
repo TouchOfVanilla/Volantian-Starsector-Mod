@@ -2,7 +2,7 @@
   "variantId": "volantian_cobalt_standard",
   "hullId": "volantian_cobalt",
   "displayName": "Standard",
-  "goalVariant": false,
+  "goalVariant": true,
   "fluxCapacitors": 22,
   "fluxVents": 30,
   "quality": 1,

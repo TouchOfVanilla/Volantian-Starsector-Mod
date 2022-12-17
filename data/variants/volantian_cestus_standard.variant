@@ -2,7 +2,7 @@
   "variantId": "volantian_cestus_standard",
   "hullId": "volantian_cestus",
   "displayName": "Standard",
-  "goalVariant": false,
+  "goalVariant": true,
   "fluxCapacitors": 4,
   "fluxVents": 20,
   "quality": 1,

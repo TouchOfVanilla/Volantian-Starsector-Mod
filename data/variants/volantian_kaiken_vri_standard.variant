@@ -2,7 +2,7 @@
   "variantId": "volantian_kaiken_vri_standard",
   "hullId": "volantian_kaiken_vri",
   "displayName": "Standard",
-  "goalVariant": false,
+  "goalVariant": true,
   "fluxCapacitors": 33,
   "fluxVents": 40,
   "quality": 1,
