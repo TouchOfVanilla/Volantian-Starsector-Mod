@@ -25,3 +25,4 @@ volantian_kite,SHIP,"A familiar civilian design, the ""Kite""-class aeroshuttle 
 volantian_temporaltransit,SHIP_SYSTEM,"Temporarily increases timeflow on the ship, disable all weapon when system is active.",,,,
 volantian_guardianarccore,SHIP_SYSTEM,"Provides a boost to top speed, along with a slight maneuverability boost, discharges EMP arcs that deal damage to nearby fighters, missiles and ships.",,,,
 volantian_transfixshift,SHIP_SYSTEM,"Provides a boost to top speed, along with maneuverability boost. Reduces armor damage taken by 80% during activation",,,,
+volantian_shellswarp,SHIP_SYSTEM,Teleports a heavy shell to the target area. The mine will slowly track nearby enemy ships and explodes a few seconds after its proximity trigger is activated. Can be used while phased. Stores three charges,,,,

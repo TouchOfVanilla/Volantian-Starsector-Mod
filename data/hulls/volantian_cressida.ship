@@ -1,0 +1,112 @@
+{
+  "hullName": "Cressida",
+  "hullId": "volantian_cressida",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/cressida.png",
+  "style": "VOLANTIAN",
+  "height": 150,
+  "width": 150,
+  "center": [75, 67],
+  "collisionRadius": 80,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 91,
+  "viewOffset": 50,
+  "builtInMods": [
+    "VRI_FluxNetwork",
+    "VES",
+    "phasefield",
+    "high_maintenance"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 30,
+      "angle": 0,
+      "locations": [51, 0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 30,
+      "angle": 0,
+      "locations": [63, 26]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 30,
+      "angle": -0,
+      "locations": [63, -26]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 230,
+      "angle": -96,
+      "locations": [13, -40]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 230,
+      "angle": 96,
+      "locations": [13, 40]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-58, -0],
+      "length": 100,
+      "width": 50,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-56, -41],
+      "length": 80,
+      "width": 20,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-56, 41],
+      "length": 80,
+      "width": 20,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    61.5, -34.5,
+    32.5, -44.5,
+    15.5, -61,
+    -16.5, -64.5,
+    -57.5, -50.5,
+    -44.5, -30,
+    -58.5, -17,
+    -58.5, 17,
+    -44.5, 30,
+    -57.5, 50.5,
+    -16.5, 64.5,
+    15.5, 61,
+    32.5, 44.5,
+    61.5, 34.5,
+    63, 8,
+    50.5, -0,
+    63, -8
+  ]
+}
