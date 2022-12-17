@@ -12,7 +12,8 @@
 		"volantian_medusa_standard": 10,
 		"volantian_lancet_xiv_standard":10,
 		"volantian_lancet_lt_standard":10,
-		"volantian_metatron_standard": 9
+		"volantian_metatron_standard": 9,
+		"volantian_cressida_standard": 10, "volantian_cressida_strike": 10
 	},
 	"combatLarge": {
 		"volantian_blameless_standard": 10, "volantian_blameless_strike": 15,
@@ -58,7 +59,7 @@
 		"volantian_rapture_standard": 5
 	},
 	"phaseMedium": {
-		
+		"volantian_cressida_standard": 10, "volantian_cressida_strike": 10
 	},
 	"phaseLarge": {
 		"volantian_paramerion_standard": 10
@@ -87,6 +88,7 @@
 		"volantian_sandalphon_standard": 6
 	},
 	"personnelMedium": {
+		"volantian_cressida_standard": 5, "volantian_cressida_strike": 5
 	},
 	"personnelLarge": {
 		"volantian_caelum_standard": 5
