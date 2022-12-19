@@ -24,8 +24,8 @@ Halon Mass Interceptor System,vol_halon,1,,1100,500,700,,,0,75,10,10,1,1,ENERGY,
 Lucern(HE) launcher,vol_lucern_HE,1,,,2000,,1000,,15,15,10,3,0.1,1,HIGH_EXPLOSIVE,0,,0,3,1,0,0,0,0,0,,200,100,16,300,,,"DO_NOT_CONSERVE, DO_NOT_AIM","missile0, no_sell, no_drop, no_drop_salvage",,,,Strike,Medium,Avarage,,,,,,,TRUE,86
 Lucern(KE) launcher,vol_lucern_KE,1,,,2000,,200,100,15,15,10,12,0.5,3,KINETIC,0,,0,1,3,0.05,0,0,0,0,,350,200,8,300,,,"DO_NOT_CONSERVE, DO_NOT_AIM","missile0, no_sell, no_drop, no_drop_salvage",,,,Strike,Fast,Avarage,,,,,,,TRUE,87
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#fighter weapons,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Katti MRM (Single),vol_katti_single,1,,,1500,,1500,,20,10,1,1,,,ENERGY,0,,0,1,1,0,0,0,0,0,,100,40,4,350,,,STRIKE,"VRI_bp, strike8, no_sell, no_drop, no_drop_salvage",,,,Strike,Medium,None,,,Second-stage hits on hull or armor create additional explosion dealing %s High Explosive damage,700,,,TRUE,75
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
