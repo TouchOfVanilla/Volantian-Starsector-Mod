@@ -24,7 +24,7 @@ Chromatic (VRI),volantian_chromatic_vri,Converted Battlecruiser,Volantian,highen
 Lancet,volantian_lancet,Fast Destroyer,Volantian,microburn,9,2800,250,8400,5833,750,105,,100,100,80,35,80,250,OMNI,,150,0.3,0.7,,,20,40,40,60,2,30,10,20000,5,15,300,0.25,8,8,,,,,,,COMBAT,"VRI_bp, merc",1,0.7,2,3,,319
 Phaeton (VRI),volantian_phaeton,Tanker,Volantian,flarelauncher,6,2000,350,2000,2500,150,45,,50,30,20,25,15,400,OMNI,,90,0.5,1.2,,,10,20,20,800,2,400,8,22000,5,20,300,0.25,4,4,,,,,,,"CIVILIAN, TANKER","VRI_bp, merc",1,0.75,3,4,,311
 Moray (VRI),volantian_moray,Destroyer,Volantian,volantian_guardianarccore,10,2500,250,5400,,350,80,,100,90,90,60,90,250,OMNI,,180,0.3,0.6,,,25,40,40,40,2,20,9,45000,5,20,300,0.25,10,10,,,,,,,COMBAT,"VRI_bp, merc",1,0.4,2,3,,
-Cuchulainn (VRI),volantian_cuchulainn,Phase Cruiser,Volantian,displacer,20,7000,700,12000,,700,100,,80,70,60,30,40,1200,PHASE,phasecloak,,,,0.05,0.05,150,300,120,120,4,30,9,250000,3,12,480,0.25,20,30,,,,,,,COMBAT,"VRI_bp, merc",1,0.4,2,3,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Wolf (VRI),volantian_wolf,Frigate,Volantian,volantian_temporaltransit,5,1500,500,2250,1875,150,55,,150,130,100,60,120,200,FRONT,,150,0.4,0.8,,,15,30,50,20,1,20,10,12000,10,20,180,0.25,5,5,,,,,,,COMBAT,"VRI_bp, merc",1,0.5,2,2,,200
 Lancet (XIV),volantian_lancet_xiv,Fast Destroyer,XIV Battlegroup,ammofeed,9,2800,750,6400,5833,550,105,,100,100,80,35,80,250,FRONT,,160,0.3,0.7,,,20,40,40,60,2,30,10,20000,5,15,300,0.25,8,8,,,,,,,COMBAT,XIV_bp,1,0.7,2,3,,319
 Pelta,volantian_pelta,Support Carrier,Volantian,damper,15,10000,1250,4000,4000,200,125,4,45,20,10,10,10,2000,OMNI,,150,0.4,1,,,200,300,100,60,4,15,8,125000,4,12,420,0.25,20,20,,,,,,,"CARRIER, COMBAT, NO_AUTO_ESCORT","VRI_bp, merc",1,0.4,2,3,,410
