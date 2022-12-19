@@ -58,12 +58,12 @@
 		],
 	},
 	"knownFighters":{
-		"tags":["remnant","hightech_bp"],
+		"tags":["remnant","hightech_bp", vri_figthers_bp],
 		"fighters":[
 		],
 	},
 	"priorityFighters":{
-		"tags":[],
+		"tags":[vri_figthers_bp],
 		"fighters":[
 		],
 	},
