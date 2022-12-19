@@ -24,8 +24,7 @@ public class VRI_shipSystem_transfixshift extends BaseShipSystemScript {
 	private boolean activeSpawnSpriteOnce = false;
 	public static final Color JITTER_COLOR = new Color(100,255,200,25);
 	public static final Color JITTER_UNDER_COLOR = new Color(100,255,200,45);
-	private static final float DAMAGE_NEGATED = 0.2f;
-	private static final float HARD_FLUX_DISSIPATION_PERCENT = 25f;
+
 
 	public void apply(MutableShipStatsAPI stats, String id, State state, float effectLevel) {
 		
@@ -46,7 +45,7 @@ public class VRI_shipSystem_transfixshift extends BaseShipSystemScript {
 		stats.getTurnAcceleration().modifyPercent(id, TURN_BONUS * 4f);
 		stats.getMaxTurnRate().modifyFlat(id, 60f);
 		stats.getMaxTurnRate().modifyPercent(id, 100f);
-		stats.getArmorDamageTakenMult().modifyMult(id, DAMAGE_NEGATED);
+		stats.getArmorDamageTakenMult().modifyMult(id, 0.2f);
 
 		ship.setJitter(this, JITTER_COLOR, 1f, 3, 0, 5f);
 		ship.setJitterUnder(this, JITTER_UNDER_COLOR, 1f, 25, 0f, 10f);
@@ -63,10 +62,6 @@ public class VRI_shipSystem_transfixshift extends BaseShipSystemScript {
 			}
 			stats.getAcceleration().modifyMult(id, 0f);
 			stats.getDeceleration().modifyMult(id, 0f);
-			stats.getHardFluxDissipationFraction().modifyFlat(id, 120f);
-			if(ship.isPhased()) {
-				stats.getPhaseCloakUpkeepCostBonus().modifyMult(id, 0);
-			}
 		}
 		if (state == State.OUT) {
 			stats.getMaxSpeed().unmodify(id);
@@ -130,7 +125,5 @@ public class VRI_shipSystem_transfixshift extends BaseShipSystemScript {
 		stats.getAcceleration().unmodify(id);
 		stats.getDeceleration().unmodify(id);
 		stats.getArmorDamageTakenMult().unmodify(id);
-		stats.getHardFluxDissipationFraction().unmodify(id);
-		stats.getPhaseCloakUpkeepCostBonus().unmodify(id);
 	}
 }

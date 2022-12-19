@@ -6,7 +6,6 @@
 	"statsScript":"data.shipsystems.scripts.VRI_shipSystem_transfixshift",
 
     "flameoutOnImpactChance":0,
-    "canUseWhileRightClickSystemOn":true,
 
     "engineGlowColor":[100,255,200,255],
     "engineGlowContrailColor":[100,255,200,25],

@@ -32,13 +32,6 @@ Lancet (LT),volantian_lancet_lt,Long-Range Destroyer,Low Tech,ammofeed,9,2800,75
 Karambit,volantian_karambit,Blockade Runner,Volantian,flarelauncher_active,5,6000,900,6000,8000,400,45,,60,40,20,12,12,1400,OMNI,,90,0.3,1.2,,,30,80,600,900,3,300,8,80000,3,20,420,0.25,15,15,,,,,,,"CIVILIAN, FREIGHTER","VRI_bp, merc",1,0.5,2,3,,411.3
 Kaiken (VRI),volantian_kaiken_vri,Converted Supercarrier,Volantian,recalldevice,28,18000,1650,12000,12500,500,260,4,30,15,15,6,6,3500,OMNI,,180,0.4,1,,,700,1500,300,300,15,20,7,375000,3,12,720,0.25,40,40,,,,,,,CARRIER,"VRI_bp, merc",1,0.4,2,4,,507
 Paramerion,volantian_paramerion,Phase Capital,Volantian,volantian_transfixshift,28,9000,1500,18000,18000,900,145,,60,55,40,20,25,2000,PHASE,phasecloak,,,,0.04,0.04,80,120,120,150,3,50,8,250000,4,20,480,0.25,40,40,,,,,,,COMBAT,"VRI_bp, merc",1,0.5,2,3,,406
-Cressida,volantian_cressida,Phase Destroyer,Volantian,volantian_shellswarp,15,4000,650,5000,10000,600,55,,80,60,40,30,30,400,PHASE,phasecloak,,,,0.04,0.04,25,50,60,100,2,50,9,120000,5,20,300,0.25,20,20,,,,,,,COMBAT,"VRI_bp, merc",1,0.5,2,3,,407
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-#fighters,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Lux (VRI),volantian_lux_wing,Fighter,Volantian,flarelauncher_fighter,,400,60,350,,50,0,,250,350,350,100,240,30,OMNI,,140,0,1,,,0,0,,,,,,,,,,,,,,,,,,,,,,0,,,,115
-Spark (VRI),volantian_spark_wing,Interceptor,Volantian,,,300,40,150,,50,0,,335,500,400,90,270,15,OMNI,,130,0,1,,,0,0,,,,,,,,,,,,,,,,,,,,,,0,,,,116
-Flash (VRI),volantian_flash_wing,Bomber,Volantian,,,400,60,350,,50,0,,160,240,200,40,120,30,OMNI,,200,0,1,,,0,0,,,,,,,,,,,,,,,,,,,,,,0,,,,117
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #funny reamnante shieeps,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Chromatic,volantian_chromatic,Drone Battlecruiser,Remnant,highenergyfocus,28,8500,775,14000,16000,1000,210,0,30,20,20,15,20,3000,OMNI,,240,0.4,0.6,,,0,0,50,20,4,5,9,300000,5,15,540,0.25,34,34,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX","remnant, auto_rec",1,0.1,2,3,,414.1
