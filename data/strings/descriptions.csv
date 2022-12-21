@@ -39,8 +39,5 @@ volantian_fulgent_lt,SHIP,"This pattern of Fulgent-class Remnant hulls appeared 
 ,,,,,,
 volantian_temporaltransit,SHIP_SYSTEM,"Temporarily increases timeflow on the ship, disable all weapon when system is active.",,,,
 volantian_guardianarccore,SHIP_SYSTEM,"Provides a boost to top speed, along with a slight maneuverability boost, discharges EMP arcs that deal damage to nearby fighters, missiles and ships.",,,,
-volantian_transfixshift,SHIP_SYSTEM,"Provides a boost to top speed, along with maneuverability boost, reducing armor damage taken by 80% during activation. 
-
-Activate when phased remove upkeep flux upkeep cost for the duration of activation.",,,,
+volantian_transfixshift,SHIP_SYSTEM,"Provides a boost to top speed, along with maneuverability boost, reducing armor damage taken by 80% during activation. Activate when phased remove upkeep flux upkeep cost for the duration of activation.",,,,
 volantian_shellswarp,SHIP_SYSTEM,Teleports a heavy shell to the target area. The mine will slowly track nearby enemy ships and explodes a few seconds after its proximity trigger is activated. Can be used while phased. Stores three charges,,,,
->>>>>>> cd004f9 (Add: Cressida - Phase destroyer, Shell Warp system (nerfed Mine Strike from Doom)),,,,,
