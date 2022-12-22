@@ -1,0 +1,23 @@
+{
+  "variantId": "volantian_spark_wing_fighter",
+  "hullId": "volantian_spark_wing",
+  "displayName": "fighter",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "vol_tekkocannon",
+        "WS0002": "vol_tekkocannon"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}
