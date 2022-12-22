@@ -3,7 +3,11 @@
 		"volantian_sandalphon_standard": 9,
 		"volantian_virtuous_standard": 7,
 		"volantian_wolf_standard": 8,
-		"volantian_moray_standard": 8
+		"volantian_moray_standard": 8,
+		"tempest_volantian": 5,
+		"vigilance_volantian": 5,
+		"centurion_volantian": 5,
+		"wolf_volantian": 5
 	},
 	"combatMedium": {
 		"volantian_sunder_standard": 10,
@@ -12,7 +16,11 @@
 		"volantian_medusa_standard": 10,
 		"volantian_lancet_xiv_standard":10,
 		"volantian_lancet_lt_standard":10,
-		"volantian_metatron_standard": 9
+		"volantian_metatron_standard": 9,
+		"sunder_volantian": 5,
+		"shrike_volantian": 5,
+		"medusa_volantian": 5,
+		"hammerhead_volantian": 5
 	},
 	"combatLarge": {
 		"volantian_blameless_standard": 10, "volantian_blameless_strike": 15,
@@ -22,6 +30,9 @@
 		"volantian_cobalt_standard": 11, "volantian_cobalt_strike": 8,
 		"volantian_gauntlet_standard": 10, "volantian_gauntlet_assault": 5,
 		"volantian_chromatic_vri_standard": 10, "volantian_chromatic_vri_strike": 15,
+		"champion_volantian": 5,
+		"aurora_volantian": 5
+		
 	},
 	"combatCapital": {
 		"volantian_radiant_standard": 5, "volantian_radiant_strike": 10,
@@ -47,7 +58,8 @@
 		"volantian_gauntlet_support": 8,
 		"volantian_pelta_standard": 8,
 		"volantian_kaiken_standard": 8,
-		"volantian_kaiken_vri_standard": 10
+		"volantian_kaiken_vri_standard": 10,
+		"drover_volantian": 0
 	},
 	"carrierLarge": {
 		"volantian_gauntlet_assault": 12,

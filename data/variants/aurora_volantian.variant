@@ -1,0 +1,57 @@
+{
+  "variantId": "aurora_volantian",
+  "hullId": "aurora",
+  "displayName": "Volantian",
+  "goalVariant": false,
+  "fluxCapacitors": 15,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "VRI_MakeshiftFluxNetwork",
+    "fluxdistributor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 001": "vol_tekkocannon",
+        "WS 002": "vol_tekkocannon",
+        "WS 003": "vol_pataautocannon",
+        "WS 004": "vol_pataautocannon",
+        "WS 005": "vol_pataautocannon",
+        "WS 006": "vol_lucern",
+        "WS 007": "vol_clovercannon",
+        "WS 008": "vol_clovercannon",
+        "WS 009": "vol_clovercannon",
+        "WS 010": "vol_katti",
+        "WS 011": "vol_katti",
+        "WS 012": "vol_katti",
+        "WS 013": "vol_katti"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

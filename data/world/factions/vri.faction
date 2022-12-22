@@ -31,8 +31,6 @@
 	"names":{
 		"ai":1,
 	},
-	"variantOverrides":{
-	},
 	# multiplier for how often hulls show up in the faction's fleets
 	"hullFrequency":{
 		"tags":{
@@ -47,13 +45,13 @@
 		],
 	},
 	"knownShips":{
-		"tags":["VRI_bp","hightech_bp","base_bp"],
+		"tags":["VRI_bp","hightech_bp","base_bp","midline_bp"],
 		"hulls":[
 		],
 	},
 	# listing ships here will make the faction mostly use them even if other hulls become available
 	"priorityShips":{
-		"tags":["VRI_bp"],
+		"tags":[],
 		"hulls":[
 		],
 	},
@@ -100,7 +98,7 @@
 	},
 	"priorityWeapons":{
 		"tags":["VRI_bp"],
-		"weapons":[vol_cryocannon
+		"weapons":[
 		],
 	},
 	"knownHullMods":{
@@ -161,6 +159,19 @@
 			"coordinated_maneuvers",
 		],
 	},
+	"variantOverrides":{
+			"centurion_volantian":50,
+			"tempest_volantian":50,
+			"wolf_volantian":50,
+			"vigilance_volantian":50,
+			"sunder_volantian":50,
+			"drover_volantian":50,
+			"hammerhead_volantian":50,
+			"shrike_volantian":50,
+			"medusa_volantian":50,
+			"aurora_volantian":50,
+			"champion_volantian":50
+		},
 
 	"illegalCommodities":[
 	],

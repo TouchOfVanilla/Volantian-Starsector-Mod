@@ -1,0 +1,26 @@
+{
+  "variantId": "tempest_volantian",
+  "hullId": "tempest",
+  "displayName": "Volantian",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "VRI_MakeshiftFluxNetwork"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "vol_trident",
+        "WS 002": "vol_clovercannon",
+        "WS 003": "vol_katti"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}
