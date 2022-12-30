@@ -1,0 +1,46 @@
+{
+  "variantId": "swp_circe_volantian",
+  "hullId": "swp_circe",
+  "displayName": "Volantian",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 5,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "hardenedshieldemitter",
+    "VRI_MakeshiftFluxNetwork"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "vol_harpecannon",
+        "WS0002": "vol_harpecannon",
+        "WS0003": "vol_tekkocannon",
+        "WS0004": "vol_halonMK1",
+        "WS0005": "vol_halonMK1",
+        "WS0006": "vol_tekkocannon",
+        "WS0007": "vol_tekkocannon",
+        "WS0008": "vol_halonMK1",
+        "WS0009": "vol_halonMK1",
+        "WS0010": "vol_tekkocannon",
+        "WS0011": "vol_tekkocannon",
+        "WS0012": "vol_tekkocannon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

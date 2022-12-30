@@ -1,0 +1,57 @@
+{
+  "variantId": "swp_zenith_volantian",
+  "hullId": "swp_zenith",
+  "displayName": "Volantian",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 7,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "VRI_MakeshiftFluxNetwork",
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "vol_monoblade",
+        "WS0002": "vol_monoblade",
+        "WS0003": "vol_lucern",
+        "WS0004": "vol_lucern",
+        "WS0005": "vol_pataautocannon",
+        "WS0006": "vol_halonMK1",
+        "WS0007": "vol_halonMK1",
+        "WS0008": "vol_halonMK1",
+        "WS0009": "vol_halonMK1",
+        "WS0010": "vol_katti",
+        "WS0011": "vol_katti"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "volantian_lux_wing"
+  ]
+}

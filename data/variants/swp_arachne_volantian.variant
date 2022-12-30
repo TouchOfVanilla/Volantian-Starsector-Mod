@@ -1,0 +1,38 @@
+{
+  "variantId": "swp_arachne_volantian",
+  "hullId": "swp_arachne",
+  "displayName": "Volantian",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 1,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "missleracks",
+    "VRI_MakeshiftFluxNetwork"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "vol_trident",
+        "WS0002": "vol_lucern",
+        "WS0003": "vol_katti",
+        "WS0004": "vol_katti"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,45 @@
+{
+  "variantId": "swp_eos_volantian",
+  "hullId": "swp_eos",
+  "displayName": "Volantian",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 3,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "VRI_MakeshiftFluxNetwork"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "vol_halon",
+        "WS0002": "vol_tekkocannon",
+        "WS0003": "vol_tekkocannon",
+        "WS0004": "vol_halonMK1",
+        "WS0005": "vol_halonMK1",
+        "WS0006": "vol_halonMK1",
+        "WS0007": "vol_halonMK1"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "volantian_flash_wing",
+    "volantian_lux_wing",
+    "volantian_spark_wing",
+    "volantian_spark_wing"
+  ]
+}
