@@ -4,6 +4,8 @@ import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.combat.*;
 import org.lazywizard.lazylib.combat.AIUtils;
 
+import java.awt.*;
+
 public class VRI_MakeshiftFluxNetwork extends BaseHullMod {
 
 	private static final float FLUXWPNEFF = 0.35f;
@@ -14,7 +16,7 @@ public class VRI_MakeshiftFluxNetwork extends BaseHullMod {
 
 	}
 
-	public void advanceInCombat(ShipAPI ship, float amount){
+	public void advanceInCombat(ShipAPI ship, float amount) {
 		MutableShipStatsAPI stats = ship.getMutableStats();
 
 		CombatEngineAPI engine = Global.getCombatEngine();
@@ -64,5 +66,10 @@ public class VRI_MakeshiftFluxNetwork extends BaseHullMod {
 
 		if(ship.getVariant().hasHullMod("VRI_FluxNetwork")) return "incompatible with a built in VRI Flux Network";
 		return null;
+	}
+
+	public void applyEffectsAfterShipCreation(ShipAPI ship, String id) {
+		ship.getShield().setInnerColor(new Color(31,247,182,255));
+		ship.setVentCoreColor(new Color(31,247,182,255));
 	}
 }
