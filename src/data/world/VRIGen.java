@@ -73,7 +73,7 @@ public class VRIGen implements SectorGeneratorPlugin {
 
     @Override
     public void generate(SectorAPI sector) {
-//        FactionAPI vri = sector.getFaction("vri");
+        FactionAPI vri = sector.getFaction("vri");
 
         new Royce().generate(sector);
         new Uelyst().generate(sector);
@@ -81,15 +81,15 @@ public class VRIGen implements SectorGeneratorPlugin {
 
         SharedData.getData().getPersonBountyEventData().addParticipatingFaction("vri");
 
-//        vri.setRelationship(Factions.LUDDIC_CHURCH, -1f);
-//        vri.setRelationship(Factions.LUDDIC_PATH, -1f);
-//        vri.setRelationship(Factions.TRITACHYON, -0.7f);
-//        vri.setRelationship(Factions.PERSEAN, 0.3f);
-//        vri.setRelationship(Factions.PIRATES, 0f);
-//        vri.setRelationship(Factions.INDEPENDENT, -0.2f);
-//        vri.setRelationship(Factions.DIKTAT, -0.1f);
-//        vri.setRelationship(Factions.LIONS_GUARD, -0.1f);
-//        vri.setRelationship(Factions.HEGEMONY, 0.6f);
-//        vri.setRelationship(Factions.REMNANTS, -1f);
+        vri.setRelationship(Factions.LUDDIC_CHURCH, -1f);
+        vri.setRelationship(Factions.LUDDIC_PATH, -1f);
+        vri.setRelationship(Factions.TRITACHYON, 0.5f);
+        vri.setRelationship(Factions.PERSEAN, 0.5f);
+        vri.setRelationship(Factions.PIRATES, -0.5f);
+        vri.setRelationship(Factions.INDEPENDENT, 0f);
+        vri.setRelationship(Factions.DIKTAT, 0f);
+        vri.setRelationship(Factions.LIONS_GUARD, 0f);
+        vri.setRelationship(Factions.HEGEMONY, -1f);
+        vri.setRelationship(Factions.REMNANTS, 0f);
     }
 }
