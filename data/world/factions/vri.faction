@@ -45,7 +45,7 @@
 		],
 	},
 	"knownShips":{
-		"tags":["VRI_bp","hightech_bp","base_bp","midline_bp"],
+		"tags":["VRI_bp","hightech_bp","midline_bp"],
 		"hulls":[
 		],
 	},
@@ -132,6 +132,7 @@
 			"solar_shielding",
 			"stabilizedshieldemitter",
 			"surveying_equipment",
+			"VRI_MakeshiftFluxNetwork"
 		],
 	},
 	"factionDoctrine":{
