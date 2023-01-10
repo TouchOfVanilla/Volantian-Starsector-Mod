@@ -77,7 +77,10 @@
 			"vol_laevaten_beam": "graphics/fx/vol_laevaten_beam.png",
 
 			"vol_trail_zappy": "graphics/trails/fx/vol_trail_zappy.png",
-			"vol_trail_smooth": "graphics/trails/fx/vol_trail_smoothish.png"}
+			"vol_trail_smooth": "graphics/trails/fx/vol_trail_smoothish.png",
+
+			"vol_rapture_mark": "graphics/fx/vol_rapture_mark.png"
+		}
 	}
 }
 
