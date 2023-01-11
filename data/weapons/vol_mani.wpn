@@ -1,0 +1,43 @@
+{
+  "id": "vol_mani",
+  "specClass": "projectile",
+  "projectileSpecId": "vol_mani_msl",
+  "type": "MISSILE",
+  "size": "LARGE",
+  "turretSprite": "",
+  "hardpointSprite": "",
+  "turretOffsets": [
+    0,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    0,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+    "animationType": "SMOKE",
+    "smokeSpec": {
+      "particleSizeMin": 20,
+      "particleSizeRange": 20,
+      "cloudParticleCount": 5,
+      "cloudDuration": 1.5,
+      "cloudRadius": 15,
+      "blowbackParticleCount": 3,
+      "blowbackDuration": 2,
+      "blowbackLength": 30,
+      "blowbackSpread": 10,
+      "particleColor": [
+        200,
+        200,
+        200,
+        100
+      ]
+    },
+  "fireSoundTwo": "reaper_fire"
+}
