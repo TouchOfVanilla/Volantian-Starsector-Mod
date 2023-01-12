@@ -1,6 +1,6 @@
 {
   "hullName": "Longcaster",
-  "hullId": "volantian_longcaster_wing",
+  "hullId": "volantian_longcaster",
   "hullSize": "FIGHTER",
   "spriteName": "graphics/ships/fighters/vol_longcaster.png",
   "style": "MIDLINE",

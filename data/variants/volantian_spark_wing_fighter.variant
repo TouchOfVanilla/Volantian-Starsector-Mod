@@ -1,6 +1,6 @@
 {
   "variantId": "volantian_spark_wing_fighter",
-  "hullId": "volantian_spark_wing",
+  "hullId": "volantian_spark",
   "displayName": "fighter",
   "goalVariant": false,
   "fluxCapacitors": 0,

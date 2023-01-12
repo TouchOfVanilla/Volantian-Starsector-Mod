@@ -1,6 +1,6 @@
 {
   "variantId": "volantian_lux_wing_fighter",
-  "hullId": "volantian_lux_wing",
+  "hullId": "volantian_lux",
   "displayName": "fighter",
   "goalVariant": false,
   "fluxCapacitors": 0,

@@ -1,6 +1,6 @@
 {
   "hullName": "Spark (VRI)",
-  "hullId": "volantian_spark_wing",
+  "hullId": "volantian_spark",
   "hullSize": "FIGHTER",
   "spriteName": "graphics/ships/fighters/vol_spark.png",
   "style": "VOLANTIAN",

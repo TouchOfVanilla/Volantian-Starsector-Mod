@@ -1,6 +1,6 @@
 {
   "variantId": "volantian_flash_wing_bomber",
-  "hullId": "volantian_flash_wing",
+  "hullId": "volantian_flash",
   "displayName": "Bomber",
   "goalVariant": false,
   "fluxCapacitors": 0,

@@ -1,6 +1,6 @@
 {
   "hullName": "Lux (VRI)",
-  "hullId": "volantian_lux_wing",
+  "hullId": "volantian_lux",
   "hullSize": "FIGHTER",
   "spriteName": "graphics/ships/fighters/vol_lux.png",
   "style": "VOLANTIAN",

@@ -1,6 +1,6 @@
 {
   "hullName": "Flash (VRI)",
-  "hullId": "volantian_flash_wing",
+  "hullId": "volantian_flash",
   "hullSize": "FIGHTER",
   "spriteName": "graphics/ships/fighters/vol_flash.png",
   "style": "VOLANTIAN",

@@ -1,6 +1,6 @@
 {
   "variantId": "volantian_longcaster_wing_standard",
-  "hullId": "volantian_longcaster_wing",
+  "hullId": "volantian_longcaster",
   "displayName": "Standard",
   "goalVariant": false,
   "fluxCapacitors": 0,

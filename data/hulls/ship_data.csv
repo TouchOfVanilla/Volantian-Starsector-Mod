@@ -35,10 +35,10 @@ Paramerion,volantian_paramerion,Phase Capital,Volantian,volantian_transfixshift,
 Cressida,volantian_cressida,Phase Destroyer,Volantian,volantian_shellswarp,15,4000,650,5000,10000,600,55,,80,60,40,30,30,400,PHASE,phasecloak,,,,0.04,0.04,25,50,60,100,2,50,9,120000,5,20,300,0.25,20,20,,,,,,,COMBAT,"VRI_bp, merc",1,0.5,2,3,,407
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #fighters,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Lux (VRI),volantian_lux_wing,Fighter,Volantian,flarelauncher_fighter,,400,60,350,,50,0,,250,350,350,100,240,30,OMNI,,140,0,1,,,0,0,,,,,,,,,,,,,,,,,,,,,,0,,,,115
-Spark (VRI),volantian_spark_wing,Interceptor,Volantian,,,300,40,150,,50,0,,335,500,400,90,270,15,OMNI,,130,0,1,,,0,0,,,,,,,,,,,,,,,,,,,,,,0,,,,116
-Flash (VRI),volantian_flash_wing,Bomber,Volantian,,,400,60,350,,50,0,,160,240,200,40,120,30,OMNI,,200,0,1,,,0,0,,,,,,,,,,,,,,,,,,,,,,0,,,,117
-Longcaster,volantian_longcaster_wing,Long Range Support Drone,Midline,,,400,60,800,,50,0,,150,240,400,50,120,20,FRONT,,180,0,1,,,0,0,,,,,,,,,,,,,,,,,,,,,,0,,,,118
+Lux (VRI),volantian_lux,Fighter,Volantian,flarelauncher_fighter,,400,60,350,,50,0,,250,350,350,100,240,30,OMNI,,140,0,1,,,0,0,,,,,,,,,,,,,,,,,,,,,,0,,,,115
+Spark (VRI),volantian_spark,Interceptor,Volantian,,,300,40,150,,50,0,,335,500,400,90,270,15,OMNI,,130,0,1,,,0,0,,,,,,,,,,,,,,,,,,,,,,0,,,,116
+Flash (VRI),volantian_flash,Bomber,Volantian,,,400,60,350,,50,0,,160,240,200,40,120,30,OMNI,,200,0,1,,,0,0,,,,,,,,,,,,,,,,,,,,,,0,,,,117
+Longcaster,volantian_longcaster,Long Range Support Drone,Midline,,,400,60,800,,50,0,,150,240,400,50,120,20,FRONT,,180,0,1,,,0,0,,,,,,,,,,,,,,,,,,,,,,0,,,,118
 #funny reamnante shieeps,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Chromatic,volantian_chromatic,Drone Battlecruiser,Remnant,highenergyfocus,28,8500,775,14000,16000,1000,210,0,30,20,20,15,20,3000,OMNI,,240,0.4,0.6,,,0,0,50,20,4,5,9,300000,5,15,540,0.25,34,34,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX","remnant, auto_rec",1,0.1,2,3,,414.1
