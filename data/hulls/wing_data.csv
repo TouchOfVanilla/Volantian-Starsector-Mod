@@ -2,4 +2,4 @@ id,variant,tags,tier,rarity,fleet pts,op cost,formation,range,attackRunRange,att
 volantian_lux_wing,volantian_lux_wing_fighter,"fighter4, fighter, drone, vri_figthers_bp, merc",3,,6,13,V,4000,500,500,3,FIGHTER,Heavy Fighter/Disabler Drone,15,8000,1
 volantian_spark_wing,volantian_spark_wing_fighter,"interceptor, interceptor5, drone, vri_figthers_bp, merc",3,,4,6,CLAW,4000,200,750,4,INTERCEPTOR,Interceptor/Fighter Drone,10,5000,2
 volantian_flash_wing,volantian_flash_wing_bomber,"bomber,  bomber5, drone, vri_figthers_bp, merc",3,,5,14,V,4000,2000,300,2,BOMBER,Strike Drone,18,8000,3
-,,,,,,,,,,,,,,,,
+volantian_longcaster_wing,volantian_longcaster_standard,"drone, fighter1, midline_bp, merc",2,,7,20,V,500,2000,300,3,FIGHTER,Long Range Support Drone,18,12000,4
