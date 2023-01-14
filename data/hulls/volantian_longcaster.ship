@@ -1,0 +1,73 @@
+{
+  "hullName": "Longcaster",
+  "hullId": "volantian_longcaster",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fighters/vol_longcaster.png",
+  "style": "MIDLINE",
+  "height": 28,
+  "width": 25,
+  "center": [12.5, 14],
+  "collisionRadius": 22.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 18,
+  "viewOffset": 0,
+  "builtInMods": [
+    "advancedcore",
+    "no_weapon_flux"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [6.5, 0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-10.5, 8],
+      "length": 12.655035,
+      "width": 3.521417,
+      "angle": 141.5,
+      "contrailSize": 3.521417,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-10.5, -8],
+      "length": 12.655035,
+      "width": 3.521417,
+      "angle": -141.5,
+      "contrailSize": 3.521417,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-8, 11.5],
+      "length": 10.689037,
+      "width": 3.313296,
+      "angle": 137.5,
+      "contrailSize": 3.313296,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-8, -11.5],
+      "length": 10.689037,
+      "width": 3.313296,
+      "angle": -137.5,
+      "contrailSize": 3.313296,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -12, -8,
+    -6.5, -13,
+    0.5, -6.5,
+    10, -3.5,
+    10, 3.5,
+    0.5, 6.5,
+    -6.5, 13,
+    -12, 8
+  ]
+}
