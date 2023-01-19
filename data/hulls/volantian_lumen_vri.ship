@@ -1,0 +1,140 @@
+{
+  "hullName": "Lumen (VRI)",
+  "hullId": "volantian_lumen_vri",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/lumen_vri.png",
+  "style": "VOLANTIAN",
+  "height": 82,
+  "width": 92,
+  "center": [46, 42],
+  "collisionRadius": 80,
+  "shieldCenter": [-2, 0],
+  "shieldRadius": 72,
+  "viewOffset": 0,
+  "builtInMods": [
+    "VES",
+    "VRI_FluxNetwork",
+    "auxiliarythrusters"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS 006",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 20,
+      "locations": [21, 30]
+    },
+    {
+      "id": "WS 007",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": -20,
+      "locations": [21, -30]
+    },
+    {
+      "id": "WS 008",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [32, 14]
+    },
+    {
+      "id": "WS 009",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [32, -13]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-41, 35],
+      "length": 20,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 24,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-40, 31],
+      "length": 20,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 24,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-39, 27],
+      "length": 20,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 24,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-38, 22],
+      "length": 20,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 24,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-38, -21],
+      "length": 20,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 24,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-39, -26],
+      "length": 20,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 24,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-40, -30],
+      "length": 20,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 24,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-41, -34],
+      "length": 20,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 24,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -6, 25,
+    20, 45,
+    40, 26,
+    33, 6,
+    21, 5,
+    21, -4,
+    34, -4,
+    39, -26,
+    20, -44,
+    -6, -25,
+    -25, -45,
+    -40, -36,
+    -22, 0,
+    -39, 37,
+    -25, 45
+  ]
+}
