@@ -1,0 +1,46 @@
+{
+  "variantId": "volantian_indomitable_vri_artillery",
+  "hullId": "volantian_indomitable_vri",
+  "displayName": "Artillery",
+  "goalVariant": true,
+  "fluxCapacitors": 3,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 014": "vol_harpecannon",
+        "WS 016": "vol_harpecannon",
+        "WS0002": "vol_halon",
+        "WS0003": "vol_monoblade",
+        "WS0004": "vol_monoblade"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "vol_surik"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "vol_halonMK1",
+        "WS0006": "vol_halonMK1",
+        "WS0012": "vol_halon",
+        "WS0013": "vol_halonMK1",
+        "WS0014": "vol_halonMK1"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

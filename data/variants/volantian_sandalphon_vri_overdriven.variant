@@ -1,0 +1,25 @@
+{
+  "variantId": "volantian_sandalphon_vri_overdriven",
+  "hullId": "volantian_sandalphon_vri",
+  "displayName": "Overdriven",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "safetyoverrides",
+    "hardened_subsystems"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "autopulse"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

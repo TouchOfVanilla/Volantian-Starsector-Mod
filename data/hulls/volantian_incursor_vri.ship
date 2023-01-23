@@ -1,0 +1,202 @@
+{
+  "hullName": "Incursor (VRI)",
+  "hullId": "volantian_incursor_vri",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/vol_incursor.png",
+  "style": "VOLANTIAN",
+  "height": 253,
+  "width": 174,
+  "center": [87, 126.5],
+  "collisionRadius": 160.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 130,
+  "viewOffset": 0,
+  "builtInMods": [
+    "VRI_FluxNetwork",
+    "VES"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 179,
+      "angle": 2,
+      "locations": [8.5, 32]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 179,
+      "angle": -2,
+      "locations": [8.5, -32]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 323,
+      "angle": 89,
+      "locations": [-39.5, 63]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 323,
+      "angle": -89,
+      "locations": [-39.5, -63]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 20,
+      "angle": 0,
+      "locations": [1.5, 56]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 20,
+      "angle": -0,
+      "locations": [1.5, -56]
+    },
+    {
+      "id": "WS0007",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 20,
+      "angle": 0,
+      "locations": [119, 8]
+    },
+    {
+      "id": "WS0008",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 20,
+      "angle": -0,
+      "locations": [119, -8]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -28.5, 13,
+        -25.5, 13
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -28.5, -11.5,
+        -24, -11
+      ]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 27,
+      "angle": 135,
+      "locations": [53, 16.5]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 27,
+      "angle": -135,
+      "locations": [53, -16.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-118.5, 26.5],
+      "length": 71.5,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-118.5, -26.5],
+      "length": 71.5,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-124.5, 13],
+      "length": 75.5,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-124.5, -13],
+      "length": 75.5,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -97, -5.5,
+    -125, -6.5,
+    -125, -16,
+    -118.5, -30.5,
+    -105, -37.5,
+    -100.5, -48.5,
+    -92, -68,
+    -68.5, -53.5,
+    -48, -70,
+    -30.5, -73.5,
+    -2.5, -60,
+    -4.5, -50.5,
+    2.5, -41.5,
+    43.5, -27.5,
+    110.5, -25.5,
+    125, -17.5,
+    125, 17.5,
+    110.5, 25.5,
+    43.5, 27.5,
+    2.5, 41.5,
+    -4.5, 50.5,
+    -2.5, 60,
+    -30.5, 73.5,
+    -48, 70,
+    -68.5, 53.5,
+    -92, 68,
+    -100.5, 48.5,
+    -105, 37.5,
+    -118.5, 30.5,
+    -125, 16,
+    -125, 6.5,
+    -97, 5.5
+  ]
+}

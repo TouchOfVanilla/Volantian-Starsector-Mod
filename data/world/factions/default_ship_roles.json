@@ -1,122 +1,125 @@
 {
 	"combatSmall": {
-		"volantian_sandalphon_standard": 3,
-		"volantian_virtuous_standard": 3,
-		"volantian_wolf_standard": 3,
-		"volantian_moray_standard": 3,
-		"tempest_volantian": 10,
-		"vigilance_volantian": 10,
-		"centurion_volantian": 10,
-		"wolf_volantian": 10
+		"volantian_sandalphon_vri_standard": 3, "volantian_sandalphon_vri_overdriven": 3,
+		"volantian_courageous_vri_assault": 3, "volantian_courageous_vri_ranger": 3,
+		"volantian_lumen_vri_standard":3,
+		"volantian_glimmer_vri_standard":3,
+		"volantian_wolf_vri_standard": 3, "volantian_wolf_vri_ranger": 3,
+		"volantian_moray_vri_artillery": 3, "volantian_moray_vri_overdriven": 3,
+		"tempest_volantian": 0,
+		"vigilance_volantian": 0,
+		"centurion_volantian": 0,
+		"wolf_volantian": 0
 	},
 	"combatMedium": {
-		"volantian_sunder_standard": 3,
-		"volantian_lancet_standard": 3,
-		"volantian_cestus_standard": 3,
-		"volantian_medusa_standard": 3,
+		"volantian_sunder_vri_standard": 3, "volantian_sunder_vri_ranger": 3, "volantian_sunder_vri_overdriven": 3,
+		"volantian_lancet_vri_assault": 3, "volantian_lancet_vri_strike": 3,
+		"volantian_flagellator_vri_assault": 3, "volantian_flagellator_vri_bomber": 3, "volantian_flagellator_vri_support": 3,
+		"volantian_medusa_vri_artillery": 3, "volantian_medusa_vri_assault": 3,
 		"volantian_lancet_xiv_standard":10,
 		"volantian_lancet_lt_standard":10,
-		"volantian_metatron_standard": 2,
-		"sunder_volantian": 10,
-		"shrike_volantian": 10,
-		"medusa_volantian": 10,
-		"hammerhead_volantian": 10,
-		"volantian_cressida_standard": 3, "volantian_cressida_strike": 3
+		"volantian_metatron_vri_strike": 1, "volantian_metatron_vri_support": 1, "volantian_metatron_vri_miner": 1,
+		"sunder_volantian": 0,
+		"shrike_volantian": 0,
+		"medusa_volantian": 0,
+		"hammerhead_volantian": 0,
+		"volantian_cressida_vri_strike": 3, "volantian_cressida_vri_overdriven": 3
 	},
 	"combatLarge": {
-		"volantian_blameless_standard": 3, "volantian_blameless_strike": 5,
-		"volantian_fury_standard": 3, "volantian_fury_assaults": 5,
-		"volantian_claymore_standard": 3, "volantian_claymore_assault": 5,
-		"volantian_chromatic_standard": 8,
-		"volantian_cobalt_standard": 3, "volantian_cobalt_strike": 2,
-		"volantian_gauntlet_standard": 3, "volantian_gauntlet_assault": 5,
+		"volantian_indomitable_vri_standard": 3, "volantian_indomitable_vri_artillery": 5,"volantian_indomitable_vri_overdriven": 5,
+		"volantian_fury_vri_ranger": 3, "volantian_fury_vri_assault": 5,
+		"volantian_claymore_vri_artillery": 3, "volantian_claymore_vri_brawler": 5,
+		"volantian_chromatic_standard": 5,
+		"volantian_cordite_vri_hunter": 3, "volantian_cordite_vri_sniper": 2,
+		"volantian_gauntlet_vri_strike": 3, "volantian_gauntlet_vri_artillery": 5,
 		"volantian_chromatic_vri_standard": 3, "volantian_chromatic_vri_strike": 5,
-		"champion_volantian": 5,
-		"aurora_volantian": 5
+		"champion_volantian": 0,
+		"aurora_volantian": 0
 		
 	},
 	"combatCapital": {
-		"volantian_radiant_standard": 5, "volantian_radiant_strike": 10,
-		"volantian_shamshir_standard": 3,
-		"volantian_paramerion_standard": 2
+		"volantian_radiant_vri_standard": 5, "volantian_radiant_vri_artillery": 5,
+		"volantian_shamshir_vri_artillery": 3, "volantian_shamshir_vri_assault": 3,
+		"volantian_paramerion_vri_standard": 2
 	},
 	"combatFreighterSmall": {
 	},
 	"combatFreighterMedium": {
-		"volantian_incursor_standard": 3
+		"volantian_incursor_vri_support": 3
 	},
 	"combatFreighterLarge": {
-		"volantian_claymore_standard": 3, "volantian_claymore_assault": 3
+		"volantian_claymore_vri_artillery": 3, "volantian_claymore_vri_brawler": 3
 	},
 	"civilianRandom": {
 	},
 	"carrierSmall": {
-		"volantian_shepherd_standard": 3,
-		"volantian_virtuous_standard": 5, "volantian_virtuous_assault": 5
+		"volantian_shepherd_vri_standard": 3,
+		"volantian_courageous_vri_assault": 5, "volantian_courageous_vri_ranger": 5
 	},
 	"carrierMedium": {
-		"volantian_gauntlet_standard": 3,
-		"volantian_gauntlet_support": 3,
-		"volantian_pelta_standard": 3,
+		"volantian_gauntlet_vri_strike": 3,
+		"volantian_gauntlet_vri_artillery": 3,
+		"volantian_mora_vri_strike": 3, "volantian_mora_vri_support": 3,
 		"volantian_kaiken_standard": 2,
 		"volantian_kaiken_vri_standard": 4,
-		"drover_volantian": 3
+		"drover_volantian": 0
 	},
 	"carrierLarge": {
-		"volantian_gauntlet_assault": 6,
-		"volantian_pelta_standard": 5,
-		"volantian_kaiken_standard":3
+		"volantian_gauntlet_vri_strike": 6,
+		"volantian_mora_vri_support": 5,
+		"volantian_kaiken_vri_standard": 3,
+		"volantian_brilliant_vri_standard": 3
 	},
 	"phaseSmall": {
-		"volantian_rapture_standard": 5
+		"volantian_rapture_vri_standard": 5
 	},
 	"phaseMedium": {
-		"volantian_cressida_standard": 5, "volantian_cressida_strike": 5
+		"volantian_cressida_vri_overdriven": 5, "volantian_cressida_vri_strike": 5
 	},
 	"phaseLarge": {
-		"volantian_paramerion_standard": 2
+		"volantian_paramerion_vri_standard": 2
 	},
 	"phaseCapital": {
 	},
 	"freighterSmall": {
-		"volantian_kite_standard": 2
+		"volantian_kite_vri_standard": 2
 	},
 	"freighterMedium": {
-		"volantian_karambit_standard": 3
+		"volantian_karambit_vri_standard": 3
 	},
 	"freighterLarge": {
-		"volantian_karambit_standard": 5
+		"volantian_karambit_vri_standard": 5
 	},
 	"tankerSmall": {
 	},
 	"tankerMedium": {
-		"volantian_phaeton_standard": 2
+		"volantian_phaeton_vri_standard": 2
 	},
 	"tankerLarge": {
 	},
 	"personnelSmall": {
-		"volantian_shepherd_standard": 5,
-		"volantian_kite_standard": 5,
-		"volantian_sandalphon_standard": 3
+		"volantian_shepherd_vri_standard": 5,
+		"volantian_kite_vri_standard": 5,
+		"volantian_sandalphon_vri_standard": 3
 	},
 	"personnelMedium": {
-		"volantian_cressida_standard": 2, "volantian_cressida_strike": 2
+		"volantian_cressida_vri_strike": 2, "volantian_cressida_vri_overdriven": 2
 	},
 	"personnelLarge": {
-		"volantian_caelum_standard": 1
+		"volantian_caelum_vri_standard": 1
 	},
 	"linerSmall": {
 	},
 	"linerMedium": {
 	},
 	"linerLarge": {
-		"volantian_caelum_standard": 5
+		"volantian_caelum_vri_standard": 5
 	},
 	"tug": {
 	},
 	"crig": {
-		"volantian_curator_standard": 10,
-		"volantian_shepherd_standard": 10
+		"volantian_curator_vri_support": 10,
+		"volantian_shepherd_vri_standard": 10
 	},
 	"utility": {
 	}

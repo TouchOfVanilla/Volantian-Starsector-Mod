@@ -1,0 +1,40 @@
+{
+  "variantId": "volantian_courageous_vri_ranger",
+  "hullId": "volantian_courageous_vri",
+  "displayName": "Ranger",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 14,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "swp_swarmer_f",
+        "WS0002": "swp_swarmer_f"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "vol_tekkocannon",
+        "WS0004": "vol_tekkocannon"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "vol_trident"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

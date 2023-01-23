@@ -1,0 +1,103 @@
+{
+  "hullName": "Metatron (VRI)",
+  "hullId": "volantian_metatron_vri",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/metatron.png",
+  "style": "VOLANTIAN",
+  "height": 98,
+  "width": 112,
+  "center": [56, 37.5],
+  "collisionRadius": 111,
+  "shieldCenter": [2.5, -0],
+  "shieldRadius": 65.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "VRI_FluxNetwork",
+    "VES"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 35,
+      "angle": 0,
+      "locations": [7.5, 28]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 35,
+      "angle": -0,
+      "locations": [7.5, -28]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 29,
+      "angle": 0,
+      "locations": [21.5, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-23, 6.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-23, -6.5],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-32.5, 25],
+      "length": 7.5,
+      "width": 28,
+      "angle": -161,
+      "contrailSize": 28,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-32.5, -25],
+      "length": 7.5,
+      "width": 28,
+      "angle": 161,
+      "contrailSize": 28,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    29, -10.5,
+    48, -10,
+    38, -23,
+    16, -23,
+    16, -35.5,
+    -6, -47,
+    -12, -35.5,
+    -20, -43.5,
+    -35, -38.5,
+    -24, -11,
+    -24, 11,
+    -35, 38.5,
+    -20, 43.5,
+    -12, 35.5,
+    -6, 47,
+    16, 35.5,
+    16, 23,
+    38, 23,
+    48, 10,
+    29, 10.5
+  ]
+}

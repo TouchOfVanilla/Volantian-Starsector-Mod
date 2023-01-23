@@ -1,0 +1,45 @@
+{
+  "variantId": "volantian_gauntlet_vri_artillery",
+  "hullId": "volantian_gauntlet_vri",
+  "displayName": "Artillery",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 18,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "expanded_deck_crew"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "vol_harpecannon",
+        "WS0006": "vol_harpecannon",
+        "WS0007": "vol_monoblade"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "taclaser",
+        "WS0002": "taclaser",
+        "WS0003": "vol_halonMK1",
+        "WS0004": "vol_halonMK1",
+        "WS0008": "vol_halonMK1",
+        "WS0009": "vol_halonMK1",
+        "WS0010": "vol_halonMK1",
+        "WS0011": "vol_halonMK1"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "volantian_flash_wing",
+    "volantian_spark_wing",
+    "volantian_spark_wing"
+  ]
+}

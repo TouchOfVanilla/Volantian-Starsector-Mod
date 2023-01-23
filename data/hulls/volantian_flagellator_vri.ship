@@ -1,0 +1,219 @@
+{
+  "hullName": "Flagellator (VRI)",
+  "hullId": "volantian_flagellator_vri",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/cestus.png",
+  "style": "VOLANTIAN",
+  "height": 181,
+  "width": 205,
+  "center": [103, 91],
+  "collisionRadius": 140.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 127.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "VRI_FluxNetwork",
+    "VES"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 202,
+      "angle": -180,
+      "locations": [-26, -17]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 202,
+      "angle": 180,
+      "locations": [-25, 17]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 215,
+      "angle": -43.5,
+      "locations": [-3, -71.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 215,
+      "angle": 43.5,
+      "locations": [-3, 71]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 19,
+      "angle": -0,
+      "locations": [65, -16]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 19,
+      "angle": 0,
+      "locations": [65, 16]
+    },
+    {
+      "id": "WS0009",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 20,
+      "angle": 0,
+      "locations": [59, -32]
+    },
+    {
+      "id": "WS0010",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 20,
+      "angle": -0,
+      "locations": [59, 32]
+    },
+    {
+      "id": "WS0011",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": 0,
+      "locations": [62, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-72, -39.5],
+      "length": 89.5,
+      "width": 15,
+      "angle": 180,
+      "contrailSize": 15,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-72, 39.5],
+      "length": 89.5,
+      "width": 15,
+      "angle": -180,
+      "contrailSize": 15,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-32, -57],
+      "length": 91.739998,
+      "width": 36.470001,
+      "angle": -140,
+      "contrailSize": 36.470001,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-32, 57],
+      "length": 91.739998,
+      "width": 36.470001,
+      "angle": 140,
+      "contrailSize": 36.470001,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-24.5, -72],
+      "length": 20.5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-24.5, 72],
+      "length": 20.5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 5,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-26.5, -66.5],
+      "length": 14,
+      "width": 2,
+      "angle": 180,
+      "contrailSize": 2,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-26.5, 66.5],
+      "length": 14,
+      "width": 2,
+      "angle": -180,
+      "contrailSize": 2,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-69.5, -10.5],
+      "length": 8,
+      "width": 20,
+      "angle": 163,
+      "contrailSize": 20,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-69.5, 10.5],
+      "length": 8,
+      "width": 20,
+      "angle": -163,
+      "contrailSize": 20,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-73, -24.5],
+      "length": 6.5,
+      "width": 13,
+      "angle": -157,
+      "contrailSize": 13,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-73, 24.5],
+      "length": 6.5,
+      "width": 13,
+      "angle": 157,
+      "contrailSize": 13,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    81.5, -42.5,
+    80, -54.5,
+    -13.5, -92.5,
+    -24, -85,
+    -37.5, -49.5,
+    -80.5, -57.5,
+    -82, -46,
+    -72.5, -43.5,
+    -72.5, 44.5,
+    -82, 46,
+    -79.5, 58.5,
+    -36.5, 51,
+    -24, 85,
+    -13.5, 92.5,
+    80, 54.5,
+    81.5, 42.5,
+    65.5, 41,
+    65.5, -41
+  ]
+}

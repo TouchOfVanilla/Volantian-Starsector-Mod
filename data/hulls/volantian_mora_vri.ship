@@ -1,0 +1,221 @@
+{
+  "hullName": "Mora (VRI)",
+  "hullId": "volantian_mora_vri",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/pelta.png",
+  "style": "VOLANTIAN",
+  "height": 198,
+  "width": 248,
+  "center": [111, 88],
+  "collisionRadius": 150,
+  "shieldCenter": [1, 1],
+  "shieldRadius": 140,
+  "viewOffset": 0,
+  "builtInMods": [
+    "VES",
+    "VRI_FluxNetwork"
+  ],
+  "builtInWings": [
+    "spark_wing"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS 002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 12,
+      "angle": 0,
+      "locations": [53, 74]
+    },
+    {
+      "id": "WS 003",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 215,
+      "angle": 72,
+      "locations": [28, 73]
+    },
+    {
+      "id": "WS 004",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 44,
+      "angle": 0,
+      "locations": [38, -103]
+    },
+    {
+      "id": "WS 005",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 100,
+      "angle": 0,
+      "locations": [50, 37]
+    },
+    {
+      "id": "WS 007",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 114,
+      "angle": -23,
+      "locations": [67, -49]
+    },
+    {
+      "id": "WS 008",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -80,
+      "locations": [9, -101.5]
+    },
+    {
+      "id": "WS 011",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 167,
+      "angle": 80,
+      "locations": [0, 96]
+    },
+    {
+      "id": "WS 013",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 110,
+      "angle": 0,
+      "locations": [46, 57]
+    },
+    {
+      "id": "WS 014",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 182,
+      "angle": 180,
+      "locations": [-58, -9]
+    },
+    {
+      "id": "WS 015",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 300,
+      "angle": 0,
+      "locations": [
+        43, 2,
+        -34, 17,
+        -50, -21,
+        56, 15
+      ]
+    },
+    {
+      "id": "WS 016",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 300,
+      "angle": 0,
+      "locations": [
+        -47, 26,
+        33, 14,
+        78, -10,
+        55, -10
+      ]
+    },
+    {
+      "id": "WS 017",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 300,
+      "angle": 0,
+      "locations": [
+        -35, -17,
+        -48, 13,
+        66, 3,
+        27, -6
+      ]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 40,
+      "angle": -1,
+      "locations": [90.5, -33]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 44,
+      "angle": 0,
+      "locations": [48, -85]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-41, 83],
+      "length": 86.5,
+      "width": 19,
+      "angle": 180,
+      "contrailSize": 19,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-55.5, 48.5],
+      "length": 92,
+      "width": 30,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-47.5, -77.5],
+      "length": 97.5,
+      "width": 32,
+      "angle": 180,
+      "contrailSize": 32,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-33.5, -112.5],
+      "length": 90,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 18,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    56, 79,
+    61.5, 27,
+    74, 25,
+    96, -17,
+    95.5, -47.5,
+    63, -67.5,
+    47.5, -112,
+    -2, -130.5,
+    -21, -126.5,
+    -47.5, -88.5,
+    -51.5, -49,
+    -87, -41,
+    -59, -25,
+    -57, 25,
+    -88.5, 24.5,
+    -57, 43.5,
+    -57, 51.5,
+    -38, 71.5,
+    -41, 88.5,
+    -19, 102,
+    21, 100
+  ]
+}

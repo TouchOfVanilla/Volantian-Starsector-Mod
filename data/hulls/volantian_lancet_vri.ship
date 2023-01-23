@@ -1,0 +1,155 @@
+{
+  "hullName": "Lancet (VRI)",
+  "hullId": "volantian_lancet_vri",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/lancet.png",
+  "style": "VOLANTIAN",
+  "height": 172,
+  "width": 126,
+  "center": [63, 80],
+  "collisionRadius": 126,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 108,
+  "viewOffset": 0,
+  "builtInMods": [
+    "VRI_FluxNetwork",
+    "VES",
+    "targetingunit"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 134,
+      "angle": 99.5,
+      "locations": [-8, 50]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 134,
+      "angle": -99.5,
+      "locations": [-8, -50]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 129,
+      "angle": 0,
+      "locations": [13, 32]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 129,
+      "angle": -0,
+      "locations": [13, -32]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 20,
+      "angle": 0,
+      "locations": [81, 20]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 20,
+      "angle": -0,
+      "locations": [81, -20]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-73.5, 53],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-73.5, -53],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-78, 43],
+      "length": 54.5,
+      "width": 11,
+      "angle": 180,
+      "contrailSize": 11,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-78, -43],
+      "length": 54.5,
+      "width": 11,
+      "angle": -180,
+      "contrailSize": 11,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-77.5, -0],
+      "length": 88.5,
+      "width": 21,
+      "angle": 180,
+      "contrailSize": 21,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-76.5, 26],
+      "length": 4.721389,
+      "width": 25.47222,
+      "angle": -166,
+      "contrailSize": 25.47222,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-76, -25],
+      "length": 4.616077,
+      "width": 24.975334,
+      "angle": 166,
+      "contrailSize": 24.975334,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -78.5, -61.5,
+    -51, -62,
+    -21.5, -45,
+    -14.5, -57,
+    1, -54,
+    28.5, -60,
+    45.5, -47.5,
+    89.5, -31,
+    89.5, -11.5,
+    63.5, -11,
+    63.5, 11,
+    89.5, 11.5,
+    89.5, 31,
+    45.5, 47.5,
+    28.5, 60,
+    1, 54,
+    -14.5, 57,
+    -21.5, 45,
+    -51, 62,
+    -78.5, 61.5
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "variantId": "volantian_indomitable_vri_overdriven",
+  "hullId": "volantian_indomitable_vri",
+  "displayName": "Overdriven",
+  "goalVariant": true,
+  "fluxCapacitors": 7,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "magazines",
+    "safetyoverrides"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 014": "vol_kastane",
+        "WS 016": "vol_kastane",
+        "WS0003": "autopulse",
+        "WS0004": "autopulse",
+        "WS0005": "vol_pataautocannon",
+        "WS0006": "vol_pataautocannon"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "vol_kattibarrage"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0013": "vol_halonMK1",
+        "WS0014": "vol_halonMK1"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

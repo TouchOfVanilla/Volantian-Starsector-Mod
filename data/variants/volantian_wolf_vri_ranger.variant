@@ -1,0 +1,41 @@
+{
+  "variantId": "volantian_wolf_vri_ranger",
+  "hullId": "volantian_wolf_vri",
+  "displayName": "Ranger",
+  "goalVariant": false,
+  "fluxCapacitors": 4,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 004": "vol_trident"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "vol_halonMK1",
+        "WS 002": "vol_halonMK1",
+        "WS 003": "vol_halonMK1"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 005": "vol_katti",
+        "WS 006": "vol_katti"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

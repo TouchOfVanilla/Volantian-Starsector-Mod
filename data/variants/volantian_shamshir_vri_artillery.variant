@@ -1,0 +1,53 @@
+{
+  "variantId": "volantian_shamshir_vri_artillery",
+  "hullId": "volantian_shamshir_vri",
+  "displayName": "Artillery",
+  "goalVariant": true,
+  "fluxCapacitors": 18,
+  "fluxVents": 40,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "eccm",
+    "hardenedshieldemitter",
+    "auxiliarythrusters"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "vol_monoblade",
+        "WS0006": "vol_monoblade",
+        "WS0007": "vol_phosphenelance",
+        "WS0008": "vol_phosphenelance"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "vulcan",
+        "WS0002": "vulcan",
+        "WS0003": "vol_halonMK1",
+        "WS0004": "vol_halonMK1",
+        "WS0011": "vol_halonMK1",
+        "WS0012": "vol_halonMK1",
+        "WS0013": "vulcan",
+        "WS0014": "vulcan",
+        "WS0015": "vol_halon"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "vol_lucern",
+        "WS0010": "vol_lucern"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

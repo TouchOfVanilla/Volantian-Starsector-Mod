@@ -1,0 +1,42 @@
+{
+  "variantId": "volantian_lancet_vri_strike",
+  "hullId": "volantian_lancet_vri",
+  "displayName": "Strike",
+  "goalVariant": true,
+  "fluxCapacitors": 7,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "missleracks",
+    "hardenedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "vol_harpecannon",
+        "WS0004": "vol_harpecannon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "vol_halonMK1",
+        "WS0002": "vol_halonMK1"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "vol_lucern",
+        "WS0006": "vol_lucern"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

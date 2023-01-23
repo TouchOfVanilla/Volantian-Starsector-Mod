@@ -1,0 +1,44 @@
+{
+  "variantId": "volantian_claymore_vri_brawler",
+  "hullId": "volantian_claymore_vri",
+  "displayName": "Brawler",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 37,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "safetyoverrides"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "vol_kastane",
+        "WS0002": "vol_kastane",
+        "WS0005": "vol_kastane",
+        "WS0010": "vol_pataautocannon",
+        "WS0011": "vol_pataautocannon"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0003": "vol_kattibarrage",
+        "WS0004": "vol_kattibarrage"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "vol_tekkocannon",
+        "WS0007": "vol_tekkocannon"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}
