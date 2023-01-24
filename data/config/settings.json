@@ -66,7 +66,7 @@
 		},	
 	
 		"blueprint_packages":{
-			"VRI_package":"graphics/factions/VRI_Flag2.png"
+			"VRI_package":"graphics/icons/cargo/vri_bp.png"
 		},
 
 	"graphics": {

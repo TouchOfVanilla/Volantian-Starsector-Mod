@@ -63,7 +63,7 @@ public class Uelyst {
 
                 new ArrayList<String>(
                         Arrays.asList(
-                                Conditions.POPULATION_3,
+                                Conditions.POPULATION_4,
                                 Conditions.OUTPOST,
                                 Conditions.VOLATILES_PLENTIFUL,
                                 Conditions.TOXIC_ATMOSPHERE
@@ -130,7 +130,7 @@ public class Uelyst {
 
                 new ArrayList<String>(
                         Arrays.asList(
-                                Conditions.POPULATION_3,
+                                Conditions.POPULATION_5,
                                 Conditions.COLD,
                                 Conditions.SOLAR_ARRAY,
                                 Conditions.RUINS_VAST,
@@ -176,7 +176,7 @@ public class Uelyst {
 
                 new ArrayList<String>(
                         Arrays.asList(
-                                Conditions.POPULATION_3,
+                                Conditions.POPULATION_4,
                                 Conditions.STEALTH_MINEFIELDS,
                                 Conditions.OUTPOST
                         )

@@ -70,7 +70,7 @@ public class Royce {
 
                 new ArrayList<String>(
                         Arrays.asList(
-                                Conditions.POPULATION_4,
+                                Conditions.POPULATION_5,
                                 Conditions.LARGE_REFUGEE_POPULATION,
                                 Conditions.HABITABLE,
                                 Conditions.LOW_GRAVITY,
@@ -155,7 +155,7 @@ public class Royce {
 
                 new ArrayList<String>(
                         Arrays.asList(
-                                Conditions.POPULATION_3,
+                                Conditions.POPULATION_4,
                                 Conditions.THIN_ATMOSPHERE,
                                 Conditions.MILD_CLIMATE,
                                 Conditions.IRRADIATED,
