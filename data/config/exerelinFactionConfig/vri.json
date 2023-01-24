@@ -1,7 +1,7 @@
 {
     "playableFaction":true,
     "corvusCompatible":true,
-	"ngcTooltip":"Touch fluffy tail.",
+	"ngcTooltip":"Touch the fluffy tail",
     "rebelFleetSuffix":"Traitors",
     
 	"asteroidMiningFleetName":"Scavenger",
@@ -17,7 +17,7 @@
 	"invasionFleetSizeMod":0.05,
 	"responseFleetSizeMod":0.05,
 	"invasionPointMult":1.05,
-	"vengeanceFleetSizeMult":1.05,
+	"vengeanceFleetSizeMult":1.50,
 	"factionIdForHqResponse":"vri",
 	"freeMarket":true,
 	"specialForcesMaxFleets":1,
@@ -134,36 +134,36 @@
     "specialForcesNamerClass":"exerelin.campaign.intel.specialforces.namer.PlanetNamer",
 
     "startShipsSolo":[
-		["volantian_metatron_strike"],
-		["volantian_kite_standard"],
-		["volantian_virtuous_standard"]
+		["volantian_metatron_vri_support"],
+		["volantian_kite_vri_standard"],
+		["volantian_courageous_vri_assault"]
 	],
 
     "startShipsCombatSmall":[
-      ["volantian_virtuous_standard", "volantian_metatron_standard", "volantian_kite_standard"]
+      ["volantian_courageous_vri_assault", "volantian_metatron_vri_support", "volantian_kite_vri_standard"]
 	
     ],
 
 	"startShipsCombatLarge":[
-	  ["volantian_blameless_standard", "volantian_cestus_standard", "volantian_cobalt_standard"],
-	  ["volantian_radiant_standard", "volantian_fury_standard", "volantian_virtuous_standard"]
+	  ["volantian_indomitable_vri_standard", "volantian_flagellator_vri_assault", "volantian_cordite_vri_sniper"],
+	  ["volantian_radiant_vri_standard", "volantian_fury_vri_assault", "volantian_cressedia_strike"]
     ],
 
     "startShipsCarrierLarge":[
-		["volantian_gauntlet_standard", "volantian_illuminator_standard", "volantian_virtuous_standard"],
-		["volantian_gauntlet_standard", "volantian_cestus_standard", "volantian_virtuous_standard"]
+		["volantian_gauntlet_vri_strike", "volantian_medusa_vri_assault", "volantian_courageous_vri_assault"],
+		["volantian_mora_vri_strike", "volantian_moray_vri_overdriven", "volantian_courageous_vri_assault"]
 	],
 	
 	"startShipsTradeSmall":[
-		["volantian_virtuous_standard", "buffalo_Standard", "volantian_sunder_standard"]
+		["volantian_wolf_vri_standard", "buffalo_Standard", "volantian_sunder_vri_standard"]
 	],
 	
     "startShipsTradeLarge":[
-		["volantian_cherub_standard", "gemini_Standard", "volantian_virtuous_standard"]
+		["volantian_karambit_vri_standard", "gemini_Standard", "volantian_glimmer_vri_standard"]
 	],
 	
     "startShipsSuper":[
-		["volantian_rapture_standard"]
+		["volantian_rapture_vri_standard"]
 	],
 
 	
