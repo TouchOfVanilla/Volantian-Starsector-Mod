@@ -15,7 +15,6 @@ public class VRI_MakeshiftFluxNetwork extends BaseHullMod {
 	public void applyEffectsBeforeShipCreation(ShipAPI.HullSize hullSize, MutableShipStatsAPI stats, String id) {
 
 	}
-
 	public void advanceInCombat(ShipAPI ship, float amount) {
 		MutableShipStatsAPI stats = ship.getMutableStats();
 
@@ -42,9 +41,14 @@ public class VRI_MakeshiftFluxNetwork extends BaseHullMod {
 		stats.getMissileWeaponFluxCostMod().modifyMult(spec.getId(), 1f-wpneff);
 		stats.getEnergyWeaponFluxCostMod().modifyMult(spec.getId(), 1f-wpneff);
 		stats.getBallisticWeaponFluxCostMod().modifyMult(spec.getId(), 1f-wpneff);
-		stats.getBallisticWeaponFluxCostMod().modifyMult(spec.getId(), 1f-wpneff);
 
 		stats.getShieldDamageTakenMult().modifyMult(spec.getId(), 1f-shieldeff);
+
+		//Change color of shield and vent
+		if(ship.getShield() != null) {
+			ship.getShield().setInnerColor(new Color(31,247,182,255));
+		}
+		ship.setVentCoreColor(new Color(31,247,182,255));
 
 		if (ship == Global.getCombatEngine().getPlayerShip()) {
 			Global.getCombatEngine().maintainStatusForPlayerShip("fluxnetworkwpn", "graphics/icons/hullsys/fortress_shield.png", "Weapon Eff ", "+" + wpneff*100f + "%", false);
@@ -69,7 +73,5 @@ public class VRI_MakeshiftFluxNetwork extends BaseHullMod {
 	}
 
 	public void applyEffectsAfterShipCreation(ShipAPI ship, String id) {
-		ship.getShield().setInnerColor(new Color(31,247,182,255));
-		ship.setVentCoreColor(new Color(31,247,182,255));
 	}
 }

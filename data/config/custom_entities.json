@@ -49,7 +49,7 @@
     "showNameOnMap":false,
     "scaleNameWithZoom":false,
     "scaleIconWithZoom":true,
-    "tags":["has_interaction_dialog"],
+    "tags":["station"],
     "layers":[STATIONS], # what layer(s) to render in. See CampaignEngineLayers.java for possible values
     "renderCircleIndicator":true,
     "renderCircleIndicatorSelectionFlash":true,

@@ -195,7 +195,8 @@ public class Uelyst {
                                 Industries.POPULATION,
                                 Industries.SPACEPORT,
                                 Industries.HEAVYBATTERIES,
-                                Industries.MILITARYBASE
+                                Industries.MILITARYBASE,
+                                Industries.ORBITALSTATION_HIGH
                         )
                 ),
                 //tariffs
