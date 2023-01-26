@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Magiclib">
     <CLASSES>
-      <root url="jar://D:/Games/Starsector/mods/MagicLib/jars/MagicLib.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../MagicLib/jars/MagicLib.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="file://D:/Games/Starsector/mods/MagicLib/doc" />
+      <root url="file://$PROJECT_DIR$/../MagicLib/doc" />
     </JAVADOC>
     <SOURCES>
-      <root url="file://D:/Games/Starsector/mods/MagicLib/src" />
+      <root url="file://$PROJECT_DIR$/../MagicLib/src" />
     </SOURCES>
   </library>
 </component>

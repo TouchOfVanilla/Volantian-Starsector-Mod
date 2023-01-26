@@ -54,6 +54,13 @@ public class VRI_MakeshiftFluxNetwork extends BaseHullMod {
 			Global.getCombatEngine().maintainStatusForPlayerShip("fluxnetworkwpn", "graphics/icons/hullsys/fortress_shield.png", "Weapon Eff ", "+" + wpneff*100f + "%", false);
 			Global.getCombatEngine().maintainStatusForPlayerShip("fluxnetworkshld", "graphics/icons/hullsys/fortress_shield.png", "Shield Eff ", "+" + shieldeff*100f + "%", false);
 		}
+		if(ship.getFleetMember().getFleetData().getFleet().getFaction().equals(Global.getSector().getFaction("vri"))){
+			for(ShipAPI a:AIUtils.getAlliesOnMap(ship)){
+				if(!a.getVariant().hasHullMod("VRI_MakeshiftFluxNetwork") && !a.getVariant().hasHullMod("VRI_FluxNetwork")){
+					a.getVariant().addMod("VRI_MakeshiftFluxNetwork");
+				}
+			}
+		}
 	}
 
 	private float easeOutCirc(float x) {
