@@ -36,6 +36,9 @@ Cressida (VRI),volantian_cressida_vri,Phase Destroyer,Volantian,volantian_shells
 Brilliant (VRI),volantian_brilliant_vri,Converted Cruiser,Volantian,highenergyfocus,16,8000,900,10000,12000,600,140,1,60,35,30,20,25,2000,OMNI,,270,0.5,0.6,,,0,0,120,90,3,30,9,1400000,5,15,540,0.25,35,25,,,,,,,COMBAT,"VRI_bp, merc",1,0.5,2,3,,413
 Lumen (VRI),volantian_lumen_vri,Converted Corvette,Volantian,displacer,8,1000,150,2000,2500,200,35,,140,250,200,90,270,150,OMNI,,150,0.4,0.6,,,0,0,40,40,1,40,11,300000,5,10,360,0.25,6,4,,,,,,,COMBAT,"VRI_bp, merc",1,0.5,2,2,,226
 Glimmer (VRI),volantian_glimmer_vri,Converted Frigate,Volantian,highenergyfocus,8,1500,200,2500,3125,250,50,,130,250,200,90,270,200,OMNI,,150,0.4,0.6,,,0,0,50,40,1,40,11,300000,5,10,360,0.25,7,5,,,,,,,COMBAT,"VRI_bp, merc",1,0.5,2,2,,227
+Cressida,volantian_cressida,Phase Destroyer,High Tech,volantian_shellswarp,15,4000,650,5000,10000,600,55,,80,60,40,30,30,400,PHASE,phasecloak,,,,0.04,0.04,25,50,60,100,2,50,9,1200000,5,20,300,0.25,17,20,,,,,,,COMBAT,"hightech_bp, merc",1,0.5,2,3,,407
+Claymore,volantian_claymore,Heavy Cruiser,High Tech,flarelauncher_active,20,8000,850,9000,,500,180,1,40,40,30,30,40,1200,FRONT,,260,0.4,1,,,70,200,240,90,6,15,8,1250000,5,15,600,0.25,24,14,,,,,,,COMBAT,"rare_bp, merc",1,0.5,6,10,,1
+Gauntlet,volantian_gauntlet,Heavy Cruiser,High Tech,highenergyfocus,20,10000,500,15000,,750,165,3,60,40,30,15,20,1500,FRONT,,300,0.4,1.2,,,250,300,150,150,4,38,8,1500000,4,12,480,0.25,24,25,,,,,,,COMBAT,"rare_bp, merc",1,0.5,2,4,,1
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #fighters,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Lux (VRI),volantian_lux,Fighter,Volantian,flarelauncher_fighter,,400,60,350,,50,0,,250,350,350,100,240,30,OMNI,,140,0,1,,,0,0,,,,,,,,,,,,,,,,,,,,,,0,,,,115
