@@ -1,0 +1,40 @@
+{
+  "variantId": "volantian_claymore_artillery",
+  "hullId": "volantian_claymore",
+  "displayName": "Artillery",
+  "goalVariant": true,
+  "fluxCapacitors": 9,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "advancedoptics",
+    "targetingunit",
+    "reinforcedhull"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "gravitonbeam",
+        "WS0002": "gravitonbeam",
+        "WS0005": "ionbeam",
+        "WS0006": "pdlaser",
+        "WS0007": "pdlaser",
+        "WS0010": "taclaser",
+        "WS0011": "taclaser"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "hurricane",
+        "WS0004": "hurricane"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

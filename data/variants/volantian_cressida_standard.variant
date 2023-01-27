@@ -1,0 +1,32 @@
+{
+  "variantId": "volantian_cressida_standard",
+  "hullId": "volantian_cressida",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 20,
+  "fluxVents": 7,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "reaper",
+        "WS0003": "reaper"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "heavyblaster",
+        "WS0004": "ioncannon",
+        "WS0005": "ioncannon"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}
