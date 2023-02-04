@@ -59,7 +59,7 @@ public class Uelyst {
                 SubA1,
                 null,
                 "Sublimation Platform A1",
-                3,
+                4,
 
                 new ArrayList<String>(
                         Arrays.asList(
@@ -172,7 +172,7 @@ public class Uelyst {
                 NocturneStation,
                 null,
                 "Nocturne Station",
-                3,
+                4,
 
                 new ArrayList<String>(
                         Arrays.asList(

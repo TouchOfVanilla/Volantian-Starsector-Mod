@@ -66,7 +66,7 @@ public class Royce {
                 Volantis,
                 null,
                 "Volantis",
-                4,
+                5,
 
                 new ArrayList<String>(
                         Arrays.asList(
@@ -96,6 +96,7 @@ public class Royce {
                                 Industries.FARMING,
                                 Industries.LIGHTINDUSTRY,
                                 Industries.WAYSTATION,
+                                Industries.MILITARYBASE,
                                 "cryorevival"
                         )
                 ),
@@ -151,7 +152,7 @@ public class Royce {
                 Desmond,
                 null,
                 "Desmond's Landing",
-                3,
+                4,
 
                 new ArrayList<String>(
                         Arrays.asList(
