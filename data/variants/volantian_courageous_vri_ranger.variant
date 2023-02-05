@@ -3,7 +3,7 @@
   "hullId": "volantian_courageous_vri",
   "displayName": "Ranger",
   "goalVariant": true,
-  "fluxCapacitors": 0,
+  "fluxCapacitors": 2,
   "fluxVents": 14,
   "quality": 1,
   "permaMods": [],
@@ -15,8 +15,8 @@
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0001": "swp_swarmer_f",
-        "WS0002": "swp_swarmer_f"
+        "WS0001": "swarmer",
+        "WS0002": "swarmer"
       }
     },
     {
