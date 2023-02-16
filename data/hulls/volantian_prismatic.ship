@@ -1,0 +1,143 @@
+{
+  "hullName": "Prismatic",
+  "hullId": "volantian_prismatic",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/prismatic.png",
+  "style": "HIGH_TECH",
+  "height": 219,
+  "width": 144,
+  "center": [72, 109],
+  "collisionRadius": 113.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 122.5,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 36,
+      "angle": 0,
+      "locations": [37.5, 0]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 36,
+      "angle": -0,
+      "locations": [37.5, 0]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 233,
+      "angle": 54.5,
+      "locations": [34, 29]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 233,
+      "angle": -54.5,
+      "locations": [34, -29]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 113,
+      "angle": 37,
+      "locations": [-13, 26]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 113,
+      "angle": -37,
+      "locations": [-13, -26]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 164,
+      "angle": 180,
+      "locations": [-58, 0]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -6, -0,
+        -15, -0
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-72.5, 36],
+      "length": 52,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-72.5, -36],
+      "length": 52,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-69.5, 46],
+      "length": 45.5,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-69.5, -46],
+      "length": 45.5,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-102, 0],
+      "length": 61,
+      "width": 22,
+      "angle": 180,
+      "contrailSize": 22,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -100.5, -11,
+    -47, -59,
+    28, -51.5,
+    104.5, 0,
+    104.5, 0,
+    28, 51.5,
+    -47, 59,
+    -100.5, 11
+  ]
+}
