@@ -1,37 +1,55 @@
 {
 	"raiderFactionId":"vri", # String, faction id
-	
+
 	"onlySpawnWhenVisibleInIntelTab":true, # OPTIONAL Boolean, default false. CAN be modified by scripts in-game
-	# if true, will only spawn when the parent controls at least 1 (one) non-hidden market and is visible in intel tab, if false will NOT be reaped by reaper script (i.e. will always spawn bases like vanilla)
-	"startEnabled":false, # OPTIONAL Boolean, default true. CAN be modified by scripts in-game
-	
-	"isFirebase":true, # OPTIONAL Boolean, default false
+	#"startEnabled":true, # OPTIONAL Boolean, default true. CAN be modified by scripts in-game
+	# other important note i guess: these will only spawn when the parent controls at least 1 (one) non-hidden market
+
+	#"isFirebase":false, # OPTIONAL Boolean, default false
 	# Firebases spawn in the same system as their target
-	
-	"createBounty":true, # OPTIONAL Boolean, default false - creates bounty for killing the base
-	
-	"freePort":true, # OPTIONAL Boolean, default true
-	
+
+	"freePort":false, # OPTIONAL Boolean, default true
+
 	"spawnNonEventFleets":false, # DEPRECATED, DOES NOTHING NOW
-	
-	"raiderActivityString":"Volantian Smuggling", # OPTIONAL String, default "<personOrEntityPrefix> Raider Activity"
-	
-		},
-		
-	"raiderBaseConditionsAndIndustries":[ # OPTIONAL List<String>, default “Frontier”, “No Atmosphere”, “Population”, “Spaceport”, “Military Base”, “Orbital Works”
-		"heavybatteries", 
-		"no_atmosphere",
-		"population",
-		"spaceport",
-		"militarybase",
-		"orbitalworks"
-		"commerce"
-		],
 
-	# Fleet names are set in the .faction file, under the "merc" fleet types
+	"raiderActivityString":"Volantian Privateering", # OPTIONAL String, default "<personOrEntityPrefix> Raider Activity"
+	"raiderActivityIntelIcon":"graphics/icons/markets/vayra_vri_raid_activity.png", # OPTIONAL String filePath, default to vanilla icons/markets/pirates.png
+	"raiderBaseIntelIcon":"graphics/icons/markets/vayra_generic_base.png", # OPTIONAL String filePath, default to icons/markets/vayra_generic_base.png
+	"raiderBaseBarEventScript":"data.scripts.campaign.bases.VayraRaiderBaseBarEvent", # OPTIONAL String BaseBarEvent, default to data.scripts.campaign.bases.VayraRaiderBaseBarEvent
 
-	# Base names will be combined with a random other word. idk where they come from
-    "raiderBaseTypeNames":[		
-		"Outpost",
+	"raidingActionText":"engaging in privateering", # OPTIONAL String, default "raiding"
+	"raidingStanddownText":"withdrawing", # OPTIONAL String, default "standing down"
 
+	"raidTargetWeights":{ # OPTIONAL String -> Float map, factionId -> pick weight, default no special weights
+	"hegemony":10, # example, "hegemony":10, = 10x more likely to pick Hegemony targets
+},
+
+#"raiderBaseSize":3, # OPTIONAL Integer, default 3
+"raiderBaseTypes":{ # OPTIONAL String -> Float map, orbital station industry ID -> pick weight, default low-tech
+"orbitalstation":1,
+"orbitalstation_mid":3,
+},
+"raiderBaseConditionsAndIndustries":[ # OPTIONAL List<String>, default “Frontier”, “No Atmosphere”, “Population”, “Spaceport”, “Military Base”, “Orbital Works”
+"frontier",
+"no_atmosphere",
+"population",
+"spaceport",
+"militarybase",
+"orbitalworks"
+],
+# "raiderBaseSubmarkets":[ # OPTIONAL List<String>, default pulls SUBMARKET_OPEN, SUBMARKET_BLACK, and GENERIC_MILITARY from Submarkets instead
+#	"open_market",
+#	"black_market",
+#	"generic_military"
+#	],
+
+# Fleet names are set in the .faction file, under the "merc" fleet types
+
+# Base names will be combined with a random other word. idk where they come from
+"raiderBaseTypeNames":[
+"Outpost",
+"Outstation",
+"Garrison",
+"Stronghold"
+],
 }
