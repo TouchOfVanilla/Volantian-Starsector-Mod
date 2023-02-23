@@ -40,6 +40,8 @@ Cressida,volantian_cressida,Phase Destroyer,High Tech,volantian_shellswarp,15,40
 Claymore,volantian_claymore,Heavy Cruiser,High Tech,flarelauncher_active,20,8000,850,9000,,500,180,1,40,40,30,30,40,1200,FRONT,,260,0.4,1,,,70,200,240,90,6,15,8,325000,5,15,600,0.25,24,14,,,,,,,COMBAT,"rare_bp, hightech_bp, merc",1,0.5,6,10,,1
 Gauntlet,volantian_gauntlet,Heavy Cruiser,High Tech,highenergyfocus,20,10000,500,15000,,750,165,3,60,40,30,15,20,1500,FRONT,,300,0.4,1.2,,,250,300,150,150,4,38,8,450000,4,12,480,0.25,24,25,,,,,,,COMBAT,"rare_bp, hightech_bp, merc",1,0.5,2,4,,1
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #fighters,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Lux (VRI),volantian_lux,Fighter,Volantian,flarelauncher_fighter,,400,60,350,,50,0,,250,350,350,100,240,30,OMNI,,140,0,1,,,0,0,,,,,,,,,,,,,,,,,,,,,,0,,,,115
 Spark (VRI),volantian_spark,Interceptor,Volantian,,,300,40,150,,50,0,,335,500,400,90,270,15,OMNI,,130,0,1,,,0,0,,,,,,,,,,,,,,,,,,,,,,0,,,,116
@@ -49,4 +51,6 @@ Longcaster,volantian_longcaster,Long Range Support Drone,Midline,,,400,60,800,,5
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Chromatic,volantian_chromatic,Drone Battlecruiser,Remnant,highenergyfocus,28,8500,775,14000,16000,1000,210,0,30,20,20,15,20,3000,OMNI,,240,0.4,0.6,,,0,0,50,20,4,5,9,300000,5,15,540,0.25,34,34,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX","remnant, auto_rec",1,0.1,2,3,,414.1
 Kaiken,volantian_kaiken,Drone Supercarrier,Remnant,recalldevice,28,18000,1650,12000,12500,500,260,4,30,15,15,6,6,3500,OMNI,,180,0.4,1,,,700,1500,300,300,15,20,7,375000,3,12,720,0.25,40,40,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX","remnant, auto_rec",1,0.4,2,4,,507
+Prismatic,volantian_prismatic,Drone Destroyer,Remnant,highenergyfocus,14,2800,500,7000,,600,90,1,90,30,30,30,15,400,OMNI,,140,0.4,0.9,,,0,0,50,30,2,15,9,75000,5,15,420,0.25,15,20,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX","remnant, auto_rec",1,0.5,2,3,,
 Lumen (XIV),volantian_lumen_xiv,Droneship,Remnant,displacer,8,1000,150,2000,2500,200,35,,140,250,200,90,270,150,OMNI,,150,0.4,0.6,,,0,0,40,40,1,40,11,30000,5,10,360,0.25,4,4,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX","remnant, auto_rec",,0.5,2,2,,226
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

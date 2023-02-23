@@ -13,18 +13,9 @@
   "viewOffset": 0,
   "weaponSlots": [
     {
-      "id": "WS0001",
-      "size": "MEDIUM",
-      "type": "HYBRID",
-      "mount": "TURRET",
-      "arc": 36,
-      "angle": 0,
-      "locations": [37.5, 0]
-    },
-    {
       "id": "WS0002",
-      "size": "MEDIUM",
-      "type": "ENERGY",
+      "size": "LARGE",
+      "type": "HYBRID",
       "mount": "TURRET",
       "arc": 36,
       "angle": -0,
