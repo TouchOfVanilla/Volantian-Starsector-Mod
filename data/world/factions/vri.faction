@@ -47,6 +47,11 @@
 	"knownShips":{
 		"tags":["VRI_bp","hightech_bp","midline_bp"],
 		"hulls":[
+		    "champion",
+		    "aurora",
+		    "apogee",
+
+
 		],
 	},
 	# listing ships here will make the faction mostly use them even if other hulls become available

@@ -24,7 +24,8 @@
 		"medusa_volantian": 0,
 		"hammerhead_volantian": 0,
 		"volantian_cressida_vri_strike": 3, "volantian_cressida_vri_overdriven": 3,
-		"volantian_cressida_strike": 3, "volantian_cressida_standard": 3
+		"volantian_cressida_strike": 3, "volantian_cressida_standard": 3,
+		"volantian_prismatic_assault": 3, "volantian_prismatic_brawler": 3, "volantian_prismatic_support": 3
 	},
 	"combatLarge": {
 		"volantian_indomitable_vri_standard": 3, "volantian_indomitable_vri_artillery": 5,"volantian_indomitable_vri_overdriven": 5,
