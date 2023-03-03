@@ -9,7 +9,8 @@
 		"tempest_volantian": 0,
 		"vigilance_volantian": 0,
 		"centurion_volantian": 0,
-		"wolf_volantian": 0
+		"wolf_volantian": 0,
+		"volantian_remora_vri_assault": 3, "volantian_remora_vri_support": 3
 	},
 	"combatMedium": {
 		"volantian_sunder_vri_standard": 3, "volantian_sunder_vri_ranger": 3, "volantian_sunder_vri_overdriven": 3,
@@ -25,7 +26,8 @@
 		"hammerhead_volantian": 0,
 		"volantian_cressida_vri_strike": 3, "volantian_cressida_vri_overdriven": 3,
 		"volantian_cressida_strike": 3, "volantian_cressida_standard": 3,
-		"volantian_prismatic_assault": 3, "volantian_prismatic_brawler": 3, "volantian_prismatic_support": 3
+		"volantian_prismatic_assault": 3, "volantian_prismatic_brawler": 3, "volantian_prismatic_support": 3,
+		"volantian_hippocampus_vri_standard": 3
 	},
 	"combatLarge": {
 		"volantian_indomitable_vri_standard": 3, "volantian_indomitable_vri_artillery": 5,"volantian_indomitable_vri_overdriven": 5,
@@ -38,13 +40,17 @@
 		"champion_volantian": 0,
 		"aurora_volantian": 0,
 		"volantian_gauntlet_standard": 3,
-		"volantian_claymore_artillery": 3, "volantian_claymore_support": 3
+		"volantian_claymore_artillery": 3, "volantian_claymore_support": 3,
+		"volantian_eagle_vri_assault": 3, "volantian_eagle_vri_standard": 3,
+		"volantian_falcon_vri_standard": 3,
+		"volantian_naegling_vri_standard": 3, "volantian_naegling_vri_assault": 3
 		
 	},
 	"combatCapital": {
 		"volantian_radiant_vri_standard": 5, "volantian_radiant_vri_artillery": 5,
 		"volantian_shamshir_vri_artillery": 3, "volantian_shamshir_vri_assault": 3,
-		"volantian_paramerion_vri_standard": 2
+		"volantian_paramerion_vri_standard": 2,
+		"volantian_ionos_vri_standard": 3
 	},
 	"combatFreighterSmall": {
 	},

@@ -3,7 +3,7 @@
   "hullId": "volantian_remora_vri",
   "hullSize": "FRIGATE",
   "spriteName": "graphics/ships/remora_vri.png",
-  "style": "HIGH_TECH",
+  "style": "VOLANTIAN",
   "height": 84,
   "width": 58,
   "center": [29, 42],
@@ -17,14 +17,11 @@
     "VES",
     "VRI_FluxNetwork"
   ],
-  "builtInWings": [
-    "volantian_spark_wing"
-  ],
   "weaponSlots": [
     {
       "id": "WS0001",
       "size": "SMALL",
-      "type": "ENERGY",
+      "type": "SYNERGY",
       "mount": "TURRET",
       "arc": 145,
       "angle": 41,
@@ -33,7 +30,7 @@
     {
       "id": "WS0002",
       "size": "SMALL",
-      "type": "ENERGY",
+      "type": "SYNERGY",
       "mount": "TURRET",
       "arc": 145,
       "angle": -41,

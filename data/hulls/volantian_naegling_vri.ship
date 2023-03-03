@@ -1,0 +1,144 @@
+{
+  "hullName": "Naegling (VRI)",
+  "hullId": "volantian_naegling_vri",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/naegling.png",
+  "style": "VOLANTIAN",
+  "height": 233,
+  "width": 144,
+  "center": [72, 109],
+  "collisionRadius": 154.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 168,
+  "viewOffset": 0,
+  "builtInMods": [
+    "VES",
+    "VRI_FluxNetwork"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 40,
+      "angle": 0,
+      "locations": [53.5, 24]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 40,
+      "angle": -0,
+      "locations": [53.5, -24]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 141,
+      "angle": 66.5,
+      "locations": [31, 25]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 141,
+      "angle": -66.5,
+      "locations": [31, -25]
+    },
+    {
+      "id": "WS0005",
+      "size": "LARGE",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 198,
+      "angle": 0,
+      "locations": [-9, -0]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 198,
+      "angle": -0,
+      "locations": [-9, 0]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 153,
+      "angle": 116,
+      "locations": [-71, 39]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 153,
+      "angle": -116,
+      "locations": [-71, -39]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -36, 12,
+        -38.5, 12
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -36, -11.5,
+        -39.5, -11
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-100.5, 36.5],
+      "length": 65,
+      "width": 17,
+      "angle": 180,
+      "contrailSize": 17,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-100.5, -36.5],
+      "length": 65,
+      "width": 17,
+      "angle": -180,
+      "contrailSize": 17,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -101, -50,
+    -47.5, -71,
+    68.5, -46,
+    124, 0,
+    124, -0,
+    68.5, 46,
+    -47.5, 71,
+    -101, 50
+  ]
+}

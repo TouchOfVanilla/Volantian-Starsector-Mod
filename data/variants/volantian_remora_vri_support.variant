@@ -1,0 +1,26 @@
+{
+  "variantId": "volantian_remora_vri_support",
+  "hullId": "volantian_remora_vri",
+  "displayName": "Support",
+  "goalVariant": true,
+  "fluxCapacitors": 4,
+  "fluxVents": 0,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "vol_halonMK1",
+        "WS0002": "vol_halonMK1",
+        "WS0003": "vol_halonMK1"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "volantian_spark_wing"
+  ]
+}
