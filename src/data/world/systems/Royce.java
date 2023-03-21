@@ -92,7 +92,6 @@ public class Royce {
                         Arrays.asList(
                                 Industries.POPULATION,
                                 Industries.MEGAPORT,
-                                Industries.PATROLHQ,
                                 Industries.FARMING,
                                 Industries.LIGHTINDUSTRY,
                                 Industries.WAYSTATION,
@@ -157,10 +156,10 @@ public class Royce {
                 new ArrayList<String>(
                         Arrays.asList(
                                 Conditions.POPULATION_4,
-                                Conditions.THIN_ATMOSPHERE,
-                                Conditions.MILD_CLIMATE,
+                                Conditions.NO_ATMOSPHERE,
+                                Conditions.RARE_ORE_ULTRARICH,
                                 Conditions.IRRADIATED,
-                                Conditions.ORE_SPARSE,
+                                Conditions.ORE_RICH,
                                 Conditions.RUINS_EXTENSIVE
                         )
                 ),
@@ -175,9 +174,10 @@ public class Royce {
                 new ArrayList<>(
                         Arrays.asList(
                                 Industries.POPULATION,
-                                Industries.SPACEPORT,
+                                Industries.MEGAPORT,
                                 Industries.WAYSTATION,
-                                Industries.HEAVYINDUSTRY
+                                Industries.HEAVYINDUSTRY,
+                                Industries.MINING
                         )
                 ),
                 //tariffs
@@ -187,6 +187,9 @@ public class Royce {
                 //junk and chatter
                 true);
         Desmond_market.getIndustry(Industries.HEAVYINDUSTRY).setSpecialItem(new SpecialItemData(Items.CORRUPTED_NANOFORGE, null));
+        Desmond_market.getIndustry(Industries.MINING).setSpecialItem(new SpecialItemData(Items.MANTLE_BORE, null));
+        Desmond_market.getIndustry(Industries.MEGAPORT).setSpecialItem(new SpecialItemData(Items.FULLERENE_SPOOL, null));
+
         Desmond_market.setSurveyLevel(MarketAPI.SurveyLevel.FULL);
 
         //Asteroid field

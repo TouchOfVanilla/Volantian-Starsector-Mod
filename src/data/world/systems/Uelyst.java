@@ -47,7 +47,7 @@ public class Uelyst {
         //Sublimation Platform A1
         PlanetAPI SubA1 = system.addPlanet("vri_planet_suba1",
                 UelystStar,
-                "Sublimation Platform A1",
+                "Okeanos",
                 "gas_giant",
                 90f,
                 400f,
@@ -83,7 +83,8 @@ public class Uelyst {
                                 Industries.SPACEPORT,
                                 Industries.WAYSTATION,
                                 Industries.MINING,
-                                Industries.ORBITALSTATION
+                                Industries.ORBITALSTATION,
+                                Industries.REFINING
                         )
                 ),
                 //tariffs
@@ -93,6 +94,7 @@ public class Uelyst {
                 //junk and chatter
                 false);
         SubA1_market.getIndustry(Industries.MINING).setSpecialItem(new SpecialItemData(Items.PLASMA_DYNAMO, null));
+        SubA1_market.getIndustry(Industries.REFINING).setSpecialItem(new SpecialItemData(Items.CATALYTIC_CORE, null));
         SubA1_market.setSurveyLevel(MarketAPI.SurveyLevel.FULL);
 
         //Geir's Slab
@@ -126,7 +128,7 @@ public class Uelyst {
                         )
                 ),
                 "Geir's Slab",
-                3,
+                5,
 
                 new ArrayList<String>(
                         Arrays.asList(
@@ -135,7 +137,10 @@ public class Uelyst {
                                 Conditions.SOLAR_ARRAY,
                                 Conditions.RUINS_VAST,
                                 Conditions.FREE_PORT,
-                                Conditions.HABITABLE
+                                Conditions.HABITABLE,
+                                Conditions.ORGANICS_COMMON,
+                                Conditions.FARMLAND_BOUNTIFUL,
+                                Conditions.ORE_RICH
                         )
                 ),
 
@@ -151,7 +156,9 @@ public class Uelyst {
                                 Industries.POPULATION,
                                 Industries.MEGAPORT,
                                 Industries.WAYSTATION,
-                                Industries.FUELPROD,
+                                Industries.LIGHTINDUSTRY,
+                                Industries.MINING,
+                                Industries.FARMING,
                                 "cryorevival"
                         )
                 ),
@@ -161,6 +168,9 @@ public class Uelyst {
                 true,
                 //junk and chatter
                 true);
+        Geir_market.getIndustry(Industries.LIGHTINDUSTRY).setSpecialItem(new SpecialItemData(Items.BIOFACTORY_EMBRYO, null));
+        Geir_market.getIndustry(Industries.MEGAPORT).setSpecialItem(new SpecialItemData(Items.FULLERENE_SPOOL, null));
+        Geir_market.getIndustry(Industries.FARMING).setSpecialItem(new SpecialItemData(Items.SOIL_NANITES, null));
         Geir_market.setSurveyLevel(MarketAPI.SurveyLevel.FULL);
 
         //Nocturne
@@ -196,7 +206,8 @@ public class Uelyst {
                                 Industries.SPACEPORT,
                                 Industries.HEAVYBATTERIES,
                                 Industries.MILITARYBASE,
-                                Industries.ORBITALSTATION_HIGH
+                                Industries.ORBITALSTATION_HIGH,
+                                Industries.HEAVYINDUSTRY
                         )
                 ),
                 //tariffs

@@ -9,7 +9,7 @@ import com.fs.starfarer.api.campaign.econ.EconomyAPI;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
 import com.fs.starfarer.api.impl.campaign.ids.Factions;
 import com.fs.starfarer.api.impl.campaign.shared.SharedData;
-import data.world.systems.Gargantua;
+import data.world.systems.Avery;
 import data.world.systems.Royce;
 import data.world.systems.Uelyst;
 
@@ -77,7 +77,7 @@ public class VRIGen implements SectorGeneratorPlugin {
 
         new Royce().generate(sector);
         new Uelyst().generate(sector);
-        //new Gargantua().generate(sector);
+        new Avery().generate(sector);
 
         SharedData.getData().getPersonBountyEventData().addParticipatingFaction("vri");
 
