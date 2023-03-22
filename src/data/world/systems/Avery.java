@@ -3,10 +3,8 @@ package data.world.systems;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.*;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
-import com.fs.starfarer.api.campaign.econ.MarketConditionAPI;
 import com.fs.starfarer.api.impl.campaign.ids.*;
 import com.fs.starfarer.api.impl.campaign.procgen.StarSystemGenerator;
-import com.fs.starfarer.api.impl.campaign.procgen.themes.BaseThemeGenerator;
 import com.fs.starfarer.api.impl.campaign.rulecmd.salvage.special.ShipRecoverySpecial;
 import com.fs.starfarer.api.impl.campaign.terrain.DebrisFieldTerrainPlugin;
 import com.fs.starfarer.api.util.Misc;
@@ -16,6 +14,7 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import static com.fs.starfarer.api.impl.campaign.world.TTBlackSite.addDerelict;
 
 
 public class Avery {
@@ -50,7 +49,7 @@ public class Avery {
                 "Eminence",
                 "terran_adapted",
                 90f,
-                130f,
+                80f,
                 EmineneceDist,
                 80f);
         Misc.initConditionMarket(Eminence);
@@ -120,8 +119,8 @@ public class Avery {
                 "cryovolcanic",
                 90f,
                 130f,
-                StalosDist,
-                80f);
+                3500,
+                120f);
         Misc.initConditionMarket(Tally);
         Tally_market = Tally.getMarket();
         Tally_market.setPlanetConditionMarketOnly(true);
@@ -135,18 +134,38 @@ public class Avery {
         Tally_market.setPrimaryEntity(Tally);
         Tally.setMarket(Tally_market);
         //Avery_Star.setCustomDescriptionId("vri_planet_Tally"); //reference descriptions.csv
-        //Derelict Ships
 
-        BaseThemeGenerator.addSalvageEntity(system, AveryStar, ),
+        //Abandoned Station around
+        SectorEntityToken daedalusstation = system.addCustomEntity("daedalus_station ",
+                "Daedalus Station", "station_side06", "neutral");
 
-        addDerelict(system, AveryStar, "volantian_sandalphon_vri_standard", ShipRecoverySpecial.ShipCondition.BATTERED, 1500f,  (Math.random()<0.4));
-        addDerelict(system, AveryStar, "volantian_chromatic_vri_standard", ShipRecoverySpecial.ShipCondition.BATTERED, 1500f,  (Math.random()<0.4));
-        addDerelict(system, AveryStar, "volantian_lumen_vri_standard", ShipRecoverySpecial.ShipCondition.BATTERED, 1500f,  (Math.random()<0.2));
-        addDerelict(system, AveryStar, "volantian_sunder_vri_standard", ShipRecoverySpecial.ShipCondition.BATTERED, 1500f,  (Math.random()<0.2));
-        addDerelict(system, AveryStar, "volantian_naegling_vri_assault", ShipRecoverySpecial.ShipCondition.BATTERED, 1500f,  (Math.random()<0.4));
-        addDerelict(system, AveryStar, "volantian_lancet_vri_assault", ShipRecoverySpecial.ShipCondition.BATTERED, 1500f,  (Math.random()<0.2));
+        daedalusstation.setCircularOrbitPointingDown(system.getEntityById("vri_star_avery"), 45, 2000, 50);
 
-// Debris fields!
+        Misc.setAbandonedStationMarket("daedalus_station_market", daedalusstation);
+
+        daedalusstation.setCustomDescriptionId("daedalus_station");
+        daedalusstation.setInteractionImage("illustrations", "abandoned_station3");
+
+
+        //Derelict Ships + Debris for Daedalus
+
+        DebrisFieldTerrainPlugin.DebrisFieldParams params2 = new DebrisFieldTerrainPlugin.DebrisFieldParams(
+                250f, // field radius - should not go above 1000 for performance reasons
+                1.2f, // density, visual - affects number of debris pieces
+                10000000f, // duration in days
+                0f); // days the field will keep generating glowing pieces
+        params2.source = DebrisFieldTerrainPlugin.DebrisFieldSource.MIXED;
+        params2.baseSalvageXP = 1000; // base XP for scavenging in field
+        SectorEntityToken debrisstation = Misc.addDebrisField(system, params2, StarSystemGenerator.random);
+        debrisstation.setSensorProfile(650f);
+        debrisstation.setDiscoverable(true);
+        debrisstation.setCircularOrbit(daedalusstation, 20f, 20, 900f);
+        debrisstation.setId("deadalus_debris");
+
+        addDerelict(system, daedalusstation, "volantian_naegling_vri_assault", Global.getSector().getFaction("vri").pickRandomShipName(), Misc.genUID(),ShipRecoverySpecial.ShipCondition.BATTERED, 270f, (Math.random() < 0.5));
+        addDerelict(system, daedalusstation, "volantian_sunder_vri_standard", Global.getSector().getFaction("vri").pickRandomShipName(), Misc.genUID(),ShipRecoverySpecial.ShipCondition.BATTERED, 270f, (Math.random() < 0.5));
+
+        // Debris fields for the star!
         DebrisFieldTerrainPlugin.DebrisFieldParams params_ring1 = new DebrisFieldTerrainPlugin.DebrisFieldParams(
                 225f, // field radius - should not go above 1000 for performance reasons
                 0.7f, // density, visual - affects number of debris pieces
@@ -154,11 +173,65 @@ public class Avery {
                 0f); // days the field will keep generating glowing pieces
         params_ring1.source = DebrisFieldTerrainPlugin.DebrisFieldSource.MIXED;
         params_ring1.baseSalvageXP = 500; // base XP for scavenging in field
-        SectorEntityToken avery_debris = Misc.addDebrisField(system, params_ring1, StarSystemGenerator.random);
-        avery_debris.setSensorProfile(1000f);
-        avery_debris.setDiscoverable(true);
-        avery_debris.setCircularOrbit(AveryStar, 30f, 5000, 160f);
-        avery_debris.setId("avery_debris");
+        SectorEntityToken avery_debris1 = Misc.addDebrisField(system, params_ring1, StarSystemGenerator.random);
+        avery_debris1.setSensorProfile(1000f);
+        avery_debris1.setDiscoverable(true);
+        avery_debris1.setCircularOrbit(AveryStar, 30f, 5000, 160f);
+        avery_debris1.setId("avery_debris1");
+
+        DebrisFieldTerrainPlugin.DebrisFieldParams params_ring2 = new DebrisFieldTerrainPlugin.DebrisFieldParams(
+                225f, // field radius - should not go above 1000 for performance reasons
+                0.7f, // density, visual - affects number of debris pieces
+                10000000f, // duration in days
+                0f); // days the field will keep generating glowing pieces
+        params_ring2.source = DebrisFieldTerrainPlugin.DebrisFieldSource.MIXED;
+        params_ring2.baseSalvageXP = 500; // base XP for scavenging in field
+        SectorEntityToken avery_debris2 = Misc.addDebrisField(system, params_ring2, StarSystemGenerator.random);
+        avery_debris2.setSensorProfile(1000f);
+        avery_debris2.setDiscoverable(true);
+        avery_debris2.setCircularOrbit(AveryStar, 90f, 5000, 160f);
+        avery_debris2.setId("avery_debris2");
+
+        DebrisFieldTerrainPlugin.DebrisFieldParams params_ring3 = new DebrisFieldTerrainPlugin.DebrisFieldParams(
+                225f, // field radius - should not go above 1000 for performance reasons
+                0.7f, // density, visual - affects number of debris pieces
+                10000000f, // duration in days
+                0f); // days the field will keep generating glowing pieces
+        params_ring3.source = DebrisFieldTerrainPlugin.DebrisFieldSource.MIXED;
+        params_ring3.baseSalvageXP = 500; // base XP for scavenging in field
+        SectorEntityToken avery_debris3 = Misc.addDebrisField(system, params_ring3, StarSystemGenerator.random);
+        avery_debris3.setSensorProfile(1000f);
+        avery_debris3.setDiscoverable(true);
+        avery_debris3.setCircularOrbit(AveryStar, 60f, 5000, 160f);
+        avery_debris3.setId("avery_debris3");
+
+        DebrisFieldTerrainPlugin.DebrisFieldParams params_ring4 = new DebrisFieldTerrainPlugin.DebrisFieldParams(
+                225f, // field radius - should not go above 1000 for performance reasons
+                0.7f, // density, visual - affects number of debris pieces
+                10000000f, // duration in days
+                0f); // days the field will keep generating glowing pieces
+        params_ring4.source = DebrisFieldTerrainPlugin.DebrisFieldSource.MIXED;
+        params_ring4.baseSalvageXP = 500; // base XP for scavenging in field
+        SectorEntityToken avery_debris4 = Misc.addDebrisField(system, params_ring4, StarSystemGenerator.random);
+        avery_debris4.setSensorProfile(1000f);
+        avery_debris4.setDiscoverable(true);
+        avery_debris4.setCircularOrbit(AveryStar, 120f, 5000, 90f);
+        avery_debris4.setId("avery_debris4");
+
+        DebrisFieldTerrainPlugin.DebrisFieldParams params_ring5 = new DebrisFieldTerrainPlugin.DebrisFieldParams(
+                225f, // field radius - should not go above 1000 for performance reasons
+                0.7f, // density, visual - affects number of debris pieces
+                10000000f, // duration in days
+                0f); // days the field will keep generating glowing pieces
+        params_ring5.source = DebrisFieldTerrainPlugin.DebrisFieldSource.MIXED;
+        params_ring5.baseSalvageXP = 500; // base XP for scavenging in field
+        SectorEntityToken avery_debris5 = Misc.addDebrisField(system, params_ring5, StarSystemGenerator.random);
+        avery_debris5.setSensorProfile(1000f);
+        avery_debris5.setDiscoverable(true);
+        avery_debris5.setCircularOrbit(AveryStar, 180f, 5000, 140f);
+        avery_debris5.setId("avery_debris5");
+// Salvage Entities
+
 
         //Dust belt
         system.addRingBand(AveryStar, "misc", "rings_dust0", 256f, 0, Color.gray, 256f, dust1Dist, 330f);
@@ -174,21 +247,21 @@ public class Avery {
 
         //add Comm relay
         SectorEntityToken MakeshiftRelay = system.addCustomEntity("vri_comm_relay_makeshift", // unique id
-                "Outer Gargantua Comm Relay", // name - if null, defaultName from custom_entities.json will be used
+                "Avery Comm Relay", // name - if null, defaultName from custom_entities.json will be used
                 "comm_relay_makeshift", // type of object, defined in custom_entities.json
                 "vri"); // faction
         MakeshiftRelay.setCircularOrbitPointingDown(AveryStar, 180f, comDist, 265);
 
         // Nav beacon
         SectorEntityToken NavBeacon = system.addCustomEntity("vri_nav_buoy_makeshift", // unique id
-                "Outer Gargantua Nav Beacon", // name - if null, defaultName from custom_entities.json will be used
+                "Avery Nav Beacon", // name - if null, defaultName from custom_entities.json will be used
                 "nav_buoy_makeshift", // type of object, defined in custom_entities.json
                 "vri"); // faction
         NavBeacon.setCircularOrbitPointingDown(AveryStar, 90f, navDist, 305);
 
         // Sensor relay
         SectorEntityToken SensorRelay = system.addCustomEntity("vri_sensor_array", // unique id
-                "Gargantua Sensor Relay", // name - if null, defaultName from custom_entities.json will be used
+                "Avery Sensor Relay", // name - if null, defaultName from custom_entities.json will be used
                 "sensor_array", // type of object, defined in custom_entities.json
                 "vri"); // faction
         SensorRelay.setCircularOrbitPointingDown(AveryStar, 70f, sensorDist, 200);
@@ -213,7 +286,6 @@ public class Avery {
 
         system.autogenerateHyperspaceJumpPoints(true, false);
     }
-
-    private void addDerelict(StarSystemAPI system, PlanetAPI averyStar, String wayfarerStandard, ShipRecoverySpecial.ShipCondition battered, float v, boolean b) {
-    }
 }
+
+//Nosy little fuck, aren't you?
