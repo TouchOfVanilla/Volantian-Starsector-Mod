@@ -59,7 +59,7 @@ public class Royce {
                 130f,
                 volantisDist,
                 80f);
-        //Royce_Star.setCustomDescriptionId("vri_planet_Volantis"); //reference descriptions.csv
+        Volantis.setCustomDescriptionId("vri_planet_Volantis"); //reference descriptions.csv
 
         MarketAPI Volantis_market = VRIGen.addMarketplace(
                 "vri",
@@ -191,7 +191,7 @@ public class Royce {
         Desmond_market.getIndustry(Industries.MEGAPORT).setSpecialItem(new SpecialItemData(Items.FULLERENE_SPOOL, null));
 
         Desmond_market.setSurveyLevel(MarketAPI.SurveyLevel.FULL);
-
+        Desmond.setCustomDescriptionId("vri_planet_Desmond"); //reference descriptions.csv
         //Asteroid field
         SectorEntityToken RoyceAF1 = system.addTerrain(Terrain.ASTEROID_FIELD,
                 new AsteroidFieldTerrainPlugin.AsteroidFieldParams(

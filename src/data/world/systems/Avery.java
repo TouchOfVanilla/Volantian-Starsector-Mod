@@ -8,11 +8,13 @@ import com.fs.starfarer.api.impl.campaign.procgen.StarSystemGenerator;
 import com.fs.starfarer.api.impl.campaign.rulecmd.salvage.special.ShipRecoverySpecial;
 import com.fs.starfarer.api.impl.campaign.terrain.DebrisFieldTerrainPlugin;
 import com.fs.starfarer.api.util.Misc;
+import com.fs.starfarer.campaign.econ.Market;
 import data.world.VRIGen;
 
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Random;
 
 import static com.fs.starfarer.api.impl.campaign.world.TTBlackSite.addDerelict;
 
@@ -53,20 +55,20 @@ public class Avery {
                 EmineneceDist,
                 80f);
         Misc.initConditionMarket(Eminence);
-        MarketAPI Tally_market = Eminence.getMarket();
-        Tally_market.setPlanetConditionMarketOnly(true);
-        Tally_market.addCondition(Conditions.HABITABLE);
-        Tally_market.addCondition(Conditions.POLLUTION);
-        Tally_market.addCondition(Conditions.ORE_RICH);
-        Tally_market.addCondition(Conditions.RARE_ORE_RICH);
-        Tally_market.addCondition(Conditions.ORGANICS_ABUNDANT);
-        Tally_market.addCondition(Conditions.FARMLAND_BOUNTIFUL);
-        Tally_market.addCondition(Conditions.MILD_CLIMATE);
-        Tally_market.addCondition(Conditions.HOT);
-        Tally_market.addCondition(Conditions.RUINS_VAST);
-        Tally_market.setPrimaryEntity(Eminence);
-        Eminence.setMarket(Tally_market);
-        //Avery_Star.setCustomDescriptionId("vri_planet_Eminence"); //reference descriptions.csv
+        MarketAPI Eminence_market = Eminence.getMarket();
+        Eminence_market.setPlanetConditionMarketOnly(true);
+        Eminence_market.addCondition(Conditions.HABITABLE);
+        Eminence_market.addCondition(Conditions.POLLUTION);
+        Eminence_market.addCondition(Conditions.ORE_RICH);
+        Eminence_market.addCondition(Conditions.RARE_ORE_RICH);
+        Eminence_market.addCondition(Conditions.ORGANICS_ABUNDANT);
+        Eminence_market.addCondition(Conditions.FARMLAND_BOUNTIFUL);
+        Eminence_market.addCondition(Conditions.MILD_CLIMATE);
+        Eminence_market.addCondition(Conditions.HOT);
+        Eminence_market.addCondition(Conditions.RUINS_VAST);
+        Eminence_market.setPrimaryEntity(Eminence);
+        Eminence.setMarket(Eminence_market);
+        Eminence.setCustomDescriptionId("vri_planet_Eminence"); //reference descriptions.csv
 
         //Orbital Station "Stalos Outpost"
         SectorEntityToken StalosStation = system.addCustomEntity("vri_Stalos", "Stalos", "vri_remnant_station", "vri");
@@ -111,7 +113,7 @@ public class Avery {
                 false,
                 //junk and chatter
                 false);
-
+        StalosStation.setCustomDescriptionId("vri_Stalos");
         //Tally
         PlanetAPI Tally = system.addPlanet("vri_planet_tally",
                 AveryStar,
@@ -122,7 +124,7 @@ public class Avery {
                 3500,
                 120f);
         Misc.initConditionMarket(Tally);
-        Tally_market = Tally.getMarket();
+        MarketAPI Tally_market = Tally.getMarket();
         Tally_market.setPlanetConditionMarketOnly(true);
         Tally_market.addCondition(Conditions.VERY_COLD);
         Tally_market.addCondition(Conditions.RARE_ORE_ULTRARICH);
@@ -132,8 +134,8 @@ public class Avery {
         Tally_market.addCondition(Conditions.LOW_GRAVITY);
         Tally_market.addCondition(Conditions.RUINS_EXTENSIVE);
         Tally_market.setPrimaryEntity(Tally);
-        Tally.setMarket(Tally_market);
-        //Avery_Star.setCustomDescriptionId("vri_planet_Tally"); //reference descriptions.csv
+        Tally.setMarket(Eminence_market);
+        Tally.setCustomDescriptionId("vri_planet_Tally"); //reference descriptions.csv
 
         //Abandoned Station around
         SectorEntityToken daedalusstation = system.addCustomEntity("daedalus_station ",
@@ -165,7 +167,17 @@ public class Avery {
         addDerelict(system, daedalusstation, "volantian_naegling_vri_assault", Global.getSector().getFaction("vri").pickRandomShipName(), Misc.genUID(),ShipRecoverySpecial.ShipCondition.BATTERED, 270f, (Math.random() < 0.5));
         addDerelict(system, daedalusstation, "volantian_sunder_vri_standard", Global.getSector().getFaction("vri").pickRandomShipName(), Misc.genUID(),ShipRecoverySpecial.ShipCondition.BATTERED, 270f, (Math.random() < 0.5));
 
+
+
         // Debris fields for the star!
+
+        Random rand = new Random();
+        int random_radius1 = 500 + rand.nextInt(4400);
+        int random_radius2 = 500 + rand.nextInt(4400);
+        int random_radius3 = 500 + rand.nextInt(4400);
+        int random_radius4 = 500 + rand.nextInt(4400);
+        int random_radius5 = 500 + rand.nextInt(4400);
+
         DebrisFieldTerrainPlugin.DebrisFieldParams params_ring1 = new DebrisFieldTerrainPlugin.DebrisFieldParams(
                 225f, // field radius - should not go above 1000 for performance reasons
                 0.7f, // density, visual - affects number of debris pieces
@@ -176,7 +188,7 @@ public class Avery {
         SectorEntityToken avery_debris1 = Misc.addDebrisField(system, params_ring1, StarSystemGenerator.random);
         avery_debris1.setSensorProfile(1000f);
         avery_debris1.setDiscoverable(true);
-        avery_debris1.setCircularOrbit(AveryStar, 30f, 5000, 160f);
+        avery_debris1.setCircularOrbit(AveryStar, 30f, random_radius1, 160f);
         avery_debris1.setId("avery_debris1");
 
         DebrisFieldTerrainPlugin.DebrisFieldParams params_ring2 = new DebrisFieldTerrainPlugin.DebrisFieldParams(
@@ -189,7 +201,7 @@ public class Avery {
         SectorEntityToken avery_debris2 = Misc.addDebrisField(system, params_ring2, StarSystemGenerator.random);
         avery_debris2.setSensorProfile(1000f);
         avery_debris2.setDiscoverable(true);
-        avery_debris2.setCircularOrbit(AveryStar, 90f, 5000, 160f);
+        avery_debris2.setCircularOrbit(AveryStar, 90f, random_radius2, 160f);
         avery_debris2.setId("avery_debris2");
 
         DebrisFieldTerrainPlugin.DebrisFieldParams params_ring3 = new DebrisFieldTerrainPlugin.DebrisFieldParams(
@@ -202,7 +214,7 @@ public class Avery {
         SectorEntityToken avery_debris3 = Misc.addDebrisField(system, params_ring3, StarSystemGenerator.random);
         avery_debris3.setSensorProfile(1000f);
         avery_debris3.setDiscoverable(true);
-        avery_debris3.setCircularOrbit(AveryStar, 60f, 5000, 160f);
+        avery_debris3.setCircularOrbit(AveryStar, 60f, random_radius3, 160f);
         avery_debris3.setId("avery_debris3");
 
         DebrisFieldTerrainPlugin.DebrisFieldParams params_ring4 = new DebrisFieldTerrainPlugin.DebrisFieldParams(
@@ -215,7 +227,7 @@ public class Avery {
         SectorEntityToken avery_debris4 = Misc.addDebrisField(system, params_ring4, StarSystemGenerator.random);
         avery_debris4.setSensorProfile(1000f);
         avery_debris4.setDiscoverable(true);
-        avery_debris4.setCircularOrbit(AveryStar, 120f, 5000, 90f);
+        avery_debris4.setCircularOrbit(AveryStar, 120f, random_radius4, 90f);
         avery_debris4.setId("avery_debris4");
 
         DebrisFieldTerrainPlugin.DebrisFieldParams params_ring5 = new DebrisFieldTerrainPlugin.DebrisFieldParams(
@@ -228,7 +240,7 @@ public class Avery {
         SectorEntityToken avery_debris5 = Misc.addDebrisField(system, params_ring5, StarSystemGenerator.random);
         avery_debris5.setSensorProfile(1000f);
         avery_debris5.setDiscoverable(true);
-        avery_debris5.setCircularOrbit(AveryStar, 180f, 5000, 140f);
+        avery_debris5.setCircularOrbit(AveryStar, 180f, random_radius5, 140f);
         avery_debris5.setId("avery_debris5");
 // Salvage Entities
 

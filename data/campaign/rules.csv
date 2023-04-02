@@ -1,0 +1,52 @@
+id,trigger,conditions,script,text,options,notes
+#Custom Market Descs,,,,,,
+,,,,,,
+flavorTextMarketVolantis,TradePanelFlavorText,"$id == vri_planet_Volantis
+","AddText ""The Volantian analogue to a market square is a spread of VolGen genetics clinics, cybernetic repair and installation shops and last but certainly not least, the local VAF recruitment office. It it takes several looks over the square, at least one check of the tour guide digitally provided to all visitors on docking and more than a few strange looks from the locals to find conventional (albeit automated) stores and military requisition stations. No haggling today.""",,,
+flavorTextMarketGeir,TradePanelFlavorText,$id == vri_planet_Geir,"AddText ""The port concourse of Geir’s slab is a remodeled surface terraforming installation. A monolithic atmospheric processor towers have been gutted out and replaced with docking equipment and transportation infrastructure. Your personal shuttle is granted docking clearance quite easily- you fear your larger ships may have to wait.""
+
+AddText ""You’re greeted by a crisply-uniformed VRI customs officer who seems quite underdressed for the weather, extending his bare hand to shake yours. As you take it, you feel the flesh-silicate compound and the mechanical warmth from his ‘skin.’ He updates your tripad with the latest market listings, prices, and planetary news.""",,,
+flavorTextMarketNocturne,TradePanelFlavorText,$id == vri_Nocturne,"AddText ""todo""",,,
+flavorTextMarketSubA1,TradePanelFlavorText,$id == vri_SubA1,"AddText ""Several of the upper levels of SPA1 are dedicated to trade- mostly traders here for the sheer abundance of volatiles produced by the mining. As you leave your ship, you’re greeted by a customs officer clad in the Volantian Teal with a bright smile and attentively perked feline ears.""
+
+AddText ""The Port concourse is filled with commodity traders, supplying everything that a starship captain could possibly need for their fleet. Several VAF officers overlook the scene, analyzing every single captain in their view- including you.""",,,
+flavorTextMarketDesmond,TradePanelFlavorText,$id == vri_planet_Desmond,"AddText ""todo""",,,
+flavorTextMarketStalos,TradePanelFlavorText,$id == vri_Stalos,"AddText ""todo""",,,
+flavorTextMarketVRI,TradePanelFlavorText,$faction.id == vri,"AddText ""The port concourse is filled with captains, commodity traders, and civilian onlookers. You’re approached by a crisply-uniformed VEF officer, who holds up a facial recognition scanner as one final security check, then taps her Tripad against yours- the soft chime indicates that you’ve received a complete, real-time catalog of all local market prices. Curiously, the contents of your cargo holds seem to be already present in the system.""",,,
+,,,,,,
+#Fleet Interaction Dialogues,,,,,,
+,,,,,,
+greetingVRIFriendly,OpenCommLink,"$faction.id == vri
+$faction.friendlyToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions",todo,,
+greetingVRINeutral,OpenCommLink,"$faction.id == vri
+$faction.neutralToPlayer","$menuState = fleetConvMain 0 
+FireAll PopulateOptions",todo,,
+greetingVRIHostile,OpenCommLink,"$faction.id == vri
+$entity.isHostile",$entity.ignorePlayerCommRequests = true 1,todo,cutCommLink:Cut the comm link,
+greetingVRIHostileStronger,OpenCommLink,"$faction.id == vri
+$entity.isHostile
+$entity.relativeStrength > 0
+",$entity.ignorePlayerCommRequests = true 1,todo,cutCommLink:Cut the comm link,
+,,,,,,
+#Relationship Levels,,,,,,
+,,,,,,
+relLevelNeutralVRI,RelationshipLevelDesc,"$faction.rel == NEUTRAL
+$faction.id == vri",,"You're not generally well known by $faction officials, for good or ill.",,
+relLevelFavorableVRI,RelationshipLevelDesc,"$faction.rel == FAVORABLE
+$faction.id == vri",,todo,,
+relLevelWelcomingVRI,RelationshipLevelDesc,"$faction.rel == WELCOMING
+$faction.id == vri",,todo,,
+relLevelFriendlyVRI,RelationshipLevelDesc,"$faction.rel == FRIENDLY
+$faction.id == vri",,todo,,
+relLevelCooperativeVRI,RelationshipLevelDesc,"$faction.rel == COOPERATIVE
+$faction.id == vri",,todo,,
+relLevelSuspiciousVRI,RelationshipLevelDesc,"$faction.rel == SUSPICIOUS
+$faction.id == vri",,todo,,
+relLevelInhospitableVRI,RelationshipLevelDesc,"$faction.rel == INHOSPITABLE
+$faction.id == vri",,todo,,
+relLevelHostileVRI,RelationshipLevelDesc,"$faction.rel == HOSTILE
+$faction.id == vri",,todo,,
+relLevelVengefulVRI,RelationshipLevelDesc,"$faction.rel == VENGEFUL
+$faction.id == vri",,todo,,
+,,,,,,

@@ -38,7 +38,7 @@ public class Uelyst {
 
         PlanetAPI UelystStar = system.initStar("vri_star_uelyst", // unique id for this star
                 "star_blue_supergiant", // id in planets.json
-                500f,        // radius (in pixels at default zoom)
+                800f,        // radius (in pixels at default zoom)
                 600, // corona radius, from star edge
                 10f, // solar wind burn level
                 0.5f, // flare probability
@@ -96,7 +96,7 @@ public class Uelyst {
         SubA1_market.getIndustry(Industries.MINING).setSpecialItem(new SpecialItemData(Items.PLASMA_DYNAMO, null));
         SubA1_market.getIndustry(Industries.REFINING).setSpecialItem(new SpecialItemData(Items.CATALYTIC_CORE, null));
         SubA1_market.setSurveyLevel(MarketAPI.SurveyLevel.FULL);
-
+        SubA1.setCustomDescriptionId("vri_SubA1"); //reference descriptions.csv
         //Geir's Slab
         PlanetAPI Geir = system.addPlanet("vri_planet_Geir",
                 SubA1,
@@ -172,7 +172,7 @@ public class Uelyst {
         Geir_market.getIndustry(Industries.MEGAPORT).setSpecialItem(new SpecialItemData(Items.FULLERENE_SPOOL, null));
         Geir_market.getIndustry(Industries.FARMING).setSpecialItem(new SpecialItemData(Items.SOIL_NANITES, null));
         Geir_market.setSurveyLevel(MarketAPI.SurveyLevel.FULL);
-
+        Geir.setCustomDescriptionId("vri_planet_Geir"); //reference descriptions.csv
         //Nocturne
         SectorEntityToken NocturneStation = system.addCustomEntity("vri_nocturne", "Nocturne", "vri_remnant_station", "vri");
         NocturneStation.setCircularOrbitPointingDown(UelystStar, 360f * (float) Math.random(), NocturneDist, 200);
@@ -217,7 +217,7 @@ public class Uelyst {
                 //junk and chatter
                 false);
         Nocturne_market.setSurveyLevel(MarketAPI.SurveyLevel.FULL);
-
+        NocturneStation.setCustomDescriptionId("vri_Nocturne"); //reference descriptions.csv
         //Asteroid field
         SectorEntityToken UelystAF1 = system.addTerrain(Terrain.ASTEROID_FIELD,
                 new AsteroidFieldTerrainPlugin.AsteroidFieldParams(
