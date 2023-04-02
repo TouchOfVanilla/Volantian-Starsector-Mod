@@ -4,19 +4,15 @@ import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.*;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
 import com.fs.starfarer.api.campaign.econ.MarketConditionAPI;
-import com.fs.starfarer.api.campaign.econ.MarketImmigrationModifier;
+import com.fs.starfarer.api.characters.FullName;
+import com.fs.starfarer.api.characters.PersonAPI;
 import com.fs.starfarer.api.impl.campaign.ids.*;
-import com.fs.starfarer.api.impl.campaign.population.PopulationComposition;
-import com.fs.starfarer.api.impl.campaign.procgen.PlanetConditionGenerator;
-import com.fs.starfarer.api.impl.campaign.procgen.StarAge;
 import com.fs.starfarer.api.impl.campaign.terrain.AsteroidFieldTerrainPlugin;
 import com.fs.starfarer.api.util.Misc;
 import data.world.VRIGen;
-
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.concurrent.locks.Condition;
 
 public class Royce {
 
@@ -275,5 +271,25 @@ public class Royce {
         system.addEntity(jumpPoint2);
 
         system.autogenerateHyperspaceJumpPoints(true, false);
+    }
+
+    //Blanche and NEA Activities
+    MarketAPI market =  Global.getSector().getEconomy().getMarket("vri_planet_volantis");
+        {
+        PersonAPI person = Global.getFactory().createPerson();
+        person.setId("blanche");
+        person.setFaction("vri");
+        person.setGender(FullName.Gender.FEMALE);
+        person.setRankId(Ranks.SPACE_COMMANDER);
+        person.setPostId(Ranks.POST_BASE_COMMANDER);
+        person.setImportance(PersonImportance.HIGH);
+        person.getName().setFirst("Blanche");
+        person.getName().setLast("Star");
+        person.setPortraitSprite(Global.getSettings().getSpriteName("characters", person.getId()));
+
+        market.getCommDirectory().addPerson(person);
+        market.getCommDirectory().getEntryForPerson(person).setHidden(true);
+        market.addPerson(person);
+
     }
 }
