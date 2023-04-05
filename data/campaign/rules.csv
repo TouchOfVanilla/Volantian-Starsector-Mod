@@ -1,6 +1,7 @@
 id,trigger,conditions,script,text,options,notes
-#Custom Market Descs,,,,,,
+#RULESET_NAME VRI,,,,,,
 ,,,,,,
+# Custom Market Descs,,,,,,
 flavorTextMarketVolantis,TradePanelFlavorText,"$id == vri_planet_Volantis
 ","AddText ""The Volantian analogue to a market square is a spread of VolGen genetics clinics, cybernetic repair and installation shops and last but certainly not least, the local VAF recruitment office. It it takes several looks over the square, at least one check of the tour guide digitally provided to all visitors on docking and more than a few strange looks from the locals to find conventional (albeit automated) stores and military requisition stations. No haggling today.""",,,
 flavorTextMarketGeir,TradePanelFlavorText,$id == vri_planet_Geir,"AddText ""The port concourse of Geir’s slab is a remodeled surface terraforming installation. A monolithic atmospheric processor towers have been gutted out and replaced with docking equipment and transportation infrastructure. Your personal shuttle is granted docking clearance quite easily- you fear your larger ships may have to wait.""
@@ -13,9 +14,9 @@ AddText ""The Port concourse is filled with commodity traders, supplying everyth
 flavorTextMarketDesmond,TradePanelFlavorText,$id == vri_planet_Desmond,"AddText ""todo""",,,
 flavorTextMarketStalos,TradePanelFlavorText,$id == vri_Stalos,"AddText ""todo""",,,
 flavorTextMarketVRI,TradePanelFlavorText,$faction.id == vri,"AddText ""The port concourse is filled with captains, commodity traders, and civilian onlookers. You’re approached by a crisply-uniformed VEF officer, who holds up a facial recognition scanner as one final security check, then taps her Tripad against yours- the soft chime indicates that you’ve received a complete, real-time catalog of all local market prices. Curiously, the contents of your cargo holds seem to be already present in the system.""",,,
+#END Custom Market Descs,,,,,,
 ,,,,,,
-#Fleet Interaction Dialogues,,,,,,
-,,,,,,
+# Fleet Interaction Dialogues,,,,,,
 greetingVRIFriendly,OpenCommLink,"$faction.id == vri
 $faction.friendlyToPlayer","$menuState = fleetConvMain 0
 FireAll PopulateOptions",todo,,
@@ -28,9 +29,9 @@ greetingVRIHostileStronger,OpenCommLink,"$faction.id == vri
 $entity.isHostile
 $entity.relativeStrength > 0
 ",$entity.ignorePlayerCommRequests = true 1,todo,cutCommLink:Cut the comm link,
+#END Fleet Interaction Dialogues,,,,,,
 ,,,,,,
-#Relationship Levels,,,,,,
-,,,,,,
+# Relationship Levels,,,,,,
 relLevelNeutralVRI,RelationshipLevelDesc,"$faction.rel == NEUTRAL
 $faction.id == vri",,"You're not generally well known by $faction officials, for good or ill.",,
 relLevelFavorableVRI,RelationshipLevelDesc,"$faction.rel == FAVORABLE
@@ -49,4 +50,110 @@ relLevelHostileVRI,RelationshipLevelDesc,"$faction.rel == HOSTILE
 $faction.id == vri",,todo,,
 relLevelVengefulVRI,RelationshipLevelDesc,"$faction.rel == VENGEFUL
 $faction.id == vri",,todo,,
+#END Relationship Levels,,,,,,
+,,,,,,
+# Blanche Dialogue,,,,,,
+blanchegreetingRegular,PickGreeting,"$id == blanche score:599999
+!$madeContact","ShowPersonVisual
+FireAll PopulateOptions
+SetShortcut cutCommLinkPolite ""ESCAPE""","It takes a little bit, but your connection request is eventually accepted.
+
+""Let's see here... Ah, $player.name. What can I do for you today?""
+
+Blanche looks quite bored.",0:cutCommLinkPolite:Cut the comm link,
+blanchegreetingContact,PickGreeting,$id == blanche score:599999,"ShowPersonVisual
+FireAll PopulateOptions
+SetShortcut cutCommLinkPolite ""ESCAPE""","Your comms request is accepted fairly quickly.
+
+""$player.firstName! It's nice to see you! I've been wondering what you've been up to.
+
+Blanche's ears are perked attentively as you fill her in on your travels across the sector.",0:cutCommLinkPolite:Cut the comm link,
+blanchegreetingAngy,PickGreeting,"$id == blanche score:599999
+VRIRelCheck -100 -1","ShowPersonVisual
+SetShortcut cutCommLink ""ESCAPE""","Your comms request is accepted after a few tense moments.
+
+Blanche's face is a pained expression, and her ears are pinned back in a show of hostility.
+
+""What more could you possibly want from me? Go talk to your own custom production manager, and use those blueprints you bought.""",0:cutCommLink:Cut the comm link,
+blanchegreetingVRIHostile,PickGreeting,"$id == blanche score:599999
+$faction.hostiletoPlayer","ShowPersonVisual
+SetShortcut cutCommLink ""ESCAPE""","An automated message plays as the Volantian Diamond flashes on the view screen.
+
+""This comm listing is currently unavailable. Please remain in orbit and wait for the nearest Volantian fleet for assistance.""
+
+You get the feeling that you aren't going to be recieving assistance.",0:cutCommLink:Cut the comm link,
+#blanchegreetingCooperative,PickGreeting,,,,,
+,,,,,,
+blancheContactInit,PopulateOptions,"$isPerson
+$id == blanche score:1000
+!$madeContact",,,"15:contactinitask:""I'm interested in working for you.""",
+blancheContactInitSucceed,DialogOptionSelected,"$option == contactinitask
+","ShowPersonVisual
+VRIAddContact
+$madeContact = true","""You know, I was about to ask the same thing. You seem like a pretty cool person! Just, yknow, don't declare your newfound credits on your taxes. I'm technically not supposed to be doing this.""","0:cutCommLinkPolite:Cut the comm link
+",
+,,,,,,
+blanchesShipBlurb,vri_blanche_sShip_blurb,,,"""I've got a $sShip_hullSize that *technically* doesn't pass inspection, but is otherwise in good shape. I'm trying to find it a home. Interested? It's going to a shipbreaking yard if doesn't get off my hands.""",,
+blanchesShipOfferOption,vri_blanche_sShip_option,,,,blanchesShip_start:Ask about the $sShip_hullSize,
+blanchesShipOfferTextContact,DialogOptionSelected,$option == blanchesShip_start,"$missionId = vri_blanche_sShip
+SetTextHighlights $sShip_price","""Oh? Looking to expand your fleet?""
+
+Blanche types as she fills you in.
+
+""It's a $sShip_hullClass $sShip_hullSize. $sShip_price credits, final offer. No strings attached.","blanchesShip_look:Ask for detailed info on the ship
+contact_decline:Decline",
+blanchesShipLookAtFreighter,DialogOptionSelected,$option == blanchesShip_look,"Call $sShip_ref showShip
+DoCanAffordCheck $sShip_price contact_accept false","Blanche taps her tripad a few times, and you hear a soft chime as she transmits the data on the ship to your screen.
+
+""What do ya think?""
+
+Blanche's tail swishes in anticipation.","contact_accept:Buy the $sShip_hullSize for $sShip_price credits
+contact_decline:Decline",
+blanchesShipPostAccept,ContactPostAccept,$missionId == vri_blanche_sShip,"RemoveCommodity credits $sShip_price
+AddShip $sShip_member
+Call $sShip_ref2 repSuccess",,,
+,,,,,,
+blanchecpcBlurb,vri_blanche_cpc_blurb,$cpc_military,,"""Some of our production slot requisitions were cancelled pretty late notice. I've got a hole in my production schedule, and people on my tail.""",,
+blanchecpcOfferOption,vri_blanche_cpc_option,$cpc_military,,,vri_blanche_cpc_start:Ask about the surplus military-grade nanoforge production opportunity,
+blanchecpcOfferTextContact,DialogOptionSelected,"$option == vri_blanche_cpc_start
+$cpc_military","$missionId = vri_blanche_cpc
+SetTextHighlights $cpc_maxCapacity $cpc_costPercent $cpc_days
+DoCanAffordCheck 0 cpc_pickPlayerBP false","""Let's get to brass tacks. You'll be doing me a massive favor, because I don't exactly have the spare budget to fill this hole. You'll get $cpc_maxCapacity credits worth of your blueprints or mine, at... let's say.... $cpc_costPercent of base cost. I'll have it delivered within $cpc_days days. They'll be much higher quality than what you find in the open market. What do you think?""
+
+Blanche is observing you with hopeful eyes.","vri_blanche_cpc_pickPlayerBP:Make a selection from your own blueprints
+vri_blanche_cpc_pickContactBP:See what blueprints they have available
+contact_decline:Decline",
+blanchecpcPickPlayerBP,DialogOptionSelected,$option == vri_blanche_cpc_pickPlayerBP,Call $cpc_ref pickPlayerBP,,,
+,,,,,,
+blanchebpsellinit,PopulateOptions,"RepLTE $faction.id FRIENDLY
+$isPerson
+$id == blanche score:1000",,,blanchebpsell_start:Ask about acquiring VRI ship blueprints,
+blanchebpselloffer,DialogOptionSelected,$option == blanchebpsell_start,DoCanAffordCheck 2500000 blanchebpsell_agree false,"""Hm? You're interested in acquiring some of the VRI's blueprints? Hmm... I trust you, but I also like my job. Let me check with Delilah to make sure it's okay...""
+
+Blanche looks a little surprised.
+
+""She's okay with it! For the small price of two and a half million credits.""
+
+Purchasing the VRI's blueprints would seem like a good idea, but if you already had a special someone who could supply you with VRI hulls and production orders, it would probbaly hurt their feelings if they found out.","blanchebpsell_agree:Agree to purchase the Volantian Blueprint Package for 2,500,000 credits
+0:cutCommLinkPolite:Decline to purchase the Volantian Blueprint Package",
+blanchebpsellsuccess,DialogOptionSelected,$option == blanchebpsell_agree,"RemoveCommodity credits 2500000
+VRIAddSpecial VRI_package
+AddText ""Your quartermaster reports the transfer of a shielded crate via courier drone. Blanche seems somewhat sad."" highlight
+AdjustRepActivePerson HOSTILE -100","""I've sent it over to your fleet. Pleasure doing business.""
+
+Blanche seems a little crestfallen, her voice breaking up.
+
+""I guess you don't need me anymore...""","0:cutCommLinkPolite:Cut the comm link
+",
+blanchebpsellsuccessangey,DialogOptionSelected,"$option == blanchebpsell_agree
+!$madeContact","RemoveCommodity credits 2500000
+VRIAddSpecial VRI_package
+AddText ""Your quartermaster reports the transfer of a shielded crate via courier drone."" highlight
+AdjustRepActivePerson FRIENDLY 10","""Please don't sell them to the pirates, that would make me look really bad...""
+
+Blanche seems quite happy with all of her newfound credits.
+
+""Pleasure doing business! I've sent them over to your fleet.""","0:cutCommLinkPolite:Cut the comm link
+",
+,,,,,,
 ,,,,,,

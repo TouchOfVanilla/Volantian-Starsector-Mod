@@ -102,6 +102,20 @@ public class Royce {
                 //junk and chatter
                 true);
         Volantis_market.setSurveyLevel(MarketAPI.SurveyLevel.FULL);
+        PersonAPI blanche = Global.getFactory().createPerson();
+        blanche.setId("blanche");
+        blanche.setFaction("vri");
+        blanche.setGender(FullName.Gender.FEMALE);
+        blanche.setRankId(Ranks.SPACE_COMMANDER);
+        blanche.setPostId(Ranks.POST_BASE_COMMANDER);
+        blanche.setImportance(PersonImportance.HIGH);
+        blanche.getName().setFirst("Blanche");
+        blanche.getName().setLast("Star");
+        blanche.setPortraitSprite(Global.getSettings().getSpriteName("characters", blanche.getId()));
+
+        Volantis_market.getCommDirectory().addPerson(blanche);
+        Volantis_market.getCommDirectory().getEntryForPerson(blanche).setHidden(false);
+        Volantis_market.addPerson(blanche);
 
         //Azor
         PlanetAPI Azor = system.addPlanet("vri_planet_Azor",
@@ -273,23 +287,4 @@ public class Royce {
         system.autogenerateHyperspaceJumpPoints(true, false);
     }
 
-    //Blanche and NEA Activities
-    MarketAPI market =  Global.getSector().getEconomy().getMarket("vri_planet_volantis");
-        {
-        PersonAPI person = Global.getFactory().createPerson();
-        person.setId("blanche");
-        person.setFaction("vri");
-        person.setGender(FullName.Gender.FEMALE);
-        person.setRankId(Ranks.SPACE_COMMANDER);
-        person.setPostId(Ranks.POST_BASE_COMMANDER);
-        person.setImportance(PersonImportance.HIGH);
-        person.getName().setFirst("Blanche");
-        person.getName().setLast("Star");
-        person.setPortraitSprite(Global.getSettings().getSpriteName("characters", person.getId()));
-
-        market.getCommDirectory().addPerson(person);
-        market.getCommDirectory().getEntryForPerson(person).setHidden(true);
-        market.addPerson(person);
-
-    }
 }

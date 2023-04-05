@@ -80,7 +80,7 @@
 			"vol_trail_smooth": "graphics/trails/fx/vol_trail_smoothish.png",
 
 			"vol_rapture_mark": "graphics/fx/vol_rapture_mark.png"
-		}
+		},
 		"characters": {
 				"blanche": "graphics/portraits/blanche1.png"
 }
