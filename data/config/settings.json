@@ -82,7 +82,9 @@
 			"vol_rapture_mark": "graphics/fx/vol_rapture_mark.png"
 		},
 		"characters": {
-				"blanche": "graphics/portraits/blanche1.png"
+				"blanche": "graphics/portraits/blanche1.png",
+				"avery": "graphics/portraits/avery1.png",
+				"delilah": "graphics/portraits/delilah1.png"
 }
 	}
 }

@@ -2,54 +2,109 @@ id,trigger,conditions,script,text,options,notes
 #RULESET_NAME VRI,,,,,,
 ,,,,,,
 # Custom Market Descs,,,,,,
-flavorTextMarketVolantis,TradePanelFlavorText,"$id == vri_planet_Volantis
-","AddText ""The Volantian analogue to a market square is a spread of VolGen genetics clinics, cybernetic repair and installation shops and last but certainly not least, the local VAF recruitment office. It it takes several looks over the square, at least one check of the tour guide digitally provided to all visitors on docking and more than a few strange looks from the locals to find conventional (albeit automated) stores and military requisition stations. No haggling today.""",,,
-flavorTextMarketGeir,TradePanelFlavorText,$id == vri_planet_Geir,"AddText ""The port concourse of Geir’s slab is a remodeled surface terraforming installation. A monolithic atmospheric processor towers have been gutted out and replaced with docking equipment and transportation infrastructure. Your personal shuttle is granted docking clearance quite easily- you fear your larger ships may have to wait.""
+flavorTextMarketVolantis,TradePanelFlavorText,"$id == vri_planet_Volantis score 999999
+$global.tradePanelMode == MARKET
+$faction.id == vri score 10","AddText ""The Volantian analogue to a market square is a spread of VolGen genetics clinics, cybernetic repair and installation shops and last but certainly not least, the local VAF recruitment office. It it takes several looks over the square, at least one check of the tour guide digitally provided to all visitors on docking and more than a few strange looks from the locals to find conventional (albeit automated) stores and military requisition stations. No haggling today.""",,,
+flavorTextMarketGeir,TradePanelFlavorText,"$id == vri_planet_Geir score 9999999
+$global.tradePanelMode == MARKET
+$faction.id == vri score 10","AddText ""The port concourse of Geir’s slab is a remodeled surface terraforming installation. Monolithic atmospheric processor towers have been gutted out and replaced with docking equipment and transportation infrastructure. Your personal shuttle is granted docking clearance quite easily- you fear your larger ships may have to wait.""
 
 AddText ""You’re greeted by a crisply-uniformed VRI customs officer who seems quite underdressed for the weather, extending his bare hand to shake yours. As you take it, you feel the flesh-silicate compound and the mechanical warmth from his ‘skin.’ He updates your tripad with the latest market listings, prices, and planetary news.""",,,
-flavorTextMarketNocturne,TradePanelFlavorText,$id == vri_Nocturne,"AddText ""todo""",,,
-flavorTextMarketSubA1,TradePanelFlavorText,$id == vri_SubA1,"AddText ""Several of the upper levels of SPA1 are dedicated to trade- mostly traders here for the sheer abundance of volatiles produced by the mining. As you leave your ship, you’re greeted by a customs officer clad in the Volantian Teal with a bright smile and attentively perked feline ears.""
+flavorTextMarketNocturne,TradePanelFlavorText,"$id == vri_nocturne score 9999999
+$global.tradePanelMode == MARKET
+$faction.id == vri score 10","AddText ""todo""",,,
+flavorTextMarketSubA1,TradePanelFlavorText,"$id == vri_planet_suba1 score 9999999
+$global.tradePanelMode == MARKET
+$faction.id == vri score 10","AddText ""Several of the upper levels of SPA1 are dedicated to trade- mostly traders here for the sheer abundance of volatiles produced by the mining. As you leave your ship, you’re greeted by a customs officer clad in the Volantian Teal with a bright smile and attentively perked feline ears.""
 
 AddText ""The Port concourse is filled with commodity traders, supplying everything that a starship captain could possibly need for their fleet. Several VAF officers overlook the scene, analyzing every single captain in their view- including you.""",,,
-flavorTextMarketDesmond,TradePanelFlavorText,$id == vri_planet_Desmond,"AddText ""todo""",,,
-flavorTextMarketStalos,TradePanelFlavorText,$id == vri_Stalos,"AddText ""todo""",,,
-flavorTextMarketVRI,TradePanelFlavorText,$faction.id == vri,"AddText ""The port concourse is filled with captains, commodity traders, and civilian onlookers. You’re approached by a crisply-uniformed VEF officer, who holds up a facial recognition scanner as one final security check, then taps her Tripad against yours- the soft chime indicates that you’ve received a complete, real-time catalog of all local market prices. Curiously, the contents of your cargo holds seem to be already present in the system.""",,,
-#END Custom Market Descs,,,,,,
+flavorTextMarketDesmond,TradePanelFlavorText,"$id == vri_planet_Desmond score 9999999
+$global.tradePanelMode == MARKET
+$faction.id == vri score 10","AddText ""todo""",,,
+flavorTextMarketStalos,TradePanelFlavorText,"$id == vri_Stalos score 9999999
+$global.tradePanelMode == MARKET
+$faction.id == vri score 10","AddText ""todo""",,,
+flavorTextMarketVRI,TradePanelFlavorText,"$faction.id == vri score 10
+$global.tradePanelMode == MARKET","AddText ""The port concourse is filled with captains, commodity traders, and civilian onlookers. You’re approached by a crisply-uniformed VEF officer, who holds up a facial recognition scanner as one final security check, then taps her Tripad against yours- the soft chime indicates that you’ve received a complete, real-time catalog of all local market prices. Curiously, the contents of your cargo holds seem to be already present in the system.""",,,
+,,,,,,
+# Custom Bar Descs,,,,,,
+bartext_Volantis,BarPrintDesc,"$id == vri_planet_Volantis score 999999
+$faction.id == vri score 10",ShowImageVisual space_bar,"Bars on Volantis have been deemed ""redundant; the gravity makes you lightheaded enough,"" to use one local's phrase. Yet here one is, tucked into a corner between a VolGen genetics clinic and a Volantian Armed Forces recruitment office, of all things. The bar itself is lavish, the nice decor and complimentary snacks showing a level of trust in patrons that you find jarring. As you would expect from the placement, the patrons resemble the usual cluster of ensigns drowning their sorrows you would find on any Hegemony world, their tails draped over the barstools- yet many seem to be drinking non-alcoholic beverages. Perhaps that local wasn't exaggerating after all. An ad-holo projected onto the wall behind the bartender features a lineup of individuals with highly diverse and exotic modifications, reading ‘Be yourself with VolGen’",,
+bartext_Geir,BarPrintDesc,"$id == vri_planet_Geir score 9999999
+$faction.id == vri score 10",ShowImageVisual space_bar,"The bar in the port concourse of Geir’s slab is quite an old one- It’s still run out of an old prefab colony building from before the planet had a proper atmosphere. The old life support module provides dry, crisp air and warmth from the chilling walk here. Many patrons come here out of pure necessity, relying on the vast array of spirits to warm their veins for whatever their next stop may be. You see countless ad-holos for thermal nanodermis installations and scantily clad models sporting fluffy, white tails, with text reading ""Stay warm with VolGen.""",,
+bartext_Nocturne,BarPrintDesc,"$id == vri_nocturne score 9999999
+$faction.id == vri score 10",ShowImageVisual space_bar,"Bars on Nocturne station are often filled with cadets, officers, admirals, and just about every person that wears the VAF insignia on their uniform. As you walk into one, you’re immediately assaulted by the overwhelming amount of noise from inside- much like military bars across the sector, they’re never a dull place. You see an ad-holo featuring a VAF soldier in teal fatigues, standing at attention. The banner reads “Reclaim your place in the sector; Join the VAF today!”",,
+bartext_SubA1,BarPrintDesc,"$id == vri_planet_suba1 score 9999999
+$faction.id == vri score 10",ShowImageVisual space_bar,"SPA1 has a bar on practically every single one of it’s 42 levels; the digital map and navigation software you were provided after receiving docking clearance guides you away from the gentle humming of the volatile extraction and processing facilities and towards a bar filled with captains, officers, and their assistants, mostly clad in the VAF teal.
+
+The cool and crisp oxygen-scrubbed atmosphere reminiscent of a starship bridge gives you the feeling that this bar is specially tailored for captains, and you weren’t led here by accident.
+
+You feel as if you’ll have plenty in common with the patrons of this bar- not from a physical perspective, you remind yourself.",,
+bartext_Desmond,BarPrintDesc,"$id == vri_planet_Desmond score 9999999
+$faction.id == vri score 10",ShowImageVisual space_bar,"The port concourses of Desmond’s Landing are much higher in the planet’s crust compared to the rest of the subterranean infrastructure. As a result, the bar you find yourself in is mostly populated by the errant starship captain, rowdy crews, and upper-crust laborers, spending their hazard pay on the assortment of fine, imported liquors from Volantis. You spot an Ad-Holo above the bar, featuring a close-up facial shot of a miner in a hardsuit shrouded in darkness, with their eyes illuminated through their visor with brilliant, vivid colors. The caption reads “See the way forward with VolGen”",,
+bartext_Stalos,BarPrintDesc,"$id == vri_Stalos score 9999999
+$faction.id == vri score 10",ShowImageVisual space_bar,"The few bars on Stalos Outpost are usually filled with VSB employees unwinding after weeks or sometimes months of frontier salvaging voyages. You find a proper-looking establishment that has perfectly recreated an old Volantian Empire-style bar. A plaque mounted above the bar thanks ‘Captain Forger’ for all of the furniture and decor that gives this bar such an antique flavor. An ad-holo projected from the ceiling features a VSB employee in zero-g, working on a salvage operation. A grappling hook shot from their forearm dominates the central focus of the image as it attaches to a valuable-looking crate of goodies. The caption reads “Seize your destiny with VolGen.”",,
+bartext_VRI,BarPrintDesc,$faction.id == vri score 10,ShowImageVisual space_bar,"Volantian Bars are often filled with junior officers, soldiers on shore leave, and transient starship captains, much like yourself. There’s no shortage of liquor to be had, and no shortage of people who enjoy it. An ad-holo for VolGen features graphics and media that you suspect the making of which isn’t exactly compliant with the treaty of Crom Cruach.",,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
 ,,,,,,
 # Fleet Interaction Dialogues,,,,,,
 greetingVRIFriendly,OpenCommLink,"$faction.id == vri
 $faction.friendlyToPlayer","$menuState = fleetConvMain 0
-FireAll PopulateOptions",todo,,
+FireAll PopulateOptions","""Ah, Captain $player.firstName! It’s a pleasure to see you. How may I assist?""
+OR
+""Captain $player.firstName! Nice to see ya. What’s up?""
+OR
+""IFF Code recieved…Captain $player.name! How are things?""",,
 greetingVRINeutral,OpenCommLink,"$faction.id == vri
 $faction.neutralToPlayer","$menuState = fleetConvMain 0 
-FireAll PopulateOptions",todo,,
+FireAll PopulateOptions","""Hello, Captain $player.name. Please maintain a respectable distance.""
+OR
+""IFF Code received, Captain. Have a good day.""
+OR
+""Greetings, Captain. How may I assist?""",,
 greetingVRIHostile,OpenCommLink,"$faction.id == vri
-$entity.isHostile",$entity.ignorePlayerCommRequests = true 1,todo,cutCommLink:Cut the comm link,
+$entity.isHostile",$entity.ignorePlayerCommRequests = true 1,"""I’m going to turn you into stardust. For the future of the sector.""
+OR
+""Hostile IFF acknowledged. Enjoy that fancy bridge of yours while it’s still in one piece.""
+OR
+""What? Why would I have anything to say to you? Dude, get ready for battle.""
+OR
+""In mere moments, all you’ll be feeling is oblivion. That, or disappointment. Go ahead. Flip that coin.""",cutCommLink:Cut the comm link,
 greetingVRIHostileStronger,OpenCommLink,"$faction.id == vri
 $entity.isHostile
 $entity.relativeStrength > 0
-",$entity.ignorePlayerCommRequests = true 1,todo,cutCommLink:Cut the comm link,
+",$entity.ignorePlayerCommRequests = true 1,"The face on the viewscreen grins menacingly.
+
+""Hope you brought enough escape pods, captain. I hear VolGen is looking for new test subjects.""
+OR
+""Aim for the escape pods. I don’t want this one getting away.""
+OR
+""Don't feel too bad. This is personal.""",cutCommLink:Cut the comm link,
 #END Fleet Interaction Dialogues,,,,,,
 ,,,,,,
 # Relationship Levels,,,,,,
 relLevelNeutralVRI,RelationshipLevelDesc,"$faction.rel == NEUTRAL
-$faction.id == vri",,"You're not generally well known by $faction officials, for good or ill.",,
+$faction.id == vri",,You are viewed by the VRI with ambivalence and indifference- you have yet to solidify a reputation for good or bad with the Volantian Authority.,,
 relLevelFavorableVRI,RelationshipLevelDesc,"$faction.rel == FAVORABLE
-$faction.id == vri",,todo,,
+$faction.id == vri",,"The VRI considers you a non-threat. You may be offered a commission, or other work.",,
 relLevelWelcomingVRI,RelationshipLevelDesc,"$faction.rel == WELCOMING
-$faction.id == vri",,todo,,
+$faction.id == vri",,"The VRI considers you a possible associate. You may have access to specialized equipment or opportunities, and patrols will generally stay out of your way.",,
 relLevelFriendlyVRI,RelationshipLevelDesc,"$faction.rel == FRIENDLY
-$faction.id == vri",,todo,,
+$faction.id == vri",,"The VRI considers you an asset. You will have easy access to top-grade military equipment, industrial blueprints, and other sensitive and valuable assets of the VRI.",,
 relLevelCooperativeVRI,RelationshipLevelDesc,"$faction.rel == COOPERATIVE
-$faction.id == vri",,todo,,
+$faction.id == vri",,"The VRI considers you an irreplaceable, unwavering, and loyal captain. No expense is spared ensuring that you represent the might of the VRI. You occasionally star in VAF ad-holos, and your face is recognized by just about every Volantian.",,
 relLevelSuspiciousVRI,RelationshipLevelDesc,"$faction.rel == SUSPICIOUS
-$faction.id == vri",,todo,,
+$faction.id == vri",,"The VRI has deemed you a possible threat. While no direct action is taken against you yet, the VRI’s tolerance of you is wearing thin, indicated by bureaucratic harassment, reluctant docking clearance, and frivolous customs inspections.",,
 relLevelInhospitableVRI,RelationshipLevelDesc,"$faction.rel == INHOSPITABLE
-$faction.id == vri",,todo,,
+$faction.id == vri",,"The VRI has deemed you an undesirable. Volantian ports have orders to refuse your requests for docking clearance, and you are likely to be targeted by errant VSB fleets, if you happen to be nearby.",,
 relLevelHostileVRI,RelationshipLevelDesc,"$faction.rel == HOSTILE
-$faction.id == vri",,todo,,
+$faction.id == vri",,"The VRI has deemed you a credible threat. Volantian fleets are cleared to engage you on sight, and you should expect to be harassed when exploring beyond the core worlds.",,
 relLevelVengefulVRI,RelationshipLevelDesc,"$faction.rel == VENGEFUL
-$faction.id == vri",,todo,,
+$faction.id == vri",,"The VRI has deemed you an adversary to the entire Volantian polity. You’re constantly featured as an enemy in VAF recruitment holovids, and there’s a standing bounty on your head. You’re certain that there’s a Volantian fleet commander who’s been personally assigned to hunt you down.",,
 #END Relationship Levels,,,,,,
 ,,,,,,
 # Blanche Dialogue,,,,,,
@@ -72,9 +127,9 @@ blanchegreetingAngy,PickGreeting,"$id == blanche score:599999
 VRIRelCheck -100 -1","ShowPersonVisual
 SetShortcut cutCommLink ""ESCAPE""","Your comms request is accepted after a few tense moments.
 
-Blanche's face is a pained expression, and her ears are pinned back in a show of hostility.
+Blanche's face is a hardened expression, and her ears are pinned back in a show of unease.
 
-""What more could you possibly want from me? Go talk to your own custom production manager, and use those blueprints you bought.""",0:cutCommLink:Cut the comm link,
+""What more could you possibly want from me?""",0:cutCommLink:Cut the comm link,
 blanchegreetingVRIHostile,PickGreeting,"$id == blanche score:599999
 $faction.hostiletoPlayer","ShowPersonVisual
 SetShortcut cutCommLink ""ESCAPE""","An automated message plays as the Volantian Diamond flashes on the view screen.
@@ -82,15 +137,23 @@ SetShortcut cutCommLink ""ESCAPE""","An automated message plays as the Volantian
 ""This comm listing is currently unavailable. Please remain in orbit and wait for the nearest Volantian fleet for assistance.""
 
 You get the feeling that you aren't going to be recieving assistance.",0:cutCommLink:Cut the comm link,
-#blanchegreetingCooperative,PickGreeting,,,,,
 ,,,,,,
 blancheContactInit,PopulateOptions,"$isPerson
 $id == blanche score:1000
 !$madeContact",,,"15:contactinitask:""I'm interested in working for you.""",
 blancheContactInitSucceed,DialogOptionSelected,"$option == contactinitask
-","ShowPersonVisual
+VRIRelCheck 10 100","ShowPersonVisual
 VRIAddContact
-$madeContact = true","""You know, I was about to ask the same thing. You seem like a pretty cool person! Just, yknow, don't declare your newfound credits on your taxes. I'm technically not supposed to be doing this.""","0:cutCommLinkPolite:Cut the comm link
+$madeContact = true","""You've proven yourself to be a dependable person. Plus...""
+
+Blanche pauses a moment as she flashes a grin through the display.
+
+""I was about to ask you the same thing, anyways.""
+
+She sends you a private comm-ID that she assures you is 'for off business hours' or 'just for hanging out.'","0:cutCommLinkPolite:Cut the comm link
+",
+blancheContactInitFail,DialogOptionSelected,"$option == contactinitask
+","AddText ""Consider improving your relationship with Blanche."" highlight","""Unfortunately, I'm not really considering taking in any more operatives at the moment. It all gets too much to handle, with all the paperwork. Every single person I hire, I end up being responsible for. You feel me?""","0:cutCommLinkPolite:Cut the comm link
 ",
 ,,,,,,
 blanchesShipBlurb,vri_blanche_sShip_blurb,,,"""I've got a $sShip_hullSize that *technically* doesn't pass inspection, but is otherwise in good shape. I'm trying to find it a home. Interested? It's going to a shipbreaking yard if doesn't get off my hands.""",,
@@ -113,40 +176,26 @@ blanchesShipPostAccept,ContactPostAccept,$missionId == vri_blanche_sShip,"Remove
 AddShip $sShip_member
 Call $sShip_ref2 repSuccess",,,
 ,,,,,,
-blanchecpcBlurb,vri_blanche_cpc_blurb,$cpc_military,,"""Some of our production slot requisitions were cancelled pretty late notice. I've got a hole in my production schedule, and people on my tail.""",,
-blanchecpcOfferOption,vri_blanche_cpc_option,$cpc_military,,,vri_blanche_cpc_start:Ask about the surplus military-grade nanoforge production opportunity,
+blanchecpcBlurb,vri_blanche_cpc_blurb,,,"""Some of our production slot requisitions were cancelled pretty late notice. I've got a hole in my production schedule, and people on my tail.""",,
+blanchecpcOfferOption,vri_blanche_cpc_option,,,,vri_blanche_cpc_start:Ask about the surplus military-grade nanoforge production opportunity,
 blanchecpcOfferTextContact,DialogOptionSelected,"$option == vri_blanche_cpc_start
 $cpc_military","$missionId = vri_blanche_cpc
 SetTextHighlights $cpc_maxCapacity $cpc_costPercent $cpc_days
-DoCanAffordCheck 0 cpc_pickPlayerBP false","""Let's get to brass tacks. You'll be doing me a massive favor, because I don't exactly have the spare budget to fill this hole. You'll get $cpc_maxCapacity credits worth of your blueprints or mine, at... let's say.... $cpc_costPercent of base cost. I'll have it delivered within $cpc_days days. They'll be much higher quality than what you find in the open market. What do you think?""
+DoCanAffordCheck 0 cpc_pickPlayerBP false","""Let's get to brass tacks. You'll be doing me a massive favor, because I don't exactly have the spare budget to fill this hole. You'll get $cpc_maxCapacity credits worth of your blueprints, at... let's say.... $cpc_costPercent of base cost. I'll have it delivered within $cpc_days days. They'll be much higher quality than what you find in the open market. What do you think?""
 
-Blanche is observing you with hopeful eyes.","vri_blanche_cpc_pickPlayerBP:Make a selection from your own blueprints
-vri_blanche_cpc_pickContactBP:See what blueprints they have available
-contact_decline:Decline",
+Blanche is observing you with hopeful eyes.",vri_blanche_cpc_pickPlayerBP:Make a selection from your own blueprints,
 blanchecpcPickPlayerBP,DialogOptionSelected,$option == vri_blanche_cpc_pickPlayerBP,Call $cpc_ref pickPlayerBP,,,
 ,,,,,,
-blanchebpsellinit,PopulateOptions,"RepLTE $faction.id FRIENDLY
+blanchebpsellinit,PopulateOptions,"RepLTE $faction.id COOPERATIVE
 $isPerson
 $id == blanche score:1000",,,blanchebpsell_start:Ask about acquiring VRI ship blueprints,
 blanchebpselloffer,DialogOptionSelected,$option == blanchebpsell_start,DoCanAffordCheck 2500000 blanchebpsell_agree false,"""Hm? You're interested in acquiring some of the VRI's blueprints? Hmm... I trust you, but I also like my job. Let me check with Delilah to make sure it's okay...""
 
 Blanche looks a little surprised.
 
-""She's okay with it! For the small price of two and a half million credits.""
-
-Purchasing the VRI's blueprints would seem like a good idea, but if you already had a special someone who could supply you with VRI hulls and production orders, it would probbaly hurt their feelings if they found out.","blanchebpsell_agree:Agree to purchase the Volantian Blueprint Package for 2,500,000 credits
+""She's okay with it! For the small price of two and a half million credits.""","blanchebpsell_agree:Agree to purchase the Volantian Blueprint Package for 2,500,000 credits
 0:cutCommLinkPolite:Decline to purchase the Volantian Blueprint Package",
 blanchebpsellsuccess,DialogOptionSelected,$option == blanchebpsell_agree,"RemoveCommodity credits 2500000
-VRIAddSpecial VRI_package
-AddText ""Your quartermaster reports the transfer of a shielded crate via courier drone. Blanche seems somewhat sad."" highlight
-AdjustRepActivePerson HOSTILE -100","""I've sent it over to your fleet. Pleasure doing business.""
-
-Blanche seems a little crestfallen, her voice breaking up.
-
-""I guess you don't need me anymore...""","0:cutCommLinkPolite:Cut the comm link
-",
-blanchebpsellsuccessangey,DialogOptionSelected,"$option == blanchebpsell_agree
-!$madeContact","RemoveCommodity credits 2500000
 VRIAddSpecial VRI_package
 AddText ""Your quartermaster reports the transfer of a shielded crate via courier drone."" highlight
 AdjustRepActivePerson FRIENDLY 10","""Please don't sell them to the pirates, that would make me look really bad...""
@@ -155,5 +204,112 @@ Blanche seems quite happy with all of her newfound credits.
 
 ""Pleasure doing business! I've sent them over to your fleet.""","0:cutCommLinkPolite:Cut the comm link
 ",
+,,,,,,
+#Avery Dialogue,,,,,,
+,,,,,,
+averygreetingRegular,PickGreeting,"$id == avery score:599999
+!$madeContact","ShowPersonVisual
+FireAll PopulateOptions
+SetShortcut cutCommLinkPolite ""ESCAPE""","It takes a little bit, but your connection request is eventually accepted.
+
+""This is Avery Kirin, Junior officer of the VAF speaking!""
+
+Her enthusiasm is so blinding you can almost feel it through the display screen.",0:cutCommLinkPolite:Cut the comm link,
+averygreetingContact,PickGreeting,$id == avery score:599999,"ShowPersonVisual
+FireAll PopulateOptions
+SetShortcut cutCommLinkPolite ""ESCAPE""","Your comms request is accepted fairly quickly.
+
+""Oh, $player.firstName! What have you been up to? Hang on, let me cancel my appointments.
+
+You and Avery chat about each other's travels across the sector.",0:cutCommLinkPolite:Cut the comm link,
+averygreetingVRIHostile,PickGreeting,"$id == avery score:599999
+$faction.hostiletoPlayer","ShowPersonVisual
+SetShortcut cutCommLink ""ESCAPE""","An automated message plays as the Volantian Diamond flashes on the view screen.
+
+""This comm listing is currently unavailable. Please remain in orbit and wait for the nearest Volantian fleet for assistance.""
+
+You get the feeling that you aren't going to be recieving assistance.",0:cutCommLink:Cut the comm link,
+,,,,,,
+averyhireinit,PopulateOptions,"$isPerson
+$id == avery score:1000
+!$madeContact",,,5:averyhireask:Ask Avery if she would like to join your fleet,
+averyhireaskyes,DialogOptionSelected,"$option == averyhireask
+RepLTE $faction.id FRIENDLY
+Commission hasFactionCommission",ShowPersonVisual,"""Hm? You want me to be an officer in your fleet?""
+
+A smile slowly forms on Avery's face.
+
+""I'd be more than happy to, but the VAF has a few conditions. First off, only commission holders are able to personally requisition officers for their fleet. Secondly, if your commission is broken in any way, my contract with you is null and void. Lastly...""
+
+Avery pauses for a moment.
+
+""My ship comes with me.""","1:averyhireaccept:Hire Avery Kirin to be an officer in your fleet
+2:cutCommLinkPolite:Politely Decline",
+averyhireaskno,DialogOptionSelected,$option == averyhireask,"ShowPersonVisual
+AddText ""Consider improving your standing with the VRI."" highlight","""Hm? You want me to be an officer in your fleet?""
+
+Avery tilts her head and looks at you, somewhat confused.
+
+""I'm not exactly keen on joining up with some random spacer with no affiliation to the VRI. And, no offense, but I wouldn't want to be seen working for someone who doesn't even have an entry in the VNIO database.""","0:cutCommLinkPolite:Cut the comm link
+",
+averyhireaccept,DialogOptionSelected,$option == averyhireaccept,VRIOfficerAdder avery,"""Hell yeah thats sick dude""","0:cutCommLinkPolite:Cut the comm link
+",
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+#Delilah Dialogue,,,,,,
+delilahgreetingRegular,PickGreeting,"$id == delilah score:599999
+!$madeContact","ShowPersonVisual
+FireAll PopulateOptions
+SetShortcut cutCommLinkPolite ""ESCAPE""","Your comms-request is accepted immediately.
+
+""Hello! How may I help you today, starfarer?""
+
+Delilah smiles softly as she awaits your request.",0:cutCommLinkPolite:Cut the comm link,
+delilahgreetingContact,PickGreeting,$id == delilah score:599999,"ShowPersonVisual
+FireAll PopulateOptions
+SetShortcut cutCommLinkPolite ""ESCAPE""","Your comms request is accepted immediately.
+
+""Ah, $player.firstName. A pleasure, as always. How may I help you?""
+
+Delilah's eyes bore into yours in an unwavering show of attention.",0:cutCommLinkPolite:Cut the comm link,
+delilahgreetingAngy,PickGreeting,"$id == delilah score:599999
+VRIRelCheck -100 -1","ShowPersonVisual
+SetShortcut cutCommLink ""ESCAPE""","Your comms request is accepted immediately.
+
+Delilah's expression is not that of anger, or fear, but cold indifference.
+
+""You have no place here. You have proven yourself to be untrustworthy and unreliable.""",0:cutCommLink:Cut the comm link,
+delilahgreetingVRIHostile,PickGreeting,"$id == delilah score:599999
+$faction.hostiletoPlayer","ShowPersonVisual
+SetShortcut cutCommLink ""ESCAPE""","An automated message plays as the Volantian Diamond flashes on the view screen.
+
+""This comm listing is currently unavailable. Please remain in orbit and wait for the nearest Volantian fleet for assistance.""
+
+You get the feeling that you aren't going to be recieving assistance.",0:cutCommLink:Cut the comm link,
+,,,,,,
+delilahaegisbuyinit,PopulateOptions,"$id == delilah score:599999
+RepLTE $faction.id FRIENDLY
+Commission hasFactionCommission",,,2:delilahaegisbuyask:Ask Delilah about obtaining blueprints to the Aegis Orbital Artillery System,
+delilahaegisbuyask,DialogOptionSelected,$option == delilahaegisbuyask,DoCanAffordCheck 3000000 delilahaegisbuyyes false,"""You're interested in the blueprints of the Aegis system... how curious. Normally, I wouldn't even consider the possibility of this, but given your long-standing service to the VRI, I'm willing to consider this. Of course, It'll be quite the hefty price, and if anybody but you makes use of them, I'll know. I know I can trust you with them.""
+
+Your intel officer gives you a short summary of the Aegis System. It's quite effective at countering asteroid impacts, and can be used in planetary defense against hostile fleets, but is somewhat costly to run. However, the Aegis far outshines the capabilities of any other ground-based defenses you could build.
+
+""Interested? I'll sell it to you for...3 million credits. Final offer.""","1:delilahaegisbuyyes:Agree to purchase the blueprints for 3 million credits
+0:cutCommLinkPolite:""That may be a bit too expensive for my tastes.""",
+delilahaegisbuysucceed,DialogOptionSelected,$option == delilahaegisbuyyes,,"Delilah looks somewhat surprised.
+
+""I don't even have an available copy of the blueprints at the moment... You can just casually throw around 3 million like that? Fascinating.""",0:cutCommLinkPolite:Cut the comm link,
+,,,,,,
+,,,,,,
+delilahloreask,PopulateOptions,$id == delilah score:599999,,,"5:delilahloreask:""I'd like to know more about the VRI.""",
+delilahloreinit,DialogOptionSelected,$option == delilahloreask,,"Delilah chuckles a little bit.
+
+""Soon."" She says.",0:cutCommLinkPolite:Cut the comm link,
+,,,,,,
+#Milasha Dialogue,,,,,,
+,,,,,,
+,,,,,,
 ,,,,,,
 ,,,,,,

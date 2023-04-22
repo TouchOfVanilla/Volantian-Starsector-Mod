@@ -4,6 +4,11 @@ import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.*;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
 import com.fs.starfarer.api.campaign.econ.MarketConditionAPI;
+import com.fs.starfarer.api.characters.OfficerDataAPI;
+import com.fs.starfarer.api.characters.PersonAPI;
+import com.fs.starfarer.api.characters.FullName;
+import com.fs.starfarer.api.characters.PersonAPI;
+import com.fs.starfarer.api.impl.campaign.events.OfficerManagerEvent;
 import com.fs.starfarer.api.impl.campaign.ids.*;
 import com.fs.starfarer.api.impl.campaign.terrain.AsteroidFieldTerrainPlugin;
 import com.fs.starfarer.api.impl.campaign.terrain.BaseRingTerrain;
@@ -173,6 +178,26 @@ public class Uelyst {
         Geir_market.getIndustry(Industries.FARMING).setSpecialItem(new SpecialItemData(Items.SOIL_NANITES, null));
         Geir_market.setSurveyLevel(MarketAPI.SurveyLevel.FULL);
         Geir.setCustomDescriptionId("vri_planet_Geir"); //reference descriptions.csv
+
+        PersonAPI avery = Global.getFactory().createPerson();
+        avery.setId("avery");
+        avery.setFaction("vri");
+        avery.setGender(FullName.Gender.FEMALE);
+        avery.setRankId(Ranks.PILOT);
+        avery.setPostId(Ranks.POST_OFFICER);
+        avery.setImportance(PersonImportance.VERY_LOW);
+        avery.setPersonality(Personalities.AGGRESSIVE);
+        avery.getName().setFirst("Avery");
+        avery.getName().setLast("Kirin");
+        avery.setPortraitSprite(Global.getSettings().getSpriteName("characters", avery.getId()));
+        avery.getStats().setLevel(1);
+        avery.getStats().setSkillLevel(Skills.HELMSMANSHIP, 1);
+        Global.getSector().getImportantPeople().addPerson(avery);
+
+        Geir_market.getCommDirectory().addPerson(avery);
+        Geir_market.getCommDirectory().getEntryForPerson(avery).setHidden(false);
+        Geir_market.addPerson(avery);
+
         //Nocturne
         SectorEntityToken NocturneStation = system.addCustomEntity("vri_nocturne", "Nocturne", "vri_remnant_station", "vri");
         NocturneStation.setCircularOrbitPointingDown(UelystStar, 360f * (float) Math.random(), NocturneDist, 200);

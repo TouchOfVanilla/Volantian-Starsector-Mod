@@ -65,6 +65,7 @@ public class Avery {
         Eminence_market.addCondition(Conditions.FARMLAND_BOUNTIFUL);
         Eminence_market.addCondition(Conditions.MILD_CLIMATE);
         Eminence_market.addCondition(Conditions.HOT);
+        Eminence_market.addCondition(Conditions.IRRADIATED);
         Eminence_market.addCondition(Conditions.RUINS_VAST);
         Eminence_market.setPrimaryEntity(Eminence);
         Eminence.setMarket(Eminence_market);
@@ -134,7 +135,7 @@ public class Avery {
         Tally_market.addCondition(Conditions.LOW_GRAVITY);
         Tally_market.addCondition(Conditions.RUINS_EXTENSIVE);
         Tally_market.setPrimaryEntity(Tally);
-        Tally.setMarket(Eminence_market);
+        Tally.setMarket(Tally_market);
         Tally.setCustomDescriptionId("vri_planet_Tally"); //reference descriptions.csv
 
         //Abandoned Station around

@@ -117,6 +117,22 @@ public class Royce {
         Volantis_market.getCommDirectory().getEntryForPerson(blanche).setHidden(false);
         Volantis_market.addPerson(blanche);
 
+        PersonAPI delilah = Global.getFactory().createPerson();
+        delilah.setId("delilah");
+        delilah.setFaction("vri");
+        delilah.setGender(FullName.Gender.FEMALE);
+        delilah.setRankId(Ranks.FACTION_LEADER);
+        delilah.setPostId(Ranks.POST_ADMINISTRATOR);
+        delilah.setImportance(PersonImportance.VERY_HIGH);
+        delilah.getName().setFirst("November-Echo-Delta");
+        delilah.getName().setLast("'Delilah'");
+        delilah.setPortraitSprite(Global.getSettings().getSpriteName("characters", delilah.getId()));
+
+        Volantis_market.getCommDirectory().addPerson(delilah);
+        Volantis_market.getCommDirectory().getEntryForPerson(delilah).setHidden(false);
+        Volantis_market.addPerson(delilah);
+
+
         //Azor
         PlanetAPI Azor = system.addPlanet("vri_planet_Azor",
                 Volantis,

@@ -4,7 +4,7 @@
 	"author":"TouchofVanilla",
     "utility":"false",
 	"version":"1.0.0",
-	"description":"The VRI is a small collection of worlds on the far reaches of the Persean sector, recently founded at the turn of the century by the residents of a recently arrived domain-era cryosleeper, sent on it’s centuries-long journey to the Persean sector before the development of hyperspace travel.",
+	"description":"The VRI is a relatively new faction built atop the ruins of the old Volantian Empire.",
     "gameVersion": "0.95.1a-RC6",
   	"jars":["jars/vri.jar"],
     "modPlugin": "data.scripts.VRI_ModPlugin",
