@@ -11,10 +11,9 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="StarsectorCore" level="project" />
     <orderEntry type="library" exported="" name="Magiclib" level="project" />
-    <orderEntry type="library" exported="" name="LazyLib" level="project" />
-    <orderEntry type="library" exported="" name="GraphicsLib" level="project" />
     <orderEntry type="library" name="vri" level="project" />
+    <orderEntry type="library" name="Graphics" level="project" />
+    <orderEntry type="library" name="LazyLib" level="project" />
     <orderEntry type="library" name="ExerelinCore" level="project" />
-    <orderEntry type="library" name="Nexerelin" level="project" />
   </component>
 </module>

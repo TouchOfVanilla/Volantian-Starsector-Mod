@@ -1,0 +1,43 @@
+id,name,cost mult,build time,income,upkeep,downgrade,upgrade,tags,data,image,plugin,desc,order
+VRI_VolGen_Office,VolGen Branch Office,,,2.5,,,,"structure",,graphics/icons/industry/battlestation.png,data.world.industries_and_buildings.VRI_VolGen_Office_script,"Does stuff",500
+VRI_Artillery,Aegis Artillery Network,,,,,,,"structure",,graphics/icons/industry/battlestation.png,data.world.industries_and_buildings.VRI_Artillery_script,"Does stuff",500
+,,,,,,,,,,,,,500
+,,,,,,,,,,,,,500
+,,,,,,,,,,,,,500
+,,,,,,,,,,,,,500
+,,,,,,,,,,,,,500
+,,,,,,,,,,,,,500
+,,,,,,,,,,,,,500
+,,,,,,,,,,,,,500
+,,,,,,,,,,,,,500
+,,,,,,,,,,,,,500
+,,,,,,,,,,,,,500
+,,,,,,,,,,,,,500
+,,,,,,,,,,,,,500
+,,,,,,,,,,,,,500
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,9999
+,,,,,,,,,,,,,9999
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,500
+,,,,,,,,,,,,,500
+,,,,,,,,,,,,,500
+,,,,,,,,,,,,,500
+,,,,,,,,,,,,,500
+,,,,,,,,,,,,,500
+,,,,,,,,,,,,,500
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,110
+,,,,,,,,,,,,,110
+,,,,,,,,,,,,,110
+,,,,,,,,,,,,,110
+,,,,,,,,,,,,,110
+,,,,,,,,,,,,,110
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,1950
+,,,,,,,,,,,,,400
+,,,,,,,,,,,,,
