@@ -12,7 +12,7 @@ import com.fs.starfarer.api.util.Misc;
 
 import java.util.List;
 import java.util.Map;
-
+//This is for avery only, do not use this without swapping out id's first
 public class VRIAddSuperSpecialShipAndOfficer extends BaseCommandPlugin {
 
     public boolean execute(String ruleId, InteractionDialogAPI dialog, List<Misc.Token> params, Map<String, MemoryAPI> memoryMap) {

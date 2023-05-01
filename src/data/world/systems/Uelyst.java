@@ -93,7 +93,8 @@ public class Uelyst {
                                 Industries.WAYSTATION,
                                 Industries.MINING,
                                 Industries.ORBITALSTATION,
-                                Industries.REFINING
+                                Industries.REFINING,
+                                "VRI_VolGen_Office"
                         )
                 ),
                 //tariffs
@@ -168,6 +169,9 @@ public class Uelyst {
                                 Industries.LIGHTINDUSTRY,
                                 Industries.MINING,
                                 Industries.FARMING,
+                                "VRI_VolGen_Office",
+                                "VRI_Artillery",
+
                                 "cryorevival"
                         )
                 ),
@@ -256,7 +260,8 @@ public class Uelyst {
                                 Industries.HEAVYBATTERIES,
                                 Industries.MILITARYBASE,
                                 Industries.ORBITALSTATION_HIGH,
-                                Industries.HEAVYINDUSTRY
+                                Industries.HEAVYINDUSTRY,
+                                "VRI_VolGen_Office"
                         )
                 ),
                 //tariffs

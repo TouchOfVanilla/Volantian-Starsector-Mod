@@ -1,5 +1,6 @@
 package data.world.industries_and_buildings;
 
+import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.econ.CommodityOnMarketAPI;
 import com.fs.starfarer.api.campaign.econ.Industry;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
@@ -108,7 +109,8 @@ public class VRI_Artillery_script extends BaseIndustry {
 
     @Override
     public boolean isAvailableToBuild() {
-        return false;
+        return (Global.getSector().getPlayerFaction().knowsIndustry(getId()));
+
     }
     public boolean showWhenUnavailable() {
         return false;

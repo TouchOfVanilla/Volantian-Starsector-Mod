@@ -12,7 +12,7 @@ $faction.id == vri score 10","AddText ""The port concourse of Geir’s slab is a
 AddText ""You’re greeted by a crisply-uniformed VRI customs officer who seems quite underdressed for the weather, extending his bare hand to shake yours. As you take it, you feel the flesh-silicate compound and the mechanical warmth from his ‘skin.’ He updates your tripad with the latest market listings, prices, and planetary news.""",,,
 flavorTextMarketNocturne,TradePanelFlavorText,"$id == vri_nocturne score 9999999
 $global.tradePanelMode == MARKET
-$faction.id == vri score 10","AddText ""todo""",,,
+$faction.id == vri score 10","AddText ""The port concourse of Nocturne station is hopelessly choked by a constant mobilization of military equipment, incoming trade convoys, incoming and outgoing patrols, and service shuttles darting between the massive hulls. As you disembark, you’re approached by a VAF officer who conducts a retinal scan with a device embedded in their palm. After a few moments, the officer updates your Tripad with market prices and helpful information, and warns you to stay in the civilian-designated areas of the station.""",,,
 flavorTextMarketSubA1,TradePanelFlavorText,"$id == vri_planet_suba1 score 9999999
 $global.tradePanelMode == MARKET
 $faction.id == vri score 10","AddText ""Several of the upper levels of SPA1 are dedicated to trade- mostly traders here for the sheer abundance of volatiles produced by the mining. As you leave your ship, you’re greeted by a customs officer clad in the Volantian Teal with a bright smile and attentively perked feline ears.""
@@ -20,10 +20,10 @@ $faction.id == vri score 10","AddText ""Several of the upper levels of SPA1 are 
 AddText ""The Port concourse is filled with commodity traders, supplying everything that a starship captain could possibly need for their fleet. Several VAF officers overlook the scene, analyzing every single captain in their view- including you.""",,,
 flavorTextMarketDesmond,TradePanelFlavorText,"$id == vri_planet_Desmond score 9999999
 $global.tradePanelMode == MARKET
-$faction.id == vri score 10","AddText ""todo""",,,
+$faction.id == vri score 10","AddText ""The port concourse of Desmond’s landing is largely separated from the larger population centers, to allow easy access to the planetary surface without exposing the more populated sections to radiation. As you disembark, you’re greeted by a teal-trimmed VAF officer who updates your Tripad with local market prices and helpful information.""",,,
 flavorTextMarketStalos,TradePanelFlavorText,"$id == vri_Stalos score 9999999
 $global.tradePanelMode == MARKET
-$faction.id == vri score 10","AddText ""todo""",,,
+$faction.id == vri score 10","AddText ""The port concourse of Stalos outpost is mostly dominated by the VSB- Imported expedition supplies are in high demand, with exploration fleets preparing for long voyages away from the core worlds. A VAF officer and a VSB official approach you as you disembark from your ship. After a pleasant chat, the VAF officer updates your tripad with market info and helpful information.""",,,
 flavorTextMarketVRI,TradePanelFlavorText,"$faction.id == vri score 10
 $global.tradePanelMode == MARKET","AddText ""The port concourse is filled with captains, commodity traders, and civilian onlookers. You’re approached by a crisply-uniformed VEF officer, who holds up a facial recognition scanner as one final security check, then taps her Tripad against yours- the soft chime indicates that you’ve received a complete, real-time catalog of all local market prices. Curiously, the contents of your cargo holds seem to be already present in the system.""",,,
 ,,,,,,
@@ -312,17 +312,25 @@ SetShortcut cutCommLink ""ESCAPE""","An automated message plays as the Volantian
 You get the feeling that you aren't going to be recieving assistance.",0:cutCommLink:Cut the comm link,
 ,,,,,,
 delilahaegisbuyinit,PopulateOptions,"$id == delilah score:599999
-RepLTE $faction.id FRIENDLY
-Commission hasFactionCommission",,,2:delilahaegisbuyask:Ask Delilah about obtaining blueprints to the Aegis Orbital Artillery System,
+RepGTE $faction.id FRIENDLY
+Commission hasFactionCommission
+!VRIHasAegisBP",,,2:delilahaegisbuyask:Ask Delilah about obtaining blueprints to the Aegis Orbital Artillery System,
 delilahaegisbuyask,DialogOptionSelected,$option == delilahaegisbuyask,DoCanAffordCheck 3000000 delilahaegisbuyyes false,"""You're interested in the blueprints of the Aegis system... how curious. Normally, I wouldn't even consider the possibility of this, but given your long-standing service to the VRI, I'm willing to consider this. Of course, It'll be quite the hefty price, and if anybody but you makes use of them, I'll know. I know I can trust you with them.""
 
 Your intel officer gives you a short summary of the Aegis System. It's quite effective at countering asteroid impacts, and can be used in planetary defense against hostile fleets, but is somewhat costly to run. However, the Aegis far outshines the capabilities of any other ground-based defenses you could build.
 
 ""Interested? I'll sell it to you for...3 million credits. Final offer.""","1:delilahaegisbuyyes:Agree to purchase the blueprints for 3 million credits
 0:cutCommLinkPolite:""That may be a bit too expensive for my tastes.""",
-delilahaegisbuysucceed,DialogOptionSelected,$option == delilahaegisbuyyes,,"Delilah looks somewhat surprised.
+delilahaegisbuysucceed,DialogOptionSelected,$option == delilahaegisbuyyes,"VRIAddSpecial industry_bp VRI_Artillery
+AddText ""Your quartermaster reports the transfer of a shielded crate via courier drone."" highlight
+AdjustRepActivePerson FRIENDLY 10
+RemoveCommodity credits 3000000","Delilah looks somewhat surprised.
 
-""I don't even have an available copy of the blueprints at the moment... You can just casually throw around 3 million like that? Fascinating.""",0:cutCommLinkPolite:Cut the comm link,
+""I wasn't expecting you to take that price, but so be it.""
+
+She gives a light smile as she recieves confirmation of payment.
+
+""I appreciate your patronage, captain. Please use the knowledge entrusted to you wisely.""",0:cutCommLinkPolite:Cut the comm link,
 ,,,,,,
 ,,,,,,
 delilahloreask,PopulateOptions,$id == delilah score:599999,,,"5:delilahloreask:""I'd like to know more about the VRI.""",
@@ -416,8 +424,31 @@ Call $market.dcom_ref updateStage","You review a ground-level feed from a marine
 
 As news reports come in en masse, it's quickly labelled as an industrial accident, for which the Volkov Industrial Conglomerate is to blame. You recieve an anonymous payment as you watch a press release from the planetary administration.",,
 ,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
+milashavolgencontractstart,PopulateOptions,"$isPerson
+$id == milasha score:1000
+RepGTE $faction.id WELCOMING
+!VRIHasVolGenBP",,,milasha_volgen_ask:Inquire about a contract with VolGen,
+milashavolgencontractoffer,DialogOptionSelected,$option == milasha_volgen_ask,DoCanAffordCheck 1000000 volgen_yes false,"""You're interested in a formal agreement with VolGen?""
+
+Milasha rubs her chin with her normal arm as she thinks over your proposal.
+
+""Captain. Let me tell you how truly excited I am for your interest.""
+
+A serious look overcomes Milasha's face on the viewscreen.
+
+""VolGen is what many in the VRI, myself included, believe to be the future of humanity. Not like those weird korposukas at the VIC, I'm talking about the greatest form of human expression and evolution. An agreement with Volgen would allow you to spread the wings of our company beyond the borders of the VRI, and allow more people around the sector to express themselves. Body modification is a human right, and I intend to make it accessible to every person in the sector.""
+
+Milasha stops a bit to catch her breath.
+
+""Now to business. I'll require an inital investment of one million credits, and you'll be expected to provide the credits and materials for any VolGen planetary branches you construct. However, You may keep 100% of the profits generated by the operation of the industry, and enjoy the benefits of a truly enhanced population.""
+
+Milasha awaits your response.","volgen_yes:Agree to Milasha's Terms
+cutCommLinkPolite:Reconsider your proposal",
+milashavolgencontractfinish,DialogOptionSelected,$option == volgen_yes,"VRIAddSpecial industry_bp VRI_VolGen_Office
+AddText ""Your quartermaster reports the transfer of a shielded crate via courier drone."" highlight
+AdjustRepActivePerson FRIENDLY 10
+RemoveCommodity credits 1000000","Milasha gives you a smile.
+
+""Captain, I appreciate your dedication to a more expressive and free sector.""",cutCommLinkPolite:Thank Milasha for the deal and cut the comm-link,
 ,,,,,,
 ,,,,,,

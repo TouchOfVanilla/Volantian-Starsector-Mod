@@ -105,7 +105,9 @@ public class Avery {
                                 Industries.MILITARYBASE,
                                 Industries.WAYSTATION,
                                 Industries.HEAVYBATTERIES,
-                                Industries.STARFORTRESS_HIGH
+                                Industries.STARFORTRESS_HIGH,
+                                "VRI_VolGen_Office"
+
                         )
                 ),
                 //tariffs

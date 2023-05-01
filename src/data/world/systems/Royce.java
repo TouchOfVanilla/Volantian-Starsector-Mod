@@ -92,6 +92,7 @@ public class Royce {
                                 Industries.LIGHTINDUSTRY,
                                 Industries.WAYSTATION,
                                 Industries.MILITARYBASE,
+                                "VRI_VolGen_Office",
                                 "cryorevival"
                         )
                 ),
@@ -203,7 +204,8 @@ public class Royce {
                                 Industries.MEGAPORT,
                                 Industries.WAYSTATION,
                                 Industries.HEAVYINDUSTRY,
-                                Industries.MINING
+                                Industries.MINING,
+                                "VRI_VolGen_Office"
                         )
                 ),
                 //tariffs

@@ -127,7 +127,7 @@ public class VRI_VolGen_Office_script extends BaseIndustry implements MarketImmi
 
     @Override
     public boolean isAvailableToBuild() {
-        return false;
+        return (Global.getSector().getPlayerFaction().knowsIndustry(getId()));
     }
     public boolean showWhenUnavailable() {
         return false;
