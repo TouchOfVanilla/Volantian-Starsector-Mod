@@ -46,7 +46,7 @@ public class VRI_MakeshiftFluxNetwork extends BaseHullMod {
 
 		//Change color of shield and vent
 		if(ship.getShield() != null) {
-			ship.getShield().setInnerColor(new Color(31,247,182,255));
+			ship.getShield().setInnerColor(new Color(31,247,182,75));
 		}
 		ship.setVentCoreColor(new Color(31,247,182,255));
 

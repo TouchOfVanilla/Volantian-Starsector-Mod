@@ -8,6 +8,8 @@ import com.fs.starfarer.api.characters.OfficerDataAPI;
 import com.fs.starfarer.api.characters.PersonAPI;
 import com.fs.starfarer.api.characters.FullName;
 import com.fs.starfarer.api.characters.PersonAPI;
+import com.fs.starfarer.api.fleet.FleetMemberAPI;
+import com.fs.starfarer.api.fleet.FleetMemberType;
 import com.fs.starfarer.api.impl.campaign.events.OfficerManagerEvent;
 import com.fs.starfarer.api.impl.campaign.ids.*;
 import com.fs.starfarer.api.impl.campaign.terrain.AsteroidFieldTerrainPlugin;
@@ -18,6 +20,8 @@ import data.world.VRIGen;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.Arrays;
+
+import static com.fs.starfarer.api.impl.campaign.rulecmd.SetStoryOption.set;
 
 public class Uelyst {
 
@@ -193,10 +197,30 @@ public class Uelyst {
         avery.getStats().setLevel(1);
         avery.getStats().setSkillLevel(Skills.HELMSMANSHIP, 1);
         Global.getSector().getImportantPeople().addPerson(avery);
+        Global.getSettings().getVariant("volantian_chromatic_vri_standard");
+        FleetMemberAPI member = Global.getFactory().createFleetMember(FleetMemberType.SHIP, "volantian_chromatic_vri_standard");
 
         Geir_market.getCommDirectory().addPerson(avery);
         Geir_market.getCommDirectory().getEntryForPerson(avery).setHidden(false);
         Geir_market.addPerson(avery);
+
+        PersonAPI milasha = Global.getFactory().createPerson();
+        milasha.setId("milasha");
+        milasha.setFaction("vri");
+        milasha.setGender(FullName.Gender.FEMALE);
+        milasha.setRankId(Ranks.CITIZEN);
+        milasha.setPostId(Ranks.POST_EXECUTIVE);
+        milasha.setImportance(PersonImportance.VERY_HIGH);
+        milasha.setPersonality(Personalities.AGGRESSIVE);
+        milasha.getName().setFirst("Milasha");
+        milasha.getName().setLast("Volt");
+        milasha.setPortraitSprite(Global.getSettings().getSpriteName("characters", milasha.getId()));
+        Global.getSector().getImportantPeople().addPerson(milasha);
+
+        Geir_market.getCommDirectory().addPerson(milasha);
+        Geir_market.getCommDirectory().getEntryForPerson(milasha).setHidden(false);
+        Geir_market.addPerson(milasha);
+
 
         //Nocturne
         SectorEntityToken NocturneStation = system.addCustomEntity("vri_nocturne", "Nocturne", "vri_remnant_station", "vri");

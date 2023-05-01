@@ -140,9 +140,9 @@ You get the feeling that you aren't going to be recieving assistance.",0:cutComm
 ,,,,,,
 blancheContactInit,PopulateOptions,"$isPerson
 $id == blanche score:1000
-!$madeContact",,,"15:contactinitask:""I'm interested in working for you.""",
-blancheContactInitSucceed,DialogOptionSelected,"$option == contactinitask
-VRIRelCheck 10 100","ShowPersonVisual
+!$madeContact",,,"15:blanchecontactinitask:""I'm interested in working for you.""",
+blancheContactInitSucceed,DialogOptionSelected,"$option == blanchecontactinitask
+RepGTE $faction.id FAVORABLE","ShowPersonVisual
 VRIAddContact
 $madeContact = true","""You've proven yourself to be a dependable person. Plus...""
 
@@ -152,29 +152,9 @@ Blanche pauses a moment as she flashes a grin through the display.
 
 She sends you a private comm-ID that she assures you is 'for off business hours' or 'just for hanging out.'","0:cutCommLinkPolite:Cut the comm link
 ",
-blancheContactInitFail,DialogOptionSelected,"$option == contactinitask
-","AddText ""Consider improving your relationship with Blanche."" highlight","""Unfortunately, I'm not really considering taking in any more operatives at the moment. It all gets too much to handle, with all the paperwork. Every single person I hire, I end up being responsible for. You feel me?""","0:cutCommLinkPolite:Cut the comm link
+blancheContactInitFail,DialogOptionSelected,"$option == blanchecontactinitask
+","AddText ""Consider improving your relationship with the VRI."" highlight","""Unfortunately, I'm not really considering taking in any more operatives at the moment. It all gets too much to handle, with all the paperwork. Every single person I hire, I end up being responsible for. You feel me? The VRI has plenty of enemies.""","0:cutCommLinkPolite:Cut the comm link
 ",
-,,,,,,
-blanchesShipBlurb,vri_blanche_sShip_blurb,,,"""I've got a $sShip_hullSize that *technically* doesn't pass inspection, but is otherwise in good shape. I'm trying to find it a home. Interested? It's going to a shipbreaking yard if doesn't get off my hands.""",,
-blanchesShipOfferOption,vri_blanche_sShip_option,,,,blanchesShip_start:Ask about the $sShip_hullSize,
-blanchesShipOfferTextContact,DialogOptionSelected,$option == blanchesShip_start,"$missionId = vri_blanche_sShip
-SetTextHighlights $sShip_price","""Oh? Looking to expand your fleet?""
-
-Blanche types as she fills you in.
-
-""It's a $sShip_hullClass $sShip_hullSize. $sShip_price credits, final offer. No strings attached.","blanchesShip_look:Ask for detailed info on the ship
-contact_decline:Decline",
-blanchesShipLookAtFreighter,DialogOptionSelected,$option == blanchesShip_look,"Call $sShip_ref showShip
-DoCanAffordCheck $sShip_price contact_accept false","Blanche taps her tripad a few times, and you hear a soft chime as she transmits the data on the ship to your screen.
-
-""What do ya think?""
-
-Blanche's tail swishes in anticipation.","contact_accept:Buy the $sShip_hullSize for $sShip_price credits
-contact_decline:Decline",
-blanchesShipPostAccept,ContactPostAccept,$missionId == vri_blanche_sShip,"RemoveCommodity credits $sShip_price
-AddShip $sShip_member
-Call $sShip_ref2 repSuccess",,,
 ,,,,,,
 blanchecpcBlurb,vri_blanche_cpc_blurb,,,"""Some of our production slot requisitions were cancelled pretty late notice. I've got a hole in my production schedule, and people on my tail.""",,
 blanchecpcOfferOption,vri_blanche_cpc_option,,,,vri_blanche_cpc_start:Ask about the surplus military-grade nanoforge production opportunity,
@@ -186,7 +166,7 @@ DoCanAffordCheck 0 cpc_pickPlayerBP false","""Let's get to brass tacks. You'll b
 Blanche is observing you with hopeful eyes.",vri_blanche_cpc_pickPlayerBP:Make a selection from your own blueprints,
 blanchecpcPickPlayerBP,DialogOptionSelected,$option == vri_blanche_cpc_pickPlayerBP,Call $cpc_ref pickPlayerBP,,,
 ,,,,,,
-blanchebpsellinit,PopulateOptions,"RepLTE $faction.id COOPERATIVE
+blanchebpsellinit,PopulateOptions,"RepGTE $faction.id COOPERATIVE
 $isPerson
 $id == blanche score:1000",,,blanchebpsell_start:Ask about acquiring VRI ship blueprints,
 blanchebpselloffer,DialogOptionSelected,$option == blanchebpsell_start,DoCanAffordCheck 2500000 blanchebpsell_agree false,"""Hm? You're interested in acquiring some of the VRI's blueprints? Hmm... I trust you, but I also like my job. Let me check with Delilah to make sure it's okay...""
@@ -204,6 +184,44 @@ Blanche seems quite happy with all of her newfound credits.
 
 ""Pleasure doing business! I've sent them over to your fleet.""","0:cutCommLinkPolite:Cut the comm link
 ",
+,,,,,,
+blanchenanoforgesellinit,PopulateOptions,"RepGTE $faction.id FRIENDLY
+$isPerson
+$id == blanche score:1000",,,5:blanchenfsell:Ask about purchasing a nanoforge,
+blanchenanoforgesellchoose,DialogOptionSelected,$option == blanchenfsell,"DoCanAffordCheck 750000 blanchecorrupforge false
+DoCanAffordCheck 1500000 blanchepristforge false","""You'd like to buy a nanoforge? Ah, uhm...""
+
+Blanche has a particular look on her face, as she looks lost for words.
+
+""You're asking me for a nanoforge...? I can do that, but it isn't going to be cheap.""
+
+The comm-link flickers for a bit.
+
+""I'm also not technically allowed to be selling VSB materiel, so you're also covering risk costs. Let's say...750k credits for a corrupted nanoforge, and 1.5 million for a pristine nanoforge. What do you think?""","1:blanchepristforge:Purchase a Pristine Nanoforge for 1.5 Million Credits
+2:blanchecorrupforge:Purchase a Corrupted Nanoforge 750k Credits
+3:cutCommLinkPolite:""Nevermind.""",
+blanchenanoforgesellpristine,DialogOptionSelected,$option == blanchepristforge,"RemoveCommodity credits 1500000
+VRIAddSpecial pristine_nanoforge
+AddText ""Your quartermaster reports the transfer of a shielded crate via courier drone."" highlight
+AdjustRepActivePerson FRIENDLY 20","""Thank you for the business! I appreciate it!""
+
+Blanche leans back in her chair as she takes a sip of something that looks hot.
+
+""I've got a few calls to make. Yknow, I've got to wrap this up. Get that forge somewhere safe.
+
+Blanche cuts the comm-link.",0:cutCommLink:Cut the comm link,
+blanchenanoforgesellcorrupt,DialogOptionSelected,$option == blanchecorrupforge,"RemoveCommodity credits 750000
+VRIAddSpecial corrupted_nanoforge
+AddText ""Your quartermaster reports the transfer of a shielded crate via courier drone."" highlight
+AdjustRepActivePerson FRIENDLY 10","""Wow. Uhh...""
+
+Blanche looks a little bit uncertain, like she's in over her head.
+
+""Thanks. I've got to go take care of this. Get the forge out of system, and don't be caught with it.""
+
+She reaches over and cuts the comm-link as you watch her concerned face disappear from the viewscreen.",0:cutCommLink:Cut the comm link,
+,,,,,,
+,,,,,,
 ,,,,,,
 #Avery Dialogue,,,,,,
 ,,,,,,
@@ -252,7 +270,11 @@ Avery tilts her head and looks at you, somewhat confused.
 
 ""I'm not exactly keen on joining up with some random spacer with no affiliation to the VRI. And, no offense, but I wouldn't want to be seen working for someone who doesn't even have an entry in the VNIO database.""","0:cutCommLinkPolite:Cut the comm link
 ",
-averyhireaccept,DialogOptionSelected,$option == averyhireaccept,VRIOfficerAdder avery,"""Hell yeah thats sick dude""","0:cutCommLinkPolite:Cut the comm link
+averyhireaccept,DialogOptionSelected,$option == averyhireaccept,"VRIAddSuperSpecialShipAndOfficer
+AddText ""Avery has joined your fleet as an officer, and with her flagship, a Chromatic (VRI) class cruiser."" highlight
+AdjustRepActivePerson FRIENDLY 10","""I knew you'd say yes!""
+
+Avery's comm-link quickly cuts off as your sensors officer reports the almost immediate approach of a Chromatic-class cruiser to your fleet.","0:cutCommLinkPolite:Cut the comm link
 ",
 ,,,,,,
 ,,,,,,
@@ -309,6 +331,92 @@ delilahloreinit,DialogOptionSelected,$option == delilahloreask,,"Delilah chuckle
 ""Soon."" She says.",0:cutCommLinkPolite:Cut the comm link,
 ,,,,,,
 #Milasha Dialogue,,,,,,
+,,,,,,
+milashagreetingRegular,PickGreeting,"$id == milasha score:599999
+!$madeContact","ShowPersonVisual
+FireAll PopulateOptions
+SetShortcut cutCommLinkPolite ""ESCAPE""","Your comms-request is accepted after a short time. As you wait, you listen to the VolGen ad-holo that plays softly through the comm-channel.
+
+""Greetings. You've reached Milasha Volt, CEO of VolGen. How can I help you?""
+
+She gazes inquisitively as you as she awaits your next move.",0:cutCommLinkPolite:Cut the comm link,
+milashagreetingContact,PickGreeting,$id == milasha score:599999,"ShowPersonVisual
+FireAll PopulateOptions
+SetShortcut cutCommLinkPolite ""ESCAPE""","Your comms request is accepted rather quickly.
+
+""$player.firstName. What brings you here today?""
+
+Milasha seems curious.",0:cutCommLinkPolite:Cut the comm link,
+milashagreetingAngy,PickGreeting,"$id == milasha score:599999
+VRIRelCheck -100 -1","SetShortcut cutCommLink ""ESCAPE""",Your comms request is rejected.,0:cutCommLink:Cut the comm link,
+milashagreetingVRIHostile,PickGreeting,"$id == milasha score:599999
+$faction.hostiletoPlayer","ShowPersonVisual
+SetShortcut cutCommLink ""ESCAPE""","An automated message plays as the Volantian Diamond flashes on the view screen.
+
+""This comm listing is currently unavailable. Please remain in orbit and wait for the nearest Volantian fleet for assistance.""
+
+You get the feeling that you aren't going to be recieving assistance.",0:cutCommLink:Cut the comm link,
+,,,,,,
+milashaContactInit,PopulateOptions,"$isPerson
+$id == milasha score:1000
+!$madeContact",,,"15:milashacontactinitask:""I'm interested in working for you.""",
+milashaContactInitSucceed,DialogOptionSelected,"$option == milashacontactinitask
+RepGTE $faction.id FAVORABLE
+","ShowPersonVisual
+VRIAddContact
+$madeContact = true","Milasha looks taken aback.
+
+""W-wait, you want to work for me? I'm confused...""
+
+She quickly regains her composure as the surprise and uncertainty fades from her face.
+
+""If you're willing to work for me, I'm willing to work with you to secure the future of Volgen and further the interests of the VRI.""","0:cutCommLinkPolite:Cut the comm link
+",
+milashaContactInitFail,DialogOptionSelected,"$option == milashacontactinitask
+","AddText ""Consider improving your standing with the VRI."" highlight","Milasha's brow furrows as you watch her contemplate.
+
+""You haven't exactly given me a reason to believe that you aren't working in the interests of another party. I can't depend on you unless I know that you have the interests of the VRI and Volgen in mind.""","0:cutCommLinkPolite:Cut the comm link
+",
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+milashadspBlurb,dsp_blurb,,,"""I need something done, and I'm inclined to ask for your assistance: I need you to... disrupt the $dsp_industry $dsp_marketOnOrAt $dsp_marketName. Nothing too serious, just take them out of the market for a little while. VolGen needs competition like I need the Volkovs.",,
+milashadspOfferOption,dsp_option,,,,milasha_dsp_start:Ask about the $dsp_industry disruption operation,
+milashadspOfferTextContact,DialogOptionSelected,$option == milasha_dsp_start,"$missionId = vri_milasha_dsp
+Highlight $dsp_dist $dsp_disruptDays $dsp_reward $dsp_marines
+Call $dsp_ref showMap ""Target: $dsp_marketName""","""You're willing to take care of this? I'm going to need the $dsp_industry $dsp_marketOnOrAt $dsp_marketName, $dsp_dist light-years away, disrupted for $dsp_disruptDays days. And, yeah, there's credits in it for you too. How does $dsp_reward sound?""
+
+""Here's the tac-intel my operatives have been able to gather."" Milasha taps her tripad and sends over a comprehensive tactical analysis of$dsp_marketName, including defenses, important objectives, and other useful info. You estimate that you'd need around $dsp_marines marines to carry off this raid.","contact_accept:Accept
+contact_decline:Decline",
+milashadspRaidFinished,DialogOptionSelected,"$market.dsp_raidedTargetIndustry score:1000
+$option == mktRaidResult
+Call $market.dsp_ref updateData","unset $market.dsp_raidedTargetIndustry
+$market.dsp_completed = true 0
+Call $market.dsp_ref updateStage","You recieve a personal encrypted message via one-way courier drone, bearing the VolGen logo. Milasha thanks you personally for your efforts, saying that you've 'invested in the future.'",mktRaidResult:Continue,
+,,,,,,
+milashadcomBlurb,dcom_blurb,,,"""I can trust you, right? I've got a job that needs a very special pair of hands, and I think you can take care of it for me.""
+OR
+""I need someone I can depend on for a very special operation. Can you be the someone?""",,
+milashadcomOfferOption,dcom_option,,,,milasha_dcom_start:Ask about the special job,
+milashadcomOfferTextContact,DialogOptionSelected,$option == milasha_dcom_start,"$missionId = vri_milasha_dcom
+SetTextHighlights $dcom_reward $dcom_marines
+Call $dcom_ref showMap ""Target: $dcom_marketName""","""There's a particular industrial site $dcom_marketOnOrAt $dcom_marketName owned by the Volkov Industrial Conglomerate. In the interests of VolGen, I could find $dcom_reward credits for you if it were to suffer an 'unfortunate accident' resulting in it's destruction.""
+
+""You'll have to make this subtle- I have people that can bend this exactly how I need to in the eyes of the media, but you'll still need to make it happen. My plan calls $dcom_marines suits. Can you take care of this for me?""","contact_accept:Accept
+contact_decline:Decline",
+milashadcomOpenMarket,OpenInteractionDialog,"$market.dcom_target score:1000
+!$dcom_addedRaidObjective","Call $market.dcom_ref updateData
+AddRaidObjective genericIcon ""Raid designated warehouse"" $dcom_danger 5000 DCOMRaidFinished
+$dcom_addedRaidObjective = true 0
+FireBest OpenInteractionDialog",,,
+milashaDCOMRaidFinished,DCOMRaidFinished,Call $market.dcom_ref updateData,"$market.dcom_completed = true
+Call $market.dcom_ref updateStage","You review a ground-level feed from a marine's suit cam. You watch as your handpicked teams trigger a hazardous waste alarm to clear out the industrial district, then place demolition charges in integral locations. The convenient delay of HAZMAT teams (likely the doing of Milasha) give your teams the time they need to get out before you trigger the detonator yourself, watching the entire district blossom into a fireball of volatile materials, organic matter, and industrial fuel.
+
+As news reports come in en masse, it's quickly labelled as an industrial accident, for which the Volkov Industrial Conglomerate is to blame. You recieve an anonymous payment as you watch a press release from the planetary administration.",,
+,,,,,,
+,,,,,,
 ,,,,,,
 ,,,,,,
 ,,,,,,

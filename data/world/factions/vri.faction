@@ -24,9 +24,10 @@
 	"showInIntelTab":true,
 	
 	"shipNameSources":{
-		"MERCANTILE":1,
+		"MERCANTILE":2,
 		"ROMAN":1,
 		"DERELICT_DRONE":1,
+		"VOLANTIAN":5
 	},
 	"names":{
 		"ai":1,
