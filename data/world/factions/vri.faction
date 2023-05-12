@@ -183,7 +183,7 @@
 	"illegalCommodities":[
 	],
 	"music": {
-        "theme": "music_vic_market_neutral",
+        "theme": "music_vol_market_neutral",
 
         "market_neutral": "music_vol_market_neutral",
         "market_hostile": "music_vol_market_hostile",
@@ -246,7 +246,7 @@
 
 		"trade":"Commerce Fleet",
 		"tradeLiner":"Transit Convoy",
-		"tradeSmuggler":"Suspicious Fleet",
+		"tradeSmuggler":"Smuggler Fleet",
 		"smalltrader":"Mercantile Fleet",
 
 		"taskForce":"Vanguard Fleet"

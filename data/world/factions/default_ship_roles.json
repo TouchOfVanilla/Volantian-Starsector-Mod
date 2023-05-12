@@ -62,13 +62,14 @@
 	"carrierMedium": {
 		"volantian_gauntlet_vri_strike": 3,
 		"volantian_gauntlet_vri_artillery": 3,
-		"volantian_kaiken_standard": 2,
-		"volantian_kaiken_vri_standard": 4,
+		"volantian_kaleidoscope_standard": 2,
+		"volantian_kaleidoscope_vri_standard": 4,
 		"drover_volantian": 0
 	},
 	"carrierLarge": {
 		"volantian_gauntlet_vri_strike": 6,
-		"volantian_kaiken_vri_standard": 3,
+		"volantian_kaleidoscope_vri_standard": 3,
+		"volantian_kaleidoscope_standard": 3,
 		"volantian_brilliant_vri_standard": 3
 	},
 	"phaseSmall": {

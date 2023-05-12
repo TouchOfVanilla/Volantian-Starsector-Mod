@@ -1,7 +1,6 @@
 {
 	"id":"vol_cryocannon_shot",
 	"specClass":"projectile",
-	"onFireEffect":"com.fs.starfarer.api.impl.combat.CryoblasterEffect",
 	"spawnType":"BALLISTIC_AS_BEAM",
 	"collisionClass":"RAY",
 	"collisionClassByFighter":"RAY_FIGHTER",

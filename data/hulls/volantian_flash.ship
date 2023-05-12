@@ -1,0 +1,68 @@
+{
+  "hullName": "Flash (VRI)",
+  "hullId": "volantian_flash",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fighters/vol_flash.png",
+  "style": "VOLANTIAN",
+  "height": 34,
+  "width": 40,
+  "center": [20, 16],
+  "collisionRadius": 21.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 21,
+  "viewOffset": 0,
+  "builtInMods": [
+    "no_weapon_flux"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HIDDEN",
+      "arc": 4,
+      "angle": 0,
+      "locations": [7, 0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-13.5, 14.5],
+      "length": 14,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 20,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-13.5, -14.5],
+      "length": 14,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 20,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-10.5, 8],
+      "length": 10,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 20,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-10.5, -8],
+      "length": 10,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 20,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -0.5, 15.5,
+    11, 0.5,
+    -0.5, -13.5,
+    -10, 0.5
+  ]
+}

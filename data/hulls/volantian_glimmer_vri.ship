@@ -12,9 +12,9 @@
   "shieldRadius": 68,
   "viewOffset": 0,
   "builtInMods": [
-    "VES",
     "VRI_FluxNetwork",
-    "auxiliarythrusters"
+    "auxiliarythrusters",
+    "volremconversion"
   ],
   "weaponSlots": [
     {

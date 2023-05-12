@@ -1,0 +1,40 @@
+{
+  "variantId": "volantian_kaleidoscope_standard",
+  "hullId": "volantian_kaleidoscope",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 37,
+  "fluxVents": 40,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "automated",
+    "ecm",
+    "expanded_deck_crew",
+    "pointdefenseai",
+    "targetingunit",
+    "fluxdistributor",
+    "auxiliarythrusters"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "gravitonbeam",
+        "WS0002": "gravitonbeam",
+        "WS0003": "lrpdlaser",
+        "WS0004": "lrpdlaser",
+        "WS0005": "heavyburst",
+        "WS0006": "heavyburst"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "lux_wing",
+    "lux_wing",
+    "spark_wing",
+    "spark_wing"
+  ]
+}
