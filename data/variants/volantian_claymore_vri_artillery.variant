@@ -3,43 +3,39 @@
   "hullId": "volantian_claymore_vri",
   "displayName": "Artillery",
   "goalVariant": true,
-  "fluxCapacitors": 14,
+  "fluxCapacitors": 0,
   "fluxVents": 30,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "targetingunit",
-    "fluxdistributor"
+    "advancedoptics",
+    "targetingunit"
   ],
   "weaponGroups": [
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "vol_harpecannon",
-        "WS0002": "vol_harpecannon"
+        "WS0001": "gravitonbeam",
+        "WS0002": "gravitonbeam",
+        "WS0003": "vol_surik",
+        "WS0004": "vol_surik",
+        "WS0005": "ionbeam",
+        "WS0006": "pdlaser",
+        "WS0007": "pdlaser",
+        "WS0010": "taclaser",
+        "WS0011": "taclaser"
       }
     },
     {
       "autofire": false,
-      "mode": "ALTERNATING",
-      "weapons": {
-        "WS0003": "vol_surik",
-        "WS0004": "vol_surik"
-      }
-    },
-    {
-      "autofire": true,
       "mode": "LINKED",
-      "weapons": {
-        "WS0005": "vol_harpecannon",
-        "WS0006": "vol_tekkocannon",
-        "WS0007": "vol_tekkocannon",
-        "WS0010": "vol_tekkocannon",
-        "WS0011": "vol_tekkocannon"
-      }
+      "weapons": {}
     }
   ],
   "modules": [],
-  "wings": []
+  "wings": [
+    "xyphos_wing",
+    "talon_wing"
+  ]
 }

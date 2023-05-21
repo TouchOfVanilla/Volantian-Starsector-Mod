@@ -27,11 +27,19 @@ public class VolantianRemnantConversion extends BaseHullMod {
 	}
 	
 	public String getDescriptionParam(int index, HullSize hullSize) {
-		if (index == 0) return "" + (int) ((SUPPLY_USE_MULT - 1f) * 100f) + "%";
+		if (index == 0) return "" + (int) ((1f - SUPPLY_USE_MULT) * 100f) + "%";
 		if (index == 1) return "" + (int) ((PEAK_PERFORMANCE_MULT - 1f) * 100f) + "%";
 		
 		return null;
 	}
+	@Override
+	public int getDisplaySortOrder() {
+		return 0;
+	}
 
+	@Override
+	public int getDisplayCategoryIndex() {
+		return 0;
+	}
 
 }

@@ -46,11 +46,6 @@ bartext_Stalos,BarPrintDesc,"$id == vri_Stalos score 9999999
 $faction.id == vri score 10",ShowImageVisual space_bar,"The few bars on Stalos Outpost are usually filled with VSB employees unwinding after weeks or sometimes months of frontier salvaging voyages. You find a proper-looking establishment that has perfectly recreated an old Volantian Empire-style bar. A plaque mounted above the bar thanks ‘Captain Forger’ for all of the furniture and decor that gives this bar such an antique flavor. An ad-holo projected from the ceiling features a VSB employee in zero-g, working on a salvage operation. A grappling hook shot from their forearm dominates the central focus of the image as it attaches to a valuable-looking crate of goodies. The caption reads “Seize your destiny with VolGen.”",,
 bartext_VRI,BarPrintDesc,$faction.id == vri score 10,ShowImageVisual space_bar,"Volantian Bars are often filled with junior officers, soldiers on shore leave, and transient starship captains, much like yourself. There’s no shortage of liquor to be had, and no shortage of people who enjoy it. An ad-holo for VolGen features graphics and media that you suspect the making of which isn’t exactly compliant with the treaty of Crom Cruach.",,
 ,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
 # Fleet Interaction Dialogues,,,,,,
 greetingVRIFriendly,OpenCommLink,"$faction.id == vri
 $faction.friendlyToPlayer","$menuState = fleetConvMain 0
@@ -58,14 +53,14 @@ FireAll PopulateOptions","""Ah, Captain $player.firstName! It’s a pleasure to 
 OR
 ""Captain $player.firstName! Nice to see ya. What’s up?""
 OR
-""IFF Code recieved…Captain $player.name! How are things?""",,
+""IFF Code recieved…Captain $player.name! How are things?""",cutCommLink:Cut the comm link,
 greetingVRINeutral,OpenCommLink,"$faction.id == vri
 $faction.neutralToPlayer","$menuState = fleetConvMain 0 
 FireAll PopulateOptions","""Hello, Captain $player.name. Please maintain a respectable distance.""
 OR
 ""IFF Code received, Captain. Have a good day.""
 OR
-""Greetings, Captain. How may I assist?""",,
+""Greetings, Captain. How may I assist?""",cutCommLink:Cut the comm link,
 greetingVRIHostile,OpenCommLink,"$faction.id == vri
 $entity.isHostile",$entity.ignorePlayerCommRequests = true 1,"""I’m going to turn you into stardust. For the future of the sector.""
 OR
@@ -84,28 +79,37 @@ OR
 ""Aim for the escape pods. I don’t want this one getting away.""
 OR
 ""Don't feel too bad. This is personal.""",cutCommLink:Cut the comm link,
-#END Fleet Interaction Dialogues,,,,,,
 ,,,,,,
 # Relationship Levels,,,,,,
 relLevelNeutralVRI,RelationshipLevelDesc,"$faction.rel == NEUTRAL
-$faction.id == vri",,You are viewed by the VRI with ambivalence and indifference- you have yet to solidify a reputation for good or bad with the Volantian Authority.,,
+$faction.id == vri",FireAll RelLevelMoreDescription,You are viewed by the VRI with ambivalence and indifference- you have yet to solidify a reputation for good or bad with the Volantian Authority.,,
 relLevelFavorableVRI,RelationshipLevelDesc,"$faction.rel == FAVORABLE
-$faction.id == vri",,"The VRI considers you a non-threat. You may be offered a commission, or other work.",,
+$faction.id == vri",FireAll RelLevelMoreDescription,"The VRI considers you a non-threat. You may be offered a commission, or other work.",,
 relLevelWelcomingVRI,RelationshipLevelDesc,"$faction.rel == WELCOMING
-$faction.id == vri",,"The VRI considers you a possible associate. You may have access to specialized equipment or opportunities, and patrols will generally stay out of your way.",,
+$faction.id == vri",FireAll RelLevelMoreDescription,"The VRI considers you a possible associate. You may have access to specialized equipment or opportunities, and patrols will generally stay out of your way.",,
 relLevelFriendlyVRI,RelationshipLevelDesc,"$faction.rel == FRIENDLY
-$faction.id == vri",,"The VRI considers you an asset. You will have easy access to top-grade military equipment, industrial blueprints, and other sensitive and valuable assets of the VRI.",,
+$faction.id == vri",FireAll RelLevelMoreDescription,"The VRI considers you an asset. You will have easy access to top-grade military equipment, industrial blueprints, and other sensitive and valuable assets of the VRI.",,
 relLevelCooperativeVRI,RelationshipLevelDesc,"$faction.rel == COOPERATIVE
-$faction.id == vri",,"The VRI considers you an irreplaceable, unwavering, and loyal captain. No expense is spared ensuring that you represent the might of the VRI. You occasionally star in VAF ad-holos, and your face is recognized by just about every Volantian.",,
+$faction.id == vri",FireAll RelLevelMoreDescription,"The VRI considers you an irreplaceable, unwavering, and loyal captain. No expense is spared ensuring that you represent the might of the VRI. You occasionally star in VAF ad-holos, and your face is recognized by just about every Volantian.",,
 relLevelSuspiciousVRI,RelationshipLevelDesc,"$faction.rel == SUSPICIOUS
-$faction.id == vri",,"The VRI has deemed you a possible threat. While no direct action is taken against you yet, the VRI’s tolerance of you is wearing thin, indicated by bureaucratic harassment, reluctant docking clearance, and frivolous customs inspections.",,
+$faction.id == vri",FireAll RelLevelMoreDescription,"The VRI has deemed you a possible threat. While no direct action is taken against you yet, the VRI’s tolerance of you is wearing thin, indicated by bureaucratic harassment, reluctant docking clearance, and frivolous customs inspections.",,
 relLevelInhospitableVRI,RelationshipLevelDesc,"$faction.rel == INHOSPITABLE
-$faction.id == vri",,"The VRI has deemed you an undesirable. Volantian ports have orders to refuse your requests for docking clearance, and you are likely to be targeted by errant VSB fleets, if you happen to be nearby.",,
+$faction.id == vri",FireAll RelLevelMoreDescription,"The VRI has deemed you an undesirable. Volantian ports have orders to refuse your requests for docking clearance, and you are likely to be targeted by errant VSB fleets, if you happen to be nearby.",,
 relLevelHostileVRI,RelationshipLevelDesc,"$faction.rel == HOSTILE
-$faction.id == vri",,"The VRI has deemed you a credible threat. Volantian fleets are cleared to engage you on sight, and you should expect to be harassed when exploring beyond the core worlds.",,
+$faction.id == vri",FireAll RelLevelMoreDescription,"The VRI has deemed you a credible threat. Volantian fleets are cleared to engage you on sight, and you should expect to be harassed when exploring beyond the core worlds.",,
 relLevelVengefulVRI,RelationshipLevelDesc,"$faction.rel == VENGEFUL
-$faction.id == vri",,"The VRI has deemed you an adversary to the entire Volantian polity. You’re constantly featured as an enemy in VAF recruitment holovids, and there’s a standing bounty on your head. You’re certain that there’s a Volantian fleet commander who’s been personally assigned to hunt you down.",,
-#END Relationship Levels,,,,,,
+$faction.id == vri",FireAll RelLevelMoreDescription,"The VRI has deemed you an adversary to the entire Volantian polity. You’re constantly featured as an enemy in VAF recruitment holovids, and there’s a standing bounty on your head. You’re certain that there’s a Volantian fleet commander who’s been personally assigned to hunt you down.",,
+relLevelVRImilasha,RelLevelMoreDescription,"$faction.id == vri
+VRIHasVolGenBP",,"You are known to have dealings with the CEO of Volgen, Milasha Volt.",,
+relLevelVRIdelilah,RelLevelMoreDescription,"$faction.id == vri
+VRIHasAegisBP",,"You are known to have dealings with the leader of the VRI, Delilah.",,
+relLevelVRIavery,RelLevelMoreDescription,"$faction.id == vri
+VRIHasAveryAsOfficer",,"You are known to sponsor officers of the VAF, such as Avery Kirin.",,
+relLevelVRICommission,RelLevelMoreDescription,"$faction.id == vri
+$player.fcm_faction == vri",,You are known as a stalwart and loyal representative of the Volantian Polity.,,
+relLevelVRIknowsbpswithoutcomm,RelLevelMoreDescription,"$faction.id == vri
+VRIKnowsVRIBP
+$player.fcm_faction != vri",,The Volantian intelligence network is quite curious as to how you obtained their ship blueprints without official endorsement.,,
 ,,,,,,
 # Blanche Dialogue,,,,,,
 blanchegreetingRegular,PickGreeting,"$id == blanche score:599999
@@ -156,19 +160,10 @@ blancheContactInitFail,DialogOptionSelected,"$option == blanchecontactinitask
 ","AddText ""Consider improving your relationship with the VRI."" highlight","""Unfortunately, I'm not really considering taking in any more operatives at the moment. It all gets too much to handle, with all the paperwork. Every single person I hire, I end up being responsible for. You feel me? The VRI has plenty of enemies.""","0:cutCommLinkPolite:Cut the comm link
 ",
 ,,,,,,
-blanchecpcBlurb,vri_blanche_cpc_blurb,,,"""Some of our production slot requisitions were cancelled pretty late notice. I've got a hole in my production schedule, and people on my tail.""",,
-blanchecpcOfferOption,vri_blanche_cpc_option,,,,vri_blanche_cpc_start:Ask about the surplus military-grade nanoforge production opportunity,
-blanchecpcOfferTextContact,DialogOptionSelected,"$option == vri_blanche_cpc_start
-$cpc_military","$missionId = vri_blanche_cpc
-SetTextHighlights $cpc_maxCapacity $cpc_costPercent $cpc_days
-DoCanAffordCheck 0 cpc_pickPlayerBP false","""Let's get to brass tacks. You'll be doing me a massive favor, because I don't exactly have the spare budget to fill this hole. You'll get $cpc_maxCapacity credits worth of your blueprints, at... let's say.... $cpc_costPercent of base cost. I'll have it delivered within $cpc_days days. They'll be much higher quality than what you find in the open market. What do you think?""
-
-Blanche is observing you with hopeful eyes.",vri_blanche_cpc_pickPlayerBP:Make a selection from your own blueprints,
-blanchecpcPickPlayerBP,DialogOptionSelected,$option == vri_blanche_cpc_pickPlayerBP,Call $cpc_ref pickPlayerBP,,,
-,,,,,,
 blanchebpsellinit,PopulateOptions,"RepGTE $faction.id COOPERATIVE
 $isPerson
-$id == blanche score:1000",,,blanchebpsell_start:Ask about acquiring VRI ship blueprints,
+$id == blanche score:1000
+!VRIKnowsVRIBP",,,blanchebpsell_start:Ask about acquiring VRI ship blueprints,
 blanchebpselloffer,DialogOptionSelected,$option == blanchebpsell_start,DoCanAffordCheck 2500000 blanchebpsell_agree false,"""Hm? You're interested in acquiring some of the VRI's blueprints? Hmm... I trust you, but I also like my job. Let me check with Delilah to make sure it's okay...""
 
 Blanche looks a little surprised.
@@ -222,9 +217,7 @@ Blanche looks a little bit uncertain, like she's in over her head.
 She reaches over and cuts the comm-link as you watch her concerned face disappear from the viewscreen.",0:cutCommLink:Cut the comm link,
 ,,,,,,
 ,,,,,,
-,,,,,,
 #Avery Dialogue,,,,,,
-,,,,,,
 averygreetingRegular,PickGreeting,"$id == avery score:599999
 !$madeContact","ShowPersonVisual
 FireAll PopulateOptions
@@ -252,7 +245,6 @@ averyhireinit,PopulateOptions,"$isPerson
 $id == avery score:1000
 !$madeContact",,,5:averyhireask:Ask Avery if she would like to join your fleet,
 averyhireaskyes,DialogOptionSelected,"$option == averyhireask
-RepLTE $faction.id FRIENDLY
 Commission hasFactionCommission",ShowPersonVisual,"""Hm? You want me to be an officer in your fleet?""
 
 A smile slowly forms on Avery's face.
@@ -264,20 +256,18 @@ Avery pauses for a moment.
 ""My ship comes with me.""","1:averyhireaccept:Hire Avery Kirin to be an officer in your fleet
 2:cutCommLinkPolite:Politely Decline",
 averyhireaskno,DialogOptionSelected,$option == averyhireask,"ShowPersonVisual
-AddText ""Consider improving your standing with the VRI."" highlight","""Hm? You want me to be an officer in your fleet?""
+AddText ""Consider obtaining a commission with the VRI."" highlight","""Hm? You want me to be an officer in your fleet?""
 
 Avery tilts her head and looks at you, somewhat confused.
 
-""I'm not exactly keen on joining up with some random spacer with no affiliation to the VRI. And, no offense, but I wouldn't want to be seen working for someone who doesn't even have an entry in the VNIO database.""","0:cutCommLinkPolite:Cut the comm link
+""I'm not exactly keen on joining up with some random spacer with no affiliation to the VRI. And, no offense, but your fleet doesn't exactly... measure up to my standards.""","0:cutCommLinkPolite:Cut the comm link
 ",
 averyhireaccept,DialogOptionSelected,$option == averyhireaccept,"VRIAddSuperSpecialShipAndOfficer
-AddText ""Avery has joined your fleet as an officer, and with her flagship, a Chromatic (VRI) class cruiser."" highlight
+AddText ""Avery has joined your fleet as an officer, and with her flagship."" highlight
 AdjustRepActivePerson FRIENDLY 10","""I knew you'd say yes!""
 
 Avery's comm-link quickly cuts off as your sensors officer reports the almost immediate approach of a Chromatic-class cruiser to your fleet.","0:cutCommLinkPolite:Cut the comm link
 ",
-,,,,,,
-,,,,,,
 ,,,,,,
 ,,,,,,
 #Delilah Dialogue,,,,,,
@@ -332,14 +322,12 @@ She gives a light smile as she recieves confirmation of payment.
 
 ""I appreciate your patronage, captain. Please use the knowledge entrusted to you wisely.""",0:cutCommLinkPolite:Cut the comm link,
 ,,,,,,
-,,,,,,
 delilahloreask,PopulateOptions,$id == delilah score:599999,,,"5:delilahloreask:""I'd like to know more about the VRI.""",
 delilahloreinit,DialogOptionSelected,$option == delilahloreask,,"Delilah chuckles a little bit.
 
 ""Soon."" She says.",0:cutCommLinkPolite:Cut the comm link,
 ,,,,,,
 #Milasha Dialogue,,,,,,
-,,,,,,
 milashagreetingRegular,PickGreeting,"$id == milasha score:599999
 !$madeContact","ShowPersonVisual
 FireAll PopulateOptions
@@ -385,44 +373,6 @@ milashaContactInitFail,DialogOptionSelected,"$option == milashacontactinitask
 
 ""You haven't exactly given me a reason to believe that you aren't working in the interests of another party. I can't depend on you unless I know that you have the interests of the VRI and Volgen in mind.""","0:cutCommLinkPolite:Cut the comm link
 ",
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-milashadspBlurb,dsp_blurb,,,"""I need something done, and I'm inclined to ask for your assistance: I need you to... disrupt the $dsp_industry $dsp_marketOnOrAt $dsp_marketName. Nothing too serious, just take them out of the market for a little while. VolGen needs competition like I need the Volkovs.",,
-milashadspOfferOption,dsp_option,,,,milasha_dsp_start:Ask about the $dsp_industry disruption operation,
-milashadspOfferTextContact,DialogOptionSelected,$option == milasha_dsp_start,"$missionId = vri_milasha_dsp
-Highlight $dsp_dist $dsp_disruptDays $dsp_reward $dsp_marines
-Call $dsp_ref showMap ""Target: $dsp_marketName""","""You're willing to take care of this? I'm going to need the $dsp_industry $dsp_marketOnOrAt $dsp_marketName, $dsp_dist light-years away, disrupted for $dsp_disruptDays days. And, yeah, there's credits in it for you too. How does $dsp_reward sound?""
-
-""Here's the tac-intel my operatives have been able to gather."" Milasha taps her tripad and sends over a comprehensive tactical analysis of$dsp_marketName, including defenses, important objectives, and other useful info. You estimate that you'd need around $dsp_marines marines to carry off this raid.","contact_accept:Accept
-contact_decline:Decline",
-milashadspRaidFinished,DialogOptionSelected,"$market.dsp_raidedTargetIndustry score:1000
-$option == mktRaidResult
-Call $market.dsp_ref updateData","unset $market.dsp_raidedTargetIndustry
-$market.dsp_completed = true 0
-Call $market.dsp_ref updateStage","You recieve a personal encrypted message via one-way courier drone, bearing the VolGen logo. Milasha thanks you personally for your efforts, saying that you've 'invested in the future.'",mktRaidResult:Continue,
-,,,,,,
-milashadcomBlurb,dcom_blurb,,,"""I can trust you, right? I've got a job that needs a very special pair of hands, and I think you can take care of it for me.""
-OR
-""I need someone I can depend on for a very special operation. Can you be the someone?""",,
-milashadcomOfferOption,dcom_option,,,,milasha_dcom_start:Ask about the special job,
-milashadcomOfferTextContact,DialogOptionSelected,$option == milasha_dcom_start,"$missionId = vri_milasha_dcom
-SetTextHighlights $dcom_reward $dcom_marines
-Call $dcom_ref showMap ""Target: $dcom_marketName""","""There's a particular industrial site $dcom_marketOnOrAt $dcom_marketName owned by the Volkov Industrial Conglomerate. In the interests of VolGen, I could find $dcom_reward credits for you if it were to suffer an 'unfortunate accident' resulting in it's destruction.""
-
-""You'll have to make this subtle- I have people that can bend this exactly how I need to in the eyes of the media, but you'll still need to make it happen. My plan calls $dcom_marines suits. Can you take care of this for me?""","contact_accept:Accept
-contact_decline:Decline",
-milashadcomOpenMarket,OpenInteractionDialog,"$market.dcom_target score:1000
-!$dcom_addedRaidObjective","Call $market.dcom_ref updateData
-AddRaidObjective genericIcon ""Raid designated warehouse"" $dcom_danger 5000 DCOMRaidFinished
-$dcom_addedRaidObjective = true 0
-FireBest OpenInteractionDialog",,,
-milashaDCOMRaidFinished,DCOMRaidFinished,Call $market.dcom_ref updateData,"$market.dcom_completed = true
-Call $market.dcom_ref updateStage","You review a ground-level feed from a marine's suit cam. You watch as your handpicked teams trigger a hazardous waste alarm to clear out the industrial district, then place demolition charges in integral locations. The convenient delay of HAZMAT teams (likely the doing of Milasha) give your teams the time they need to get out before you trigger the detonator yourself, watching the entire district blossom into a fireball of volatile materials, organic matter, and industrial fuel.
-
-As news reports come in en masse, it's quickly labelled as an industrial accident, for which the Volkov Industrial Conglomerate is to blame. You recieve an anonymous payment as you watch a press release from the planetary administration.",,
 ,,,,,,
 milashavolgencontractstart,PopulateOptions,"$isPerson
 $id == milasha score:1000

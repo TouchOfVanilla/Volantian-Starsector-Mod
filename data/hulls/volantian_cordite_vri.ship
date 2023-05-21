@@ -12,10 +12,9 @@
   "shieldRadius": 125,
   "viewOffset": 0,
   "builtInMods": [
-    "advancedcore",
+    "high_scatter_amp",
     "VRI_FluxNetwork",
-    "VES",
-    "high_scatter_amp"
+    "VES"
   ],
   "weaponSlots": [
     {

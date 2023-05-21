@@ -35,22 +35,39 @@
 	# multiplier for how often hulls show up in the faction's fleets
 	"hullFrequency":{
 		"tags":{
+		"rare_bp":.05,
+		"pirate_bp":0,
+		"LP_bp":0,
 		},
 		"hulls":{
+		"atlas2":0,
+		"prometheus2":0,
+		"buffalo_tritachyon":0,
+		"manticore_luddic_path":0,
+		"manticore_pirates":0,
+		"vanguard_pirates":0,
+		"falcon_p":0,
+        "eradicator_pirates":0,
 		},
 	},
 	# ships the faction gets access to when importing S&W out-of-faction
 	"shipsWhenImporting":{
-		"tags":["remnant","VRI_bp","hightech_bp","midline_bp"],
+		"tags":["remnant","VRI_bp","hightech_bp","midline_bp", "rare_bp"],
 		"hulls":[
 		],
 	},
 	"knownShips":{
-		"tags":["VRI_bp","hightech_bp","midline_bp"],
+		"tags":["VRI_bp", "VRI_rem_bp", "VRI_aux_bp", "rare_bp"],
 		"hulls":[
 		    "champion",
 		    "aurora",
 		    "apogee",
+		    "volantian_radiant_vri",
+		    "volantian_ionos_vri",
+		    "volantian_kaleidoscope_vri",
+		    "volantian_shamshir_vri",
+		    "volantian_paramerion_vri",
+		    "volantian_nova_vri",
 
 
 		],

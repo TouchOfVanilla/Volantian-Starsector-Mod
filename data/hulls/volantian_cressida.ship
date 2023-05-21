@@ -12,8 +12,8 @@
   "shieldRadius": 91,
   "viewOffset": 50,
   "builtInMods": [
-    "phasefield",
-    "high_maintenance"
+    "delicate",
+    "phasefield"
   ],
   "weaponSlots": [
     {

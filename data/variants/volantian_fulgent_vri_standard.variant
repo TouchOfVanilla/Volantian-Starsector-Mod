@@ -1,0 +1,50 @@
+{
+  "variantId": "volantian_fulgent_vri_standard",
+  "hullId": "volantian_fulgent_vri",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 11,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 000": "irpulse",
+        "WS 002": "irpulse"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "heavyneedler",
+        "WS 003": "ionpulser",
+        "WS 004": "ionpulser"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 009": "reaper",
+        "WS 010": "reaper"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 005": "vol_halonMK1",
+        "WS 006": "vol_halonMK1"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

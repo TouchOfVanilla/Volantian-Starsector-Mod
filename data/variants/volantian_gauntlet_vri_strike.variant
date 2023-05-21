@@ -3,12 +3,11 @@
   "hullId": "volantian_gauntlet_vri",
   "displayName": "Strike",
   "goalVariant": true,
-  "fluxCapacitors": 0,
-  "fluxVents": 20,
+  "fluxCapacitors": 1,
+  "fluxVents": 30,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "eccm",
     "targetingunit"
   ],
   "weaponGroups": [
@@ -20,6 +19,8 @@
         "WS0002": "vol_pataautocannon",
         "WS0003": "vol_halonMK1",
         "WS0004": "vol_halonMK1",
+        "WS0005": "kineticblaster",
+        "WS0006": "kineticblaster",
         "WS0008": "vol_halonMK1",
         "WS0009": "vol_halonMK1",
         "WS0010": "vol_tekkocannon",
@@ -29,10 +30,7 @@
     {
       "autofire": false,
       "mode": "ALTERNATING",
-      "weapons": {
-        "WS0005": "vol_lucern",
-        "WS0006": "vol_lucern"
-      }
+      "weapons": {}
     },
     {
       "autofire": false,

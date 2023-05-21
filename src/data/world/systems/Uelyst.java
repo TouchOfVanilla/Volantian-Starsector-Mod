@@ -286,10 +286,8 @@ public class Uelyst {
 
         //Dust belt
         system.addRingBand(UelystStar, "misc", "rings_dust0", 256f, 0, Color.gray, 256f, dust1Dist, 330f);
-        system.addRingBand(UelystStar, "misc", "rings_dust0", 256f, 0, Color.white, 256f, dust1Dist, 310f);
 
         //Dust belt
-        system.addRingBand(UelystStar, "misc", "rings_dust0", 256f, 0, Color.gray, 256f, dust2Dist, 330f);
         system.addRingBand(UelystStar, "misc", "rings_dust0", 256f, 0, Color.white, 256f, dust2Dist, 310f);
 
         //Ring

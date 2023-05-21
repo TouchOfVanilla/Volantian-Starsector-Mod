@@ -3,42 +3,43 @@
   "hullId": "volantian_claymore_vri",
   "displayName": "Brawler",
   "goalVariant": true,
-  "fluxCapacitors": 0,
-  "fluxVents": 37,
+  "fluxCapacitors": 13,
+  "fluxVents": 30,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "safetyoverrides"
+    "targetingunit"
   ],
   "weaponGroups": [
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "vol_kastane",
-        "WS0002": "vol_kastane",
-        "WS0005": "vol_kastane",
-        "WS0010": "vol_pataautocannon",
-        "WS0011": "vol_pataautocannon"
+        "WS0001": "kineticblaster",
+        "WS0002": "kineticblaster",
+        "WS0003": "locust",
+        "WS0004": "cyclone",
+        "WS0005": "phasebeam",
+        "WS0006": "pdlaser",
+        "WS0007": "pdlaser",
+        "WS0010": "vol_halonMK1",
+        "WS0011": "vol_halonMK1"
       }
     },
     {
       "autofire": false,
       "mode": "ALTERNATING",
-      "weapons": {
-        "WS0003": "vol_kattibarrage",
-        "WS0004": "vol_kattibarrage"
-      }
+      "weapons": {}
     },
     {
       "autofire": true,
       "mode": "LINKED",
-      "weapons": {
-        "WS0006": "vol_tekkocannon",
-        "WS0007": "vol_tekkocannon"
-      }
+      "weapons": {}
     }
   ],
   "modules": [],
-  "wings": []
+  "wings": [
+    "volantian_lux_wing",
+    "volantian_lux_wing"
+  ]
 }

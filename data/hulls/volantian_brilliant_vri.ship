@@ -12,8 +12,8 @@
   "shieldRadius": 135,
   "viewOffset": 0,
   "builtInMods": [
-    "VRI_FluxNetwork",
     "nav_relay",
+    "VRI_FluxNetwork",
     "volremconversion"
   ],
   "weaponSlots": [

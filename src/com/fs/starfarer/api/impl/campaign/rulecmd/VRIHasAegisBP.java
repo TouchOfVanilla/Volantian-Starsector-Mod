@@ -17,5 +17,6 @@ public class VRIHasAegisBP extends BaseCommandPlugin {
     @Override
     public boolean execute(String ruleId, InteractionDialogAPI dialog, List<Token> params, final Map<String, MemoryAPI> memoryMap) {
         return Global.getSector().getPlayerFaction().knowsIndustry("VRI_Artillery");
+
     }
 }

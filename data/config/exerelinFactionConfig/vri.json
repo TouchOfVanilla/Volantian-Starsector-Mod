@@ -5,12 +5,12 @@
     "rebelFleetSuffix":"Traitors",
     
 	"asteroidMiningFleetName":"Scavenger",
-    "gasMiningFleetName":"Collecter",
+    "gasMiningFleetName":"Collector",
     "invasionFleetName":"Vanguard",
     "responseFleetName":"Response",
     "invasionSupportFleetName":"Auxillary",
     "defenceFleetName":"Guardian",
-	"suppressionFleetName":"Peacekeeping Fleet",
+	"suppressionFleetName":"Peacekeeper",
 	"noSyncRelations":false,
 	"noStartingContact":true,
     "marketSpawnWeight":1,
@@ -38,74 +38,28 @@
 		"tritachyon": 0.5,
 
 		# modded factions
-		"blade_breakers":  -1.0,
 		"mayasura": -1.0,
-		"tahlan_legioinfernalis":0,
-		"anvil_industries": 0,
-		"exalted": 0,
-		"blackjack": 0,
-		"shadow_industry": 0,
-		"new_galactic_order":0,
-		"SCY": 0,
-		"diableavionics": 0,
-		"ORA": 0,
-		"interstellarimperium": 0,
-		"ii_imperial_guard": 0,
-		"xhanempire": 0,
-		"unitedpamed": 0,
-		"galaxytigers": 0,
-		"galaxytigers_derelict": 0,
-		"galaxytigers_drone_guard":0,
-		"al_ars": 0,
-		"pearson_exotronics": 0,
-		"blackrock_driveyards": 0,
-		"br_consortium":0,
-		"dassault_mikoyan": 0,
-		"6eme_bureau":0,
-		"united_security":0,
-		"gmda":0,
-		"gmda_patrol":0,
-		"draco":0,
-		"fang":0,
-		"HMI":0,
-		"brighton": 0,
+		"eis": -0.5,
+		"tahlan_legioinfernalis":-1.0,
+		"diableavionics": -1.0,
+		"draco":-1.0,
+		"fang":-1.0,
+		"HMI":0.5,
+		"brighton": 0.5,
 		"fpe": 0,
-		"mess":0,
-		"junk_pirates":0,
-		"junk_pirates_hounds":0,
-		"junk_pirates_junkboys":0,
-		"junk_pirates_technicians":0,
-		"pack":0,
-		"syndicate_asp":0,
-		"syndicate_asp_familia":0,
-		"metelson":0,
-		"sylphon":0,
-		"templars": 0,
-		"cabal":0,
-		"neutrinocorp":0,
-		"cmc":0,
-		"kadur_remnant":0,
-		"tahlan_greathouses":0,
-		"vass_shipyards": 0,
-		"rb": 0,
-		"prv": 0,
-		"xlu": 0,
-		"ocua": 0,
-		"Coalition": 0,
-		"scalartech": 0,
-		"tiandong": 0,
-		"COPS": 0,
-		"roider": 0,
-		"fringe_defence_syndicate": 0,
-		"air": 0,
-		"aic": 0,
+		"mess":-1.0,
+		"cabal":-1.0,
+		"tahlan_greathouses":0.5,
 
 	},
     
 	
     "maxRelationships":{
-		"blade_breakers": -1.00,
+		"hegemony": -0.25,
+		"eis": -0.25,
 		"mayasura": -1,
+		"luddic_church": -0.25,
+		"luddic_path": -1,
 		"remnant":0,
 		"tahlan_legioinfernalis": -0.5
 	},
@@ -129,46 +83,49 @@
     },
 
     "colonyExpeditionChance":1,
+				"maxColonyDistance":5,
     "colonyTargetValuator":"exerelin.campaign.colony.IndustrialColonyTargetValuator",
     
     "specialForcesNamerClass":"exerelin.campaign.intel.specialforces.namer.PlanetNamer",
 
     "startShipsSolo":[
-		["volantian_metatron_vri_support"],
-		["volantian_kite_vri_standard"],
-		["volantian_courageous_vri_assault"]
+		["tempest_volantian"],
+		["volantian_wolf_vri_standard"],
+		["volantian_lumen_vri_standard"]
 	],
 
     "startShipsCombatSmall":[
-      ["volantian_courageous_vri_assault", "volantian_metatron_vri_support", "volantian_kite_vri_standard"]
+      ["volantian_medusa_vri_assault", "volantian_sandalphon_vri_standard", "volantian_remora_vri_assault"]
 	
     ],
 
 	"startShipsCombatLarge":[
-	  ["volantian_indomitable_vri_standard", "volantian_flagellator_vri_assault", "volantian_cordite_vri_sniper"],
-	  ["volantian_radiant_vri_standard", "volantian_fury_vri_assault", "volantian_cressedia_strike"]
+	  ["volantian_claymore_vri_artillery", "volantian_sunder_vri_standard", "medusa_volantian"],
+	  ["volantian_chromatic_vri_standard", "shrike_volantian", "volantian_cressedia_vri_strike"]
     ],
 
     "startShipsCarrierLarge":[
-		["volantian_gauntlet_vri_strike", "volantian_medusa_vri_assault", "volantian_courageous_vri_assault"],
-		["volantian_mora_vri_strike", "volantian_moray_vri_overdriven", "volantian_courageous_vri_assault"]
+		["volantian_gauntlet_vri_strike", "volantian_hippocampus_vri_standard", "tempest_volantian"],
+		["volantian_brilliant_vri_standard", "volantian_naegling_vri_assault", "volantian_remora_assault"]
 	],
 	
 	"startShipsTradeSmall":[
-		["volantian_wolf_vri_standard", "buffalo_Standard", "volantian_sunder_vri_standard"]
+		["volantian_wolf_vri_standard", "volantian_karambit_vri_standard", "volantian_sunder_vri_standard"]
 	],
 	
     "startShipsTradeLarge":[
-		["volantian_karambit_vri_standard", "gemini_Standard", "volantian_glimmer_vri_standard"]
+		["volantian_karambit_vri_standard", "atlas_Standard", "volantian_naegling_vri_standard"]
 	],
 	
     "startShipsSuper":[
-		["volantian_rapture_vri_standard"]
+		["volantian_metatron_vri_strike"]
 	],
 
 	
     "startSpecialItems":[
-		[["VRI_package", ""]]
+		[["VRI_package", ""]],
+		[["VRIaux_package", ""]],
+		[["VRIrem_package", ""]],
     ],
     
     "defenceStations":[

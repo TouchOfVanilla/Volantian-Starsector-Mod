@@ -20,6 +20,7 @@ public class VRIAddSuperSpecialShipAndOfficer extends BaseCommandPlugin {
         FleetMemberAPI member = Global.getFactory().createFleetMember(FleetMemberType.SHIP, Global.getSettings().getVariant("volantian_chromatic_vri_strike"));
         member.setCaptain(Global.getSector().getImportantPeople().getPerson("avery")); //optionally, also add your officer to the fleetMember
         Global.getSector().getPlayerFleet().getFleetData().addFleetMember(member);
+        Global.getSector().getPlayerFleet().getFleetData().addOfficer(Global.getSector().getImportantPeople().getPerson("avery"));
         addShipGainText(member, dialog.getTextPanel());
         PersonAPI avery = dialog.getInteractionTarget().getActivePerson();
         MarketAPI market = dialog.getInteractionTarget().getMarket();

@@ -12,6 +12,7 @@
   "shieldRadius": 65.5,
   "viewOffset": 0,
   "builtInMods": [
+    "delicate",
     "VRI_FluxNetwork",
     "VES"
   ],

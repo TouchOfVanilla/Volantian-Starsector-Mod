@@ -3,14 +3,13 @@
   "hullId": "volantian_claymore",
   "displayName": "Artillery",
   "goalVariant": true,
-  "fluxCapacitors": 9,
+  "fluxCapacitors": 0,
   "fluxVents": 30,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
     "advancedoptics",
-    "targetingunit",
-    "reinforcedhull"
+    "targetingunit"
   ],
   "weaponGroups": [
     {
@@ -36,5 +35,8 @@
     }
   ],
   "modules": [],
-  "wings": []
+  "wings": [
+    "xyphos_wing",
+    "gladius_wing"
+  ]
 }

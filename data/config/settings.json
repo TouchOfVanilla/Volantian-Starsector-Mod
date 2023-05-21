@@ -57,10 +57,10 @@
 
 "designTypeColors": {
 "Volantian":[31, 247, 182, 255],
+"Volantian Remnant Conversion":[0, 205, 159, 255],
+"Volantian Auxillary":[31, 247, 182, 255],
 },
-"blueprint_packages": {
-"VRI_package": "graphics/icons/cargo/vri_bp.png",
-},
+
 "graphics": {
 "fx": {
 "vol_phosphene_explosion": "graphics/fx/vol_phosphene_explosion.png",
@@ -78,7 +78,9 @@
 "milasha": "graphics/portraits/milasha1.png"
 },
 "blueprint_packages": {
-"VRI_package": "graphics/icons/cargo/vri_bp.png"
+"VRI_package": "graphics/icons/cargo/vri_bp.png",
+"VRIrem_package": "graphics/icons/cargo/vri_rem_bp.png",
+"VRIaux_package": "graphics/icons/cargo/vri_aux_bp.png"
 }
 }
 }

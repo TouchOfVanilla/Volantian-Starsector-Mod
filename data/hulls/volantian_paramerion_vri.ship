@@ -12,10 +12,11 @@
   "shieldRadius": 206.5,
   "viewOffset": 0,
   "builtInMods": [
-    "VRI_FluxNetwork",
-    "VES",
     "phasefield",
-    "eccm"
+    "delicate",
+    "eccm",
+    "VRI_FluxNetwork",
+    "VES"
   ],
   "builtInWeapons": {
     "WS0004": "vol_lucern_HE",

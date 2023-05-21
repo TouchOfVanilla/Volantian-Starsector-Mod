@@ -12,10 +12,10 @@
   "shieldRadius": 51,
   "viewOffset": 0,
   "builtInMods": [
-    "repair_gantry",
     "surveying_equipment",
-    "VES",
-    "VRI_FluxNetwork"
+    "repair_gantry",
+    "VRI_FluxNetwork",
+    "volaux"
   ],
   "weaponSlots": [
     {

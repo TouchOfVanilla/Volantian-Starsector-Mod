@@ -3,11 +3,15 @@
   "hullId": "volantian_prismatic",
   "displayName": "Assault",
   "goalVariant": true,
-  "fluxCapacitors": 3,
+  "fluxCapacitors": 11,
   "fluxVents": 20,
   "quality": 1,
   "permaMods": [],
-  "hullMods": [],
+  "hullMods": [
+    "magazines",
+    "targetingunit",
+    "hardenedshieldemitter"
+  ],
   "weaponGroups": [
     {
       "autofire": true,

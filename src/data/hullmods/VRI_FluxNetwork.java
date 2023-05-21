@@ -2,6 +2,7 @@ package data.hullmods;
 
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.combat.*;
+import com.fs.starfarer.api.fleet.FleetMemberAPI;
 import com.fs.starfarer.api.impl.combat.BaseShipSystemScript;
 import org.lazywizard.lazylib.combat.AIUtils;
 
@@ -12,9 +13,33 @@ public class VRI_FluxNetwork extends BaseHullMod {
 	private static final float FLUXWPNEFF = 0.35f;
 	private static final float FLUXSHLDEFF = 0.25f;
 	private static final float makeshiftmult = 0.75f;
+	private static final float THRESHOLD = 120f;
+	private static final float THRESHOLDCOMM = 180f;
+	private static final float hco = 1f;
 
 	public void applyEffectsBeforeShipCreation(ShipAPI.HullSize hullSize, MutableShipStatsAPI stats, String id) {
+		float thresh = THRESHOLD;
+		float fpused = 0f;
+		if(stats.getFleetMember()!=null&&stats.getFleetMember().getFleetData()!=null&&stats.getFleetMember().getFleetData().getFleet()!=null&&stats.getFleetMember().getFleetData().getFleet().getFaction().getFactionSpec().equals(Global.getSettings().getFactionSpec("vri"))){
+			thresh = THRESHOLDCOMM;
+		}
+		if(stats.getFleetMember()!=null&&stats.getFleetMember().getFleetData()!=null&&stats.getFleetMember().getFleetData().getFleet()!=null){
+			for(FleetMemberAPI f:stats.getFleetMember().getFleetData().getMembersListCopy()){
+				if(f.getVariant().hasHullMod("VRI_FluxNetwork")){
+					fpused = fpused+f.getFleetPointCost();
+				}
+			}
+		}
+		float degrade = Math.min(1f,thresh/(fpused*hco));
+		stats.getMaxCombatReadiness().modifyMult(id,degrade,"Over VRI FP maximum.");
 
+		if(stats.getFleetMember()!=null&&stats.getFleetMember().getFleetData()!=null&&stats.getFleetMember().getFleetData().getFleet()!=null){
+			for(FleetMemberAPI f:stats.getFleetMember().getFleetData().getMembersListCopy()){
+				if(f.getVariant().hasHullMod("[put whatever the id for flux network is here]")){
+					fpused = fpused+f.getFleetPointCost();
+				}
+			}
+		}
 	}
 
 	public void advanceInCombat(ShipAPI ship, float amount) {
@@ -75,5 +100,26 @@ public class VRI_FluxNetwork extends BaseHullMod {
 	public String getUnapplicableReason(ShipAPI ship) {
 
 		return null;
+	}
+	@Override
+	public int getDisplaySortOrder() {
+		return 1;
+	}
+	public String getDescriptionParam(int index, ShipAPI.HullSize hullSize) {
+
+		if (index == 0) return "" + (int) ((SUPPLY_USE_MULT - 1f) * 100f) + "%";
+		if (index == 1) return "" + (int) ((HANDLING_MULT - 1f) * 100f) + "%";
+		if (index == 2) return "" + (int) ((CAPACITY_MULT - 1f) * 100f) + "%";
+		if (index == 3) return "" + (int) ((PEAK_PERFORMANCE_MULT - 1f) * 100f) + "%";
+
+		return null;
+	}
+	@Override
+	public int getDisplayCategoryIndex() {
+		return 1;
+	}
+	@Override
+	public boolean shouldAddDescriptionToTooltip (HullSize hullSize, ShipAPI ship, boolean isForModSpec) {
+		return false;
 	}
 }

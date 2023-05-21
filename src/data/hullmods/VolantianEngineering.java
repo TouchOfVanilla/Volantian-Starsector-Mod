@@ -49,6 +49,14 @@ public class VolantianEngineering extends BaseHullMod {
 		
 		return null;
 	}
+	@Override
+	public int getDisplaySortOrder() {
+		return 0;
+	}
 
+	@Override
+	public int getDisplayCategoryIndex() {
+		return 0;
+	}
 
 }

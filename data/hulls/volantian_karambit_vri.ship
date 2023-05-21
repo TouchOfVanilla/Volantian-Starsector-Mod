@@ -12,9 +12,9 @@
   "shieldRadius": 175.5,
   "viewOffset": 0,
   "builtInMods": [
-    "VES",
+    "shielded_holds",
     "VRI_FluxNetwork",
-    "shielded_holds"
+    "volaux"
   ],
   "weaponSlots": [
     {

@@ -38,10 +38,10 @@ public class AutoforgeOverclocking extends BaseHullMod {
 	}
 	
 	public String getDescriptionParam(int index, HullSize hullSize) {
-		if (index == 0) return "" + (int) ((REPLACEMENT_TIME_MULT - 1f) * 100f);
-		if (index == 1) return "" + (int) ((CAPACITY_MULT - 1f) * 100f);
-		if (index == 2) return "" + (int) ((SHIELD_ARC_MULT - 1f) * 100f);
-		if (index == 3) return "" + (int) ((SHIELD_EFF_MULT - 1f) * 100f);
+		if (index == 0) return "" + (int) ((1f - REPLACEMENT_TIME_MULT) * 100f) + "%";
+		if (index == 1) return "" + (int) ((1f - CAPACITY_MULT) * 100f) + "%";
+		if (index == 2) return "" + (int) ((1f - SHIELD_ARC_MULT) * 100f) + "%";
+		if (index == 3) return "" + (int) ((SHIELD_EFF_MULT - 1f) * 100f) + "%";
 		
 		return null;
 	}
