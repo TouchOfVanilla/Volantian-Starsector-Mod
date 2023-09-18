@@ -92,6 +92,7 @@ public class Royce {
                                 Industries.LIGHTINDUSTRY,
                                 Industries.WAYSTATION,
                                 Industries.MILITARYBASE,
+                                Industries.STARFORTRESS_HIGH,
                                 "VRI_VolGen_Office",
                                 "cryorevival"
                         )
@@ -112,6 +113,8 @@ public class Royce {
         blanche.setImportance(PersonImportance.HIGH);
         blanche.getName().setFirst("Blanche");
         blanche.getName().setLast("Star");
+        Global.getSector().getImportantPeople().addPerson(blanche);
+        Global.getSector().getImportantPeople().getPerson("blanche").addTag("military");
         blanche.setPortraitSprite(Global.getSettings().getSpriteName("characters", blanche.getId()));
 
         Volantis_market.getCommDirectory().addPerson(blanche);
@@ -137,7 +140,7 @@ public class Royce {
         //Azor
         PlanetAPI Azor = system.addPlanet("vri_planet_Azor",
                 Volantis,
-                "Azor, moon of Volantis",
+                "Azor",
                 "barren",
                 30f,
                 50f,
@@ -159,8 +162,8 @@ public class Royce {
             mc.setSurveyed(true);
         }
 
-        //Cryosleeper Station "Hypnos VEF-413/6
-        SectorEntityToken CyrosleeperStructure = system.addCustomEntity("vri_cryosleeper", "Cryosleeper Station \"Hypnos VEF-413/6\"", "vri_cryosleeper_station", "vri");
+        //Cryosleeper Station "Ontos-117"
+        SectorEntityToken CyrosleeperStructure = system.addCustomEntity("vri_cryosleeper", "Cryosleeper Station \"Ontos-117\"", "vri_cryosleeper_station", "vri");
         CyrosleeperStructure.setCircularOrbitPointingDown(RoyceStar, 360f * (float) Math.random(), cryosleeperDist, 200);
 
         //Desmond's Landing
@@ -205,6 +208,7 @@ public class Royce {
                                 Industries.WAYSTATION,
                                 Industries.HEAVYINDUSTRY,
                                 Industries.MINING,
+                                "VRI_ConvertedNexusStation",
                                 "VRI_VolGen_Office"
                         )
                 ),

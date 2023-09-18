@@ -1,0 +1,48 @@
+{
+  "variantId": "volantian_glare_overdriven",
+  "hullId": "volantian_glare",
+  "displayName": "Overdriven",
+  "goalVariant": true,
+  "fluxCapacitors": 3,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "hardenedshieldemitter",
+    "fluxbreakers",
+    "safetyoverrides"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "pdburst",
+        "WS0006": "pdburst"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "heavyneedler",
+        "WS0010": "heavyblaster",
+        "WS0011": "heavyblaster",
+        "WS0012": "ioncannon",
+        "WS0013": "ioncannon",
+        "WS0014": "plasma"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "typhoon",
+        "WS0009": "typhoon"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

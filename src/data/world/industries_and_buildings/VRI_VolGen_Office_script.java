@@ -124,7 +124,49 @@ public class VRI_VolGen_Office_script extends BaseIndustry implements MarketImmi
         super.advance(amount);
 
     }
+    @Override
+    protected void applyAlphaCoreModifiers() {
+        market.getIncomeMult().modifyPercent(getModId(1), ALPHA_CORE_BONUS, "Alpha core (" + getNameForModifier() + ")");
+    }
 
+    @Override
+    protected void applyNoAICoreModifiers() {
+        market.getIncomeMult().unmodifyPercent(getModId(1));
+    }
+
+    @Override
+    protected void applyAlphaCoreSupplyAndDemandModifiers() {
+        demandReduction.modifyFlat(getModId(0), DEMAND_REDUCTION, "Alpha core");
+    }
+    public static float ALPHA_CORE_BONUS = 25f;
+    protected void addAlphaCoreDescription(TooltipMakerAPI tooltip, AICoreDescriptionMode mode) {
+        float opad = 10f;
+        Color highlight = Misc.getHighlightColor();
+
+        String pre = "Alpha-level AI core currently assigned. ";
+        if (mode == AICoreDescriptionMode.MANAGE_CORE_DIALOG_LIST || mode == AICoreDescriptionMode.INDUSTRY_TOOLTIP) {
+            pre = "Alpha-level AI core. ";
+        }
+        float a = ALPHA_CORE_BONUS;
+        String str = "" + (int) Math.round(a) + "%";
+
+        if (mode == AICoreDescriptionMode.INDUSTRY_TOOLTIP) {
+            CommoditySpecAPI coreSpec = Global.getSettings().getCommoditySpec(aiCoreId);
+            TooltipMakerAPI text = tooltip.beginImageWithText(coreSpec.getIconName(), 48);
+            text.addPara(pre + "Reduces upkeep cost by %s. Reduces demand by %s unit. " +
+                            "Increases colony income by %s.", 0f, highlight,
+                    "" + (int)((1f - UPKEEP_MULT) * 100f) + "%", "" + DEMAND_REDUCTION,
+                    str);
+            tooltip.addImageWithText(opad);
+            return;
+        }
+
+        tooltip.addPara(pre + "Reduces upkeep cost by %s. Reduces demand by %s unit. " +
+                        "Increases colony income by %s.", opad, highlight,
+                "" + (int)((1f - UPKEEP_MULT) * 100f) + "%", "" + DEMAND_REDUCTION,
+                str);
+
+    }
     @Override
     public boolean isAvailableToBuild() {
         return (Global.getSector().getPlayerFaction().knowsIndustry(getId()));

@@ -4,7 +4,7 @@ import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.combat.*;
 import com.fs.starfarer.api.combat.listeners.ApplyDamageResultAPI;
 import com.fs.starfarer.api.util.IntervalUtil;
-import com.fs.util.C;
+import com.fs.util.A;
 import org.dark.shaders.distortion.DistortionShader;
 import org.dark.shaders.distortion.RippleDistortion;
 import org.lazywizard.lazylib.combat.entities.SimpleEntity;
@@ -18,6 +18,7 @@ import java.util.Random;
 public class VRI_weapon_monoblade implements OnHitEffectPlugin, EveryFrameWeaponEffectPlugin, OnFireEffectPlugin {
 
     private final int count = 4;
+    private boolean wantSetReload = false;
     private int start = 0;
     private final int arcOffsetMin = -50;
     private final int arcOffsetMax = 50;
@@ -66,6 +67,7 @@ public class VRI_weapon_monoblade implements OnHitEffectPlugin, EveryFrameWeapon
             }
             Global.getSoundPlayer().playSound("vol_monoblade_impact", 1, 1f, point, new Vector2f(20, 20));
         }
+
     }
 
     @Override
@@ -98,6 +100,10 @@ public class VRI_weapon_monoblade implements OnHitEffectPlugin, EveryFrameWeapon
         for(DamagingProjectileAPI toRemoveProj: removeList) {
             projList.remove(toRemoveProj);
         }
+        if (wantSetReload) {
+            weapon.setRemainingCooldownTo(.75f);
+            wantSetReload = false;
+        }
     }
 
     private float getRandomNumberInRange(int max, int min) {
@@ -108,5 +114,15 @@ public class VRI_weapon_monoblade implements OnHitEffectPlugin, EveryFrameWeapon
     @Override
     public void onFire(DamagingProjectileAPI projectile, WeaponAPI weapon, CombatEngineAPI engine) {
         projList.add(projectile);
+        if (weapon.getSlot().getWeaponType().equals(WeaponAPI.WeaponType.HYBRID)){
+            wantSetReload = true;
+        }
+        if (projectile.getWeapon().getSlot().getWeaponType().equals(WeaponAPI.WeaponType.BALLISTIC)) {
+            projectile.getDamageType().setShieldMult(2);
+        }
+        if (projectile.getWeapon().getSlot().getWeaponType().equals(WeaponAPI.WeaponType.ENERGY)) {
+            projectile.getDamageType().setShieldMult(1);
+            projectile.getDamageType().setArmorMult(1);
+        }
     }
 }

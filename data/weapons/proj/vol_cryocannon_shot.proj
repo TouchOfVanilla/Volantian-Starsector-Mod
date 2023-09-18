@@ -1,6 +1,7 @@
 {
 	"id":"vol_cryocannon_shot",
 	"specClass":"projectile",
+	"onHitEffect":"data.weapons.scripts.VRI_weapon_cryocannon",
 	"spawnType":"BALLISTIC_AS_BEAM",
 	"collisionClass":"RAY",
 	"collisionClassByFighter":"RAY_FIGHTER",

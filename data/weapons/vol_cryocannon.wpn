@@ -4,6 +4,7 @@
   "projectileSpecId": "vol_cryocannon_shot",
   "type": "ENERGY",
   "size": "LARGE",
+  "everyFrameEffect": "data.weapons.scripts.VRI_weapon_cryocannon",
   "turretSprite": "graphics/weapons/vol_cryocannon_turret_base.png",
   "turretGlowSprite": "graphics/weapons/vol_cryocannon_turret_glow.png",
   "hardpointSprite": "graphics/weapons/vol_cryocannon_hardpoint_base.png",

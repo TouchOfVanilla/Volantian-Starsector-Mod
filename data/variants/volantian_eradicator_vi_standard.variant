@@ -1,0 +1,51 @@
+{
+  "variantId": "volantian_eradicator_vi_standard",
+  "hullId": "volantian_eradicator_vi",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 21,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "advancedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 005": "chaingun",
+        "WS 006": "heavymg",
+        "WS 007": "chaingun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 008": "pdlaser",
+        "WS 009": "vulcan",
+        "WS 010": "pdburst",
+        "WS 011": "vulcan",
+        "WS 012": "pdlaser",
+        "WS 013": "vulcan",
+        "WS 014": "vulcan"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 000": "atropos",
+        "WS 001": "atropos",
+        "WS 002": "atropos",
+        "WS 003": "atropos",
+        "WS 004": "atropos"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,46 @@
+{
+  "hullName": "Volantian Converted Nexus Bastion",
+  "hullId": "vri_remnant_shield2",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/stations/vri_remnant_station_shield2.png",
+  "style": "VOLANTIAN",
+  "height": 96,
+  "width": 96,
+  "center": [48, 48],
+  "collisionRadius": 400,
+  "shieldCenter": [-123, 1],
+  "shieldRadius": 450,
+  "viewOffset": 0,
+  "builtInMods": [
+    "supercomputer",
+    "reduced_explosion",
+    "VRI_FluxNetwork"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "LARGE",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 130,
+      "angle": 0,
+      "locations": [12, 27]
+    },
+    {
+      "id": "WS 002",
+      "size": "LARGE",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 130,
+      "angle": 0,
+      "locations": [12, -27]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    -18, 47,
+    35, 26,
+    35, -26,
+    -18, -47
+  ]
+}

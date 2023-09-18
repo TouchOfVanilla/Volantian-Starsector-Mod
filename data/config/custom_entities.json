@@ -1,8 +1,8 @@
 {
   "vri_cryosleeper_station":{
-    "defaultName":"Cryosleeper Station \"Hypnos VEF-413/6\"", # used if name=null in addCustomEntity()
-    "nameInText":"Cryosleeper Station \"Hypnos VEF-413/6\"",
-    "shortName":"Hypnos VEF-413/6",
+    "defaultName":"Cryosleeper Station", # used if name=null in addCustomEntity()
+    "nameInText":"Cryosleeper Station",
+    "shortName":"Cryosleeper",
     "aOrAn":"a",
     "isOrAre":"is",
     "defaultRadius": 220, # used if radius<0 in addCustomEntity()
@@ -54,5 +54,47 @@
     "renderCircleIndicator":true,
     "renderCircleIndicatorSelectionFlash":true,
     #"pluginClass":""
+  },
+    "AKSpaceElevator":{
+    "defaultName":"Planetary Tether", # used if name=null in addCustomEntity(),
+    "defaultRadius":100, # used if radius<0 in addCustomEntity()
+    "customDescriptionId":"AK_planetary_tether",
+    "interactionImage":"graphics/illustrations/orbital.jpg",
+    "icon":"graphics/icons/station0.png",
+    "iconWidth":10,
+    "iconHeight":10,
+    "sprite":"graphics/stations/tetherstation.png",
+    "spriteWidth":60,
+    "spriteHeight":180,
+    "renderShadow":true,
+    "useLightColor":true,
+    "showInCampaign":true,
+    "showIconOnMap":true,
+    "showNameOnMap":false,
+    "scaleNameWithZoom":false,
+    "scaleIconWithZoom":true,
+    "tags":["station"],
+    "layers":[STATIONS], # what layer(s) to render in. See CampaignEngineLayers.java for possible values,
+      },
+"AKCenter":{
+        "defaultName":"AKCenter", # used if name=null in addCustomEntity()
+                "defaultRadius":0, # used if radius<0 in addCustomEntity()
+                "customDescriptionId":"orbital_station_default",
+                "interactionImage":"graphics/illustrations/orbital.jpg",
+                "icon":"graphics/icons/station0.png",
+                "iconWidth":0,
+                "iconHeight":0,
+                "sprite":"graphics/stations/station_side04.png",
+                "spriteWidth":0,
+                "spriteHeight":0,
+                "renderShadow":false,
+                "useLightColor":true,
+                "showInCampaign":false,
+                "showIconOnMap":false,
+                "showNameOnMap":false,
+                "scaleNameWithZoom":false,
+                "scaleIconWithZoom":true,
+                "tags":["station"],
+                "layers":[TERRAIN_1], # what layer(s) to render in. See CampaignEngineLayers.java for possible values
+              },
   }
-}

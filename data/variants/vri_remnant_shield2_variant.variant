@@ -1,0 +1,23 @@
+{
+  "variantId": "vri_remnant_shield2_variant",
+  "hullId": "vri_remnant_shield2",
+  "displayName": "New Variant",
+  "goalVariant": false,
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "guardian",
+        "WS 002": "vol_laevaten"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

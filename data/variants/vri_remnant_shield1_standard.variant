@@ -1,0 +1,27 @@
+{
+  "variantId": "vri_remnant_shield1_standard",
+  "hullId": "vri_remnant_shield1",
+  "displayName": "Standard",
+  "goalVariant": false,
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "vol_halonMK1",
+        "WS 002": "heatseeker",
+        "WS 003": "vol_azorian_needler",
+        "WS 004": "vol_azorian_needler",
+        "WS 005": "heatseeker",
+        "WS 006": "vol_halonMK1"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

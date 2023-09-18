@@ -1,0 +1,57 @@
+{
+  "variantId": "volantian_legion_vi_standard",
+  "hullId": "volantian_legion_vi",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 4,
+  "fluxVents": 40,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "armoredweapons",
+    "heavyarmor",
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 000": "devastator",
+        "WS 001": "devastator",
+        "WS 004": "heavyneedler",
+        "WS 007": "heavyneedler"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 002": "pilum",
+        "WS 003": "pilum",
+        "WS 005": "annihilatorpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 008": "pdlaser",
+        "WS 009": "pdlaser",
+        "WS 014": "vulcan",
+        "WS 015": "vulcan",
+        "WS 018": "vulcan",
+        "WS 019": "vulcan",
+        "WS 020": "pdburst",
+        "WS 021": "pdburst"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "broadsword_wing",
+    "broadsword_wing",
+    "longbow_wing",
+    "xyphos_wing"
+  ]
+}

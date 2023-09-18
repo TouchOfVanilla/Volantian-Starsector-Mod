@@ -108,11 +108,10 @@ VRIHasAveryAsOfficer",,"You are known to sponsor officers of the VAF, such as Av
 relLevelVRICommission,RelLevelMoreDescription,"$faction.id == vri
 $player.fcm_faction == vri",,You are known as a stalwart and loyal representative of the Volantian Polity.,,
 relLevelVRIknowsbpswithoutcomm,RelLevelMoreDescription,"$faction.id == vri
-VRIKnowsVRIBP
-$player.fcm_faction != vri",,The Volantian intelligence network is quite curious as to how you obtained their ship blueprints without official endorsement.,,
+VRIPlayerFleetHasHullmod VRI_FluxNetwork",,The Volantian intelligence network is quite curious as to how you have obtained Volantian hulls forgoing traditional means.,,
 ,,,,,,
 # Blanche Dialogue,,,,,,
-blanchegreetingRegular,PickGreeting,"$id == blanche score:599999
+blanchegreetingRegular,PickGreeting,"$id == blanche score:10
 !$madeContact","ShowPersonVisual
 FireAll PopulateOptions
 SetShortcut cutCommLinkPolite ""ESCAPE""","It takes a little bit, but your connection request is eventually accepted.
@@ -120,21 +119,21 @@ SetShortcut cutCommLinkPolite ""ESCAPE""","It takes a little bit, but your conne
 ""Let's see here... Ah, $player.name. What can I do for you today?""
 
 Blanche looks quite bored.",0:cutCommLinkPolite:Cut the comm link,
-blanchegreetingContact,PickGreeting,$id == blanche score:599999,"ShowPersonVisual
+blanchegreetingContact,PickGreeting,$id == blanche score:10,"ShowPersonVisual
 FireAll PopulateOptions
 SetShortcut cutCommLinkPolite ""ESCAPE""","Your comms request is accepted fairly quickly.
 
 ""$player.firstName! It's nice to see you! I've been wondering what you've been up to.
 
 Blanche's ears are perked attentively as you fill her in on your travels across the sector.",0:cutCommLinkPolite:Cut the comm link,
-blanchegreetingAngy,PickGreeting,"$id == blanche score:599999
+blanchegreetingAngy,PickGreeting,"$id == blanche score:10
 VRIRelCheck -100 -1","ShowPersonVisual
 SetShortcut cutCommLink ""ESCAPE""","Your comms request is accepted after a few tense moments.
 
 Blanche's face is a hardened expression, and her ears are pinned back in a show of unease.
 
 ""What more could you possibly want from me?""",0:cutCommLink:Cut the comm link,
-blanchegreetingVRIHostile,PickGreeting,"$id == blanche score:599999
+blanchegreetingVRIHostile,PickGreeting,"$id == blanche score:10
 $faction.hostiletoPlayer","ShowPersonVisual
 SetShortcut cutCommLink ""ESCAPE""","An automated message plays as the Volantian Diamond flashes on the view screen.
 
@@ -156,29 +155,65 @@ Blanche pauses a moment as she flashes a grin through the display.
 
 She sends you a private comm-ID that she assures you is 'for off business hours' or 'just for hanging out.'","0:cutCommLinkPolite:Cut the comm link
 ",
-blancheContactInitFail,DialogOptionSelected,"$option == blanchecontactinitask
-","AddText ""Consider improving your relationship with the VRI."" highlight","""Unfortunately, I'm not really considering taking in any more operatives at the moment. It all gets too much to handle, with all the paperwork. Every single person I hire, I end up being responsible for. You feel me? The VRI has plenty of enemies.""","0:cutCommLinkPolite:Cut the comm link
+blancheContactInitFail,DialogOptionSelected,$option == blanchecontactinitask,"AddText ""Consider improving your relationship with the VRI."" highlight","""Unfortunately, I'm not really considering taking in any more operatives at the moment. It all gets too much to handle, with all the paperwork. Every single person I hire, I end up being responsible for. You feel me? The VRI has plenty of enemies.""","0:cutCommLinkPolite:Cut the comm link
 ",
 ,,,,,,
 blanchebpsellinit,PopulateOptions,"RepGTE $faction.id COOPERATIVE
 $isPerson
 $id == blanche score:1000
 !VRIKnowsVRIBP",,,blanchebpsell_start:Ask about acquiring VRI ship blueprints,
-blanchebpselloffer,DialogOptionSelected,$option == blanchebpsell_start,DoCanAffordCheck 2500000 blanchebpsell_agree false,"""Hm? You're interested in acquiring some of the VRI's blueprints? Hmm... I trust you, but I also like my job. Let me check with Delilah to make sure it's okay...""
+blanchebpselloffer,DialogOptionSelected,$option == blanchebpsell_start,,"""Hm? You're interested in acquiring some of the VRI's blueprints? Hmm... I trust you, but I also like my job. Let me check with Delilah to make sure it's okay...""
 
 Blanche looks a little surprised.
 
-""She's okay with it! For the small price of two and a half million credits.""","blanchebpsell_agree:Agree to purchase the Volantian Blueprint Package for 2,500,000 credits
-0:cutCommLinkPolite:Decline to purchase the Volantian Blueprint Package",
-blanchebpsellsuccess,DialogOptionSelected,$option == blanchebpsell_agree,"RemoveCommodity credits 2500000
+""She's good with it. What are you interested in?""","blanchebpsell_vol:Ask about the Volantian Blueprint Package
+blanchebpsell_aux:Ask about the Volantian Auxillary Package
+blanchebpsell_rem:Ask about the Volantian Remnant Package
+0:cutCommLinkPolite:Reconsider your choices",
+blanchebpsellvol,DialogOptionSelected,$option == blanchebpsell_vol,DoCanAffordCheck 1000000 blanchebpsell_volyes false,"""Ah, you're interested in our standard blueprints. Well, the package includes all of the standard modified and original VRI hulls- all engineered to Volantian standards with an integrated flux network. It provides everything except our capital hulls. I'm authorized to transfer it to your possession- for one million credits.""
+
+Blanche awaits your response with keen eyes.
+
+""Do we have a deal?""","blanchebpsell_volyes:Agree to Purchase the Volantian Blueprint Package for 1 Million Credits
+0:cutCommLinkPolite:Cut the comm link
+",
+blanchebpsellaux,DialogOptionSelected,$option == blanchebpsell_aux,DoCanAffordCheck 2000000 blanchebpsell_auxyes false,"""The Auxillaries? An interesting choice, but then again, they are the backbone of the VSB, and the entire VRI. They're fine-tuned for salvage, exploration, or fleet logistics. Of course, they also have an integrated flux network, as do all of our ships, but pray that you won't ever have to make use of them in combat- they don't hold up quite as well compared to our mainline combat hulls. A few of them have some use in battle, though.""
+
+Blanche patiently awaits your response.
+
+""Ah, right, for two million credits.""","blanchebpsell_auxyes:Agree to buy the Volantian Auxillary Blueprint Package for 2 Million Credits
+0:cutCommLinkPolite:Cut the comm link",
+blanchebpsellrem,DialogOptionSelected,$option == blanchebpsell_rem,DoCanAffordCheck 3000000 blanchebpsell_remyes false,"""Ooh, the Remnant conversions. Well, those corporate hacks over at Tri-Tachyon don't really like that we use their fancy ships like this, but we don't really care. They're exactly like their automated counterparts, except for a few adjustments to weaponry, internal systems, and some other things. The main difference is that they can take human crew, and that they don't violate the treaty of the First AI war. The Hegemony's already watching us pretty closely on that front, so try not to be too crazy, ok?""
+
+Blanche pauses.
+
+""We've never had anyone else purchase these before, so... how does three million sound?""","blanchebpsell_remyes:Agree to buy the Volantian Remnant Conversion Blueprint Package for 3 Million Credits
+0:cutCommLinkPolite:Cut the comm link",
+blanchebpsellvolsuccess,DialogOptionSelected,$option == blanchebpsell_volyes,"RemoveCommodity credits 1000000
 VRIAddSpecial VRI_package
 AddText ""Your quartermaster reports the transfer of a shielded crate via courier drone."" highlight
 AdjustRepActivePerson FRIENDLY 10","""Please don't sell them to the pirates, that would make me look really bad...""
 
 Blanche seems quite happy with all of her newfound credits.
 
-""Pleasure doing business! I've sent them over to your fleet.""","0:cutCommLinkPolite:Cut the comm link
-",
+""Pleasure doing business! I've sent them over to your fleet.""",0:cutCommLinkPolite:Cut the comm link,
+blanchebpsellauxsuccess,DialogOptionSelected,$option == blanchebpsell_auxyes,"RemoveCommodity credits 2000000
+VRIAddSpecial VRIaux_package
+AddText ""Your quartermaster reports the transfer of a shielded crate via courier drone."" highlight
+AdjustRepActivePerson FRIENDLY 20","""Please don't sell them to the pirates, that would make me look really bad...""
+
+Blanche seems quite happy with all of her newfound credits.
+
+""Pleasure doing business! I've sent them over to your fleet.""",0:cutCommLinkPolite:Cut the comm link,
+blanchebpsellremsuccess,DialogOptionSelected,$option == blanchebpsell_remyes,"RemoveCommodity credits 3000000
+VRIAddSpecial VRIrem_package
+AddText ""Your quartermaster reports the transfer of a shielded crate via courier drone."" highlight
+AdjustRepActivePerson FRIENDLY 30","""Please don't sell them to the pirates, that would make me look really bad...""
+
+Blanche seems quite happy with all of her newfound credits.
+
+""Pleasure doing business! I've sent them over to your fleet.""",0:cutCommLinkPolite:Cut the comm link,
+,,,,,,
 ,,,,,,
 blanchenanoforgesellinit,PopulateOptions,"RepGTE $faction.id FRIENDLY
 $isPerson
@@ -198,27 +233,27 @@ The comm-link flickers for a bit.
 blanchenanoforgesellpristine,DialogOptionSelected,$option == blanchepristforge,"RemoveCommodity credits 1500000
 VRIAddSpecial pristine_nanoforge
 AddText ""Your quartermaster reports the transfer of a shielded crate via courier drone."" highlight
-AdjustRepActivePerson FRIENDLY 20","""Thank you for the business! I appreciate it!""
-
-Blanche leans back in her chair as she takes a sip of something that looks hot.
-
-""I've got a few calls to make. Yknow, I've got to wrap this up. Get that forge somewhere safe.
-
-Blanche cuts the comm-link.",0:cutCommLink:Cut the comm link,
-blanchenanoforgesellcorrupt,DialogOptionSelected,$option == blanchecorrupforge,"RemoveCommodity credits 750000
-VRIAddSpecial corrupted_nanoforge
-AddText ""Your quartermaster reports the transfer of a shielded crate via courier drone."" highlight
-AdjustRepActivePerson FRIENDLY 10","""Wow. Uhh...""
+AdjustRepActivePerson FRIENDLY 20","""Wow. Uhh...""
 
 Blanche looks a little bit uncertain, like she's in over her head.
 
 ""Thanks. I've got to go take care of this. Get the forge out of system, and don't be caught with it.""
 
 She reaches over and cuts the comm-link as you watch her concerned face disappear from the viewscreen.",0:cutCommLink:Cut the comm link,
+blanchenanoforgesellcorrupt,DialogOptionSelected,$option == blanchecorrupforge,"RemoveCommodity credits 750000
+VRIAddSpecial corrupted_nanoforge
+AddText ""Your quartermaster reports the transfer of a shielded crate via courier drone."" highlight
+AdjustRepActivePerson FRIENDLY 10","""Thank you for the business! I appreciate it!""
+
+Blanche leans back in her chair as she takes a sip of something that looks hot.
+
+""I've got a few calls to make. Yknow, I've got to wrap this up. Get that forge somewhere safe.
+
+Blanche cuts the comm-link.",0:cutCommLink:Cut the comm link,
 ,,,,,,
 ,,,,,,
 #Avery Dialogue,,,,,,
-averygreetingRegular,PickGreeting,"$id == avery score:599999
+averygreetingRegular,PickGreeting,"$id == avery score:10
 !$madeContact","ShowPersonVisual
 FireAll PopulateOptions
 SetShortcut cutCommLinkPolite ""ESCAPE""","It takes a little bit, but your connection request is eventually accepted.
@@ -226,14 +261,14 @@ SetShortcut cutCommLinkPolite ""ESCAPE""","It takes a little bit, but your conne
 ""This is Avery Kirin, Junior officer of the VAF speaking!""
 
 Her enthusiasm is so blinding you can almost feel it through the display screen.",0:cutCommLinkPolite:Cut the comm link,
-averygreetingContact,PickGreeting,$id == avery score:599999,"ShowPersonVisual
+averygreetingContact,PickGreeting,$id == avery score:10,"ShowPersonVisual
 FireAll PopulateOptions
 SetShortcut cutCommLinkPolite ""ESCAPE""","Your comms request is accepted fairly quickly.
 
 ""Oh, $player.firstName! What have you been up to? Hang on, let me cancel my appointments.
 
 You and Avery chat about each other's travels across the sector.",0:cutCommLinkPolite:Cut the comm link,
-averygreetingVRIHostile,PickGreeting,"$id == avery score:599999
+averygreetingVRIHostile,PickGreeting,"$id == avery score:10
 $faction.hostiletoPlayer","ShowPersonVisual
 SetShortcut cutCommLink ""ESCAPE""","An automated message plays as the Volantian Diamond flashes on the view screen.
 
@@ -271,7 +306,7 @@ Avery's comm-link quickly cuts off as your sensors officer reports the almost im
 ,,,,,,
 ,,,,,,
 #Delilah Dialogue,,,,,,
-delilahgreetingRegular,PickGreeting,"$id == delilah score:599999
+delilahgreetingRegular,PickGreeting,"$id == delilah score:10
 !$madeContact","ShowPersonVisual
 FireAll PopulateOptions
 SetShortcut cutCommLinkPolite ""ESCAPE""","Your comms-request is accepted immediately.
@@ -279,21 +314,21 @@ SetShortcut cutCommLinkPolite ""ESCAPE""","Your comms-request is accepted immedi
 ""Hello! How may I help you today, starfarer?""
 
 Delilah smiles softly as she awaits your request.",0:cutCommLinkPolite:Cut the comm link,
-delilahgreetingContact,PickGreeting,$id == delilah score:599999,"ShowPersonVisual
+delilahgreetingContact,PickGreeting,$id == delilah score:10,"ShowPersonVisual
 FireAll PopulateOptions
 SetShortcut cutCommLinkPolite ""ESCAPE""","Your comms request is accepted immediately.
 
 ""Ah, $player.firstName. A pleasure, as always. How may I help you?""
 
 Delilah's eyes bore into yours in an unwavering show of attention.",0:cutCommLinkPolite:Cut the comm link,
-delilahgreetingAngy,PickGreeting,"$id == delilah score:599999
+delilahgreetingAngy,PickGreeting,"$id == delilah score:10
 VRIRelCheck -100 -1","ShowPersonVisual
 SetShortcut cutCommLink ""ESCAPE""","Your comms request is accepted immediately.
 
 Delilah's expression is not that of anger, or fear, but cold indifference.
 
 ""You have no place here. You have proven yourself to be untrustworthy and unreliable.""",0:cutCommLink:Cut the comm link,
-delilahgreetingVRIHostile,PickGreeting,"$id == delilah score:599999
+delilahgreetingVRIHostile,PickGreeting,"$id == delilah score:10
 $faction.hostiletoPlayer","ShowPersonVisual
 SetShortcut cutCommLink ""ESCAPE""","An automated message plays as the Volantian Diamond flashes on the view screen.
 
@@ -322,13 +357,49 @@ She gives a light smile as she recieves confirmation of payment.
 
 ""I appreciate your patronage, captain. Please use the knowledge entrusted to you wisely.""",0:cutCommLinkPolite:Cut the comm link,
 ,,,,,,
-delilahloreask,PopulateOptions,$id == delilah score:599999,,,"5:delilahloreask:""I'd like to know more about the VRI.""",
-delilahloreinit,DialogOptionSelected,$option == delilahloreask,,"Delilah chuckles a little bit.
+delilahloreask,PopulateOptions,$id == delilah score:599999,,,"5:delilahloreask:""I'd like to know more about the Volantian Polity.""",
+delilahloreinit,DialogOptionSelected,$option == delilahloreask,FireAll VRILoreOptions,"Delilah seems to process something for a moment, her stoic expression remaining unchanged.
 
-""Soon."" She says.",0:cutCommLinkPolite:Cut the comm link,
+""What is it that you wish to know, starfarer?""",0:cutCommLinkPolite:Cut the comm link,
+VRILoreHistory,VRILoreOptions,,,,"VRILoreHist1:""Tell me about Volantian History.""",
+VRILoreVolGen,VRILoreOptions,,,,"VRILoreVolGen1:""Tell me about Volgen.""",
+VRILoreVSB,VRILoreOptions,,,,"VRILoreVSB1:""Tell me about the Volantian Salvage Bureau.""",
+VRILoreVISOC,VRILoreOptions,,,,"VRILoreVISOC1:""Tell me about the Volantian Intelligence and Special Operations Command.""",
+VRILoreHist1,DialogOptionSelected,$option == VRILoreHist1,,"Delilah smiles gently as she recalls the history of her great polity.
+
+""Ah, yes. I can certainly do that. Although this version is quite abridged, I can assure you this is the most accurate recollection based on recovered records, personal account, and my own datastores.""
+
+She takes a moment to collate the data into words.
+
+""The Volantian Empire was a polity that originated from colonization efforts to the Persean Sector from before the Domain-Era. It saw the pinnacle of it's prosperity some time before the Domain arrived with their gate haulers. When they did, the Volantian Empire was quickly subjugated and vassalized under the rule of the Domain of Man.""
+
+She pauses for a moment.
+
+""After the collapse, we almost immediately declared independence from the Domain, and engaged in an extended conflict with the Church of Galactic Redemption. However, a few short decades later, we happened to be in the way of the Domain 14th Battlegroup upon it's arrival to the sector, and I'm sure you can tell what happened after that.""
+
+""I unfortunately cannot share any more than that.""","5:delilahloreask:""I have other questions.""
+cutCommLinkPolite:""That's all for now.""",
+VRILoreVolGen1,DialogOptionSelected,$option == VRILoreVolGen1,,"Delilah thinks for a moment as she allocates the necessary data.
+
+""VolGen. You know, with all my time studying humans and how they work, I honestly shouldn't have been surprised when VolGen took the Volantian people by storm. Suddenly, I have to account for tails and ears when designing vacsuits and combat rigs. Thankfully, VolGen has worked rather closely with the higher powers, but Ms. Volt is a bit of an...Idealist. Unsurprising, considering the company saved her life.""
+
+You take a moment to consider VolGen's products, but Delilah cuts you off, as if she knows what you're thinking.
+
+""Unfortunately, you aren't eligible for VolGen's services. You can be quite... unpredictable, for lack of a better term.""","5:delilahloreask:""I have other questions.""
+cutCommLinkPolite:""That's all for now.""",
+VRILoreVSB1,DialogOptionSelected,$option == VRILoreVSB1,,"""Ah, the VSB. Quite convenient, no?""
+
+Delilah chuckles at her own quip as she launches into an explanation.
+
+""The Volantian Salvage Bureau, housed out of Stalos Outpost, is probably the reason we're still kicking today. The fringe has an untold wealth of knowledge, technology, resources, and able bodies. Whatever they bring back, we can put to full use ensuring our survival. Iris runs quite a tight ship, you know?""","5:delilahloreask:""I have other questions.""
+cutCommLinkPolite:""That's all for now.""",
+VRILoreVISOC1,DialogOptionSelected,$option == VRILoreVISOC1,,"""Apologies, Captain, but I unfortunately can't tell you anything about that.""","5:delilahloreask:""I have other questions.""
+cutCommLinkPolite:""That's all for now.""",
+,,,,,,
+,,,,,,
 ,,,,,,
 #Milasha Dialogue,,,,,,
-milashagreetingRegular,PickGreeting,"$id == milasha score:599999
+milashagreetingRegular,PickGreeting,"$id == milasha score:10
 !$madeContact","ShowPersonVisual
 FireAll PopulateOptions
 SetShortcut cutCommLinkPolite ""ESCAPE""","Your comms-request is accepted after a short time. As you wait, you listen to the VolGen ad-holo that plays softly through the comm-channel.
@@ -336,16 +407,16 @@ SetShortcut cutCommLinkPolite ""ESCAPE""","Your comms-request is accepted after 
 ""Greetings. You've reached Milasha Volt, CEO of VolGen. How can I help you?""
 
 She gazes inquisitively as you as she awaits your next move.",0:cutCommLinkPolite:Cut the comm link,
-milashagreetingContact,PickGreeting,$id == milasha score:599999,"ShowPersonVisual
+milashagreetingContact,PickGreeting,$id == milasha score:10,"ShowPersonVisual
 FireAll PopulateOptions
 SetShortcut cutCommLinkPolite ""ESCAPE""","Your comms request is accepted rather quickly.
 
 ""$player.firstName. What brings you here today?""
 
 Milasha seems curious.",0:cutCommLinkPolite:Cut the comm link,
-milashagreetingAngy,PickGreeting,"$id == milasha score:599999
+milashagreetingAngy,PickGreeting,"$id == milasha score:10
 VRIRelCheck -100 -1","SetShortcut cutCommLink ""ESCAPE""",Your comms request is rejected.,0:cutCommLink:Cut the comm link,
-milashagreetingVRIHostile,PickGreeting,"$id == milasha score:599999
+milashagreetingVRIHostile,PickGreeting,"$id == milasha score:10
 $faction.hostiletoPlayer","ShowPersonVisual
 SetShortcut cutCommLink ""ESCAPE""","An automated message plays as the Volantian Diamond flashes on the view screen.
 
@@ -397,8 +468,320 @@ cutCommLinkPolite:Reconsider your proposal",
 milashavolgencontractfinish,DialogOptionSelected,$option == volgen_yes,"VRIAddSpecial industry_bp VRI_VolGen_Office
 AddText ""Your quartermaster reports the transfer of a shielded crate via courier drone."" highlight
 AdjustRepActivePerson FRIENDLY 10
-RemoveCommodity credits 1000000","Milasha gives you a smile.
+RemoveCommodity credits 1000000
+$global.VolGenBought = true","Milasha gives you a smile.
 
 ""Captain, I appreciate your dedication to a more expressive and free sector.""",cutCommLinkPolite:Thank Milasha for the deal and cut the comm-link,
+,,,,,,
+milashaeminence,PopulateOptions,"$isPerson
+$id == milasha score:1000
+$player.EminenceExplored
+$player.HasEminenceData",,,"milashaeminence1:""I have some information I think VolGen would find quite helpful.""",
+milashaeminence1,DialogOptionSelected,$option == milashaeminence1,,"Milasha raises an eyebrow.
+
+""What could you mean by that, Captain?""","milashaeminence2:""Eminence.""",
+milashaeminence2,DialogOptionSelected,$option == milashaeminence2,"SetStoryOption eminence_haggle general ""Shook down VISOC for Eminence survey data""
+Highlight ""150,000 credits""","""You weren't exactly sneaky about that, captain. Nothing, not even you, escapes the gaze of VISOC.""
+
+Milasha adjusts her posture as she pulls up a Tripad, querying intelligence reports.
+
+""Our intelligence suggests that your reasearch expedition to Eminence gathered data that will be highly useful for VolGen, as well as for the future colonization of Eminence. I'm authorized to dispense a payment of 150,000 credits in exchange for all data pertaining to Eminence you have gathered.""
+
+She awaits your response with an analytical gaze.","eminence_yes:""I like the sound of that.""
+eminence_no:""On second thought, no.""
+eminence_haggle:""I thought VISOC's pockets were deeper than that.""",
+milashaeminenceyes,DialogOptionSelected,$option == eminence_yes,"$player.HasEminenceData = false
+AddCredits 150000","""Wonderful. I'm glad we could reach an agreement.""
+
+Milasha immediately begins poring over the data she's just recieved, like she's caught in some hypnotic trance. Her expression is nigh-unreadable.
+
+Before you have a chance to say anything else, her absentminded hand flicks off the comm-link.",defaultLeave:Leave,
+milashaeminenceno,DialogOptionSelected,$option == eminence_no,RemoveOption milashaeminence1,"""Very well. I can't reccomend this action, Captain, but the consequences will make themselves known soon enough.""
+
+Milasha terminates the comm-link.",defaultLeave:Leave,
+milashaeminencehaggle,DialogOptionSelected,$option == eminence_haggle,"$player.HasEminenceData = false
+AddCredits 300000","""Unfortnately for you, Captain, VISOC's pockets are not as loose as you'd think.""
+
+A look of mild irritation crosses her features as she taps on the Tripad a few more times.
+
+""Fortunately for you, my desire for knowledge supercedes your lechery for credits.""
+
+She snaps off the comm link the moment she confirms the data transfer.",defaultLeave:Leave,
+,,,,,,
+,,,,,,
+#VRI Bar encounter with blanche when player acquires VRI hull,,,,,,
+vribarstart,DialogOptionSelected,"$option == marketVisitBar
+RepLTE vri FAVORABLE
+VRIPlayerFleetHasHullmod
+RollProbability 0.25 score:10
+!$global.vri_blancheBarCooldown
+!$player.CompliedWithBlancheOffer
+!$player.RefusedBlancheOffer","BeginMission vribar false
+$option = vribart0 0
+$global.vri_blancheBarCooldown = true 15",You take a shuttle down to a dockside bar and quickly find a likely-looking establishment. You survey the patrons.,vribar0:Continue,
+vribar0,DialogOptionSelected,$option == vribar0,,"As you sit down at the bar, a cat-eared spacer approaches you and takes the seat next to yours. It's easy to tell by their uptight demeanor and 'worn' vacsuit that they're an agent or clandestine operative of some sort- you give a silent signal to one of your plainclothes bodyguards, present for the appropriate establishments, to be on alert.",vribar1:Continue,
+vribar1,DialogOptionSelected,$option == vribar1,"BeginConversation blanche
+Call $vribar_ref updateData","""Captain $player.name. Is now a good time?""
+
+The spacer takes a seat next to yours and orders two 'Cobalt Velvets.' As the bartender goes about their work, the spacer speaks again.
+
+""You are $player.name, right? Sometimes you spacers are hard to pick out of a crowd.""
+
+They flash you a grin as you try to ascertain their intentions. You can't get a read on anything past the cheshire-esque smile as the drinks arrive. They clink their glass against yours, still resting on the bar, and take a sip.
+
+""To luck and good fortune.""","vribar2a:""To luck and good fortune.""
+vribar2c:Say nothing",
+vribar2a,DialogOptionSelected,$option == vribar2a,"Call $vribar_ref showShip
+SetTextHighlights $blanchebuy_hullname $blanchebuy_offerprice1","The spacer sets their drink down on the bar as they savor the taste of the spirits. The aroma is quite rich- far better (and more expensive) than the usual drinks becoming of a spacer's tastes.
+
+""The name's Blanche. You're familiar with VISOC, yes?""
+
+She interrupts your moment of realization by flashing you her waist and stomach, revealing the absence of a concealed weapon or a holorec unit.
+
+""There's no guns or flashclones here, $PlayerSirOrMadam. I'm just here to talk.""
+
+She pauses for a moment, producing a teal-accented tripad from her coat.
+
+""VISOC has recalled the $blanchebuy_hullname. It's nothing personal; we recall assets all the time. Something about 'tactical outlooks' and 'reallocation of military hardware.' Fortunately for you, we do offer a reimbursement package. How does $blanchebuy_offerprice1 credits sound?""
+
+The Volantian Reclamation Initiative has recalled your ship, under the grounds that the $blanchebuy_hullname is still technically their property. In their eyes, you've been borrowing it until now, despite your personal investment. They want their hull back- but if you play your cards right, you could work out a favorable arrangement.","vribar3a:""Sounds good to me.""
+vribar3b:""I'm not so sure...""",
+vribar2c,DialogOptionSelected,$option == vribar2c,,"""Aw, c'mon, don't leave me hanging!""
+
+They give you an uneasy smile as you stare at your drink. You can feel the expectant pressure of the feline presence staring you in the face.","vribar2a:""To luck and good fortune.""
+vribar2b:""To luck and good fortune!""",
+vribar3a,DialogOptionSelected,$option == vribar3a,"Call $vribar_ref updateData
+AdjustRepActivePerson FRIENDLY 10
+AdjustRep vri FRIENDLY 10
+AddCredits $blanchebuy_offerprice1
+RemoveShip $blanchebuy_ship
+$player.CompliedWithBlancheOffer = true","""Awesome! Thank you for your cooperation, Captain.""
+
+Blanche stands up as she confirms the credit transfer. You order your quartermaster to send the $blanchebuy_hullname to an agreed-upon location.
+
+""Burn bright!""
+
+She leaves the bar in somewhat of a hurry.",vribarleave:Leave the bar,
+vribar3b,DialogOptionSelected,$option == vribar3b,"Call $vribar_ref updateData
+SetTextHighlights $blanchebuy_offerprice2","""Well... how about $blanchebuy_offerprice2 credits? Does that work?""
+
+You feel as if they aren't here to make a profit- they're here for the $blanchebuy_hullname.","vribar3d:""Sure.""
+vribar3c:""I don't think so.""",
+vribar3c,DialogOptionSelected,$option == vribar3c,"Call $vribar_ref updateData
+Call $vribar_ref spawnFuckFleet
+$player.RefusedBlancheOffer = true","""Oh, well. Your loss, captain. Don't expect us to ask so nicely in the future.""
+
+Blanche finishes her drink, turns the glass upside-down, and leaves the bar.",vribarleave:Leave the bar,
+vribar3d,DialogOptionSelected,$option == vribar3d,"Call $vribar_ref updateData
+AdjustRepActivePerson FRIENDLY 5
+AdjustRep vri FRIENDLY 5
+AddCredits $blanchebuy_offerprice2
+RemoveShip $blanchebuy_ship
+$player.CompliedWithBlancheOffer = true","""Alright... I'm glad we could reach an agreement.""
+
+Blanche looks somewhat relieved that you took her second offer.
+
+""Thank you, Captain.""
+
+She leaves the bar after finishing her drink.",vribarleave:Leave the bar,
+vribarleave,DialogOptionSelected,$option == vribarleave,"BarCMD leaveBar
+AbortMission
+EndConversation blanche",,,
+,,,,,,
+vribarrepeat,DialogOptionSelected,"$option == marketVisitBar
+RepLTE vri FAVORABLE
+VRIPlayerFleetHasHullmod
+RollProbability 0.25 score:10
+!$global.vri_blancheBarCooldown
+$player.CompliedWithBlancheOffer","BeginMission vribar false
+$option = vribart0 0
+$global.vri_blancheBarCooldown = true 15",You take a shuttle down to a dockside bar and quickly find a likely-looking establishment. You survey the patrons.,vribarrepeat1:Continue,
+vribarrepeat1,DialogOptionSelected,$option == vribarrepeat1,"BeginConversation blanche
+Call $vribar_ref updateData","As you sit down at the bar, a familiar cat-eared spacer approaches you and takes the seat next to yours. Apparently, VISOC has more business with you than you previously thought.",vribarrepeat2:Continue,
+vribarrepeat2,DialogOptionSelected,$option == vribarrepeat2,"Call $vribar_ref showShip
+SetTextHighlights $blanchebuy_hullname $blanchebuy_offerprice1","""Captain $player.name. It's a pleasure to see you again. You know what I'm here for, so let's keep this brief. The $blanchebuy_hullname has been recalled. I've got $blanchebuy_offerprice1 credits ready to transfer right here...""
+
+You consider your options as she prattles on about the terms and conditions of VISOC's recall program.","vribarrepeatyes:Agree
+vribarrepeatno:Decline",
+vribarrepeatyes,DialogOptionSelected,$option == vribarrepeatyes,"Call $vribar_ref updateData
+AdjustRepActivePerson FRIENDLY 10
+AdjustRep vri FRIENDLY 10
+AddCredits $blanchebuy_offerprice1
+RemoveShip $blanchebuy_ship","""Fantastic. Bright burns, captain.""
+
+Blanche leaves the bar and leaves you to your business.",vribarleave:Leave the bar,
+vribarrepeatno,DialogOptionSelected,$option == vribarrepeatno,"Call $vribar_ref updateData
+Call $vribar_ref spawnFuckFleet
+$player.CompliedWithBlancheOffer = false
+$player.RefusedBlancheOffer = true","Blanche looks confused for a moment.
+
+""I marked you down as 'compliant' on your file, captain. Perhaps I was wrong.""
+
+She leaves the bar without another word, leaving you to your business.",vribarleave:Leave the bar,
+,,,,,,
+,,,,,,
+,,,,,,
+#Volantian fleet intercept if refused,,,,,,
+vrifwtOpenCommGenericAggroNoPay,OpenCommLink,"$faction.id == vri
+$entity.fwt_wantsThing score:1000
+$entity.fwt_aggressive
+$entity.fwt_payment == 14
+!$entity.ignorePlayerCommRequests","$entity.ignorePlayerCommRequests = true
+BeginMission vribar false
+BeginConversation blanche","The comms-link crackles to life. ""Greetings, Captain $player.name."" $Rank $personName reads off a tripad with a rehearsed monotony. ""You are currently in posession of a recalled Volantian asset. You are hereby requested to turn it over to my posession, immediately.""
+
+You realize that $heOrShe is talking about $entity.fwt_thingDesc.
+
+""What should I put in my report? 'Subject complied' or 'Subject deceased?'""
+OR
+The comm-link is established and the image stabilizes on your viewscreen. A stern voice fills the airwaves.
+
+""Captain $player.name, this is $Rank $personName of the VRI. We have reason to believe that you are in possession of stolen property. 
+
+You realize that $heOrShe is talking about the Volantian hull you refused to sell to Blanche Star.
+
+Surrender the illegal Volantian hull immediately, and you may avoid further consequences.""","cutCommLink:Decline, close comms, and power up weapons
+vrifwt_accept:Hand over $entity.fwt_theThing",
+vrifwt_acceptSelNoPay,DialogOptionSelected,$option == vrifwt_accept,"Call $vribar_ref updateData
+MakeOtherFleetNonHostile true
+MakeOtherFleetGoAway true
+unset $entity.fwt_wantsThing
+Call $vribar_ref YoinkHull
+AbortMission
+EndConversation blanche","The $faction $personRank gives you a thumbs-up in the viewscreen.
+
+""Good. That's usually what they do."" $HeOrShe nods. ""When assets are recalled, please don't give Blanche a fight. The last thing she needs is more paperwork.""
+
+You consider your next move.",cutCommLinkNoText:Continue,
+,,,,,,
+#Eminence Expedition Dialogue,,,,,,
+EminencePlanetInteraction,OpenInteractionDialog,"$id == vri_planet_eminence
+!$hasMarket
+!$player.EminenceExplored
+!$player.HasEminenceData","ShowDefaultVisual
+FireAll EminenceExploreOptions
+Highlight  ""Domain-Era industrial world""","The lush, inviting surface of Eminence almost makes you forget that sensor sweeps come back with dangerously hot levels of radiation. Extensive ruins, characteristic of a thriving Domain-Era industrial world, are hidden by the encroaching flora, which has since reclaimed this world.
+
+The coexistence of life with such extreme levels of radiation prompts further study, your science officer claims.","
+",
+EminencePlanetInteractionA,EminenceExploreOptions,!$eminencejabaited,,,EminenceRuinsExplore:Explore the Ruins,
+EminencePlanetInteractionB,EminenceExploreOptions,,,,"EminenceExpeditionStart:Send a research expedition to the surface
+defaultLeave:Leave",
+EminenceRuinsBaitedHaha,DialogOptionSelected,$option == EminenceRuinsExplore,"RemoveOption EminenceRuinsExplore
+$eminencejabaited = true","Your salvage chief shakes their head apologetically.
+
+""Apologies, $PlayerSirOrMadam, but we just can't do it. Tech is likely scrubbed due to radiation, and anything we bring up from the surface will be hot for years.""
+
+Perhaps there is more to glean from this planet than salvage.",,
+EminenceExpeditionStart,DialogOptionSelected,$option == EminenceExpeditionStart,FireAll EminenceInsertionOptions,"You consult with your operations chief and your science officer on the possibility of sending a planetbound expedition to explore the surface of Eminence.
+
+Sending down a dropship into a decivilized world is risky business; opportunistic survivors are always looking at an opportunity to gain supplies, technology, or passage offworld.
+
+You consider your options to ensure the safety and success of the research expedition.",,
+EminenceInsertionStealth,EminenceInsertionOptions,,,,EminenceExpeditionStealthStart:Be quiet; Modify a dropship with stealth equipment,
+EminenceInsertionPhase,EminenceInsertionOptions,,,,EminenceExpeditionPhaseStart:Be quieter; Outfit a dropship with a phase coil,
+EminenceInsertionLoud,EminenceInsertionOptions,PlayerHasCargo marines 20,,,EminenceExpeditionLoudStart:Go in loud; send down a marine compliment,
+EminenceExpeditionStealthStart,DialogOptionSelected,$option == EminenceExpeditionStealthStart,"$EminenceStealthy = true
+RemoveCommodity crew 6","Your fighter technicians quickly fabricate an insertion craft using an LPC hardcoded into most forge firmware. Then, after the mircoforge churns out enough stealth plating, you watch as a team of technicians begins welding and attaching the luminous plates to every single surface of the craft.
+
+As your quartermaster allocates the necessary equipment, a hand-picked squad of crew is briefed on the expedition. They don modified vacsuits, double-reinforced with radiation shielding and mounted with expanded oxygen tanks. Your cadre of leaden knights boards the glassy dropship, and you watch as the vessel lifts off the deck of the shuttle bay, and slips into the vacuum.",EminenceExpeditionStealth1:Make your way to the operations center,
+EminenceExpeditionStealth1,DialogOptionSelected,$option == EminenceExpeditionStealth1,,"As per the protocol of planetside operations on (technically) decivilized planets, complete radio silence is necessary to avoid the attention of the locals. The onboard delta core will methodically spoof planetside sensor feedback, electronically disguising the craft as a falling satellite. It then will sit in the landed craft, monitoring and selectively scrambling transmissions that mention your presence on the planet.
+
+As the insertion craft leaves the shuttle bay, the stealth plating glimmers and trembles, like it's initiating a hyperspace jump. Then, it disappears from viewscreens and sensors.
+
+Your sensor officer inputs a dizzying array of parameters, exceptions, and queries- then, a ghostly white outline of (what is most likely) the craft appears, slowly descending into the atmosphere of the lush planet.",EminenceExpeditionStealth2:Continue,
+EminenceExpeditionStealth2,DialogOptionSelected,$option == EminenceExpeditionStealth2,,"Your sensors officer presents you a second viewscreen, with a thermal filter. You watch as the dropship slowly turns green, then yellow, then flares a deep, dark red as the friction of the atmosphere heats up the craft, transforming it into a fireball. Your comms officer reports that there are no incoming hails or sensor pings from the planet, where at least a few should be, according to predictions. The delta core methodically taps into the cloud of satellites- there's no traffic.
+
+The interior of the craft heats to a sweltering temperature as the coolant system fails to handle the overwhelming stress of stealth cloaking, electronic warfare, and atmospheric entry. However, it's nothing to the vacsuits.",EminenceExpeditionStealth3:Continue,
+EminenceExpeditionStealth3,DialogOptionSelected,$option == EminenceExpeditionStealth3,,"Suddenly, the ship disappears on both viewscreens. You exchange looks with your sensors officer- there's no way the fleet's sensors can compete with the background noise of the radiation that seems to permeate the planet.
+
+You can only wait as the mission timer ticks on the corner of your tripad and the command center is filled with an uneasy quiet.",EminenceExpeditionSent:Continue,
+EminenceExpeditionPhaseStart,DialogOptionSelected,$option == EminenceExpeditionPhaseStart,"$EminencePhasey = true
+RemoveCommodity crew 6","Your fighter technicians quickly fabricate an insertion craft using an LPC hardcoded into most forge firmware. Then, after the mircoforge churns out the necessary components, you watch as a team of technicians begins gutting the craft of most essential systems- life support, weapons, and others, to facilitate the installation of a phase coil. The team then gets to work installing inches-thick radiation shielding to the outer hull. What little space remains is crammed with as many flux capacitors as possible.
+
+As your quartermaster allocates the necessary equipment, a hand-picked squad of crew is briefed on the expedition. They don modified vacsuits, double-reinforced with radiation shielding and mounted with expanded oxygen tanks. Your cadre of leaden knights board the dropship, and you watch as the vessel lifts off the deck of the shuttle bay, and slips into the vacuum.",EminenceExpeditionPhase1:Make your way to the operations center,
+EminenceExpeditionPhase1,DialogOptionSelected,$option == EminenceExpeditionPhase1,,"As per the protocol of planetside operations on (technically) decivilized planets, complete radio silence is necessary to avoid the attention of the locals. As decivilized worlds typically lack the sector's current understanding and knowlege of phase ships, it's highly unlikely that the locals will be able to detect phase emissions- virtually eliminating chances of discovery and interception.
+
+As the insertion craft leaves the shuttle bay, you watch through the viewscreen as the modified phase coil flickers, then flares to life. Then, it disappears from viewscreens and sensors.
+
+Your sensor officer inputs the standard parameters of a phase emission sensor package- then, a vibrant purple outline of the craft's phase coil appears, slowly descending into the atmosphere of the lush planet.",EminenceExpeditionPhase2:Continue,
+EminenceExpeditionPhase2,DialogOptionSelected,$option == EminenceExpeditionPhase2,,"You watch the small ring of purple descend into Eminence's atmosphere, then wink out of existence as the craft lands on the planet, and, presumably, exits p-space.
+
+You exchange a look with the OpsCom lead.",EminenceExpeditionSent:Continue,
+EminenceExpeditionLoudStart,DialogOptionSelected,$option == EminenceExpeditionLoudStart,"$EminenceLoudy = true
+RemoveCommodity crew 6
+RemoveCommodity marines 20","Your fighter technicians quickly fabricate multiple insertion craft using an LPC hardcoded into most forge firmware. Then, after the mircoforge churns out enough armor plating, you watch as your team of technicians transform the craft into something straight out of a Hegemony propaganda holovid from the first AI war.
+
+As your quartermaster allocates the necessary equipment, a hand-picked squad of crew and marines are briefed on the expedition. They don modified vacsuits and armor rigs, double-reinforced with radiation shielding and mounted with expanded oxygen tanks. Your cadre of leaden knights board the armored dropships, and you watch as the vessels lift off the deck of the shuttle bay, and slip into the vacuum.",EminenceExpeditionLoud1:Make your way to the operations center,
+EminenceExpeditionLoud1,DialogOptionSelected,$option == EminenceExpeditionLoud1,,"Protocol of planetside operations on (technically) decivilized planets dictates that complete radio silence is necessary to avoid the attention of the locals. However, in the case of several marine squadrons, radio silence is unfeasible when coordinating such a large ground operation. This privelege will not be extended to your fleet, however, due to the possibility of still-functioning orbital batteries.
+
+As the insertion craft leave the shuttle bay, you watch as they enter Eminence's atmosphere, engulfing in flame as the atmospheric friction heats their hulls.
+
+Your sensors officer inputs a few parameters as they zero in on the specially encrypted transponder signals attached to each craft, which are hopping frequencies a few hundred times every second.",EminenceExpeditionLoud2:Continue,
+EminenceExpeditionLoud2,DialogOptionSelected,$option == EminenceExpeditionLoud2,,"You watch the three signals drop lower into Eminence's atmosphere, then come to a rest at the pre-designated LZ.
+
+You exchange a look with the OpsCom lead as they begin relaying orders and coordinating the ground forces before comms are cut.",EminenceExpeditionSent:Continue,
+EminenceExpeditionSent,DialogOptionSelected,$option == EminenceExpeditionSent,"Highlight  ""72 hours""
+$EminenceExpeditionOngoingWait = true 3
+$EminenceSentExpedition = true","You remind yourself that the team has an exact timeframe of 72 hours, which, if they are successful, will conclude with their dropship in dark orbit.
+
+If they are successful.
+
+The command staff shift uneasily, but eventually return to their duties.",defaultLeave:Leave,
+EminenceExpeditionNotFinished,OpenInteractionDialog,"$id == vri_planet_eminence
+!$hasMarket
+$EminenceExpeditionOngoingWait score:1000
+$EminenceSentExpedition","Highlight  ""72 hours""
+ShowDefaultVisual","It's impossible to know the status of the research expedition until they return.
+
+You remind yourself once more that their given timeframe was 72 hours.",defaultLeave:Leave,
+EminenceExpeditionRetrievalBegin,OpenInteractionDialog,"$id == vri_planet_eminence
+!$hasMarket
+!$EminenceExpeditionOngoingWait
+$EminenceSentExpedition
+!$player.EminenceExplored",ShowDefaultVisual,Your fleet enters orbit of Eminence.,EminenceExpeditionRetrieveStart:Begin the retrieval operation,
+EminenceRetrieval,DialogOptionSelected,$option == EminenceExpeditionRetrieveStart,FireBest EminenceRetrievalType,,,
+EminenceRetrievalStealth,EminenceRetrievalType,$EminenceStealthy,AddCommodity crew 6,"Your fleet's sensors begin scanning the orbital debris around the planet, looking for the hidden insertion craft. OpsCom chatters in your earpiece as your ship bustles with activity. Your communications officer relays the encrypted recall phrase; ""Facere Pacem.""
+
+Almost immediately, a reply. The decrypted message reads ""Pax Facta.""
+
+OpsCom reports movement on the sensors- the insertion craft peels away from its hiding place within a cluster of dead satellites, and approaches your fleet. You visually identify the craft through the portside window on the bridge as it inches closer.",EminenceRetrieval1:Go to the shuttle bay,
+EminenceRetrievalPhase,EminenceRetrievalType,$EminencePhasey,AddCommodity crew 6,"Your fleet's sensors begin scanning the orbital debris around the planet, looking for the hidden insertion craft. OpsCom chatters in your earpiece as your ship bustles with activity. Your communications officer relays the encrypted recall phrase; ""Facere Pacem.""
+
+Almost immediately, a reply. The decrypted message reads ""Pax Facta.""
+
+OpsCom reports movement on the sensors- the insertion craft peels away from its hiding place within a cluster of dead satellites, and approaches your fleet. You visually identify the craft through the portside window on the bridge as it inches closer.",EminenceRetrieval1:Go to the shuttle bay,
+EminenceRetrievalLoud,EminenceRetrievalType,$EminenceLoudy,"AddCommodity crew 6
+AddCommodity marines 20","Your fleet's sensors begin scanning the orbital debris around the planet, looking for the hidden insertion craft. OpsCom chatters in your earpiece as your ship bustles with activity. Your communications officer relays the encrypted recall phrase; ""Facere Pacem.""
+
+Almost immediately, a reply. The decrypted message reads ""Pax Facta.""
+
+OpsCom reports movement on the sensors- the insertion craft peel away from their hiding place within a cluster of dead satellites, and approaches your fleet. You visually identify the craft through the portside window on the bridge as they inch closer.",EminenceRetrieval1:Go to the shuttle bay,
+EminenceRetrieval1,DialogOptionSelected,$option == EminenceRetrieval1,,"The ship is hushed with silence and anticipation as the shuttle bay repressurizes. From the sealed command balcony, you watch as crew spill out of the airlocks carrying all manner of equipment: radfoam hoses, medical rigs, diagnostic equipment, data terminals, and other equipment that you, personally, are unfamiliar with.
+
+The room falls still as the expedition team exits the craft.
+
+You catch a glimpse of one of the team members getting blasted in the faceplate with a generous amount of radfoam as you're handed a Tripad containing all relavent data.",EminenceRetrieval2:Read the after-action report,
+EminenceRetrieval2,DialogOptionSelected,$option == EminenceRetrieval2,"Highlight ""the Volantians were here first. Perhaps VolGen would be quite interested in your findings.""
+$player.EminenceExplored = true
+$player.HasEminenceData = true
+AddText ""Survey data for Eminence acquired.""","Eminence is quite interesting, to say the least.
+
+The world is completely empty. No human life remains from whatever calamity tore it apart in the early days of collapse, rendering the measures you took completely pointless. However, the biosphere flourishes, even in the highly irradiated ruins of population centers. The flora and fauna of Eminence have developed a genetic, cellular resistance to radiation, that puzzles your in-house biologist.
+
+Furthermore, you aren't the first ones to have set foot on Eminence post-calamity. Your team reports traces of several other research expeditions that came before them- intelligence and recovered technology suggests the Volantians were here first. Perhaps VolGen would be quite interested in your findings.
+
+Regardless, you now possess the full survey data for Eminence.",defaultLeave:Leave,
+,,,,,,
+#Aberdeen Contact Dialogue,,,,,,
+AberdeenPlanetInteraction,OpenInteractionDialog,"$id == aberdeen
+!$hasMarket","ShowDefaultVisual
+Highlight  ""former Volantian colony""","The milky white orb of Aberdeen fills the viewport of your bridge as your fleet enters orbit. This calm and serene scene gives way to a violent, eternal storm that wracks the entire planet on a near-constant basis. Pure, unmolested sunlight is a luxury afforded only to the lucky- if anyone stuck on this former Volantian colony could be considered so.
+
+The popping and buzzing of sporadic small-arms fire mingles with the scratchy static and detonations of lightning as you consider your options.",defaultLeave:Leave,
+aberdeenanswerhail,AberdeenExploreOptions,,,,,
+aberdeensignaltrace,AberdeenExploreOptions,,$player.AberdeenVolSus,,,
+aberdeenruinsexplore,AberdeenExploreOptions,,,,,
+,,,,,,
 ,,,,,,
 ,,,,,,

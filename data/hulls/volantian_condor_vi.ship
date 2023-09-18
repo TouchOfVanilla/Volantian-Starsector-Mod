@@ -1,0 +1,134 @@
+{
+  "hullName": "Condor (VI)",
+  "hullId": "volantian_condor_vi",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/condor_vi.png",
+  "style": "LOW_TECH",
+  "height": 204,
+  "width": 110,
+  "center": [53, 72],
+  "collisionRadius": 146,
+  "shieldCenter": [25, 1],
+  "shieldRadius": 120,
+  "viewOffset": 0,
+  "builtInMods": [
+    "ballistic_rangefinder",
+    "pointdefenseai",
+    "sixth"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 315,
+      "angle": 0,
+      "locations": [109, 18]
+    },
+    {
+      "id": "WS 002",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [9, -31]
+    },
+    {
+      "id": "WS 003",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [25, 41]
+    },
+    {
+      "id": "WS 004",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        40, 1,
+        57, 5,
+        79, 5,
+        46, -18
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-69, 16],
+      "length": 75,
+      "width": 24,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-69, -21],
+      "length": 75,
+      "width": 24,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-63, -3],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-66, 25],
+      "length": 50,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-67, -31],
+      "length": 50,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    117, 10,
+    87, 7,
+    46, 1,
+    51, -31,
+    79, -37,
+    76, -48,
+    20, -54,
+    10, -45,
+    -5, -41,
+    -23, -49,
+    -36, -49,
+    -51, -36,
+    -65, -31,
+    -68, 17,
+    -61, 30,
+    -48, 32,
+    -43, 44,
+    -23, 49,
+    -3, 49,
+    3, 43,
+    20, 48,
+    32, 48,
+    42, 39,
+    61, 40,
+    64, 47,
+    74, 43,
+    91, 41,
+    117, 26
+  ]
+}

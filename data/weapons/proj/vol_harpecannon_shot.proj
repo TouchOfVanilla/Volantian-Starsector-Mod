@@ -1,7 +1,7 @@
 {
 	"id":"vol_harpecannon_shot",
 	"specClass":"projectile",
-	# "onHitEffect":"data.weapons.scripts.VRI_weapon_clover",
+	"onHitEffect":"data.weapons.scripts.VRI_weapon_harpe",
 	"spawnType":"BALLISTIC_AS_BEAM",
 	"collisionClass":"RAY",
 	"collisionClassByFighter":"RAY_FIGHTER",

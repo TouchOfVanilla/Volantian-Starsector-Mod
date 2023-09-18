@@ -1,0 +1,34 @@
+{
+  "variantId": "volantian_monitor_vi_standard",
+  "hullId": "volantian_monitor_vi",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 1,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "extendedshieldemitter",
+    "hardenedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "irpulse",
+        "WS 004": "irpulse_fighter"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "dualflak",
+        "WS 002": "dualflak"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

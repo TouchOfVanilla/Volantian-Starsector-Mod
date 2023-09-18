@@ -1,0 +1,126 @@
+{
+  "hullName": "Volantian Converted Nexus Hangar",
+  "hullId": "vri_remnant_hangar1",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/stations/vri_remnant_station_hangar1.png",
+  "style": "VOLANTIAN",
+  "height": 108,
+  "width": 164,
+  "center": [82, 36],
+  "collisionRadius": 100,
+  "shieldCenter": [1, 0],
+  "shieldRadius": 100,
+  "viewOffset": 0,
+  "builtInMods": [
+    "supercomputer",
+    "reduced_explosion",
+    "VRI_FluxNetwork"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 100,
+      "angle": 10,
+      "locations": [13, 48]
+    },
+    {
+      "id": "WS 002",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 100,
+      "angle": -10,
+      "locations": [14, -48]
+    },
+    {
+      "id": "WS 003",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 50,
+      "locations": [20, 71]
+    },
+    {
+      "id": "WS 004",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 100,
+      "angle": 10,
+      "locations": [41, 45]
+    },
+    {
+      "id": "WS 005",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 100,
+      "angle": -10,
+      "locations": [41, -45]
+    },
+    {
+      "id": "WS 006",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -50,
+      "locations": [20, -71]
+    },
+    {
+      "id": "WS 007",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 90,
+      "angle": 0,
+      "locations": [
+        38, 19,
+        27, 14,
+        31, 6,
+        22, 1
+      ]
+    },
+    {
+      "id": "WS 008",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 90,
+      "angle": 0,
+      "locations": [
+        40, -1,
+        28, -15,
+        30, -5,
+        38, -12
+      ]
+    },
+    {
+      "id": "WS 009",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 90,
+      "angle": 0,
+      "locations": [
+        40, 10,
+        19, -8,
+        33, 13,
+        29, 0
+      ]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    20, 73,
+    60, 55,
+    60, -55,
+    19, -72,
+    -9, -56,
+    -9, 59
+  ]
+}

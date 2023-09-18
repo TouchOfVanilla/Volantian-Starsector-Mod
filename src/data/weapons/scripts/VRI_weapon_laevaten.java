@@ -16,7 +16,7 @@ import java.awt.*;
 public class VRI_weapon_laevaten implements BeamEffectPlugin{
 
     private IntervalUtil fireInterval = new IntervalUtil(0.1f, 0.1f);
-    private final float pierceChance = 0.25f;
+    private final float pierceChance = 0.1f;
 
 
     public void advance(float amount, CombatEngineAPI engine, BeamAPI beam) {
@@ -39,7 +39,7 @@ public class VRI_weapon_laevaten implements BeamEffectPlugin{
                             point,
                             target,
                             target,
-                            DamageType.ENERGY,
+                            DamageType.FRAGMENTATION,
                             dam, // damage
                             emp, // emp
                             100000f, // max range

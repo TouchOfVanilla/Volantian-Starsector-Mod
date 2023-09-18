@@ -1,0 +1,222 @@
+{
+  "hullName": "Enforcer (VI)",
+  "hullId": "volantian_enforcer_vi",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/enforcer_vi.png",
+  "style": "LOW_TECH",
+  "coversColor": "255,188,175,255",
+  "height": 136,
+  "width": 136,
+  "center": [68, 67],
+  "collisionRadius": 105,
+  "shieldCenter": [-5, 0],
+  "shieldRadius": 96,
+  "viewOffset": 0,
+  "builtInMods": [
+    "ballistic_rangefinder",
+    "pointdefenseai",
+    "sixth"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 90,
+      "locations": [-15, 44]
+    },
+    {
+      "id": "WS 002",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 125,
+      "angle": 30,
+      "locations": [12, 29]
+    },
+    {
+      "id": "WS 003",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 125,
+      "angle": 0,
+      "locations": [19, 0]
+    },
+    {
+      "id": "WS 004",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 125,
+      "angle": -30,
+      "locations": [12, -29]
+    },
+    {
+      "id": "WS 005",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -90,
+      "locations": [-15, -44]
+    },
+    {
+      "id": "WS 006",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [29, 47]
+    },
+    {
+      "id": "WS 007",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [38, 32]
+    },
+    {
+      "id": "WS 008",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [38, -31]
+    },
+    {
+      "id": "WS 009",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [29, -46]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -19, 16.5,
+        -25.5, 17
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -19, -16.5,
+        -26.5, -16
+      ]
+    },
+    {
+      "id": "LB 3",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -7, -0.5,
+        -20, -0
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-66, 29],
+      "length": 64,
+      "width": 24,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-66, -28],
+      "length": 64,
+      "width": 24,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-66, 38],
+      "length": 32,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-65, 20],
+      "length": 32,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-65, -20],
+      "length": 32,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-66, -37],
+      "length": 32,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    37, 56,
+    1, 60,
+    -21, 66,
+    -41, 48,
+    -61, 42,
+    -63, 17,
+    -45, 14,
+    -29, 0,
+    -44, -12,
+    -61, -16,
+    -62, -40,
+    -40, -47,
+    -22, -64,
+    0, -60,
+    37, -56,
+    35, -41,
+    46, -39,
+    44, -24,
+    33, -22,
+    36, -14,
+    49, -19,
+    65, -20,
+    68, -6,
+    68, 8,
+    64, 21,
+    49, 21,
+    39, 15,
+    34, 22,
+    45, 24,
+    45, 40,
+    35, 39
+  ]
+}

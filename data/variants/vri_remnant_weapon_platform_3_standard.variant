@@ -1,0 +1,26 @@
+{
+  "variantId": "vri_remnant_weapon_platform_3_standard",
+  "hullId": "vri_remnant_weapon_platform_3",
+  "displayName": "Standard",
+  "goalVariant": false,
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "tachyonlance",
+        "WS 002": "vol_azorian_heavyneedler",
+        "WS 003": "vol_halonMK1",
+        "WS 004": "vol_pataautocannon",
+        "WS 005": "vol_halonMK1"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

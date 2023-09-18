@@ -1,0 +1,31 @@
+{
+	"id":"vol_azorian_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",
+	"OnHitEffect": "data.weapons.scripts.VRI_azorian_needlers",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	
+	#"length":150.0,
+	#"width":5,
+	#"hitGlowRadius":25,
+	#"fadeTime":0.15,
+	#"fringeColor":[255,255,255,255],
+	#"coreColor":[255,255,255,155],	
+	#"textureScrollSpeed":64.0,
+	#"pixelsPerTexel":5.0,
+	#"bulletSprite":"graphics/missiles/flechette_med.png"
+	
+	"length":150.0,
+	"width":3.5,
+	"hitGlowRadius":25,
+	"fadeTime":0.15,
+	#"fringeColor":[255,155,125,255],
+	#"coreColor":[255,255,200,150],
+	"fringeColor":[75,255,185,255],
+	"coreColor":[75,255,185,255],	
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/missiles/flechette_sml.png"
+}
+

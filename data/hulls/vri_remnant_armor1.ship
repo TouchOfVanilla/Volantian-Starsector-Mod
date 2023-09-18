@@ -1,0 +1,29 @@
+{
+  "hullName": "VRI Remnant Station Armor",
+  "hullId": "vri_remnant_armor1",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/stations/vri_remnant_station_armour1.png",
+  "style": "VOLANTIAN",
+  "height": 60,
+  "width": 96,
+  "center": [48, 29],
+  "collisionRadius": 56,
+  "shieldCenter": [0, 1],
+  "shieldRadius": 56,
+  "viewOffset": 0,
+  "builtInMods": [
+    "reduced_explosion",
+    "always_detaches"
+  ],
+  "weaponSlots": [],
+  "engineSlots": [],
+  "bounds": [
+    28, 0,
+    -20, -47,
+    -23, -19,
+    -11, -8,
+    -11, 8,
+    -22, 18,
+    -20, 46
+  ]
+}

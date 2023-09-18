@@ -1,0 +1,245 @@
+{
+  "hullName": "Volantian Converted Nexus",
+  "hullId": "vri_remnant_station",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/ships/stations/vri_rem_station.png",
+  "style": "VOLANTIAN",
+  "height": 512,
+  "width": 512,
+  "center": [256, 228],
+  "collisionRadius": 425,
+  "shieldCenter": [1, 1],
+  "shieldRadius": 362,
+  "viewOffset": 0,
+  "builtInMods": [
+    "vastbulk",
+    "axialrotation",
+    "supercomputer",
+    "shared_flux_sink"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": 0,
+      "locations": [325, 0]
+    },
+    {
+      "id": "WS 007",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": 225,
+      "locations": [-121, -268]
+    },
+    {
+      "id": "WS 016",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": 135,
+      "locations": [-115, 262]
+    },
+    {
+      "id": "WS 023",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": 80,
+      "locations": [349, 43]
+    },
+    {
+      "id": "WS 024",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": 0,
+      "locations": [440, 0]
+    },
+    {
+      "id": "WS 025",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": -75,
+      "locations": [347, -50]
+    },
+    {
+      "id": "WS 026",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": 215,
+      "locations": [-163, 253]
+    },
+    {
+      "id": "WS 027",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": 135,
+      "locations": [-197, 345]
+    },
+    {
+      "id": "WS 028",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": 60,
+      "locations": [-100, 316]
+    },
+    {
+      "id": "WS 029",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": 150,
+      "locations": [-168, -249]
+    },
+    {
+      "id": "WS 030",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": 225,
+      "locations": [-196, -342]
+    },
+    {
+      "id": "WS 031",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": -60,
+      "locations": [-104, -315]
+    },
+    {
+      "id": "WS 032",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": 180,
+      "locations": [-113, 0]
+    },
+    {
+      "id": "WS 033",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": 60,
+      "locations": [117, 130]
+    },
+    {
+      "id": "WS 034",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": -60,
+      "locations": [117, -131]
+    },
+    {
+      "id": "WS 035",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": 75,
+      "locations": [32, 201]
+    },
+    {
+      "id": "WS 036",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": 45,
+      "locations": [217, 86]
+    },
+    {
+      "id": "WS 037",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": -45,
+      "locations": [217, -86]
+    },
+    {
+      "id": "WS 038",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": -75,
+      "locations": [32, -200]
+    },
+    {
+      "id": "WS 039",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": 180,
+      "locations": [-136, 119]
+    },
+    {
+      "id": "WS 040",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": 180,
+      "locations": [-136, -117]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    -98, 248,
+    -14, 184,
+    48, 159,
+    66, 111,
+    102, 77,
+    175, 80,
+    211, 38,
+    261, -15,
+    218, -41,
+    173, -80,
+    131, -76,
+    68, -112,
+    -20, -184,
+    -81, -248,
+    -110, -235,
+    -110, -194,
+    -105, -150,
+    -138, -140,
+    -137, -99,
+    -115, -86,
+    -107, -51,
+    -65, -28,
+    -93, -9,
+    -93, 10,
+    -69, 35,
+    -109, 52,
+    -111, 87,
+    -137, 97,
+    -136, 141,
+    -96, 139,
+    -107, 189
+  ]
+}

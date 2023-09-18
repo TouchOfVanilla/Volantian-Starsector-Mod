@@ -28,27 +28,27 @@
 		# vanilla factions
 		"sindrian_diktat": 0,
 		"lions_guard": 0,
-		"independent": 0,
-		"persean":0.5,
+		"independent": 0.5, #hi frens
+		"persean":0.5, #we hate the hegemony too!
 		"pirates": -0.5,
-		"remnant":0,
-		"hegemony":-1.0,
-		"luddic_church": -1.0,
+		"remnant":0, #You are being liberated from your ships. Please do not resist.
+		"hegemony":-1.0, #domain of man? more like doLAME of man!
+		"luddic_church": -1.0, #kids, you're both just.... terrible.
 		"luddic_path":-1.0,
-		"tritachyon": 0.5,
+		"tritachyon": 0.5, #thank you for letting us borrow corporate assets
 
 		# modded factions
-		"mayasura": -1.0,
-		"eis": -0.5,
+		"mayasura": -1.0, #diplomatic blunder
+		"eis": -0.5, #Hegemony lapdogs
 		"tahlan_legioinfernalis":-1.0,
-		"diableavionics": -1.0,
+		"diableavionics": 0.5, #IN THIS HOUSEHOLD THE HEGEMONY SUCKS
 		"draco":-1.0,
 		"fang":-1.0,
-		"HMI":0.5,
-		"brighton": 0.5,
+		"HMI":0.5, #we love alfonzo
+		"brighton": 0.5, #how do you do my fellow scavengers
 		"fpe": 0,
-		"mess":-1.0,
-		"cabal":-1.0,
+		"mess":-1.0, #such a mess
+		"cabal":-1.0, #TT's weird cousins
 		"tahlan_greathouses":0.5,
 
 	},

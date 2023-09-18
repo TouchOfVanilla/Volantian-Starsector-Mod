@@ -2,22 +2,23 @@
   "id": "vol_monoblade",
   "specClass": "projectile",
   "projectileSpecId": "vol_monoblade_shot",
-  "type": "ENERGY",
+  "type": "BALLISTIC",
+  "mountTypeOverride": "HYBRID",
   "size": "LARGE",
+  "everyFrameEffect": "data.weapons.scripts.VRI_weapon_monoblade",
   "turretSprite": "graphics/weapons/vol_monoblade_turret_base.png",
   "turretGlowSprite": "graphics/weapons/vol_monoblade_turret_glow.png",
   "turretGunSprite": "graphics/weapons/vol_monoblade_turret_recoil.png",
   "hardpointSprite": "graphics/weapons/vol_monoblade_hardpoint_base.png",
   "hardpointGlowSprite": "graphics/weapons/vol_monoblade_hardpoint_glow.png",
   "hardpointGunSprite": "graphics/weapons/vol_monoblade_hardpoint_recoil.png",
-  "visualRecoil": 4.0,  # the gun sprites are only used if this is non-0
-  "everyFrameEffect": "data.weapons.scripts.VRI_weapon_monoblade",
   "glowColor": [
     255,
     0,
     0,
     255
   ],
+  "visualRecoil": 4,
   "turretOffsets": [
     21,
     0

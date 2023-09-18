@@ -105,7 +105,7 @@ public class Avery {
                                 Industries.MILITARYBASE,
                                 Industries.WAYSTATION,
                                 Industries.HEAVYBATTERIES,
-                                Industries.STARFORTRESS_HIGH,
+                                "VRI_ConvertedNexusStation",
                                 "VRI_VolGen_Office"
 
                         )
@@ -150,6 +150,7 @@ public class Avery {
 
         daedalusstation.setCustomDescriptionId("daedalus_station");
         daedalusstation.setInteractionImage("illustrations", "abandoned_station3");
+
 
 
         //Derelict Ships + Debris for Daedalus

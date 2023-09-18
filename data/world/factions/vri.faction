@@ -35,29 +35,21 @@
 	# multiplier for how often hulls show up in the faction's fleets
 	"hullFrequency":{
 		"tags":{
-		"rare_bp":.05,
-		"pirate_bp":0,
-		"LP_bp":0,
+		"merc":0.05,
+		"VRI_bp":1,
+		"VRI_rem_bp":0.5,
+		"VRI_aux_bp":0.7,
 		},
 		"hulls":{
-		"atlas2":0,
-		"prometheus2":0,
-		"buffalo_tritachyon":0,
-		"manticore_luddic_path":0,
-		"manticore_pirates":0,
-		"vanguard_pirates":0,
-		"falcon_p":0,
-        "eradicator_pirates":0,
 		},
 	},
 	# ships the faction gets access to when importing S&W out-of-faction
 	"shipsWhenImporting":{
-		"tags":["remnant","VRI_bp","hightech_bp","midline_bp", "rare_bp"],
-		"hulls":[
-		],
+		"tags":["VRI_bp", "VRI_rem_bp", "VRI_aux_bp"],
+		"hulls":[],
 	},
 	"knownShips":{
-		"tags":["VRI_bp", "VRI_rem_bp", "VRI_aux_bp", "rare_bp"],
+		"tags":["VRI_bp", "VRI_rem_bp", "VRI_aux_bp", "merc"],
 		"hulls":[
 		    "champion",
 		    "aurora",
@@ -75,8 +67,7 @@
 	# listing ships here will make the faction mostly use them even if other hulls become available
 	"priorityShips":{
 		"tags":[],
-		"hulls":[
-		],
+		"hulls":[],
 	},
 	"knownFighters":{
 		"tags":["remnant","hightech_bp", vri_figthers_bp],
@@ -184,17 +175,17 @@
 		],
 	},
 	"variantOverrides":{
-			"centurion_volantian":50,
-			"tempest_volantian":50,
-			"wolf_volantian":50,
-			"vigilance_volantian":50,
-			"sunder_volantian":50,
-			"drover_volantian":50,
-			"hammerhead_volantian":50,
-			"shrike_volantian":50,
-			"medusa_volantian":50,
-			"aurora_volantian":50,
-			"champion_volantian":50
+			"centurion_volantian":3,
+			"tempest_volantian":3,
+			"wolf_volantian":3,
+			"vigilance_volantian":3,
+			"sunder_volantian":3,
+			"drover_volantian":3,
+			"hammerhead_volantian":3,
+			"shrike_volantian":3,
+			"medusa_volantian":3,
+			"aurora_volantian":3,
+			"champion_volantian":3
 		},
 
 	"illegalCommodities":[
@@ -251,10 +242,23 @@
 		},
 	},
 	"custom":{
+	    "offersCommissions":true,
+    	"engagesInHostilities":true,
 		"engageWhenEvenStrength":true,
 		"allowsTransponderOffTrade":true,
 		"postsNoBounties":false,
-		"fightToTheLast":false
+		"fightToTheLast":false,
+		"buysAICores":true,
+        "AICoreValueMult":3,
+        "AICoreRepMult":0.5,
+        "buysSurveyData":true,
+        "hostilityImpactOnGrowth":true,
+        "punitiveExpeditionData":{
+        			"vsCompetitors":true,
+        			"vsFreePort":false,
+        			"canBombard":true,
+        			"territorial":true,
+        		},
 	},	
 	"fleetTypeNames":{
 		"patrolSmall":"Security Patrol",

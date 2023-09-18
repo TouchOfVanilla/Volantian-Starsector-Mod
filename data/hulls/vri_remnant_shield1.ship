@@ -1,0 +1,82 @@
+{
+  "hullName": "Volantian Converted Nexus Citadel",
+  "hullId": "vri_remnant_shield1",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/stations/vri_remnant_station_shield1.png",
+  "style": "VOLANTIAN",
+  "height": 128,
+  "width": 128,
+  "center": [65, 64],
+  "collisionRadius": 90,
+  "shieldCenter": [-29, 2],
+  "shieldRadius": 200,
+  "viewOffset": 0,
+  "builtInMods": [
+    "supercomputer",
+    "reduced_explosion",
+    "VRI_FluxNetwork"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 140,
+      "angle": 44,
+      "locations": [-2, 54]
+    },
+    {
+      "id": "WS 002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [26, 41]
+    },
+    {
+      "id": "WS 003",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": 30,
+      "locations": [35, 24]
+    },
+    {
+      "id": "WS 004",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": -30,
+      "locations": [35, -22]
+    },
+    {
+      "id": "WS 005",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [26, -39]
+    },
+    {
+      "id": "WS 006",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 140,
+      "angle": -34,
+      "locations": [-2, -52]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    -9, 69,
+    57, 13,
+    57, -12,
+    -9, -65
+  ]
+}

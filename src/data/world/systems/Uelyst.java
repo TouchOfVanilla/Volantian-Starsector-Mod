@@ -150,7 +150,8 @@ public class Uelyst {
                                 Conditions.HABITABLE,
                                 Conditions.ORGANICS_COMMON,
                                 Conditions.FARMLAND_BOUNTIFUL,
-                                Conditions.ORE_RICH
+                                Conditions.ORE_RICH,
+                                Conditions.METEOR_IMPACTS
                         )
                 ),
 
@@ -169,6 +170,7 @@ public class Uelyst {
                                 Industries.LIGHTINDUSTRY,
                                 Industries.MINING,
                                 Industries.FARMING,
+                                Industries.ORBITALSTATION_HIGH,
                                 "VRI_VolGen_Office",
                                 "VRI_Artillery",
 
@@ -220,6 +222,7 @@ public class Uelyst {
         milasha.getName().setLast("Volt");
         milasha.setPortraitSprite(Global.getSettings().getSpriteName("characters", milasha.getId()));
         Global.getSector().getImportantPeople().addPerson(milasha);
+        Global.getSector().getImportantPeople().getPerson("milasha").addTag("trade");
 
         Geir_market.getCommDirectory().addPerson(milasha);
         Geir_market.getCommDirectory().getEntryForPerson(milasha).setHidden(false);
@@ -259,7 +262,7 @@ public class Uelyst {
                                 Industries.SPACEPORT,
                                 Industries.HEAVYBATTERIES,
                                 Industries.MILITARYBASE,
-                                Industries.ORBITALSTATION_HIGH,
+                                "VRI_ConvertedNexusStation",
                                 Industries.HEAVYINDUSTRY,
                                 "VRI_VolGen_Office"
                         )
@@ -334,5 +337,6 @@ public class Uelyst {
         system.addEntity(jumpPoint2);
 
         system.autogenerateHyperspaceJumpPoints(true, false);
+
     }
 }

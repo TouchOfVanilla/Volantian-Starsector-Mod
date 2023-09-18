@@ -2,7 +2,6 @@ package data.weapons.scripts;
 
 import com.fs.starfarer.api.combat.*;
 import com.fs.starfarer.api.combat.listeners.ApplyDamageResultAPI;
-import com.fs.starfarer.ui.R;
 import org.lwjgl.util.vector.Vector2f;
 
 import java.awt.*;

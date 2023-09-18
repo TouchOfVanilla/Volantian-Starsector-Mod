@@ -1,0 +1,75 @@
+{
+  "hullName": "Volantian Converted Nexus Aegis",
+  "hullId": "vri_remnant_weapon_platform_2",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/stations/vri_remnant_weapon_platform2.png",
+  "style": "VOLANTIAN",
+  "height": 108,
+  "width": 164,
+  "center": [82, 35],
+  "collisionRadius": 100,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 115,
+  "viewOffset": 0,
+  "builtInMods": [
+    "supercomputer",
+    "reduced_explosion",
+    "VRI_FluxNetwork"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS 002",
+      "size": "LARGE",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": -18,
+      "locations": [30, -18]
+    },
+    {
+      "id": "WS 003",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 20,
+      "locations": [14, 48]
+    },
+    {
+      "id": "WS 004",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": -10,
+      "locations": [14, -48]
+    },
+    {
+      "id": "WS 006",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 20,
+      "locations": [41, 45]
+    },
+    {
+      "id": "WS 007",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": -20,
+      "locations": [41, -45]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    19, 81,
+    60, 53,
+    60, -53,
+    21, -81,
+    -7, -57,
+    -7, 56
+  ]
+}

@@ -1,11 +1,11 @@
 {
     "id":"TouchOfVanilla_vri", # For the convenience of troubleshooters, include your name and the mod name, not just an acronym.
-	"name":"Volantian Reclamation Initiative", # Displayed to the player
+	"name":"Volantian Reclamation Initiative 0.4a", # Displayed to the player
 	"author":"TouchofVanilla",
     "utility":"false",
-	"version":"0.3",
+	"version":"0.4a",
 	"description":"The VRI is a relatively new faction built atop the ruins of the old Volantian Empire.",
-    "gameVersion": "0.96a-RC8",
+    "gameVersion": "0.96a-RC10",
   	"jars":["jars/vri.jar"],
     "modPlugin": "data.scripts.VRI_ModPlugin",
     "dependencies": [

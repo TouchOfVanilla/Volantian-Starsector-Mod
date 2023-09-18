@@ -40,5 +40,47 @@
       225
     ],
     "cloudRotation": -5
+  },
+  "storm": {
+    "name": "Storm",
+    "tilt": 20,
+    "pitch": 30,
+    "rotation": -3,
+    "planetColor": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "atmosphereThickness": 0.25,
+    "atmosphereThicknessMin": 40,
+    "atmosphereColor": [
+      60,
+      160,
+      215,
+      160
+    ],
+    "texture": "graphics/planets/storm.jpg",
+    "icon": "graphics/warroom/icon_planet.png",
+    "iconColor": [
+      155,
+      185,
+      255,
+      255
+    ],
+    "isStar": false,
+    "lightPosition": [
+      4,
+      -1,
+      8
+    ],
+    "cloudTexture": "graphics/planets/clouds_banded01.png",
+    "cloudColor": [
+      235,
+      240,
+      250,
+      225
+    ],
+    "cloudRotation": -5
   }
 }

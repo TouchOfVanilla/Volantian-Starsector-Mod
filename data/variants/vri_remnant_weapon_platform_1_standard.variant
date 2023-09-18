@@ -1,0 +1,24 @@
+{
+  "variantId": "vri_remnant_weapon_platform_1_standard",
+  "hullId": "vri_remnant_weapon_platform_1",
+  "displayName": "Standard",
+  "goalVariant": false,
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "vol_phosphenelance",
+        "WS 002": "mjolnir",
+        "WS 004": "vol_surik"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

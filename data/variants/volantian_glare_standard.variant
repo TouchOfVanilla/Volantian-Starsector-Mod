@@ -1,0 +1,48 @@
+{
+  "variantId": "volantian_glare_standard",
+  "hullId": "volantian_glare",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 3,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "hardenedshieldemitter",
+    "fluxbreakers",
+    "auxiliarythrusters"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "pdburst",
+        "WS0006": "pdburst",
+        "WS0008": "heavyburst",
+        "WS0009": "heavyburst"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "heavyneedler",
+        "WS0010": "ionpulser",
+        "WS0011": "ionpulser",
+        "WS0012": "pulselaser",
+        "WS0013": "pulselaser"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0014": "cyclone"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

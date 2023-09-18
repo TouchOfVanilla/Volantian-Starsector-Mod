@@ -1,0 +1,74 @@
+{
+  "hullName": "Volantian Converted Nexus Spire",
+  "hullId": "vri_remnant_weapon_platform_1",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/stations/vri_remnant_weapon_platform1.png",
+  "style": "VOLANTIAN",
+  "height": 240,
+  "width": 240,
+  "center": [120, 120],
+  "collisionRadius": 140,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 140,
+  "viewOffset": 0,
+  "builtInMods": [
+    "supercomputer",
+    "reduced_explosion",
+    "VRI_FluxNetwork"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "LARGE",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -15,
+      "locations": [-23, 3]
+    },
+    {
+      "id": "WS 002",
+      "size": "LARGE",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 0,
+      "locations": [26, 0]
+    },
+    {
+      "id": "WS 004",
+      "size": "LARGE",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 6,
+      "angle": 0,
+      "locations": [90, 0]
+    },
+    {
+      "id": "WS 007",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 8,
+      "angle": -50,
+      "locations": [45, -26]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    104, 13,
+    104, -11,
+    15, -33,
+    3, -50,
+    -11, -47,
+    -25, -52,
+    -67, -10,
+    -105, 0,
+    -64, 7,
+    -41, 30,
+    -5, 32,
+    2, 43,
+    17, 38,
+    28, 24
+  ]
+}

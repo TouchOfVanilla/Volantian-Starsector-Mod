@@ -1,0 +1,26 @@
+{
+  "variantId": "vri_remnant_weapon_platform_2_standard",
+  "hullId": "vri_remnant_weapon_platform_2",
+  "displayName": "Standard",
+  "goalVariant": false,
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "vol_cryocannon",
+        "WS 003": "vol_harpecannon",
+        "WS 004": "vol_harpecannon",
+        "WS 006": "vol_azorian_needler",
+        "WS 007": "vol_azorian_needler"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

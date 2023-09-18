@@ -1,21 +1,29 @@
 package data.world;
 
 import com.fs.starfarer.api.Global;
-import com.fs.starfarer.api.campaign.FactionAPI;
-import com.fs.starfarer.api.campaign.SectorAPI;
-import com.fs.starfarer.api.campaign.SectorEntityToken;
-import com.fs.starfarer.api.campaign.SectorGeneratorPlugin;
+import com.fs.starfarer.api.campaign.*;
 import com.fs.starfarer.api.campaign.econ.EconomyAPI;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
 import com.fs.starfarer.api.impl.campaign.ids.Factions;
 import com.fs.starfarer.api.impl.campaign.shared.SharedData;
-import data.world.systems.Avery;
-import data.world.systems.Royce;
-import data.world.systems.Uelyst;
+import com.fs.starfarer.api.util.Misc;
+import data.world.systems.*;
+import org.apache.log4j.Logger;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+
+import static com.fs.starfarer.api.impl.campaign.ids.Tags.THEME_RUINS;
+import static org.lazywizard.lazylib.MathUtils.getRandomNumberInRange;
 
 public class VRIGen implements SectorGeneratorPlugin {
+    public static Logger log = Global.getLogger(VRIGen.class);
+    public static float TETHER_SYSTEM_Y_COORDS = 2f;
+    public static float TETHER_SYSTEM_X_COORDS = 2f;
+    StarSystemAPI tetherSystem;
+    public StarSystemAPI Tether_System;
+    public PlanetAPI tetherplanet;
 
     public static MarketAPI addMarketplace(String factionID, SectorEntityToken primaryEntity, ArrayList<SectorEntityToken> connectedEntities, String name,
                                            int size, ArrayList<String> marketConditions, ArrayList<String> submarkets, ArrayList<String> industries, float tarrif,
@@ -78,18 +86,21 @@ public class VRIGen implements SectorGeneratorPlugin {
         new Royce().generate(sector);
         new Uelyst().generate(sector);
         new Avery().generate(sector);
+        new Fevali().generate(sector);
+        new Verlat().generate(sector);
+        new Espoz().generate(sector);
 
         SharedData.getData().getPersonBountyEventData().addParticipatingFaction("vri");
-
-        vri.setRelationship(Factions.LUDDIC_CHURCH, -1f);
-        vri.setRelationship(Factions.LUDDIC_PATH, -1f);
-        vri.setRelationship(Factions.TRITACHYON, 0.5f);
-        vri.setRelationship(Factions.PERSEAN, 0.5f);
-        vri.setRelationship(Factions.PIRATES, -0.5f);
-        vri.setRelationship(Factions.INDEPENDENT, 0f);
-        vri.setRelationship(Factions.DIKTAT, 0f);
-        vri.setRelationship(Factions.LIONS_GUARD, 0f);
-        vri.setRelationship(Factions.HEGEMONY, -1f);
-        vri.setRelationship(Factions.REMNANTS, 0f);
+//Vanilla Factions
+        vri.setRelationship(Factions.LUDDIC_CHURCH, -1f); //Hates us
+        vri.setRelationship(Factions.LUDDIC_PATH, -1f); //Hates us squared
+        vri.setRelationship(Factions.TRITACHYON, -.025f); //We use their ships whether they like it or not
+        vri.setRelationship(Factions.PERSEAN, 0.5f); //You hate the hegemony? welcome!
+        vri.setRelationship(Factions.PIRATES, -0.5f); //Only WE are allowed to be pirates
+        vri.setRelationship(Factions.INDEPENDENT, 0f); //Thx 4 the ships idiots
+        vri.setRelationship(Factions.DIKTAT, 0f); //Who are you people?!
+        vri.setRelationship(Factions.LIONS_GUARD, 0f); //Who are you people?!
+        vri.setRelationship(Factions.HEGEMONY, -1f); //Stole our lunch money (and our former glory)
+        vri.setRelationship(Factions.REMNANTS, 0f); //Officer, the radiant is not in my fleet, it is chasing me
     }
 }
