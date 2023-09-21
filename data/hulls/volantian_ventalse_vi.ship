@@ -1,0 +1,330 @@
+{
+  "hullName": "Ventalse (VI)",
+  "hullId": "volantian_ventalse_vi",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/ships/ventalse_vi.png",
+  "style": "LOW_TECH",
+  "height": 348,
+  "width": 280,
+  "center": [140, 175],
+  "collisionRadius": 206.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 198,
+  "viewOffset": 0,
+  "builtInMods": [
+    "sixth",
+    "pointdefenseai",
+    "ballistic_rangefinder"
+  ],
+  "builtInWeapons": {
+    "WS0021": "vol_ventalse_vi_large"
+  },
+  "weaponSlots": [
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -28, 82.5,
+        -17.5, 72.5
+      ]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 90,
+      "locations": [64, 49.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -90,
+      "locations": [64, -49.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 90,
+      "locations": [84, 44.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -90,
+      "locations": [84, -44.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 90,
+      "locations": [104, 39.5]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -90,
+      "locations": [104, -39.5]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": 45,
+      "locations": [41, 47]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": -45,
+      "locations": [41, -47]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": 45,
+      "locations": [12, 46]
+    },
+    {
+      "id": "WS0015",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": -45,
+      "locations": [12, -46]
+    },
+    {
+      "id": "WS0008",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 280,
+      "angle": 0,
+      "locations": [0.5, -0]
+    },
+    {
+      "id": "WS0016",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": 135,
+      "locations": [-67, 23]
+    },
+    {
+      "id": "WS0018",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": -135,
+      "locations": [-67, -23]
+    },
+    {
+      "id": "WS0012",
+      "size": "LARGE",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 4,
+      "angle": 0,
+      "locations": [144.5, -0]
+    },
+    {
+      "id": "WS0017",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 100,
+      "angle": 20,
+      "locations": [60.5, 21]
+    },
+    {
+      "id": "WS0019",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 100,
+      "angle": -20,
+      "locations": [60.5, -21]
+    },
+    {
+      "id": "WS0020",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 140,
+      "angle": 0,
+      "locations": [103, -0],
+      "renderOrderMod": 10000
+    },
+    {
+      "id": "WS0021",
+      "size": "MEDIUM",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [129.5, -0],
+      "renderOrderMod": 1000
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [63, 0.5]
+    },
+    {
+      "id": "LB 3",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -28.5, -79.5,
+        -18, -67.5
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-174, -0],
+      "length": 90.5,
+      "width": 33,
+      "angle": -180,
+      "contrailSize": 33,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-128, 49],
+      "length": 127.5,
+      "width": 45,
+      "angle": -180,
+      "contrailSize": 45,
+      "style": "CUSTOM",
+      "styleId": "LOW_TECH"
+    },
+    {
+      "location": [-128, -49],
+      "length": 127.5,
+      "width": 45,
+      "angle": 180,
+      "contrailSize": 45,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-82.5, 108.5],
+      "length": 48.709999,
+      "width": 18.459999,
+      "angle": 149,
+      "contrailSize": 18.459999,
+      "style": "CUSTOM",
+      "styleId": "LOW_TECH"
+    },
+    {
+      "location": [-82.5, -108.5],
+      "length": 48.709999,
+      "width": 18.459999,
+      "angle": -149,
+      "contrailSize": 18.459999,
+      "style": "CUSTOM",
+      "styleId": "LOW_TECH"
+    },
+    {
+      "location": [-79.5, 122.5],
+      "length": 61.150002,
+      "width": 32.68,
+      "angle": 149,
+      "contrailSize": 32.68,
+      "style": "CUSTOM",
+      "styleId": "LOW_TECH"
+    },
+    {
+      "location": [-79.5, -122.5],
+      "length": 61.150002,
+      "width": 32.68,
+      "angle": -149,
+      "contrailSize": 32.68,
+      "style": "CUSTOM",
+      "styleId": "LOW_TECH"
+    },
+    {
+      "location": [-100, -79.5],
+      "length": 48.709999,
+      "width": 18.459999,
+      "angle": -149,
+      "contrailSize": 18.459999,
+      "style": "CUSTOM",
+      "styleId": "LOW_TECH"
+    },
+    {
+      "location": [-100, 79.5],
+      "length": 48.709999,
+      "width": 18.459999,
+      "angle": 149,
+      "contrailSize": 18.459999,
+      "style": "CUSTOM",
+      "styleId": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -171.5, -12,
+    -123.5, -31.5,
+    -125, -59,
+    -98, -71.5,
+    -61, -138,
+    -22, -105,
+    -7.5, -78,
+    16.5, -54.5,
+    29, -70,
+    53.5, -50.5,
+    156, -22.5,
+    172, -11,
+    150.5, -6.5,
+    150.5, 6.5,
+    172, 11,
+    156, 22.5,
+    53.5, 50.5,
+    29, 70,
+    16.5, 54.5,
+    -7.5, 78,
+    -22, 105,
+    -61, 138,
+    -98, 71.5,
+    -125, 59,
+    -123.5, 31.5,
+    -171.5, 12
+  ]
+}

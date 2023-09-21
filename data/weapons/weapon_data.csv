@@ -39,8 +39,8 @@ Mani-class Torpedo,vol_mani,1,,,1000,,3000,,30,30,,2,0.05,1,ENERGY,0,,0,2,1,,0,0
 #fighter weapons,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Katti MRM (Single),vol_katti_single,1,,,1500,,1500,,20,10,1,1,,,ENERGY,0,,0,1,1,0,0,0,0,0,,100,40,8,350,,,STRIKE,"strike8, no_sell, no_drop, no_drop_salvage, restricted",,Volantian,,Strike,Medium,None,,,Second-stage hits on hull or armor create additional explosion dealing %s High Explosive damage,700,,,TRUE,75
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#decos,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,vol_ventalse_vi_large,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_drop, no_drop_salvage",,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

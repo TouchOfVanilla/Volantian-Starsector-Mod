@@ -20,9 +20,7 @@ import java.util.Map;
 
 public class VRIBlancheBarBuy extends HubMissionWithBarEvent {
     public static Logger log = Global.getLogger(VRIBlancheBarBuy.class);
-
     public static float PROB_PATROL_AFTER = 1f;
-
     public FleetMemberAPI VRIShip;
     public PersonAPI Blanche;
 

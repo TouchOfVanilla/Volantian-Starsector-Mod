@@ -123,6 +123,11 @@ public class Verlat {
 
         RemnantThemeGenerator.addBeacon(system, RemnantThemeGenerator.RemnantSystemType.RESURGENT);
 
+        if (Global.getSettings().getModManager().isModEnabled("aotd_lost_glory")){
+            AomiaMarket.addCondition("planetarytether");
+            KedranovMarket.addCondition("planetarytether");
+        }
+
     }
 
 }

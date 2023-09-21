@@ -1,0 +1,78 @@
+{
+  "variantId": "volantian_ventalse_vi_standard",
+  "hullId": "volantian_ventalse_vi",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "heavyarmor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0012": "mjolnir",
+        "WS0017": "heavyneedler",
+        "WS0019": "heavyneedler"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "breach",
+        "WS0002": "breach",
+        "WS0003": "breach",
+        "WS0004": "breach",
+        "WS0006": "breach",
+        "WS0007": "breach"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "pdburst",
+        "WS0010": "vulcan",
+        "WS0011": "pdburst",
+        "WS0015": "vulcan",
+        "WS0016": "pdburst",
+        "WS0018": "pdburst",
+        "WS0020": "dualflak"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "tachyonlance"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "broadsword_wing",
+    "broadsword_wing",
+    "xyphos_wing"
+  ]
+}

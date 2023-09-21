@@ -9,6 +9,7 @@ import com.fs.starfarer.api.campaign.econ.MarketAPI;
 import com.fs.starfarer.api.impl.campaign.econ.Habitable;
 import com.fs.starfarer.api.impl.campaign.econ.impl.VRItemEffectsRepo;
 import com.fs.starfarer.api.impl.campaign.ids.Conditions;
+import com.fs.starfarer.api.impl.campaign.ids.Planets;
 import com.fs.starfarer.api.util.Misc;
 import data.scripts.util.MagicSettings;
 import data.world.VRIGen;
@@ -59,9 +60,8 @@ public class VRI_ModPlugin extends BaseModPlugin {
         boolean haveNexerelin = Global.getSettings().getModManager().isModEnabled("nexerelin");
         if (!haveNexerelin || SectorManager.getManager().isCorvusMode()) {
             new VRIGen().generate(Global.getSector());
-            data.put("VRI_generated", "Version 1.0");
+            data.put("VRI_generated", "Version 69.4.20");
         }
-
     }
 
     public void onGameLoad(boolean wasEnabledBefore) {
@@ -118,10 +118,10 @@ public class VRI_ModPlugin extends BaseModPlugin {
         MarketAPI tetherplanetmarket = tetherPlanet.getMarket();
         tetherplanetmarket.addCondition(Conditions.DECIVILIZED);
         PlanetAPI tetherPlanet2 = tetherSystem.addPlanet(
-                "aotd_tether_planet",
+                "vri_azariaum",
                 tetherPlanet,
-                "Vanguard",
-                "desert",
+                "Azariaum",
+                Planets.PLANET_WATER,
                 120f,
                 60f,
                 360f,
@@ -130,14 +130,21 @@ public class VRI_ModPlugin extends BaseModPlugin {
         MarketAPI Vanguard = tetherPlanet2.getMarket();
         Vanguard.addCondition(Conditions.HABITABLE);
         Vanguard.addCondition(Conditions.DECIVILIZED);
-        Vanguard.addCondition(Conditions.FARMLAND_POOR);
         Vanguard.addCondition(Conditions.ORGANICS_COMMON);
+        Vanguard.addCondition(Conditions.WATER_SURFACE);
+        Vanguard.addCondition(Conditions.STEALTH_MINEFIELDS);
+        Vanguard.addCondition(Conditions.VOLTURNIAN_LOBSTER_PENS);
         Vanguard.addCondition(Conditions.RUINS_WIDESPREAD);
         tetherPlanet2.setMarket(Vanguard);
         SectorEntityToken tether = tetherSystem.addCustomEntity("AOTD_Tether", "Planetary Tether", "AKSpaceElevator", "neutral");
         tether.setCircularOrbitPointingDown(tetherPlanet, 120f, 200, 90);
         Misc.setAbandonedStationMarket("aotd_tether_market", tether);
         log.info("Silly Tether created!");
+
+        if (Global.getSettings().getModManager().isModEnabled("aotd_lost_glory")){
+            tetherPlanet.getMarket().addCondition("planetarytether");
+            Vanguard.addCondition("planetarytether");
+        }
     }
 
 
