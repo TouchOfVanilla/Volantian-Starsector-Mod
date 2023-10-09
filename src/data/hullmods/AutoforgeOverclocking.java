@@ -14,7 +14,7 @@ public class AutoforgeOverclocking extends BaseHullMod {
 	private static final float CAPACITY_MULT = 0.8f;
 	private static final float DISSIPATION_MULT = 0.8f;
 	private static final float REPLACEMENT_TIME_MULT = .75f;
-	private static final float SHIELD_ARC_MULT = .5f;
+	public static final float SHIELD_ARC_MULT = .5f;
 	private static final float SHIELD_EFF_MULT = 1.5f;
 
 	

@@ -3,28 +3,34 @@ package data.world.systems;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.*;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
+import com.fs.starfarer.api.campaign.rules.MemoryAPI;
 import com.fs.starfarer.api.fleet.FleetMemberAPI;
+import com.fs.starfarer.api.impl.campaign.DModManager;
 import com.fs.starfarer.api.impl.campaign.fleets.DefaultFleetInflater;
 import com.fs.starfarer.api.impl.campaign.fleets.DefaultFleetInflaterParams;
+import com.fs.starfarer.api.impl.campaign.fleets.FleetFactoryV3;
+import com.fs.starfarer.api.impl.campaign.fleets.FleetParamsV3;
 import com.fs.starfarer.api.impl.campaign.ids.*;
 import com.fs.starfarer.api.impl.campaign.procgen.DefenderDataOverride;
+import com.fs.starfarer.api.impl.campaign.procgen.SalvageEntityGenDataSpec;
 import com.fs.starfarer.api.impl.campaign.procgen.StarAge;
 import com.fs.starfarer.api.impl.campaign.procgen.StarSystemGenerator;
+import com.fs.starfarer.api.impl.campaign.procgen.themes.BluesteelDefenderPluginImpl;
+import com.fs.starfarer.api.impl.campaign.procgen.themes.PKDefenderPluginImpl;
 import com.fs.starfarer.api.impl.campaign.rulecmd.salvage.SalvageGenFromSeed;
 import com.fs.starfarer.api.impl.campaign.rulecmd.salvage.special.ShipRecoverySpecial;
 import com.fs.starfarer.api.impl.campaign.terrain.BaseTiledTerrain;
 import com.fs.starfarer.api.impl.campaign.terrain.DebrisFieldTerrainPlugin;
+import com.fs.starfarer.api.ui.SectorMapAPI;
 import com.fs.starfarer.api.util.Misc;
 import com.fs.starfarer.campaign.econ.Market;
+import com.fs.starfarer.loading.ShipNameStore;
 import data.world.VRIGen;
 import com.fs.starfarer.api.util.WeightedRandomPicker;
 import org.magiclib.campaign.MagicFleetBuilder;
 
 import java.awt.*;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.Random;
+import java.util.*;
 
 import static com.fs.starfarer.api.impl.campaign.world.TTBlackSite.addDerelict;
 
@@ -35,6 +41,18 @@ public class Fevali {
     final float dust3Dist = 6000f;
     final float jumpFringeDist = 10000f;
     private java.util.Random random;
+    public String VENTALSE_VI = "volantian_ventalse_vi_standard";
+    public String LEGION_VI = "volantian_legion_vi_standard";
+    public String DOMINATOR_VI = "volantian_dominator_vi_standard";
+    public String HERON_VI = "volantian_heron_vi_standard";
+    public String ERADICATOR_VI = "volantian_eradicator_vi_standard";
+    public String ENFORCER_VI = "volantian_enforcer_vi_standard";
+    public String MANTICORE_VI = "volantian_manticore_vi_standard";
+    public String CONDOR_VI = "volantian_condor_vi_standard";
+    public String MONITOR_VI = "volantian_monitor_vi_standard";
+    public String VANGUARD_VI = "volantian_vanguard_vi_standard";
+    public String LASHER_VI = "volantian_lasher_vi_standard";
+    public static String VRI_BLUESTEEL = "$bluesteel_bastion";
 
 
     public void generate(SectorAPI sector) {
@@ -72,36 +90,14 @@ public class Fevali {
         Kaizmera.setMarket(Kaizmera_market);
 
         SectorEntityToken BluesteelBastion = system.addCustomEntity("bluesteel_bastion",
-                "Bluesteel Bastion", "station_lowtech1", "neutral");
+                "Bluesteel Bastion", "bluesteel_bastion", "neutral");
 
         BluesteelBastion.setCircularOrbitPointingDown(system.getEntityById("vri_planet_Kaizmera"), 45, 600, 50);
 
-        Misc.setAbandonedStationMarket("bluesteel_bastion_market", BluesteelBastion);
-
         BluesteelBastion.setInteractionImage("illustrations", "abandoned_station3");
-        CargoAPI cargo = BluesteelBastion.getMarket().getSubmarket("storage").getCargo();
-        cargo.addSpecial(new SpecialItemData("VI_package", null), 1);
-        cargo.initMothballedShips("independent");
-        CampaignFleetAPI temp = Global.getFactory().createEmptyFleet("independent", (String)null, true);
-        temp.getFleetData().addFleetMember("volantian_lasher_vi_standard");
-        temp.getFleetData().addFleetMember("volantian_lasher_vi_standard");
-        temp.getFleetData().addFleetMember("volantian_manticore_vi_standard");
-        temp.getFleetData().addFleetMember("volantian_eradicator_vi_standard");
-        temp.getFleetData().addFleetMember("volantian_dominator_vi_standard");
-        DefaultFleetInflaterParams p = new DefaultFleetInflaterParams();
-        p.quality = -1.0F;
-        temp.setInflater(new DefaultFleetInflater(p));
-        temp.inflateIfNeeded();
-        temp.setInflater((FleetInflater)null);
-        int index = 0;
-
-        for(Iterator var25 = temp.getFleetData().getMembersListCopy().iterator(); var25.hasNext(); ++index) {
-            FleetMemberAPI member = (FleetMemberAPI)var25.next();
-            Iterator var27 = member.getVariant().getFittedWeaponSlots().iterator();
-            if (index == 0 || index == 2) {
-                cargo.getMothballedShips().addFleetMember(member);
-            }
-        }
+        SalvageGenFromSeed.SDMParams p = new SalvageGenFromSeed.SDMParams();
+        Misc.setDefenderOverride(BluesteelBastion, new DefenderDataOverride("vi", 1, 30, 50));
+        BluesteelBastion.getMemoryWithoutUpdate().set(VRI_BLUESTEEL, true);
         SectorEntityToken fevali_nebula = system.addTerrain(Terrain.NEBULA, new BaseTiledTerrain.TileParams(
                 "          " +
                         " x   xxxx " +

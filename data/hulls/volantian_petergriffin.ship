@@ -1,0 +1,178 @@
+{
+  "hullName": "Peter Griffin",
+  "hullId": "volantian_petergriffin",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/ships/Peter_Griffin.png",
+  "style": "LOW_TECH",
+  "height": 359,
+  "width": 247,
+  "center": [125.5, 166],
+  "collisionRadius": 285.5,
+  "shieldCenter": [0.5, -0],
+  "shieldRadius": 248.5,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 9,
+      "angle": 0,
+      "locations": [160, 3.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 28,
+      "angle": 0,
+      "locations": [163, -21]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 14,
+      "angle": 0,
+      "locations": [162, 29]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 30,
+      "angle": 0,
+      "locations": [128.5, 37]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 32,
+      "angle": 0,
+      "locations": [87.5, 49.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 29,
+      "angle": 0,
+      "locations": [70.5, 77.5]
+    },
+    {
+      "id": "WS0007",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 27,
+      "angle": 0,
+      "locations": [144, -43.5]
+    },
+    {
+      "id": "WS0008",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 29,
+      "angle": 0,
+      "locations": [114, -46]
+    },
+    {
+      "id": "WS0009",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 38,
+      "angle": 0,
+      "locations": [83, -54]
+    },
+    {
+      "id": "WS0010",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 93,
+      "angle": 0,
+      "locations": [72, -77]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-148, 65],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-152.5, 46],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-155, 20.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-154.5, -1],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-147, -18.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-147, -41.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-145, -64],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -153, -71.5,
+    -67.5, -68.5,
+    -21, -91.5,
+    44.5, -109.5,
+    93.5, -65,
+    175, -38,
+    175, 38,
+    93.5, 65,
+    44.5, 109.5,
+    -21, 91.5,
+    -67.5, 68.5,
+    -153, 71.5
+  ]
+}

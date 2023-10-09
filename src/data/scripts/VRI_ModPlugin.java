@@ -2,14 +2,14 @@ package data.scripts;
 
 import com.fs.starfarer.api.BaseModPlugin;
 import com.fs.starfarer.api.Global;
-import com.fs.starfarer.api.campaign.PlanetAPI;
-import com.fs.starfarer.api.campaign.SectorEntityToken;
-import com.fs.starfarer.api.campaign.StarSystemAPI;
+import com.fs.starfarer.api.campaign.*;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
-import com.fs.starfarer.api.impl.campaign.econ.Habitable;
+import com.fs.starfarer.api.impl.campaign.VRICampaignPluginImpl;
+import com.fs.starfarer.api.impl.campaign.VRIDerelictSpawner;
 import com.fs.starfarer.api.impl.campaign.econ.impl.VRItemEffectsRepo;
 import com.fs.starfarer.api.impl.campaign.ids.Conditions;
 import com.fs.starfarer.api.impl.campaign.ids.Planets;
+import com.fs.starfarer.api.impl.campaign.procgen.themes.BluesteelDefenderPluginImpl;
 import com.fs.starfarer.api.util.Misc;
 import data.scripts.util.MagicSettings;
 import data.world.VRIGen;
@@ -17,7 +17,6 @@ import exerelin.campaign.SectorManager;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Iterator;
 import java.util.Map;
 import org.apache.log4j.Logger;
 
@@ -79,10 +78,12 @@ public class VRI_ModPlugin extends BaseModPlugin {
                 data.put("VRI_generated", "Version 1.0");
             }
         }
-
+            Global.getSector().registerPlugin(new VRICampaignPluginImpl());
     }
 
     public void onNewGameAfterEconomyLoad() {
+        Global.getSector().getGenericPlugins().addPlugin(new BluesteelDefenderPluginImpl());
+
     }
 
     public void onNewGameAfterTimePass(){
@@ -145,6 +146,7 @@ public class VRI_ModPlugin extends BaseModPlugin {
             tetherPlanet.getMarket().addCondition("planetarytether");
             Vanguard.addCondition("planetarytether");
         }
+        VRIDerelictSpawner.spawnDerelicts();
     }
 
 

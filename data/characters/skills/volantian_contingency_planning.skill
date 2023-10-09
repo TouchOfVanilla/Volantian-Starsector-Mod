@@ -1,0 +1,23 @@
+{
+	"id":"volantian_contingency_planning",
+	"governingAptitude":"industry",
+	"compressHullmods":false,
+	"scope":"GOVERNED_OUTPOST",
+	"effectGroups":[
+		{
+			"requiredSkillLevel":1,
+			"effectBasedOnLevel":false,
+			"effects":[
+				{"type":"CHARACTER_STATS", "script":"com.fs.starfarer.api.impl.campaign.skills.VRIAzorianCoreAdminSkill$Level1"},
+			]
+		},
+		{
+                			"requiredSkillLevel":2,
+                			"effectBasedOnLevel":false,
+                			"effects":[
+                				{"type":"GOVERNED_OUTPOST", "script":"com.fs.starfarer.api.impl.campaign.skills.VRIAzorianCoreAdminSkill$Level2"},
+                			]
+                		},
+	],
+}
+

@@ -12,6 +12,9 @@
 		"volantian_lasher_vi_standard": 3,
 		"volantian_vanguard_vi_standard": 3,
 		"volantian_monitor_vi_standard": 3,
+		"volantian_kit_standard": 3,
+		"volantian_kit_vri_standard": 3,
+		"volantian_kit_lg_standard": 3,
 	},
 	"combatMedium": {
 		"volantian_sunder_vri_standard": 3, "volantian_sunder_vri_ranger": 3, "volantian_sunder_vri_overdriven": 3,
@@ -49,6 +52,7 @@
 		"volantian_glare_standard": 3,
 		"volantian_dominator_vi_standard": 3, "volantian_dominator_vi_support": 3,
 		"volantian_eradicator_vi_standard": 3,
+		"volantian_sentinel_standard": 3,
 	},
 	"combatCapital": {
 		"volantian_radiant_vri_standard": 5, "volantian_radiant_vri_artillery": 5,

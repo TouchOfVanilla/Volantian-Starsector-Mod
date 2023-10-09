@@ -773,15 +773,41 @@ Furthermore, you aren't the first ones to have set foot on Eminence post-calamit
 
 Regardless, you now possess the full survey data for Eminence.",defaultLeave:Leave,
 ,,,,,,
+#bluesteel interaction,,,,,,
+,,,,,,
+,,,,,,
+sal_triggerSurveyShipDefenders,TriggerAutomatedDefenses,$customType == bluesteel_bastion score:10,SalvageDefenderInteraction,"As your $shipOrFleet moves in closer, multiple energy signatures flare to life as hulls peel away from the station's hangars, forming a protective shell around it.",,
+sal_continuePostDefendersBluesteel,BeatDefendersContinue,$faction.id == vi,,"As your $shipOrFleet finishes mopping up the automated defenses, your salvage chief reports in. Supposedly, the floating hulks of debris were crudely automated Sixth Battlegroup hulls. Unfortunately, not enough of the necessary subsystems and hardware were left intact after the battle.
+
+Your $shipOrFleet finishes its approach to the $nameInText without further incident.",0:salBeatDefendersContinue:Continue,
+sal_continueBluesteelExplore,DialogOptionSelected,"$option == salBeatDefendersContinue
+$customType == bluesteel_bastion score:10",,"Your salvor teams cut into the ancient station, causing your sonification program to register a pop or bang every time a compartment depressurizes. You're able to jump between helmet-cam feeds from your tripad as you watch the salvor teams explore the station from the safety of your flagship.",bluesteelexplorecontinue:Continue,
+bluesteelCryoPods,DialogOptionSelected,$option == bluesteelexplorecontinue,,"You recieve a ping from your salvage chief, and quickly jump feeds to a salvor who's just finished cutting through a bulkhead, peering into the next chamber. The glow of their helmet lamp glints off of the rows of cryopods, a lone beam in a dark, abyssal room. You estimate the pods number in the hundreds, possibly breaking thousands. The salvor is alerted that their feed is being watched, and awaits orders.","bluesteellore1:""Find the diagnostic terminal.""
+bluesteelcontinue:""Carry on.""",
+bluesteelLore,DialogOptionSelected,$option == bluesteellore1,RemoveOption bluesteellore1,"The salvor turns on an infared view, morphing the pitch darkness to a much more appreciable grey and white grain filter of the cryosanctum. After a short while, they find a control terminal; producing an auxillary power cord mounted on their left forearm, they plug into the terminal as the decrepit, dusty screen coughs to life and the system slowly reboots.
+
+You don't need a data transfer to tell the obvious; there are no viable pods left. There's nobody left alive.
+
+Your salvor pauses, uncomfortably.
+
+You recieve another ping from the salvage chief.",bluesteelcontinue:Jump feeds,
+bluesteelVI,DialogOptionSelected,$option == bluesteelcontinue,,"You jump feeds to the requested salvor.
+
+This one appears to be exploring the hangar, and has found some sort of automated shipbuilding manufactory. In the control terminal, the salvor finds a blueprint package installed in the reader.
+
+A quick diagnostic check reveals the blueprints for the Domain's Sixth Battlegroup.",bluesteelyoink:Take It,
+bluesteelyoink,DialogOptionSelected,$option == bluesteelyoink,"VRIAddSpecial VI_package
+AddText ""Sent VI Blueprint Package to cargo"" highlight
+FireBest CheckSalvageSpecial",,,
+,,,,,,
 #Aberdeen Contact Dialogue,,,,,,
 AberdeenPlanetInteraction,OpenInteractionDialog,"$id == aberdeen
 !$hasMarket","ShowDefaultVisual
-Highlight  ""former Volantian colony""","The milky white orb of Aberdeen fills the viewport of your bridge as your fleet enters orbit. This calm and serene scene gives way to a violent, eternal storm that wracks the entire planet on a near-constant basis. Pure, unmolested sunlight is a luxury afforded only to the lucky- if anyone stuck on this former Volantian colony could be considered so.
+Highlight  ""former Volantian colony""
+FireAll AberdeenExploreOptions","The milky white orb of Aberdeen fills the viewport of your bridge as your fleet enters orbit. This calm and serene scene gives way to a violent, eternal storm that wracks the entire planet on a near-constant basis. Pure, unmolested sunlight is a luxury afforded only to the lucky- if anyone stuck on this former Volantian colony could be considered so.
 
 The popping and buzzing of sporadic small-arms fire mingles with the scratchy static and detonations of lightning as you consider your options.",defaultLeave:Leave,
-aberdeenanswerhail,AberdeenExploreOptions,,,,,
-aberdeensignaltrace,AberdeenExploreOptions,,$player.AberdeenVolSus,,,
-aberdeenruinsexplore,AberdeenExploreOptions,,,,,
+aberdeenruinsexplore,AberdeenExploreOptions,,,,aberdeenexplore:Explore the ruins,
 ,,,,,,
 ,,,,,,
 ,,,,,,
