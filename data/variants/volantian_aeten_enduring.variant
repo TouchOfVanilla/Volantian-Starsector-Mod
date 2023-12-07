@@ -1,0 +1,42 @@
+{
+  "variantId": "volantian_aeten_enduring",
+  "hullId": "volantian_aeten",
+  "displayName": "Enduring",
+  "goalVariant": true,
+  "fluxCapacitors": 3,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "missleracks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "taclaser",
+        "WS0002": "taclaser",
+        "WS0006": "hveldriver"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "vulcan"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0003": "gazer",
+        "WS0004": "gorgon"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

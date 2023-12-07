@@ -1,42 +1,40 @@
 {
-  "variantId": "volantian_lumen_vri_standard",
-  "hullId": "volantian_lumen_vri",
-  "displayName": "Standard",
-  "goalVariant": true,
-  "fluxCapacitors": 3,
-  "fluxVents": 10,
-  "quality": 1,
-  "permaMods": [],
-  "hullMods": [
-    "fluxbreakers"
-  ],
-  "weaponGroups": [
-    {
-      "autofire": false,
-      "mode": "ALTERNATING",
-      "weapons": {
-        "WS 006": "sabot",
-        "WS 007": "sabot",
-        "WS 008": "irpulse_fighter",
-        "WS 009": "ioncannon"
-      }
-    },
-    {
-      "autofire": false,
-      "mode": "LINKED",
-      "weapons": {}
-    },
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {}
-    },
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {}
-    }
-  ],
-  "modules": [],
-  "wings": []
+    "displayName": "Standard",
+    "fluxCapacitors": 3,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "volantian_lumen_vri",
+    "hullMods": [
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "volantian_lumen_vri_Standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 008": "sabot",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 009": "atropos",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 006": "ioncannon",
+                "WS 007": "irpulse",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
 }

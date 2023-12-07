@@ -80,9 +80,10 @@ private boolean wantSetReload = false;
             @Override
             public float getWeaponBaseRangeFlatMod(ShipAPI ship, WeaponAPI weapon)
             {
-                if ((weapon.getId().equals("vol_harpecannon")) && (weapon.getSlot().getWeaponType() == WeaponAPI.WeaponType.BALLISTIC))
+                if ((weapon.getId().equals("vol_harpecannon")) && (weapon.getSlot().getWeaponType() == WeaponAPI.WeaponType.BALLISTIC)){
                     return BALLISTIC_SLOT_RANGE_FLAT;
-                return 0;
+                }
+                    return 0f;
             }
         }
     }

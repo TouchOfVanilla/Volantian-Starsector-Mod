@@ -1,8 +1,7 @@
 {
 	"id":"vol_monoblade_shot",
 	"specClass":"projectile",
-	"onHitEffect":"data.weapons.scripts.VRI_weapon_monoblade",
-	"onFireEffect": "data.weapons.scripts.VRI_weapon_monoblade",
+	"onHitEffect": "data.weapons.scripts.VRI_weapon_monoblade",
 	"spawnType":"BALLISTIC_AS_BEAM",
 	"collisionClass":"RAY",
 	"collisionClassByFighter":"RAY_FIGHTER",

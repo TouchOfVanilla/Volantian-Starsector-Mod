@@ -35,10 +35,6 @@
 	# multiplier for how often hulls show up in the faction's fleets
 	"hullFrequency":{
 		"tags":{
-		"merc":0.05,
-		"VRI_bp":1,
-		"VRI_rem_bp":0.5,
-		"VRI_aux_bp":0.7,
 		},
 		"hulls":{
 		},
@@ -49,11 +45,8 @@
 		"hulls":[],
 	},
 	"knownShips":{
-		"tags":["VRI_bp", "VRI_rem_bp", "VRI_aux_bp", "merc"],
+		"tags":["VRI_bp", "VRI_rem_bp", "VRI_aux_bp"],
 		"hulls":[
-		    "champion",
-		    "aurora",
-		    "apogee",
 		    "volantian_radiant_vri",
 		    "volantian_ionos_vri",
 		    "volantian_kaleidoscope_vri",
@@ -175,17 +168,7 @@
 		],
 	},
 	"variantOverrides":{
-			"centurion_volantian":3,
-			"tempest_volantian":3,
-			"wolf_volantian":3,
-			"vigilance_volantian":3,
-			"sunder_volantian":3,
-			"drover_volantian":3,
-			"hammerhead_volantian":3,
-			"shrike_volantian":3,
-			"medusa_volantian":3,
-			"aurora_volantian":3,
-			"champion_volantian":3
+
 		},
 
 	"illegalCommodities":[

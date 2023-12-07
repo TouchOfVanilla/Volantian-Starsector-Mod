@@ -1,0 +1,58 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 0,
+    "fluxVents": 29,
+    "goalVariant": true,
+    "hullId": "volantian_fury_vri",
+    "hullMods": [
+        "fluxbreakers",
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "volantian_fury_vri_Standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "vol_harpecannon",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "vol_lucern",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "vol_azorian_beam",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 007": "vol_pataautocannon",
+                "WS 004": "vol_pataautocannon",
+                "WS 003": "vol_pataautocannon",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 008": "vol_halonMK1",
+                "WS 006": "vol_halonMK1",
+                "WS 005": "vol_halonMK1",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

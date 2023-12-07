@@ -36,7 +36,7 @@ public class MissionDefinition implements MissionDefinitionPlugin {
 		api.addBriefingItem("The DSS Hemisphere Dancer must survive.");
 
 		// Set up the player's fleet
-		FleetMemberAPI member = api.addToFleet(FleetSide.PLAYER, "volantian_legion_vi_standard", FleetMemberType.SHIP, "DSS Hemisphere Dancer", true);
+		FleetMemberAPI member = api.addToFleet(FleetSide.PLAYER, "volantian_legion_vi_Standard", FleetMemberType.SHIP, "DSS Hemisphere Dancer", true);
 
 		PersonAPI xavier = Global.getSector().getFaction("independent").createRandomPerson(FullName.Gender.FEMALE);
 		xavier.setId("vrixavier_mission1");
@@ -51,16 +51,16 @@ public class MissionDefinition implements MissionDefinitionPlugin {
 		xavier.getStats().setSkillLevel(Skills.MISSILE_SPECIALIZATION, 1);
 		xavier.getStats().setLevel(3);
 		member.setCaptain(xavier);
-		FleetMemberAPI member2 = api.addToFleet(FleetSide.PLAYER, "volantian_dominator_vi_standard", FleetMemberType.SHIP, "DSS Everybody's Got a Cousin on Kazeron", false);
-		FleetMemberAPI member3 = api.addToFleet(FleetSide.PLAYER, "volantian_dominator_vi_standard", FleetMemberType.SHIP, "DSS Eventide Daydreaming", false);
-		FleetMemberAPI member4 = api.addToFleet(FleetSide.PLAYER, "volantian_eradicator_vi_standard", FleetMemberType.SHIP, "DSS We Are The People COMSEC Warned Us About", false);
-		FleetMemberAPI member6 = api.addToFleet(FleetSide.PLAYER, "volantian_heron_vi_standard", FleetMemberType.SHIP, false);
-		FleetMemberAPI member7 = api.addToFleet(FleetSide.PLAYER, "volantian_manticore_vi_standard", FleetMemberType.SHIP, false);
-		FleetMemberAPI member8 = api.addToFleet(FleetSide.PLAYER, "volantian_manticore_vi_standard", FleetMemberType.SHIP, false);
-		FleetMemberAPI member9 = api.addToFleet(FleetSide.PLAYER, "volantian_enforcer_vi_standard", FleetMemberType.SHIP, false);
-		FleetMemberAPI member10 = api.addToFleet(FleetSide.PLAYER, "volantian_vanguard_vi_standard", FleetMemberType.SHIP, false);
-		FleetMemberAPI member11 = api.addToFleet(FleetSide.PLAYER, "volantian_vanguard_vi_standard", FleetMemberType.SHIP, false);
-		FleetMemberAPI member12 = api.addToFleet(FleetSide.PLAYER, "volantian_monitor_vi_standard", FleetMemberType.SHIP, false);
+		FleetMemberAPI member2 = api.addToFleet(FleetSide.PLAYER, "volantian_dominator_vi_Standard", FleetMemberType.SHIP, "DSS Everybody's Got a Cousin on Kazeron", false);
+		FleetMemberAPI member3 = api.addToFleet(FleetSide.PLAYER, "volantian_dominator_vi_Standard", FleetMemberType.SHIP, "DSS Eventide Daydreaming", false);
+		FleetMemberAPI member4 = api.addToFleet(FleetSide.PLAYER, "volantian_eradicator_vi_Standard", FleetMemberType.SHIP, "DSS We Are The People COMSEC Warned Us About", false);
+		FleetMemberAPI member6 = api.addToFleet(FleetSide.PLAYER, "volantian_heron_vi_Standard", FleetMemberType.SHIP, false);
+		FleetMemberAPI member7 = api.addToFleet(FleetSide.PLAYER, "volantian_manticore_vi_Standard", FleetMemberType.SHIP, false);
+		FleetMemberAPI member8 = api.addToFleet(FleetSide.PLAYER, "volantian_manticore_vi_Standard", FleetMemberType.SHIP, false);
+		FleetMemberAPI member9 = api.addToFleet(FleetSide.PLAYER, "volantian_enforcer_vi_Standard", FleetMemberType.SHIP, false);
+		FleetMemberAPI member10 = api.addToFleet(FleetSide.PLAYER, "volantian_vanguard_vi_Standard", FleetMemberType.SHIP, false);
+		FleetMemberAPI member11 = api.addToFleet(FleetSide.PLAYER, "volantian_vanguard_vi_Standard", FleetMemberType.SHIP, false);
+		FleetMemberAPI member12 = api.addToFleet(FleetSide.PLAYER, "volantian_monitor_vi_Standard", FleetMemberType.SHIP, false);
 
 
 

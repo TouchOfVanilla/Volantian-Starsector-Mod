@@ -1,0 +1,62 @@
+{
+    "displayName": "Elite",
+    "fluxCapacitors": 26,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "volantian_sentinel",
+    "hullMods": [
+        "fluxbreakers",
+        "hardenedshieldemitter",
+        "stabilizedshieldemitter",
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "volantian_sentinel_Elite",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0011": "cyclone",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0008": "sabotpod",
+                "WS0007": "sabotpod",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0010": "autopulse",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "phasebeam",
+                "WS0004": "phasebeam",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "pdburst",
+                "WS0002": "pdburst",
+                "WS0009t": "pdburst",
+                "WS0005": "pdburst",
+                "WS0006": "pdburst",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

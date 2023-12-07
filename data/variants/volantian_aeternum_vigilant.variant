@@ -1,0 +1,78 @@
+{
+  "variantId": "volantian_aeternum_vigilant",
+  "hullId": "volantian_aeternum",
+  "displayName": "Vigilant",
+  "goalVariant": true,
+  "fluxCapacitors": 29,
+  "fluxVents": 40,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "heavyarmor",
+    "hardened_subsystems",
+    "hardenedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "hephag",
+        "WS0002": "hephag"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "lightneedler",
+        "WS0006": "lightneedler",
+        "WS0008": "autopulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "heavyburst",
+        "WS0009": "flak",
+        "WS0011": "pdburst",
+        "WS0013": "pdburst"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "heavyburst",
+        "WS0010": "flak",
+        "WS0012": "pdburst",
+        "WS0014": "pdburst"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0015": "gazerpod",
+        "WS0017": "gazerpod",
+        "WS0019": "gazerpod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0016": "breachpod",
+        "WS0018": "breachpod",
+        "WS0020": "breachpod"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "longbow_wing",
+    "thunder_wing"
+  ]
+}

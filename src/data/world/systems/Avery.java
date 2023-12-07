@@ -3,6 +3,8 @@ package data.world.systems;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.*;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
+import com.fs.starfarer.api.characters.FullName;
+import com.fs.starfarer.api.characters.PersonAPI;
 import com.fs.starfarer.api.impl.campaign.ids.*;
 import com.fs.starfarer.api.impl.campaign.procgen.StarSystemGenerator;
 import com.fs.starfarer.api.impl.campaign.rulecmd.salvage.special.ShipRecoverySpecial;
@@ -95,7 +97,8 @@ public class Avery {
                                 Submarkets.GENERIC_MILITARY,
                                 Submarkets.SUBMARKET_OPEN,
                                 Submarkets.SUBMARKET_STORAGE,
-                                Submarkets.SUBMARKET_BLACK
+                                Submarkets.SUBMARKET_BLACK,
+                                "vsb_market"
                         )
                 ),
                 new ArrayList<>(
@@ -117,6 +120,19 @@ public class Avery {
                 //junk and chatter
                 false);
         StalosStation.setCustomDescriptionId("vri_Stalos");
+        PersonAPI iris = Global.getFactory().createPerson();
+        iris.setId("iris");
+        iris.setFaction("vri");
+        iris.setGender(FullName.Gender.FEMALE);
+        iris.setRankId(Ranks.SPACE_COMMANDER);
+        iris.setPostId(Ranks.POST_BASE_COMMANDER);
+        iris.setImportance(PersonImportance.HIGH);
+        iris.getName().setFirst("Iris");
+        iris.getName().setLast("Star");
+        Global.getSector().getImportantPeople().addPerson(iris);
+        Global.getSector().getImportantPeople().getPerson("iris").addTag("trade");
+        iris.setPortraitSprite(Global.getSettings().getSpriteName("characters", iris.getId()));
+        Stalos_market.getCommDirectory().addPerson(iris);
         //Tally
         PlanetAPI Tally = system.addPlanet("vri_planet_tally",
                 AveryStar,
@@ -168,8 +184,8 @@ public class Avery {
         debrisstation.setCircularOrbit(daedalusstation, 20f, 20, 900f);
         debrisstation.setId("deadalus_debris");
 
-        addDerelict(system, daedalusstation, "volantian_naegling_vri_assault", Global.getSector().getFaction("vri").pickRandomShipName(), Misc.genUID(),ShipRecoverySpecial.ShipCondition.BATTERED, 270f, (Math.random() < 0.5));
-        addDerelict(system, daedalusstation, "volantian_sunder_vri_standard", Global.getSector().getFaction("vri").pickRandomShipName(), Misc.genUID(),ShipRecoverySpecial.ShipCondition.BATTERED, 270f, (Math.random() < 0.5));
+        addDerelict(system, daedalusstation, "volantian_gauntlet_vri_Standard", Global.getSector().getFaction("vri").pickRandomShipName(), Misc.genUID(),ShipRecoverySpecial.ShipCondition.BATTERED, 270f, (Math.random() < 0.5));
+        addDerelict(system, daedalusstation, "volantian_sunder_vri_Standard", Global.getSector().getFaction("vri").pickRandomShipName(), Misc.genUID(),ShipRecoverySpecial.ShipCondition.BATTERED, 270f, (Math.random() < 0.5));
 
 
 
@@ -299,6 +315,7 @@ public class Avery {
 
         system.addEntity(jumpPoint1);
         system.addEntity(jumpPoint2);
+
 
         system.autogenerateHyperspaceJumpPoints(true, false);
     }

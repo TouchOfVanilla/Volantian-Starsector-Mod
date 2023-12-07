@@ -14,7 +14,7 @@
   "builtInMods": [
     "coherer",
     "volremconversion",
-    "VRI_FluxNetwork"
+    "azorian_matrices"
   ],
   "weaponSlots": [
     {

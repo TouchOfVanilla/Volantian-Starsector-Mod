@@ -1,0 +1,45 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 11,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "volantian_curator_vri",
+    "hullMods": [
+        "azorian_shields",
+        "efficiency_overhaul",
+        "hiressensors",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "volantian_curator_vri_Standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "ionbeam",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "gravitonbeam",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "pdburst",
+                "WS0002": "pdburst",
+                "WS0005": "pdburst",
+            }
+        },
+    ],
+    "wings": [
+        "volantian_flash_wing",
+    ],
+    "modules": [],
+}

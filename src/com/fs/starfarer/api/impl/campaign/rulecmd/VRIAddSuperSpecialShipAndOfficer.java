@@ -17,7 +17,7 @@ public class VRIAddSuperSpecialShipAndOfficer extends BaseCommandPlugin {
 
     public boolean execute(String ruleId, InteractionDialogAPI dialog, List<Misc.Token> params, Map<String, MemoryAPI> memoryMap) {
 
-        FleetMemberAPI member = Global.getFactory().createFleetMember(FleetMemberType.SHIP, Global.getSettings().getVariant("volantian_chromatic_vri_strike")); //Creates a ship for the game to use, defines it as 'member'
+        FleetMemberAPI member = Global.getFactory().createFleetMember(FleetMemberType.SHIP, Global.getSettings().getVariant("volantian_chromatic_vri_Standard")); //Creates a ship for the game to use, defines it as 'member'
         member.setCaptain(Global.getSector().getImportantPeople().getPerson("avery")); //sets the captain of this ship to the person in question
         Global.getSector().getPlayerFleet().getFleetData().addFleetMember(member); //adds this ship to the player fleet
         Global.getSector().getPlayerFleet().getFleetData().addOfficer(Global.getSector().getImportantPeople().getPerson("avery")); //adds the person as an officer in the player fleet

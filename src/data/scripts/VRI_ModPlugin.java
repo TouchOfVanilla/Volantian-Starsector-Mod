@@ -4,8 +4,10 @@ import com.fs.starfarer.api.BaseModPlugin;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.*;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
+import com.fs.starfarer.api.campaign.listeners.ListenerManagerAPI;
 import com.fs.starfarer.api.impl.campaign.VRICampaignPluginImpl;
 import com.fs.starfarer.api.impl.campaign.VRIDerelictSpawner;
+import com.fs.starfarer.api.impl.campaign.VRIFleetInflationListener;
 import com.fs.starfarer.api.impl.campaign.econ.impl.VRItemEffectsRepo;
 import com.fs.starfarer.api.impl.campaign.ids.Conditions;
 import com.fs.starfarer.api.impl.campaign.ids.Planets;
@@ -13,6 +15,7 @@ import com.fs.starfarer.api.impl.campaign.procgen.themes.BluesteelDefenderPlugin
 import com.fs.starfarer.api.util.Misc;
 import data.scripts.util.MagicSettings;
 import data.world.VRIGen;
+import data.world.industries_and_buildings.VRI_MidlineMarketPlugin;
 import exerelin.campaign.SectorManager;
 
 import java.util.ArrayList;
@@ -54,6 +57,14 @@ public class VRI_ModPlugin extends BaseModPlugin {
     public VRI_ModPlugin() {
     }
 
+    public void setListenersIfNeeded() {
+        ListenerManagerAPI l = Global.getSector().getListenerManager();
+        if (!l.hasListenerOfClass(VRIFleetInflationListener.class)) {
+            l.addListener(new VRIFleetInflationListener(), true);
+            log.info("Added VRI Fleet Listener");
+        }
+    }
+
     public void onNewGame() {
         Map<String, Object> data = Global.getSector().getPersistentData();
         boolean haveNexerelin = Global.getSettings().getModManager().isModEnabled("nexerelin");
@@ -79,11 +90,17 @@ public class VRI_ModPlugin extends BaseModPlugin {
             }
         }
             Global.getSector().registerPlugin(new VRICampaignPluginImpl());
+
+        setListenersIfNeeded();
+        ListenerManagerAPI l = Global.getSector().getListenerManager();
+        if (!l.hasListenerOfClass(VRIFleetInflationListener.class)) {
+            l.addListener(new VRIFleetInflationListener());
+        }
+        VRI_MidlineMarketPlugin.addHullsToMidlineMarket();
     }
 
     public void onNewGameAfterEconomyLoad() {
         Global.getSector().getGenericPlugins().addPlugin(new BluesteelDefenderPluginImpl());
-
     }
 
     public void onNewGameAfterTimePass(){
@@ -146,7 +163,9 @@ public class VRI_ModPlugin extends BaseModPlugin {
             tetherPlanet.getMarket().addCondition("planetarytether");
             Vanguard.addCondition("planetarytether");
         }
+
         VRIDerelictSpawner.spawnDerelicts();
+
     }
 
 

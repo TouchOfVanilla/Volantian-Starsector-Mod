@@ -1,40 +1,43 @@
 {
-  "variantId": "volantian_kaleidoscope_standard",
-  "hullId": "volantian_kaleidoscope",
-  "displayName": "Standard",
-  "goalVariant": true,
-  "fluxCapacitors": 37,
-  "fluxVents": 40,
-  "quality": 1,
-  "permaMods": [],
-  "hullMods": [
-    "automated",
-    "ecm",
-    "expanded_deck_crew",
-    "pointdefenseai",
-    "targetingunit",
-    "fluxdistributor",
-    "auxiliarythrusters"
-  ],
-  "weaponGroups": [
-    {
-      "autofire": false,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0001": "gravitonbeam",
-        "WS0002": "gravitonbeam",
-        "WS0003": "lrpdlaser",
-        "WS0004": "lrpdlaser",
-        "WS0005": "heavyburst",
-        "WS0006": "heavyburst"
-      }
-    }
-  ],
-  "modules": [],
-  "wings": [
-    "lux_wing",
-    "lux_wing",
-    "spark_wing",
-    "spark_wing"
-  ]
+    "displayName": "Standard",
+    "fluxCapacitors": 10,
+    "fluxVents": 50,
+    "goalVariant": false,
+    "hullId": "volantian_kaleidoscope",
+    "hullMods": [
+        "advancedoptics",
+        "ecm",
+        "expanded_deck_crew",
+        "nav_relay",
+        "pointdefenseai",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "volantian_kaleidoscope_Standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "ionbeam",
+                "WS0002": "ionbeam",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "heavyburst",
+                "WS0006": "heavyburst",
+            }
+        },
+    ],
+    "wings": [
+        "flash_wing",
+        "flash_wing",
+        "lux_wing",
+        "lux_wing",
+    ],
+    "modules": [],
 }

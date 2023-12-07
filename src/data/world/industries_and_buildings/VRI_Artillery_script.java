@@ -151,7 +151,11 @@ public class VRI_Artillery_script extends BaseIndustry {
     }
     @Override
     public boolean isAvailableToBuild() {
-        return (Global.getSector().getPlayerFaction().knowsIndustry(getId()));
+        if (!super.isAvailableToBuild()) {
+            return false;
+        } else {
+            return (Global.getSector().getPlayerFaction().knowsIndustry(getId()));
+        }
 
     }
     public boolean showWhenUnavailable() {
@@ -169,4 +173,5 @@ public class VRI_Artillery_script extends BaseIndustry {
     public MarketCMD.RaidDangerLevel adjustItemDangerLevel(String itemId, String data, MarketCMD.RaidDangerLevel level) {
         return level.next();
     }
+
 }

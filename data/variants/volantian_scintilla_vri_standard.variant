@@ -1,34 +1,52 @@
 {
-  "variantId": "volantian_scintilla_vri_standard",
-  "hullId": "volantian_scintilla_vri",
-  "displayName": "Standard",
-  "goalVariant": false,
-  "fluxCapacitors": 4,
-  "fluxVents": 4,
-  "quality": 1,
-  "permaMods": [],
-  "hullMods": [
-    "missile_autoloader",
-    "missleracks",
-    "nav_relay"
-  ],
-  "weaponGroups": [
-    {
-      "autofire": false,
-      "mode": "LINKED",
-      "weapons": {
-        "WS 000": "vol_halonMK1",
-        "WS 001": "vol_halonMK1",
-        "WS 002": "vol_halonMK1",
-        "WS 003": "vol_halonMK1",
-        "WS 006": "pilum",
-        "WS 007": "heatseeker",
-        "WS 008": "heatseeker",
-        "WS0001": "hveldriver",
-        "WS0002": "hveldriver"
-      }
-    }
-  ],
-  "modules": [],
-  "wings": []
+    "displayName": "Standard",
+    "fluxCapacitors": 4,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "volantian_scintilla_vri",
+    "hullMods": [],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "volantian_scintilla_vri_Standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "hveldriver",
+                "WS0002": "hveldriver",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 006": "breachpod",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 008": "taclaser",
+                "WS 007": "taclaser",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "vol_halonMK1",
+                "WS 003": "vol_halonMK1",
+                "WS 000": "vol_halonMK1",
+                "WS 001": "vol_halonMK1",
+            }
+        },
+    ],
+    "wings": [
+        "lux_wing",
+        "flash_wing",
+    ],
+    "modules": [],
 }

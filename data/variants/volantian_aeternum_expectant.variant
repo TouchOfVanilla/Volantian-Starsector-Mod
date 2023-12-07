@@ -1,0 +1,78 @@
+{
+  "variantId": "volantian_aeternum_expectant",
+  "hullId": "volantian_aeternum",
+  "displayName": "Expectant",
+  "goalVariant": true,
+  "fluxCapacitors": 18,
+  "fluxVents": 40,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxdistributor",
+    "targetingunit",
+    "heavyarmor",
+    "fluxbreakers"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "mjolnir",
+        "WS0002": "mjolnir",
+        "WS0008": "plasma"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "ionpulser",
+        "WS0004": "ionpulser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "pdburst",
+        "WS0009": "dualflak",
+        "WS0011": "pdburst",
+        "WS0013": "pdburst"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "pdburst",
+        "WS0010": "dualflak",
+        "WS0012": "pdburst",
+        "WS0014": "pdburst"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0015": "breachpod",
+        "WS0017": "breachpod",
+        "WS0019": "breachpod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0016": "sabotpod",
+        "WS0018": "sabotpod",
+        "WS0020": "sabotpod"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "sarissa_wing",
+    "thunder_wing"
+  ]
+}

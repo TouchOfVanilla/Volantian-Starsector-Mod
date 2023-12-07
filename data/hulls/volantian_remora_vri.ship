@@ -14,8 +14,8 @@
   "builtInMods": [
     "surveying_equipment",
     "repair_gantry",
-    "VRI_FluxNetwork",
-    "volaux"
+    "volaux",
+    "azorian_matrices"
   ],
   "weaponSlots": [
     {

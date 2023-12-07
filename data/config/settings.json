@@ -60,6 +60,7 @@
 "Volantian Remnant Conversion":[0, 205, 159, 255],
 "Volantian Auxillary":[31, 247, 182, 255],
 				"VI Battlegroup":[119, 125, 192, 255],
+				"Vestige": [255,255,255,255],
 },
 
 "graphics": {
@@ -77,6 +78,7 @@
 "avery": "graphics/portraits/avery1.png",
 "delilah": "graphics/portraits/delilah1.png",
 "milasha": "graphics/portraits/milasha1.png",
+"iris": "graphics/portraits/iris1.png",
 "volcore": "graphics/portraits/volcore.png"
 },
 "blueprint_packages": {

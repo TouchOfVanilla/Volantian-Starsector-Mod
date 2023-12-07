@@ -1,0 +1,330 @@
+{
+  "hullName": "Aeternum",
+  "hullId": "volantian_aeternum",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/ships/vestiges/aeturnum.png",
+  "style": "VESTIGE",
+  "height": 400,
+  "width": 264,
+  "center": [132, 200],
+  "collisionRadius": 278.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 248,
+  "viewOffset": 0,
+  "builtInMods": [
+    "automated"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 45,
+      "locations": [126, 74]
+    },
+    {
+      "id": "WS0002",
+      "size": "LARGE",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -45,
+      "locations": [126, -74]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 45,
+      "locations": [138, 41]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -45,
+      "locations": [138, -41]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 45,
+      "locations": [164, 43]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -45,
+      "locations": [164, -43]
+    },
+    {
+      "id": "WS0008",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": 0,
+      "locations": [182.5, 0]
+    },
+    {
+      "id": "WS0009",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 89.5,
+      "locations": [21, 49]
+    },
+    {
+      "id": "WS0010",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -89.5,
+      "locations": [21, -49]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 90,
+      "locations": [-33, 28]
+    },
+    {
+      "id": "WS0012",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -90,
+      "locations": [-33, -28]
+    },
+    {
+      "id": "WS0013",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 135,
+      "locations": [-151.5, 93]
+    },
+    {
+      "id": "WS0014",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -135,
+      "locations": [-151.5, -93]
+    },
+    {
+      "id": "WS0015",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 90,
+      "locations": [-46, 95]
+    },
+    {
+      "id": "WS0016",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": -90,
+      "locations": [-46, -95]
+    },
+    {
+      "id": "WS0017",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 90,
+      "locations": [-24, 91]
+    },
+    {
+      "id": "WS0018",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": -90,
+      "locations": [-24, -91]
+    },
+    {
+      "id": "WS0019",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 90,
+      "locations": [-2, 88]
+    },
+    {
+      "id": "WS0020",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": -90,
+      "locations": [-2, -88]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        95, -69,
+        48, -60.5
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        96, 69.5,
+        47.5, 60
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-188.5, 112],
+      "length": 96,
+      "width": 34,
+      "angle": 180,
+      "contrailSize": 34,
+      "style": "VESTIGE"
+    },
+    {
+      "location": [-188.5, -112],
+      "length": 96,
+      "width": 34,
+      "angle": -180,
+      "contrailSize": 34,
+      "style": "VESTIGE"
+    },
+    {
+      "location": [-191, 100],
+      "length": 94.5,
+      "width": 35,
+      "angle": 180,
+      "contrailSize": 35,
+      "style": "VESTIGE"
+    },
+    {
+      "location": [-191, -100],
+      "length": 94.5,
+      "width": 35,
+      "angle": -180,
+      "contrailSize": 35,
+      "style": "VESTIGE"
+    },
+    {
+      "location": [-194, 86],
+      "length": 126,
+      "width": 42,
+      "angle": 180,
+      "contrailSize": 42,
+      "style": "VESTIGE"
+    },
+    {
+      "location": [-194, -86],
+      "length": 126,
+      "width": 42,
+      "angle": -180,
+      "contrailSize": 42,
+      "style": "VESTIGE"
+    },
+    {
+      "location": [-166, 54],
+      "length": 76,
+      "width": 28,
+      "angle": 180,
+      "contrailSize": 28,
+      "style": "VESTIGE"
+    },
+    {
+      "location": [-166, -54],
+      "length": 76,
+      "width": 28,
+      "angle": -180,
+      "contrailSize": 28,
+      "style": "VESTIGE"
+    },
+    {
+      "location": [-169, 39],
+      "length": 78.5,
+      "width": 30,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "VESTIGE"
+    },
+    {
+      "location": [-169, -39],
+      "length": 78.5,
+      "width": 30,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "VESTIGE"
+    },
+    {
+      "location": [-172, 24],
+      "length": 88.5,
+      "width": 28,
+      "angle": 180,
+      "contrailSize": 28,
+      "style": "VESTIGE"
+    },
+    {
+      "location": [-172, -24],
+      "length": 88.5,
+      "width": 28,
+      "angle": -180,
+      "contrailSize": 28,
+      "style": "VESTIGE"
+    }
+  ],
+  "bounds": [
+    -158.5, -65,
+    -182.5, -67.5,
+    -189, -122.5,
+    21.5, -86.5,
+    137, -99.5,
+    189.5, -37.5,
+    189.5, 37.5,
+    137, 99.5,
+    21.5, 86.5,
+    -189, 122.5,
+    -182.5, 67.5,
+    -158.5, 65,
+    -167, 16.5,
+    -151, 9.5,
+    -151, -9.5,
+    -167, -16.5
+  ]
+}

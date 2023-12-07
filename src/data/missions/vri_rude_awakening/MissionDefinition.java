@@ -44,17 +44,17 @@ public class MissionDefinition implements MissionDefinitionPlugin {
 		api.addBriefingItem("The DSS Hemisphere Dancer must survive.");
 
 		// Set up the player's fleet
-		FleetMemberAPI member = api.addToFleet(FleetSide.PLAYER, "volantian_legion_vi_standard", FleetMemberType.SHIP, "DSS Hemisphere Dancer", true);
-		FleetMemberAPI member1 = api.addToFleet(FleetSide.PLAYER, "volantian_dominator_vi_standard", FleetMemberType.SHIP, "DSS Eventide Daydreaming", false);
-		FleetMemberAPI member2 = api.addToFleet(FleetSide.PLAYER, "volantian_eradicator_vi_standard", FleetMemberType.SHIP, "DSS We Are The People COMSEC Warned Us About", false);
+		FleetMemberAPI member = api.addToFleet(FleetSide.PLAYER, "volantian_legion_vi_Standard", FleetMemberType.SHIP, "DSS Hemisphere Dancer", true);
+		FleetMemberAPI member1 = api.addToFleet(FleetSide.PLAYER, "volantian_dominator_vi_Standard", FleetMemberType.SHIP, "DSS Eventide Daydreaming", false);
+		FleetMemberAPI member2 = api.addToFleet(FleetSide.PLAYER, "volantian_eradicator_vi_Standard", FleetMemberType.SHIP, "DSS We Are The People COMSEC Warned Us About", false);
 		FleetMemberAPI member3 = api.addToFleet(FleetSide.PLAYER, "rampart_Standard", FleetMemberType.SHIP, false);
 		FleetMemberAPI member4 = api.addToFleet(FleetSide.PLAYER, "rampart_Standard", FleetMemberType.SHIP, false);
 		FleetMemberAPI member5 = api.addToFleet(FleetSide.PLAYER, "bastillon_Standard", FleetMemberType.SHIP, false);
 		FleetMemberAPI member6 = api.addToFleet(FleetSide.PLAYER, "bastillon_Standard", FleetMemberType.SHIP, false);
-		FleetMemberAPI member7 = api.addToFleet(FleetSide.PLAYER, "volantian_manticore_vi_standard", FleetMemberType.SHIP, false);
-		FleetMemberAPI member8 = api.addToFleet(FleetSide.PLAYER, "volantian_manticore_vi_standard", FleetMemberType.SHIP, false);
-		FleetMemberAPI member10 = api.addToFleet(FleetSide.PLAYER, "volantian_vanguard_vi_standard", FleetMemberType.SHIP, false);
-		FleetMemberAPI member11 = api.addToFleet(FleetSide.PLAYER, "volantian_vanguard_vi_standard", FleetMemberType.SHIP, false);
+		FleetMemberAPI member7 = api.addToFleet(FleetSide.PLAYER, "volantian_manticore_vi_Standard", FleetMemberType.SHIP, false);
+		FleetMemberAPI member8 = api.addToFleet(FleetSide.PLAYER, "volantian_manticore_vi_Standard", FleetMemberType.SHIP, false);
+		FleetMemberAPI member10 = api.addToFleet(FleetSide.PLAYER, "volantian_vanguard_vi_Standard", FleetMemberType.SHIP, false);
+		FleetMemberAPI member11 = api.addToFleet(FleetSide.PLAYER, "volantian_vanguard_vi_Standard", FleetMemberType.SHIP, false);
 		FleetMemberAPI member12 = api.addToFleet(FleetSide.PLAYER, "legion_xiv_Elite", FleetMemberType.SHIP, "HSS Shield of Eventide", false);
 		FleetMemberAPI member13 = api.addToFleet(FleetSide.PLAYER, "dominator_XIV_Elite", FleetMemberType.SHIP, "HSS Phoenix Feathers", false);
 		FleetMemberAPI member14 = api.addToFleet(FleetSide.PLAYER, "dominator_XIV_Elite", FleetMemberType.SHIP, "HSS Blazing Blade", false);
@@ -103,9 +103,6 @@ public class MissionDefinition implements MissionDefinitionPlugin {
 		api.addToFleet(FleetSide.ENEMY, "apex_Assault", FleetMemberType.SHIP, "TTDS High Roller", false);
 		api.addToFleet(FleetSide.ENEMY, "apex_Assault", FleetMemberType.SHIP, "TTDS Last Call", false);
 		api.addToFleet(FleetSide.ENEMY, "fulgent_Assault", FleetMemberType.SHIP, "TTDS Circumference", false);
-		api.addToFleet(FleetSide.ENEMY, "volantian_prismatic_brawler", FleetMemberType.SHIP, "TTDS Irreplaceable", false);
-		api.addToFleet(FleetSide.ENEMY, "volantian_prismatic_brawler", FleetMemberType.SHIP, "TTDS Echoes and Dust", false);
-		api.addToFleet(FleetSide.ENEMY, "volantian_prismatic_brawler", FleetMemberType.SHIP, "TTDS Golden Shroud", false);
 		api.addToFleet(FleetSide.ENEMY, "lumen_Standard", FleetMemberType.SHIP, "TTDS Noble", false);
 		api.addToFleet(FleetSide.ENEMY, "lumen_Standard", FleetMemberType.SHIP, "TTDS Blue", false);
 		api.addToFleet(FleetSide.ENEMY, "lumen_Standard", FleetMemberType.SHIP, "TTDS Ferret", false);

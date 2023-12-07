@@ -15,7 +15,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Random;
 
-public class VRI_weapon_monoblade implements OnHitEffectPlugin, EveryFrameWeaponEffectPlugin, OnFireEffectPlugin {
+public class VRI_weapon_monoblade implements OnHitEffectPlugin, EveryFrameWeaponEffectPlugin{
 
     private final int count = 4;
     private boolean wantSetReload = false;
@@ -109,20 +109,5 @@ public class VRI_weapon_monoblade implements OnHitEffectPlugin, EveryFrameWeapon
     private float getRandomNumberInRange(int max, int min) {
         Random r = new Random();
         return r.nextInt((max - min) + 1) + min;
-    }
-
-    @Override
-    public void onFire(DamagingProjectileAPI projectile, WeaponAPI weapon, CombatEngineAPI engine) {
-        projList.add(projectile);
-        if (weapon.getSlot().getWeaponType().equals(WeaponAPI.WeaponType.HYBRID)){
-            wantSetReload = true;
-        }
-        if (projectile.getWeapon().getSlot().getWeaponType().equals(WeaponAPI.WeaponType.BALLISTIC)) {
-            projectile.getDamageType().setShieldMult(2);
-        }
-        if (projectile.getWeapon().getSlot().getWeaponType().equals(WeaponAPI.WeaponType.ENERGY)) {
-            projectile.getDamageType().setShieldMult(1);
-            projectile.getDamageType().setArmorMult(1);
-        }
     }
 }

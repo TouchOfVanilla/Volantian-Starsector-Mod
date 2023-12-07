@@ -12,8 +12,8 @@
   "shieldRadius": 186.5,
   "viewOffset": 0,
   "builtInMods": [
-    "VRI_FluxNetwork",
-    "volremconversion"
+    "volremconversion",
+    "azorian_matrices"
   ],
   "weaponSlots": [
     {
@@ -23,7 +23,7 @@
       "mount": "TURRET",
       "arc": 141,
       "angle": 0,
-      "locations": [0, 59]
+      "locations": [1, 59]
     },
     {
       "id": "WS0002",
@@ -32,25 +32,25 @@
       "mount": "TURRET",
       "arc": 141,
       "angle": -0,
-      "locations": [0, -59]
+      "locations": [1, -59]
     },
     {
       "id": "WS0003",
       "size": "MEDIUM",
-      "type": "ENERGY",
+      "type": "HYBRID",
       "mount": "TURRET",
       "arc": 150,
       "angle": 0,
-      "locations": [-24, 98]
+      "locations": [-23, 98]
     },
     {
       "id": "WS0004",
       "size": "MEDIUM",
-      "type": "ENERGY",
+      "type": "HYBRID",
       "mount": "TURRET",
       "arc": 150,
       "angle": -0,
-      "locations": [-24, -98]
+      "locations": [-23, -98]
     },
     {
       "id": "WS0005",
@@ -95,16 +95,16 @@
       "mount": "TURRET",
       "arc": 132,
       "angle": 0,
-      "locations": [23.5, -0]
+      "locations": [25, -0]
     },
     {
       "id": "WS0010",
       "size": "LARGE",
-      "type": "ENERGY",
+      "type": "HYBRID",
       "mount": "TURRET",
       "arc": 140,
       "angle": 0,
-      "locations": [94, -0]
+      "locations": [95, -0]
     },
     {
       "id": "WS0011",

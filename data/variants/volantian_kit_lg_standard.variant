@@ -1,44 +1,49 @@
 {
-  "variantId": "volantian_kit_lg_standard",
-  "hullId": "volantian_kit_lg",
-  "displayName": "Standard",
-  "goalVariant": true,
-  "fluxCapacitors": 10,
-  "fluxVents": 10,
-  "quality": 1,
-  "permaMods": [],
-  "hullMods": [
-    "fluxbreakers",
-    "fluxdistributor",
-    "hardenedshieldemitter",
-    "targetingunit"
-  ],
-  "weaponGroups": [
-    {
-      "autofire": false,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0001": "kineticblaster",
-        "WS0006": "lightneedler"
-      }
-    },
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0002": "ioncannon",
-        "WS0003": "irpulse"
-      }
-    },
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0004": "pdlaser",
-        "WS0005": "pdlaser"
-      }
-    }
-  ],
-  "modules": [],
-  "wings": []
+    "displayName": "Standard",
+    "fluxCapacitors": 3,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "volantian_kit_lg",
+    "hullMods": [
+        "fluxdistributor",
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "volantian_kit_lg_Standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "kineticblaster",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "railgun",
+                "WS0002": "railgun",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "ioncannon",
+                "WS0004": "ioncannon",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "pdburst",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
 }

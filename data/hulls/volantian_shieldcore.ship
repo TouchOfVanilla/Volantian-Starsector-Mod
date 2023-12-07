@@ -1,0 +1,26 @@
+{
+  "hullName": "Shield Core",
+  "hullId": "volantian_shieldcore",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/stations/shieldcore.png",
+  "style": "MIDLINE",
+  "height": 26,
+  "width": 22,
+  "center": [11, 13],
+  "collisionRadius": 229.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 230.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "vastbulk",
+    "selectiveshieldmod"
+  ],
+  "weaponSlots": [],
+  "engineSlots": [],
+  "bounds": [
+    12.5, -11.5,
+    -13, -11.5,
+    -13, 11.5,
+    12.5, 11.5
+  ]
+}

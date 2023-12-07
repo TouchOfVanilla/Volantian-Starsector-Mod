@@ -1,45 +1,60 @@
 {
-  "variantId": "volantian_claymore_vri_brawler",
-  "hullId": "volantian_claymore_vri",
-  "displayName": "Brawler",
-  "goalVariant": true,
-  "fluxCapacitors": 13,
-  "fluxVents": 30,
-  "quality": 1,
-  "permaMods": [],
-  "hullMods": [
-    "targetingunit"
-  ],
-  "weaponGroups": [
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0001": "kineticblaster",
-        "WS0002": "kineticblaster",
-        "WS0003": "locust",
-        "WS0004": "cyclone",
-        "WS0005": "phasebeam",
-        "WS0006": "pdlaser",
-        "WS0007": "pdlaser",
-        "WS0010": "vol_halonMK1",
-        "WS0011": "vol_halonMK1"
-      }
-    },
-    {
-      "autofire": false,
-      "mode": "ALTERNATING",
-      "weapons": {}
-    },
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {}
-    }
-  ],
-  "modules": [],
-  "wings": [
-    "volantian_lux_wing",
-    "volantian_lux_wing"
-  ]
+    "displayName": "Brawler",
+    "fluxCapacitors": 13,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "volantian_claymore_vri",
+    "hullMods": [
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "volantian_claymore_vri_Brawler",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "locust",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "cyclone",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "kineticblaster",
+                "WS0002": "kineticblaster",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "phasebeam",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0011": "vol_halonMK1",
+                "WS0010": "vol_halonMK1",
+                "WS0007": "pdlaser",
+                "WS0006": "pdlaser",
+            }
+        },
+    ],
+    "wings": [
+        "volantian_lux_wing",
+        "volantian_lux_wing",
+    ],
+    "modules": [],
 }

@@ -1,0 +1,60 @@
+{
+    "displayName": "Elite",
+    "fluxCapacitors": 2,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "volantian_enforcer_vi",
+    "hullMods": [
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "volantian_enforcer_vi_Elite",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 008": "reaper",
+                "WS 007": "reaper",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 009": "sabot",
+                "WS 006": "sabot",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 004": "heavyneedler",
+                "WS 002": "heavyneedler",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "phasebeam",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "heavyburst",
+                "WS 001": "heavyburst",
+            }
+        },
+    ],
+    "wings": [
+        "claw_wing",
+        "sarissa_wing",
+    ],
+    "modules": [],
+}

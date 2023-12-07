@@ -1,0 +1,51 @@
+{
+    "displayName": "Elite",
+    "fluxCapacitors": 3,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "volantian_medusa_vri",
+    "hullMods": [
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "volantian_medusa_vri_Elite",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 008": "railgun",
+                "WS 009": "railgun",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 006": "vol_azorian_beam",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 007": "ionpulser",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "vol_halonMK1",
+                "WS 005": "vol_halonMK1",
+                "WS 002": "vol_halonMK1",
+                "WS 003": "vol_halonMK1",
+                "WS 001": "vol_halonMK1",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

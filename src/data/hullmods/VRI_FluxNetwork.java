@@ -105,6 +105,13 @@ public class VRI_FluxNetwork extends BaseHullMod {
 	public boolean shouldAddDescriptionToTooltip(ShipAPI.HullSize hullSize, ShipAPI ship, boolean isForModSpec) {
 		return false;
 	}
+	public static Boolean anyNull(Object... objects) {
+		if (objects.length == 0) return true;
+		for (Object o : objects) {
+			if (o == null) return false;
+		}
+		return true;
+	}
 
 	@Override
 	public void addPostDescriptionSection(TooltipMakerAPI tooltip, ShipAPI.HullSize hullSize, ShipAPI ship, float width, boolean isForModSpec) {

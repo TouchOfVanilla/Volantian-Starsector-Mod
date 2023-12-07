@@ -1,0 +1,11 @@
+id,name,faction,desc,script,icon,order
+midline_market,"Elsatian Midline
+Surplus",independent,"The Elsatian polity is no stranger in the aquisition and sale of top-grade starship materiel, particularly to a starfarer such as yourself.
+
+Elset's predominate focus on midline hulls ensures this market will be well-stocked with midline hulls from all over the sector- even those not commonly available.",data.world.industries_and_buildings.VRI_MidlineMarketPlugin,graphics/factions/midline.png,3
+vsb_market,"Reclaimed
+Purveyor",vri,"The Volantian Salvage Bureau's open, unregulated, no-questions-asked 'free market' for the independent, grey-area starfarers such as yourself.
+
+Sells the salvaged hulls of the player's faction and it's enemies. Will also sell Volantian and Remnant hulls.
+
+Selling blueprints here will cause the VRI to learn them.",data.world.industries_and_buildings.VRI_VSB_MarketPlugin,graphics/factions/VRI_Aux_Crest.png,998

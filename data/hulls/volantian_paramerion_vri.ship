@@ -15,8 +15,8 @@
     "phasefield",
     "delicate",
     "eccm",
-    "VRI_FluxNetwork",
-    "VES"
+    "VES",
+    "azorian_matrices"
   ],
   "builtInWeapons": {
     "WS0004": "vol_lucern_HE",

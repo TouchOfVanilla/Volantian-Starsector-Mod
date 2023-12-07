@@ -28,6 +28,7 @@
 					   "particleCount":12,
 					   "particleColor":[255,255,255,175]},
 	"projectileSpecId":"vol_azorian_shot",  # projectile that will be fired
+	  "everyFrameEffect": "data.weapons.scripts.VRI_azorian_needlers",
 	#"fireSoundOne":"needler_spinup",
 	"fireSoundTwo":"needler_fire",
 }

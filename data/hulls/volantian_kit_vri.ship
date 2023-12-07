@@ -13,7 +13,7 @@
   "viewOffset": 0,
   "builtInMods": [
     "VES",
-    "VRI_FluxNetwork"
+    "azorian_matrices"
   ],
   "weaponSlots": [
     {

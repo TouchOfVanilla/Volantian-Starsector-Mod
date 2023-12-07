@@ -12,8 +12,8 @@
   "shieldRadius": 144,
   "viewOffset": 0,
   "builtInMods": [
-    "VRI_FluxNetwork",
-    "VES"
+    "VES",
+    "azorian_matrices"
   ],
   "weaponSlots": [
     {

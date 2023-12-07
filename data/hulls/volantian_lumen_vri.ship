@@ -12,9 +12,8 @@
   "shieldRadius": 72,
   "viewOffset": 0,
   "builtInMods": [
-    "auxiliarythrusters",
-    "VRI_FluxNetwork",
-    "volremconversion"
+    "volremconversion",
+    "azorian_matrices"
   ],
   "weaponSlots": [
     {

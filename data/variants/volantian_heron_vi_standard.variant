@@ -1,39 +1,46 @@
 {
-  "variantId": "volantian_heron_vi_standard",
-  "hullId": "volantian_heron_vi",
-  "displayName": "Standard",
-  "goalVariant": true,
-  "fluxCapacitors": 0,
-  "fluxVents": 8,
-  "quality": 1,
-  "permaMods": [],
-  "hullMods": [
-    "targetingunit"
-  ],
-  "weaponGroups": [
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {
-        "WS 003": "railgun",
-        "WS 004": "railgun",
-        "WS 005": "hveldriver"
-      }
-    },
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {
-        "WS 001": "pdlaser",
-        "WS 002": "pdlaser",
-        "WS 009": "pdlaser"
-      }
-    }
-  ],
-  "modules": [],
-  "wings": [
-    "thunder_wing",
-    "thunder_wing",
-    "dagger_wing"
-  ]
+    "displayName": "Standard",
+    "fluxCapacitors": 0,
+    "fluxVents": 8,
+    "goalVariant": true,
+    "hullId": "volantian_heron_vi",
+    "hullMods": [
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "volantian_heron_vi_Standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "hveldriver",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "railgun",
+                "WS 003": "railgun",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 009": "pdlaser",
+                "WS 002": "pdlaser",
+                "WS 001": "pdlaser",
+            }
+        },
+    ],
+    "wings": [
+        "thunder_wing",
+        "thunder_wing",
+        "dagger_wing",
+    ],
+    "modules": [],
 }

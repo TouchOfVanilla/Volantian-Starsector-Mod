@@ -4,7 +4,6 @@
 	"type":"ENERGY",
 	"size":"LARGE",
 	#"beamFireOnlyOnFullCharge":true,
-	"beamEffect":"com.fs.starfarer.api.impl.combat.TachyonLanceEffect",
 	"turretSprite":"graphics/weapons/shoal_lance_turret_base.png",
 	"turretGlowSprite":"graphics/weapons/shoal_lance_turret_glow.png",
 	"hardpointSprite":"graphics/weapons/shoal_lance_hardpoint_base.png",

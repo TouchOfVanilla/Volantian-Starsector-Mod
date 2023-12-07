@@ -101,6 +101,11 @@ public class Verlat {
         temp.inflateIfNeeded();
         temp.setInflater(null);
 
+        if (Global.getSettings().getModManager().isModEnabled("aotd_lost_glory")){
+            Kedranov.getMarket().addCondition("planetarytether");
+            AomiaMarket.addCondition("planetarytether");
+        }
+
 
         for(Iterator var25 = temp.getFleetData().getMembersListCopy().iterator(); var25.hasNext();) {
             FleetMemberAPI member = (FleetMemberAPI)var25.next();

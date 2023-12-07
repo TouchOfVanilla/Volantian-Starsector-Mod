@@ -1,0 +1,88 @@
+{
+  "hullName": "Tome",
+  "hullId": "volantian_tome",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fighters/tome.png",
+  "style": "MIDLINE",
+  "height": 30,
+  "width": 32,
+  "center": [16, 14],
+  "collisionRadius": 21,
+  "shieldCenter": [1, 0],
+  "shieldRadius": 21,
+  "viewOffset": 0,
+  "builtInMods": [
+    "no_weapon_flux"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HIDDEN",
+      "arc": 4,
+      "angle": 0,
+      "locations": [12, 0]
+    },
+    {
+      "id": "WS 002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 4,
+      "angle": 0,
+      "locations": [12, 3]
+    },
+    {
+      "id": "WS 003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 4,
+      "angle": 0,
+      "locations": [12, -3]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HIDDEN",
+      "arc": 98,
+      "angle": 45,
+      "locations": [3, 8]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HIDDEN",
+      "arc": 98,
+      "angle": -45,
+      "locations": [3, -8]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-14, -3.5],
+      "length": 11.5,
+      "width": 4,
+      "angle": 180,
+      "contrailSize": 4,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-14, 3.5],
+      "length": 11.5,
+      "width": 4,
+      "angle": -180,
+      "contrailSize": 4,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    -10, 14,
+    12, 8,
+    12, -8,
+    -10, -14
+  ]
+}

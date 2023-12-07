@@ -1,0 +1,41 @@
+{
+    "displayName": "Vigilant",
+    "fluxCapacitors": 13,
+    "fluxVents": 12,
+    "goalVariant": true,
+    "hullId": "volantian_perpetua",
+    "hullMods": [
+        "hardened_subsystems",
+        "targetingunit"
+    ],
+    "quality": 1.0,
+    "variantId": "volantian_perpetua_vigilant",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 001": "hveldriver"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "flak"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "heatseeker"
+            }
+        }
+    ],
+    "wings": [
+        "broadsword_wing",
+        "broadsword_wing",
+        "cobra_wing"
+    ]
+}

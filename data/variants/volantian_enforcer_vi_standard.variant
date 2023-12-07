@@ -1,58 +1,66 @@
 {
-  "variantId": "volantian_enforcer_vi_standard",
-  "hullId": "volantian_enforcer_vi",
-  "displayName": "Standard",
-  "goalVariant": true,
-  "fluxCapacitors": 12,
-  "fluxVents": 20,
-  "quality": 1,
-  "permaMods": [],
-  "hullMods": [
-    "targetingunit"
-  ],
-  "weaponGroups": [
-    {
-      "autofire": false,
-      "mode": "ALTERNATING",
-      "weapons": {
-        "WS 007": "annihilator_fighter",
-        "WS 008": "annihilator_fighter"
-      }
-    },
-    {
-      "autofire": false,
-      "mode": "ALTERNATING",
-      "weapons": {
-        "WS 006": "harpoon",
-        "WS 009": "harpoon"
-      }
-    },
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {
-        "WS 001": "flak",
-        "WS 005": "flak"
-      }
-    },
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {
-        "WS 002": "hveldriver",
-        "WS 003": "ionbeam",
-        "WS 004": "hveldriver"
-      }
-    },
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {}
-    }
-  ],
-  "modules": [],
-  "wings": [
-    "broadsword_wing",
-    "sarissa_wing"
-  ]
+    "displayName": "Standard",
+    "fluxCapacitors": 9,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "volantian_enforcer_vi",
+    "hullMods": [
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "volantian_enforcer_vi_Standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 008": "sabot",
+                "WS 007": "sabot",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 009": "annihilator",
+                "WS 006": "annihilator",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "heavyac",
+                "WS 002": "heavyac",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "phasebeam",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "flak",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "heavyburst",
+            }
+        },
+    ],
+    "wings": [
+        "sarissa_wing",
+        "broadsword_wing",
+    ],
+    "modules": [],
 }

@@ -1,0 +1,41 @@
+{
+  "variantId": "volantian_aeten_vigilant",
+  "hullId": "volantian_aeten",
+  "displayName": "Vigilant",
+  "goalVariant": true,
+  "fluxCapacitors": 7,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "lightag",
+        "WS0002": "lightag",
+        "WS0006": "heavyneedler"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "swarmer_fighter",
+        "WS0004": "swarmer_fighter"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "pdburst"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

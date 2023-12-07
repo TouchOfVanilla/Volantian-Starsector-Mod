@@ -47,13 +47,13 @@ public class AzorianTelemetryRelay extends BaseHullMod {
         }
         if (ship == Global.getCombatEngine().getPlayerShip()) {
             if (finalrating > 0) {
-                Global.getCombatEngine().maintainStatusForPlayerShip("AzorianRangeMod", "graphics/icons/hullsys/fortress_shield.png", "Azorian Range Buff", (int)finalrating + "% increased range based on " + (int)totaldiff + "% ECM rating", false);
+                Global.getCombatEngine().maintainStatusForPlayerShip("AzorianRangeMod", "graphics/icons/hullsys/fortress_shield.png", "Azorian ECM Relay", (int)finalrating + "% increased range based on " + (int)totaldiff + "% ECM rating", false);
             }
             if (finalrating < 0) {
-                Global.getCombatEngine().maintainStatusForPlayerShip("AzorianRangeMod", "graphics/icons/hullsys/fortress_shield.png", "Azorian Range Debuff", (int)finalrating + "% decreased range based on " + (int)totaldiff + "% ECM rating", true);
+                Global.getCombatEngine().maintainStatusForPlayerShip("AzorianRangeMod", "graphics/icons/hullsys/fortress_shield.png", "Azorian ECM Relay", (int)finalrating + "% decreased range based on " + (int)totaldiff + "% ECM rating", true);
             }
             if (finalrating == 0){
-                Global.getCombatEngine().maintainStatusForPlayerShip("AzorianRangeMod", "graphics/icons/hullsys/fortress_shield.png", "Azorian Range Modifier", "ECM ratings are equal, no effect", false);
+                Global.getCombatEngine().maintainStatusForPlayerShip("AzorianRangeMod", "graphics/icons/hullsys/fortress_shield.png", "Azorian ECM Relay", "ECM ratings are equal, no effect", false);
 
             }
         }
@@ -66,7 +66,8 @@ public class AzorianTelemetryRelay extends BaseHullMod {
 
     }
 
-    private float getTotal(CombatFleetManagerAPI manager) {
+    public static float getTotal(CombatFleetManagerAPI manager) {
+        CombatEngineAPI engine = Global.getCombatEngine();
         float max = 0.0F;
         PersonAPI commander;
         for (Iterator var4 = manager.getAllFleetCommanders().iterator(); var4.hasNext(); max = Math.max(max, BASE_MAXIMUM + commander.getStats().getDynamic().getValue("electronic_warfare_max", 0.0F))) {
@@ -85,7 +86,7 @@ public class AzorianTelemetryRelay extends BaseHullMod {
             }
         }
 
-        var6 = this.engine.getObjectives().iterator();
+        var6 = engine.getObjectives().iterator();
 
         while (var6.hasNext()) {
             BattleObjectiveAPI obj = (BattleObjectiveAPI) var6.next();
@@ -95,6 +96,21 @@ public class AzorianTelemetryRelay extends BaseHullMod {
         }
         return total;
         }
+
+    public boolean isApplicableToShip(ShipAPI ship) {
+        if(ship.getVariant().hasHullMod("azorian_relay") || ship.getVariant().hasHullMod("azorian_matrices")){
+            return false;
+        }
+        return true;
+    }
+
+    public String getUnapplicableReason(ShipAPI ship) {
+
+        if(ship.getVariant().hasHullMod("azorian_relay")) return "Unable to use with an existing crystal network";
+        if(ship.getVariant().hasHullMod("azorian_matrices")) return "Already present within the existing Azorian network";
+        return null;
+    }
+
     public String getDescriptionParam(int index, ShipAPI.HullSize hullSize) {
         if (index == 0) {
             return "percentage-based range modifier";

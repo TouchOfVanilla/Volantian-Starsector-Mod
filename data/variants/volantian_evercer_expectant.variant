@@ -1,0 +1,24 @@
+{
+  "variantId": "volantian_evercer_expectant",
+  "hullId": "volantian_evercer",
+  "displayName": "Expectant",
+  "goalVariant": false,
+  "fluxCapacitors": 4,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "safetyoverrides"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 004": "cyclone"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

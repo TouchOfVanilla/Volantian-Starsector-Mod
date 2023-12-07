@@ -18,9 +18,13 @@ public class VRI_weapon_azorian_lance implements BeamEffectPlugin {
 
     @Override
     public void advance(float amount, CombatEngineAPI engine, BeamAPI beam) {
+        CombatEntityAPI target = null;
 
-        CombatEntityAPI target = beam.getDamageTarget();
-        if (!(target instanceof ShipAPI) || ((ShipAPI) target).isFighter()) return;
+        if ((beam.getDamageTarget() instanceof ShipAPI)) {
+            target = beam.getDamageTarget();
+        } else return;
+
+        if (!(target instanceof ShipAPI) || ((ShipAPI) target).isFighter() || ((ShipAPI) target).getHullSpec().isPhase() || ((ShipAPI) target).getShield() == null) return;
         ShipAPI targetReal = (ShipAPI) target;
 
         if (targetReal.hasListenerOfClass(AzorianLanceAdvanceableListener.class)) {
@@ -48,8 +52,9 @@ public class VRI_weapon_azorian_lance implements BeamEffectPlugin {
         final float minAngle = 10f;
 
         public AzorianLanceAdvanceableListener(ShipAPI target) {
-            this.target = target;
-            originalShieldColour = target.getShield().getInnerColor();
+
+                this.target = target;
+                originalShieldColour = target.getShield().getInnerColor();
         }
 
         @Override
@@ -67,21 +72,27 @@ public class VRI_weapon_azorian_lance implements BeamEffectPlugin {
             float effectLevel = (timeOnTarget / inOutTime);
 
             //this is just yoinked directly
-            if (target.getShield().getType().equals(ShieldAPI.ShieldType.FRONT)) {
+            if (target.getShield() != null && target.getShield().getType().equals(ShieldAPI.ShieldType.FRONT)) {
                 target.getMutableStats().getShieldArcBonus().modifyMult("azorian_lance", target.getShield().getArc()/2);
                 target.getShield().setActiveArc(target.getShield().getArc()/2);
-            } else if (target.getShield().getType().equals(ShieldAPI.ShieldType.OMNI)) {
+            } else if (target.getShield() != null && target.getShield().getType().equals(ShieldAPI.ShieldType.OMNI)) {
                 target.getMutableStats().getShieldArcBonus().modifyMult("azorian_lance", target.getShield().getArc()/2);
                 target.getShield().setActiveArc(target.getShield().getArc()/2);
-                target.getMutableStats().getShieldTurnRateMult().modifyMult("azorian_lance", effectLevel/1);
+                target.getMutableStats().getShieldTurnRateMult().modifyMult("azorian_lance", .5f);
+            } else if (target.getShield().isOff()){
+                target.setDefenseDisabled(true);
             }
+
 
             //not super sure about this tbh, might end up getting stuck somehow?
             Color fadeColour = Misc.interpolateColor(originalShieldColour, endColour, effectLevel);
-            target.getShield().setInnerColor(fadeColour);
+            if (target.getShield() != null) {
+                target.getShield().setInnerColor(fadeColour);
+                target.getMutableStats().getShieldDamageTakenMult().modifyMult("azorian_lance", effectLevel);
+            }
 
             //this is just yoinked directly from the old code
-            if (crackleTimer.intervalElapsed()) {
+            if (crackleTimer.intervalElapsed() && target.getShield() != null) {
                 float arcDistance = MathUtils.getRandomNumberInRange(minAngle, maxAngle);
                 float StartAngle = MathUtils.getRandomNumberInRange(0, target.getShield().getActiveArc() - arcDistance);
                 float shieldStartAngle = target.getShield().getFacing() + (target.getShield().getActiveArc() * 0.5f);
@@ -100,6 +111,10 @@ public class VRI_weapon_azorian_lance implements BeamEffectPlugin {
             if (effectLevel == 0 && !isHitting) {
                 target.getMutableStats().getShieldArcBonus().unmodify("azorian_lance");
                 target.getMutableStats().getShieldTurnRateMult().unmodify("azorian_lance");
+                target.getMutableStats().getShieldDamageTakenMult().unmodify("azorian_lance");
+                target.setDefenseDisabled(false);
+
+
                 target.removeListener(this);
                 return;
             }

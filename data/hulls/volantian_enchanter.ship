@@ -1,0 +1,188 @@
+{
+  "hullName": "Enchanter",
+  "hullId": "volantian_enchanter",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/enchanter.png",
+  "style": "MIDLINE",
+  "height": 119,
+  "width": 218,
+  "center": [109, 59.5],
+  "collisionRadius": 170,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 141.5,
+  "viewOffset": 0,
+  "builtInWings": [
+    "volantian_tome_wing",
+    "volantian_tome_wing"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 125,
+      "angle": 155.5,
+      "locations": [-15.5, -50]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 125,
+      "angle": -155.5,
+      "locations": [-15.5, 50]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 212,
+      "angle": -44.5,
+      "locations": [34.5, -65]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 212,
+      "angle": 44.5,
+      "locations": [34.5, 65]
+    },
+    {
+      "id": "WS0005",
+      "size": "LARGE",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -30.5,
+      "locations": [8, -80]
+    },
+    {
+      "id": "WS0006",
+      "size": "LARGE",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 30.5,
+      "locations": [8, 80]
+    },
+    {
+      "id": "WS0007",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 164,
+      "angle": 13.5,
+      "locations": [27.5, -39]
+    },
+    {
+      "id": "WS0008",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 164,
+      "angle": -13.5,
+      "locations": [27.5, 39]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 13,
+      "angle": 0,
+      "locations": [40.5, -82]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 13,
+      "angle": -0,
+      "locations": [40.5, 82]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-54, -40.5],
+      "length": 53.5,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 18,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-54, 40.5],
+      "length": 53.5,
+      "width": 18,
+      "angle": -180,
+      "contrailSize": 18,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-55, -51.5],
+      "length": 60,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 18,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-55, 51.5],
+      "length": 60,
+      "width": 18,
+      "angle": -180,
+      "contrailSize": 18,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-56.5, -65],
+      "length": 59,
+      "width": 19,
+      "angle": 180,
+      "contrailSize": 19,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-56.5, 65],
+      "length": 59,
+      "width": 19,
+      "angle": -180,
+      "contrailSize": 19,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-48, -83.5],
+      "length": 89.5,
+      "width": 32,
+      "angle": 180,
+      "contrailSize": 32,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-48, 83.5],
+      "length": 89.5,
+      "width": 32,
+      "angle": -180,
+      "contrailSize": 32,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    -48, -29.5,
+    -47.5, -93,
+    16, -108,
+    54, -40.5,
+    45, -23.5,
+    45, 23.5,
+    54, 40.5,
+    16, 108,
+    -47.5, 93,
+    -48, 29.5
+  ]
+}

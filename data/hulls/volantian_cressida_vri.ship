@@ -2,7 +2,7 @@
   "hullName": "Cressida (VRI)",
   "hullId": "volantian_cressida_vri",
   "hullSize": "DESTROYER",
-  "spriteName": "graphics/ships/cressida.png",
+  "spriteName": "graphics/ships/Cressida.png",
   "style": "VOLANTIAN",
   "height": 150,
   "width": 150,
@@ -14,8 +14,8 @@
   "builtInMods": [
     "phasefield",
     "delicate",
-    "VRI_FluxNetwork",
-    "VES"
+    "VES",
+    "azorian_matrices"
   ],
   "weaponSlots": [
     {

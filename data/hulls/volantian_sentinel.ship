@@ -12,8 +12,7 @@
   "shieldRadius": 172,
   "viewOffset": 0,
   "builtInMods": [
-    "do_not_back_off",
-    "fluxbreakers"
+    "do_not_back_off"
   ],
   "weaponSlots": [
     {
@@ -119,7 +118,7 @@
       "id": "WS0012",
       "size": "MEDIUM",
       "type": "SYSTEM",
-      "mount": "TURRET",
+      "mount": "HIDDEN",
       "arc": 12,
       "angle": 112.5,
       "locations": [68.5, 34.5]
@@ -127,8 +126,8 @@
     {
       "id": "WS0013",
       "size": "MEDIUM",
-      "type": "ENERGY",
-      "mount": "TURRET",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
       "arc": 12,
       "angle": -112.5,
       "locations": [68.5, -34.5]
@@ -137,7 +136,7 @@
       "id": "WS0014",
       "size": "MEDIUM",
       "type": "SYSTEM",
-      "mount": "TURRET",
+      "mount": "HIDDEN",
       "arc": 12,
       "angle": 112.5,
       "locations": [62.5, 33.5]
@@ -146,7 +145,7 @@
       "id": "WS0015",
       "size": "MEDIUM",
       "type": "SYSTEM",
-      "mount": "TURRET",
+      "mount": "HIDDEN",
       "arc": 12,
       "angle": -112.5,
       "locations": [62.5, -33.5]
@@ -155,7 +154,7 @@
       "id": "WS0016",
       "size": "MEDIUM",
       "type": "SYSTEM",
-      "mount": "TURRET",
+      "mount": "HIDDEN",
       "arc": 12,
       "angle": 112.5,
       "locations": [56.5, 32.5]
@@ -164,7 +163,7 @@
       "id": "WS0017",
       "size": "MEDIUM",
       "type": "SYSTEM",
-      "mount": "TURRET",
+      "mount": "HIDDEN",
       "arc": 12,
       "angle": -112.5,
       "locations": [56.5, -32.5]
@@ -173,7 +172,7 @@
       "id": "WS0018",
       "size": "MEDIUM",
       "type": "SYSTEM",
-      "mount": "TURRET",
+      "mount": "HIDDEN",
       "arc": 12,
       "angle": 112.5,
       "locations": [50.5, 32]
@@ -182,7 +181,7 @@
       "id": "WS0019",
       "size": "MEDIUM",
       "type": "SYSTEM",
-      "mount": "TURRET",
+      "mount": "HIDDEN",
       "arc": 12,
       "angle": -112.5,
       "locations": [50.5, -32]
@@ -191,7 +190,7 @@
       "id": "WS0020",
       "size": "MEDIUM",
       "type": "SYSTEM",
-      "mount": "TURRET",
+      "mount": "HIDDEN",
       "arc": 8,
       "angle": 180,
       "locations": [-36, -78]
@@ -200,7 +199,7 @@
       "id": "WS0021",
       "size": "MEDIUM",
       "type": "SYSTEM",
-      "mount": "TURRET",
+      "mount": "HIDDEN",
       "arc": 8,
       "angle": -180,
       "locations": [-36, 78]

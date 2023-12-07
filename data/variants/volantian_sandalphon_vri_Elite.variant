@@ -1,0 +1,33 @@
+{
+    "displayName": "Elite",
+    "fluxCapacitors": 0,
+    "fluxVents": 7,
+    "goalVariant": true,
+    "hullId": "volantian_sandalphon_vri",
+    "hullMods": [
+        "azorian_shields",
+        "magazines",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "volantian_sandalphon_vri_Elite",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "autopulse",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "vol_halonMK1",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

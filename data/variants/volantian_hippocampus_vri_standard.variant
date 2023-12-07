@@ -1,43 +1,40 @@
 {
-  "variantId": "volantian_hippocampus_vri_standard",
-  "hullId": "volantian_hippocampus_vri",
-  "displayName": "Standard",
-  "goalVariant": true,
-  "fluxCapacitors": 0,
-  "fluxVents": 16,
-  "quality": 0,
-  "permaMods": [],
-  "hullMods": [
-    "targetingunit"
-  ],
-  "weaponGroups": [
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0001": "vol_harpecannon",
-        "WS0002": "vol_harpecannon"
-      }
-    },
-    {
-      "autofire": false,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0005": "vol_lucern"
-      }
-    },
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0003": "pdlaser",
-        "WS0004": "pdlaser"
-      }
-    }
-  ],
-  "modules": [],
-  "wings": [
-    "volantian_spark_wing",
-    "volantian_spark_wing"
-  ]
+    "displayName": "Standard",
+    "fluxCapacitors": 0,
+    "fluxVents": 13,
+    "goalVariant": true,
+    "hullId": "volantian_hippocampus_vri",
+    "hullMods": [],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "volantian_hippocampus_vri_Standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "ionbeam",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "gazerpod",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "gravitonbeam",
+            }
+        },
+    ],
+    "wings": [
+        "dagger_wing",
+        "xyphos_wing",
+    ],
+    "modules": [],
 }

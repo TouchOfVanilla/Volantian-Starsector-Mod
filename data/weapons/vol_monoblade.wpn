@@ -6,6 +6,7 @@
   "mountTypeOverride": "HYBRID",
   "size": "LARGE",
   "everyFrameEffect": "data.weapons.scripts.VRI_weapon_monoblade",
+    "onHitEffect": "data.weapons.scripts.VRI_weapon_monoblade",
   "turretSprite": "graphics/weapons/vol_monoblade_turret_base.png",
   "turretGlowSprite": "graphics/weapons/vol_monoblade_turret_glow.png",
   "turretGunSprite": "graphics/weapons/vol_monoblade_turret_recoil.png",

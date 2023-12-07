@@ -45,7 +45,7 @@
 		"draco":-1.0,
 		"fang":-1.0,
 		"HMI":0.5, #we love alfonzo
-		"brighton": 0.5, #how do you do my fellow scavengers
+		"brighton": 0.76, #how do you do my fellow scavengers
 		"fpe": 0,
 		"mess":-1.0, #such a mess
 		"cabal":-1.0, #TT's weird cousins
@@ -87,39 +87,23 @@
     "colonyTargetValuator":"exerelin.campaign.colony.IndustrialColonyTargetValuator",
     
     "specialForcesNamerClass":"exerelin.campaign.intel.specialforces.namer.PlanetNamer",
-
-    "startShipsSolo":[
-		["tempest_volantian"],
-		["volantian_wolf_vri_standard"],
-		["volantian_lumen_vri_standard"]
-	],
-
-    "startShipsCombatSmall":[
-      ["volantian_medusa_vri_assault", "volantian_sandalphon_vri_standard", "volantian_remora_vri_assault"]
-	
-    ],
+				
 
 	"startShipsCombatLarge":[
-	  ["volantian_claymore_vri_artillery", "volantian_sunder_vri_standard", "medusa_volantian"],
-	  ["volantian_chromatic_vri_standard", "shrike_volantian", "volantian_cressedia_vri_strike"]
+	  ["volantian_gauntlet_vri_Standard", "volantian_medusa_vri_Standard", "volantian_sentinel_vri_Standard"],
     ],
+	
 
     "startShipsCarrierLarge":[
-		["volantian_gauntlet_vri_strike", "volantian_hippocampus_vri_standard", "tempest_volantian"],
-		["volantian_brilliant_vri_standard", "volantian_naegling_vri_assault", "volantian_remora_assault"]
+		["volantian_claymore_vri_Artillery", "volantian_sunder_vri_Standard", "volantian_remora_vri_Support"],
 	],
 	
-	"startShipsTradeSmall":[
-		["volantian_wolf_vri_standard", "volantian_karambit_vri_standard", "volantian_sunder_vri_standard"]
-	],
 	
     "startShipsTradeLarge":[
-		["volantian_karambit_vri_standard", "atlas_Standard", "volantian_naegling_vri_standard"]
+		["volantian_brilliant_vri_Custom", "volantian_karambit_vri_Standard", "volantian_wolf_vri_Elite"],
 	],
 	
-    "startShipsSuper":[
-		["volantian_metatron_vri_strike"]
-	],
+
 
 	
     "startSpecialItems":[

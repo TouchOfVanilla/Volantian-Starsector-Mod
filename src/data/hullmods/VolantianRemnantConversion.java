@@ -12,7 +12,9 @@ import com.fs.starfarer.api.impl.campaign.ids.Stats;
 public class VolantianRemnantConversion extends BaseHullMod {
 
 	private static final float SUPPLY_USE_MULT = 0.9f;
-	private static final float PEAK_PERFORMANCE_MULT = 1.1f;
+	private static final float PEAK_PERFORMANCE_MULT = 0.9f;
+
+	private static final float FLUX_STAT_MULT = 0.9f;
 
 	
 	
@@ -22,13 +24,18 @@ public class VolantianRemnantConversion extends BaseHullMod {
 		// lower supply use!
 		stats.getSuppliesPerMonth().modifyMult(id, SUPPLY_USE_MULT);
 
-		//Higher PPT
+		//worse PPT
 		stats.getPeakCRDuration().modifyMult(id, PEAK_PERFORMANCE_MULT);
+
+		//worse flux stats
+		stats.getFluxDissipation().modifyMult(id, FLUX_STAT_MULT);
+		stats.getFluxCapacity().modifyMult(id, FLUX_STAT_MULT);
 	}
 	
 	public String getDescriptionParam(int index, HullSize hullSize) {
 		if (index == 0) return "" + (int) ((1f - SUPPLY_USE_MULT) * 100f) + "%";
 		if (index == 1) return "" + (int) ((PEAK_PERFORMANCE_MULT - 1f) * 100f) + "%";
+		if (index == 2) return "" + (int) ((1f - FLUX_STAT_MULT)* 100f) + "%";
 		
 		return null;
 	}

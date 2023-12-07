@@ -79,8 +79,8 @@ public class MissionDefinition extends VRI_BaseRandomBattle {
         String playerFleet = fleetTypes.pick().toString();
         String enemyFleet = fleetTypes.pick().toString();
 
-        float playerQualityFactor = MathUtils.getRandomNumberInRange(0f, 1.25f);
-        float enemyQualityFactor = MathUtils.getRandomNumberInRange(0f, 1.25f);
+        float playerQualityFactor = 1f;
+        float enemyQualityFactor = 1f;
 
         api.setFleetTagline(FleetSide.PLAYER, Global.getSector().getFaction(playerFaction).getDisplayName() + " " + playerFleet
                 + " (" + playerSize + " points)" + " (QF " + String.format("%.2f", playerQualityFactor) + ")");

@@ -1,0 +1,57 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 9,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "volantian_brilliant_vri",
+    "hullMods": [
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "volantian_brilliant_vri_Support",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 006": "hveldriver",
+                "WS 005": "hveldriver",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "vol_lucern",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "vol_azorian_lance",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "gravitonbeam",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "vol_halonMK1",
+                "WS 003": "vol_halonMK1",
+            }
+        },
+    ],
+    "wings": [
+        "volantian_spark_wing",
+    ],
+    "modules": [],
+}

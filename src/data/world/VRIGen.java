@@ -4,7 +4,12 @@ import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.*;
 import com.fs.starfarer.api.campaign.econ.EconomyAPI;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
+import com.fs.starfarer.api.impl.campaign.procgen.themes.VRIVestigeThemeGenerator;
 import com.fs.starfarer.api.impl.campaign.ids.Factions;
+import com.fs.starfarer.api.impl.campaign.procgen.Constellation;
+import com.fs.starfarer.api.impl.campaign.procgen.StarAge;
+import com.fs.starfarer.api.impl.campaign.procgen.themes.SectorThemeGenerator;
+import com.fs.starfarer.api.impl.campaign.procgen.themes.VRIVestigeThemeGenerator;
 import com.fs.starfarer.api.impl.campaign.shared.SharedData;
 import com.fs.starfarer.api.util.Misc;
 import data.world.systems.*;
@@ -82,13 +87,22 @@ public class VRIGen implements SectorGeneratorPlugin {
     @Override
     public void generate(SectorAPI sector) {
         FactionAPI vri = sector.getFaction("vri");
-
-        new Royce().generate(sector);
         new Uelyst().generate(sector);
+        new Royce().generate(sector);
         new Avery().generate(sector);
         new Fevali().generate(sector);
         new Verlat().generate(sector);
         new Espoz().generate(sector);
+        new Oceana().generate(sector);
+
+        StarSystemAPI uelyst = Global.getSector().getStarSystem("Uelyst");
+        StarSystemAPI royce = Global.getSector().getStarSystem("Royce");
+        StarSystemAPI avery = Global.getSector().getStarSystem("Avery");
+        StarSystemAPI fevali = Global.getSector().getStarSystem("Fevali");
+        StarSystemAPI verlat = Global.getSector().getStarSystem("Verlat");
+        StarSystemAPI espoz = Global.getSector().getStarSystem("Espoz");
+
+        SectorThemeGenerator.generators.add(1, new VRIVestigeThemeGenerator());
 
         SharedData.getData().getPersonBountyEventData().addParticipatingFaction("vri");
 //Vanilla Factions
@@ -97,7 +111,7 @@ public class VRIGen implements SectorGeneratorPlugin {
         vri.setRelationship(Factions.TRITACHYON, -.025f); //We use their ships whether they like it or not
         vri.setRelationship(Factions.PERSEAN, 0.5f); //You hate the hegemony? welcome!
         vri.setRelationship(Factions.PIRATES, -0.5f); //Only WE are allowed to be pirates
-        vri.setRelationship(Factions.INDEPENDENT, 0f); //Thx 4 the ships idiots
+        vri.setRelationship(Factions.INDEPENDENT, 0f); //Thx 4 the ships :3
         vri.setRelationship(Factions.DIKTAT, 0f); //Who are you people?!
         vri.setRelationship(Factions.LIONS_GUARD, 0f); //Who are you people?!
         vri.setRelationship(Factions.HEGEMONY, -1f); //Stole our lunch money (and our former glory)

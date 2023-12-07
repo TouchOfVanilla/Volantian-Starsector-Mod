@@ -496,7 +496,7 @@ AddCredits 150000","""Wonderful. I'm glad we could reach an agreement.""
 Milasha immediately begins poring over the data she's just recieved, like she's caught in some hypnotic trance. Her expression is nigh-unreadable.
 
 Before you have a chance to say anything else, her absentminded hand flicks off the comm-link.",defaultLeave:Leave,
-milashaeminenceno,DialogOptionSelected,$option == eminence_no,RemoveOption milashaeminence1,"""Very well. I can't reccomend this action, Captain, but the consequences will make themselves known soon enough.""
+milashaeminenceno,DialogOptionSelected,$option == eminence_no,RemoveOption milashaeminence1,"""Very well. I can't recommend this action, Captain, but the consequences will make themselves known soon enough.""
 
 Milasha terminates the comm-link.",defaultLeave:Leave,
 milashaeminencehaggle,DialogOptionSelected,$option == eminence_haggle,"$player.HasEminenceData = false
@@ -508,6 +508,39 @@ A look of mild irritation crosses her features as she taps on the Tripad a few m
 
 She snaps off the comm link the moment she confirms the data transfer.",defaultLeave:Leave,
 ,,,,,,
+irisgreetingRegular,PickGreeting,"$id == iris score:10
+!$player.HasIrisContact","ShowPersonVisual
+FireAll PopulateOptions
+SetShortcut cutCommLinkPolite ""ESCAPE""","Your comms-request is accepted after a short pause.
+
+""You've reached the office of Iris Star, Volantian Salvage Bureau. How may I help you today?""",0:cutCommLinkPolite:Cut the comm link,
+irisgreetingContact,PickGreeting,$id == iris score:10,"ShowPersonVisual
+FireAll PopulateOptions
+SetShortcut cutCommLinkPolite ""ESCAPE""","Your comms request is accepted rather quickly.
+
+""$player.firstName. How may I help?""
+
+Iris looks busy with another screen.",0:cutCommLinkPolite:Cut the comm link,
+irisgreetingVRIHostile,PickGreeting,"$id == iris score:10
+$faction.hostiletoPlayer","ShowPersonVisual
+SetShortcut cutCommLink ""ESCAPE""","An automated message plays as the Volantian Diamond flashes on the view screen.
+
+""This comm listing is currently unavailable. Please remain in orbit and wait for the nearest Volantian fleet for assistance.""
+
+You get the feeling that you aren't going to be recieving assistance.",0:cutCommLink:Cut the comm link,
+,,,,,,
+irisContactInit,PopulateOptions,"$isPerson
+$id == iris score:1000
+!$player.HasIrisContact",,,"15:milashacontactinitask:""I'm interested in working for you.""",
+irisContactInitSucceed,DialogOptionSelected,"$option == milashacontactinitask
+RepGTE $faction.id FAVORABLE
+","ShowPersonVisual
+VRIAddContact
+$player.HasIrisContact = true","""Interested in what we do, captain?""","0:cutCommLinkPolite:Cut the comm link
+",
+irisContactInitFail,DialogOptionSelected,"$option == milashacontactinitask
+","AddText ""Consider improving your standing with the VRI."" highlight","""Interested in what we do, captain?""","0:cutCommLinkPolite:Cut the comm link
+",
 ,,,,,,
 #VRI Bar encounter with blanche when player acquires VRI hull,,,,,,
 vribarstart,DialogOptionSelected,"$option == marketVisitBar
@@ -774,15 +807,19 @@ Furthermore, you aren't the first ones to have set foot on Eminence post-calamit
 Regardless, you now possess the full survey data for Eminence.",defaultLeave:Leave,
 ,,,,,,
 #bluesteel interaction,,,,,,
-,,,,,,
-,,,,,,
+sal_VIDerelict,CheckSalvageSpecial,VRIDerelictIsVI,"ShowDefaultVisual
+VRIGenFevaliMemo",,,
 sal_triggerSurveyShipDefenders,TriggerAutomatedDefenses,$customType == bluesteel_bastion score:10,SalvageDefenderInteraction,"As your $shipOrFleet moves in closer, multiple energy signatures flare to life as hulls peel away from the station's hangars, forming a protective shell around it.",,
-sal_continuePostDefendersBluesteel,BeatDefendersContinue,$faction.id == vi,,"As your $shipOrFleet finishes mopping up the automated defenses, your salvage chief reports in. Supposedly, the floating hulks of debris were crudely automated Sixth Battlegroup hulls. Unfortunately, not enough of the necessary subsystems and hardware were left intact after the battle.
+sal_continuePostDefendersBluesteel,BeatDefendersContinue,$faction.id == vi,,"As your $shipOrFleet finishes mopping up the automated defenses, your salvage chief reports in. Supposedly, the floating hulks of debris were crudely automated Sixth Battlegroup hulls. Perhaps there is an opportunity to recover some unique ships.
 
-Your $shipOrFleet finishes its approach to the $nameInText without further incident.",0:salBeatDefendersContinue:Continue,
+Your $shipOrFleet finishes its approach to $nameInText without further incident.",0:salBeatDefendersContinue:Continue,
 sal_continueBluesteelExplore,DialogOptionSelected,"$option == salBeatDefendersContinue
-$customType == bluesteel_bastion score:10",,"Your salvor teams cut into the ancient station, causing your sonification program to register a pop or bang every time a compartment depressurizes. You're able to jump between helmet-cam feeds from your tripad as you watch the salvor teams explore the station from the safety of your flagship.",bluesteelexplorecontinue:Continue,
-bluesteelCryoPods,DialogOptionSelected,$option == bluesteelexplorecontinue,,"You recieve a ping from your salvage chief, and quickly jump feeds to a salvor who's just finished cutting through a bulkhead, peering into the next chamber. The glow of their helmet lamp glints off of the rows of cryopods, a lone beam in a dark, abyssal room. You estimate the pods number in the hundreds, possibly breaking thousands. The salvor is alerted that their feed is being watched, and awaits orders.","bluesteellore1:""Find the diagnostic terminal.""
+$customType == bluesteel_bastion score:10",,"Your salvor teams cut into the ancient station, causing your sonification program to register a pop or bang every time a compartment depressurizes. You're able to jump between helmet-cam feeds from your tripad as you watch the salvor teams explore the station from the safety of your flagship.
+
+You watch as teams comb the decrepit hallways, lit only by dim, red emergency lights almost certainly running on auxillary power. The scene is quite unlike most abandoned stations; the cleanliness, lack of corpses, and general tidiness incites some unease, shown clearly by the biometric readout displayed on one of your auxillary monitors.",bluesteelexplorecontinue:Continue,
+bluesteelCryoPods,DialogOptionSelected,$option == bluesteelexplorecontinue,,"You recieve a ping from your salvage chief, and quickly jump feeds to a lone salvor who's just finished cutting through a bulkhead, peering into the next chamber. The glow of their helmet lamp glints off of the rows of cryopods, a lone beam in a dark, abyssal room. You estimate the pods number in the hundreds, possibly breaking thousands. Certainly more than enough to crew the ships that were defending the station.
+
+The salvor is alerted that their feed is being watched, and awaits orders.","bluesteellore1:""Find the diagnostic terminal.""
 bluesteelcontinue:""Carry on.""",
 bluesteelLore,DialogOptionSelected,$option == bluesteellore1,RemoveOption bluesteellore1,"The salvor turns on an infared view, morphing the pitch darkness to a much more appreciable grey and white grain filter of the cryosanctum. After a short while, they find a control terminal; producing an auxillary power cord mounted on their left forearm, they plug into the terminal as the decrepit, dusty screen coughs to life and the system slowly reboots.
 
@@ -791,15 +828,23 @@ You don't need a data transfer to tell the obvious; there are no viable pods lef
 Your salvor pauses, uncomfortably.
 
 You recieve another ping from the salvage chief.",bluesteelcontinue:Jump feeds,
-bluesteelVI,DialogOptionSelected,$option == bluesteelcontinue,,"You jump feeds to the requested salvor.
+bluesteelVI,DialogOptionSelected,$option == bluesteelcontinue,,"You jump feeds to the next salvor.
 
-This one appears to be exploring the hangar, and has found some sort of automated shipbuilding manufactory. In the control terminal, the salvor finds a blueprint package installed in the reader.
+This one appears to be exploring a hangar, and has found the smoldering remains of an automated shipbuilding manufactory, well beyond repair. It appears some scorched-earth destruction protocol was set in motion the moment your salvor teams began cutting through the bulkheads of the station. In the luckily intact control terminal, the salvor finds a blueprint package installed in the reader.
 
 A quick diagnostic check reveals the blueprints for the Domain's Sixth Battlegroup.",bluesteelyoink:Take It,
 bluesteelyoink,DialogOptionSelected,$option == bluesteelyoink,"VRIAddSpecial VI_package
-AddText ""Sent VI Blueprint Package to cargo"" highlight
-FireBest CheckSalvageSpecial",,,
-,,,,,,
+AddText ""Sent VI Blueprint Package to cargo"" highlight",You recieve a ping from your salvage chief.,bluesteelAIcore:Jump feeds,
+bluesteelAIcore,DialogOptionSelected,$option == bluesteelAIcore,,"You jump feeds to the next salvor.
+
+This one's team appears to have found a crudely-constructed AI core containment unit. A large, voluminous sphere riddled with coolant lines, fiber-optic cable terminals, and power cords sits the middle of what presumably used to be the station's command and control center. After pumping the coolant from the tank and severing all connecting cables, the team uses a laser cutter to breach the outer shell, as several headlamps shine inside.
+
+You hear a few curses as the feed registers; the core's 'loyalty insurance measures' appear to have been activated the same time the automated shipbuilding gantry self-destructed. The scorched and charred outer chassis of this alpha-level core unfortunately will not bring back any commission pay.","bluesteellore2:""Attempt to recover logs.""
+bluesteelfinish:Commence salvage operations",
+bluesteellore2,DialogOptionSelected,$option == bluesteellore2,,"Thankfully, the chemical explosive didn't have nearly enough yield to destroy the core entirely. After removing the hard drives from the charred corpse, your salvage chief commences a data transfer. A cursory inspection of the data by the respective personnel indicates that this station used to be the main operating base of the Domain Sixth Battlegroup, before their departure from the sector. It appears that the 130th legion somehow missed this departure, and were stranded in the sector by the gate collapse.
+
+This station was restored and automated in every facet as all crew were put into cryosleep, in the hopes that one day, the gates might open up again.",bluesteelfinish:Commence salvage operations,
+bluesteelfinish,DialogOptionSelected,$option == bluesteelfinish,FireBest CheckSalvageSpecial,,,
 #Aberdeen Contact Dialogue,,,,,,
 AberdeenPlanetInteraction,OpenInteractionDialog,"$id == aberdeen
 !$hasMarket","ShowDefaultVisual
@@ -808,6 +853,33 @@ FireAll AberdeenExploreOptions","The milky white orb of Aberdeen fills the viewp
 
 The popping and buzzing of sporadic small-arms fire mingles with the scratchy static and detonations of lightning as you consider your options.",defaultLeave:Leave,
 aberdeenruinsexplore,AberdeenExploreOptions,,,,aberdeenexplore:Explore the ruins,
+,,,,,,
+#vestige transponder off,,,,,,
+tOffPatrolOpenCommVestige,OpenCommLink,"!$entity.patrolAllowTOff
+$entity.transponderOffConv score:100
+$faction.id == vestige","AddText ""\"" Greetings, citizen! Your transponder is legally required to be active in the space belonging to ///The Domain of Man///. Please engage it at the earliest convenience and submit for a cargo scan.\""""
+AdjustRep $faction.id TRANSPONDER_OFF
+AdjustRepActivePerson TRANSPONDER_OFF
+SetStoryOption avoid_scan 1 avoidCargoScan ui_char_spent_story_point ""Talked your way out of a cargo scan""",,"0:tOff_comply:Turn the transponder on and comply
+1:avoid_scan:Talk your way out of it
+2:tOff_refuse:Refuse and cut the comm link",
+scanTalkYourWayOutVestige,DialogOptionSelected,"$option == avoid_scan
+$faction.id == vestige","$entity.ignorePlayerCommRequests = true 0
+unset $entity.transponderOffConv
+AdjustRep $faction.id TRANSPONDER_OFF_REFUSE
+AdjustRepActivePerson TRANSPONDER_OFF_REFUSE
+MakeHostileWhileTOff tOff true 7
+ShowDefaultVisual
+EndConversation
+$sourceMarket.smugglingScanTimeout = true 30","Unsurprisingly, the artificial intelligence seems unreceptive to your chosen method of pursuasion.
+
+It quickly recognizes your intent and maneuvers its fleet into a combative posture, cutting the comm-link.",,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
 ,,,,,,
 ,,,,,,
 ,,,,,,

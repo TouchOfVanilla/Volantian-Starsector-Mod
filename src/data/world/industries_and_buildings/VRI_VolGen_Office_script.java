@@ -167,12 +167,37 @@ public class VRI_VolGen_Office_script extends BaseIndustry implements MarketImmi
                 str);
 
     }
-    @Override
+    Boolean PlayerHasBP = false;
+    Boolean VRIOnPlanetAlready = false;
+
     public boolean isAvailableToBuild() {
-        return (Global.getSector().getPlayerFaction().knowsIndustry(getId()));
+        if (Global.getSector().getPlayerFaction().knowsIndustry(getId())){
+            PlayerHasBP = true;
+        }
+        if (this.market.hasIndustry("VRI_VSB_ReclaimerBranch") || this.market.hasIndustry("VRI_VISOC_BlackSite")){
+            VRIOnPlanetAlready = true;
+        }
+        if (!PlayerHasBP){
+            return false;
+        }
+        if (VRIOnPlanetAlready){
+            return false;
+        }
+        return true;
     }
+
     public boolean showWhenUnavailable() {
         return false;
+    }
+
+    public String getUnavailableReason() {
+        if (!PlayerHasBP){
+            return "You do not have this industry's blueprint.";
+        }
+        if(VRIOnPlanetAlready){
+            return "There are already Volantian assets on this planet";
+        }
+        return "Congrats you aren't supposed to see this";
     }
     @Override
     public boolean canImprove() {

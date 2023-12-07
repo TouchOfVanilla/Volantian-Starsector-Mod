@@ -5,7 +5,6 @@
 		"tags":{
 		},
 		"hulls":{
-			"volantian_gauntlet":1,
 			"volantian_claymore":1,
 			"volantian_cressida":1
 
@@ -15,7 +14,6 @@
 	"knownShips":{
 		"tags":["base_bp", "midline_bp", "hightech_bp", "tritachyon"],
 		"hulls":[
-            "volantian_gauntlet",
 			"volantian_claymore",
 			"volantian_cressida"
 		],
@@ -24,10 +22,6 @@
 	"priorityShips":{
 		"tags":[],
 		"hulls":[
-			"volantian_cressida",
-			"volantian_gauntlet",
-			"volantian_claymore",
-
 
 		],
 	}

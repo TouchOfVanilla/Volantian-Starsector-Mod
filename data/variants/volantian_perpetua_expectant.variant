@@ -1,0 +1,42 @@
+{
+  "variantId": "volantian_perpetua_expectant",
+  "hullId": "volantian_perpetua",
+  "displayName": "Expectant",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 13,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 000": "ionbeam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "hveldriver"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "pdburst"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "sarissa_wing",
+    "dagger_wing",
+    "dagger_wing"
+  ]
+}

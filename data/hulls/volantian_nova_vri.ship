@@ -12,8 +12,7 @@
   "shieldRadius": 200,
   "viewOffset": 0,
   "builtInMods": [
-    "volremconversion",
-    "VRI_FluxNetwork"
+    "volremconversion"
   ],
   "builtInWeapons": {
     "WS 015": "pusherplate_nova",

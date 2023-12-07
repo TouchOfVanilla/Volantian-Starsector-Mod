@@ -1,32 +1,33 @@
 {
-  "variantId": "volantian_sandalphon_vri_standard",
-  "hullId": "volantian_sandalphon_vri",
-  "displayName": "Standard",
-  "goalVariant": true,
-  "fluxCapacitors": 0,
-  "fluxVents": 8,
-  "quality": 1,
-  "permaMods": [],
-  "hullMods": [
-    "targetingunit",
-    "magazines"
-  ],
-  "weaponGroups": [
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0002": "vol_halonMK1"
-      }
-    },
-    {
-      "autofire": false,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0001": "autopulse"
-      }
-    }
-  ],
-  "modules": [],
-  "wings": []
+    "displayName": "Standard",
+    "fluxCapacitors": 0,
+    "fluxVents": 6,
+    "goalVariant": true,
+    "hullId": "volantian_sandalphon_vri",
+    "hullMods": [
+        "hardened_subsystems",
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "volantian_sandalphon_vri_Standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "autopulse",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "vol_halonMK1",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
 }

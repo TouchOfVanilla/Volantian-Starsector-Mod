@@ -13,8 +13,8 @@
   "viewOffset": 0,
   "builtInMods": [
     "shielded_holds",
-    "VRI_FluxNetwork",
-    "volaux"
+    "volaux",
+    "azorian_matrices"
   ],
   "weaponSlots": [
     {

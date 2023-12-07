@@ -12,13 +12,8 @@
   "shieldRadius": 120,
   "viewOffset": 0,
   "builtInMods": [
-    "VRI_FluxNetwork",
     "volremconversion",
-    "autoforgeoverclocking"
-  ],
-  "builtInWings": [
-    "volantian_lux_wing",
-    "longbow_wing"
+    "azorian_matrices"
   ],
   "weaponSlots": [
     {

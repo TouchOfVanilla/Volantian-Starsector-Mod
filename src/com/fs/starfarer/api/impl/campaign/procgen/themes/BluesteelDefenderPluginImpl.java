@@ -48,7 +48,7 @@ public class BluesteelDefenderPluginImpl extends BaseGenericPlugin implements Sa
         AICoreOfficerPlugin plugin = Misc.getAICoreOfficerPlugin("alpha_core");
         fleet.getFleetData().clear();
         fleet.getFleetData().setShipNameRandom(random);
-        FleetMemberAPI member = fleet.getFleetData().addFleetMember("volantian_ventalse_vi_standard");
+        FleetMemberAPI member = fleet.getFleetData().addFleetMember("volantian_ventalse_vi_Standard");
         member.setId("xivtf_" + random.nextLong());
         PersonAPI person = plugin.createPerson("alpha_core", fleet.getFaction().getId(), random);
         person.getStats().setSkipRefresh(true);
@@ -62,17 +62,17 @@ public class BluesteelDefenderPluginImpl extends BaseGenericPlugin implements Sa
         v.addTag("no_auto_penalty");
         member.setVariant(v, false, true);
         fleet.setCommander(person);
-        addAutomated(fleet, "volantian_legion_vi_standard", (String)null, "alpha_core", random);
-        addAutomated(fleet, "volantian_dominator_vi_standard", (String)null, "beta_core", random);
-        addAutomated(fleet, "volantian_dominator_vi_standard", (String)null, "beta_core", random);
-        addAutomated(fleet, "volantian_eradicator_vi_standard", (String)null, "beta_core", random);
-        addAutomated(fleet, "volantian_heron_vi_standard", (String)null, "beta_core", random);
-        addAutomated(fleet, "volantian_enforcer_vi_standard", (String)null, "beta_core", random);
-        addAutomated(fleet, "volantian_condor_vi_standard", (String)null, "gamma_core", random);
-        addAutomated(fleet, "volantian_condor_vi_standard", (String)null, "gamma_core", random);
-        addAutomated(fleet, "volantian_manticore_vi_standard", (String)null, "gamma_core", random);
-        addAutomated(fleet, "volantian_monitor_vi_standard", (String)null, "gamma_core", random);
-        addAutomated(fleet, "volantian_monitor_vi_standard", (String)null, "gamma_core", random);
+        addAutomated(fleet, "volantian_legion_vi_Standard", (String)null, "alpha_core", random);
+        addAutomated(fleet, "volantian_dominator_vi_Standard", (String)null, "beta_core", random);
+        addAutomated(fleet, "volantian_dominator_vi_Standard", (String)null, "beta_core", random);
+        addAutomated(fleet, "volantian_eradicator_vi_Standard", (String)null, "beta_core", random);
+        addAutomated(fleet, "volantian_heron_vi_Standard", (String)null, "beta_core", random);
+        addAutomated(fleet, "volantian_enforcer_vi_Standard", (String)null, "beta_core", random);
+        addAutomated(fleet, "volantian_condor_vi_Standard", (String)null, "gamma_core", random);
+        addAutomated(fleet, "volantian_condor_vi_Standard", (String)null, "gamma_core", random);
+        addAutomated(fleet, "volantian_manticore_vi_Standard", (String)null, "gamma_core", random);
+        addAutomated(fleet, "volantian_monitor_vi_Standard", (String)null, "gamma_core", random);
+        addAutomated(fleet, "volantian_monitor_vi_Standard", (String)null, "gamma_core", random);
 
 
         Iterator var10 = fleet.getFleetData().getMembersListCopy().iterator();

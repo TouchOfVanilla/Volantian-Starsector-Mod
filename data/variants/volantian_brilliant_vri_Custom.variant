@@ -1,0 +1,57 @@
+{
+    "displayName": "Custom",
+    "fluxCapacitors": 0,
+    "fluxVents": 22,
+    "goalVariant": true,
+    "hullId": "volantian_brilliant_vri",
+    "hullMods": [
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "volantian_brilliant_vri_Custom",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 006": "vol_azorian_heavyneedler",
+                "WS 005": "vol_azorian_heavyneedler",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "sabotpod",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "vol_phosphenelance",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "phasebeam",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "vol_halonMK1",
+                "WS 003": "vol_halonMK1",
+            }
+        },
+    ],
+    "wings": [
+        "volantian_lux_wing",
+    ],
+    "modules": [],
+}

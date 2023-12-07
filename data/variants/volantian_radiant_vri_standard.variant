@@ -1,55 +1,72 @@
 {
-  "variantId": "volantian_radiant_vri_standard",
-  "hullId": "volantian_radiant_vri",
-  "displayName": "Standard",
-  "goalVariant": false,
-  "fluxCapacitors": 24,
-  "fluxVents": 40,
-  "quality": 1,
-  "permaMods": [],
-  "hullMods": [
-    "hardenedshieldemitter",
-    "targetingunit"
-  ],
-  "weaponGroups": [
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {
-        "WS 000": "autopulse",
-        "WS 001": "autopulse",
-        "WS 002": "vol_phosphenelance",
-        "WS 004": "vol_phosphenelance",
-        "WS 006": "vol_harpecannon",
-        "WS 007": "vol_harpecannon",
-        "WS 012": "vol_pataautocannon",
-        "WS 013": "vol_pataautocannon",
-        "WS 014": "vol_pataautocannon",
-        "WS 015": "vol_pataautocannon"
-      }
-    },
-    {
-      "autofire": false,
-      "mode": "LINKED",
-      "weapons": {
-        "WS 005": "vol_lucern",
-        "WS 008": "vol_lucern"
-      }
-    },
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {
-        "WS 003": "guardian",
-        "WS 009": "vol_halonMK1",
-        "WS 010": "vol_halonMK1",
-        "WS 011": "vol_halonMK1",
-        "WS 016": "vol_halonMK1",
-        "WS 017": "vol_halonMK1",
-        "WS 018": "vol_halonMK1"
-      }
-    }
-  ],
-  "modules": [],
-  "wings": []
+    "displayName": "Standard",
+    "fluxCapacitors": 32,
+    "fluxVents": 50,
+    "goalVariant": true,
+    "hullId": "volantian_radiant_vri",
+    "hullMods": [
+        "hardenedshieldemitter",
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "volantian_radiant_vri_Standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "vol_azorian_lance",
+                "WS 001": "vol_azorian_lance",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 008": "sabotpod",
+                "WS 005": "sabotpod",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 006": "typhoon",
+                "WS 007": "typhoon",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "autopulse",
+                "WS 002": "autopulse",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "guardian",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 009": "vol_halonMK1",
+                "WS 018": "vol_halonMK1",
+                "WS 015": "vol_halonMK1",
+                "WS 016": "vol_halonMK1",
+                "WS 013": "vol_halonMK1",
+                "WS 014": "vol_halonMK1",
+                "WS 011": "vol_halonMK1",
+                "WS 012": "vol_halonMK1",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
 }

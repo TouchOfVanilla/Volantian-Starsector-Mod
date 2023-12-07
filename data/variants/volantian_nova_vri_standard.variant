@@ -1,58 +1,65 @@
 {
-  "variantId": "volantian_nova_vri_standard",
-  "hullId": "volantian_nova_vri",
-  "displayName": "Standard",
-  "goalVariant": true,
-  "fluxCapacitors": 3,
-  "fluxVents": 40,
-  "quality": 1,
-  "permaMods": [],
-  "hullMods": [
-    "targetingunit",
-    "magazines",
-    "auxiliarythrusters",
-    "hardenedshieldemitter"
-  ],
-  "weaponGroups": [
-    {
-      "autofire": false,
-      "mode": "LINKED",
-      "weapons": {
-        "WS 000": "autopulse",
-        "WS 001": "autopulse",
-        "WS 002": "ionpulser",
-        "WS 003": "ionpulser",
-        "WS 004": "heavyneedler",
-        "WS 005": "heavyneedler"
-      }
-    },
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {
-        "WS 006": "salamanderpod",
-        "WS 007": "salamanderpod"
-      }
-    },
-    {
-      "autofire": false,
-      "mode": "LINKED",
-      "weapons": {
-        "WS 008": "harpoonpod",
-        "WS 009": "harpoonpod"
-      }
-    },
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {
-        "WS 010": "vol_halonMK1",
-        "WS 011": "vol_halonMK1",
-        "WS 012": "vol_halonMK1",
-        "WS 013": "vol_halonMK1"
-      }
-    }
-  ],
-  "modules": [],
-  "wings": []
+    "displayName": "Standard",
+    "fluxCapacitors": 3,
+    "fluxVents": 40,
+    "goalVariant": true,
+    "hullId": "volantian_nova_vri",
+    "hullMods": [
+        "auxiliarythrusters",
+        "hardenedshieldemitter",
+        "magazines",
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "volantian_nova_vri_Standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "autopulse",
+                "WS 001": "autopulse",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 008": "harpoonpod",
+                "WS 009": "harpoonpod",
+                "WS 006": "salamanderpod",
+                "WS 007": "salamanderpod",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "heavyneedler",
+                "WS 005": "heavyneedler",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "ionpulser",
+                "WS 003": "ionpulser",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 013": "vol_halonMK1",
+                "WS 011": "vol_halonMK1",
+                "WS 012": "vol_halonMK1",
+                "WS 010": "vol_halonMK1",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
 }

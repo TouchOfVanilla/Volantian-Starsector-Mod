@@ -1,14 +1,8 @@
 {
     "portraits":{
-      		"standard_female":[
-                  "graphics/portraits/vol_portrait1.png",
-                  "graphics/portraits/vol_portrait2.png",
-                  "graphics/portraits/vol_portrait3.png",
-                  "graphics/portraits/vol_portrait4.png",
-                  "graphics/portraits/vol_portrait5.png",
-                  "graphics/portraits/vol_portrait6.png",
-                  "graphics/portraits/vol_portrait7.png",
-                  "graphics/portraits/vol_portrait8.png",
-      		],
-    }
+
+    },
+    "names":{
+    		"mercantile":1,
+    	},
 }

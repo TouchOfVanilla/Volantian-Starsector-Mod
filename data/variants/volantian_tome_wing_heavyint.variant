@@ -1,0 +1,29 @@
+{
+  "variantId": "volantian_tome_wing_heavyint",
+  "hullId": "volantian_tome_wing",
+  "displayName": "Heavy Interceptor",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "ioncannon_fighter",
+        "WS0001": "vulcan",
+        "WS0002": "vulcan"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

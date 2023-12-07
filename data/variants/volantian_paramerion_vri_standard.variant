@@ -1,54 +1,61 @@
 {
-  "variantId": "volantian_paramerion_vri_standard",
-  "hullId": "volantian_paramerion_vri",
-  "displayName": "Standard",
-  "goalVariant": false,
-  "fluxCapacitors": 12,
-  "fluxVents": 40,
-  "quality": 1,
-  "permaMods": [],
-  "hullMods": [
-    "adaptive_coils"
-  ],
-  "weaponGroups": [
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0001": "vol_clovercannon",
-        "WS0002": "vol_clovercannon",
-        "WS0003": "vol_phosphenelance"
-      }
-    },
-    {
-      "autofire": false,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0004": "vol_lucern_HE",
-        "WS0005": "vol_lucern_HE"
-      }
-    },
-    {
-      "autofire": false,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0006": "vol_lucern_KE",
-        "WS0007": "vol_lucern_KE"
-      }
-    },
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0008": "vol_halonMK1",
-        "WS0009": "vol_halonMK1",
-        "WS0010": "vol_halonMK1",
-        "WS0011": "vol_halonMK1",
-        "WS0012": "vol_halonMK1",
-        "WS0013": "vol_halonMK1"
-      }
-    }
-  ],
-  "modules": [],
-  "wings": []
+    "displayName": "Standard",
+    "fluxCapacitors": 0,
+    "fluxVents": 45,
+    "goalVariant": true,
+    "hullId": "volantian_paramerion_vri",
+    "hullMods": [
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "volantian_paramerion_vri_Standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0005": "vol_lucern_HE",
+                "WS0004": "vol_lucern_HE",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0007": "vol_lucern_KE",
+                "WS0006": "vol_lucern_KE",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "phasebeam",
+                "WS0002": "phasebeam",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "vol_azorian_lance",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0012": "vol_halonMK1",
+                "WS0011": "vol_halonMK1",
+                "WS0013": "vol_halonMK1",
+                "WS0010": "vol_halonMK1",
+                "WS0009": "vol_halonMK1",
+                "WS0008": "vol_halonMK1",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
 }

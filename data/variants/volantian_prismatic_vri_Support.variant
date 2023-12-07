@@ -1,0 +1,51 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 17,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "volantian_prismatic_vri",
+    "hullMods": [
+        "advancedoptics",
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "volantian_prismatic_vri_Support",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "vol_azorian_lance",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "taclaser",
+                "WS0004": "taclaser",
+                "WS0006": "ionbeam",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "gravitonbeam",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "vol_halonMK1",
+            }
+        },
+    ],
+    "wings": [
+        "volantian_spark_wing",
+    ],
+    "modules": [],
+}

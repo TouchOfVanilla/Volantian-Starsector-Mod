@@ -1,0 +1,169 @@
+{
+    "hullName": "Evercer",
+    "hullId": "volantian_evercer",
+    "hullSize": "DESTROYER",
+    "style": "VESTIGE",
+    "spriteName": "../mods/Volantian-Starsector-Mod-0.4.1/graphics/ships/vestiges/evercer.png",
+    "height": 108,
+    "width": 140,
+    "center": [
+        70, 59.5
+    ],
+    "moduleAnchor": [
+        0, 0
+    ],
+    "collisionRadius": 121,
+    "coversColor": "",
+    "shieldCenter": [
+        -5.5, 0
+    ],
+    "shieldRadius": 94,
+    "viewOffset": 0,
+    "builtInMods": [
+        "automated"
+    ],
+    "builtInWings": [],
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 227,
+            "angle": 323,
+            "locations": [
+                      36,      -55
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 227,
+            "angle": 37,
+            "locations": [
+                      36,       55
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 220,
+            "angle": 142.5,
+            "locations": [
+                   -16.5,       46
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 220,
+            "angle": 217.5,
+            "locations": [
+                   -16.5,      -46
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "LARGE",
+            "type": "MISSILE",
+            "mount": "HARDPOINT",
+            "arc": 24,
+            "angle": 0,
+            "locations": [
+                    36.5,        0
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -43.5, 44
+            ],
+            "length": 24.5,
+            "width": 9,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "VESTIGE"
+        },
+        {
+            "location": [
+                -43.5, -44
+            ],
+            "length": 24.5,
+            "width": 9,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "VESTIGE"
+        },
+        {
+            "location": [
+                -40.5, 35
+            ],
+            "length": 31,
+            "width": 12,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "VESTIGE"
+        },
+        {
+            "location": [
+                -40.5, -35
+            ],
+            "length": 31,
+            "width": 12,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "VESTIGE"
+        },
+        {
+            "location": [
+                -41.5, 8
+            ],
+            "length": 31.5,
+            "width": 15,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "VESTIGE"
+        },
+        {
+            "location": [
+                -41.5, -8
+            ],
+            "length": 31.5,
+            "width": 15,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "VESTIGE"
+        }
+    ],
+    "bounds": [
+             -40,      -11,
+           -27.5,      -27,
+             -42,    -41.5,
+             -30,    -64.5,
+            39.5,      -70,
+        
+            46.5,    -46.5,
+              29,    -46.5,
+              22,    -17.5,
+              43,    -17.5,
+              43,     17.5,
+        
+              22,     17.5,
+              29,     46.5,
+            46.5,     46.5,
+            39.5,       70,
+             -30,     64.5,
+        
+             -42,     41.5,
+           -27.5,       27,
+             -40,       11
+    # 18 points total.
+    ]
+}
