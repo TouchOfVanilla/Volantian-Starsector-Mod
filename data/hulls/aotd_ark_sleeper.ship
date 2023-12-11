@@ -1,0 +1,149 @@
+{
+  "hullName": "Ark Sleeper",
+  "hullId": "aotd_ark_sleeper",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/ships/stations/SPOILER_Ark_WIP.png",
+  "style": "LOW_TECH",
+  "height": 1513,
+  "width": 675,
+  "center": [337.5, 756.5],
+  "collisionRadius": 1051,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 883,
+  "viewOffset": 0,
+  "weaponSlots": [],
+  "engineSlots": [
+    {
+      "location": [-641, 153],
+      "length": 104.5,
+      "width": 30,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-644.5, 133],
+      "length": 102,
+      "width": 36,
+      "angle": 180,
+      "contrailSize": 36,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-644, 111],
+      "length": 113.5,
+      "width": 34,
+      "angle": 180,
+      "contrailSize": 34,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-737.5, 60.5],
+      "length": 153,
+      "width": 26,
+      "angle": 180,
+      "contrailSize": 26,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-741, 41],
+      "length": 143,
+      "width": 39,
+      "angle": 180,
+      "contrailSize": 39,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-741.5, 19.5],
+      "length": 133,
+      "width": 35,
+      "angle": 180,
+      "contrailSize": 35,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-742, 5.5],
+      "length": 141.5,
+      "width": 37,
+      "angle": 180,
+      "contrailSize": 37,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-740.5, -8.5],
+      "length": 134,
+      "width": 35,
+      "angle": 180,
+      "contrailSize": 35,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-742, -30.5],
+      "length": 142.5,
+      "width": 39,
+      "angle": -180,
+      "contrailSize": 39,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-737, -49.5],
+      "length": 153.5,
+      "width": 29,
+      "angle": 180,
+      "contrailSize": 29,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-644, -100.5],
+      "length": 129,
+      "width": 33,
+      "angle": 180,
+      "contrailSize": 33,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-644, -123.5],
+      "length": 109.5,
+      "width": 27,
+      "angle": 180,
+      "contrailSize": 27,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-639, -143.5],
+      "length": 114.5,
+      "width": 30,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -739.5, -81,
+    -644.5, -98,
+    -636.5, -170.5,
+    -460.5, -213.5,
+    -427, -233.5,
+    -296.5, -236,
+    -254, -152,
+    -219, -249.5,
+    -160.5, -308,
+    590, -302.5,
+    666, -172,
+    631.5, -82.5,
+    661, -17.5,
+    661, 17.5,
+    631.5, 82.5,
+    666, 172,
+    590, 302.5,
+    -160.5, 308,
+    -219, 249.5,
+    -254, 152,
+    -296.5, 236,
+    -427, 233.5,
+    -460.5, 213.5,
+    -636.5, 170.5,
+    -644.5, 98,
+    -739.5, 81
+  ]
+}

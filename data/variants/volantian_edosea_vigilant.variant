@@ -1,0 +1,47 @@
+{
+  "variantId": "volantian_edosea_vigilant",
+  "hullId": "volantian_edosea",
+  "displayName": "Vigilant",
+  "goalVariant": true,
+  "fluxCapacitors": 17,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "heavyneedler",
+        "WS0002": "heavyneedler",
+        "WS0009": "hellbore"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "pdburst",
+        "WS0004": "pdburst",
+        "WS0005": "pdburst",
+        "WS0006": "pdburst",
+        "WS0007": "flak"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "autopulse"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "lux_wing",
+    "lux_wing"
+  ]
+}
