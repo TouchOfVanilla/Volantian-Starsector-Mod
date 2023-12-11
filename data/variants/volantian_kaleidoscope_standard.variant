@@ -2,7 +2,7 @@
     "displayName": "Standard",
     "fluxCapacitors": 10,
     "fluxVents": 50,
-    "goalVariant": false,
+    "goalVariant": true,
     "hullId": "volantian_kaleidoscope",
     "hullMods": [
         "advancedoptics",

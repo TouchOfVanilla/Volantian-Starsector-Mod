@@ -2,7 +2,7 @@
     "displayName": "Support",
     "fluxCapacitors": 19,
     "fluxVents": 30,
-    "goalVariant": false,
+    "goalVariant": true,
     "hullId": "volantian_chromatic",
     "hullMods": [
         "advancedoptics",

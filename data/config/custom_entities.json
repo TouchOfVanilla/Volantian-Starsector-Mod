@@ -39,7 +39,7 @@
     "icon":"graphics/icons/station0.png",
     "iconWidth":20,
     "iconHeight":20,
-    "sprite":"graphics/ships/remnants/remnant_station1.png",
+    "sprite":"graphics/stations/vri_dummynexus.png",
     "spriteWidth":120,
     "spriteHeight":125,
     "renderShadow":true,

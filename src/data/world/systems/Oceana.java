@@ -20,6 +20,7 @@ public class Oceana {
     public void generate(SectorAPI sector){
         StarSystemAPI system = sector.createStarSystem("Oceana");
         system.getLocation().set(16000, -18000);
+        system.setBackgroundTextureFilename("graphics/backgrounds/vribg1.jpg");
         PlanetAPI oceanastar = system.initStar("oceana",StarTypes.BLUE_GIANT, 550f, 700, 10f, 0.7f, 5f);
 
         PlanetAPI sylvana = system.addPlanet("vri_planet_suba1",
@@ -34,6 +35,7 @@ public class Oceana {
         system.addRingBand(sylvana, "misc", "rings_dust0", 256f, 0, Color.gray, 256f, 600f, 330f);
         CustomCampaignEntityAPI elsetterminal = system.addCustomEntity("elset_terminal", "Elset Terminal", "station_side03", Factions.INDEPENDENT);
         elsetterminal.setCircularOrbitPointingDown(sylvana, 90f, 600f, 90f);
+        system.addAsteroidBelt(oceanastar, 500, 4100f, 300, 90,60);
         MarketAPI elsetterminalmarket = VRIGen.addMarketplace(
                 Factions.INDEPENDENT,
                 elsetterminal,
@@ -57,13 +59,17 @@ public class Oceana {
                         Industries.REFINING,
                         Industries.HEAVYBATTERIES,
                         Industries.PATROLHQ,
-                        Industries.WAYSTATION
+                        Industries.WAYSTATION,
+                        Industries.STARFORTRESS_MID
+
                 )),
-                10f,
+                0.3f,
                 true,
                 true
         );
         elsetterminal.setMarket(elsetterminalmarket);
+
+        elsetterminal.setCustomDescriptionId("vri_elsetterminal");
 
         PlanetAPI Elsatia = system.addPlanet(
                 "elsatia",
@@ -97,13 +103,14 @@ public class Oceana {
                         Industries.REFINING,
                         Industries.HEAVYBATTERIES,
                         Industries.PATROLHQ,
-                        Industries.WAYSTATION
+                        Industries.WAYSTATION,
+                        Industries.STARFORTRESS_MID
                 )),
-                10f,
+                0.3f,
                 true,
                 true
         );
-
+Elsatia.setCustomDescriptionId("vri_elsatia"); //reference descriptions.csv
 
         float radiusAfter = StarSystemGenerator.addOrbitingEntities(system, oceanastar, StarAge.OLD,
                 3, 5, // min/max entities to add

@@ -3,10 +3,10 @@
 	# "CUSTOM"
 	
 	"VESTIGE":{
-		"engineColor":[255,255,255,255],
+		"engineColor":[255,255,255,225],
 		"contrailParticleSizeMult":4,
 		"contrailParticleDuration":2,
-		"contrailParticleFinalSizeMult":2.5,
+		"contrailParticleFinalSizeMult":1,
 		"contrailMaxSpeedMult":0.5,
 		"contrailAngularVelocityMult":0,
 		"contrailColor":[100,100,100,25],

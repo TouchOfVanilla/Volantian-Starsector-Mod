@@ -315,7 +315,7 @@ public class Avery {
 
         system.addEntity(jumpPoint1);
         system.addEntity(jumpPoint2);
-
+        system.setBackgroundTextureFilename("graphics/backgrounds/vribg1.jpg");
 
         system.autogenerateHyperspaceJumpPoints(true, false);
     }

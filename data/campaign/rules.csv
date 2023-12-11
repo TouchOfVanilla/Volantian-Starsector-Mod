@@ -871,13 +871,23 @@ AdjustRepActivePerson TRANSPONDER_OFF_REFUSE
 MakeHostileWhileTOff tOff true 7
 ShowDefaultVisual
 EndConversation
-$sourceMarket.smugglingScanTimeout = true 30","Unsurprisingly, the artificial intelligence seems unreceptive to your chosen method of pursuasion.
+$sourceMarket.smugglingScanTimeout = true 30","For some unknown reason, the artificial intelligence seems unreceptive to your chosen method of pursuasion.
 
 It quickly recognizes your intent and maneuvers its fleet into a combative posture, cutting the comm-link.",,
 ,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
+beggarInit,DialogOptionSelected,$option == marketVisitBar,DoCanAffordCheck 1 beggar_yes false,"On your way to the bar, you are accosted by a beggar. He asks for one credit.","beggar1:Give the beggar a credit
+beggar2:Continue to the bar",
+beggar1,DialogOptionSelected,$option == beggar1,"RemoveCommodity credits 1
+FireBest BarShuttleDownPrintDesc
+FireBest BarPrintDesc
+BarCMD showOptions","""Aw thanks man thats cool""
+
+you leave for the bar",,
+beggar2,DialogOptionSelected,$option == beggar2,"FireBest BarShuttleDownPrintDesc
+FireBest BarPrintDesc
+BarCMD showOptions","""Dangit""
+
+you leave for the bar",,
 ,,,,,,
 ,,,,,,
 ,,,,,,

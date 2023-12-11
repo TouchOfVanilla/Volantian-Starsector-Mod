@@ -2,7 +2,7 @@
     "displayName": "Strike",
     "fluxCapacitors": 15,
     "fluxVents": 30,
-    "goalVariant": false,
+    "goalVariant": true,
     "hullId": "volantian_glare",
     "hullMods": [
         "hardenedshieldemitter",

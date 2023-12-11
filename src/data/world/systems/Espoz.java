@@ -3,10 +3,8 @@ package data.world.systems;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.*;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
-import com.fs.starfarer.api.impl.campaign.ids.Conditions;
-import com.fs.starfarer.api.impl.campaign.ids.Industries;
-import com.fs.starfarer.api.impl.campaign.ids.Items;
-import com.fs.starfarer.api.impl.campaign.ids.Submarkets;
+import com.fs.starfarer.api.impl.campaign.econ.WorldWater;
+import com.fs.starfarer.api.impl.campaign.ids.*;
 import com.fs.starfarer.api.impl.campaign.procgen.StarAge;
 import com.fs.starfarer.api.impl.campaign.procgen.StarSystemGenerator;
 import com.fs.starfarer.api.util.Misc;
@@ -17,11 +15,12 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Espoz{
+public class Espoz {
 
     public void generate(SectorAPI sector) {
         StarSystemAPI system = sector.createStarSystem("Espoz");
         system.getLocation().set(17000, -15000);
+        system.setBackgroundTextureFilename("graphics/backgrounds/vribg1.jpg");
         PlanetAPI espoz = system.initStar(
                 "espoz_star",
                 "star_yellow",
@@ -33,7 +32,7 @@ public class Espoz{
         );
         StarSystemGenerator.addOrbitingEntities(system, espoz, StarAge.OLD,
                 3, 5, // min/max entities to add
-                4000, // radius to start adding at
+                4200, // radius to start adding at
                 2, // name offset - next planet will be <system name> <roman numeral of this parameter + 1>
                 true, // whether to use custom or system-name based names
                 true); // whether to allow habitable worlds
@@ -152,5 +151,50 @@ public class Espoz{
         aethermarket.addCondition(Conditions.THIN_ATMOSPHERE);
         aethermarket.addCondition(Conditions.HOT);
         aethermarket.addCondition(Conditions.ORE_MODERATE);
+
+    PlanetAPI Chesapeake = system.addPlanet(
+            "chesapeake",
+            espoz,
+            "Chesapeake",
+            Planets.PLANET_WATER,
+            145f,
+            110f,
+            3500f,
+            120f
+    );
+    MarketAPI chesapeakemarket = VRIGen.addMarketplace(
+            Factions.INDEPENDENT,
+            Chesapeake,
+            null,
+            "Chesapeake",
+            5,
+            new ArrayList<String>(Arrays.asList(
+                    Conditions.POPULATION_5,
+                    Conditions.HABITABLE,
+                    Conditions.ORGANICS_ABUNDANT,
+                    Conditions.WATER_SURFACE,
+                    Conditions.WATER
+            )),
+            new ArrayList<String>(Arrays.asList(
+                    Submarkets.SUBMARKET_OPEN,
+                    Submarkets.SUBMARKET_BLACK,
+                    Submarkets.SUBMARKET_STORAGE
+            )),
+            new ArrayList<String>(Arrays.asList(
+                    Industries.POPULATION,
+                    Industries.MEGAPORT,
+                    Industries.MINING,
+                    Industries.AQUACULTURE,
+                    Industries.HEAVYBATTERIES,
+                    Industries.MILITARYBASE,
+                    Industries.WAYSTATION,
+                    Industries.STARFORTRESS_MID
+            )),
+            0.3f,
+            true,
+            true
+    );
+        Chesapeake.setCustomDescriptionId("vri_chesapeake"); //reference descriptions.csv
+
     }
 }

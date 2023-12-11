@@ -2,7 +2,7 @@
     "displayName": "Standard",
     "fluxCapacitors": 27,
     "fluxVents": 30,
-    "goalVariant": false,
+    "goalVariant": true,
     "hullId": "volantian_glare",
     "hullMods": [
         "stabilizedshieldemitter",

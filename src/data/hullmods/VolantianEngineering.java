@@ -20,11 +20,13 @@ public class VolantianEngineering extends BaseHullMod {
 	private static final float DISSIPATION_MULT = 1.1f;
 	private static final float HANDLING_MULT = 1.25f;
 	private static final float SUPPLY_USE_MULT = 1.1f;
-	private static final float PEAK_PERFORMANCE_MULT = 0.85f;
+	private static final float PEAK_PERFORMANCE_MULT = 0.9f;
 
 
 	public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id) {
-		
+		//uhhhhhh fuckinnn flux
+		stats.getFluxDissipation().modifyMult(id,DISSIPATION_MULT);
+		stats.getFluxCapacity().modifyMult(id,DISSIPATION_MULT);
 		// higher supply use
 		stats.getSuppliesPerMonth().modifyMult(id, SUPPLY_USE_MULT);
 		//Lower PPT
@@ -33,9 +35,8 @@ public class VolantianEngineering extends BaseHullMod {
 
 	public String getDescriptionParam(int index, HullSize hullSize) {
 		if (index == 0) return "" + (int) ((SUPPLY_USE_MULT - 1f) * 100f) + "%";
-		if (index == 1) return "" + (int) ((HANDLING_MULT - 1f) * 100f) + "%";
-		if (index == 2) return "" + (int) ((CAPACITY_MULT - 1f) * 100f) + "%";
-		if (index == 3) return "" + (int) ((1f - PEAK_PERFORMANCE_MULT) * 100f) + "%";
+		if (index == 1) return "" + (int) ((DISSIPATION_MULT - 1f) * 100f) + "%";
+		if (index == 2) return "" + (int) ((1f - PEAK_PERFORMANCE_MULT) * 100f) + "%";
 		
 		return null;
 	}

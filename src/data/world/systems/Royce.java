@@ -36,6 +36,7 @@ public class Royce {
     public void generate(SectorAPI sector) {
         StarSystemAPI system = sector.createStarSystem("Royce");
         system.getLocation().set(23000, -17000);
+        system.setBackgroundTextureFilename("graphics/backgrounds/vribg1.jpg");
         //system.setLightColor(new Color(31,247,182, 100));
         system.setEnteredByPlayer(true);
         Misc.setAllPlanetsSurveyed(system, true);

@@ -2,7 +2,7 @@
     "displayName": "Standard",
     "fluxCapacitors": 5,
     "fluxVents": 10,
-    "goalVariant": false,
+    "goalVariant": true,
     "hullId": "volantian_glint",
     "hullMods": [
         "targetingunit",

@@ -2,20 +2,26 @@ package data.world.systems;
 
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.*;
+import com.fs.starfarer.api.campaign.ai.CampaignFleetAIAPI;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
 import com.fs.starfarer.api.campaign.econ.MarketConditionAPI;
+import com.fs.starfarer.api.campaign.listeners.FleetEventListener;
 import com.fs.starfarer.api.characters.OfficerDataAPI;
 import com.fs.starfarer.api.characters.PersonAPI;
 import com.fs.starfarer.api.characters.FullName;
 import com.fs.starfarer.api.characters.PersonAPI;
 import com.fs.starfarer.api.fleet.FleetMemberAPI;
 import com.fs.starfarer.api.fleet.FleetMemberType;
+import com.fs.starfarer.api.impl.campaign.econ.impl.OrbitalStation;
 import com.fs.starfarer.api.impl.campaign.events.OfficerManagerEvent;
+import com.fs.starfarer.api.impl.campaign.fleets.FleetFactoryV3;
+import com.fs.starfarer.api.impl.campaign.fleets.FleetParamsV3;
 import com.fs.starfarer.api.impl.campaign.ids.*;
 import com.fs.starfarer.api.impl.campaign.terrain.AsteroidFieldTerrainPlugin;
 import com.fs.starfarer.api.impl.campaign.terrain.BaseRingTerrain;
 import com.fs.starfarer.api.util.Misc;
 import data.world.VRIGen;
+import org.lwjgl.util.vector.Vector2f;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -23,7 +29,7 @@ import java.util.Arrays;
 
 import static com.fs.starfarer.api.impl.campaign.rulecmd.SetStoryOption.set;
 
-public class Uelyst {
+public class Uelyst implements FleetEventListener {
 
     final float NocturneDist = 3800;
     final float GeirDist = 1000;
@@ -43,6 +49,7 @@ public class Uelyst {
         system.getLocation().set(22000, -20000);
         //system.setLightColor(new Color(31,247,182, 100));
         system.setEnteredByPlayer(true);
+        system.setBackgroundTextureFilename("graphics/backgrounds/vribg1.jpg");
         Misc.setAllPlanetsSurveyed(system, true);
 
         PlanetAPI UelystStar = system.initStar("vri_star_uelyst", // unique id for this star
@@ -232,7 +239,6 @@ public class Uelyst {
         //Nocturne
         SectorEntityToken NocturneStation = system.addCustomEntity("vri_nocturne", "Nocturne", "vri_remnant_station", "vri");
         NocturneStation.setCircularOrbitPointingDown(UelystStar, 360f * (float) Math.random(), NocturneDist, 200);
-
         MarketAPI Nocturne_market = VRIGen.addMarketplace(
                 "vri",
                 NocturneStation,
@@ -275,6 +281,8 @@ public class Uelyst {
                 false);
         Nocturne_market.setSurveyLevel(MarketAPI.SurveyLevel.FULL);
         NocturneStation.setCustomDescriptionId("vri_Nocturne"); //reference descriptions.csv
+
+
         //Asteroid field
         SectorEntityToken UelystAF1 = system.addTerrain(Terrain.ASTEROID_FIELD,
                 new AsteroidFieldTerrainPlugin.AsteroidFieldParams(
@@ -337,6 +345,16 @@ public class Uelyst {
         system.addEntity(jumpPoint2);
 
         system.autogenerateHyperspaceJumpPoints(true, false);
+
+    }
+
+    @Override
+    public void reportFleetDespawnedToListener(CampaignFleetAPI fleet, CampaignEventListener.FleetDespawnReason reason, Object param) {
+
+    }
+
+    @Override
+    public void reportBattleOccurred(CampaignFleetAPI fleet, CampaignFleetAPI primaryWinner, BattleAPI battle) {
 
     }
 }
