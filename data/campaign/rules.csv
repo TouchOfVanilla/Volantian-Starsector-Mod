@@ -848,14 +848,13 @@ bluesteellore2,DialogOptionSelected,$option == bluesteellore2,,"Thankfully, the 
 
 This station was restored and automated in every facet as all crew were put into cryosleep, in the hopes that one day, the gates might open up again.",bluesteelfinish:Commence salvage operations,
 bluesteelfinish,DialogOptionSelected,$option == bluesteelfinish,FireBest CheckSalvageSpecial,,,
+,,,,,,
 #Aberdeen Contact Dialogue,,,,,,
 AberdeenPlanetInteraction,OpenInteractionDialog,"$id == aberdeen
 !$hasMarket","ShowDefaultVisual
-Highlight  ""former Volantian colony""
-FireAll AberdeenExploreOptions","The milky white orb of Aberdeen fills the viewport of your bridge as your fleet enters orbit. This calm and serene scene gives way to a violent, eternal storm that wracks the entire planet on a near-constant basis. Pure, unmolested sunlight is a luxury afforded only to the lucky- if anyone stuck on this former Volantian colony could be considered so.
+Highlight  ""former Volantian colony""","The milky white orb of Aberdeen fills the viewport of your bridge as your fleet enters orbit. This calm and serene scene gives way to a violent, eternal storm that wracks the entire planet on a near-constant basis. Pure, unmolested sunlight is a luxury afforded only to the lucky- if anyone stuck on this former Volantian colony could be considered so.
 
 The popping and buzzing of sporadic small-arms fire mingles with the scratchy static and detonations of lightning as you consider your options.",defaultLeave:Leave,
-aberdeenruinsexplore,AberdeenExploreOptions,,,,aberdeenexplore:Explore the ruins,
 ,,,,,,
 #vestige transponder off,,,,,,
 tOffPatrolOpenCommVestige,OpenCommLink,"!$entity.patrolAllowTOff
