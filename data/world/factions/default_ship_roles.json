@@ -12,6 +12,7 @@
 		"volantian_sandalphon_vri_Elite": 5, "volantian_sandalphon_vri_Standard": 5,
 		"volantian_vanguard_vi_Elite": 5, "volantian_vanguard_vi_Standard": 5,
 		"volantian_wolf_vri_Elite": 10,
+		"volantian_glint_Standard": 10,
 	},
 	"combatMedium": {
 		"volantian_condor_vi_Standard": 10,
@@ -23,6 +24,7 @@
 		"volantian_medusa_vri_Elite": 5, "volantian_medusa_vri_Standard": 5,
 		"volantian_prismatic_vri_Standard": 5, "volantian_prismatic_vri_Support": 5,
 		"volantian_sunder_vri_Elite": 5, "volantian_sunder_vri_Standard": 5,
+		"volantian_prismatic_Standard": 10
 	},
 	"combatLarge": {
 		"volantian_fury_vri_Standard": 10,
@@ -38,7 +40,8 @@
 		"volantian_sentinel_Elite": 5, "volantian_sentinel_Standard": 5,
 		"volantian_sentinel_vri_Standard": 10,
 		"volantian_edosea_vigilant": 5, "volantian_edosea_enduring": 5,
-
+		"volantian_chromatic_Standard": 5, "volantian_chromatic_Support": 5,
+		"volantian_glare_Standard": 5, "volantian_glare_Strike": 5,
 		"volantian_perennial_Vigilant": 3, "volantian_perennial_Enduring": 3,
 	},
 	"combatCapital": {
@@ -73,6 +76,7 @@
 		"volantian_gauntlet_vri_Standard": 5,
 		"volantian_kaleidoscope_vri_Standard": 10,
 		"volantian_heron_vi_Standard": 10,
+		"volantian_kaleidoscope_Standard": 10
 	},
 	"phaseSmall": {
 	},

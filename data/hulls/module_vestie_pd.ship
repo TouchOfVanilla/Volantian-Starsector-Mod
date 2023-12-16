@@ -1,0 +1,143 @@
+{
+    "hullName": "PD Bastion",
+    "hullId": "module_vestie_pd",
+    "hullSize": "FRIGATE",
+    "style": "VESTIGE",
+    "spriteName": "graphics/ships/stations/module_vestie_pd.png",
+    "height": 160,
+    "width": 160,
+    "center": [
+        80, 61
+    ],
+    "moduleAnchor": [
+        -37, 0
+    ],
+    "collisionRadius": 92,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 100,
+    "viewOffset": 0,
+    "builtInMods": [
+        "supercomputer",
+        "reduced_explosion",
+        "do_not_fire_through"
+    ],
+    "builtInWings": [],
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 240,
+            "angle": 60,
+            "locations": [
+                      16,       66
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "MEDIUM",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 200,
+            "angle": 45,
+            "locations": [
+                      19,       37
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "MEDIUM",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 200,
+            "angle": -45,
+            "locations": [
+                      20,      -37
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 240,
+            "angle": -60,
+            "locations": [
+                      17,      -65
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 240,
+            "angle": 30,
+            "locations": [
+                      44,       57
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 240,
+            "angle": -30,
+            "locations": [
+                      44,      -57
+            ]
+        },
+        {
+            "id": "WS 006",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 120,
+            "angle": 125,
+            "locations": [
+                      -6,       30
+            ]
+        },
+        {
+            "id": "WS 007",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 120,
+            "angle": 235,
+            "locations": [
+                      -6,      -30
+            ]
+        },
+        {
+            "id": "WS 008",
+            "size": "SMALL",
+            "type": "SYNERGY",
+            "mount": "TURRET",
+            "arc": 120,
+            "angle": 0,
+            "locations": [
+                      32,        0
+            ]
+        }
+    ],
+    "engineSlots": [],
+    "bounds": [
+              54,       61,
+              42,       25,
+              42,      -24,
+              54,      -61,
+               4,      -73,
+        
+              -6,      -47,
+             -33,      -38,
+             -34,       35,
+              -6,       46,
+               4,       74
+    ]
+}

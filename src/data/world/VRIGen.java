@@ -87,6 +87,7 @@ public class VRIGen implements SectorGeneratorPlugin {
     @Override
     public void generate(SectorAPI sector) {
         FactionAPI vri = sector.getFaction("vri");
+        FactionAPI vesties = sector.getFaction("vestige");
         new Uelyst().generate(sector);
         new Royce().generate(sector);
         new Avery().generate(sector);
@@ -116,5 +117,8 @@ public class VRIGen implements SectorGeneratorPlugin {
         vri.setRelationship(Factions.LIONS_GUARD, 0f); //Who are you people?!
         vri.setRelationship(Factions.HEGEMONY, -1f); //Stole our lunch money (and our former glory)
         vri.setRelationship(Factions.REMNANTS, 0f); //Officer, the radiant is not in my fleet, it is chasing me
+        vesties.setRelationship(Factions.REMNANTS, -1f); //we are different colors and therefore we must fight
+
+
     }
 }

@@ -19,7 +19,7 @@ import java.util.Map;
             for (FleetMemberAPI ship : fleet.getFleetData().getMembersListCopy()) {
                 Collection<String> mods = ship.getVariant().getHullMods();
                 for (String m : mods) {
-                    if (m.equals("VRI_FluxNetwork")) {
+                    if (m.equals("azorian_matrices")) {
                         hasMod = true;
                         break;
                     }

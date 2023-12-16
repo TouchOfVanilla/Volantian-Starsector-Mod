@@ -1,0 +1,211 @@
+{
+    "hullName": "Heavy Support Module",
+    "hullId": "module_vestie_support",
+    "hullSize": "FRIGATE",
+    "style": "VESTIGE",
+    "spriteName": "graphics/ships/stations/module_vestie_hangar.png",
+    "height": 124,
+    "width": 308,
+    "center": [
+        154, 58
+    ],
+    "moduleAnchor": [
+        -43, 0
+    ],
+    "collisionRadius": 180,
+    "coversColor": "",
+    "shieldCenter": [
+        -103, 0
+    ],
+    "shieldRadius": 230,
+    "viewOffset": 0,
+    "builtInMods": [
+        "supercomputer",
+        "reduced_explosion",
+        "chassis_storage",
+        "do_not_fire_through"
+    ],
+    "builtInWings": [],
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "MEDIUM",
+            "type": "COMPOSITE",
+            "mount": "TURRET",
+            "arc": 100,
+            "angle": 10,
+            "locations": [
+                     -23,      111
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "MEDIUM",
+            "type": "COMPOSITE",
+            "mount": "TURRET",
+            "arc": 140,
+            "angle": 10,
+            "locations": [
+                       6,       45
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "MEDIUM",
+            "type": "COMPOSITE",
+            "mount": "TURRET",
+            "arc": 140,
+            "angle": -10,
+            "locations": [
+                       6,      -45
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "MEDIUM",
+            "type": "COMPOSITE",
+            "mount": "TURRET",
+            "arc": 100,
+            "angle": -10,
+            "locations": [
+                     -23,     -111
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "SMALL",
+            "type": "COMPOSITE",
+            "mount": "TURRET",
+            "arc": 100,
+            "angle": 20,
+            "locations": [
+                     -18,      140
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "SMALL",
+            "type": "COMPOSITE",
+            "mount": "TURRET",
+            "arc": 150,
+            "angle": 30,
+            "locations": [
+                       8,      109
+            ]
+        },
+        {
+            "id": "WS 006",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 200,
+            "angle": 15,
+            "locations": [
+                      54,       50
+            ]
+        },
+        {
+            "id": "WS 007",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 200,
+            "angle": -15,
+            "locations": [
+                      54,      -50
+            ]
+        },
+        {
+            "id": "WS 008",
+            "size": "SMALL",
+            "type": "COMPOSITE",
+            "mount": "TURRET",
+            "arc": 150,
+            "angle": -30,
+            "locations": [
+                       8,     -109
+            ]
+        },
+        {
+            "id": "WS 009",
+            "size": "SMALL",
+            "type": "COMPOSITE",
+            "mount": "TURRET",
+            "arc": 120,
+            "angle": -20,
+            "locations": [
+                     -17,     -140
+            ]
+        },
+        {
+            "id": "WS 010",
+            "size": "SMALL",
+            "type": "LAUNCH_BAY",
+            "mount": "HARDPOINT",
+            "arc": 8,
+            "angle": 0,
+            "locations": [
+                      11,       91,
+                       1,       87,
+                      10,       67,
+                       0,       71
+            ]
+        },
+        {
+            "id": "WS 011",
+            "size": "SMALL",
+            "type": "LAUNCH_BAY",
+            "mount": "HARDPOINT",
+            "arc": 8,
+            "angle": 0,
+            "locations": [
+                      11,      -69,
+                      -8,      -70,
+                       9,      -89,
+                      -6,      -89
+            ]
+        },
+        {
+            "id": "WS 012",
+            "size": "SMALL",
+            "type": "LAUNCH_BAY",
+            "mount": "HARDPOINT",
+            "arc": 8,
+            "angle": 0,
+            "locations": [
+                      42,       26,
+                      30,       22,
+                      38,       15,
+                      29,       11
+            ]
+        },
+        {
+            "id": "WS 013",
+            "size": "SMALL",
+            "type": "LAUNCH_BAY",
+            "mount": "HARDPOINT",
+            "arc": 8,
+            "angle": 0,
+            "locations": [
+                      37,      -11,
+                      27,      -13,
+                      40,      -22,
+                      30,      -23
+            ]
+        }
+    ],
+    "engineSlots": [],
+    "bounds": [
+             -15,      151,
+              29,       98,
+              22,       63,
+              57,       57,
+              57,      -55,
+        
+              22,      -62,
+              28,      -99,
+             -16,     -148,
+             -41,     -139,
+             -41,      141
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 0,
+    "fluxVents": 0,
+    "goalVariant": false,
+    "hullId": "module_vestie_support",
+    "hullMods": [],
+    "quality": 0.0,
+    "variantId": "module_vestie_support_standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 003": "phasecl",
+                "WS 000": "phasecl"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "hveldriver",
+                "WS 001": "hveldriver"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "vulcan",
+                "WS 009": "vulcan",
+                "WS 007": "vulcan",
+                "WS 006": "vulcan"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 008": "sabot",
+                "WS 005": "sabot"
+            }
+        }
+    ],
+    "wings": [
+        "volantian_tome_wing",
+        "volantian_tome_wing",
+        "dagger_wing",
+        "dagger_wing"
+    ]
+}

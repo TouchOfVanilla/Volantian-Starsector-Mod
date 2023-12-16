@@ -1,74 +1,90 @@
 {
-  "hullName": "Volantian Converted Nexus Rampart",
-  "hullId": "vri_remnant_weapon_platform_3",
-  "hullSize": "FRIGATE",
-  "spriteName": "graphics/ships/stations/vri_remnant_weapon_platform3.png",
-  "style": "VOLANTIAN",
-  "height": 96,
-  "width": 96,
-  "center": [48, 49],
-  "collisionRadius": 67,
-  "shieldCenter": [1, 0],
-  "shieldRadius": 67,
-  "viewOffset": 0,
-  "builtInMods": [
-    "supercomputer",
-    "reduced_explosion",
-    "VRI_FluxNetwork"
-  ],
-  "weaponSlots": [
-    {
-      "id": "WS 001",
-      "size": "LARGE",
-      "type": "ENERGY",
-      "mount": "TURRET",
-      "arc": 150,
-      "angle": 34,
-      "locations": [-12, 2]
-    },
-    {
-      "id": "WS 002",
-      "size": "MEDIUM",
-      "type": "HYBRID",
-      "mount": "TURRET",
-      "arc": 170,
-      "angle": 6,
-      "locations": [6, -29]
-    },
-    {
-      "id": "WS 003",
-      "size": "SMALL",
-      "type": "ENERGY",
-      "mount": "TURRET",
-      "arc": 190,
-      "angle": -4,
-      "locations": [23, -4]
-    },
-    {
-      "id": "WS 004",
-      "size": "SMALL",
-      "type": "HYBRID",
-      "mount": "TURRET",
-      "arc": 210,
-      "angle": 46,
-      "locations": [15, 20]
-    },
-    {
-      "id": "WS 005",
-      "size": "SMALL",
-      "type": "ENERGY",
-      "mount": "TURRET",
-      "arc": 150,
-      "angle": 66,
-      "locations": [-11, 28]
-    }
-  ],
-  "engineSlots": [],
-  "bounds": [
-    -17, 40,
-    27, 24,
-    34, -18,
-    -5, -40,
-    -41, -8
-  ]
+    "hullName": "Volantian Converted Nexus Rampart",
+    "hullId": "vri_remnant_weapon_platform_3",
+    "hullSize": "FRIGATE",
+    "style": "VOLANTIAN",
+    "spriteName": "../mods/Volantian-Starsector-Mod-0.4.1/graphics/ships/stations/vri_remnant_weapon_platform3.png",
+    "height": 96,
+    "width": 96,
+    "center": [
+        48, 49
+    ],
+    "collisionRadius": 67,
+    "coversColor": "",
+    "shieldCenter": [
+        1, 0
+    ],
+    "shieldRadius": 67,
+    "viewOffset": 0,
+    "builtInMods": [
+        "supercomputer",
+        "reduced_explosion",
+        "azorian"
+    ],
+    "builtInWings": [],
+    "weaponSlots": [
+        {
+            "id": "WS 001",
+            "size": "LARGE",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 150,
+            "angle": 34,
+            "locations": [
+                     -12,        2
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "MEDIUM",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 170,
+            "angle": 6,
+            "locations": [
+                       6,      -29
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 190,
+            "angle": -4,
+            "locations": [
+                      23,       -4
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 210,
+            "angle": 46,
+            "locations": [
+                      15,       20
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 150,
+            "angle": 66,
+            "locations": [
+                     -11,       28
+            ]
+        }
+    ],
+    "engineSlots": [],
+    "bounds": [
+             -17,       40,
+              27,       24,
+              34,      -18,
+              -5,      -40,
+             -41,       -8
+    ]
 }

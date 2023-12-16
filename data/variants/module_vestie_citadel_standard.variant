@@ -1,0 +1,44 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 0,
+    "fluxVents": 0,
+    "goalVariant": false,
+    "hullId": "module_vestie_citadel",
+    "hullMods": [],
+    "quality": 0.0,
+    "variantId": "module_vestie_citadel_standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "mjolnir"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "mark9",
+                "WS 000": "mark9"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "ionbeam",
+                "WS 003": "ionbeam"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 007": "vulcan",
+                "WS 006": "vulcan",
+                "WS 005": "vulcan"
+            }
+        }
+    ]
+}

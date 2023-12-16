@@ -549,7 +549,8 @@ VRIPlayerFleetHasHullmod
 RollProbability 0.25 score:10
 !$global.vri_blancheBarCooldown
 !$player.CompliedWithBlancheOffer
-!$player.RefusedBlancheOffer","BeginMission vribar false
+!$player.RefusedBlancheOffer
+VRIIsBlancheEnabled","BeginMission vribar false
 $option = vribart0 0
 $global.vri_blancheBarCooldown = true 15",You take a shuttle down to a dockside bar and quickly find a likely-looking establishment. You survey the patrons.,vribar0:Continue,
 vribar0,DialogOptionSelected,$option == vribar0,,"As you sit down at the bar, a cat-eared spacer approaches you and takes the seat next to yours. It's easy to tell by their uptight demeanor and 'worn' vacsuit that they're an agent or clandestine operative of some sort- you give a silent signal to one of your plainclothes bodyguards, present for the appropriate establishments, to be on alert.",vribar1:Continue,
@@ -807,8 +808,10 @@ Furthermore, you aren't the first ones to have set foot on Eminence post-calamit
 Regardless, you now possess the full survey data for Eminence.",defaultLeave:Leave,
 ,,,,,,
 #bluesteel interaction,,,,,,
-sal_VIDerelict,CheckSalvageSpecial,VRIDerelictIsVI,"ShowDefaultVisual
-VRIGenFevaliMemo",,,
+sal_VIDerelict,CheckSalvageSpecial,"VRIDerelictIsVI
+$player.hasFevaliBreadcrumb == false","ShowDefaultVisual
+VRIGenFevaliMemo
+$player.hasFevaliBreadcrumb = true",,,
 sal_triggerSurveyShipDefenders,TriggerAutomatedDefenses,$customType == bluesteel_bastion score:10,SalvageDefenderInteraction,"As your $shipOrFleet moves in closer, multiple energy signatures flare to life as hulls peel away from the station's hangars, forming a protective shell around it.",,
 sal_continuePostDefendersBluesteel,BeatDefendersContinue,$faction.id == vi,,"As your $shipOrFleet finishes mopping up the automated defenses, your salvage chief reports in. Supposedly, the floating hulks of debris were crudely automated Sixth Battlegroup hulls. Perhaps there is an opportunity to recover some unique ships.
 
@@ -857,7 +860,7 @@ aberdeenruinsexplore,AberdeenExploreOptions,,,,aberdeenexplore:Explore the ruins
 #vestige transponder off,,,,,,
 tOffPatrolOpenCommVestige,OpenCommLink,"!$entity.patrolAllowTOff
 $entity.transponderOffConv score:100
-$faction.id == vestige","AddText ""\"" Greetings, citizen! Your transponder is legally required to be active in the space belonging to ///The Domain of Man///. Please engage it at the earliest convenience and submit for a cargo scan.\""""
+$faction.id == vestige","AddText ""\"" Greetings, citizen! Your transponder is legally required to be active in the space belonging to INPUT:///THE DOMAIN OF MAN///. Please engage it at the earliest convenience and submit for a cargo scan.\""""
 AdjustRep $faction.id TRANSPONDER_OFF
 AdjustRepActivePerson TRANSPONDER_OFF
 SetStoryOption avoid_scan 1 avoidCargoScan ui_char_spent_story_point ""Talked your way out of a cargo scan""",,"0:tOff_comply:Turn the transponder on and comply
@@ -875,21 +878,18 @@ $sourceMarket.smugglingScanTimeout = true 30","For some unknown reason, the arti
 
 It quickly recognizes your intent and maneuvers its fleet into a combative posture, cutting the comm-link.",,
 ,,,,,,
-beggarInit,DialogOptionSelected,$option == marketVisitBar,DoCanAffordCheck 1 beggar_yes false,"On your way to the bar, you are accosted by a beggar. He asks for one credit.","beggar1:Give the beggar a credit
-beggar2:Continue to the bar",
-beggar1,DialogOptionSelected,$option == beggar1,"RemoveCommodity credits 1
-FireBest BarShuttleDownPrintDesc
-FireBest BarPrintDesc
-BarCMD showOptions","""Aw thanks man thats cool""
-
-you leave for the bar",,
-beggar2,DialogOptionSelected,$option == beggar2,"FireBest BarShuttleDownPrintDesc
-FireBest BarPrintDesc
-BarCMD showOptions","""Dangit""
-
-you leave for the bar",,
+#vestige derelict breadcrumb,,,,,,
+sal_VestieDerelict,CheckSalvageSpecial,"VRIDerelictIsVestie
+$player.hasVestieBreadcrumb == false","ShowDefaultVisual
+VRIGenVestieBreadcrumb
+$player.hasVestieBreadcrumb = true",,,
 ,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
+#vestige comm-link,,,,,,
+greetingVestieFriendly,OpenCommLink,"$faction.id == vestige score:1000
+$faction.friendlyToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""IFF Registered. Greetings, citizen! This unit is currently representing the interstellar security and defense interests of INPUT:///THE DOMAIN OF MAN///. Please requisition our services if you encounter any threats to the security of this star system. Have a safe day.""",,
+greetingVestieHostile,OpenCommLink,"$faction.id == vestige score:1000
+$entity.isHostile",$entity.ignorePlayerCommRequests = true 1,"""IFF Registered. Greetings, citizen! This unit is currently representing the interstellar security and defense interests of INPUT:///THE DOMAIN OF MAN///. Please do not interfere with any of the operations conducted by this unit. Have a safe day.""",cutCommLink:Cut the comm link,
+greetingVestieNeutral,OpenCommLink,"$faction.id == vestige score:1000
+$faction.neutralToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""IFF Registered. Greetings, citizen! This unit is currently representing the interstellar security and defense interests of INPUT:///THE DOMAIN OF MAN///. This unit has been authorized to conduct INPUT:///ELIMINATION OF VERIFIED THREAT///. Please do not resist. Have a safe day.",,

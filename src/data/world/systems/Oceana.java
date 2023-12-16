@@ -23,7 +23,7 @@ public class Oceana {
         system.setBackgroundTextureFilename("graphics/backgrounds/vribg1.jpg");
         PlanetAPI oceanastar = system.initStar("oceana",StarTypes.BLUE_GIANT, 550f, 700, 10f, 0.7f, 5f);
 
-        PlanetAPI sylvana = system.addPlanet("vri_planet_suba1",
+        PlanetAPI sylvana = system.addPlanet("vri_planet_sylvana",
                 oceanastar,
                 "Sylvana",
                 "gas_giant",
@@ -111,6 +111,11 @@ public class Oceana {
                 true
         );
 Elsatia.setCustomDescriptionId("vri_elsatia"); //reference descriptions.csv
+        SectorEntityToken oceana_gate = system.addCustomEntity("oceana_gate", // unique id
+                "Oceana Gate", // name - if null, defaultName from custom_entities.json will be used
+                "inactive_gate", // type of object, defined in custom_entities.json
+                null); // faction
+        oceana_gate.setCircularOrbit(Elsatia, 230-180, 500, 90);
 
         float radiusAfter = StarSystemGenerator.addOrbitingEntities(system, oceanastar, StarAge.OLD,
                 3, 5, // min/max entities to add

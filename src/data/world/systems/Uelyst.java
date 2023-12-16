@@ -17,6 +17,7 @@ import com.fs.starfarer.api.impl.campaign.events.OfficerManagerEvent;
 import com.fs.starfarer.api.impl.campaign.fleets.FleetFactoryV3;
 import com.fs.starfarer.api.impl.campaign.fleets.FleetParamsV3;
 import com.fs.starfarer.api.impl.campaign.ids.*;
+import com.fs.starfarer.api.impl.campaign.procgen.StarAge;
 import com.fs.starfarer.api.impl.campaign.terrain.AsteroidFieldTerrainPlugin;
 import com.fs.starfarer.api.impl.campaign.terrain.BaseRingTerrain;
 import com.fs.starfarer.api.util.Misc;
@@ -51,6 +52,12 @@ public class Uelyst implements FleetEventListener {
         system.setEnteredByPlayer(true);
         system.setBackgroundTextureFilename("graphics/backgrounds/vribg1.jpg");
         Misc.setAllPlanetsSurveyed(system, true);
+        SectorEntityToken uelyst_nebula = Misc.addNebulaFromPNG("data/campaign/terrain/uelyst_nebula.png",
+                0, 0, // center of nebula
+                system, // location to add to
+                "terrain", "nebula_blue", // "nebula_blue", // texture to use, uses xxx_map for map
+                4, 4, StarAge.YOUNG); // number of cells in texture
+
 
         PlanetAPI UelystStar = system.initStar("vri_star_uelyst", // unique id for this star
                 "star_blue_supergiant", // id in planets.json

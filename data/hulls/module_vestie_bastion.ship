@@ -1,0 +1,118 @@
+{
+    "hullName": "Bastion",
+    "hullId": "module_vestie_bastion",
+    "hullSize": "FRIGATE",
+    "style": "VESTIGE",
+    "spriteName": "graphics/ships/stations/module_vestie_bastion.png",
+    "height": 116,
+    "width": 162,
+    "center": [
+        81, 48
+    ],
+    "moduleAnchor": [
+        -34, 0
+    ],
+    "collisionRadius": 142,
+    "coversColor": "",
+    "shieldCenter": [
+        -13, 0
+    ],
+    "shieldRadius": 130,
+    "viewOffset": 0,
+    "builtInMods": [
+        "supercomputer",
+        "reduced_explosion",
+        "do_not_fire_through"
+    ],
+    "builtInWings": [],
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "MEDIUM",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 150,
+            "angle": 30,
+            "locations": [
+                      -6,       47
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "LARGE",
+            "type": "MISSILE",
+            "mount": "TURRET",
+            "arc": 90,
+            "angle": 10,
+            "locations": [
+                      25,       22
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "LARGE",
+            "type": "MISSILE",
+            "mount": "TURRET",
+            "arc": 90,
+            "angle": -10,
+            "locations": [
+                      25,      -22
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "MEDIUM",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 150,
+            "angle": -30,
+            "locations": [
+                      -5,      -47
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 170,
+            "angle": 30,
+            "locations": [
+                      37,       56
+            ]
+        },
+        {
+            "id": "WS 006",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 170,
+            "angle": 0,
+            "locations": [
+                      50,        0
+            ]
+        },
+        {
+            "id": "WS 007",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 170,
+            "angle": -30,
+            "locations": [
+                      37,      -56
+            ]
+        }
+    ],
+    "engineSlots": [],
+    "bounds": [
+              35,       69,
+              53,       23,
+              53,      -20,
+              35,      -70,
+             -14,      -73,
+        
+             -39,        1,
+             -13,       74
+    ]
+}

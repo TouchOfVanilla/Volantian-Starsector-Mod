@@ -5,6 +5,7 @@ import com.fs.starfarer.api.campaign.AICoreOfficerPlugin;
 import com.fs.starfarer.api.campaign.econ.CommoditySpecAPI;
 import com.fs.starfarer.api.characters.FullName;
 import com.fs.starfarer.api.characters.PersonAPI;
+import com.fs.starfarer.api.impl.campaign.ids.Personalities;
 import com.fs.starfarer.api.impl.campaign.ids.Ranks;
 import com.fs.starfarer.api.ui.Alignment;
 import com.fs.starfarer.api.ui.TooltipMakerAPI;
@@ -45,7 +46,7 @@ public class VRICoreOfficerPlugin extends BaseAICoreOfficerPluginImpl implements
             mult = BETA_MULT;
         }
         person.getMemoryWithoutUpdate().set("$autoPointsMult", mult);
-        person.setPersonality("steady");
+        person.setPersonality(Personalities.STEADY);
         person.setRankId(Ranks.SPACE_CAPTAIN);
         person.setPostId((String)null);
         person.getStats().setSkipRefresh(false);

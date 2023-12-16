@@ -41,6 +41,13 @@ public class Royce {
         system.setEnteredByPlayer(true);
         Misc.setAllPlanetsSurveyed(system, true);
 
+        SectorEntityToken royce_nebula = Misc.addNebulaFromPNG("data/campaign/terrain/royce_nebula.png",
+                0, 0, // center of nebula
+                system, // location to add to
+                "terrain", "nebula_blue", // "nebula_blue", // texture to use, uses xxx_map for map
+                4, 4, StarAge.YOUNG); // number of cells in texture
+
+
         PlanetAPI RoyceStar = system.initStar("vri_star_royce", // unique id for this star
                 "star_yellow", // id in planets.json
                 500f,        // radius (in pixels at default zoom)

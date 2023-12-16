@@ -1,0 +1,125 @@
+{
+    "hullName": "Heavy Station Battery",
+    "hullId": "module_vestie_citadel",
+    "hullSize": "FRIGATE",
+    "style": "VESTIGE",
+    "spriteName": "graphics/ships/stations/module_vestie_citadel.png",
+    "height": 128,
+    "width": 150,
+    "center": [
+        74, 65
+    ],
+    "moduleAnchor": [
+        -49, 0
+    ],
+    "collisionRadius": 175,
+    "coversColor": "",
+    "shieldCenter": [
+        -108, 0
+    ],
+    "shieldRadius": 220,
+    "viewOffset": 0,
+    "builtInMods": [
+        "supercomputer",
+        "reduced_explosion"
+    ],
+    "builtInWings": [],
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "LARGE",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 90,
+            "angle": 20,
+            "locations": [
+                     -14,       37
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "LARGE",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 90,
+            "angle": 0,
+            "locations": [
+                      11,        0
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "LARGE",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 90,
+            "angle": -20,
+            "locations": [
+                     -13,      -37
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "MEDIUM",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 120,
+            "angle": 20,
+            "locations": [
+                      25,       33
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "MEDIUM",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 120,
+            "angle": -20,
+            "locations": [
+                      25,      -33
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 120,
+            "angle": 20,
+            "locations": [
+                      24,       59
+            ]
+        },
+        {
+            "id": "WS 006",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 120,
+            "angle": 0,
+            "locations": [
+                      50,        0
+            ]
+        },
+        {
+            "id": "WS 007",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 120,
+            "angle": -20,
+            "locations": [
+                      23,      -59
+            ]
+        }
+    ],
+    "engineSlots": [],
+    "bounds": [
+              24,       67,
+              53,        0,
+              23,      -65,
+             -38,      -59,
+             -37,       60
+    ]
+}

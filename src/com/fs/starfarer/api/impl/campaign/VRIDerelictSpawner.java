@@ -47,10 +47,13 @@ public VRIDerelictSpawner(){
         variants.add("volantian_lasher_vi_Standard");
         variants.add("volantian_dominator_vi_Standard");
         variants.add("volantian_heron_vi_Standard");
+        variants.add("volantian_enforcer_vi_Standard");
+        variants.add("volantian_condor_vi_Standard");
+        variants.add("volantian_vanguard_vi_Standard");
         Iterator gudeplanetiter = gudeplanets.iterator();
         while (gudeplanetiter.hasNext()){
             PlanetAPI chosenplanet = (PlanetAPI)gudeplanetiter.next();
-            Integer arraynumber = MathUtils.getRandomNumberInRange(0,5);
+            Integer arraynumber = MathUtils.getRandomNumberInRange(0,8);
             String variant = (String) variants.get(arraynumber);
             ShipVariantAPI botevar = Global.getSettings().getVariant(variant);
             String bote = botevar.getHullVariantId();
@@ -58,7 +61,6 @@ public VRIDerelictSpawner(){
             FactionAPI faction = Global.getSector().getFaction("independent");
             String name = faction.pickRandomShipName();
             SectorEntityToken boat = TTBlackSite.addDerelict(chosenplanet.getStarSystem(), chosenplanet, variant, name, bote, ShipRecoverySpecial.ShipCondition.AVERAGE, orbitradius, true );
-            boat.addTag("vi_derelict");
             log.info("Generated a " + bote + " in orbit of " + chosenplanet.getName() + " in the " + chosenplanet.getStarSystem().getName() + " system.");
         }
 

@@ -1,0 +1,57 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 0,
+    "fluxVents": 0,
+    "goalVariant": false,
+    "hullId": "module_vestie_broadside",
+    "hullMods": [],
+    "quality": 0.0,
+    "variantId": "module_vestie_broadside_standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 006": "mjolnir",
+                "WS 004": "mjolnir",
+                "WS 002": "mjolnir",
+                "WS 021": "lightneedler",
+                "WS 017": "lightneedler"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 008": "mark9",
+                "WS 000": "mark9",
+                "WS 003": "mark9",
+                "WS 005": "mark9",
+                "WS 007": "hephag",
+                "WS 001": "hephag"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 011": "ionbeam",
+                "WS 014": "ionbeam",
+                "WS 010": "gravitonbeam",
+                "WS 015": "gravitonbeam",
+                "WS 013": "gravitonbeam",
+                "WS 012": "gravitonbeam"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 016": "vulcan",
+                "WS 018": "vulcan",
+                "WS 019": "vulcan",
+                "WS 020": "vulcan"
+            }
+        }
+    ]
+}

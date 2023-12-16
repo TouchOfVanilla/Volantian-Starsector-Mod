@@ -122,7 +122,7 @@
       "width": 25,
       "angle": 180,
       "contrailSize": 25,
-      "style": "LOW_TECH"
+      "style": "VESTIGE"
     },
     {
       "location": [-111.5, -17],
@@ -130,55 +130,55 @@
       "width": 25,
       "angle": -180,
       "contrailSize": 25,
-      "style": "LOW_TECH"
+      "style": "VESTIGE"
     },
     {
       "location": [-65.5, 95],
-      "length": 54.211964,
-      "width": 20.130873,
+      "length": 54.209999,
+      "width": 20.129999,
       "angle": 160,
-      "contrailSize": 20.130873,
-      "style": "LOW_TECH"
+      "contrailSize": 20.129999,
+      "style": "VESTIGE"
     },
     {
       "location": [-65.5, -95],
-      "length": 54.211964,
-      "width": 20.130873,
+      "length": 54.209999,
+      "width": 20.129999,
       "angle": -160,
-      "contrailSize": 20.130873,
-      "style": "LOW_TECH"
+      "contrailSize": 20.129999,
+      "style": "VESTIGE"
     },
     {
       "location": [-60, 106],
-      "length": 55.515934,
-      "width": 21.375778,
+      "length": 55.520001,
+      "width": 21.379999,
       "angle": 152,
-      "contrailSize": 21.375778,
-      "style": "LOW_TECH"
+      "contrailSize": 21.379999,
+      "style": "VESTIGE"
     },
     {
       "location": [-60, -106],
-      "length": 55.515934,
-      "width": 21.375778,
+      "length": 55.520001,
+      "width": 21.379999,
       "angle": -152,
-      "contrailSize": 21.375778,
-      "style": "LOW_TECH"
+      "contrailSize": 21.379999,
+      "style": "VESTIGE"
     },
     {
       "location": [49, 79],
-      "length": 55.153122,
-      "width": 16.386972,
+      "length": 55.150002,
+      "width": 16.389999,
       "angle": 139,
-      "contrailSize": 16.386972,
-      "style": "LOW_TECH"
+      "contrailSize": 16.389999,
+      "style": "VESTIGE"
     },
     {
       "location": [49, -79],
-      "length": 55.153122,
-      "width": 16.386972,
+      "length": 55.150002,
+      "width": 16.389999,
       "angle": -139,
-      "contrailSize": 16.386972,
-      "style": "LOW_TECH"
+      "contrailSize": 16.389999,
+      "style": "VESTIGE"
     },
     {
       "location": [-114.5, -0],
@@ -186,7 +186,7 @@
       "width": 21,
       "angle": 180,
       "contrailSize": 21,
-      "style": "LOW_TECH"
+      "style": "VESTIGE"
     }
   ],
   "bounds": [

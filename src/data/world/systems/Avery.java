@@ -6,6 +6,7 @@ import com.fs.starfarer.api.campaign.econ.MarketAPI;
 import com.fs.starfarer.api.characters.FullName;
 import com.fs.starfarer.api.characters.PersonAPI;
 import com.fs.starfarer.api.impl.campaign.ids.*;
+import com.fs.starfarer.api.impl.campaign.procgen.StarAge;
 import com.fs.starfarer.api.impl.campaign.procgen.StarSystemGenerator;
 import com.fs.starfarer.api.impl.campaign.rulecmd.salvage.special.ShipRecoverySpecial;
 import com.fs.starfarer.api.impl.campaign.terrain.DebrisFieldTerrainPlugin;
@@ -38,6 +39,12 @@ public class Avery {
         StarSystemAPI system = sector.createStarSystem("Avery");
         system.getLocation().set(22000, -25000);
         //system.setLightColor(new Color(31,247,182, 100));
+        SectorEntityToken avery_nebula = Misc.addNebulaFromPNG("data/campaign/terrain/avery_nebula.png",
+                0, 0, // center of nebula
+                system, // location to add to
+                "terrain", "nebula_blue", // "nebula_blue", // texture to use, uses xxx_map for map
+                4, 4, StarAge.YOUNG); // number of cells in texture
+
 
         PlanetAPI AveryStar = system.initStar("vri_star_Avery", // unique id for this star
                 "star_orange", // id in planets.json
