@@ -2,7 +2,7 @@
   "hullName": "Gauntlet (VRI)",
   "hullId": "volantian_gauntlet_vri",
   "hullSize": "CRUISER",
-  "spriteName": "../mods/Volantian-Starsector-Mod-0.4.1/graphics/ships/gauntlet_vri.png",
+  "spriteName": "graphics/ships/gauntlet_vri.png",
   "style": "VOLANTIAN",
   "height": 235,
   "width": 148,

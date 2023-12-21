@@ -1,0 +1,15 @@
+{
+	"id":"vestigial_augmentation",
+	"governingAptitude":"technology",
+	"compressHullmods":false,
+	"scope":"PILOTED_SHIP",
+	"effectGroups":[
+		{
+			"requiredSkillLevel":1,
+			"effectBasedOnLevel":false,
+			"effects":[
+				{"type":"SHIP", "script":"com.fs.starfarer.api.impl.campaign.skills.VRIVestigeCoreOfficerSkill$Level1"},
+			]
+		},
+	],
+}

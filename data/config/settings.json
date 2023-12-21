@@ -24,7 +24,8 @@
 "delilah": "graphics/portraits/delilah1.png",
 "milasha": "graphics/portraits/milasha1.png",
 "iris": "graphics/portraits/iris1.png",
-"volcore": "graphics/portraits/volcore.png"
+"volcore": "graphics/portraits/volcore.png",
+	"vestcore": "graphics/portraits/tism_core.png"
 },
 "blueprint_packages": {
 "VRI_package": "graphics/icons/cargo/vri_bp.png",

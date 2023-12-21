@@ -10,6 +10,9 @@ public class VRICampaignPluginImpl extends BaseCampaignPlugin {
         if ("volantian_core".equals(commodityId)) {
             return new PluginPick<AICoreOfficerPlugin>(new VRICoreOfficerPlugin(), PickPriority.MOD_SET);
         }
+        if ("vestige_core".equals(commodityId)) {
+            return new PluginPick<AICoreOfficerPlugin>(new VRICoreOfficerPlugin(), PickPriority.MOD_SET);
+        }
         else{
             return null;
         }

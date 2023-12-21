@@ -6,13 +6,16 @@ import com.fs.starfarer.api.campaign.SectorEntityToken;
 import com.fs.starfarer.api.campaign.StarSystemAPI;
 import com.fs.starfarer.api.campaign.ai.CampaignFleetAIAPI;
 import com.fs.starfarer.api.combat.BattleCreationContext;
+import com.fs.starfarer.api.fleet.FleetMemberAPI;
 import com.fs.starfarer.api.impl.campaign.FleetInteractionDialogPluginImpl;
+import com.fs.starfarer.api.impl.campaign.VRICoreOfficerPlugin;
 import com.fs.starfarer.api.impl.campaign.fleets.FleetFactoryV3;
 import com.fs.starfarer.api.impl.campaign.fleets.FleetParamsV3;
 import com.fs.starfarer.api.impl.campaign.fleets.SeededFleetManager;
 import com.fs.starfarer.api.impl.campaign.procgen.StarSystemGenerator;
 import com.fs.starfarer.api.util.Misc;
 import com.fs.starfarer.api.util.WeightedRandomPicker;
+import org.lazywizard.lazylib.MathUtils;
 import org.lwjgl.util.vector.Vector2f;
 
 import java.util.Iterator;
@@ -89,7 +92,7 @@ public class VRIVestigeSeededFleetManager extends SeededFleetManager {
             } else {
                 fleet.addScript(new VRIVestigeAssignmentAI(fleet, this.system, (SectorEntityToken)null));
             }
-
+            addVestCoresToFleet(fleet);
             return fleet;
         }
     }
@@ -165,6 +168,18 @@ public class VRIVestigeSeededFleetManager extends SeededFleetManager {
                 }
             };
             return config;
+        }
+    }
+    public static void addVestCoresToFleet(CampaignFleetAPI fleet){
+        fleet.setCommander(new VRICoreOfficerPlugin().createPerson("vestige_core", "vestige", new Random()));
+        Iterator memiter = fleet.getFleetData().getMembersListCopy().iterator();
+        while (memiter.hasNext()){
+            FleetMemberAPI member = (FleetMemberAPI) memiter.next();
+            float prob = MathUtils.getRandomNumberInRange(0f,100f);
+            if ((prob >= 60f) || member.isCapital()) {
+                member.setCaptain(new VRICoreOfficerPlugin().createPerson("vestige_core", "vestige", new Random()));
+                member.getVariant().geto
+            }
         }
     }
 }

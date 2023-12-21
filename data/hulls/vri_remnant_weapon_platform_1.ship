@@ -3,7 +3,7 @@
     "hullId": "vri_remnant_weapon_platform_1",
     "hullSize": "FRIGATE",
     "style": "VOLANTIAN",
-    "spriteName": "../mods/Volantian-Starsector-Mod-0.4.1/graphics/ships/stations/vri_remnant_weapon_platform1.png",
+    "spriteName": "graphics/ships/stations/vri_remnant_weapon_platform1.png",
     "height": 240,
     "width": 240,
     "center": [

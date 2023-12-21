@@ -24,13 +24,13 @@ public class VRIFleetInflationListener implements FleetInflationListener {
 
         for (FleetMemberAPI fleetMemberAPI : fleet.getMembersWithFightersCopy()) {
             boolean vricombat = fleetMemberAPI.getHullSpec().getBuiltInMods().contains(VOLAUX);
-            boolean chance = (Math.random() < CHANCE);
+            boolean chance = (Math.random() > CHANCE);
 
             if(fleetMemberAPI.isFighterWing())continue;
             if(fleetMemberAPI.isStation())continue;
             if(fleetMemberAPI.isMothballed())continue;
-            if(vricombat)continue;
-            if(!chance)continue;
+            if(!vricombat)continue;
+            if(chance)continue;
 
             int SModsAmount = (determineAmountofSmods(fleet.getFaction()));
             fleetMemberAPI.getStats().getDynamic().getMod(Stats.MAX_PERMANENT_HULLMODS_MOD).modifyFlat("VolInflation", (SModsAmount));

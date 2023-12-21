@@ -2,7 +2,7 @@
   "hullName": "Perennial",
   "hullId": "volantian_perennial",
   "hullSize": "CRUISER",
-  "spriteName": "../mods/Volantian-Starsector-Mod-0.4.1/graphics/ships/vestiges/perennial.png",
+  "spriteName": "graphics/ships/vestiges/perennial.png",
   "style": "VESTIGE",
   "coversColor": "255,255,255,255",
   "height": 252,

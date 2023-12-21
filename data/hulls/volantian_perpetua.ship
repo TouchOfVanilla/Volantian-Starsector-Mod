@@ -2,7 +2,7 @@
   "hullName": "Perpetua",
   "hullId": "volantian_perpetua",
   "hullSize": "DESTROYER",
-  "spriteName": "../mods/Volantian-Starsector-Mod-0.4.1/graphics/ships/vestiges/perpetua.png",
+  "spriteName": "graphics/ships/vestiges/perpetua.png",
   "style": "VESTIGE",
   "height": 111,
   "width": 212,

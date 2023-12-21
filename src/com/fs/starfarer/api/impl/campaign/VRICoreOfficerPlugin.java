@@ -13,8 +13,7 @@ import com.fs.starfarer.api.ui.TooltipMakerAPI;
 import java.awt.*;
 import java.util.Random;
 
-import static com.fs.starfarer.api.impl.campaign.AICoreOfficerPluginImpl.BETA_MULT;
-import static com.fs.starfarer.api.impl.campaign.AICoreOfficerPluginImpl.BETA_POINTS;
+import static com.fs.starfarer.api.impl.campaign.AICoreOfficerPluginImpl.*;
 
 public class VRICoreOfficerPlugin extends BaseAICoreOfficerPluginImpl implements AICoreOfficerPlugin{
 
@@ -26,6 +25,7 @@ public class VRICoreOfficerPlugin extends BaseAICoreOfficerPluginImpl implements
         person.setFaction(factionId);
         person.setAICoreId(aiCoreId);
         boolean VolCore = "volantian_core".equals(aiCoreId);
+        boolean VestCore = "vestige_core".equals(aiCoreId);
         CommoditySpecAPI spec = Global.getSettings().getCommoditySpec(aiCoreId);
         person.getStats().setSkipRefresh(true);
         person.setName(new FullName(spec.getName(), "", FullName.Gender.ANY));
@@ -45,8 +45,24 @@ public class VRICoreOfficerPlugin extends BaseAICoreOfficerPluginImpl implements
             points = BETA_POINTS;
             mult = BETA_MULT;
         }
+        if (VestCore) {
+            person.getStats().setLevel(3);
+            person.getStats().setSkillLevel("helmsmanship", 2.0F);
+            person.getStats().setSkillLevel("target_analysis", 2.0F);
+            person.getStats().setSkillLevel("impact_mitigation", 2.0F);
+            person.getStats().setSkillLevel("vestigial_augmentation", 1.0F);
+            person.setPortraitSprite(Global.getSettings().getSpriteName("characters", "vestcore"));
+
+            points = ALPHA_POINTS;
+            mult = ALPHA_MULT;
+        }
         person.getMemoryWithoutUpdate().set("$autoPointsMult", mult);
-        person.setPersonality(Personalities.STEADY);
+        if (VolCore) {
+            person.setPersonality(Personalities.CAUTIOUS);
+        }
+        if (!VolCore){
+            person.setPersonality(Personalities.RECKLESS);
+        }
         person.setRankId(Ranks.SPACE_CAPTAIN);
         person.setPostId((String)null);
         person.getStats().setSkipRefresh(false);
@@ -58,8 +74,13 @@ public class VRICoreOfficerPlugin extends BaseAICoreOfficerPluginImpl implements
         Color text = person.getFaction().getBaseUIColor();
         Color bg = person.getFaction().getDarkUIColor();
         CommoditySpecAPI spec = Global.getSettings().getCommoditySpec(person.getAICoreId());
-        tooltip.addSectionHeading("Personality: steady", text, bg, Alignment.MID, 20.0F);
-        tooltip.addPara("In combat, the " + spec.getName() + " is effective, yet self-restrained, unlike other cores. " + "This remarkable demonstration of self-preservation may prolong the operational lifespan of your droneships.", opad);
+        if (spec.getId().equals("volantian_core")) {
+            tooltip.addSectionHeading("Personality: steady", text, bg, Alignment.MID, 20.0F);
+            tooltip.addPara("In combat, the " + spec.getName() + " is effective, yet self-restrained, unlike other cores. " + "This remarkable demonstration of self-preservation may prolong the operational lifespan of your droneships.", opad);
+        }
+        if (spec.getId().equals("vestige_core")){
+            tooltip.addSectionHeading("Personality: Fearless", text, bg, Alignment.MID, 20.0F);
+            tooltip.addPara("In combat, the " + spec.getName() + " is single-minded and determined. " + "In a human captain, its traits might be considered reckless. In a machine, they're terrifying.", opad);        }
     }
 }
 

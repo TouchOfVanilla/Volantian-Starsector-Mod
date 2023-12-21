@@ -1,4 +1,4 @@
 id,name,order,tier,reqPoints,reqPointsPerExtraSkill,description,author,combat officer,admiral,admin,tags,icon,
-# COMBAT,,,,,,,,,,,,,
 volantian_custodian_protocols,Volantian Custodian Protocols,1,1,0,,"When you’re dealing with one of these, there’s few things that can go wrong. And fewer that can’t be set right.",Unnamed Volantian Shipyard Mechanic,TRUE,,,"npc_only, ai_core_only",graphics/icons/skills/volantian_custodian_protocols.png,
 volantian_contingency_planning,Volantian Contingency Planning,1,1,0,,"See, the Volantians are paranoid. There's no other way to describe it. It's in their multiple-redundant contingency plans, their built-to-last technology locked behind genetic failsafes, and their constant planning for the future. If the Hegemony ever decides to finish what it started, you'd bet they'll be ready.","Admiral Leon Ackerson, unprompted",,,TRUE,"npc_only, ai_core_only",graphics/icons/skills/volantian_contingency_planning.png,
+vestigial_augmentation,Vestigial Augmentation,1,1,0,,eebus jeebus,Unknown,TRUE,,,"npc_only, ai_core_only",graphics/icons/skills/volantian_contingency_planning.png,

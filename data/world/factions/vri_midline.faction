@@ -18,6 +18,7 @@
 		"SPACE":1,
 		"KNIGHTS":1,
 	},
+		"showInIntelTab":false,
 	"names":{
 		"old english":1,
 		"world":1,

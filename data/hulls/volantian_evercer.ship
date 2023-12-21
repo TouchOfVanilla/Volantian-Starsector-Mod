@@ -3,7 +3,7 @@
     "hullId": "volantian_evercer",
     "hullSize": "DESTROYER",
     "style": "VESTIGE",
-    "spriteName": "../mods/Volantian-Starsector-Mod-0.4.1/graphics/ships/vestiges/evercer.png",
+    "spriteName": "graphics/ships/vestiges/evercer.png",
     "height": 108,
     "width": 140,
     "center": [

@@ -76,6 +76,7 @@ public class VRIVestigeStationFleetManager extends SourceBasedFleetManager {
                 fleet.setFacing(random.nextFloat() * 360.0F);
                 fleet.addScript(new VRIVestigeAssignmentAI(fleet, (StarSystemAPI)this.source.getContainingLocation(), this.source));
                 fleet.getMemoryWithoutUpdate().set("$sourceId", this.source.getId());
+                VRIVestigeSeededFleetManager.addVestCoresToFleet(fleet);
                 return fleet;
             }
         }
