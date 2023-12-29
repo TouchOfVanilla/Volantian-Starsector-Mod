@@ -5,7 +5,6 @@
 		"tags":{
 		},
 		"hulls":{
-			"volantian_claymore":1,
 			"volantian_cressida":1
 
 		},
@@ -14,7 +13,6 @@
 	"knownShips":{
 		"tags":["base_bp", "midline_bp", "hightech_bp", "tritachyon"],
 		"hulls":[
-			"volantian_claymore",
 			"volantian_cressida"
 		],
 	},

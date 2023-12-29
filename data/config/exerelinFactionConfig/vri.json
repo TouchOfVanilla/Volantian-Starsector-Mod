@@ -90,17 +90,17 @@
 				
 
 	"startShipsCombatLarge":[
-	  ["volantian_gauntlet_vri_Standard", "volantian_medusa_vri_Standard", "volantian_sentinel_vri_Standard"],
+	  ["volantian_medusa_vri_Standard", "volantian_sentinel_vri_Standard"]
     ],
 	
 
     "startShipsCarrierLarge":[
-		["volantian_claymore_vri_Artillery", "volantian_sunder_vri_Standard", "volantian_remora_vri_Support"],
+		["volantian_sunder_vri_Standard"]
 	],
 	
 	
     "startShipsTradeLarge":[
-		["volantian_brilliant_vri_Custom", "volantian_karambit_vri_Standard", "volantian_wolf_vri_Elite"],
+		["volantian_brilliant_vri_Custom", "volantian_wolf_vri_Elite"],
 	],
 	
 

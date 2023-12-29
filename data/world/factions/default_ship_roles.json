@@ -4,7 +4,6 @@
 		"volantian_glimmer_vri_Standard":10,
 		"volantian_kit_lg_Elite": 5, "volantian_kit_lg_Standard": 5,
 		"volantian_kit_Support": 5, "volantian_kit_Standard": 5,
-		"volantian_kit_vri_Elite": 5, "volantian_kit_vri_Standard": 5,
 		"volantian_lasher_vi_Standard": 5, "volantian_lasher_vi_Support": 5,
 		"volantian_lumen_vri_Standard": 10,
 		"volantian_metatron_vri_Elite": 3, "volantian_metatron_vri_Standard": 3,
@@ -27,13 +26,10 @@
 		"volantian_prismatic_Standard": 10
 	},
 	"combatLarge": {
-		"volantian_fury_vri_Standard": 10,
 		"volantian_gauntlet_Elite": 5, "volantian_gauntlet_Standard": 5,
 		"volantian_gauntlet_vri_Standard": 10,
 		"volantian_brilliant_vri_Custom": 5, "volantian_brilliant_vri_Support": 5,
 		"volantian_chromatic_vri_Standard": 10,
-		"volantian_claymore_Standard": 5, "volantian_claymore_Support": 5,
-		"volantian_claymore_vri_Artillery": 5, "volantian_claymore_vri_Brawler": 5,
 		"volantian_dominator_vi_Standard": 10,
 		"volantian_enchanter_Standard": 5, "volantian_enchanter_Support": 5,
 		"volantian_legion_vi_Standard": 10,
@@ -47,7 +43,6 @@
 	"combatCapital": {
 		"volantian_aeternum_vigilant": 3, "volantian_aeternum_expectant": 3, "volantian_aeternum_enduring": 3,
 		"volantian_ionos_vri_Standard": 10,
-		"volantian_shamshir_vri_Artillery": 5, "volantian_shamshir_vri_Assault": 5,
 		"volantian_ventalse_vi_Standard": 10,
 		"volantian_radiant_vri_Standard": 7,
 		"volantian_nova_vri_Standard": 10
@@ -74,9 +69,7 @@
 		"volantian_eradicator_vi_Standard": 10,
 		"volantian_gauntlet_Elite": 5, "volantian_gauntlet_Standard": 5,
 		"volantian_gauntlet_vri_Standard": 5,
-		"volantian_kaleidoscope_vri_Standard": 10,
 		"volantian_heron_vi_Standard": 10,
-		"volantian_kaleidoscope_Standard": 10
 	},
 	"phaseSmall": {
 	},
@@ -85,7 +78,6 @@
 		"volantian_cressida_Strike": 5, "volantian_cressida_Standard": 5
 	},
 	"phaseLarge": {
-		"volantian_paramerion_vri_Standard": 2
 	},
 	"phaseCapital": {
 
@@ -93,23 +85,18 @@
 	"freighterSmall": {
 	},
 	"freighterMedium": {
-		"volantian_karambit_vri_Standard": 3
 	},
 	"freighterLarge": {
-		"volantian_karambit_vri_Standard": 5
 	},
 	"tankerSmall": {
 	},
 	"tankerMedium": {
-		"volantian_phaeton_vri_Standard": 2
 	},
 	"tankerLarge": {
 	},
 	"personnelSmall": {
-		"volantian_remora_vri_Support": 10,
 	},
 	"personnelMedium": {
-		"volantian_hippocampus_vri_Standard": 10,
 	},
 	"personnelLarge": {
 		"volantian_caelum_vri_Standard": 10,
