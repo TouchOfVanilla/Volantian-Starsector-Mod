@@ -7,6 +7,7 @@
 				"VI Battlegroup":[119, 125, 192, 255],
 				"Vestige": [255,255,255,255],
 },
+"drop_prob_officer_vestige_core":0.2,
 
 "graphics": {
 "fx": {

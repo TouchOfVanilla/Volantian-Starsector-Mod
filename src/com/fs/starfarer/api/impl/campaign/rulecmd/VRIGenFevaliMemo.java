@@ -19,7 +19,7 @@ public class VRIGenFevaliMemo extends BaseCommandPlugin{
     @Override
     public boolean execute(String ruleId, InteractionDialogAPI dialog, List<Misc.Token> params, Map<String, MemoryAPI> memoryMap) {
         SectorEntityToken entity = dialog.getInteractionTarget();
-        SectorEntityToken target = Global.getSector().getEntityById("bluesteel_bastion");
+        SectorEntityToken target = Global.getSector().getStarSystem("Fevali").getHyperspaceAnchor();
         BreadcrumbIntel intel = new BreadcrumbIntel(entity, target);
         TextPanelAPI text = dialog.getTextPanel();
         text.addParagraph("While exploring the " + entity.getName() + ", your crew found some stored navigational data indicating this ship was headed for the Fevali star system.", Color.WHITE);

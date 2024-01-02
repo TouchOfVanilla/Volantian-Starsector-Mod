@@ -531,15 +531,15 @@ You get the feeling that you aren't going to be recieving assistance.",0:cutComm
 ,,,,,,
 irisContactInit,PopulateOptions,"$isPerson
 $id == iris score:1000
-!$player.HasIrisContact",,,"15:milashacontactinitask:""I'm interested in working for you.""",
-irisContactInitSucceed,DialogOptionSelected,"$option == milashacontactinitask
-RepGTE $faction.id FAVORABLE
+!$player.HasIrisContact",,,"15:iriscontactinitask:""I'm interested in working for you.""",
+irisContactInitSucceed,DialogOptionSelected,"$option == iriscontactinitask
+VRIPlayerLevelAtLeast 10
 ","ShowPersonVisual
 VRIAddContact
-$player.HasIrisContact = true","""Interested in what we do, captain?""","0:cutCommLinkPolite:Cut the comm link
+$player.HasIrisContact = true","""Interested in what we do, captain?"" Iris says with a very particular look, as if she's inspecting you for blemish. ""I'd sure a starfarer of your caliber would be more than welcome in the Bureau."" she says with an almost-grin.","0:cutCommLinkPolite:Cut the comm link
 ",
-irisContactInitFail,DialogOptionSelected,"$option == milashacontactinitask
-","AddText ""Consider improving your standing with the VRI."" highlight","""Interested in what we do, captain?""","0:cutCommLinkPolite:Cut the comm link
+irisContactInitFail,DialogOptionSelected,"$option == iriscontactinitask
+","AddText ""Reach level 10."" highlight","Iris's expression is unchanged. ""I'm more than certain you're capable of it, but you lack experience critical to the... ah..."" Iris pauses a moment, lost for the correct euphamism. ""...unique circumstances ubiquitous to the outer rim,"" she says.","0:cutCommLinkPolite:Cut the comm link
 ",
 ,,,,,,
 #VRI Bar encounter with blanche when player acquires VRI hull,,,,,,
@@ -884,11 +884,11 @@ VRIGenVestieBreadcrumb
 $player.hasVestieBreadcrumb = true",,,
 ,,,,,,
 #vestige comm-link,,,,,,
-greetingVestieFriendly,OpenCommLink,"$faction.id == vestige score:1000
+greetingVestieFriendly,OpenCommLink,"$faction.id == vestige score:10
 $faction.friendlyToPlayer","$menuState = fleetConvMain 0
 FireAll PopulateOptions","""IFF Registered. Greetings, citizen! This unit is currently representing the interstellar security and defense interests of INPUT:///THE DOMAIN OF MAN///. Please requisition our services if you encounter any threats to the security of this star system. Have a safe day.""",,
-greetingVestieHostile,OpenCommLink,"$faction.id == vestige score:1000
-$entity.isHostile",$entity.ignorePlayerCommRequests = true 1,"""IFF Registered. Greetings, citizen! This unit is currently representing the interstellar security and defense interests of INPUT:///THE DOMAIN OF MAN///. Please do not interfere with any of the operations conducted by this unit. Have a safe day.""",cutCommLink:Cut the comm link,
-greetingVestieNeutral,OpenCommLink,"$faction.id == vestige score:1000
+greetingVestieHostile,OpenCommLink,"$faction.id == vestige score:10
+$entity.isHostile",$entity.ignorePlayerCommRequests = true 1,"""IFF Registered. Greetings, citizen! This unit is currently representing the interstellar security and defense interests of INPUT:///THE DOMAIN OF MAN///. This unit has been authorized to conduct INPUT:///ELIMINATION OF VERIFIED THREAT///. Please do not resist. Have a safe day.",cutCommLink:Cut the comm link,
+greetingVestieNeutral,OpenCommLink,"$faction.id == vestige score:10
 $faction.neutralToPlayer","$menuState = fleetConvMain 0
-FireAll PopulateOptions","""IFF Registered. Greetings, citizen! This unit is currently representing the interstellar security and defense interests of INPUT:///THE DOMAIN OF MAN///. This unit has been authorized to conduct INPUT:///ELIMINATION OF VERIFIED THREAT///. Please do not resist. Have a safe day.",,
+FireAll PopulateOptions","""IFF Registered. Greetings, citizen! This unit is currently representing the interstellar security and defense interests of INPUT:///THE DOMAIN OF MAN///. Please do not interfere with any of the operations conducted by this unit. Have a safe day.""",,

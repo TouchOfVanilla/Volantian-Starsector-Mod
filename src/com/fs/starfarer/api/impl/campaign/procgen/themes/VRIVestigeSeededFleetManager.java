@@ -1,23 +1,28 @@
 package com.fs.starfarer.api.impl.campaign.procgen.themes;
 
-import com.fs.starfarer.api.campaign.CampaignFleetAPI;
-import com.fs.starfarer.api.campaign.InteractionDialogAPI;
-import com.fs.starfarer.api.campaign.SectorEntityToken;
-import com.fs.starfarer.api.campaign.StarSystemAPI;
+import com.fs.starfarer.api.Global;
+import com.fs.starfarer.api.campaign.*;
 import com.fs.starfarer.api.campaign.ai.CampaignFleetAIAPI;
 import com.fs.starfarer.api.combat.BattleCreationContext;
+import com.fs.starfarer.api.combat.ShipAPI;
+import com.fs.starfarer.api.combat.ShipVariantAPI;
 import com.fs.starfarer.api.fleet.FleetMemberAPI;
 import com.fs.starfarer.api.impl.campaign.FleetInteractionDialogPluginImpl;
 import com.fs.starfarer.api.impl.campaign.VRICoreOfficerPlugin;
 import com.fs.starfarer.api.impl.campaign.fleets.FleetFactoryV3;
 import com.fs.starfarer.api.impl.campaign.fleets.FleetParamsV3;
 import com.fs.starfarer.api.impl.campaign.fleets.SeededFleetManager;
+import com.fs.starfarer.api.impl.campaign.ids.HullMods;
 import com.fs.starfarer.api.impl.campaign.procgen.StarSystemGenerator;
+import com.fs.starfarer.api.loading.HullModSpecAPI;
+import com.fs.starfarer.api.plugins.AutofitPlugin;
+import com.fs.starfarer.api.plugins.impl.CoreAutofitPlugin;
 import com.fs.starfarer.api.util.Misc;
 import com.fs.starfarer.api.util.WeightedRandomPicker;
 import org.lazywizard.lazylib.MathUtils;
 import org.lwjgl.util.vector.Vector2f;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Random;
 
@@ -178,8 +183,66 @@ public class VRIVestigeSeededFleetManager extends SeededFleetManager {
             float prob = MathUtils.getRandomNumberInRange(0f,100f);
             if ((prob >= 60f) || member.isCapital()) {
                 member.setCaptain(new VRICoreOfficerPlugin().createPerson("vestige_core", "vestige", new Random()));
-                member.getVariant().geto
+                useExtraOp(member);
+                }
+            }
+        }
+
+        public static void useExtraOp(FleetMemberAPI member){
+            ShipVariantAPI variant = member.getVariant();
+            int fluxcv = 0;
+            int op = variant.getUnusedOP(null);
+            if (variant.getHullSize().equals(ShipAPI.HullSize.FRIGATE)) fluxcv = 10;
+            if (variant.getHullSize().equals(ShipAPI.HullSize.DESTROYER)) fluxcv = 20;
+            if (variant.getHullSize().equals(ShipAPI.HullSize.CRUISER)) fluxcv = 30;
+            if (variant.getHullSize().equals(ShipAPI.HullSize.CAPITAL_SHIP)) fluxcv = 50;
+
+
+            if (op > 0){
+                if (variant.getNumFluxVents() < fluxcv) {
+                    int fluxvdiff = fluxcv - variant.getNumFluxVents();
+                    if (op >= fluxvdiff) {
+                        variant.setNumFluxVents(fluxcv);
+                        op = op -fluxvdiff;
+                    }
+                    if (op < fluxvdiff){
+                        variant.setNumFluxVents(fluxcv - fluxvdiff + op);
+                        op = 0;
+                    }
+                }
+            }
+            if (op > 0){
+                ArrayList<String> hullmodlist = new ArrayList<>();
+                hullmodlist.add(HullMods.HARDENED_SHIELDS);
+                hullmodlist.add(HullMods.ARMOREDWEAPONS);
+                hullmodlist.add(HullMods.FLUXBREAKERS);
+
+                Iterator hullmoditer = hullmodlist.iterator();
+                while (hullmoditer.hasNext()){
+                    String mod = (String)hullmoditer.next();
+                    if (!variant.hasHullMod(mod)){
+                        HullModSpecAPI hullmod = Global.getSettings().getHullModSpec(mod);
+                        if (hullmod.getCostFor(variant.getHullSize()) <= op){
+                            variant.addMod(mod);
+                            op = variant.getUnusedOP(null);
+                        }
+                    }
+                }
+            }
+
+            op = variant.getUnusedOP(null);
+            if (op > 0){
+                if (variant.getNumFluxCapacitors() < fluxcv) {
+                    int fluxcdiff = fluxcv - variant.getNumFluxCapacitors();
+                    if (op >= fluxcdiff) {
+                        variant.setNumFluxCapacitors(fluxcv);
+                        op = op -fluxcdiff;
+                    }
+                    if (op < fluxcdiff){
+                        variant.setNumFluxCapacitors(fluxcv - fluxcdiff + op);
+                        op = 0;
+                    }
+                }
             }
         }
     }
-}
