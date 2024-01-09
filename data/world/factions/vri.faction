@@ -49,9 +49,6 @@
 		"hulls":[
 		    "volantian_radiant_vri",
 		    "volantian_ionos_vri",
-		    "volantian_kaleidoscope_vri",
-		    "volantian_shamshir_vri",
-		    "volantian_paramerion_vri",
 		    "volantian_nova_vri",
 
 
@@ -187,24 +184,18 @@
 	#"internalComms":"hegemony_internal",
 	"portraits":{
 		"standard_male":[
-			"graphics/portraits/vol_portrait1.png",
-            "graphics/portraits/vol_portrait2.png",
-            "graphics/portraits/vol_portrait3.png",
-            "graphics/portraits/vol_portrait4.png",
             "graphics/portraits/vol_portrait5.png",
             "graphics/portraits/vol_portrait6.png",
             "graphics/portraits/vol_portrait7.png",
-            "graphics/portraits/vol_portrait8.png",
+            "graphics/portraits/vol_portrait10.png",
 		],
 		"standard_female":[
             "graphics/portraits/vol_portrait1.png",
             "graphics/portraits/vol_portrait2.png",
             "graphics/portraits/vol_portrait3.png",
             "graphics/portraits/vol_portrait4.png",
-            "graphics/portraits/vol_portrait5.png",
-            "graphics/portraits/vol_portrait6.png",
-            "graphics/portraits/vol_portrait7.png",
             "graphics/portraits/vol_portrait8.png",
+			"graphics/portraits/vol_portrait9.png",
 		],
 	},
 	"ranks":{
