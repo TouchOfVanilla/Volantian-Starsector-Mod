@@ -37,15 +37,15 @@ public class AzorianMatrices extends BaseHullMod {
             ship.getMutableStats().getBallisticWeaponRangeBonus().modifyPercent(AzorianMod, finalrating);
             ship.getMutableStats().getEnergyWeaponRangeBonus().modifyPercent(AzorianMod, finalrating);
         }
+        if (finalrating < 0){
+            finalrating = 0;
+        }
         if (ship == Global.getCombatEngine().getPlayerShip()) {
             if (finalrating > 0) {
                 Global.getCombatEngine().maintainStatusForPlayerShip("AzorianRangeMod", "graphics/icons/hullsys/fortress_shield.png", "Azorian ECM Matrix", (int)finalrating + "% increased range based on " + (int)totaldiff + "% ECM rating", false);
             }
-            if (finalrating < 0) {
-                Global.getCombatEngine().maintainStatusForPlayerShip("AzorianRangeMod", "graphics/icons/hullsys/fortress_shield.png", "Azorian ECM Matrix", (int)finalrating + "% decreased range based on " + (int)totaldiff + "% ECM rating", true);
-            }
             if (finalrating == 0){
-                Global.getCombatEngine().maintainStatusForPlayerShip("AzorianRangeMod", "graphics/icons/hullsys/fortress_shield.png", "Azorian ECM Matrix", "ECM ratings are equal, no effect", false);
+                Global.getCombatEngine().maintainStatusForPlayerShip("AzorianRangeMod", "graphics/icons/hullsys/fortress_shield.png", "Azorian ECM Matrix", "No range effect", false);
 
             }
         }
@@ -54,13 +54,16 @@ public class AzorianMatrices extends BaseHullMod {
         float modspeed = ship.getMutableStats().getMaxSpeed().modified;
 
         float speedbuffpercent = calculatePercentageDifference(basespeed, modspeed);
+        if (speedbuffpercent < 0){
+            speedbuffpercent = 0;
+        }
 
         ship.getMutableStats().getTurnAcceleration().modifyPercent("azorian_nav",speedbuffpercent);
         ship.getMutableStats().getAcceleration().modifyPercent("azorian_nav", speedbuffpercent * 2f);
         ship.getMutableStats().getDeceleration().modifyPercent("azorian_nav", speedbuffpercent);
         ship.getMutableStats().getMaxTurnRate().modifyPercent("azorian_nav", speedbuffpercent);
         if(ship == Global.getCombatEngine().getPlayerShip()) {
-            Global.getCombatEngine().maintainStatusForPlayerShip("azorian_nav", "graphics/icons/hullsys/fortress_shield.png", "Azorian Nav Matrix", (int) speedbuffpercent + "% maneuverability based on " + (int) speedbuffpercent + "% total modifier to max speed", false);
+            Global.getCombatEngine().maintainStatusForPlayerShip("azorian_nav", "graphics/icons/hullsys/fortress_shield.png", "Azorian Nav Matrix", (int) speedbuffpercent + "% maneuverability based on " + (int) speedbuffpercent + "% total increase to max speed", false);
         }
     }
     public String getDescriptionParam(int index, ShipAPI.HullSize hullSize) {

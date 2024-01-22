@@ -13,6 +13,7 @@ import org.lwjgl.util.vector.Vector2f;
 import java.awt.*;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Random;
 
 public class VRI_weapon_monoblade implements OnHitEffectPlugin, EveryFrameWeaponEffectPlugin{
@@ -22,7 +23,6 @@ public class VRI_weapon_monoblade implements OnHitEffectPlugin, EveryFrameWeapon
     private int start = 0;
     private final int arcOffsetMin = -50;
     private final int arcOffsetMax = 50;
-    private final HashSet<DamagingProjectileAPI> projList = new HashSet<>();
 
     @Override
     public void onHit(DamagingProjectileAPI projectile, CombatEntityAPI target, Vector2f point, boolean shieldHit, ApplyDamageResultAPI damageResult, CombatEngineAPI engine) {
@@ -72,12 +72,11 @@ public class VRI_weapon_monoblade implements OnHitEffectPlugin, EveryFrameWeapon
 
     @Override
     public void advance(float amount, CombatEngineAPI engine, WeaponAPI weapon) {
-        HashSet<DamagingProjectileAPI> removeList = new HashSet<>();
         //create EMP arcs
-        for(DamagingProjectileAPI proj : projList) {
-            if(proj.isExpired() || proj.didDamage() || !engine.isInPlay(proj)) {
-                removeList.add(proj);
-            } else {
+        Iterator projiter = engine.getProjectiles().iterator();
+        while (projiter.hasNext()) {
+            DamagingProjectileAPI proj = (DamagingProjectileAPI) projiter.next();
+            if (proj.getWeapon() == weapon) {
                 Vector2f empSourceLocation = new Vector2f(
                         proj.getLocation().x + getRandomNumberInRange(arcOffsetMax, arcOffsetMin),
                         proj.getLocation().y + getRandomNumberInRange(arcOffsetMax, arcOffsetMin)
@@ -91,14 +90,11 @@ public class VRI_weapon_monoblade implements OnHitEffectPlugin, EveryFrameWeapon
                         new SimpleEntity(projSourceLocation),
                         empSourceLocation,
                         new SimpleEntity(empSourceLocation),
-                        getRandomNumberInRange(20,10),
-                        new Color(255, 0,150, 255),
-                        new Color(255, 255,255, 255)
+                        getRandomNumberInRange(20, 10),
+                        new Color(255, 0, 150, 255),
+                        new Color(255, 255, 255, 255)
                 );
             }
-        }
-        for(DamagingProjectileAPI toRemoveProj: removeList) {
-            projList.remove(toRemoveProj);
         }
         if (wantSetReload) {
             weapon.setRemainingCooldownTo(.75f);

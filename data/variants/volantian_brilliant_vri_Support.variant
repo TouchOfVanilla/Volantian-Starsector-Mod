@@ -5,11 +5,9 @@
     "goalVariant": true,
     "hullId": "volantian_brilliant_vri",
     "hullMods": [
-        "targetingunit",
+        "targetingunit"
     ],
-    "permaMods": [],
-    "sMods": [],
-    "suppressedMods": [],
+    "quality": 1.0,
     "variantId": "volantian_brilliant_vri_Support",
     "weaponGroups": [
         {
@@ -18,27 +16,26 @@
             "weapons": {
                 "WS 006": "hveldriver",
                 "WS 005": "hveldriver",
+                "WS 004": "breachpod"
             }
         },
         {
             "autofire": false,
             "mode": "LINKED",
+            "weapons": { }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
             "weapons": {
-                "WS 004": "vol_lucern",
+                "WS 000": "vol_azorian_lance"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS 000": "vol_azorian_lance",
-            }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
-                "WS 001": "gravitonbeam",
+                "WS 001": "gravitonbeam"
             }
         },
         {
@@ -46,12 +43,11 @@
             "mode": "LINKED",
             "weapons": {
                 "WS 002": "vol_halonMK1",
-                "WS 003": "vol_halonMK1",
+                "WS 003": "vol_halonMK1"
             }
-        },
+        }
     ],
     "wings": [
-        "volantian_spark_wing",
-    ],
-    "modules": [],
+        "volantian_spark_wing"
+    ]
 }

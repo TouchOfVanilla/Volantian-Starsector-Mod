@@ -1,37 +1,28 @@
 name,id,tier,rarity,base value,range,damage/second,damage/shot,emp,impact,turn rate,OPs,ammo,ammo/sec,reload size,type,energy/shot,energy/second,chargeup,chargedown,burst size,burst delay,min spread,max spread,spread/shot,spread decay/sec,beam speed,proj speed,launch speed,flight time,proj hitpoints,autofireAccBonus,extraArcForAI,hints,tags,groupTag,tech/manufacturer,for weapon tooltip>>,primaryRoleStr,speedStr,trackingStr,turnRateStr,accuracyStr,customPrimary,customPrimaryHL,customAncillary,customAncillaryHL,noDPSInTooltip,number
-tastethesun,volantian_flashbang_sys,1,,1000,2000,0,0,10000,0,0,0,1,0.01,1,KINETIC,1,,5,1,1,0,0,0,0,0,,0,,,,,,DO_NOT_AIM,midline_bp,,Volantian,,,,,,,,,,,,
 Cryonic Pulse Cannon,vol_cryocannon,3,,10000,900,,250,,40,10,35,15,1,3,ENERGY,250,,0,0.2,3,0.1,0,10,2,5,,1000,,,,,,CONSERVE_1,"VRI_bp, energy21",,Volantian,,General,,,,,"In %s mounts, damage is doubled.
 In %s mounts, projectiles deal Kinetic damage to shields.
 In %s mounts, causes explosions that deal High Explosive damage.",energy | hybrid | synergy,,,,40
-Clover Driver Cannon,vol_clovercannon,2,,2500,700,,120,20,30,20,11,,,,ENERGY,130,,0.6,0,2,0.2,,,,,,900,,,,,,,"VRI_bp, energy8",,Volantian,,General,,,,,Create an explosion dealing %s Fragmentation damage on the %s hit,300 | 10th,,,,69
-Harpe Cannon,vol_harpecannon,2,,3000,500,,320,600,10,15,13,,,,KINETIC,400,,0.3,1.5,1,0,0,5,2,5,,1200,,,,,,,"VRI_bp, kinetic5",,Volantian,,Anti Shield,,,,,"In %s mounts, base range is extended by 400.
+Harpe Railgun,vol_harpecannon,3,,3000,500,,320,600,10,15,13,,,,KINETIC,400,,0.3,1.5,1,0,0,5,2,5,,1200,,,,,,,"VRI_bp, kinetic5",,Volantian,,Anti Shield,,,,,"In %s mounts, base range is extended by 400.
 In %s mounts, fire rate is doubled.
 In %s mounts, causes EMP arcs on impact.",ballistic | energy | hybrid,,,,70
-Tekko Cannon,vol_tekkocannon,1,,200,250,,20,,20,75,4,,,,FRAGMENTATION,2,,0,0.1,3,0.01,0,10,1,5,,900,,,,,,PD,"VRI_bp, pd7",,Volantian,,Point Defense,,,,,,,,,,71
-Pata Autocannon,vol_pataautocannon,1,,400,600,,50,,20,40,5,,,,ENERGY,50,,0,0.5,2,0,0,3,1,5,,800,,,,,,,"VRI_bp, energy3",,Volantian,,General,,,,,,,,,,72
+Tekko Shredder,vol_tekkocannon,3,,200,250,,20,,20,75,4,,,,FRAGMENTATION,2,,0,0.1,3,0.01,0,10,1,5,,900,,,,,,PD,"VRI_bp, pd7",,Volantian,,Point Defense,,,,,,,,,,71
 Phosphene Lance,vol_phosphenelance,3,,10000,1000,1700,,300,60,15,26,,,,ENERGY,,2600,0.3,1.25,1,5,,,,,10000,,,,,,,,"VRI_bp, energy21, beam21",,Volantian,,Strike,,,,,"On hit, triggering an explosion dealing %s Fragmentation damage",1000,,,,73
 Flechette Needler,vol_flechette_needler,3,,2500,550,,75,,1,15,18,,,,KINETIC,75,,0,1.25,1,0.05,1,10,0.5,5,,1200,,,10,,,,"kinetic15, remnant, rare_bp, hist1t, merc, ind",,Common,,Anti Shield,,,,,,,,,,5.75
-Lucern launcher,vol_lucern,3,,3000,2000,,1000,,15,15,10,12,,,ENERGY,0,,0,8,4,0.25,0,0,0,0,,350,200,8,300,,,STRIKE,"VRI_bp, strike9, utility7, missile7",,Volantian,,Strike,Fast,Poor,,,"Hits on shield generate shield-penetrating arc, dealing extra EMP damage",,,,TRUE,74
 Katti MRM (Double),vol_katti,1,,150,1500,,1500,,20,10,3,2,,,ENERGY,0,,0,1,1,0,0,0,0,0,,100,40,4,350,,,STRIKE,"VRI_bp, strike8",,Volantian,,Strike,Medium,None,,,Second-stage hits on hull or armor create additional explosion dealing %s High Explosive damage,700,,,TRUE,75
-Katti Barrage,vol_kattibarrage,1,,1500,1500,,1500,,30,10,22,20,,,ENERGY,0,,0,5,4,0.2,0,0,0,0,,100,40,4,350,,,STRIKE,"VRI_bp, strike9",,Volantian,,Strike,Medium,None,,,Second-stage hits on hull or armor create additional explosion dealing %s High Explosive damage,700,,,TRUE,76
 Surik MIRV,vol_surik,3,,5000,2000,,800,150,40,10,27,10,,,ENERGY,0,,0,8,1,0,0,0,0,0,,300,40,12,350,,,"DO_NOT_AIM, CONSERVE_5","VRI_bp, utility7, missile8, LR",,Volantian,,Torpedo,Medium,Good,,,,,,,TRUE,77
 Azorian Needler,vol_azorian_needler,3,,800,700,,50,,1,20,9,,,,FRAGMENTATION,60,,0,4.3,15,0.05,0,10,0.66,5,,1200,,,10,,,,"VRI_bp, kinetic9, LR",,Volantian,,Anti Shield,,,,,Inflicts 250% damage to shields,,,,,3.65
 Azorian Heavy Needler,vol_azorian_heavyneedler,3,,2500,700,,50,,1,15,17,,,,FRAGMENTATION,60,,0,4.55,30,0.05,1,10,0.5,5,,1200,,,10,,,,"VRI_bp, kinetic15",,Volantian,,Anti Shield,,,,,Inflicts 250% damage to shields,,,,,5.75
-Laevaten Ion Caster,vol_laevaten,3,,10000,900,1300,,,0,10,35,,,,ENERGY,,4500,0,0.2,1.2,4,0,0,0,0,10000,,,,,,,"STRIKE, DO_NOT_CONSERVE","VRI_bp, energy20, beam20",,Volantian,,Disabler,,,,,"Hits on shield have a %s chance to generate shield-penetrating arc, dealing extra EMP and energy damage",25%,,,,78
-Trident Railgun,vol_trident,3,,5000,700,,175,,100,20,22,,,,KINETIC,220,,0.35,1,1,0.4,0,3,1,2,,1600,,,,,,,"VRI_bp, kinetic8, LR",,Volantian,,Anti Shield,,,,,"In %s mounts, base range is extended by 400.
+Trident Railgun,vol_trident,3,,5000,700,,120,,100,20,19,,,,KINETIC,220,,0.35,1,1,0.4,0,3,1,2,,900,,,,,,,"VRI_bp, kinetic8, LR",,Volantian,,Anti Shield,,,,,"In %s mounts, base range is extended by 400.
 In %s mounts, fire rate is doubled.
 In %s mounts, hits on hull or armor trigger a secondary explosive payload dealing %s High Explosive damage.",ballistic | missile | composite | 75,,,,79
-Kudi Cannon,vol_kudi,1,,1000,500,,80,,10,40,8,,,,ENERGY,75,,0,0.35,1,,2,10,1,10,,700,,,,,,PD,"VRI_bp, pd8",,Volantian,,Point Defense,,,,,,,,,,80
 Azorian Beam,vol_azorian_beam,2,,4500,700,700,,,30,15,14,,,,KINETIC,,625,0.1,0.1,1.5,3,,,,,10000,,,,,,,,"beam12, LR, hightech_bp, midline_bp, merc, ind",,Volantian,,Suppression,,,,,Excels at building up large amounts of soft flux in short periods of time.,8%,,,,21
-Dual Tekko Caster,vol_kastane,1,,3000,800,,50,500,10,20,12,,,,ENERGY,100,,0.8,0,2,0.5,2,8,1,3,,900,,,,,,STRIKE,"VRI_bp, energy7",,Volantian,,Disabler,,,,,,,,,,82
-Monoblade Plasma Driver,vol_monoblade,3,,8000,1200,,1200,,30,10,27,,,,FRAGMENTATION,900,,0.8,3.4,1,0,0,0,0,0,,3000,,,,,,STRIKE,"VRI_bp, energy20",,Volantian,,Finisher,Extreme,,,,,,,,,83
-Halon Interceptor MK1,vol_halonMK1,2,,200,300,400,,,0,75,5,5,1.5,1,ENERGY,,300,0,0,0.2,0.1,,,,,100000,,,,,,,"PD, ANTI_FTR","VRI_bp, pd8",,Volantian,,Point Defense,,,,,,,,,,84
+Monoblade Railgun,vol_monoblade,3,,8000,1200,,1200,,30,10,27,,,,FRAGMENTATION,900,,0.8,3.4,1,0,0,0,0,0,,3000,,,,,,STRIKE,"VRI_bp, energy20",,Volantian,,Finisher,Extreme,,,,,,,,,83
+Halon Interceptor MK1,vol_halonMK1,3,,200,300,400,,,0,75,5,5,1.5,1,ENERGY,,300,0,0,0.2,0.1,,,,,100000,,,,,,,"PD, ANTI_FTR","VRI_bp, pd8",,Volantian,,Point Defense,,,,,,,,,,84
 Halon Mass Interceptor System,vol_halon,2,,1100,500,700,,,0,75,10,10,1,1,ENERGY,,600,0,0,0.2,0.1,,,,,100000,,,,,,,"PD, ANTI_FTR","VRI_bp, pd19",,Volantian,,Point Defense,,,,,,,,,,85
 Azorian Lance,vol_azorian_lance,3,,8000,1000,750,,0,0,7,25,,,,KINETIC,,2000,0.5,1,1,4,,,,,10000,,,,,,,FIRE_WHEN_INEFFICIENT,"energy20, beam15, LR, rare_bp, hist1t, merc, ind",,Volantian,,Suppression,,,,,Halves the arc of shields for a short time on hit. Decreases the turn rate of omni-shields.,,,,,27
 Azorian Storm Needler,vol_azorian_stormneedler,3,,6500,700,,50,,20,15,28,,,,FRAGMENTATION,45,,0,0.1,1,,10,10,10,10,,1200,,,20,,,,"kinetic19, VRI_bp, rare_bp, hist1t, merc, ind",,Volantian,,Anti Shield,,,,,,,,,,8.5
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #built in,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Lucern(HE) launcher,vol_lucern_HE,1,,,2000,,1000,,15,15,10,3,0.1,1,HIGH_EXPLOSIVE,0,,0,3,1,0,0,0,0,0,,200,100,16,300,,,"DO_NOT_CONSERVE, DO_NOT_AIM","missile0, no_sell, no_drop, no_drop_salvage, restricted",,Volantian,,Strike,Medium,Avarage,,,,,,,TRUE,86
-Lucern(KE) launcher,vol_lucern_KE,1,,,2000,,200,100,15,15,10,12,0.5,3,KINETIC,0,,0,1,3,0.05,0,0,0,0,,350,200,8,300,,,"DO_NOT_CONSERVE, DO_NOT_AIM","missile0, no_sell, no_drop, no_drop_salvage, restricted",,Volantian,,Strike,Fast,Avarage,,,,,,,TRUE,87
 Mani-class Torpedo,vol_mani,1,,,1000,,3000,,30,30,,2,0.05,1,ENERGY,0,,0,2,1,,0,0,0,0,,150,100,8,400,,,"STRIKE, DO_NOT_CONSERVE","missile0, no_sell, no_drop, no_drop_salvage, restricted",,Volantian,,Strike/Destroy,Slow,None,,,Useful tool to %s enemy ships,dismantle,,,TRUE,88
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #fighter weapons,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

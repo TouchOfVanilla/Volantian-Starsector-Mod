@@ -1,47 +1,42 @@
 {
     "displayName": "Standard",
-    "fluxCapacitors": 13,
+    "fluxCapacitors": 15,
     "fluxVents": 30,
     "goalVariant": true,
     "hullId": "volantian_sentinel_vri",
     "hullMods": [
         "azorian_shields",
         "hardenedshieldemitter",
-        "targetingunit",
+        "targetingunit"
     ],
-    "permaMods": [],
-    "sMods": [],
-    "suppressedMods": [],
     "variantId": "volantian_sentinel_vri_Standard",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "LINKED",
             "weapons": {
-                "WS0011": "vol_kattibarrage",
+                "WS0010": "autopulse",
+                "WS0011": "cyclone",
+                "WS0007": "sabotpod",
+                "WS0008": "sabotpod"
             }
         },
         {
             "autofire": false,
             "mode": "ALTERNATING",
-            "weapons": {
-                "WS0008": "vol_lucern",
-                "WS0007": "vol_lucern",
-            }
+            "weapons": { }
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {
-                "WS0010": "vol_phosphenelance",
-            }
+            "weapons": { }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
                 "WS0003": "vol_azorian_heavyneedler",
-                "WS0004": "vol_azorian_heavyneedler",
+                "WS0004": "vol_azorian_heavyneedler"
             }
         },
         {
@@ -52,10 +47,8 @@
                 "WS0002": "vol_halonMK1",
                 "WS0009t": "vol_halonMK1",
                 "WS0005": "vol_halonMK1",
-                "WS0006": "vol_halonMK1",
+                "WS0006": "vol_halonMK1"
             }
-        },
-    ],
-    "wings": [],
-    "modules": [],
+        }
+    ]
 }

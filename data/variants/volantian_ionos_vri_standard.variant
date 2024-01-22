@@ -1,32 +1,29 @@
 {
     "displayName": "Standard",
-    "fluxCapacitors": 4,
-    "fluxVents": 49,
+    "fluxCapacitors": 0,
+    "fluxVents": 45,
     "goalVariant": true,
     "hullId": "volantian_ionos_vri",
     "hullMods": [
         "hardenedshieldemitter",
-        "targetingunit",
+        "targetingunit"
     ],
-    "permaMods": [],
-    "sMods": [],
-    "suppressedMods": [],
+    "quality": 1.0,
     "variantId": "volantian_ionos_vri_Standard",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "tachyonlance",
+                "WS0002": "sabotpod",
+                "WS0003": "typhoon",
+                "WS0001": "vol_azorian_lance"
             }
         },
         {
             "autofire": false,
             "mode": "ALTERNATING",
-            "weapons": {
-                "WS0003": "vol_lucern",
-                "WS0002": "vol_lucern",
-            }
+            "weapons": { }
         },
         {
             "autofire": true,
@@ -34,8 +31,8 @@
             "weapons": {
                 "WS0009": "vol_harpecannon",
                 "WS0008": "vol_harpecannon",
-                "WS0007": "vol_harpecannon",
-                "WS0006": "vol_harpecannon",
+                "WS0006": "vol_azorian_heavyneedler",
+                "WS0007": "vol_azorian_heavyneedler"
             }
         },
         {
@@ -45,10 +42,8 @@
                 "WS0011": "vol_halonMK1",
                 "WS0010": "vol_halonMK1",
                 "WS0005": "vol_halonMK1",
-                "WS0004": "vol_halonMK1",
+                "WS0004": "vol_halonMK1"
             }
-        },
-    ],
-    "wings": [],
-    "modules": [],
+        }
+    ]
 }

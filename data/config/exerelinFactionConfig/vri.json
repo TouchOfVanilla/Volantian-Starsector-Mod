@@ -1,14 +1,14 @@
 {
     "playableFaction":true,
     "corvusCompatible":true,
-	"ngcTooltip":"Touch the fluffy tail",
+	"ngcTooltip":"Secure the VRI's place in the Persean sector.",
     "rebelFleetSuffix":"Traitors",
     
 	"asteroidMiningFleetName":"Scavenger",
     "gasMiningFleetName":"Collector",
-    "invasionFleetName":"Vanguard",
+    "invasionFleetName":"Grand Vanguard",
     "responseFleetName":"Response",
-    "invasionSupportFleetName":"Auxillary",
+    "invasionSupportFleetName":"Auxillary Vanguard",
     "defenceFleetName":"Guardian",
 	"suppressionFleetName":"Peacekeeper",
 	"noSyncRelations":false,
@@ -50,7 +50,8 @@
 		"mess":-1.0, #such a mess
 		"cabal":-1.0, #TT's weird cousins
 		"tahlan_greathouses":0.5,
-
+		"orks": 0.25, #we like you but we don't like your friends
+		"scalartech": 0.5, #howdy neighbors
 	},
     
 	
@@ -78,8 +79,8 @@
 	
     "groundBattleSettings":{
 		"attackMult":1.1,
-		"damageTakenMult":0.9,
-        "moraleDamageTakenMult":0.9
+		"damageTakenMult":0.8,
+        "moraleDamageTakenMult":0.8
     },
 
     "colonyExpeditionChance":1,
@@ -90,17 +91,17 @@
 				
 
 	"startShipsCombatLarge":[
-	  ["volantian_medusa_vri_Standard", "volantian_sentinel_vri_Standard"]
+	  ["volantian_medusa_vri_Standard", "volantian_sentinel_vri_Standard", "volantian_gauntlet_vri_Standard"]
     ],
 	
 
     "startShipsCarrierLarge":[
-		["volantian_sunder_vri_Standard"]
+		["volantian_sunder_vri_Standard", "volantian_gauntlet_vri_Standard", "volantian_scintilla_vri_Standard"]
 	],
 	
 	
     "startShipsTradeLarge":[
-		["volantian_brilliant_vri_Custom", "volantian_wolf_vri_Elite"],
+		["volantian_brilliant_vri_Custom", "volantian_wolf_vri_Elite", "volantian_karambit_vri_Standard"],
 	],
 	
 

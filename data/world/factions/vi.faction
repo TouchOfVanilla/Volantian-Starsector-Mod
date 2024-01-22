@@ -21,7 +21,7 @@
 		"future":1,
 		"myth":1,
 	},
-
+		"showInIntelTab":false,
 	# variantOverrides restricts hulls to listed variants and adjusts their probability
 	"variantOverrides":{
 	},
