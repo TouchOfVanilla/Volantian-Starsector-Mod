@@ -1,0 +1,253 @@
+{
+    "hullName": "Incursor",
+    "hullId": "volantian_incursor",
+    "hullSize": "CAPITAL_SHIP",
+    "style": "VESTIGE",
+    "spriteName": "graphics/ships/vestiges/existentia.png",
+    "height": 440,
+    "width": 208,
+    "center": [
+        104, 220
+    ],
+    "collisionRadius": 252.5,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 240,
+    "viewOffset": 0,
+    "builtInMods": [
+        "automated"
+    ],
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 211,
+            "angle": 357.5,
+            "locations": [
+                     159,       43
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 211,
+            "angle": 2.5,
+            "locations": [
+                     159,      -43
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "MEDIUM",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 186,
+            "angle": 32.5,
+            "locations": [
+                     134,       55
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "MEDIUM",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 186,
+            "angle": 327.5,
+            "locations": [
+                     134,      -55
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 148,
+            "angle": 35,
+            "locations": [
+                      36,       63
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 148,
+            "angle": 325,
+            "locations": [
+                      36,      -63
+            ]
+        },
+        {
+            "id": "WS 006",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 120,
+            "angle": 48.5,
+            "locations": [
+                     -19,       48
+            ]
+        },
+        {
+            "id": "WS 007",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 120,
+            "angle": 311.5,
+            "locations": [
+                     -19,      -48
+            ]
+        },
+        {
+            "id": "WS 008",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 162,
+            "angle": 64.5,
+            "locations": [
+                     -73,       28
+            ]
+        },
+        {
+            "id": "WS 009",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 162,
+            "angle": 295.5,
+            "locations": [
+                     -73,      -28
+            ]
+        },
+        {
+            "id": "WS 010",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 206,
+            "angle": 238,
+            "locations": [
+                    -100,      -78
+            ]
+        },
+        {
+            "id": "WS 011",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 206,
+            "angle": 122,
+            "locations": [
+                    -100,       78
+            ]
+        },
+        {
+            "id": "WS 012",
+            "size": "MEDIUM",
+            "type": "MISSILE",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 90,
+            "locations": [
+                     -54,     88.5
+            ]
+        },
+        {
+            "id": "WS 013",
+            "size": "MEDIUM",
+            "type": "MISSILE",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 270,
+            "locations": [
+                     -54,    -88.5
+            ]
+        },
+        {
+            "id": "WS 014",
+            "size": "MEDIUM",
+            "type": "MISSILE",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 90,
+            "locations": [
+                     -76,       85
+            ]
+        },
+        {
+            "id": "WS 015",
+            "size": "MEDIUM",
+            "type": "MISSILE",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 270,
+            "locations": [
+                     -76,      -85
+            ]
+        },
+        {
+            "id": "WS 016",
+            "size": "LARGE",
+            "type": "BALLISTIC",
+            "mount": "HARDPOINT",
+            "arc": 12,
+            "angle": 0,
+            "locations": [
+                     119,        0
+            ]
+        },
+        {
+            "id": "WS 017",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                     119,        0
+            ]
+        },
+        {
+            "id": "WS 018",
+            "size": "LARGE",
+            "type": "ENERGY",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                    79.5,        0
+            ]
+        }
+    ],
+    "engineSlots": [],
+    "bounds": [
+            -191,      -59,
+          -128.5,      -98,
+             -26,    -83.5,
+             144,      -77,
+           209.5,      -49,
+        
+             140,       -4,
+             140,        4,
+           209.5,       49,
+             144,       77,
+             -26,     83.5,
+        
+          -128.5,       98,
+            -191,       59
+    # 12 points total.
+    ]
+}
