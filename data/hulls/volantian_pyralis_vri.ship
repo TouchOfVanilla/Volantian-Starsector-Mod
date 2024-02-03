@@ -17,7 +17,7 @@
     "shieldRadius": 162,
     "viewOffset": 0,
     "builtInMods": [
-        "VES",
+        "volremconversion",
         "azorian_matrices"
     ],
     "builtInWings": [],
