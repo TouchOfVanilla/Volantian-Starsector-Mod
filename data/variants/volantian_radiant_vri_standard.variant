@@ -1,72 +1,65 @@
 {
     "displayName": "Standard",
-    "fluxCapacitors": 32,
+    "fluxCapacitors": 21,
     "fluxVents": 50,
     "goalVariant": true,
     "hullId": "volantian_radiant_vri",
     "hullMods": [
         "hardenedshieldemitter",
-        "targetingunit",
+        "targetingunit"
     ],
-    "permaMods": [],
-    "sMods": [],
-    "suppressedMods": [],
     "variantId": "volantian_radiant_vri_Standard",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "LINKED",
             "weapons": {
-                "WS 000": "vol_azorian_lance",
-                "WS 001": "vol_azorian_lance",
+                "WS 000": "autopulse",
+                "WS 001": "autopulse",
+                "WS 010": "sabotpod",
+                "WS 011": "sabotpod"
             }
         },
         {
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS 008": "sabotpod",
-                "WS 005": "sabotpod",
+                "WS 007": "vol_azorian_lance",
+                "WS 006": "vol_azorian_lance"
             }
         },
         {
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS 006": "typhoon",
-                "WS 007": "typhoon",
+                "WS 020": "vol_azorian_heavyneedler",
+                "WS 009": "vol_azorian_heavyneedler",
+                "WS 008": "vol_azorian_heavyneedler"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {
-                "WS 004": "autopulse",
-                "WS 002": "autopulse",
-            }
+            "weapons": { }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": { }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS 003": "guardian",
-            }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
-                "WS 009": "vol_halonMK1",
-                "WS 018": "vol_halonMK1",
-                "WS 015": "vol_halonMK1",
-                "WS 016": "vol_halonMK1",
-                "WS 013": "vol_halonMK1",
+                "WS 017": "vol_tekkocannon",
                 "WS 014": "vol_halonMK1",
-                "WS 011": "vol_halonMK1",
-                "WS 012": "vol_halonMK1",
+                "WS 005": "vol_halonMK1",
+                "WS 019": "vol_halonMK1",
+                "WS 013": "vol_tekkocannon",
+                "WS 003": "vol_halonMK1",
+                "WS 004": "vol_halonMK1",
+                "WS 002": "vol_halonMK1"
             }
-        },
-    ],
-    "wings": [],
-    "modules": [],
+        }
+    ]
 }

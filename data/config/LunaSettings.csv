@@ -17,5 +17,4 @@ Make sure to set a condition for your input checks to not accept numbers of 0, a
 The defaultValue decides which one is selected by default, the secondaryValue creates the list of choices with a comma seperated String. 
 Can be retrieved as a String.",,,Examples
 ,,,,,,,,
-vri_blanchetoggle,Toggle Blanche Hull Repo,Boolean,true,,"If true, Blanche will try and take your VRI hulls on the regular. If false, she will not.",,,VRI Settings
 vri_vestietoggle,Toggle Vestiges,Boolean,true,,"If true, Vestiges will generate in the sector on new game load. If false, they will not.",,,VRI Settings
