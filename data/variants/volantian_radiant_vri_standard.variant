@@ -1,6 +1,6 @@
 {
     "displayName": "Standard",
-    "fluxCapacitors": 21,
+    "fluxCapacitors": 7,
     "fluxVents": 50,
     "goalVariant": true,
     "hullId": "volantian_radiant_vri",
@@ -15,9 +15,7 @@
             "mode": "LINKED",
             "weapons": {
                 "WS 000": "autopulse",
-                "WS 001": "autopulse",
-                "WS 010": "sabotpod",
-                "WS 011": "sabotpod"
+                "WS 001": "autopulse"
             }
         },
         {
@@ -40,7 +38,10 @@
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": { }
+            "weapons": {
+                "WS 011": "sabotpod",
+                "WS 010": "sabotpod"
+            }
         },
         {
             "autofire": true,
@@ -58,7 +59,10 @@
                 "WS 013": "vol_tekkocannon",
                 "WS 003": "vol_halonMK1",
                 "WS 004": "vol_halonMK1",
-                "WS 002": "vol_halonMK1"
+                "WS 002": "vol_halonMK1",
+                "WS 018": "vol_halonMK1",
+                "WS 012": "vol_tekkocannon",
+                "WS 015": "vol_halonMK1"
             }
         }
     ]

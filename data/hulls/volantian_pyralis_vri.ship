@@ -59,7 +59,7 @@
         {
             "id": "WS 003",
             "size": "MEDIUM",
-            "type": "ENERGY",
+            "type": "HYBRID",
             "mount": "TURRET",
             "arc": 253,
             "angle": 0,
@@ -118,8 +118,8 @@
             "location": [
                 -88, 75.5
             ],
-            "length": 18,
-            "width": 3,
+            "length": 26,
+            "width": 9,
             "angle": 179.5,
             "contrailSize": 12,
             "style": "HIGH_TECH"
@@ -128,8 +128,8 @@
             "location": [
                 -88, -75.5
             ],
-            "length": 18,
-            "width": 3,
+            "length": 26,
+            "width": 9,
             "angle": 180.5,
             "contrailSize": 12,
             "style": "HIGH_TECH"
@@ -138,8 +138,8 @@
             "location": [
                 -88, 71.5
             ],
-            "length": 18.5,
-            "width": 3,
+            "length": 28.5,
+            "width": 6,
             "angle": 178.5,
             "contrailSize": 12,
             "style": "HIGH_TECH"
@@ -148,8 +148,8 @@
             "location": [
                 -89.5, -68.5
             ],
-            "length": 17.5,
-            "width": 3,
+            "length": 27,
+            "width": 7,
             "angle": 180,
             "contrailSize": 12,
             "style": "HIGH_TECH"
@@ -158,8 +158,8 @@
             "location": [
                 -89.5, 68.5
             ],
-            "length": 15.5,
-            "width": 3,
+            "length": 27,
+            "width": 7,
             "angle": 180,
             "contrailSize": 12,
             "style": "HIGH_TECH"
@@ -168,8 +168,8 @@
             "location": [
                 -90, 65.5
             ],
-            "length": 17.5,
-            "width": 3,
+            "length": 29,
+            "width": 5,
             "angle": 180,
             "contrailSize": 12,
             "style": "HIGH_TECH"
@@ -178,8 +178,8 @@
             "location": [
                 -94, 57
             ],
-            "length": 30.5,
-            "width": 10,
+            "length": 52.5,
+            "width": 13,
             "angle": 180,
             "contrailSize": 12,
             "style": "HIGH_TECH"
@@ -188,8 +188,8 @@
             "location": [
                 -94, -57
             ],
-            "length": 30.5,
-            "width": 10,
+            "length": 52.5,
+            "width": 13,
             "angle": 180,
             "contrailSize": 12,
             "style": "HIGH_TECH"
@@ -198,8 +198,8 @@
             "location": [
                 -103.5, 43.5
             ],
-            "length": 18.5,
-            "width": 7,
+            "length": 21.5,
+            "width": 10,
             "angle": 180,
             "contrailSize": 12,
             "style": "HIGH_TECH"
@@ -208,8 +208,8 @@
             "location": [
                 -103.5, -43.5
             ],
-            "length": 18.5,
-            "width": 7,
+            "length": 21.5,
+            "width": 10,
             "angle": 180,
             "contrailSize": 12,
             "style": "HIGH_TECH"
@@ -218,8 +218,8 @@
             "location": [
                 -106.5, 33
             ],
-            "length": 30.5,
-            "width": 11,
+            "length": 53.5,
+            "width": 16,
             "angle": 180,
             "contrailSize": 12,
             "style": "HIGH_TECH"
@@ -228,8 +228,8 @@
             "location": [
                 -106.5, -33
             ],
-            "length": 30.5,
-            "width": 11,
+            "length": 53.5,
+            "width": 16,
             "angle": 180,
             "contrailSize": 12,
             "style": "HIGH_TECH"
@@ -238,8 +238,8 @@
             "location": [
                 -121.5, 17.5
             ],
-            "length": 25.5,
-            "width": 10,
+            "length": 55.5,
+            "width": 13,
             "angle": 180,
             "contrailSize": 12,
             "style": "HIGH_TECH"
@@ -248,8 +248,8 @@
             "location": [
                 -121.5, -17.5
             ],
-            "length": 26.5,
-            "width": 9,
+            "length": 55.5,
+            "width": 13,
             "angle": 180,
             "contrailSize": 12,
             "style": "HIGH_TECH"
@@ -258,8 +258,8 @@
             "location": [
                 -122, 0
             ],
-            "length": 43.5,
-            "width": 19,
+            "length": 67,
+            "width": 22,
             "angle": 180,
             "contrailSize": 12,
             "style": "HIGH_TECH"
@@ -268,8 +268,8 @@
             "location": [
                 -89, -71.5
             ],
-            "length": 18.5,
-            "width": 3,
+            "length": 28.5,
+            "width": 6,
             "angle": 180,
             "contrailSize": 12,
             "style": "HIGH_TECH"
@@ -278,8 +278,8 @@
             "location": [
                 -91, -65.5
             ],
-            "length": 17.5,
-            "width": 3,
+            "length": 29,
+            "width": 5,
             "angle": 180,
             "contrailSize": 12,
             "style": "HIGH_TECH"

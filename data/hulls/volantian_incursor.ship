@@ -90,7 +90,7 @@
         },
         {
             "id": "WS 006",
-            "size": "SMALL",
+            "size": "MEDIUM",
             "type": "ENERGY",
             "mount": "TURRET",
             "arc": 120,
@@ -101,7 +101,7 @@
         },
         {
             "id": "WS 007",
-            "size": "SMALL",
+            "size": "MEDIUM",
             "type": "ENERGY",
             "mount": "TURRET",
             "arc": 120,
@@ -232,7 +232,178 @@
             ]
         }
     ],
-    "engineSlots": [],
+    "engineSlots": [
+        {
+            "location": [
+                -136.5, 94.5
+            ],
+            "length": 32.5,
+            "width": 7,
+            "angle": 153.5,
+            "contrailSize": 12,
+            "style": "VESTIGE"
+        },
+        {
+            "location": [
+                -136.5, -94.5
+            ],
+            "length": 32.5,
+            "width": 7,
+            "angle": 206.5,
+            "contrailSize": 12,
+            "style": "VESTIGE"
+        },
+        {
+            "location": [
+                -146, 88
+            ],
+            "length": 36.5,
+            "width": 9,
+            "angle": 156.5,
+            "contrailSize": 12,
+            "style": "VESTIGE"
+        },
+        {
+            "location": [
+                -146, -88
+            ],
+            "length": 36.5,
+            "width": 9,
+            "angle": 203.5,
+            "contrailSize": 12,
+            "style": "VESTIGE"
+        },
+        {
+            "location": [
+                -154.5, 82.5
+            ],
+            "length": 32,
+            "width": 7,
+            "angle": 163,
+            "contrailSize": 12,
+            "style": "VESTIGE"
+        },
+        {
+            "location": [
+                -154.5, -82.5
+            ],
+            "length": 32,
+            "width": 7,
+            "angle": 197,
+            "contrailSize": 12,
+            "style": "VESTIGE"
+        },
+        {
+            "location": [
+                -171, 69
+            ],
+            "length": 42,
+            "width": 11,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "VESTIGE"
+        },
+        {
+            "location": [
+                -171, -69
+            ],
+            "length": 42,
+            "width": 11,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "VESTIGE"
+        },
+        {
+            "location": [
+                -189, 53
+            ],
+            "length": 51.5,
+            "width": 21,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "VESTIGE"
+        },
+        {
+            "location": [
+                -189, -53
+            ],
+            "length": 51.5,
+            "width": 21,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "VESTIGE"
+        },
+        {
+            "location": [
+                -192, 37.5
+            ],
+            "length": 50.5,
+            "width": 15,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "VESTIGE"
+        },
+        {
+            "location": [
+                -192, -37.5
+            ],
+            "length": 50.5,
+            "width": 15,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "VESTIGE"
+        },
+        {
+            "location": [
+                -195, 22.5
+            ],
+            "length": 50.5,
+            "width": 19,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "VESTIGE"
+        },
+        {
+            "location": [
+                -195, -22.5
+            ],
+            "length": 50.5,
+            "width": 19,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "VESTIGE"
+        },
+        {
+            "location": [
+                -207, 12
+            ],
+            "length": 63.5,
+            "width": 12,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "VESTIGE"
+        },
+        {
+            "location": [
+                -207, -12
+            ],
+            "length": 63.5,
+            "width": 12,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "VESTIGE"
+        },
+        {
+            "location": [
+                -208, 0
+            ],
+            "length": 58.5,
+            "width": 12,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "VESTIGE"
+        }
+    ],
     "bounds": [
             -191,      -59,
           -128.5,      -98,
