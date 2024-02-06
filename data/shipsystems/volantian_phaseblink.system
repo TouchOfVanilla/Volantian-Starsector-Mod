@@ -1,0 +1,36 @@
+{
+	"id":"volantian_phaseblink.system",
+	"type":"ENGINE_MOD",
+	"aiType":"PHASE",
+	
+	"statsScript":"data.shipsystems.scripts.VRI_shipSystem_phaseblink",
+	"runScriptWhilePaused":true,
+	
+	"canNotCauseOverload":true,
+	
+	#"phaseHighlight":"_glow1",
+	#"phaseDiffuse":"_glow2",
+	
+	
+	"effectColor1":[255,50,50,0],
+	"effectColor2":[255,100,50,0],
+	
+	"clampTurnRateAfter":true,
+	"clampMaxSpeedAfter":true,
+	
+	"engineGlowColor":[0,0,0,0],
+	"engineGlowContrailColor":[0,0,0,0],
+	"engineGlowLengthMult":0,
+	"engineGlowWidthMult":0,
+	"engineGlowGlowMult":0,
+	
+	"soundFilterType":"LOWPASS",
+	"soundFilterGain":0.8,
+	"soundFilterGainHF":0.25,
+
+	
+	#"useSound":"",
+	#"loopSound":"",
+	#"deactivateSound":"",
+	#"outOfUsesSound":"",
+}
