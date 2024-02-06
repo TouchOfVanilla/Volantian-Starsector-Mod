@@ -83,6 +83,10 @@ public class VRI_shipSystem_phaseblink extends BaseShipSystemScript {
         } else {
             ship.setPhased(false);
             unapply(stats, id);
+            stats.getFluxDissipation().unmodifyMult(id);
+            stats.getTimeMult().unmodifyMult(id);
+            ship.setPhased(false);
+            ship.setExtraAlphaMult(1f);
         }
     }
 
