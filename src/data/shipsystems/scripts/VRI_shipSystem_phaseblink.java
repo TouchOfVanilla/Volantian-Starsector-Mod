@@ -70,7 +70,7 @@ public class VRI_shipSystem_phaseblink extends BaseShipSystemScript {
         }
 
 
-        if (effectLevel >= 0f) {
+        if (effectLevel > 0f) {
             if(runOnce){
                 blistener.currcharge-=initialdivecharge;
             }
@@ -82,6 +82,7 @@ public class VRI_shipSystem_phaseblink extends BaseShipSystemScript {
             ship.setApplyExtraAlphaToEngines(true);
         } else {
             ship.setPhased(false);
+            unapply(stats, id);
         }
     }
 
@@ -95,6 +96,17 @@ public class VRI_shipSystem_phaseblink extends BaseShipSystemScript {
             player = ship == Global.getCombatEngine().getPlayerShip();
         } else {
             return;
+        }
+
+        phaseblinklistener blistener = null;
+
+        if(!ship.hasListenerOfClass(phaseblinklistener.class)) {
+
+            blistener = new phaseblinklistener(ship);
+
+            ship.addListener(blistener);
+        }else{
+            blistener = ship.getListeners(phaseblinklistener.class).get(0);
         }
 
         stats.getFluxDissipation().unmodifyMult(id);
@@ -136,9 +148,9 @@ public class VRI_shipSystem_phaseblink extends BaseShipSystemScript {
 
             if (interval.intervalElapsed()){
                 if(ship.getSystem().isActive()){
-                    currcharge+=passivegainrate;
-                }else{
                     currcharge-=activelossrate;
+                }else{
+                    currcharge+=passivegainrate;
                 }
             }
 
