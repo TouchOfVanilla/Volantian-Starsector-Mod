@@ -71,8 +71,9 @@ public class VRI_shipSystem_phaseblink extends BaseShipSystemScript {
 
 
         if (effectLevel > 0f) {
-            if(runOnce){
+            if(!runOnce){
                 blistener.currcharge-=initialdivecharge;
+                runOnce=true;
             }
             ship.setPhased(true);
             stats.getTimeMult().modifyMult(id,activetimeflow);
@@ -81,6 +82,10 @@ public class VRI_shipSystem_phaseblink extends BaseShipSystemScript {
             ship.setExtraAlphaMult(MathUtils.clamp(1f - effectLevel,0.1f,1f));
             ship.setApplyExtraAlphaToEngines(true);
         } else {
+            if(runOnce){
+                ship.getSystem().forceState(ShipSystemAPI.SystemState.OUT,0f);
+                ship.getSystem().deactivate();
+            }
             ship.setPhased(false);
             unapply(stats, id);
             stats.getFluxDissipation().unmodifyMult(id);
@@ -162,6 +167,7 @@ public class VRI_shipSystem_phaseblink extends BaseShipSystemScript {
                 currcharge = 100f;
             } else if (currcharge<0f){
                 currcharge = 0f;
+                ship.getSystem().forceState(ShipSystemAPI.SystemState.OUT,0f);
                 ship.getSystem().deactivate();
             }
         }
