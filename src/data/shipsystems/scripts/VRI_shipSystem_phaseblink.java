@@ -85,6 +85,7 @@ public class VRI_shipSystem_phaseblink extends BaseShipSystemScript {
             if(runOnce){
                 ship.getSystem().forceState(ShipSystemAPI.SystemState.OUT,0f);
                 ship.getSystem().deactivate();
+                ship.getFluxTracker().beginOverloadWithTotalBaseDuration(0.01f);
             }
             ship.setPhased(false);
             unapply(stats, id);
@@ -167,6 +168,7 @@ public class VRI_shipSystem_phaseblink extends BaseShipSystemScript {
                 currcharge = 100f;
             } else if (currcharge<0f){
                 currcharge = 0f;
+                ship.getFluxTracker().beginOverloadWithTotalBaseDuration(0.01f);
                 ship.getSystem().forceState(ShipSystemAPI.SystemState.OUT,0f);
                 ship.getSystem().deactivate();
             }
