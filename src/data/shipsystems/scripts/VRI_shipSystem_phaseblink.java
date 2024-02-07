@@ -53,7 +53,7 @@ public class VRI_shipSystem_phaseblink extends BaseShipSystemScript {
             return;
         }
 
-        if (state == State.COOLDOWN || state == State.IDLE) {
+        if (state == State.OUT || state == State.COOLDOWN || state == State.IDLE) {
             unapply(stats, id);
             return;
         }
@@ -70,7 +70,7 @@ public class VRI_shipSystem_phaseblink extends BaseShipSystemScript {
         }
 
 
-        if (effectLevel > 0f) {
+        if (ship.getSystem().isOn()) {
             if(!runOnce){
                 blistener.currcharge-=initialdivecharge;
                 runOnce=true;
