@@ -39,7 +39,7 @@ public class VRIVestigeThemeGenerator extends BaseThemeGenerator {
 
     @Override
     public int getOrder() {
-        return 5;
+        return 1;
     }
 
     @Override

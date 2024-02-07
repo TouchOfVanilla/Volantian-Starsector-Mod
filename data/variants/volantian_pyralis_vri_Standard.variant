@@ -8,7 +8,7 @@
         "targetingunit"
     ],
     "quality": 0.0,
-    "variantId": "volantian_pyralis_vri_standard",
+    "variantId": "volantian_pyralis_vri_Standard",
     "weaponGroups": [
         {
             "autofire": false,
