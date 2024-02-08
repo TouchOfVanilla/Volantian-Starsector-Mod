@@ -1,0 +1,45 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 25,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "volantian_pyralis_vri",
+    "hullMods": [
+        "targetingunit"
+    ],
+    "quality": 0.0,
+    "variantId": "volantian_pyralis_vri_Standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 004": "autopulse"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "vol_halonMK1",
+                "WS 001": "vol_halonMK1",
+                "WS 006": "vol_halonMK1"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "ionbeam",
+                "WS 003": "vol_azorian_heavyneedler"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "cyclone"
+            }
+        }
+    ]
+}

@@ -17,6 +17,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\data\characters\skills\skill_data.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\data\hullmods\hull_mods.csv">
           <value>
             <Attribute>
@@ -32,6 +39,13 @@
           </value>
         </entry>
         <entry key="\data\shipsystems\ship_systems.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\strings\descriptions.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
