@@ -21,7 +21,7 @@ public class VRI_shipSystem_phaseblink extends BaseShipSystemScript {
     private final static float activediss = 0.2f;
     private final static float activetimeflow = 3f;
     //controls how much meter is lost when first diving
-    private final static float initialdivecharge = 3f;
+    private final static float initialdivecharge = 20f;
 
     protected void maintainStatus(ShipAPI playerShip, State state, float effectLevel) {
 
@@ -78,6 +78,8 @@ public class VRI_shipSystem_phaseblink extends BaseShipSystemScript {
             ship.setPhased(true);
             stats.getTimeMult().modifyMult(id,activetimeflow);
             stats.getFluxDissipation().modifyMult(id, activediss);
+            stats.getAcceleration().modifyMult(id, 100);
+            stats.getTurnAcceleration().modifyMult(id, 100);
             ship.setJitterUnder(ship, JITTER, effectLevel, 7, 10f, 15f);
             ship.setExtraAlphaMult(MathUtils.clamp(1f - effectLevel,0.1f,1f));
             ship.setApplyExtraAlphaToEngines(true);
@@ -121,7 +123,8 @@ public class VRI_shipSystem_phaseblink extends BaseShipSystemScript {
 
         stats.getFluxDissipation().unmodifyMult(id);
         stats.getTimeMult().unmodifyMult(id);
-        
+        stats.getAcceleration().unmodify(id);
+        stats.getTurnAcceleration().unmodify(id);
 
         ship.setPhased(false);
         ship.setExtraAlphaMult(1f);
@@ -166,11 +169,15 @@ public class VRI_shipSystem_phaseblink extends BaseShipSystemScript {
 
             if(currcharge>100f){
                 currcharge = 100f;
-            } else if (currcharge<0f){
-                currcharge = 0f;
+            } else if (currcharge<=0f){
+                currcharge = 1f;
                 ship.getFluxTracker().beginOverloadWithTotalBaseDuration(0.01f);
                 ship.getSystem().forceState(ShipSystemAPI.SystemState.OUT,0f);
-                ship.getSystem().deactivate();
+            }
+            if (currcharge <= 30f && ship.getSystem().getState().equals(ShipSystemAPI.SystemState.IDLE)){
+                ship.setShipSystemDisabled(true);
+            } else{
+                ship.setShipSystemDisabled(false);
             }
         }
 

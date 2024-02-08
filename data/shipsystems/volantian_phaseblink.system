@@ -1,7 +1,7 @@
 {
 	"id":"volantian_phaseblink",
 	"type":"ENGINE_MOD",
-	"aiType":"PHASE_DISPLACER",
+	"aiType":"BURN_DRIVE",
 	
 	"statsScript":"data.shipsystems.scripts.VRI_shipSystem_phaseblink",
 	"runScriptWhilePaused":true,
@@ -29,8 +29,14 @@
 	"soundFilterGainHF":0.25,
 
 	
-	#"useSound":"",
-	#"loopSound":"",
-	#"deactivateSound":"",
-	#"outOfUsesSound":"",
+	"useSound":"system_phase_cloak_activate",
+	#"deactivateSound":"system_phase_cloak_deactivate",
+	"deactivateSound":"system_phase_cloak_deactivate",
+	"outOfUsesSound":"system_phase_cloak_collision",
+
+"aiHints":{
+		"activeSpeedIncrease":100,
+		"burstMovementPotential":100,
+		"averageSpeedIncrease":100,
+	}
 }
