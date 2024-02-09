@@ -10,6 +10,9 @@ import com.fs.starfarer.api.graphics.SpriteAPI;
 import com.fs.starfarer.api.impl.combat.BaseShipSystemScript;
 import com.fs.starfarer.api.loading.DamagingExplosionSpec;
 import com.fs.starfarer.api.util.IntervalUtil;
+import org.dark.shaders.distortion.DistortionAPI;
+import org.dark.shaders.distortion.DistortionShader;
+import org.dark.shaders.distortion.RippleDistortion;
 import org.lazywizard.lazylib.MathUtils;
 import org.lwjgl.util.vector.Vector2f;
 import org.magiclib.util.MagicRender;
@@ -76,30 +79,32 @@ public class VRI_shipSystem_phaseblink extends BaseShipSystemScript {
         }
 
 
-        if (ship.getSystem().isOn()) {
+        if (ship.getSystem().isActive()) {
             if(!runOnce){
                 blistener.currcharge-=initialdivecharge;
                 runOnce=true;
             }
-            ship.setPhased(true);
-            stats.getTimeMult().modifyMult(id,activetimeflow);
-            stats.getFluxDissipation().modifyMult(id, activediss);
-            stats.getAcceleration().modifyMult(id, 3*effectLevel);
-            stats.getTurnAcceleration().modifyMult(id, 3*effectLevel);
-            ship.setJitterUnder(ship, JITTER, effectLevel, 7, 1f, 3f);
-            ship.setExtraAlphaMult(MathUtils.clamp(1f - effectLevel,0.1f,1f));
-            ship.setApplyExtraAlphaToEngines(true);
-
+            if (ship.getSystem().getState().equals(ShipSystemAPI.SystemState.ACTIVE)) {
+                ship.setPhased(true);
+                stats.getTimeMult().modifyMult(id, activetimeflow);
+                stats.getFluxDissipation().modifyMult(id, activediss);
+                stats.getAcceleration().modifyMult(id, 3 * effectLevel);
+                stats.getTurnAcceleration().modifyMult(id, 3 * effectLevel);
+                ship.setJitterUnder(ship, JITTER, effectLevel, 7, 1f, 3f);
+                ship.setExtraAlphaMult(MathUtils.clamp(1f - effectLevel, 0.1f, 1f));
+                ship.setApplyExtraAlphaToEngines(true);
+            }
 
                 int numCopies = 14;
-                Color phaseColour = new Color(189, 0, 218, (int)(150*effectLevel));
-                Color white = new Color(255,255,255,(int)(255*effectLevel));
+            Color phasColour = new Color(112, 0, 126, 100);
+                Color phaseColour = new Color(112, 0, 126, (int)(90*effectLevel));
+                Color white = new Color(255,255,255,(int)(100*effectLevel));
 
                 int maxRange = 14;
                 for (int i = 0; i < numCopies; i++) {
 
                     Vector2f randomLoc = MathUtils.getRandomPointInCircle(ship.getLocation(), maxRange);
-                    MagicRender.singleframe(sprite2, randomLoc, new Vector2f(sprite2.getWidth(), sprite2.getHeight()), ship.getFacing()-90, phaseColour, true);
+                    MagicRender.singleframe(sprite2, randomLoc, new Vector2f(sprite2.getWidth(), sprite2.getHeight()), ship.getFacing()-90, phaseColour, false);
 
                 }
 
@@ -107,7 +112,7 @@ public class VRI_shipSystem_phaseblink extends BaseShipSystemScript {
                 maxRange = 3;
                 for (int i = 0; i < numCopies; i++) {
                     Vector2f randomLoc = MathUtils.getRandomPointInCircle(ship.getLocation(), maxRange);
-                    MagicRender.singleframe(sprite1, randomLoc, new Vector2f(sprite1.getWidth(), sprite1.getHeight()), ship.getFacing()-90, white, true);
+                    MagicRender.singleframe(sprite1, randomLoc, new Vector2f(sprite1.getWidth(), sprite1.getHeight()), ship.getFacing()-90, white, false);
 
                 }
 
@@ -157,7 +162,15 @@ public class VRI_shipSystem_phaseblink extends BaseShipSystemScript {
         ship.setPhased(false);
         ship.setExtraAlphaMult(1f);
 
-
+        RippleDistortion ripple = new RippleDistortion(ship.getLocation(), ship.getVelocity());
+        ripple.setIntensity(15f);
+        ripple.setSize(400f);
+        ripple.setArc(0, 360);
+        ripple.flip(false);
+        ripple.setLifetime(0.01f);
+        ripple.fadeOutIntensity(0.5f);
+        ripple.setLocation(ship.getLocation());
+        DistortionShader.addDistortion(ripple);
     }
 
     public StatusData getStatusData(int index, State state, float effectLevel) {
@@ -191,7 +204,7 @@ public class VRI_shipSystem_phaseblink extends BaseShipSystemScript {
             MagicUI.drawSystemBar(ship, new Color(0.5f, 0.5f, 1f, 1f), getcharge(), 0);
 
             if (interval.intervalElapsed()){
-                if(ship.getSystem().isActive()){
+                if(ship.getSystem().getState().equals(ShipSystemAPI.SystemState.ACTIVE)){
                     currcharge-=activelossrate;
                 }else{
                     currcharge+=passivegainrate;
@@ -200,17 +213,14 @@ public class VRI_shipSystem_phaseblink extends BaseShipSystemScript {
 
             if(currcharge>100f){
                 currcharge = 100f;
-            } else if (currcharge<=0f){
+            }
+            if (currcharge<=0f){
                 currcharge = 1f;
-                ship.getFluxTracker().beginOverloadWithTotalBaseDuration(0.01f);
-                ship.getSystem().forceState(ShipSystemAPI.SystemState.OUT,0f);
+                ship.getSystem().forceState(ShipSystemAPI.SystemState.OUT, 0f);
             }
             if (currcharge <= 30f && ship.getSystem().getState().equals(ShipSystemAPI.SystemState.IDLE)){
-                ship.setShipSystemDisabled(true);
-            } else{
-                ship.setShipSystemDisabled(false);
+                ship.getSystem().setCooldownRemaining(0.1f);
             }
-
         }
 
         @Override
