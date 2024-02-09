@@ -1,15 +1,15 @@
 {
 	"id":"volantian_phaseblink",
 	"type":"ENGINE_MOD",
-	"aiType":"BURN_DRIVE",
+	"aiType":"MANEUVERING_JETS",
 	
 	"statsScript":"data.shipsystems.scripts.VRI_shipSystem_phaseblink",
 	"runScriptWhilePaused":true,
 	
 	"canNotCauseOverload":true,
 	
-	#"phaseHighlight":"_glow1",
-	#"phaseDiffuse":"_glow2",
+	"phaseHighlight":"_glow1",
+	"phaseDiffuse":"_glow2",
 	
 	
 	"effectColor1":[255,50,50,0],

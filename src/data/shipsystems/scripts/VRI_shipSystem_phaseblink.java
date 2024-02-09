@@ -6,22 +6,28 @@ import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.combat.*;
 import com.fs.starfarer.api.combat.listeners.AdvanceableListener;
 import com.fs.starfarer.api.combat.listeners.DamageTakenModifier;
+import com.fs.starfarer.api.graphics.SpriteAPI;
 import com.fs.starfarer.api.impl.combat.BaseShipSystemScript;
 import com.fs.starfarer.api.loading.DamagingExplosionSpec;
 import com.fs.starfarer.api.util.IntervalUtil;
 import org.lazywizard.lazylib.MathUtils;
 import org.lwjgl.util.vector.Vector2f;
+import org.magiclib.util.MagicRender;
 import org.magiclib.util.MagicUI;
 
 import java.awt.*;
 
 public class VRI_shipSystem_phaseblink extends BaseShipSystemScript {
-    public static Color JITTER = new Color(242, 85, 85, 160);
+    public static Color JITTER = new Color(70, 70, 70, 160);
     private boolean runOnce = false;
     private final static float activediss = 0.2f;
     private final static float activetimeflow = 3f;
     //controls how much meter is lost when first diving
     private final static float initialdivecharge = 20f;
+    CombatEngineAPI engine = Global.getCombatEngine();
+    SpriteAPI sprite1 = Global.getSettings().getSprite("fx","vol_incursor_glow1",true);
+    SpriteAPI sprite2 = Global.getSettings().getSprite("fx","vol_incursor_glow2",true);
+
 
     protected void maintainStatus(ShipAPI playerShip, State state, float effectLevel) {
 
@@ -78,11 +84,33 @@ public class VRI_shipSystem_phaseblink extends BaseShipSystemScript {
             ship.setPhased(true);
             stats.getTimeMult().modifyMult(id,activetimeflow);
             stats.getFluxDissipation().modifyMult(id, activediss);
-            stats.getAcceleration().modifyMult(id, 100);
-            stats.getTurnAcceleration().modifyMult(id, 100);
-            ship.setJitterUnder(ship, JITTER, effectLevel, 7, 10f, 15f);
+            stats.getAcceleration().modifyMult(id, 3*effectLevel);
+            stats.getTurnAcceleration().modifyMult(id, 3*effectLevel);
+            ship.setJitterUnder(ship, JITTER, effectLevel, 7, 1f, 3f);
             ship.setExtraAlphaMult(MathUtils.clamp(1f - effectLevel,0.1f,1f));
             ship.setApplyExtraAlphaToEngines(true);
+
+
+                int numCopies = 14;
+                Color phaseColour = new Color(189, 0, 218, (int)(150*effectLevel));
+                Color white = new Color(255,255,255,(int)(255*effectLevel));
+
+                int maxRange = 14;
+                for (int i = 0; i < numCopies; i++) {
+
+                    Vector2f randomLoc = MathUtils.getRandomPointInCircle(ship.getLocation(), maxRange);
+                    MagicRender.singleframe(sprite2, randomLoc, new Vector2f(sprite2.getWidth(), sprite2.getHeight()), ship.getFacing()-90, phaseColour, true);
+
+                }
+
+                numCopies = 3;
+                maxRange = 3;
+                for (int i = 0; i < numCopies; i++) {
+                    Vector2f randomLoc = MathUtils.getRandomPointInCircle(ship.getLocation(), maxRange);
+                    MagicRender.singleframe(sprite1, randomLoc, new Vector2f(sprite1.getWidth(), sprite1.getHeight()), ship.getFacing()-90, white, true);
+
+                }
+
         } else {
             if(runOnce){
                 ship.getSystem().forceState(ShipSystemAPI.SystemState.OUT,0f);
@@ -96,8 +124,8 @@ public class VRI_shipSystem_phaseblink extends BaseShipSystemScript {
             ship.setPhased(false);
             ship.setExtraAlphaMult(1f);
         }
-    }
 
+    }
     public void unapply(MutableShipStatsAPI stats, String id) {
         runOnce = false;
         ShipAPI ship = null;
@@ -128,6 +156,8 @@ public class VRI_shipSystem_phaseblink extends BaseShipSystemScript {
 
         ship.setPhased(false);
         ship.setExtraAlphaMult(1f);
+
+
     }
 
     public StatusData getStatusData(int index, State state, float effectLevel) {
@@ -152,6 +182,7 @@ public class VRI_shipSystem_phaseblink extends BaseShipSystemScript {
         public float getcharge(){
             return currcharge/maxcharge;
         }
+
 
         @Override
         public void advance(float amount) {
@@ -179,6 +210,7 @@ public class VRI_shipSystem_phaseblink extends BaseShipSystemScript {
             } else{
                 ship.setShipSystemDisabled(false);
             }
+
         }
 
         @Override
