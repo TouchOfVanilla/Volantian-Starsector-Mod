@@ -50,7 +50,6 @@ public class VRI_shipSystem_phaseblink extends BaseShipSystemScript {
         if (stats.getEntity() instanceof ShipAPI) {
             ship = (ShipAPI) stats.getEntity();
             player = ship == Global.getCombatEngine().getPlayerShip();
-            id = id + "_" + ship.getId();
         } else {
             return;
         }
@@ -121,13 +120,6 @@ public class VRI_shipSystem_phaseblink extends BaseShipSystemScript {
             if(runOnce){
                 ship.getSystem().forceState(ShipSystemAPI.SystemState.OUT,0f);
             }
-            ship.setPhased(false);
-            stats.getFluxDissipation().unmodifyMult(id);
-            stats.getTimeMult().unmodifyMult(id);
-            stats.getAcceleration().unmodify(id);
-            stats.getTurnAcceleration().unmodify(id);
-            ship.setPhased(false);
-            ship.setExtraAlphaMult(1f);
         }
 
     }
@@ -209,6 +201,7 @@ public class VRI_shipSystem_phaseblink extends BaseShipSystemScript {
             if (currcharge<=0f){
                 currcharge = 1f;
                 ship.getSystem().forceState(ShipSystemAPI.SystemState.OUT, 0f);
+                Global.getSoundPlayer().playSound("system_phase_cloak_deactivate", 1,1,ship.getLocation(),ship.getVelocity());
             }
             if (currcharge <= 30f && ship.getSystem().getState().equals(ShipSystemAPI.SystemState.IDLE)){
                 ship.getSystem().setCooldownRemaining(0.1f);
