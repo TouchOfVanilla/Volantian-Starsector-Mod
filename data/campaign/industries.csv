@@ -8,8 +8,8 @@ fleetName:Converted Nexus,
 }",graphics/icons/industry/battlestation.png,data.world.industries_and_buildings.NexusStationPlugin,"A formerly-automated Remnant drone nexus that has since been converted for human habitation and activities. Retains the armament and danger of the former.
 
 Must be reduced before invasions or bombardment can be attempted.",2080
-,,,,,,,,,,,,,500
-,,,,,,,,,,,,,500
+VRI_AzorianMining,Azorian Crystal Mining,20,60,,2,,,"mining, industry, industrial",,graphics/icons/industry/crystalmining.png,com.fs.starfarer.api.impl.campaign.econ.impl.Mining,"Azorian crystals, named for their moon of origin, possess the uncanny ability to eliminate latency in computing, especially over long distances. The extraction of these crystals is limited to the moon of Azor, as no other living examples of the silicate superorganism are known to exist in the Persean sector.",300
+VRI_RemnantWorks,De-Automated Shipyard,60,150,,12,,,"heavyindustry, uses_blueprints, industry, industrial",,graphics/icons/industry/remmie_industry.png,com.fs.starfarer.api.impl.campaign.econ.impl.HeavyIndustry,"As with all of Tri-Tachyon's high-end, consumer-grade, easily accessible products, the TTDS Drone Nexus (trademark pending) is of highly modular design and constructed with user satisfaction in mind. As such, the Volantian polity is able to reprogram and make use of the station's industrial shipbuilding equipment to produce (de)automated instruments of war.",1700
 ,,,,,,,,,,,,,500
 ,,,,,,,,,,,,,500
 ,,,,,,,,,,,,,500

@@ -6,9 +6,9 @@
     
 	"asteroidMiningFleetName":"Scavenger",
     "gasMiningFleetName":"Collector",
-    "invasionFleetName":"Grand Vanguard",
+    "invasionFleetName":"Grand Reclamation",
     "responseFleetName":"Response",
-    "invasionSupportFleetName":"Auxillary Vanguard",
+    "invasionSupportFleetName":"Auxillary Reclamation",
     "defenceFleetName":"Guardian",
 	"suppressionFleetName":"Peacekeeper",
 	"noSyncRelations":false,
@@ -20,38 +20,36 @@
 	"vengeanceFleetSizeMult":1.50,
 	"factionIdForHqResponse":"vri",
 	"freeMarket":true,
-	"specialForcesMaxFleets":1,
+	"specialForcesMaxFleets":2,
 	"specialForcesPointMult":1.75,
 	"specialForcesSizeMult":1.75,
 	"stabilizeCommodities":["food", "hand_weapons", "supplies"],
     "startRelationships":{
 		# vanilla factions
-		"sindrian_diktat": 0,
+		"sindrian_diktat": 0.5, #no like heggie
 		"lions_guard": 0,
 		"independent": 0.5, #hi frens
 		"persean":0.5, #we hate the hegemony too!
 		"pirates": -0.5,
 		"remnant":0, #You are being liberated from your ships. Please do not resist.
-		"hegemony":-1.0, #domain of man? more like doLAME of man!
+		"hegemony":-1.0, #fuck off
 		"luddic_church": -1.0, #kids, you're both just.... terrible.
 		"luddic_path":-1.0,
-		"tritachyon": 0.5, #thank you for letting us borrow corporate assets
+		"tritachyon": -0.5, #reclamation cares not for profit margins (and the remnants)
 
 		# modded factions
 		"mayasura": -1.0, #diplomatic blunder
-		"eis": -0.5, #Hegemony lapdogs
+		"eis": -1.0, #Hegemony lapdogs
 		"tahlan_legioinfernalis":-1.0,
-		"diableavionics": 0.5, #IN THIS HOUSEHOLD THE HEGEMONY SUCKS
 		"draco":-1.0,
 		"fang":-1.0,
 		"HMI":0.5, #we love alfonzo
 		"brighton": 0.76, #how do you do my fellow scavengers
-		"fpe": 0,
 		"mess":-1.0, #such a mess
 		"cabal":-1.0, #TT's weird cousins
-		"tahlan_greathouses":0.5,
 		"orks": 0.25, #we like you but we don't like your friends
-		"scalartech": 0.5, #howdy neighbors
+		"scalartech": 0.5, #hi diddly ho neighborino
+		"vic": -1.0, #greedy corpos + competion + dont believe in freedom of form + l + ratio
 	},
     
 	
@@ -62,7 +60,8 @@
 		"luddic_church": -0.25,
 		"luddic_path": -1,
 		"remnant":0,
-		"tahlan_legioinfernalis": -0.5
+		"tahlan_legioinfernalis": -0.5,
+		"vic":-1.0
 	},
 	
 	

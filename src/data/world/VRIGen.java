@@ -4,22 +4,14 @@ import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.*;
 import com.fs.starfarer.api.campaign.econ.EconomyAPI;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
-import com.fs.starfarer.api.impl.campaign.procgen.themes.VRIVestigeThemeGenerator;
 import com.fs.starfarer.api.impl.campaign.ids.Factions;
-import com.fs.starfarer.api.impl.campaign.procgen.Constellation;
-import com.fs.starfarer.api.impl.campaign.procgen.StarAge;
-import com.fs.starfarer.api.impl.campaign.procgen.themes.SectorThemeGenerator;
-import com.fs.starfarer.api.impl.campaign.procgen.themes.VRIVestigeThemeGenerator;
 import com.fs.starfarer.api.impl.campaign.shared.SharedData;
-import com.fs.starfarer.api.util.Misc;
+import data.scripts.VRI_CrossmodPlugins;
 import data.world.systems.*;
 import org.apache.log4j.Logger;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
 
-import static com.fs.starfarer.api.impl.campaign.ids.Tags.THEME_RUINS;
 import static org.lazywizard.lazylib.MathUtils.getRandomNumberInRange;
 
 public class VRIGen implements SectorGeneratorPlugin {
@@ -87,23 +79,16 @@ public class VRIGen implements SectorGeneratorPlugin {
     @Override
     public void generate(SectorAPI sector) {
         FactionAPI vri = sector.getFaction("vri");
-        FactionAPI vesties = sector.getFaction("vestige");
         new Uelyst().generate(sector);
         new Royce().generate(sector);
         new Avery().generate(sector);
-        new Fevali().generate(sector);
-        new Verlat().generate(sector);
         new Espoz().generate(sector);
-        new Oceana().generate(sector);
 
         StarSystemAPI uelyst = Global.getSector().getStarSystem("Uelyst");
         StarSystemAPI royce = Global.getSector().getStarSystem("Royce");
         StarSystemAPI avery = Global.getSector().getStarSystem("Avery");
-        StarSystemAPI fevali = Global.getSector().getStarSystem("Fevali");
-        StarSystemAPI verlat = Global.getSector().getStarSystem("Verlat");
         StarSystemAPI espoz = Global.getSector().getStarSystem("Espoz");
 
-        SectorThemeGenerator.generators.add(1, new VRIVestigeThemeGenerator());
 
         SharedData.getData().getPersonBountyEventData().addParticipatingFaction("vri");
 //Vanilla Factions
@@ -117,8 +102,9 @@ public class VRIGen implements SectorGeneratorPlugin {
         vri.setRelationship(Factions.LIONS_GUARD, 0f); //Who are you people?!
         vri.setRelationship(Factions.HEGEMONY, -1f); //Stole our lunch money (and our former glory)
         vri.setRelationship(Factions.REMNANTS, 0f); //Officer, the radiant is not in my fleet, it is chasing me
-        vesties.setRelationship(Factions.REMNANTS, -1f); //we are different colors and therefore we must fight
 
-
+        if (Global.getSettings().getModManager().isModEnabled("vic")){
+            VRI_CrossmodPlugins.initVICCrossmod();
+        }
     }
 }

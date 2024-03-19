@@ -4,10 +4,7 @@
 "Volantian":[31, 247, 182, 255],
 "Volantian Remnant Conversion":[0, 205, 159, 255],
 "Volantian Auxillary":[31, 247, 182, 255],
-				"VI Battlegroup":[119, 125, 192, 255],
-				"Vestige": [255,255,255,255],
 },
-"drop_prob_officer_vestige_core":0.2,
 
 "graphics": {
 "fx": {
@@ -17,9 +14,7 @@
 "vol_laevaten_beam": "graphics/fx/vol_laevaten_beam.png",
 "vol_trail_zappy": "graphics/trails/fx/vol_trail_zappy.png",
 "vol_trail_smooth": "graphics/trails/fx/vol_trail_smoothish.png",
-"vol_rapture_mark": "graphics/fx/vol_rapture_mark.png",
-"vol_incursor_glow1": "graphics/ships/vestiges/existentia_glow1.png",
-"vol_incursor_glow2": "graphics/ships/vestiges/existentia_glow2.png"
+"vol_rapture_mark": "graphics/fx/vol_rapture_mark.png"
 },
 "characters": {
 "blanche": "graphics/portraits/blanche1.png",
@@ -34,7 +29,6 @@
 "VRI_package": "graphics/icons/cargo/vri_bp.png",
 "VRIrem_package": "graphics/icons/cargo/vri_rem_bp.png",
 "VRIaux_package": "graphics/icons/cargo/vri_aux_bp.png",
-"VI_package": "graphics/icons/cargo/VI_bp.png"
 }
 }
 }

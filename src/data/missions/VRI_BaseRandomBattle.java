@@ -9,15 +9,10 @@ import com.fs.starfarer.api.mission.FleetSide;
 import com.fs.starfarer.api.mission.MissionDefinitionAPI;
 import com.fs.starfarer.api.mission.MissionDefinitionPlugin;
 import com.fs.starfarer.api.util.WeightedRandomPicker;
-import data.scripts.VRI_ModPlugin;
-import data.missions.VRI_FleetGenerator.*;
 
+import java.awt.*;
 import java.util.List;
-import java.awt.Color;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.Random;
+import java.util.*;
 
 public class VRI_BaseRandomBattle implements MissionDefinitionPlugin {
     public static final Comparator<FleetMemberAPI> PRIORITY = new Comparator<FleetMemberAPI>() {
@@ -136,28 +131,28 @@ public class VRI_BaseRandomBattle implements MissionDefinitionPlugin {
         VRI_FleetGenerator type;
         switch (fleetType) {
             case "raiders":
-                type = GeneratorFleetTypes.RAIDERS;
+                type = VRI_FleetGenerator.GeneratorFleetTypes.RAIDERS;
                 break;
             case "patrol fleet":
-                type = GeneratorFleetTypes.PATROL;
+                type = VRI_FleetGenerator.GeneratorFleetTypes.PATROL;
                 break;
             case "hunter-killers":
-                type = GeneratorFleetTypes.HUNTERS;
+                type = VRI_FleetGenerator.GeneratorFleetTypes.HUNTERS;
                 break;
             case "war fleet":
-                type = GeneratorFleetTypes.WAR;
+                type = VRI_FleetGenerator.GeneratorFleetTypes.WAR;
                 break;
             case "defense fleet":
-                type = GeneratorFleetTypes.DEFENSE;
+                type = VRI_FleetGenerator.GeneratorFleetTypes.DEFENSE;
                 break;
             case "convoy":
-                type = GeneratorFleetTypes.CONVOY;
+                type = VRI_FleetGenerator.GeneratorFleetTypes.CONVOY;
                 break;
             case "blockade-runners":
-                type = GeneratorFleetTypes.BLOCKADE;
+                type = VRI_FleetGenerator.GeneratorFleetTypes.BLOCKADE;
                 break;
             case "invasion fleet":
-                type = GeneratorFleetTypes.INVASION;
+                type = VRI_FleetGenerator.GeneratorFleetTypes.INVASION;
                 break;
             default:
                 return null;
@@ -208,64 +203,7 @@ public class VRI_BaseRandomBattle implements MissionDefinitionPlugin {
         FACTIONS.add("domain", 0.25f);
         FACTIONS.add("sector", 0.25f);
         FACTIONS.add("everything", 0.25f);
-        if (VRI_ModPlugin.hasUnderworld) {
-            FACTIONS.add("cabal", 0.25f);
-        }
-        if (VRI_ModPlugin.imperiumExists) {
-            FACTIONS.add("interstellarimperium", 1f);
-        }
-        if (VRI_ModPlugin.blackrockExists) {
-            FACTIONS.add("blackrock_driveyards", 0.75f);
-            FACTIONS.add("br_consortium", 0.25f);
-        }
-        if (VRI_ModPlugin.exigencyExists) {
-            FACTIONS.add("exipirated", 0.5f);
-            FACTIONS.add("exigency", 0.75f);
-        }
-        if (VRI_ModPlugin.templarsExists) {
-            FACTIONS.add("templars", 0.25f);
-        }
-        if (VRI_ModPlugin.shadowyardsExists) {
-            FACTIONS.add("shadow_industry", 1f);
-        }
-        if (VRI_ModPlugin.junkPiratesExists) {
-            FACTIONS.add("junk_pirates", 0.75f);
-            FACTIONS.add("pack", 0.75f);
-            FACTIONS.add("syndicate_asp", 0.5f);
-        }
-        if (VRI_ModPlugin.scyExists) {
-            FACTIONS.add("SCY", 1f);
-        }
-        if (VRI_ModPlugin.tiandongExists) {
-            FACTIONS.add("tiandong", 1f);
-        }
-        if (VRI_ModPlugin.diableExists) {
-            FACTIONS.add("diableavionics", 1f);
-        }
-        if (VRI_ModPlugin.oraExists) {
-            FACTIONS.add("ORA", 1f);
-        }
-        if (VRI_ModPlugin.tyradorExists) {
-            FACTIONS.add("Coalition", 1f);
-        }
-        if (VRI_ModPlugin.iceExists) {
-            FACTIONS.add("sun_ice", 0.75f);
-        }
-        if (VRI_ModPlugin.borkenExists) {
-            FACTIONS.add("fob", 0.5f);
-        }
-        if (VRI_ModPlugin.scalarTechExists) {
-            FACTIONS.add("scalartech", 0.5f);
-            FACTIONS.add("scalartech_elite", 0.25f);
-        }
-        if (VRI_ModPlugin.dmeExists) {
-            FACTIONS.add("dassault_mikoyan", 0.75f);
-            FACTIONS.add("6eme_bureau", 0.25f);
-            FACTIONS.add("blade_breakers", 0.25f);
-        }
-        if (VRI_ModPlugin.arkgneisisExists) {
-            FACTIONS.add("al_ars", 1f);
-        }
+
         FACTIONS.add("vri", 0.25f);
     }
 

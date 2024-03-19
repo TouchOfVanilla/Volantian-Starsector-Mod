@@ -136,7 +136,9 @@
 			"solar_shielding",
 			"stabilizedshieldemitter",
 			"surveying_equipment",
-			"VRI_MakeshiftFluxNetwork"
+            "azorian",
+            "azorian_relay",
+            "azorian_shields"
 		],
 	},
 	"factionDoctrine":{

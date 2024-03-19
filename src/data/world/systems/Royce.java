@@ -72,11 +72,11 @@ public class Royce {
                 Volantis,
                 null,
                 "Volantis",
-                5,
+                6,
 
                 new ArrayList<String>(
                         Arrays.asList(
-                                Conditions.POPULATION_5,
+                                Conditions.POPULATION_6,
                                 Conditions.LARGE_REFUGEE_POPULATION,
                                 Conditions.HABITABLE,
                                 Conditions.LOW_GRAVITY,
@@ -101,7 +101,9 @@ public class Royce {
                                 Industries.FARMING,
                                 Industries.LIGHTINDUSTRY,
                                 Industries.WAYSTATION,
-                                Industries.MILITARYBASE,
+                                Industries.HIGHCOMMAND,
+                                Industries.HEAVYBATTERIES,
+                                Industries.TECHMINING,
                                 Industries.STARFORTRESS_HIGH,
                                 "VRI_VolGen_Office",
                                 "cryorevival"
@@ -131,21 +133,6 @@ public class Royce {
         Volantis_market.getCommDirectory().getEntryForPerson(blanche).setHidden(false);
         Volantis_market.addPerson(blanche);
 
-        PersonAPI delilah = Global.getFactory().createPerson();
-        delilah.setId("delilah");
-        delilah.setFaction("vri");
-        delilah.setGender(FullName.Gender.FEMALE);
-        delilah.setRankId(Ranks.FACTION_LEADER);
-        delilah.setPostId(Ranks.POST_ADMINISTRATOR);
-        delilah.setImportance(PersonImportance.VERY_HIGH);
-        delilah.getName().setFirst("November-Echo-Delta");
-        delilah.getName().setLast("'Delilah'");
-        delilah.setPortraitSprite(Global.getSettings().getSpriteName("characters", delilah.getId()));
-
-        Volantis_market.getCommDirectory().addPerson(delilah);
-        Volantis_market.getCommDirectory().getEntryForPerson(delilah).setHidden(false);
-        Volantis_market.addPerson(delilah);
-
 
         //Azor
         PlanetAPI Azor = system.addPlanet("vri_planet_Azor",
@@ -157,24 +144,110 @@ public class Royce {
                 200f,
                 90f);
         Azor.setCircularOrbit(Volantis, 100, azorDist,100);
-        Misc.initConditionMarket(Azor);
-        MarketAPI Azor_market = Azor.getMarket();
-        Azor_market.setPlanetConditionMarketOnly(true);
-        Azor_market.addCondition(Conditions.NO_ATMOSPHERE);
-        Azor_market.addCondition(Conditions.LOW_GRAVITY);
-        Azor_market.addCondition(Conditions.ORE_SPARSE);
-        Azor_market.addCondition(Conditions.RARE_ORE_MODERATE);
-        Azor_market.setSurveyLevel(MarketAPI.SurveyLevel.FULL);
-        Azor_market.setPrimaryEntity(Azor);
-        Azor.setMarket(Azor_market);
-        for (MarketConditionAPI mc : Azor_market.getConditions())
-        {
-            mc.setSurveyed(true);
-        }
 
-        //Cryosleeper Station "Ontos-117"
-        SectorEntityToken CyrosleeperStructure = system.addCustomEntity("vri_cryosleeper", "Cryosleeper Station \"Ontos-117\"", "vri_cryosleeper_station", "vri");
+        MarketAPI azormarket = VRIGen.addMarketplace(
+                "vri",
+                Azor,
+                null,
+                "Azor",
+                5,
+
+                new ArrayList<String>(
+                        Arrays.asList(
+                                Conditions.POPULATION_5,
+                                Conditions.LOW_GRAVITY,
+                                Conditions.VOLATILES_TRACE,
+                                Conditions.NO_ATMOSPHERE
+                        )
+                ),
+
+                new ArrayList<>(
+                        Arrays.asList(
+                                Submarkets.GENERIC_MILITARY,
+                                Submarkets.SUBMARKET_OPEN,
+                                Submarkets.SUBMARKET_STORAGE,
+                                Submarkets.SUBMARKET_BLACK
+                        )
+                ),
+                new ArrayList<>(
+                        Arrays.asList(
+                                Industries.POPULATION,
+                                Industries.MEGAPORT,
+                                Industries.WAYSTATION,
+                                Industries.HIGHCOMMAND,
+                                Industries.ORBITALWORKS,
+                                Industries.STARFORTRESS_HIGH,
+                                Industries.MINING,
+                                "VRI_AzorianMining"
+                        )
+                ),
+                1f,
+                true,
+                true
+                );
+        //Arkship "Ontos-117"
+
+        SectorEntityToken CyrosleeperStructure = system.addCustomEntity("vri_cryosleeper", "Arkship\"Ontos-117\"", "vri_cryosleeper_station", "vri");
         CyrosleeperStructure.setCircularOrbitPointingDown(RoyceStar, 360f * (float) Math.random(), cryosleeperDist, 200);
+
+        MarketAPI Ontos = VRIGen.addMarketplace(
+                "vri",
+                CyrosleeperStructure,
+                null,
+                "Arkship Ontos",
+                7,
+
+                new ArrayList<String>(
+                        Arrays.asList(
+                                Conditions.POPULATION_7,
+                                Conditions.OUTPOST,
+                                Conditions.STEALTH_MINEFIELDS,
+                                Conditions.FREE_PORT
+                        )
+                ),
+
+                new ArrayList<>(
+                        Arrays.asList(
+                                Submarkets.SUBMARKET_OPEN,
+                                Submarkets.SUBMARKET_STORAGE,
+                                Submarkets.SUBMARKET_BLACK
+                        )
+                ),
+                new ArrayList<>(
+                        Arrays.asList(
+                                Industries.POPULATION,
+                                Industries.MEGAPORT,
+                                Industries.WAYSTATION,
+                                Industries.ORBITALWORKS,
+                                Industries.HIGHCOMMAND,
+                                Industries.REFINING,
+                                Industries.FUELPROD,
+                                Industries.HEAVYBATTERIES,
+                                Industries.STARFORTRESS_HIGH,
+                                Industries.CRYOSANCTUM
+                        )
+                ),
+                //tariffs
+                0.3f,
+                //freeport
+                true,
+                //junk and chatter
+                true);
+
+        PersonAPI delilah = Global.getFactory().createPerson();
+        delilah.setId("delilah");
+        delilah.setFaction("vri");
+        delilah.setGender(FullName.Gender.FEMALE);
+        delilah.setRankId(Ranks.FACTION_LEADER);
+        delilah.setPostId(Ranks.POST_ADMINISTRATOR);
+        delilah.setImportance(PersonImportance.VERY_HIGH);
+        delilah.getName().setFirst("November-Echo-Delta");
+        delilah.getName().setLast("'Delilah'");
+        delilah.setPortraitSprite(Global.getSettings().getSpriteName("characters", delilah.getId()));
+
+        Ontos.getCommDirectory().addPerson(delilah);
+        Ontos.getCommDirectory().getEntryForPerson(delilah).setHidden(false);
+        Ontos.addPerson(delilah);
 
         //Desmond's Landing
         PlanetAPI Desmond = system.addPlanet("vri_planet_Desmond",

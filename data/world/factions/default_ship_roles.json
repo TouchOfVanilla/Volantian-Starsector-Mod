@@ -1,25 +1,14 @@
 {
 	"combatSmall": {
-	"volantian_aeten_vigilant": 3, "volantian_aeten_expectant": 3, "volantian_aeten_enduring": 3,
 		"volantian_glimmer_vri_Standard":10,
-		"volantian_kit_lg_Elite": 5, "volantian_kit_lg_Standard": 5,
-		"volantian_kit_Support": 5, "volantian_kit_Standard": 5,
-		"volantian_lasher_vi_Standard": 5, "volantian_lasher_vi_Support": 5,
 		"volantian_lumen_vri_Standard": 10,
 		"volantian_metatron_vri_Elite": 3, "volantian_metatron_vri_Standard": 3,
-		"volantian_monitor_vi_Standard": 10,
 		"volantian_sandalphon_vri_Elite": 5, "volantian_sandalphon_vri_Standard": 5,
-		"volantian_vanguard_vi_Elite": 5, "volantian_vanguard_vi_Standard": 5,
 		"volantian_wolf_vri_Elite": 10,
 		"volantian_glint_Standard": 10,
 	},
 	"combatMedium": {
-		"volantian_condor_vi_Standard": 10,
-		"volantian_eradicator_vi_Standard": 10,
-		"volantian_evercer_enduring": 3, "volantian_evercer_vigilant": 3, "volantian_evercer_expectant": 3,
 		"volantian_fulgent_vri_Standard": 10,
-		"volantian_enforcer_vi_Elite": 5, "volantian_enforcer_vi_Standard": 5,
-		"volantian_manticore_vi_Elite": 5, "volantian_manticore_vi_Standard": 5,
 		"volantian_medusa_vri_Elite": 5, "volantian_medusa_vri_Standard": 5,
 		"volantian_prismatic_vri_Standard": 5, "volantian_prismatic_vri_Support": 5,
 		"volantian_sunder_vri_Elite": 5, "volantian_sunder_vri_Standard": 5,
@@ -30,23 +19,15 @@
 		"volantian_gauntlet_vri_Standard": 10,
 		"volantian_pyralis_vri_Standard": 10,
 		"volantian_chromatic_vri_Standard": 10,
-		"volantian_dominator_vi_Standard": 10,
-		"volantian_enchanter_Standard": 5, "volantian_enchanter_Support": 5,
-		"volantian_legion_vi_Standard": 10,
 		"volantian_sentinel_Elite": 5, "volantian_sentinel_Standard": 5,
 		"volantian_sentinel_vri_Standard": 10,
-		"volantian_edosea_vigilant": 5, "volantian_edosea_enduring": 5,
 		"volantian_chromatic_Standard": 5, "volantian_chromatic_Support": 5,
 		"volantian_glare_Standard": 5, "volantian_glare_Strike": 5,
-		"volantian_perennial_Vigilant": 3, "volantian_perennial_Enduring": 3,
 	},
 	"combatCapital": {
-		"volantian_aeternum_vigilant": 3, "volantian_aeternum_expectant": 3, "volantian_aeternum_enduring": 3,
 		"volantian_ionos_vri_Standard": 10,
-		"volantian_ventalse_vi_Standard": 10,
 		"volantian_radiant_vri_Standard": 7,
 		"volantian_nova_vri_Standard": 10,
-		"volantian_incursor_Vigilant": 10
 	},
 	"combatFreighterSmall": {
 	},
@@ -59,18 +40,11 @@
 	"carrierSmall": {
 	},
 	"carrierMedium": {
-		"volantian_condor_vi_Standard": 10,
-		"volantian_enforcer_vi_Elite": 5, "volantian_enforcer_vi_Standard": 5,
-		"volantian_perpetua_vigilant": 3, "volantian_perpetua_expectant": 3, "volantian_perpetua_enduring": 3,
 		"volantian_scintilla_vri_Standard": 10,
 	},
 	"carrierLarge": {
-		"volantian_dominator_vi_Standard": 10,
-		"volantian_enchanter_Standard": 5, "volantian_enchanter_Support": 5,
-		"volantian_eradicator_vi_Standard": 10,
 		"volantian_gauntlet_Elite": 5, "volantian_gauntlet_Standard": 5,
 		"volantian_gauntlet_vri_Standard": 5,
-		"volantian_heron_vi_Standard": 10,
 	},
 	"phaseSmall": {
 	},

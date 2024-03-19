@@ -116,7 +116,8 @@ public class Avery {
                                 Industries.WAYSTATION,
                                 Industries.HEAVYBATTERIES,
                                 "VRI_ConvertedNexusStation",
-                                "VRI_VolGen_Office"
+                                "VRI_VolGen_Office",
+                                "VRI_RemnantWorks"
 
                         )
                 ),

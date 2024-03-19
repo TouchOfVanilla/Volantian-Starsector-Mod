@@ -1,17 +1,7 @@
 package data.hullmods;
 
 import com.fs.starfarer.api.Global;
-import com.fs.starfarer.api.characters.PersonAPI;
 import com.fs.starfarer.api.combat.*;
-import com.fs.starfarer.api.fleet.FleetMemberAPI;
-import com.fs.starfarer.api.mission.FleetSide;
-import data.world.industries_and_buildings.VRI_MidlineMarketPlugin;
-import org.apache.log4j.Logger;
-
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Set;
 
 
 public class AzorianNavigationRelay extends BaseHullMod{

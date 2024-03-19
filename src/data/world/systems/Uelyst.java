@@ -103,11 +103,13 @@ public class Uelyst implements FleetEventListener {
                 new ArrayList<>(
                         Arrays.asList(
                                 Industries.POPULATION,
-                                Industries.SPACEPORT,
+                                Industries.MEGAPORT,
                                 Industries.WAYSTATION,
                                 Industries.MINING,
-                                Industries.ORBITALSTATION,
+                                Industries.HEAVYBATTERIES,
                                 Industries.REFINING,
+                                Industries.STARFORTRESS_HIGH,
+                                Industries.PATROLHQ,
                                 "VRI_VolGen_Office"
                         )
                 ),
@@ -152,11 +154,11 @@ public class Uelyst implements FleetEventListener {
                         )
                 ),
                 "Geir's Slab",
-                5,
+                6,
 
                 new ArrayList<String>(
                         Arrays.asList(
-                                Conditions.POPULATION_5,
+                                Conditions.POPULATION_6,
                                 Conditions.COLD,
                                 Conditions.SOLAR_ARRAY,
                                 Conditions.RUINS_VAST,
@@ -184,7 +186,9 @@ public class Uelyst implements FleetEventListener {
                                 Industries.LIGHTINDUSTRY,
                                 Industries.MINING,
                                 Industries.FARMING,
-                                Industries.ORBITALSTATION_HIGH,
+                                Industries.HEAVYBATTERIES,
+                                Industries.STARFORTRESS_HIGH,
+                                Industries.HIGHCOMMAND,
                                 "VRI_VolGen_Office",
                                 "VRI_Artillery",
 
@@ -272,12 +276,13 @@ public class Uelyst implements FleetEventListener {
                 new ArrayList<>(
                         Arrays.asList(
                                 Industries.POPULATION,
-                                Industries.SPACEPORT,
+                                Industries.MEGAPORT,
                                 Industries.HEAVYBATTERIES,
-                                Industries.MILITARYBASE,
+                                Industries.HIGHCOMMAND,
                                 "VRI_ConvertedNexusStation",
-                                Industries.HEAVYINDUSTRY,
-                                "VRI_VolGen_Office"
+                                Industries.ORBITALWORKS,
+                                "VRI_VolGen_Office",
+                                "VRI_RemnantWorks"
                         )
                 ),
                 //tariffs

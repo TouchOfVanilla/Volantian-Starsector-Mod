@@ -1,6 +1,7 @@
 package data.scripts;
 
 import com.fs.starfarer.api.Global;
+import com.fs.starfarer.api.impl.campaign.VRI_ArkshipScript;
 import lunalib.lunaSettings.LunaSettings;
 
 public class VRILunaSettings {
@@ -13,6 +14,7 @@ public class VRILunaSettings {
         }
         return blanche;
     }
+
     public static boolean VestigeBoolean(){
         Boolean vesties = false;
         if (Global.getSettings().getModManager().isModEnabled("lunalib"))
