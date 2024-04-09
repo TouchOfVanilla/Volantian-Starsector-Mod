@@ -11,7 +11,7 @@ import com.fs.starfarer.api.impl.campaign.ids.Stats;
 public class VRIFleetInflationListener implements FleetInflationListener {
     public static final String VOLSHIELDS = "azorian_shields"; //target hullmod ID
     public static final String VOLAUX = "volaux";
-    public static final float CHANCE = 0.75f; //chance for hullmod to spawn smod
+    public static final float CHANCE = 1f; //chance for hullmod to spawn smod
     public int getRandomNumber(int min, int max) {
         return (int) ((Math.random() * (max - min)) + min);
     }
@@ -23,17 +23,17 @@ public class VRIFleetInflationListener implements FleetInflationListener {
         if(!fleet.getFaction().getId().contains("vri")) return; //change the quote to the ID of target faction
 
         for (FleetMemberAPI fleetMemberAPI : fleet.getMembersWithFightersCopy()) {
-            boolean vricombat = fleetMemberAPI.getHullSpec().getBuiltInMods().contains(VOLAUX);
+            boolean vricombat = fleetMemberAPI.getHullSpec().getManufacturer().contains("Volantian"); //change the quote to your target ships manufacturer/tech
             boolean chance = (Math.random() > CHANCE);
 
             if(fleetMemberAPI.isFighterWing())continue;
             if(fleetMemberAPI.isStation())continue;
             if(fleetMemberAPI.isMothballed())continue;
             if(!vricombat)continue;
-            if(chance)continue;
+            if(!chance)continue;
 
             int SModsAmount = (determineAmountofSmods(fleet.getFaction()));
-            fleetMemberAPI.getStats().getDynamic().getMod(Stats.MAX_PERMANENT_HULLMODS_MOD).modifyFlat("VolInflation", (SModsAmount));
+            fleetMemberAPI.getStats().getDynamic().getMod(Stats.MAX_PERMANENT_HULLMODS_MOD).modifyFlat("Modifications", (SModsAmount));
             fleetMemberAPI.getVariant().getSModdedBuiltIns().add(VOLSHIELDS);
             fleetMemberAPI.updateStats();
         }

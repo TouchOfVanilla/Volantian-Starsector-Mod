@@ -25,6 +25,7 @@ public class AzorianShieldTuning extends BaseHullMod {
 
     public void applyEffectsBeforeShipCreation(ShipAPI.HullSize hullSize, MutableShipStatsAPI stats, String id) {
         stats.getShieldDamageTakenMult().modifyMult(id,1f + SHIELD_DAM_MULT * 0.01f);
+        stats.getShieldArcBonus().modifyFlat(id, -40f);
     }
 
     public void advanceInCombat(ShipAPI ship, float amount) {
@@ -77,7 +78,7 @@ public class AzorianShieldTuning extends BaseHullMod {
                     new Color(0, 255, 207, 127), //Central color
                     new Color(0, 255, 207, 127) //Fringe Color
             );
-            crackleTimer.setInterval(1f,1f);
+            crackleTimer.setInterval(2f,2f);
         }
         crackleTimer.advance(0.25f);
       }
