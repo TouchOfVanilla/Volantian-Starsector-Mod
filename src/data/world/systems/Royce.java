@@ -32,6 +32,7 @@ public class Royce {
     final float comDist = 8500;
     final float navDist = 9000;
     final float sensorDist = 7000;
+    public static String ONTOS = null;
 
     public void generate(SectorAPI sector) {
         StarSystemAPI system = sector.createStarSystem("Royce");
@@ -195,11 +196,11 @@ public class Royce {
                 CyrosleeperStructure,
                 null,
                 "Arkship Ontos",
-                7,
+                6,
 
                 new ArrayList<String>(
                         Arrays.asList(
-                                Conditions.POPULATION_7,
+                                Conditions.POPULATION_6,
                                 Conditions.OUTPOST,
                                 Conditions.STEALTH_MINEFIELDS,
                                 Conditions.FREE_PORT
@@ -221,7 +222,6 @@ public class Royce {
                                 Industries.ORBITALWORKS,
                                 Industries.HIGHCOMMAND,
                                 Industries.REFINING,
-                                Industries.FUELPROD,
                                 Industries.HEAVYBATTERIES,
                                 Industries.STARFORTRESS_HIGH,
                                 Industries.CRYOSANCTUM
@@ -233,6 +233,7 @@ public class Royce {
                 true,
                 //junk and chatter
                 true);
+        ONTOS = Ontos.getId();
 
         PersonAPI delilah = Global.getFactory().createPerson();
         delilah.setId("delilah");

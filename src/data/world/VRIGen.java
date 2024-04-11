@@ -5,6 +5,7 @@ import com.fs.starfarer.api.campaign.*;
 import com.fs.starfarer.api.campaign.econ.EconomyAPI;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
 import com.fs.starfarer.api.impl.campaign.ids.Factions;
+import com.fs.starfarer.api.impl.campaign.intel.events.HostileActivityEventIntel;
 import com.fs.starfarer.api.impl.campaign.shared.SharedData;
 import data.scripts.VRI_CrossmodPlugins;
 import data.world.systems.*;
@@ -83,6 +84,7 @@ public class VRIGen implements SectorGeneratorPlugin {
         new Royce().generate(sector);
         new Avery().generate(sector);
         new Espoz().generate(sector);
+
 
         StarSystemAPI uelyst = Global.getSector().getStarSystem("Uelyst");
         StarSystemAPI royce = Global.getSector().getStarSystem("Royce");

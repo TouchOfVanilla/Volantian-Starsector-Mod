@@ -6,6 +6,7 @@ import com.fs.starfarer.api.campaign.FactionAPI;
 public class VRI_CrossmodPlugins {
     public static boolean isVICEnabled = false;
 
+
     public static void initVICCrossmod(){
         FactionAPI vri = Global.getSector().getFaction("vri");
         FactionAPI vic = Global.getSector().getFaction("vic");

@@ -19,7 +19,7 @@ import static com.fs.starfarer.api.impl.campaign.skills.ElectronicWarfareScript.
 
 public class AzorianTelemetryRelay extends BaseHullMod {
     private CombatEngineAPI engine = null;
-    private static final float AZORIAN_MULT = 2f;
+    private static final float AZORIAN_MULT = 1f;
     boolean playerlost = false;
     boolean playerwon = true;
 
@@ -101,21 +101,24 @@ public class AzorianTelemetryRelay extends BaseHullMod {
         if(ship.getVariant().hasHullMod("azorian_relay") || ship.getVariant().hasHullMod("azorian_matrices")){
             return false;
         }
-        return true;
+        if (ship.getHullSpec().getManufacturer().equals("Low Tech") || ship.getHullSpec().getManufacturer().equals("High Tech") || ship.getHullSpec().getManufacturer().equals("Midline") || ship.getHullSpec().getManufacturer().equals("Remnant") ){
+            return true;
+        }
+        return false;
     }
 
     public String getUnapplicableReason(ShipAPI ship) {
 
         if(ship.getVariant().hasHullMod("azorian_relay")) return "Unable to use with an existing crystal network";
         if(ship.getVariant().hasHullMod("azorian_matrices")) return "Already present within the existing Azorian network";
-        return null;
+        return "There is no known configuration of Azorian crystals for a hull of this design type.";
     }
 
     public String getDescriptionParam(int index, ShipAPI.HullSize hullSize) {
         if (index == 0) {
-            return "percentage-based range modifier";
+            return "ECM rating";
         } else if (index == 1) {
-            return "total, uncapped ECM rating";
+            return "range";
         } else if (index == 2) {
             return "stack";
         } else {

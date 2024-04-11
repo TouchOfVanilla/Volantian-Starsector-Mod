@@ -7,6 +7,9 @@ import com.fs.starfarer.api.impl.campaign.VRICampaignPluginImpl;
 import com.fs.starfarer.api.impl.campaign.VRIFleetInflationListener;
 import com.fs.starfarer.api.impl.campaign.VRI_ArkshipScript;
 import com.fs.starfarer.api.impl.campaign.econ.impl.VRItemEffectsRepo;
+import com.fs.starfarer.api.impl.campaign.intel.RevanchismVolantianHostileActivityCause;
+import com.fs.starfarer.api.impl.campaign.intel.VolantianHostileActivityFactor;
+import com.fs.starfarer.api.impl.campaign.intel.events.HostileActivityEventIntel;
 import data.scripts.util.MagicSettings;
 import data.world.VRIGen;
 import exerelin.campaign.SectorManager;
@@ -57,18 +60,20 @@ public class VRI_ModPlugin extends BaseModPlugin {
 
         }
         if (!l.hasListenerOfClass(VRI_ArkshipScript.class)) {
-            l.addListener(new VRI_ArkshipScript() {
-                @Override
-                public void reportEconomyTick(int iterIndex) {
-
-                }
-            }, true);
-            log.info("Added VRI Arkship Listener");
-
+            l.addListener(new VRI_ArkshipScript());
+        log.info("Added VRI Arkship Listener");
+            }
         }
-    }
+
+        public static void addVolantianColonyCrisis(){
+            HostileActivityEventIntel intel = HostileActivityEventIntel.get();
+            if (intel != null && intel.getActivityOfClass(RevanchismVolantianHostileActivityCause.class) == null) {
+                intel.addActivity(new VolantianHostileActivityFactor(intel), new RevanchismVolantianHostileActivityCause(intel));
+            }
+        }
 
     public void onNewGame() {
+
         Map<String, Object> data = Global.getSector().getPersistentData();
         boolean haveNexerelin = Global.getSettings().getModManager().isModEnabled("nexerelin");
         if (!haveNexerelin || SectorManager.getManager().isCorvusMode()) {
@@ -78,6 +83,8 @@ public class VRI_ModPlugin extends BaseModPlugin {
     }
 
     public void onGameLoad(boolean wasEnabledBefore) {
+
+        VRI_ModPlugin.addVolantianColonyCrisis();
 
         VRItemEffectsRepo.addItemEffectsToVanillaRepo();
 

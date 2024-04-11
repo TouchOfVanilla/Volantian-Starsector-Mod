@@ -11,7 +11,7 @@ import static data.hullmods.AzorianTelemetryRelay.getTotal;
 
 public class AzorianMatrices extends BaseHullMod {
     private CombatEngineAPI engine = null;
-    private static final float AZORIAN_MULT = 2f;
+    private static final float AZORIAN_MULT = 1f;
     boolean playerlost = false;
     boolean playerwon = true;
     @Override
@@ -76,7 +76,7 @@ public class AzorianMatrices extends BaseHullMod {
         } else if (index == 3) {
             return "range";
             } else {
-            return index == 4 ? "double the ECM rating" : null;
+            return index == 4 ? "ECM rating" : null;
         }
     }
 }

@@ -113,8 +113,8 @@
     ],
     
     "defenceStations":[
-        {"ids":["orbitalstation", "battlestation", "starfortress"]},
-        {"ids":["orbitalstation_mid", "battlestation_mid", "starfortress_mid"], "weight":0.5}
+        {"ids":["VRI_ConvertedNexusStation", "VRI_ConvertedNexusStation", "VRI_ConvertedNexusStation"]},
+        {"ids":["VRI_ConvertedNexusStation", "VRI_ConvertedNexusStation", "VRI_ConvertedNexusStation"], "weight":0.5}
     ],
     
     "industrySeeds":[

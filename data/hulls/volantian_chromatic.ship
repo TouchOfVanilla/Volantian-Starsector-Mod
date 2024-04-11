@@ -1,7 +1,7 @@
 {
   "hullName": "Chromatic",
   "hullId": "volantian_chromatic",
-  "hullSize": "CRUISER",
+  "hullSize": "CAPITAL_SHIP",
   "spriteName": "graphics/ships/Chromatic.png",
   "style": "HIGH_TECH",
   "height": 299,

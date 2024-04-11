@@ -4,7 +4,7 @@ import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.combat.*;
 
 
-public class AzorianNavigationRelay extends BaseHullMod{
+public class AzorianNavigationRelay extends BaseHullMod {
     @Override
     public void advanceInCombat(ShipAPI ship, float amount) {
         float basespeed = ship.getMutableStats().getMaxSpeed().base;
@@ -12,11 +12,11 @@ public class AzorianNavigationRelay extends BaseHullMod{
 
         float speedbuffpercent = calculatePercentageDifference(basespeed, modspeed);
 
-        ship.getMutableStats().getTurnAcceleration().modifyPercent("azorian_nav",speedbuffpercent);
+        ship.getMutableStats().getTurnAcceleration().modifyPercent("azorian_nav", speedbuffpercent);
         ship.getMutableStats().getAcceleration().modifyPercent("azorian_nav", speedbuffpercent * 2f);
         ship.getMutableStats().getDeceleration().modifyPercent("azorian_nav", speedbuffpercent);
         ship.getMutableStats().getMaxTurnRate().modifyPercent("azorian_nav", speedbuffpercent);
-        if(ship == Global.getCombatEngine().getPlayerShip()) {
+        if (ship == Global.getCombatEngine().getPlayerShip()) {
             Global.getCombatEngine().maintainStatusForPlayerShip("azorian_nav", "graphics/icons/hullsys/fortress_shield.png", "Azorian Nav Relay", (int) speedbuffpercent + "% maneuverability based on " + (int) speedbuffpercent + "% total modifier to max speed", false);
         }
     }
@@ -33,16 +33,27 @@ public class AzorianNavigationRelay extends BaseHullMod{
 
     @Override
     public boolean isApplicableToShip(ShipAPI ship) {
-        if(ship.getVariant().hasHullMod("azorian") || ship.getVariant().hasHullMod("azorian_matrices")){
+        if (ship.getVariant().hasHullMod("azorian_relay") || ship.getVariant().hasHullMod("azorian_matrices")) {
             return false;
         }
-        return true;
+        if (ship.getHullSpec().getManufacturer().equals("Low Tech") || ship.getHullSpec().getManufacturer().equals("High Tech") || ship.getHullSpec().getManufacturer().equals("Midline") || ship.getHullSpec().getManufacturer().equals("Remnant")) {
+            return true;
+        }
+        return false;
     }
 
     public String getUnapplicableReason(ShipAPI ship) {
 
-        if(ship.getVariant().hasHullMod("azorian")) return "Unable to use with an existing crystal network";
-        if(ship.getVariant().hasHullMod("azorian_matrices")) return "Already present within the existing Azorian network";
+        if (ship.getVariant().hasHullMod("azorian_relay")) return "Unable to use with an existing crystal network";
+        if (ship.getVariant().hasHullMod("azorian_matrices"))
+            return "Already present within the existing Azorian network";
+        return "There is no known configuration of Azorian crystals for a hull of this design type.";
+    }
+
+    public String getDescriptionParam(int index, ShipAPI.HullSize hullSize) {
+        if (index == 0) {
+            return "All";
+        }
         return null;
     }
 }
