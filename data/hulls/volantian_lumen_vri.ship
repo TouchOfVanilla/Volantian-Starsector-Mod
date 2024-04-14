@@ -51,6 +51,15 @@
       "arc": 10,
       "angle": 0,
       "locations": [32, -13]
+    },
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [-20.5, -0]
     }
   ],
   "engineSlots": [

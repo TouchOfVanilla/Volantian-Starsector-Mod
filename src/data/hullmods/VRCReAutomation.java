@@ -95,5 +95,7 @@ public class VRCReAutomation extends BaseHullMod {
     public static final Map<String, String> decoMap = new HashMap<String, String>();
     static {
         decoMap.put("volantian_radiant_vri", "vol_radiant_vri_corebridge");
+        decoMap.put("volantian_lumen_vri", "vol_lumen_vri_corebridge");
+        decoMap.put("volantian_glimmer_vri", "vol_glimmer_vri_corebridge");
     }
 }

@@ -60,6 +60,15 @@
       "arc": 10,
       "angle": 0,
       "locations": [25, -18]
+    },
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 0,
+      "locations": [4, -0.5]
     }
   ],
   "engineSlots": [
