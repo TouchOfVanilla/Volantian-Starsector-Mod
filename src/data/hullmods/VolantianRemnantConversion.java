@@ -38,7 +38,7 @@ public class VolantianRemnantConversion extends BaseHullMod {
 
 	@Override
 	public void applyEffectsAfterShipCreation(ShipAPI ship, String id) {
-		if (!ship.getVariant().hasHullMod("vri_reauto")){
+		if (!ship.getVariant().hasHullMod("vrc_reauto")){
 			Iterator weaponiter = ship.getHullSpec().getAllWeaponSlotsCopy().iterator();
 			while (weaponiter.hasNext()){
 				WeaponSlotAPI weaponslot = (WeaponSlotAPI) weaponiter.next();
@@ -46,6 +46,11 @@ public class VolantianRemnantConversion extends BaseHullMod {
 					ship.getVariant().clearSlot(weaponslot.getId());
 				}
 			}
+		}
+		if (ship.getVariant().hasHullMod("vrc_reauto") && !ship.getVariant().hasHullMod("automated")){
+			ship.getVariant().addPermaMod("automated", false);
+		} else {
+			ship.getVariant().removePermaMod("automated");
 		}
 	}
 
