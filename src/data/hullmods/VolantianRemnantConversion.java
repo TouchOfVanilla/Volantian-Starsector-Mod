@@ -1,13 +1,17 @@
 package data.hullmods;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 import com.fs.starfarer.api.combat.BaseHullMod;
 import com.fs.starfarer.api.combat.MutableShipStatsAPI;
+import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.combat.ShipAPI.HullSize;
+import com.fs.starfarer.api.combat.WeaponAPI;
 import com.fs.starfarer.api.fleet.MutableFleetStatsAPI;
 import com.fs.starfarer.api.impl.campaign.ids.Stats;
+import com.fs.starfarer.api.loading.WeaponSlotAPI;
 
 public class VolantianRemnantConversion extends BaseHullMod {
 
@@ -31,7 +35,20 @@ public class VolantianRemnantConversion extends BaseHullMod {
 		stats.getFluxDissipation().modifyMult(id, FLUX_STAT_MULT);
 		stats.getFluxCapacity().modifyMult(id, FLUX_STAT_MULT);
 	}
-	
+
+	@Override
+	public void applyEffectsAfterShipCreation(ShipAPI ship, String id) {
+		if (!ship.getVariant().hasHullMod("vri_reauto")){
+			Iterator weaponiter = ship.getHullSpec().getAllWeaponSlotsCopy().iterator();
+			while (weaponiter.hasNext()){
+				WeaponSlotAPI weaponslot = (WeaponSlotAPI) weaponiter.next();
+				if (weaponslot.getWeaponType().equals(WeaponAPI.WeaponType.DECORATIVE)){
+					ship.getVariant().clearSlot(weaponslot.getId());
+				}
+			}
+		}
+	}
+
 	public String getDescriptionParam(int index, HullSize hullSize) {
 		if (index == 0) return "" + (int) ((1f - SUPPLY_USE_MULT) * 100f) + "%";
 		if (index == 1) return "" + (int) (PEAK_PERFORMANCE_FLAT) + " seconds";
