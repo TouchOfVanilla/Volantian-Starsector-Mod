@@ -2,7 +2,7 @@
   "hullName": "Prismatic (VRI)",
   "hullId": "volantian_prismatic_vri",
   "hullSize": "DESTROYER",
-  "spriteName": "graphics/ships/prismatic_vri.png",
+  "spriteName": "graphics/ships/prismatic/prismatic_vri.png",
   "style": "VOLANTIAN",
   "height": 219,
   "width": 144,

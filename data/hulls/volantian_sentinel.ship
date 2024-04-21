@@ -2,7 +2,7 @@
   "hullName": "Sentinel",
   "hullId": "volantian_sentinel",
   "hullSize": "CRUISER",
-  "spriteName": "graphics/ships/sentinel.png",
+  "spriteName": "graphics/ships/sentinel/sentinel.png",
   "style": "HIGH_TECH",
   "height": 250,
   "width": 242,

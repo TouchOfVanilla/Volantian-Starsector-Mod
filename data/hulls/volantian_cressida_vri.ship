@@ -2,7 +2,7 @@
   "hullName": "Cressida (VRI)",
   "hullId": "volantian_cressida_vri",
   "hullSize": "DESTROYER",
-  "spriteName": "graphics/ships/Cressida.png",
+  "spriteName": "graphics/ships/phase/cressida.png",
   "style": "VOLANTIAN",
   "height": 150,
   "width": 150,

@@ -2,7 +2,7 @@
   "hullName": "Fulgent (VRI)",
   "hullId": "volantian_fulgent_vri",
   "hullSize": "DESTROYER",
-  "spriteName": "graphics/ships/fulgent_vri.png",
+  "spriteName": "graphics/ships/fulgent/fulgent_vri.png",
   "style": "VOLANTIAN",
   "height": 140,
   "width": 160,

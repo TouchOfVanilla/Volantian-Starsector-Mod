@@ -2,7 +2,7 @@
   "hullName": "Chromatic (VRI)",
   "hullId": "volantian_chromatic_vri",
   "hullSize": "CRUISER",
-  "spriteName": "graphics/ships/Chromatic_VRI.png",
+  "spriteName": "graphics/ships/chromatic/chromatic_VRI.png",
   "style": "VOLANTIAN",
   "height": 300,
   "width": 302,

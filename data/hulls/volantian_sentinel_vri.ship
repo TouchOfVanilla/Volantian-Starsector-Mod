@@ -2,7 +2,7 @@
   "hullName": "Sentinel (VRI)",
   "hullId": "volantian_sentinel_vri",
   "hullSize": "CRUISER",
-  "spriteName": "graphics/ships/sentinel_VRI.png",
+  "spriteName": "graphics/ships/sentinel/sentinel_VRI.png",
   "style": "VOLANTIAN",
   "height": 250,
   "width": 242,
