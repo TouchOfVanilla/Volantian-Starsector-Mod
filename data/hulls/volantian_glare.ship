@@ -2,7 +2,7 @@
   "hullName": "Glare",
   "hullId": "volantian_glare",
   "hullSize": "CRUISER",
-  "spriteName": "graphics/ships/glare_new.png",
+  "spriteName": "graphics/ships/glare/glare_new.png",
   "style": "HIGH_TECH",
   "height": 226,
   "width": 158,
