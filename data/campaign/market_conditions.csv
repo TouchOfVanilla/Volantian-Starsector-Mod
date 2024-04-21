@@ -1,0 +1,2 @@
+name,id,planetary,decivRemove,script,desc,icon,order
+Orbital Mine Shell,vri_mineshell,,,com.fs.starfarer.api.impl.campaign.econ.BaseHazardCondition,An orbital shell of mines that effectively prevents all orbital transit to and from $market. Renders the planet completely inaccessible.,graphics/icons/markets/mineshell.png,510
