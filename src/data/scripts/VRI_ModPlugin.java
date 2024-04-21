@@ -67,7 +67,7 @@ public class VRI_ModPlugin extends BaseModPlugin {
 
         public static void addVolantianColonyCrisis(){
             HostileActivityEventIntel intel = HostileActivityEventIntel.get();
-            if (intel != null && intel.getActivityOfClass(RevanchismVolantianHostileActivityCause.class) == null) {
+            if (intel != null && intel.getActivityCause(VolantianHostileActivityFactor.class,RevanchismVolantianHostileActivityCause.class) == null) {
                 intel.addActivity(new VolantianHostileActivityFactor(intel), new RevanchismVolantianHostileActivityCause(intel));
             }
         }

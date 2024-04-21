@@ -49,7 +49,9 @@ public class VolantianRemnantConversion extends BaseHullMod {
 		}
 		if (ship.getVariant().hasHullMod("vrc_reauto") && !ship.getVariant().hasHullMod("automated")){
 			ship.getVariant().addPermaMod("automated", false);
-		} else {
+		}
+
+			if (!ship.getVariant().hasHullMod("vrc_reauto") && ship.getVariant().hasHullMod("automated")){
 			ship.getVariant().removePermaMod("automated");
 		}
 	}

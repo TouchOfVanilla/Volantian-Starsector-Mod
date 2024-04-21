@@ -42,7 +42,7 @@ public class VRI_ArkshipScript implements EconomyTickListener {
         float maxradius = 0f;
         StarSystemAPI destination = market.getStarSystem();
         log.info("arkship destination found, " + destination.getName());
-        MarketAPI ontos = Global.getSector().getEconomy().getMarket("arkship_ontos");
+        MarketAPI ontos = Global.getSector().getEconomy().getMarket(ark.getMarket().getId());
         ontos.removeIndustry(Industries.STARFORTRESS_HIGH, null, false);
         ontos.getConnectedEntities().clear();
         ark.getStarSystem().removeEntity(ark);

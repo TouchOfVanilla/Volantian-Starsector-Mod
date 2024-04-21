@@ -71,7 +71,7 @@ public class VRCReAutomation extends BaseHullMod {
         if (ship == null) return false;
 
 
-        if (ship.getVariant().hasHullMod("automated")) {
+        if (ship.getVariant().hasHullMod("automated") && ship.getVariant().hasHullMod("volremconversion") && !ship.getVariant().hasHullMod("vrc_reauto")){
             return false;
         }
 
@@ -90,13 +90,16 @@ public class VRCReAutomation extends BaseHullMod {
         return false;
     }
     public String getUnapplicableReason(ShipAPI ship) {
-        if (Misc.isUnremovable(ship.getCaptain())) return "This ship's captain cannot be removed.";
-        if (Global.getSector().getPlayerStats().getSkillLevel(Skills.AUTOMATED_SHIPS) < 1) return "You do not have the necessary knowledge and expertise in automated ships.";
-        if (!ship.getCaptain().isDefault()) return "This ship cannot be automated while a captain is present.";
-        if (ship.getVariant().hasHullMod("volremconversion") && ship.getVariant().hasHullMod("automated")){
-            return "This hull is already automated, dumbass. You didn't expect me to plan for this, huh, fucker?";
-        }
 
+            if (Misc.isUnremovable(ship.getCaptain())) return "This ship's captain cannot be removed.";
+            if (Global.getSector().getPlayerStats().getSkillLevel(Skills.AUTOMATED_SHIPS) < 1)
+                return "You do not have the necessary knowledge and expertise in automated ships.";
+            if (!ship.getCaptain().isDefault()) return "This ship cannot be automated while a captain is present.";
+        if (!ship.getVariant().hasHullMod("vrc_reauto")) {
+            if (ship.getVariant().hasHullMod("volremconversion") && ship.getVariant().hasHullMod("automated")) {
+                return "This hull is already automated, dumbass. You didn't expect me to plan for this, huh, fucker?";
+            }
+        }
         return "this hull is not a Volantian remnant conversion.";
     }
 
@@ -112,5 +115,6 @@ public class VRCReAutomation extends BaseHullMod {
         decoMap.put("volantian_radiant_vri", "vol_radiant_vri_corebridge");
         decoMap.put("volantian_lumen_vri", "vol_lumen_vri_corebridge");
         decoMap.put("volantian_glimmer_vri", "vol_glimmer_vri_corebridge");
+        decoMap.put("volantian_pyralis_vri", "vol_pyralis_vri_corebridge");
     }
 }

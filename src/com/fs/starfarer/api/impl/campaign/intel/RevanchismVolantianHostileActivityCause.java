@@ -21,6 +21,8 @@ import org.apache.log4j.Logger;
 import java.awt.*;
 import java.util.Iterator;
 
+import static com.fs.starfarer.api.impl.campaign.intel.VolantianHostileActivityFactor.VolantianIncursionDefeated;
+
 public class RevanchismVolantianHostileActivityCause extends BaseHostileActivityCause2 {
 
     private static Logger log = Global.getLogger(RevanchismVolantianHostileActivityCause.class);
@@ -96,6 +98,10 @@ public class RevanchismVolantianHostileActivityCause extends BaseHostileActivity
             }
             }
         }
+        boolean IncursionDefeated = Global.getSector().getMemoryWithoutUpdate().getBoolean(VolantianIncursionDefeated);
+        if (IncursionDefeated){
+            progress = 0f;
+        }
         return (int)progress;
     }
 
@@ -121,7 +127,7 @@ public class RevanchismVolantianHostileActivityCause extends BaseHostileActivity
 
     public float getMagnitudeContribution(StarSystemAPI system) {
         //return a value less than 1
-        return 0.5f;
+        return 0.7f;
     }
 
 }
