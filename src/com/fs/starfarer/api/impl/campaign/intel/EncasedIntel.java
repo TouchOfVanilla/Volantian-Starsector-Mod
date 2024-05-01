@@ -81,7 +81,7 @@ public class EncasedIntel extends BaseIntelPlugin {
                             YouOrFaction + ", has been encased in an orbital shell of mines, rendering it completely inaccessible. " +
                             "Central authority has collapsed completely and irreversibly, with the remaining " +
                             "population scrambling to survive. " +
-                            "All planetary assets are considered lost.",
+                            "All planetary assets are considered lost, and the fate of your colonists is unknown.",
                     opad, faction.getBaseUIColor(), YouOrFaction);
         addBulletPoints(info, ListInfoMode.IN_DESC);
     }

@@ -121,7 +121,7 @@ public class VolantianIncursion extends GenericRaidFGI {
     }
 
     public void doCustomRaidAction(CampaignFleetAPI fleet, MarketAPI market, float raidStr) {
-        market.addCondition(Conditions.POLLUTION);
+        market.addCondition("vri_mineshell");
         DecivTracker.decivilize(market, false, false);
         EncasedIntel intel = new EncasedIntel(market, market.getPrimaryEntity(), false, false);
         Global.getSector().getIntelManager().addIntel(intel);
