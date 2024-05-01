@@ -110,6 +110,11 @@ $player.fcm_faction == vri",,You are known as a stalwart and loyal representativ
 relLevelVRIknowsbpswithoutcomm,RelLevelMoreDescription,"$faction.id == vri
 VRIPlayerFleetHasHullmod VRI_FluxNetwork",,The Volantian intelligence network is quite curious as to how you have obtained Volantian hulls forgoing traditional means.,,
 ,,,,,,
+MinedPlanetDialog,OpenInteractionDialog,VRIIsPlanetMined score:1000,ShowDefaultVisual,"Your $shipOrFleet approaches $entityName.
+
+$marketName is enveloped in an impenetrable cloud of mines. Attempting to reach the planet's surface is not an option, no matter how many times you tell sensors to look for an opening.",defaultLeave:Leave,
+,,,,,,
+,,,,,,
 # Blanche Dialogue,,,,,,
 blanchegreetingRegular,PickGreeting,"$id == blanche score:10
 !$madeContact","ShowPersonVisual

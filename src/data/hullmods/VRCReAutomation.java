@@ -116,5 +116,6 @@ public class VRCReAutomation extends BaseHullMod {
         decoMap.put("volantian_lumen_vri", "vol_lumen_vri_corebridge");
         decoMap.put("volantian_glimmer_vri", "vol_glimmer_vri_corebridge");
         decoMap.put("volantian_pyralis_vri", "vol_pyralis_vri_corebridge");
+        decoMap.put("volantian_fulgent_vri", "vol_fulgent_vri_corebridge");
     }
 }
