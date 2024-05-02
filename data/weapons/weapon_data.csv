@@ -24,6 +24,7 @@ Azorian Storm Needler,vol_azorian_stormneedler,3,,6500,700,,50,,20,15,28,,,,FRAG
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #built in,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Mani-class Torpedo,vol_mani,1,,,1000,,3000,,30,30,,2,0.05,1,ENERGY,0,,0,2,1,,0,0,0,0,,150,100,8,400,,,"STRIKE, DO_NOT_CONSERVE","missile0, no_sell, no_drop, no_drop_salvage, restricted",,Volantian,,Strike/Destroy,Slow,None,,,Useful tool to %s enemy ships,dismantle,,,TRUE,88
+Ultraheavy Gauss Cannon,vol_ultraheavygauss,3,,100000,1500,,2200,,700,3,,,,,KINETIC,3000,,1,4.5,,,,,,,,1500,,,400,,,"SYSTEM, ","kinetic20, LR,",,Remnant,,Anti Shield,,,,,,,,,,6
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #fighter weapons,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Katti MRM (Single),vol_katti_single,1,,,1500,,1500,,20,10,1,1,,,ENERGY,0,,0,1,1,0,0,0,0,0,,100,40,8,350,,,STRIKE,"strike8, no_sell, no_drop, no_drop_salvage, restricted",,Volantian,,Strike,Medium,None,,,Second-stage hits on hull or armor create additional explosion dealing %s High Explosive damage,700,,,TRUE,75
