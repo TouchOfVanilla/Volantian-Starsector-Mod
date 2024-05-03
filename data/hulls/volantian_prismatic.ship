@@ -4,9 +4,9 @@
   "hullSize": "DESTROYER",
   "spriteName": "graphics/ships/prismatic/prismatic.png",
   "style": "HIGH_TECH",
-  "height": 219,
-  "width": 144,
-  "center": [72, 109],
+  "height": 185,
+  "width": 146,
+  "center": [73, 93],
   "collisionRadius": 113.5,
   "shieldCenter": [0, -0],
   "shieldRadius": 122.5,
@@ -14,15 +14,18 @@
   "builtInMods": [
     "automated"
   ],
+  "builtInWings": [
+    "terminator_wing"
+  ],
   "weaponSlots": [
     {
       "id": "WS0002",
       "size": "LARGE",
-      "type": "HYBRID",
+      "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 36,
-      "angle": -0,
-      "locations": [37.5, 0]
+      "arc": 113,
+      "angle": 33,
+      "locations": [-20, 33]
     },
     {
       "id": "WS0003",
@@ -30,17 +33,8 @@
       "type": "ENERGY",
       "mount": "TURRET",
       "arc": 233,
-      "angle": 54.5,
-      "locations": [34, 29]
-    },
-    {
-      "id": "WS0004",
-      "size": "SMALL",
-      "type": "ENERGY",
-      "mount": "TURRET",
-      "arc": 233,
-      "angle": -54.5,
-      "locations": [34, -29]
+      "angle": 15,
+      "locations": [34, -0]
     },
     {
       "id": "WS0005",
@@ -48,17 +42,17 @@
       "type": "SYNERGY",
       "mount": "TURRET",
       "arc": 113,
-      "angle": 37,
-      "locations": [-13, 26]
+      "angle": 29,
+      "locations": [26, 27]
     },
     {
       "id": "WS0006",
       "size": "MEDIUM",
-      "type": "SYNERGY",
+      "type": "HYBRID",
       "mount": "TURRET",
-      "arc": 113,
-      "angle": -37,
-      "locations": [-13, -26]
+      "arc": 9,
+      "angle": 0,
+      "locations": [81, -19]
     },
     {
       "id": "WS0007",
@@ -67,7 +61,7 @@
       "mount": "TURRET",
       "arc": 164,
       "angle": 180,
-      "locations": [-58, 0]
+      "locations": [-51, 0]
     },
     {
       "id": "LB 1",
@@ -77,61 +71,65 @@
       "arc": 360,
       "angle": 0,
       "locations": [
-        -6, -0,
-        -15, -0
+        -21.5, -37,
+        -31, -37
       ]
+    },
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 9,
+      "angle": 0,
+      "locations": [70, -39]
     }
   ],
   "engineSlots": [
     {
-      "location": [-72.5, 36],
-      "length": 52,
-      "width": 8,
+      "location": [-82, -0],
+      "length": 62.5,
+      "width": 32,
       "angle": 180,
-      "contrailSize": 8,
+      "contrailSize": 32,
       "style": "HIGH_TECH"
     },
     {
-      "location": [-72.5, -36],
-      "length": 52,
-      "width": 8,
+      "location": [-80.5, 43.5],
+      "length": 54,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-80.5, -43.5],
+      "length": 54,
+      "width": 14,
       "angle": -180,
-      "contrailSize": 8,
-      "style": "HIGH_TECH"
-    },
-    {
-      "location": [-69.5, 46],
-      "length": 45.5,
-      "width": 8,
-      "angle": 180,
-      "contrailSize": 8,
-      "style": "HIGH_TECH"
-    },
-    {
-      "location": [-69.5, -46],
-      "length": 45.5,
-      "width": 8,
-      "angle": -180,
-      "contrailSize": 8,
-      "style": "HIGH_TECH"
-    },
-    {
-      "location": [-102, 0],
-      "length": 61,
-      "width": 22,
-      "angle": 180,
-      "contrailSize": 22,
+      "contrailSize": 14,
       "style": "HIGH_TECH"
     }
   ],
   "bounds": [
-    -100.5, -11,
-    -47, -59,
-    28, -51.5,
-    104.5, 0,
-    104.5, 0,
-    28, 51.5,
-    -47, 59,
-    -100.5, 11
+    55.5, -6.5,
+    88.5, -7.5,
+    89, -28.5,
+    78.5, -30.5,
+    78.5, -49.5,
+    5, -51.5,
+    -43.5, -71.5,
+    -81.5, -51,
+    -93, -28.5,
+    -62.5, -21,
+    -81.5, -9,
+    -81, 9,
+    -65.5, 17.5,
+    -94, 30,
+    -48.5, 73,
+    4.5, 49.5,
+    55.5, 45,
+    92.5, 27,
+    51, 16
   ]
 }

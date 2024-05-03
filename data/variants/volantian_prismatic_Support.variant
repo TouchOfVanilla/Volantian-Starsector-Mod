@@ -1,9 +1,9 @@
 {
-  "variantId": "volantian_prismatic_Standard",
+  "variantId": "volantian_prismatic_Support",
   "hullId": "volantian_prismatic",
   "displayName": "Standard",
   "goalVariant": true,
-  "fluxCapacitors": 14,
+  "fluxCapacitors": 18,
   "fluxVents": 20,
   "quality": 1,
   "permaMods": [],
@@ -12,33 +12,33 @@
   ],
   "weaponGroups": [
     {
-      "autofire": true,
+      "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "heavyneedler"
+        "WS0005": "phasecl"
       }
     },
     {
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0002": "autopulse",
-        "WS0006": "ionpulser"
+        "WS0001": "heavymauler"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
+        "WS0002": "guardian",
         "WS0003": "pdburst",
         "WS0007": "pdburst"
       }
     },
     {
-      "autofire": false,
+      "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0005": "typhoon"
+        "WS0006": "heavyac"
       }
     },
     {
