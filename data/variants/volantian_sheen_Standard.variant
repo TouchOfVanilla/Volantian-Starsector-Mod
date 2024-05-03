@@ -1,0 +1,63 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 5,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "volantian_sheen",
+    "hullMods": [
+        "hardenedshieldemitter",
+        "unstable_injector",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "volantian_sheen_Standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "heavyblaster",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "atropos",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "sabot",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "irautolance",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "irpulse",
+                "WS0002": "irpulse",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "pdlaser",
+                "WS0007": "pdlaser",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}
