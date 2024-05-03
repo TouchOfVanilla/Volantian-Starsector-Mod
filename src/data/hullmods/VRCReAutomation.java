@@ -10,7 +10,6 @@ import com.fs.starfarer.api.impl.campaign.ids.Skills;
 import com.fs.starfarer.api.loading.WeaponSlotAPI;
 import com.fs.starfarer.api.loading.WeaponSpecAPI;
 import com.fs.starfarer.api.util.Misc;
-import com.fs.starfarer.combat.ai.movement.maneuvers.S;
 
 import java.util.ArrayList;
 import java.util.HashMap;
