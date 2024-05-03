@@ -1,65 +1,56 @@
 {
-    "displayName": "Standard",
-    "fluxCapacitors": 1,
-    "fluxVents": 20,
-    "goalVariant": true,
-    "hullId": "volantian_fulgent_vri",
-    "hullMods": [
-        "targetingunit",
-    ],
-    "permaMods": [],
-    "sMods": [],
-    "suppressedMods": [],
-    "variantId": "volantian_fulgent_vri_Standard",
-    "weaponGroups": [
-        {
-            "autofire": false,
-            "mode": "LINKED",
-            "weapons": {
-                "WS 001": "heavyneedler",
-            }
-        },
-        {
-            "autofire": false,
-            "mode": "ALTERNATING",
-            "weapons": {
-                "WS 009": "reaper",
-                "WS 010": "reaper",
-            }
-        },
-        {
-            "autofire": false,
-            "mode": "LINKED",
-            "weapons": {
-                "WS 003": "sabotpod",
-            }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
-                "WS 004": "phasebeam",
-            }
-        },
-        {
-            "autofire": false,
-            "mode": "LINKED",
-            "weapons": {
-                "WS 002": "ioncannon",
-                "WS 000": "ioncannon",
-            }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
-                "WS 008": "vol_halonMK1",
-                "WS 006": "vol_halonMK1",
-                "WS 007": "vol_halonMK1",
-                "WS 005": "vol_halonMK1",
-            }
-        },
-    ],
-    "wings": [],
-    "modules": [],
+  "variantId": "volantian_fulgent_vri_Standard",
+  "hullId": "volantian_fulgent_vri",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 1,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 000": "sabot",
+        "WS 001": "vol_azorian_lance",
+        "WS 002": "atropos",
+        "WS 003": "vol_azorian_beam",
+        "WS 004": "heavyneedler"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {}
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 005": "vol_halonMK1",
+        "WS 006": "vol_halonMK1"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
 }
