@@ -4,7 +4,6 @@
   "projectileSpecId": "vol_azorian_shot",
   "type": "BALLISTIC",
   "size": "MEDIUM",
-  "everyFrameEffect": "data.weapons.scripts.VRI_azorian_needlers",
   "turretSprite": "graphics/weapons/azorian_heavy_needler_turret_base.png",
   "turretGunSprite": "graphics/weapons/azorian_heavy_needler_recoil.png",
   "hardpointSprite": "graphics/weapons/azorian_heavy_needler_base.png",

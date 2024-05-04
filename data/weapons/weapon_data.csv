@@ -7,8 +7,8 @@ Phosphene Lance,vol_phosphenelance,3,,10000,1000,1700,,300,60,15,26,,,,ENERGY,,2
 Flechette Needler,vol_flechette_needler,3,,2500,550,,75,,1,15,18,,,,KINETIC,75,,0,1.25,1,0.05,1,10,0.5,5,,1200,,,10,,,,"kinetic15, remnant, rare_bp, hist1t, merc, ind",,Common,,Anti Shield,,,,,,,,,,5.75
 Katti MRM (Double),vol_katti,1,,150,1500,,1500,,20,10,3,2,,,ENERGY,0,,0,1,1,0,0,0,0,0,,100,40,4,350,,,STRIKE,"VRI_bp, strike8",,Volantian,,Strike,Medium,None,,,Second-stage hits on hull or armor create additional explosion dealing %s High Explosive damage,700,,,TRUE,75
 Surik MIRV,vol_surik,3,,5000,2000,,800,150,40,10,27,10,,,ENERGY,0,,0,8,1,0,0,0,0,0,,300,40,12,350,,,"DO_NOT_AIM, CONSERVE_5","VRI_bp, utility7, missile8, LR",,Volantian,,Torpedo,Medium,Good,,,,,,,TRUE,77
-Azorian Needler,vol_azorian_needler,3,,800,700,,50,,1,20,9,,,,FRAGMENTATION,60,,0,4.3,15,0.05,0,10,0.66,5,,1200,,,10,,,,"VRI_bp, kinetic9, LR",,Volantian,,Anti Shield,,,,,Inflicts 250% damage to shields,,,,,3.65
-Azorian Heavy Needler,vol_azorian_heavyneedler,3,,2500,700,,50,,1,15,17,,,,FRAGMENTATION,60,,0,4.55,30,0.05,1,10,0.5,5,,1200,,,10,,,,"VRI_bp, kinetic15",,Volantian,,Anti Shield,,,,,Inflicts 250% damage to shields,,,,,5.75
+Azorian Needler,vol_azorian_needler,3,,800,700,,120,,1,20,9,,,,FRAGMENTATION,60,,0,4.3,15,0.05,0,10,0.66,5,,1200,,,10,,,,"VRI_bp, kinetic9, LR",,Volantian,,Anti Shield,,,,,,,,,,3.65
+Azorian Heavy Needler,vol_azorian_heavyneedler,3,,2500,700,,120,,1,15,17,,,,FRAGMENTATION,60,,0,4.55,30,0.05,1,10,0.5,5,,1200,,,10,,,,"VRI_bp, kinetic15",,Volantian,,Anti Shield,,,,,,,,,,5.75
 Trident Railgun,vol_trident,3,,5000,700,,120,,100,20,19,,,,KINETIC,220,,0.35,1,1,0.4,0,3,1,2,,900,,,,,,,"VRI_bp, kinetic8, LR",,Volantian,,Anti Shield,,,,,"In %s mounts, base range is extended by 400.
 In %s mounts, fire rate is doubled.
 In %s mounts, hits on hull or armor trigger a secondary explosive payload dealing %s High Explosive damage.",ballistic | missile | composite | 75,,,,79
@@ -17,7 +17,7 @@ Monoblade Railgun,vol_monoblade,3,,8000,1500,,1200,,30,10,24,,,,FRAGMENTATION,90
 Halon Interceptor MK1,vol_halonMK1,3,,200,300,400,,,0,75,5,5,1.5,1,ENERGY,,300,0,0,0.2,0.1,,,,,100000,,,,,,,"PD, ANTI_FTR","VRI_bp, pd8",,Volantian,,Point Defense,,,,,,,,,,84
 Halon Mass Interceptor System,vol_halon,2,,1100,500,700,,,0,75,10,10,1,1,ENERGY,,600,0,0,0.2,0.1,,,,,100000,,,,,,,"PD, ANTI_FTR","VRI_bp, pd19",,Volantian,,Point Defense,,,,,,,,,,85
 Azorian Lance,vol_azorian_lance,3,,8000,1000,750,,0,0,7,25,,,,KINETIC,,2000,0.5,1,1,4,,,,,10000,,,,,,,FIRE_WHEN_INEFFICIENT,"energy20, beam15, LR, rare_bp, hist1t, merc, ind",,Volantian,,Suppression,,,,,Halves the arc of shields for a short time on hit. Decreases the turn rate of omni-shields.,,,,,27
-Azorian Storm Needler,vol_azorian_stormneedler,3,,6500,700,,50,,20,15,28,,,,FRAGMENTATION,45,,0,0.1,1,,10,10,10,10,,1200,,,20,,,,"kinetic19, VRI_bp, rare_bp, hist1t, merc, ind",,Volantian,,Anti Shield,,,,,,,,,,8.5
+Azorian Storm Needler,vol_azorian_stormneedler,3,,6500,700,,120,,20,15,28,,,,FRAGMENTATION,45,,0,0.1,1,,10,10,10,10,,1200,,,20,,,,"kinetic19, VRI_bp, rare_bp, hist1t, merc, ind",,Volantian,,Anti Shield,,,,,,,,,,8.5
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #built in,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Mani-class Torpedo,vol_mani,1,,,1000,,3000,,30,30,,2,0.05,1,ENERGY,0,,0,2,1,,0,0,0,0,,150,100,8,400,,,"STRIKE, DO_NOT_CONSERVE","missile0, no_sell, no_drop, no_drop_salvage, restricted",,Volantian,,Strike/Destroy,Slow,None,,,Useful tool to %s enemy ships,dismantle,,,TRUE,88

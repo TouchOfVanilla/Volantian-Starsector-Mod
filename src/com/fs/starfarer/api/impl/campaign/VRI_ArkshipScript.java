@@ -43,6 +43,14 @@ public class VRI_ArkshipScript implements EconomyTickListener {
         StarSystemAPI destination = market.getStarSystem();
         log.info("arkship destination found, " + destination.getName());
         MarketAPI ontos = Global.getSector().getEconomy().getMarket(ark.getMarket().getId());
+        if (ontos.getStarSystem() == market.getStarSystem()){
+            log.info("arkship destination same as current location, aborting");
+            return;
+        }
+        if (ontos.getStarSystem() == Global.getSector().getPlayerFleet().getStarSystem()){
+            log.info("arkship destination same as player location, aborting");
+            return;
+        }
         ontos.removeIndustry(Industries.STARFORTRESS_HIGH, null, false);
         ontos.getConnectedEntities().clear();
         ark.getStarSystem().removeEntity(ark);

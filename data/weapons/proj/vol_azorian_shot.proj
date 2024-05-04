@@ -2,7 +2,6 @@
 	"id":"vol_azorian_shot",
 	"specClass":"projectile",
 	"spawnType":"BALLISTIC",
-	"OnHitEffect": "data.weapons.scripts.VRI_azorian_needlers",
 	"collisionClass":"PROJECTILE_FF",
 	"collisionClassByFighter":"PROJECTILE_FIGHTER",
 	
