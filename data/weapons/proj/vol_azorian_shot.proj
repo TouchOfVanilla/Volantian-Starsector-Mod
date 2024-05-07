@@ -14,7 +14,7 @@
 	#"coreColor":[255,255,255,155],	
 	#"textureScrollSpeed":64.0,
 	#"pixelsPerTexel":5.0,
-	#"bulletSprite":"graphics/missiles/flechette_med.png"
+	#"bulletSprite":"graphics/missiles/vol_flechette_med.png"
 	
 	"length":150.0,
 	"width":3.5,
@@ -26,6 +26,6 @@
 	"coreColor":[75,255,185,255],	
 	"textureScrollSpeed":64.0,
 	"pixelsPerTexel":5.0,
-	"bulletSprite":"graphics/missiles/flechette_sml.png"
+	"bulletSprite":"graphics/missiles/vol_flechette_sml.png"
 }
 
