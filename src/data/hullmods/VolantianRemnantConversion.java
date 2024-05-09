@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
+import com.fs.starfarer.api.Global;
+import com.fs.starfarer.api.characters.PersonAPI;
 import com.fs.starfarer.api.combat.BaseHullMod;
 import com.fs.starfarer.api.combat.MutableShipStatsAPI;
 import com.fs.starfarer.api.combat.ShipAPI;
@@ -12,6 +14,7 @@ import com.fs.starfarer.api.combat.WeaponAPI;
 import com.fs.starfarer.api.fleet.MutableFleetStatsAPI;
 import com.fs.starfarer.api.impl.campaign.ids.Stats;
 import com.fs.starfarer.api.loading.WeaponSlotAPI;
+import lunalib.lunaRefit.LunaRefitManager;
 
 public class VolantianRemnantConversion extends BaseHullMod {
 
@@ -38,22 +41,7 @@ public class VolantianRemnantConversion extends BaseHullMod {
 
 	@Override
 	public void applyEffectsAfterShipCreation(ShipAPI ship, String id) {
-		if (!ship.getVariant().hasHullMod("vrc_reauto")){
-			Iterator weaponiter = ship.getHullSpec().getAllWeaponSlotsCopy().iterator();
-			while (weaponiter.hasNext()){
-				WeaponSlotAPI weaponslot = (WeaponSlotAPI) weaponiter.next();
-				if (weaponslot.getWeaponType().equals(WeaponAPI.WeaponType.DECORATIVE)){
-					ship.getVariant().clearSlot(weaponslot.getId());
-				}
-			}
-		}
-		if (ship.getVariant().hasHullMod("vrc_reauto") && !ship.getVariant().hasHullMod("automated")){
-			ship.getVariant().addPermaMod("automated", false);
-		}
 
-			if (!ship.getVariant().hasHullMod("vrc_reauto") && ship.getVariant().hasHullMod("automated")){
-			ship.getVariant().removePermaMod("automated");
-		}
 	}
 
 	public String getDescriptionParam(int index, HullSize hullSize) {

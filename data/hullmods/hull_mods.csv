@@ -18,4 +18,4 @@ Azorian Navigational Relay,azorian_relay,,,Volantian,,,10000,,,,5,10,15,20,data.
 %s modifiers to speed are applied to maneuverability.",,graphics/hullmods/azorian_board.png
 Azorian Shield Tuning,azorian_shields,,,Volantian,,,10000,,,,5,10,20,30,data.hullmods.AzorianShieldTuning,"Integrating Azorian crystals into the external shield emitter nodes creates a unique form of instability which frequently discharges excess energy in the form of electromagnetic arcs, which assist in point-defense measures, at the cost of %s worse shield efficency.",,graphics/hullmods/azorian_shield.png
 ,,,,,,,,,,,,,,,,,,
-VRC Re-Automation,vrc_reauto,,,Volantian,,,,TRUE,,,0,0,0,0,data.hullmods.VRCReAutomation,eeby deeby,,
+VRC Re-Automation,vrc_reauto,,,Volantian,,,,TRUE,TRUE,,0,0,0,0,data.hullmods.VRCReAutomation,eeby deeby,,

@@ -10,12 +10,14 @@ import com.fs.starfarer.api.impl.campaign.econ.impl.VRItemEffectsRepo;
 import com.fs.starfarer.api.impl.campaign.intel.RevanchismVolantianHostileActivityCause;
 import com.fs.starfarer.api.impl.campaign.intel.VolantianHostileActivityFactor;
 import com.fs.starfarer.api.impl.campaign.intel.events.HostileActivityEventIntel;
+import data.hullmods.ReAutoRefitButton;
 import data.scripts.util.MagicSettings;
 import data.world.VRIGen;
 import exerelin.campaign.SectorManager;
 
 import java.util.Map;
 
+import lunalib.lunaRefit.LunaRefitManager;
 import org.apache.log4j.Logger;
 
 import static org.lazywizard.lazylib.MathUtils.getRandomNumberInRange;
@@ -138,5 +140,7 @@ public class VRI_ModPlugin extends BaseModPlugin {
         dmeExists = Global.getSettings().getModManager().isModEnabled("istl_dam");
         scalarTechExists = Global.getSettings().getModManager().isModEnabled("tahlan_scalartech");
         arkgneisisExists = Global.getSettings().getModManager().isModEnabled("ArkLeg");
+
+        LunaRefitManager.addRefitButton(new ReAutoRefitButton());
     }
 }

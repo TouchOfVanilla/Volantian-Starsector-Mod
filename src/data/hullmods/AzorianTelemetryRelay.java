@@ -47,11 +47,9 @@ public class AzorianTelemetryRelay extends BaseHullMod {
         }
         if (ship == Global.getCombatEngine().getPlayerShip()) {
             if (finalrating > 0) {
-                Global.getCombatEngine().maintainStatusForPlayerShip("AzorianRangeMod", "graphics/icons/hullsys/fortress_shield.png", "Azorian ECM Relay", (int)finalrating + "% increased range based on " + (int)totaldiff + "% ECM rating", false);
-            }
+                Global.getCombatEngine().maintainStatusForPlayerShip("AzorianRangeMod", "graphics/icons/hullsys/fortress_shield.png", "Azorian ECM Matrix", "+" + (int)finalrating + "% weapon range", false);            }
             if (finalrating < 0) {
-                Global.getCombatEngine().maintainStatusForPlayerShip("AzorianRangeMod", "graphics/icons/hullsys/fortress_shield.png", "Azorian ECM Relay", (int)finalrating + "% decreased range based on " + (int)totaldiff + "% ECM rating", true);
-            }
+                Global.getCombatEngine().maintainStatusForPlayerShip("AzorianRangeMod", "graphics/icons/hullsys/fortress_shield.png", "Azorian ECM Matrix",  (int)finalrating + "% weapon range", true);            }
             if (finalrating == 0){
                 Global.getCombatEngine().maintainStatusForPlayerShip("AzorianRangeMod", "graphics/icons/hullsys/fortress_shield.png", "Azorian ECM Relay", "ECM ratings are equal, no effect", false);
 

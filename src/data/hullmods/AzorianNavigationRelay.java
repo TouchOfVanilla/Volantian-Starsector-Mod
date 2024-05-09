@@ -17,7 +17,7 @@ public class AzorianNavigationRelay extends BaseHullMod {
         ship.getMutableStats().getDeceleration().modifyPercent("azorian_nav", speedbuffpercent);
         ship.getMutableStats().getMaxTurnRate().modifyPercent("azorian_nav", speedbuffpercent);
         if (ship == Global.getCombatEngine().getPlayerShip()) {
-            Global.getCombatEngine().maintainStatusForPlayerShip("azorian_nav", "graphics/icons/hullsys/fortress_shield.png", "Azorian Nav Relay", (int) speedbuffpercent + "% maneuverability based on " + (int) speedbuffpercent + "% total modifier to max speed", false);
+            Global.getCombatEngine().maintainStatusForPlayerShip("azorian_nav", "graphics/icons/hullsys/fortress_shield.png", "Azorian Nav Matrix", "+" + (int) speedbuffpercent + "% maneuverability", false);
         }
     }
 
