@@ -107,8 +107,6 @@ public class VolantianIncursion extends GenericRaidFGI {
         super.advance(amount);
     }
 
-
-    @Override
     protected void addPostAssessmentSection(TooltipMakerAPI info, float width, float height, float opad) {
         info.addPara("The incursion forces will encase your colonies in mines if they succeed.", opad, Misc.getNegativeHighlightColor(), "encase the colonies in mines");
 //		bullet(info);

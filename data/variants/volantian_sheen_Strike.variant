@@ -1,57 +1,63 @@
 {
-    "displayName": "Custom",
-    "fluxCapacitors": 0,
-    "fluxVents": 22,
+    "displayName": "Strike",
+    "fluxCapacitors": 4,
+    "fluxVents": 20,
     "goalVariant": true,
-    "hullId": "volantian_brilliant_vri",
+    "hullId": "volantian_sheen",
     "hullMods": [
-        "targetingunit",
+        "hardenedshieldemitter",
+        "unstable_injector",
     ],
     "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
-    "variantId": "volantian_brilliant_vri_Custom",
+    "variantId": "volantian_sheen_Strike",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "LINKED",
             "weapons": {
-                "WS 006": "vol_azorian_heavyneedler",
-                "WS 005": "vol_azorian_heavyneedler",
+                "WS0003": "heavyblaster",
             }
         },
         {
             "autofire": false,
             "mode": "LINKED",
             "weapons": {
-                "WS 004": "sabotpod",
+                "WS0006": "atropos",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "sabot",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS 000": "vol_phosphenelance",
+                "WS0004": "gravitonbeam",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "irpulse",
+                "WS0002": "irpulse",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS 001": "phasebeam",
-            }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
-                "WS 002": "vol_halonMK1",
-                "WS 003": "vol_halonMK1",
+                "WS0008": "pdlaser",
+                "WS0007": "pdlaser",
             }
         },
     ],
-    "wings": [
-        "volantian_lux_wing",
-    ],
+    "wings": [],
     "modules": [],
 }

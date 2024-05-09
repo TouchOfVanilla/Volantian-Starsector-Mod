@@ -10,7 +10,6 @@ import com.fs.starfarer.api.impl.campaign.ids.Skills;
 import com.fs.starfarer.api.loading.WeaponSlotAPI;
 import com.fs.starfarer.api.loading.WeaponSpecAPI;
 import com.fs.starfarer.api.util.Misc;
-import com.fs.starfarer.combat.ai.movement.maneuvers.S;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -120,5 +119,6 @@ public class VRCReAutomation extends BaseHullMod {
         decoMap.put("volantian_fulgent_vri", "vol_fulgent_vri_corebridge");
         decoMap.put("volantian_chromatic_vri", "vol_chromatic_vri_corebridge");
         decoMap.put("volantian_scintilla_vri", "vol_scintilla_vri_corebridge");
+        decoMap.put("volantian_prismatic_vri", "vol_prismatic_vri_corebridge");
     }
 }

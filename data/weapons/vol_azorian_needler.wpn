@@ -2,7 +2,6 @@
   "id": "vol_azorian_needler",
   "specClass": "projectile",
   "projectileSpecId": "vol_azorian_shot",
-  "everyFrameEffect": "data.weapons.scripts.VRI_azorian_needlers",
   "type": "BALLISTIC",
   "size": "SMALL",
   "turretSprite": "graphics/weapons/azorian_needler_turret_base.png",

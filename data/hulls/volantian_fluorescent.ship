@@ -11,6 +11,12 @@
   "shieldCenter": [23.5, -0],
   "shieldRadius": 161.5,
   "viewOffset": 0,
+  "builtInMods": [
+    "automated"
+  ],
+  "builtInWeapons": {
+    "WS0016": "vol_ultraheavygauss"
+  },
   "weaponSlots": [
     {
       "id": "WS0001",

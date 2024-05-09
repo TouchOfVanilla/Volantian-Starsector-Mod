@@ -12,7 +12,11 @@
 		"volantian_medusa_vri_Elite": 5, "volantian_medusa_vri_Standard": 5,
 		"volantian_prismatic_vri_Standard": 5, "volantian_prismatic_vri_Support": 5,
 		"volantian_sunder_vri_Elite": 5, "volantian_sunder_vri_Standard": 5,
-		"volantian_prismatic_Standard": 10
+		"volantian_prismatic_Standard": 10, "volantian_prismatic_Support": 10,
+
+		"volantian_sheen_Standard": 10, "volantian_sheen_Strike": 10,
+
+
 	},
 	"combatLarge": {
 		"volantian_gauntlet_Elite": 5, "volantian_gauntlet_Standard": 5,
@@ -28,6 +32,7 @@
 		"volantian_ionos_vri_Standard": 10,
 		"volantian_radiant_vri_Standard": 7,
 		"volantian_nova_vri_Standard": 10,
+		"volantian_fluorescent_Standard": 10, "volantian_fluorescent_Support": 10
 	},
 	"combatFreighterSmall": {
 	},

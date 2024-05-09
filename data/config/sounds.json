@@ -189,10 +189,17 @@
 		{"file": "sounds/vol_vestie_phase_dive.ogg", "pitch": 1.1, "volume": 1},
 	],
 	"vol_vestie_phase_surface":[
-		{"file": "sounds/vol_vestie_phase_surface.ogg", "pitch": 0.9, "volume": 1},
+		{"file": "sounds/vol_vestie_phase_surface.ogg", "pitch": 0.94, "volume": 1},
 		{"file": "sounds/vol_vestie_phase_surface.ogg", "pitch": 0.95, "volume": 1},
 		{"file": "sounds/vol_vestie_phase_surface.ogg", "pitch": 1, "volume": 1},
 		{"file": "sounds/vol_vestie_phase_surface.ogg", "pitch": 1.05, "volume": 1},
 		{"file": "sounds/vol_vestie_phase_surface.ogg", "pitch": 1.1, "volume": 1},
+	],
+	"vol_ultraheavygauss_fire":[
+		{"file": "sounds/vol_ultraheavygauss.ogg", "pitch": 0.94, "volume": 1},
+		{"file": "sounds/vol_ultraheavygauss.ogg", "pitch": 0.95, "volume": 1},
+		{"file": "sounds/vol_ultraheavygauss.ogg", "pitch": 1, "volume": 1},
+		{"file": "sounds/vol_ultraheavygauss.ogg", "pitch": 1.05, "volume": 1},
+		{"file": "sounds/vol_ultraheavygauss.ogg", "pitch": 1.1, "volume": 1},
 	]
 }

@@ -1,69 +1,70 @@
 {
-    "displayName": "Standard",
-    "fluxCapacitors": 7,
-    "fluxVents": 50,
-    "goalVariant": true,
-    "hullId": "volantian_radiant_vri",
-    "hullMods": [
-        "hardenedshieldemitter",
-        "targetingunit"
-    ],
-    "variantId": "volantian_radiant_vri_Standard",
-    "weaponGroups": [
-        {
-            "autofire": false,
-            "mode": "LINKED",
-            "weapons": {
-                "WS 000": "autopulse",
-                "WS 001": "autopulse"
-            }
-        },
-        {
-            "autofire": false,
-            "mode": "ALTERNATING",
-            "weapons": {
-                "WS 007": "vol_azorian_lance",
-                "WS 006": "vol_azorian_lance"
-            }
-        },
-        {
-            "autofire": false,
-            "mode": "ALTERNATING",
-            "weapons": {
-                "WS 020": "vol_azorian_heavyneedler",
-                "WS 009": "vol_azorian_heavyneedler",
-                "WS 008": "vol_azorian_heavyneedler"
-            }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
-                "WS 011": "sabotpod",
-                "WS 010": "sabotpod"
-            }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": { }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
-                "WS 017": "vol_tekkocannon",
-                "WS 014": "vol_halonMK1",
-                "WS 005": "vol_halonMK1",
-                "WS 019": "vol_halonMK1",
-                "WS 013": "vol_tekkocannon",
-                "WS 003": "vol_halonMK1",
-                "WS 004": "vol_halonMK1",
-                "WS 002": "vol_halonMK1",
-                "WS 018": "vol_halonMK1",
-                "WS 012": "vol_tekkocannon",
-                "WS 015": "vol_halonMK1"
-            }
-        }
-    ]
+  "variantId": "volantian_radiant_vri_Standard",
+  "hullId": "volantian_radiant_vri",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 7,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "hardenedshieldemitter",
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 000": "autopulse",
+        "WS 001": "autopulse"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 006": "vol_azorian_lance",
+        "WS 007": "vol_azorian_lance"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 008": "vol_azorian_heavyneedler",
+        "WS 009": "vol_azorian_heavyneedler",
+        "WS 020": "vol_azorian_heavyneedler"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 010": "sabotpod",
+        "WS 011": "sabotpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "vol_halonMK1",
+        "WS 003": "vol_halonMK1",
+        "WS 004": "vol_halonMK1",
+        "WS 005": "vol_halonMK1",
+        "WS 012": "vol_tekkocannon",
+        "WS 013": "vol_tekkocannon",
+        "WS 017": "vol_tekkocannon",
+        "WS 019": "vol_halonMK1"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
 }
