@@ -1,55 +1,61 @@
 {
-    "displayName": "Standard",
-    "fluxCapacitors": 12,
-    "fluxVents": 20,
-    "goalVariant": true,
-    "hullId": "volantian_prismatic_vri",
+    "displayName": "Automated",
+    "fluxCapacitors": 19,
+    "fluxVents": 30,
+    "goalVariant": false,
+    "hullId": "volantian_pyralis_vri",
     "hullMods": [
-        "hardenedshieldemitter",
         "targetingunit",
     ],
-    "permaMods": [],
-    "sMods": [],
+    "permaMods": [
+        "automated",
+    ],
+    "sMods": [
+        "automated",
+    ],
     "suppressedMods": [],
-    "variantId": "volantian_prismatic_vri_Standard",
+    "variantId": "volantian_pyralis_vri_Automated",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "vol_azorian_lance",
+                "WS 004": "autopulse",
             }
         },
         {
             "autofire": false,
             "mode": "LINKED",
             "weapons": {
-                "WS0005": "typhoon",
+                "WS 000": "cyclone",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0006": "heavymauler",
+                "WS 003": "vol_azorian_heavyneedler",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "hveldriver",
+                "WS 005": "ionbeam",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0007": "vol_halonMK1",
-                "WS0003": "vol_halonMK1",
+                "WS 001": "vol_halonMK1",
+                "WS 002": "vol_halonMK1",
+                "WS 006": "vol_halonMK1",
             }
         },
     ],
-    "wings": [],
+    "wings": [
+        "volantian_spark_wing",
+    ],
     "modules": [],
 }

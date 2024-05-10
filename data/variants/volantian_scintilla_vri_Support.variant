@@ -1,51 +1,57 @@
 {
     "displayName": "Support",
-    "fluxCapacitors": 17,
-    "fluxVents": 20,
+    "fluxCapacitors": 0,
+    "fluxVents": 18,
     "goalVariant": true,
-    "hullId": "volantian_prismatic_vri",
+    "hullId": "volantian_scintilla_vri",
     "hullMods": [
-        "advancedoptics",
         "targetingunit",
     ],
     "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
-    "variantId": "volantian_prismatic_vri_Support",
+    "variantId": "volantian_scintilla_vri_Support",
     "weaponGroups": [
         {
-            "autofire": true,
+            "autofire": false,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "vol_azorian_lance",
+                "WS0001": "hveldriver",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 006": "pilum_large",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0003": "taclaser",
-                "WS0004": "taclaser",
-                "WS0006": "ionbeam",
+                "WS 008": "gravitonbeam",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0005": "gravitonbeam",
+                "WS 007": "ionbeam",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0007": "vol_halonMK1",
+                "WS 000": "vol_halonMK1",
+                "WS 001": "vol_halonMK1",
             }
         },
     ],
     "wings": [
-        "volantian_spark_wing",
+        "volantian_lux_wing",
+        "volantian_lux_wing",
     ],
     "modules": [],
 }

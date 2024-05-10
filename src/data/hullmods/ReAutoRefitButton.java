@@ -30,7 +30,7 @@ public class ReAutoRefitButton extends BaseRefitButton {
 
     @Override
     public String getIconName(FleetMemberAPI member, ShipVariantAPI variant) {
-        return "graphics/hullmods/integrated_targeting_unit.png";
+        return "graphics/factions/VRI_TTDS_Crest.png";
     }
 
     @Override

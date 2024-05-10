@@ -1,44 +1,41 @@
 {
-    "displayName": "Standard",
-    "fluxCapacitors": 12,
+    "displayName": "Automated",
+    "fluxCapacitors": 19,
     "fluxVents": 20,
-    "goalVariant": true,
+    "goalVariant": false,
     "hullId": "volantian_prismatic_vri",
     "hullMods": [
         "hardenedshieldemitter",
-        "targetingunit",
+        "unstable_injector",
     ],
-    "permaMods": [],
-    "sMods": [],
+    "permaMods": [
+        "automated",
+    ],
+    "sMods": [
+        "automated",
+    ],
     "suppressedMods": [],
-    "variantId": "volantian_prismatic_vri_Standard",
+    "variantId": "volantian_prismatic_vri_Automated",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "vol_azorian_lance",
+                "WS0002": "autopulse",
             }
         },
         {
             "autofire": false,
             "mode": "LINKED",
             "weapons": {
-                "WS0005": "typhoon",
+                "WS0005": "sabotpod",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0006": "heavymauler",
-            }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
-                "WS0001": "hveldriver",
+                "WS0006": "ionpulser",
             }
         },
         {
@@ -47,6 +44,13 @@
             "weapons": {
                 "WS0007": "vol_halonMK1",
                 "WS0003": "vol_halonMK1",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "heavymg",
             }
         },
     ],

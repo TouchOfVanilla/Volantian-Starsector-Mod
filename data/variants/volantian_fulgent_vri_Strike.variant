@@ -1,52 +1,59 @@
 {
-    "displayName": "Standard",
-    "fluxCapacitors": 12,
+    "displayName": "Strike",
+    "fluxCapacitors": 2,
     "fluxVents": 20,
     "goalVariant": true,
-    "hullId": "volantian_prismatic_vri",
+    "hullId": "volantian_fulgent_vri",
     "hullMods": [
-        "hardenedshieldemitter",
+        "magazines",
         "targetingunit",
     ],
     "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
-    "variantId": "volantian_prismatic_vri_Standard",
+    "variantId": "volantian_fulgent_vri_Strike",
     "weaponGroups": [
         {
-            "autofire": true,
+            "autofire": false,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "vol_azorian_lance",
+                "WS 001": "autopulse",
             }
         },
         {
             "autofire": false,
             "mode": "LINKED",
             "weapons": {
-                "WS0005": "typhoon",
+                "WS 000": "sabot",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "vol_katti",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0006": "heavymauler",
+                "WS 003": "vol_azorian_heavyneedler",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "hveldriver",
+                "WS 004": "ionpulser",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0007": "vol_halonMK1",
-                "WS0003": "vol_halonMK1",
+                "WS 005": "vol_halonMK1",
+                "WS 006": "vol_halonMK1",
             }
         },
     ],

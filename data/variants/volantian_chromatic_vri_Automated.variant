@@ -1,0 +1,75 @@
+{
+    "displayName": "Automated",
+    "fluxCapacitors": 12,
+    "fluxVents": 30,
+    "goalVariant": false,
+    "hullId": "volantian_chromatic_vri",
+    "hullMods": [
+        "hardenedshieldemitter",
+        "targetingunit",
+    ],
+    "permaMods": [
+        "automated",
+    ],
+    "sMods": [
+        "automated",
+    ],
+    "suppressedMods": [],
+    "variantId": "volantian_chromatic_vri_Automated",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "vol_azorian_lance",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0011": "hurricane",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0010": "vol_phosphenelance",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "hveldriver",
+                "WS0003": "hveldriver",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "ionbeam",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "gravitonbeam",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "vol_halonMK1",
+                "WS0005": "vol_halonMK1",
+                "WS0014": "vol_halonMK1",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

@@ -1,0 +1,59 @@
+{
+    "displayName": "Automated",
+    "fluxCapacitors": 0,
+    "fluxVents": 3,
+    "goalVariant": false,
+    "hullId": "volantian_scintilla_vri",
+    "hullMods": [],
+    "permaMods": [
+        "automated",
+    ],
+    "sMods": [
+        "automated",
+    ],
+    "suppressedMods": [],
+    "variantId": "volantian_scintilla_vri_Automated",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "heavymauler",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 006": "squall",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 008": "gravitonbeam",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 007": "ionbeam",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "vol_halonMK1",
+                "WS 001": "vol_halonMK1",
+            }
+        },
+    ],
+    "wings": [
+        "volantian_flash_wing",
+        "volantian_flash_wing",
+    ],
+    "modules": [],
+}

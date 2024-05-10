@@ -1,55 +1,55 @@
 {
-    "displayName": "Standard",
-    "fluxCapacitors": 12,
-    "fluxVents": 20,
+    "displayName": "Strike",
+    "fluxCapacitors": 0,
+    "fluxVents": 3,
     "goalVariant": true,
-    "hullId": "volantian_prismatic_vri",
-    "hullMods": [
-        "hardenedshieldemitter",
-        "targetingunit",
-    ],
+    "hullId": "volantian_scintilla_vri",
+    "hullMods": [],
     "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
-    "variantId": "volantian_prismatic_vri_Standard",
+    "variantId": "volantian_scintilla_vri_Strike",
     "weaponGroups": [
         {
-            "autofire": true,
+            "autofire": false,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "vol_azorian_lance",
+                "WS0001": "heavymauler",
             }
         },
         {
             "autofire": false,
             "mode": "LINKED",
             "weapons": {
-                "WS0005": "typhoon",
+                "WS 006": "squall",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0006": "heavymauler",
+                "WS 008": "gravitonbeam",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "hveldriver",
+                "WS 007": "ionbeam",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0007": "vol_halonMK1",
-                "WS0003": "vol_halonMK1",
+                "WS 000": "vol_halonMK1",
+                "WS 001": "vol_halonMK1",
             }
         },
     ],
-    "wings": [],
+    "wings": [
+        "volantian_flash_wing",
+        "volantian_flash_wing",
+    ],
     "modules": [],
 }

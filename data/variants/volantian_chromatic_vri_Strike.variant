@@ -1,9 +1,9 @@
 {
-    "displayName": "Standard",
+    "displayName": "Strike",
     "fluxCapacitors": 12,
-    "fluxVents": 20,
+    "fluxVents": 30,
     "goalVariant": true,
-    "hullId": "volantian_prismatic_vri",
+    "hullId": "volantian_chromatic_vri",
     "hullMods": [
         "hardenedshieldemitter",
         "targetingunit",
@@ -11,42 +11,58 @@
     "permaMods": [],
     "sMods": [],
     "suppressedMods": [],
-    "variantId": "volantian_prismatic_vri_Standard",
+    "variantId": "volantian_chromatic_vri_Strike",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "vol_azorian_lance",
+                "WS0009": "vol_azorian_lance",
             }
         },
         {
             "autofire": false,
             "mode": "LINKED",
             "weapons": {
-                "WS0005": "typhoon",
+                "WS0011": "hurricane",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0006": "heavymauler",
+                "WS0010": "vol_phosphenelance",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "hveldriver",
+                "WS0004": "hveldriver",
+                "WS0003": "hveldriver",
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0007": "vol_halonMK1",
-                "WS0003": "vol_halonMK1",
+                "WS0001": "ionbeam",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "gravitonbeam",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "vol_halonMK1",
+                "WS0005": "vol_halonMK1",
+                "WS0014": "vol_halonMK1",
             }
         },
     ],

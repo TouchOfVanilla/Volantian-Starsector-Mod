@@ -8,21 +8,24 @@
 		"volantian_glint_Standard": 10,
 	},
 	"combatMedium": {
-		"volantian_fulgent_vri_Standard": 10,
-		"volantian_medusa_vri_Elite": 5, "volantian_medusa_vri_Standard": 5,
-		"volantian_prismatic_vri_Standard": 5, "volantian_prismatic_vri_Support": 5,
-		"volantian_sunder_vri_Elite": 5, "volantian_sunder_vri_Standard": 5,
-		"volantian_prismatic_Standard": 10, "volantian_prismatic_Support": 10,
+		"volantian_fulgent_vri_Standard": 5, "volantian_fulgent_vri_Strike": 5,
 
-		"volantian_sheen_Standard": 10, "volantian_sheen_Strike": 10,
+		"volantian_medusa_vri_Elite": 5, "volantian_medusa_vri_Standard": 5,
+		"volantian_prismatic_vri_Standard": 5, "volantian_prismatic_vri_Strike": 5,
+		"volantian_sunder_vri_Elite": 5, "volantian_sunder_vri_Standard": 5,
+		"volantian_prismatic_Standard": 5, "volantian_prismatic_Support": 5,
+
+		"volantian_sheen_Standard": 5, "volantian_sheen_Strike": 5,
 
 
 	},
 	"combatLarge": {
 		"volantian_gauntlet_Elite": 5, "volantian_gauntlet_Standard": 5,
 		"volantian_gauntlet_vri_Standard": 10,
-		"volantian_pyralis_vri_Standard": 10,
-		"volantian_chromatic_vri_Standard": 10,
+		"volantian_pyralis_vri_Standard": 10, "volantian_pyralis_vri_Support": 10,
+
+		"volantian_chromatic_vri_Standard": 5, "volantian_chromatic_vri_Strike": 5,
+
 		"volantian_sentinel_Elite": 5, "volantian_sentinel_Standard": 5,
 		"volantian_sentinel_vri_Standard": 10,
 		"volantian_chromatic_Standard": 5, "volantian_chromatic_Support": 5,
@@ -30,7 +33,8 @@
 	},
 	"combatCapital": {
 		"volantian_ionos_vri_Standard": 10,
-		"volantian_radiant_vri_Standard": 7,
+		"volantian_radiant_vri_Standard": 7, "volantian_radiant_vri_Strike": 7,
+
 		"volantian_nova_vri_Standard": 10,
 		"volantian_fluorescent_Standard": 10, "volantian_fluorescent_Support": 10
 	},
@@ -45,7 +49,7 @@
 	"carrierSmall": {
 	},
 	"carrierMedium": {
-		"volantian_scintilla_vri_Standard": 10,
+		"volantian_scintilla_vri_Strike": 5, "volantian_scintilla_vri_Support": 5,
 	},
 	"carrierLarge": {
 		"volantian_gauntlet_Elite": 5, "volantian_gauntlet_Standard": 5,
