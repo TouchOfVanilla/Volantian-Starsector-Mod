@@ -4,6 +4,7 @@ import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.combat.*;
 import com.fs.starfarer.api.combat.listeners.ApplyDamageResultAPI;
 import com.fs.starfarer.api.util.IntervalUtil;
+import com.fs.starfarer.api.util.Misc;
 import org.dark.shaders.distortion.DistortionShader;
 import org.dark.shaders.distortion.RippleDistortion;
 import org.lazywizard.lazylib.combat.entities.SimpleEntity;
@@ -69,8 +70,90 @@ public class VRI_weapon_monoblade implements OnHitEffectPlugin, EveryFrameWeapon
 
     }
 
+    public static void spawnShapedExplosion(Vector2f loc, float angle, float objSpeed, Color pc) {
+        if (Global.getCombatEngine().getViewport().isNearViewport(loc, 800f)) {
+
+            int numParticles = 150;
+            float minSize = 15;
+            float maxSize = 20;
+
+            float minDur = 0.3f;
+            float maxDur = 0.5f;
+
+            float arc = 40;
+            float scatter = 40f;
+            float minVel = -300f + objSpeed;
+            float maxVel = 100f + objSpeed;
+
+            float endSizeMin = 1f;
+            float endSizeMax = 2f;
+
+            Vector2f spawnPoint = new Vector2f(loc);
+            for (int i = 0; i < numParticles; i++) {
+                float angleOffset = (float) Math.random();
+                if (angleOffset > 0.2f) {
+                    angleOffset *= angleOffset;
+                }
+                float speedMult = 1f - angleOffset;
+                speedMult = 0.5f + speedMult * 0.5f;
+                angleOffset *= Math.signum((float) Math.random() - 0.5f);
+                angleOffset *= arc/2f;
+                float theta = (float) Math.toRadians(angle + angleOffset);
+                float r = (float) (Math.random() * Math.random() * scatter);
+                float x = (float) Math.cos(theta) * r;
+                float y = (float) Math.sin(theta) * r;
+                Vector2f pLoc = new Vector2f(spawnPoint.x + x, spawnPoint.y + y);
+
+                float speed = minVel + (maxVel - minVel) * (float) Math.random();
+                speed *= speedMult;
+
+                Vector2f pVel = Misc.getUnitVectorAtDegreeAngle((float) Math.toDegrees(theta));
+                pVel.scale(speed);
+
+                float pSize = minSize + (maxSize - minSize) * (float) Math.random();
+                float pDur = minDur + (maxDur - minDur) * (float) Math.random();
+                float endSize = endSizeMin + (endSizeMax - endSizeMin) * (float) Math.random();
+                Global.getCombatEngine().addNebulaParticle(pLoc, pVel, pSize, endSize, 0.1f, 0.5f, pDur, pc);
+            }
+        }
+    }
+
     @Override
     public void advance(float amount, CombatEngineAPI engine, WeaponAPI weapon) {
+        //create charge light
+        if (weapon.getChargeLevel() > 0 && weapon.getCooldownRemaining() == 0) {
+            ShipAPI ship = weapon.getShip();
+
+            //fringe
+            engine.addHitParticle(
+                    weapon.getLocation(),
+                    ship.getVelocity(),
+                    30.0f, //size
+                    0.3f, //brightness
+                    0.1f, //duration
+                    new Color(180, 0, 50, 255));
+
+            //core
+            engine.addHitParticle(
+                    weapon.getLocation(),
+                    ship.getVelocity(),
+                    20.0f, //size
+                    0.3f, //brightness
+                    0.1f, //duration
+                    new Color(255, 150, 200, 255));
+        }
+
+        //create firing plume
+        if (weapon.getChargeLevel() == 1f) {
+            //Vector2f loc = MathUtils.getPointOnCircumference(weapon.getLocation(), 50f, weapon.getCurrAngle());
+
+            spawnShapedExplosion(weapon.getLocation(),
+                    weapon.getCurrAngle(),
+                    1200f,
+                    new Color(200, 50, 180, 200));
+
+        }
+
         //create EMP arcs
         Iterator projiter = engine.getProjectiles().iterator();
         while (projiter.hasNext()) {

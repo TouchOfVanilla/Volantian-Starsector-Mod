@@ -54,5 +54,5 @@
     MISSILE_FF,
     MISSILE_NO_FF
   ],
-  "fireSoundTwo": "tachyon_lance_fire"
+  "fireSoundTwo": "vol_azorian_beam_fire"
 }

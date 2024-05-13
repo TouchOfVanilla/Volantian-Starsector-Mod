@@ -41,6 +41,7 @@ public class VolantianRemnantConversion extends BaseHullMod {
 		//worse flux stats
 		stats.getFluxDissipation().modifyMult(id, FLUX_STAT_MULT);
 		stats.getFluxCapacity().modifyMult(id, FLUX_STAT_MULT);
+
 	}
 
 	@Override
@@ -63,6 +64,7 @@ public class VolantianRemnantConversion extends BaseHullMod {
 		} else {
 			ship.getVariant().clearSlot(SLOT.getId());
 		}
+
 	}
 
 	public String getDescriptionParam(int index, HullSize hullSize) {

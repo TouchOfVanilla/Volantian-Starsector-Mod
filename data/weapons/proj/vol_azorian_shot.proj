@@ -2,6 +2,8 @@
 	"id":"vol_azorian_shot",
 	"specClass":"projectile",
 	"spawnType":"BALLISTIC",
+	"onFireEffect":"data.weapons.scripts.VriNeedlerMuzzleFlash",
+	"onHitEffect":"data.weapons.scripts.VriNeedlerMuzzleFlash",
 	"collisionClass":"PROJECTILE_FF",
 	"collisionClassByFighter":"PROJECTILE_FIGHTER",
 	

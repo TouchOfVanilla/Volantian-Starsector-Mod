@@ -1,0 +1,257 @@
+{
+	id:"vds",
+	"displayName":"VDS",
+	"displayNameWithArticle":"the VDS",
+	"displayNameLong":"Volantian Defense System",
+	"displayNameLongWithArticle":"the Volantian Defense System",
+	"entityNamePrefix":"VDS",
+	"personNamePrefix":"VDS",
+	"personNamePrefixAOrAn":"a",
+	"displayNameIsOrAre":"is",
+	
+	"logo":"graphics/factions/VRI_Flag2.png",
+	"crest":"graphics/factions/VRI_TTDS_Crest.png",
+	"shipNamePrefix":"VDS",
+	
+	"color":[31,247,182,255],
+	"baseUIColor":[31,247,182,255],
+	#"color":[100,100,100,255],
+	#"baseUIColor":[155,155,155,255],
+	
+	#"darkUIColor":[31,94,112,175],
+	#"gridUIColor":[70,200,255,75],
+	
+	"showInIntelTab":false,
+	
+	"shipNameSources":{
+		"MERCANTILE":2,
+		"ROMAN":1,
+		"DERELICT_DRONE":1,
+		"VOLANTIAN":5
+	},
+	"names":{
+		"ai":1,
+	},
+	"variantOverrides":{
+	"volantian_glimmer_vri_Automated":10,
+	"volantian_lumen_vri_Automated":10,
+	"volantian_fulgent_vri_Automated":10,
+	"volantian_scintilla_vri_Automated":10,
+	"volantian_pyralis_vri_Automated":10,
+	"volantian_chromatic_vri_Automated":10,
+	"volantian_radiant_vri_Automated":10,
+	"volantian_prismatic_vri_Automated":10,
+    	},
+	# multiplier for how often hulls show up in the faction's fleets
+	"hullFrequency":{
+		"tags":{
+		},
+		"hulls":{
+		},
+	},
+	# ships the faction gets access to when importing S&W out-of-faction
+	"shipsWhenImporting":{
+		"tags":["VRI_rem_bp"],
+		"hulls":[],
+	},
+	"knownShips":{
+		"tags":["VRI_rem_bp"],
+		"hulls":[
+		    "volantian_radiant_vri",
+
+
+		],
+	},
+	# listing ships here will make the faction mostly use them even if other hulls become available
+	"priorityShips":{
+		"tags":[],
+		"hulls":[],
+	},
+	"knownFighters":{
+		"tags":["remnant","hightech_bp", vri_figthers_bp],
+		"fighters":[
+		],
+	},
+	"priorityFighters":{
+		"tags":[vri_figthers_bp],
+		"fighters":[
+		],
+	},
+	"knownWeapons":{
+		"tags":["remnant", "VRI_bp"],
+		"weapons":[
+			"lightneedler",
+			"railgun",
+			"dualflak",
+			"heavymauler",
+			"hveldriver",
+			"heavyneedler",
+			"gauss",
+			"mjolnir",
+			"multineedler",
+			"breachpod",
+			"sabotpod",
+			"phasecl",
+			"cyclone",
+			"hurricane",
+			"squall",
+			"locust",
+			"pdburst",
+			"amblaster",
+			"phasebeam",
+			"heavyblaster",
+			"heavyburst",
+			"ionpulser",
+			"ionbeam",
+			"plasma",
+			"guardian",
+			"tachyonlance",
+		],
+	},
+	"priorityWeapons":{
+		"tags":["VRI_bp"],
+		"weapons":[
+		],
+	},
+	"knownHullMods":{
+		"tags":["base_bp", "remnant"],
+		"hullMods":[
+			"advancedshieldemitter", # accelerated
+			"advancedoptics",
+			"automated",
+			"turretgyros",
+			"armoredweapons",
+			"augmentedengines",
+			"autorepair",
+			"converted_hangar",
+			"eccm",
+			"ecm",
+			"expanded_deck_crew",
+			"magazines",
+			"missleracks",
+			"extendedshieldemitter",
+			"frontemitter",
+			"frontshield",  # makeshift
+			"hardenedshieldemitter",
+			"heavyarmor",
+			"insulatedengine",
+			"pointdefenseai",
+			"targetingunit",
+			"nav_relay",
+			"adaptiveshields", # omni
+			"operations_center",
+			"recovery_shuttles",
+			"fluxbreakers",
+			"solar_shielding",
+			"stabilizedshieldemitter",
+			"surveying_equipment",
+            "azorian",
+            "azorian_relay",
+            "azorian_shields"
+		],
+	},
+	"factionDoctrine":{
+		"warships":4,
+		"carriers":2,
+		"phaseShips":1,
+		
+		"officerQuality":1,
+		"shipQuality":3,
+		"numShips":5,
+		
+		"shipSize":4,
+		
+		"aggression":3, # doesn't matter since automated ships are super aggressive regardless
+		
+		"combatFreighterProbability":1,     				# instead of some portion of the freighters in a fleet
+		"combatFreighterCombatUseFraction":1,				# as part of the normal combat lineup
+		"combatFreighterCombatUseFractionWhenPriority":1,   # as part of normal combat lineup, when marked as priority ship
+		"autofitRandomizeProbability":0.25,
+
+		"commanderSkillsShuffleProbability":1,
+		"commanderSkills":[ # unlike other factions, can get up to 3 skills depending
+			"electronic_warfare",
+			"flux_regulation",
+			"coordinated_maneuvers",
+		],
+	},
+
+	"illegalCommodities":[
+	],
+	"music": {
+        "theme": "music_vol_market_neutral",
+
+        "market_neutral": "music_vol_market_neutral",
+        "market_hostile": "music_vol_market_hostile",
+        "market_friendly": "music_vol_market_friendly",
+
+        "encounter_neutral": "music_vol_market_neutral",
+        "encounter_hostile": "music_vol_market_hostile",
+        "encounter_friendly": "music_vol_market_friendly",
+    },
+	#"internalComms":"hegemony_internal",
+	"portraits":{
+		"standard_male":[
+            "graphics/portraits/vol_portrait5.png",
+            "graphics/portraits/vol_portrait6.png",
+            "graphics/portraits/vol_portrait7.png",
+            "graphics/portraits/vol_portrait10.png",
+		],
+		"standard_female":[
+            "graphics/portraits/vol_portrait1.png",
+            "graphics/portraits/vol_portrait2.png",
+            "graphics/portraits/vol_portrait3.png",
+            "graphics/portraits/vol_portrait4.png",
+            "graphics/portraits/vol_portrait8.png",
+			"graphics/portraits/vol_portrait9.png",
+		],
+	},
+	"ranks":{
+		"ranks":{
+		        "spaceAdmiral":{"name":"Head Curator"},
+        	    "spaceCommander":{"name":"Curator"},
+        	    "factionleader":{"name":"Arch-Curator"}
+		},
+		"posts":{
+		        "factionleader":{"name":"Arch-Curator"},
+		        "patrolCommander":{"name":"Patrol Secretary"},
+		        "fleetCommander":{"name":"Fleet Secretary"},
+		        "baseCommander":{"name":"Base Secretary"}
+
+
+
+
+		},
+	},
+	"custom":{
+	    "offersCommissions":false,
+    	"engagesInHostilities":true,
+		"engageWhenEvenStrength":true,
+		"allowsTransponderOffTrade":true,
+		"postsNoBounties":false,
+		"fightToTheLast":true,
+		"buysAICores":false,
+        "AICoreValueMult":3,
+        "AICoreRepMult":0.5,
+        "buysSurveyData":false,
+        "hostilityImpactOnGrowth":true,
+        "punitiveExpeditionData":{
+        			"vsCompetitors":true,
+        			"vsFreePort":false,
+        			"canBombard":true,
+        			"territorial":true,
+        		},
+	},	
+	"fleetTypeNames":{
+		"patrolSmall":"Culet",
+		"patrolMedium":"Cluster",
+		"patrolLarge":"Lattice",
+
+		"trade":"Commerce Fleet",
+		"tradeLiner":"Transit Convoy",
+		"tradeSmuggler":"Smuggler Fleet",
+		"smalltrader":"Mercantile Fleet",
+
+		"taskForce":"Vanguard Fleet"
+	}
+},

@@ -29,5 +29,5 @@
 					   "particleColor":[255,255,255,175]},
 	"projectileSpecId":"vol_azorian_shot",  # projectile that will be fired
 	#"fireSoundOne":"needler_spinup",
-	"fireSoundTwo":"needler_fire",
+	"fireSoundTwo":"vol_needler_fire",
 }

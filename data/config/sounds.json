@@ -34,6 +34,12 @@
 			},
 		],
 	},
+	"vol_azorian_beam_fire":[
+		{"file": "sounds/vol_azorian_beam_fire.ogg", "pitch": 1, "volume": 1.5},
+	],
+	"vol_azorian_lance_fire":[
+		{"file": "sounds/vol_azorian_beam_fire.ogg", "pitch": 0.7, "volume": 3},
+	],
 	"vol_katti_explosion":[
 		{"file": "sounds/vol_katti_explosion.ogg", "pitch": 0.9, "volume": 0.7},
 		{"file": "sounds/vol_katti_explosion.ogg", "pitch": 0.95, "volume": 0.7},
@@ -118,13 +124,7 @@
 		{"file": "sounds/vol_monoblade_impact.ogg", "pitch": 1.05, "volume": 1},
 		{"file": "sounds/vol_monoblade_impact.ogg", "pitch": 1.1, "volume": 1},
 	],
-	"vol_phosphene_fire":[
-		{"file": "sounds/vol_phosphene_fire.ogg", "pitch": 0.9, "volume": 1},
-		{"file": "sounds/vol_phosphene_fire.ogg", "pitch": 0.95, "volume": 1},
-		{"file": "sounds/vol_phosphene_fire.ogg", "pitch": 1, "volume": 1},
-		{"file": "sounds/vol_phosphene_fire.ogg", "pitch": 1.05, "volume": 1},
-		{"file": "sounds/vol_phosphene_fire.ogg", "pitch": 1.1, "volume": 1},
-	],
+
 	"vol_phosphene_loop":[
 		{"file": "sounds/vol_phosphene_loop.ogg", "pitch": 0.9, "volume": 1},
 		{"file": "sounds/vol_phosphene_loop.ogg", "pitch": 0.95, "volume": 1},
@@ -146,40 +146,26 @@
 		{"file": "sounds/vol_harpe_charge.ogg", "pitch": 1.05, "volume": 1},
 		{"file": "sounds/vol_harpe_charge.ogg", "pitch": 1.1, "volume": 1},
 	],
-	"vol_clovercannon_fire":[
-		{"file": "sounds/vol_clovercannon_fire.ogg", "pitch": 0.9, "volume": 1},
-		{"file": "sounds/vol_clovercannon_fire.ogg", "pitch": 0.95, "volume": 1},
-		{"file": "sounds/vol_clovercannon_fire.ogg", "pitch": 1, "volume": 1},
-		{"file": "sounds/vol_clovercannon_fire.ogg", "pitch": 1.05, "volume": 1},
-		{"file": "sounds/vol_clovercannon_fire.ogg", "pitch": 1.1, "volume": 1},
-	],
-	"vol_pataautocannon_fire":[
-		{"file": "sounds/vol_pataautocannon_fire.ogg", "pitch": 0.9, "volume": 1},
-		{"file": "sounds/vol_pataautocannon_fire.ogg", "pitch": 0.95, "volume": 1},
-		{"file": "sounds/vol_pataautocannon_fire.ogg", "pitch": 1, "volume": 1},
-		{"file": "sounds/vol_pataautocannon_fire.ogg", "pitch": 1.05, "volume": 1},
-		{"file": "sounds/vol_pataautocannon_fire.ogg", "pitch": 1.1, "volume": 1},
-	],
-	"vol_laevaten_fire":[
-		{"file": "sounds/vol_laevaten_fire.ogg", "pitch": 0.9, "volume": 1},
-		{"file": "sounds/vol_laevaten_fire.ogg", "pitch": 0.95, "volume": 1},
-		{"file": "sounds/vol_laevaten_fire.ogg", "pitch": 1, "volume": 1},
-		{"file": "sounds/vol_laevaten_fire.ogg", "pitch": 1.05, "volume": 1},
-		{"file": "sounds/vol_laevaten_fire.ogg", "pitch": 1.1, "volume": 1},
-	],
-	"vol_laevaten_loop":[
-		{"file": "sounds/vol_laevaten_loop.ogg", "pitch": 0.9, "volume": 1},
-		{"file": "sounds/vol_laevaten_loop.ogg", "pitch": 0.95, "volume": 1},
-		{"file": "sounds/vol_laevaten_loop.ogg", "pitch": 1, "volume": 1},
-		{"file": "sounds/vol_laevaten_loop.ogg", "pitch": 1.05, "volume": 1},
-		{"file": "sounds/vol_laevaten_loop.ogg", "pitch": 1.1, "volume": 1},
-	],
 	"vol_flechette_needler_fire":[
 		{"file": "sounds/vol_flechette_needler_fire.ogg", "pitch": 0.9, "volume": 1},
 		{"file": "sounds/vol_flechette_needler_fire.ogg", "pitch": 0.95, "volume": 1},
 		{"file": "sounds/vol_flechette_needler_fire.ogg", "pitch": 1, "volume": 1},
 		{"file": "sounds/vol_flechette_needler_fire.ogg", "pitch": 1.05, "volume": 1},
 		{"file": "sounds/vol_flechette_needler_fire.ogg", "pitch": 1.1, "volume": 1},
+	],
+	"vol_needler_fire":[
+		{"file": "sounds/vol_needler_fire.ogg", "pitch": 1, "volume": 1},
+	],
+	"vol_phosphene_fire":[
+		{"file": "sounds/vol_phosphene_fire.ogg", "pitch": 1, "volume": 2},
+	],
+	"vol_needler_hit":[
+		{"file": "sounds/vol_needler_hit_1.ogg", "pitch": 0.8, "volume": 0.15},
+		{"file": "sounds/vol_needler_hit_1.ogg", "pitch": 1.0, "volume": 0.15},
+		{"file": "sounds/vol_needler_hit_1.ogg", "pitch": 1.2, "volume": 0.15},
+		{"file": "sounds/vol_needler_hit_2.ogg", "pitch": 0.8, "volume": 0.15},
+		{"file": "sounds/vol_needler_hit_2.ogg", "pitch": 1.0, "volume": 0.15},
+		{"file": "sounds/vol_needler_hit_2.ogg", "pitch": 1.2, "volume": 0.15},
 	],
 	"vol_vestie_phase_dive":[
 		{"file": "sounds/vol_vestie_phase_dive.ogg", "pitch": 0.9, "volume": 1},

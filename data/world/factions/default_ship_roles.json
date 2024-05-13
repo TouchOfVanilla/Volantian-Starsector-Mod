@@ -1,17 +1,17 @@
 {
 	"combatSmall": {
-		"volantian_glimmer_vri_Standard":10,
-		"volantian_lumen_vri_Standard": 10,
+		"volantian_glimmer_vri_Standard":10, "volantian_glimmer_vri_Automated":0,
+		"volantian_lumen_vri_Standard": 10,	"volantian_lumen_vri_Automated": 0,
 		"volantian_metatron_vri_Elite": 3, "volantian_metatron_vri_Standard": 3,
 		"volantian_sandalphon_vri_Elite": 5, "volantian_sandalphon_vri_Standard": 5,
 		"volantian_wolf_vri_Elite": 10,
 		"volantian_glint_Standard": 10,
 	},
 	"combatMedium": {
-		"volantian_fulgent_vri_Standard": 5, "volantian_fulgent_vri_Strike": 5,
+		"volantian_fulgent_vri_Standard": 5, "volantian_fulgent_vri_Strike": 5, "volantian_fulgent_vri_Automated": 0,
 
 		"volantian_medusa_vri_Elite": 5, "volantian_medusa_vri_Standard": 5,
-		"volantian_prismatic_vri_Standard": 5, "volantian_prismatic_vri_Strike": 5,
+		"volantian_prismatic_vri_Standard": 5, "volantian_prismatic_vri_Strike": 5, "volantian_prismatic_vri_Automated": 0,
 		"volantian_sunder_vri_Elite": 5, "volantian_sunder_vri_Standard": 5,
 		"volantian_prismatic_Standard": 5, "volantian_prismatic_Support": 5,
 
@@ -22,9 +22,9 @@
 	"combatLarge": {
 		"volantian_gauntlet_Elite": 5, "volantian_gauntlet_Standard": 5,
 		"volantian_gauntlet_vri_Standard": 10,
-		"volantian_pyralis_vri_Standard": 10, "volantian_pyralis_vri_Support": 10,
+		"volantian_pyralis_vri_Standard": 5, "volantian_pyralis_vri_Support": 5, "volantian_pyralis_vri_Automated": 0,
 
-		"volantian_chromatic_vri_Standard": 5, "volantian_chromatic_vri_Strike": 5,
+		"volantian_chromatic_vri_Standard": 5, "volantian_chromatic_vri_Strike": 5, "volantian_chromatic_vri_Automated": 0,
 
 		"volantian_sentinel_Elite": 5, "volantian_sentinel_Standard": 5,
 		"volantian_sentinel_vri_Standard": 10,
@@ -33,10 +33,10 @@
 	},
 	"combatCapital": {
 		"volantian_ionos_vri_Standard": 10,
-		"volantian_radiant_vri_Standard": 7, "volantian_radiant_vri_Strike": 7,
+		"volantian_radiant_vri_Standard": 7, "volantian_radiant_vri_Strike": 7, "volantian_radiant_vri_Automated": 0,
 
 		"volantian_nova_vri_Standard": 10,
-		"volantian_fluorescent_Standard": 10, "volantian_fluorescent_Support": 10
+		"volantian_fluorescent_Standard": 5, "volantian_fluorescent_Support": 5
 	},
 	"combatFreighterSmall": {
 	},
@@ -49,7 +49,7 @@
 	"carrierSmall": {
 	},
 	"carrierMedium": {
-		"volantian_scintilla_vri_Strike": 5, "volantian_scintilla_vri_Support": 5,
+		"volantian_scintilla_vri_Strike": 5, "volantian_scintilla_vri_Support": 5, "volantian_scintilla_vri_Automated": 0
 	},
 	"carrierLarge": {
 		"volantian_gauntlet_Elite": 5, "volantian_gauntlet_Standard": 5,
