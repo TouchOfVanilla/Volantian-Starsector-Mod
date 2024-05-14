@@ -13,8 +13,9 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS 002": "ioncannon",
-        "WS 003": "irpulse"
+        "WS 002": "ioncannon_fighter",
+        "WS 003": "irpulse_fighter",
+        "WS0001": "vol_halonMK1"
       }
     },
     {

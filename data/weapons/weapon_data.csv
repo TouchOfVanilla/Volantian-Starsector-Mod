@@ -15,7 +15,7 @@ In %s mounts, hits on hull or armor trigger a secondary explosive payload dealin
 Azorian Beam,vol_azorian_beam,2,,4500,700,700,,,30,15,14,,,,KINETIC,,625,0.1,0.1,1.5,3,,,,,10000,,,,,,,,"beam12, LR, hightech_bp, midline_bp, merc, ind",,Volantian,,Suppression,,,,,Excels at building up large amounts of soft flux in short periods of time.,8%,,,,21
 Monoblade Railgun,vol_monoblade,3,,8000,1500,,1200,,30,10,24,,,,FRAGMENTATION,900,,0.8,3.4,1,0,0,0,0,0,,3000,,,,,,STRIKE,"VRI_bp, energy20",,Volantian,,Finisher,Extreme,,,,,,,,,83
 Halon Interceptor MK1,vol_halonMK1,3,,200,300,400,,,0,75,5,5,1.5,1,ENERGY,,300,0,0,0.2,0.1,,,,,100000,,,,,,,"PD, ANTI_FTR","VRI_bp, pd8",,Volantian,,Point Defense,,,,,,,,,,84
-Halon Mass Interceptor System,vol_halon,2,,1100,500,700,,,0,75,10,10,1,1,ENERGY,,600,0,0,0.2,0.1,,,,,100000,,,,,,,"PD, ANTI_FTR","VRI_bp, pd19",,Volantian,,Point Defense,,,,,,,,,,85
+Halon Mass Interceptor System,vol_halon,2,,1100,500,700,,,0,75,10,10,1,1,ENERGY,,600,0,0,0.2,0.1,,,,,100000,,,,,,,"PD, ANTI_FTR",,,Volantian,,Point Defense,,,,,,,,,,85
 Azorian Lance,vol_azorian_lance,3,,8000,1000,750,,0,0,7,25,,,,KINETIC,,2000,0.5,1,1,4,,,,,10000,,,,,,,FIRE_WHEN_INEFFICIENT,"energy20, beam15, LR, rare_bp, hist1t, merc, ind",,Volantian,,Suppression,,,,,Halves the arc of shields for a short time on hit. Decreases the turn rate of omni-shields.,,,,,27
 Azorian Storm Needler,vol_azorian_stormneedler,3,,6500,700,,120,,20,15,28,,,,FRAGMENTATION,45,,0,0.1,1,,10,10,10,10,,1200,,,20,,,,"kinetic19, VRI_bp, rare_bp, hist1t, merc, ind",,Volantian,,Anti Shield,,,,,,,,,,8.5
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

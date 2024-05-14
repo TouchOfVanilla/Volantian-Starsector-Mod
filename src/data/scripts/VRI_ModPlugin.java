@@ -126,7 +126,6 @@ public class VRI_ModPlugin extends BaseModPlugin {
         isExerelin = Global.getSettings().getModManager().isModEnabled("nexerelin");
         hasUnderworld = Global.getSettings().getModManager().isModEnabled("underworld");
         hasDynaSector = Global.getSettings().getModManager().isModEnabled("dynasector");
-
         borkenExists = Global.getSettings().getModManager().isModEnabled("fob");
         iceExists = Global.getSettings().getModManager().isModEnabled("nbj_ice");
         imperiumExists = Global.getSettings().getModManager().isModEnabled("Imperium");
