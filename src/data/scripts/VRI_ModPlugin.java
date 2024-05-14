@@ -2,11 +2,14 @@ package data.scripts;
 
 import com.fs.starfarer.api.BaseModPlugin;
 import com.fs.starfarer.api.Global;
+import com.fs.starfarer.api.campaign.PlanetAPI;
+import com.fs.starfarer.api.campaign.StarSystemAPI;
 import com.fs.starfarer.api.campaign.listeners.ListenerManagerAPI;
 import com.fs.starfarer.api.impl.campaign.VRICampaignPluginImpl;
 import com.fs.starfarer.api.impl.campaign.VRIFleetInflationListener;
 import com.fs.starfarer.api.impl.campaign.VRI_ArkshipScript;
 import com.fs.starfarer.api.impl.campaign.econ.impl.VRItemEffectsRepo;
+import com.fs.starfarer.api.impl.campaign.ids.Conditions;
 import com.fs.starfarer.api.impl.campaign.intel.RevanchismVolantianHostileActivityCause;
 import com.fs.starfarer.api.impl.campaign.intel.VolantianHostileActivityFactor;
 import com.fs.starfarer.api.impl.campaign.intel.events.HostileActivityEventIntel;
@@ -15,6 +18,7 @@ import data.scripts.util.MagicSettings;
 import data.world.VRIGen;
 import exerelin.campaign.SectorManager;
 
+import java.util.Iterator;
 import java.util.Map;
 
 import lunalib.lunaRefit.LunaRefitManager;
@@ -111,11 +115,10 @@ public class VRI_ModPlugin extends BaseModPlugin {
     }
 
     public void onNewGameAfterEconomyLoad() {
-
     }
 
     public void onNewGameAfterTimePass(){
-
+        initPlanetConditions();
     }
 
 
@@ -142,5 +145,20 @@ public class VRI_ModPlugin extends BaseModPlugin {
         arkgneisisExists = Global.getSettings().getModManager().isModEnabled("ArkLeg");
 
         LunaRefitManager.addRefitButton(new ReAutoRefitButton());
+    }
+    public void initPlanetConditions(){
+        Iterator<StarSystemAPI> sysiter = Global.getSector().getStarSystems().iterator();
+        while (sysiter.hasNext()){
+            StarSystemAPI system = sysiter.next();
+            Iterator<PlanetAPI> planetiter = system.getPlanets().iterator();
+            while (planetiter.hasNext()){
+                PlanetAPI planet = planetiter.next();
+                if (planet.getTypeId().equals("storm")){
+                    if (!planet.hasCondition(Conditions.EXTREME_WEATHER)){
+                        planet.getMarket().addCondition(Conditions.EXTREME_WEATHER);
+                    }
+                }
+            }
+        }
     }
 }

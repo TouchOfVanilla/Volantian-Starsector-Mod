@@ -222,6 +222,7 @@ public class Royce {
                                 Industries.ORBITALWORKS,
                                 Industries.HIGHCOMMAND,
                                 Industries.REFINING,
+                                Industries.FUELPROD,
                                 Industries.HEAVYBATTERIES,
                                 Industries.STARFORTRESS_HIGH,
                                 Industries.CRYOSANCTUM
@@ -250,15 +251,31 @@ public class Royce {
         Ontos.getCommDirectory().getEntryForPerson(delilah).setHidden(false);
         Ontos.addPerson(delilah);
 
+        Ontos.getIndustry(Industries.REFINING).setSpecialItem(new SpecialItemData(Items.CATALYTIC_CORE, null));
+        Ontos.getIndustry(Industries.ORBITALWORKS).setSpecialItem(new SpecialItemData(Items.CORRUPTED_NANOFORGE, null));
+        Ontos.getIndustry(Industries.HEAVYBATTERIES).setSpecialItem(new SpecialItemData(Items.DRONE_REPLICATOR, null));
+
+
+        PlanetAPI Concord = system.addPlanet(
+                "vri_planet_Concord",
+                RoyceStar,
+                "Concord",
+                "ice_giant",
+                30f,
+                200f,
+                desmondDist,
+                200f
+        );
+
         //Desmond's Landing
         PlanetAPI Desmond = system.addPlanet("vri_planet_Desmond",
-                RoyceStar,
+                Concord,
                 "Desmond's Landing",
                 "barren-bombarded",
                 50f,
-                130f,
-                desmondDist,
-                100f);
+                80f,
+                600f,
+                60f);
 
         MarketAPI Desmond_market = VRIGen.addMarketplace(
                 "vri",
@@ -292,6 +309,8 @@ public class Royce {
                                 Industries.WAYSTATION,
                                 Industries.HEAVYINDUSTRY,
                                 Industries.MINING,
+                                Industries.HEAVYBATTERIES,
+                                Industries.PATROLHQ,
                                 "VRI_ConvertedNexusStation",
                                 "VRI_VolGen_Office"
                         )
@@ -302,10 +321,7 @@ public class Royce {
                 false,
                 //junk and chatter
                 true);
-        Desmond_market.getIndustry(Industries.HEAVYINDUSTRY).setSpecialItem(new SpecialItemData(Items.CORRUPTED_NANOFORGE, null));
         Desmond_market.getIndustry(Industries.MINING).setSpecialItem(new SpecialItemData(Items.MANTLE_BORE, null));
-        Desmond_market.getIndustry(Industries.MEGAPORT).setSpecialItem(new SpecialItemData(Items.FULLERENE_SPOOL, null));
-
         Desmond_market.setSurveyLevel(MarketAPI.SurveyLevel.FULL);
         Desmond.setCustomDescriptionId("vri_planet_Desmond"); //reference descriptions.csv
         //Asteroid field
@@ -375,9 +391,9 @@ public class Royce {
         //Jump point
         JumpPointAPI jumpPoint1 = Global.getFactory().createJumpPoint(
                 "Center_jump",
-                "Center System Jump");
+                "Inner System Jump");
 
-        jumpPoint1.setCircularOrbit(system.getEntityById("vri_star_royce"), 10, jumpCenterDist, 200f);
+        jumpPoint1.setCircularOrbit(system.getEntityById("vri_star_royce"), 90f, jumpCenterDist, 80f);
         jumpPoint1.setStandardWormholeToHyperspaceVisual();
 
         JumpPointAPI jumpPoint2 = Global.getFactory().createJumpPoint(

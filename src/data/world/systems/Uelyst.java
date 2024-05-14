@@ -88,8 +88,7 @@ public class Uelyst implements FleetEventListener {
                         Arrays.asList(
                                 Conditions.POPULATION_4,
                                 Conditions.OUTPOST,
-                                Conditions.VOLATILES_PLENTIFUL,
-                                Conditions.TOXIC_ATMOSPHERE
+                                Conditions.VOLATILES_PLENTIFUL
                         )
                 ),
 
@@ -341,14 +340,14 @@ public class Uelyst implements FleetEventListener {
         //Jump point
         JumpPointAPI jumpPoint1 = Global.getFactory().createJumpPoint(
                 "Center_jump",
-                "Center System Jump");
+                "Inner System Jump-point");
 
         jumpPoint1.setCircularOrbit(system.getEntityById("vri_star_uelyst"), 10, jumpCenterDist, 100f);
         jumpPoint1.setStandardWormholeToHyperspaceVisual();
 
         JumpPointAPI jumpPoint2 = Global.getFactory().createJumpPoint(
                 "fringe_jump",
-                "Fringe System Jump");
+                "Fringe System Jump-point");
 
         jumpPoint2.setCircularOrbit(system.getEntityById("vri_star_uelyst"), 2, jumpFringeDist, 500f);
         jumpPoint2.setStandardWormholeToHyperspaceVisual();

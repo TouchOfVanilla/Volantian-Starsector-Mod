@@ -20,7 +20,7 @@
 	"vengeanceFleetSizeMult":1.50,
 	"factionIdForHqResponse":"vri",
 	"freeMarket":true,
-	"specialForcesMaxFleets":2,
+	"specialForcesMaxFleets":4,
 	"specialForcesPointMult":1.75,
 	"specialForcesSizeMult":1.75,
 	"stabilizeCommodities":["food", "hand_weapons", "supplies"],
@@ -69,8 +69,8 @@
         "technocratic":1,
         "hierarchial":1,
         "militarist":1,
-        "diplomatic":-0.25,
-        "ideological":0.25
+        "diplomatic":1,
+        "ideological":1
   
 	},
 	
@@ -82,11 +82,11 @@
         "moraleDamageTakenMult":0.8
     },
 
-    "colonyExpeditionChance":1,
+    "colonyExpeditionChance":2,
 				"maxColonyDistance":5,
     "colonyTargetValuator":"exerelin.campaign.colony.IndustrialColonyTargetValuator",
     
-    "specialForcesNamerClass":"exerelin.campaign.intel.specialforces.namer.PlanetNamer",
+    "specialForcesNamerClass":"com.fs.starfarer.api.impl.campaign.VRISGTNamer",
 				
 
 	"startShipsCombatLarge":[
@@ -95,12 +95,12 @@
 	
 
     "startShipsCarrierLarge":[
-		["volantian_sunder_vri_Standard", "volantian_gauntlet_vri_Standard", "volantian_scintilla_vri_Standard"]
+		["volantian_sunder_vri_Standard", "volantian_gauntlet_vri_Standard", "volantian_prismatic_vri_Strike"]
 	],
 	
 	
     "startShipsTradeLarge":[
-		["volantian_brilliant_vri_Custom", "volantian_wolf_vri_Elite", "volantian_karambit_vri_Standard"],
+		["volantian_pyralis_vri_Standard", "volantian_wolf_vri_Elite", "atlas_Standard"],
 	],
 	
 
