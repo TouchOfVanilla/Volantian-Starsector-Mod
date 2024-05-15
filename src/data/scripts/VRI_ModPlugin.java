@@ -6,7 +6,6 @@ import com.fs.starfarer.api.campaign.PlanetAPI;
 import com.fs.starfarer.api.campaign.StarSystemAPI;
 import com.fs.starfarer.api.campaign.listeners.ListenerManagerAPI;
 import com.fs.starfarer.api.impl.campaign.VRICampaignPluginImpl;
-import com.fs.starfarer.api.impl.campaign.VRIFleetInflationListener;
 import com.fs.starfarer.api.impl.campaign.VRI_ArkshipScript;
 import com.fs.starfarer.api.impl.campaign.econ.impl.VRItemEffectsRepo;
 import com.fs.starfarer.api.impl.campaign.ids.Conditions;
@@ -60,11 +59,6 @@ public class VRI_ModPlugin extends BaseModPlugin {
 
     public void setListenersIfNeeded() {
         ListenerManagerAPI l = Global.getSector().getListenerManager();
-        if (!l.hasListenerOfClass(VRIFleetInflationListener.class)) {
-            l.addListener(new VRIFleetInflationListener(), true);
-            log.info("Added VRI Fleet Listener");
-
-        }
         if (!l.hasListenerOfClass(VRI_ArkshipScript.class)) {
             l.addListener(new VRI_ArkshipScript());
         log.info("Added VRI Arkship Listener");
@@ -108,10 +102,6 @@ public class VRI_ModPlugin extends BaseModPlugin {
             Global.getSector().registerPlugin(new VRICampaignPluginImpl());
 
         setListenersIfNeeded();
-        ListenerManagerAPI l = Global.getSector().getListenerManager();
-        if (!l.hasListenerOfClass(VRIFleetInflationListener.class)) {
-            l.addListener(new VRIFleetInflationListener());
-        }
     }
 
     public void onNewGameAfterEconomyLoad() {

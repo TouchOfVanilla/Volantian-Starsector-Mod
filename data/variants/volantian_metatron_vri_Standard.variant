@@ -5,8 +5,8 @@
     "goalVariant": true,
     "hullId": "volantian_metatron_vri",
     "hullMods": [
-        "azorian_shields",
         "fluxbreakers",
+        "hardened_subsystems",
         "hardenedshieldemitter",
         "targetingunit",
     ],
