@@ -41,7 +41,7 @@
     ],
     "cloudRotation": -5
   },
-  "storm": {
+  "vri_storm": {
     "name": "Storm",
     "tilt": 20,
     "pitch": 30,

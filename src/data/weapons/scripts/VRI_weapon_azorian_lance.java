@@ -60,6 +60,8 @@ public class VRI_weapon_azorian_lance implements BeamEffectPlugin {
         @Override
         public void advance(float amount) {
 
+            boolean unfolding = target.getShield().getActiveArc() < target.getShield().getArc()/2;
+
             if (isHitting) {
                 timeOnTarget += amount;
                 crackleTimer.advance(amount);
@@ -72,10 +74,10 @@ public class VRI_weapon_azorian_lance implements BeamEffectPlugin {
             float effectLevel = (timeOnTarget / inOutTime);
 
             //this is just yoinked directly
-            if (target.getShield() != null && target.getShield().getType().equals(ShieldAPI.ShieldType.FRONT)) {
+            if (target.getShield() != null && target.getShield().getType().equals(ShieldAPI.ShieldType.FRONT) && unfolding) {
                 target.getMutableStats().getShieldArcBonus().modifyMult("azorian_lance", target.getShield().getArc()/2);
                 target.getShield().setActiveArc(target.getShield().getArc()/2);
-            } else if (target.getShield() != null && target.getShield().getType().equals(ShieldAPI.ShieldType.OMNI)) {
+            } else if (target.getShield() != null && target.getShield().getType().equals(ShieldAPI.ShieldType.OMNI) && unfolding) {
                 target.getMutableStats().getShieldArcBonus().modifyMult("azorian_lance", target.getShield().getArc()/2);
                 target.getShield().setActiveArc(target.getShield().getArc()/2);
                 target.getMutableStats().getShieldTurnRateMult().modifyMult("azorian_lance", .5f);

@@ -1,0 +1,73 @@
+{
+  "variantId": "volantian_daybreak_Standard",
+  "hullId": "volantian_daybreak",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 31,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "stabilizedshieldemitter",
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "vol_myrmidon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "pdlaser",
+        "WS0004": "pdlaser",
+        "WS0005": "pdburst",
+        "WS0009": "pdlaser",
+        "WS0010": "pdburst",
+        "WS0012": "pdburst"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "guardian"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0011": "ionpulser",
+        "WS0013": "autopulse"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0014": "sabotpod",
+        "WS0015": "sabotpod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0016": "harpoonpod",
+        "WS0017": "harpoonpod"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

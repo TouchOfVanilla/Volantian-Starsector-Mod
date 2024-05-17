@@ -142,7 +142,8 @@ public class VRI_ModPlugin extends BaseModPlugin {
             Iterator<PlanetAPI> planetiter = system.getPlanets().iterator();
             while (planetiter.hasNext()){
                 PlanetAPI planet = planetiter.next();
-                if (planet.getTypeId().equals("storm")){
+                if (planet.getTypeId().equals("vri_" +
+                        "storm")){
                     if (!planet.hasCondition(Conditions.EXTREME_WEATHER)){
                         planet.getMarket().addCondition(Conditions.EXTREME_WEATHER);
                     }

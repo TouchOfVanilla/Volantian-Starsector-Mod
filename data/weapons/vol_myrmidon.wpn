@@ -1,0 +1,47 @@
+{
+  "id": "vol_myrmidon",
+  "specClass": "projectile",
+  "projectileSpecId": "vol_myrm_shot",
+  "type": "ENERGY",
+  "size": "LARGE",
+    "everyFrameEffect": "data.weapons.scripts.VRI_weapon_myrm",
+      "onHitEffect": "data.weapons.scripts.VRI_weapon_myrm",
+  "turretSprite": "graphics/weapons/vol_rembig_turret_base.png",
+  "turretGlowSprite": "graphics/weapons/vol_rembig_turret_glow.png",
+  "hardpointSprite": "graphics/weapons/vol_rembig_turret_base.png",
+    "glowColor": [
+      245, 69, 84,
+      255
+    ],
+  "turretOffsets": [
+    26.5,
+    -0.5
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    0,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+    "animationType": "GLOW_AND_FLASH",
+    "autocharge": true,
+    "muzzleFlashSpec": {
+      "length": 60,
+      "spread": 20,
+      "particleSizeMin": 15,
+      "particleSizeRange": 20,
+      "particleDuration": 1,
+      "particleCount": 30,
+      "particleColor": [
+        91, 206, 250,
+        100
+      ]
+    },
+    "fireSoundOne":"vol_myrm_charge",
+  "fireSoundTwo": "plasma_cannon_fire"
+}

@@ -124,6 +124,13 @@
 		{"file": "sounds/vol_monoblade_impact.ogg", "pitch": 1.05, "volume": 1},
 		{"file": "sounds/vol_monoblade_impact.ogg", "pitch": 1.1, "volume": 1},
 	],
+"vol_myrm_charge":[
+{"file": "sounds/vol_myrm_charge.ogg", "pitch": 0.9, "volume": 1},
+{"file": "sounds/vol_myrm_charge.ogg", "pitch": 0.95, "volume": 1},
+{"file": "sounds/vol_myrm_charge.ogg", "pitch": 1, "volume": 1},
+{"file": "sounds/vol_myrm_charge.ogg", "pitch": 1.05, "volume": 1},
+{"file": "sounds/vol_myrm_charge.ogg", "pitch": 1.1, "volume": 1},
+],
 
 	"vol_phosphene_loop":[
 		{"file": "sounds/vol_phosphene_loop.ogg", "pitch": 0.9, "volume": 1},

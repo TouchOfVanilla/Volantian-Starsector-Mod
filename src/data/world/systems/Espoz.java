@@ -40,7 +40,7 @@ public class Espoz {
                 "aberdeen",
                 espoz,
                 "Aberdeen",
-                "storm",
+                "vri_storm",
                 90f,
                 130f,
                 3000f,
