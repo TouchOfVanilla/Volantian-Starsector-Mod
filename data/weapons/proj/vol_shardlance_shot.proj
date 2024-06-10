@@ -1,0 +1,61 @@
+{
+	"id":"vol_shardlance_shot",
+	"specClass":"missile",
+	"missileType":"ROCKET",
+	#"sprite":"graphics/missiles/.png",
+	#"size":[16,28],
+	#"center":[8,14],
+	"sprite":"graphics/missiles/vol_crystal.png",
+	"size":[14,85],
+	"center":[7,50],
+	"collisionRadius":20,
+	"collisionClass":"PROJECTILE_FF",
+	"explosionColor":[255,100,100,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":0, # purely visual
+	"explosionSpec":{"duration":0.1f, # not visual
+					 "radius":175,
+					 "coreRadius":75, # full damage within core radius
+					 "collisionClass":HITS_SHIPS_AND_ASTEROIDS,
+					 "collisionClassByFighter":HITS_SHIPS_AND_ASTEROIDS,
+					 "particleSizeMin":5.0,
+					 "particleSizeRange":3.0,
+					 "particleDuration":1,
+					 "particleCount":200,
+					 "particleColor":[255,155,155,255],
+					 "explosionColor":[255,100,100,255],
+					 "detailedExplosionFlashColorFringe":[255,100,100,255],
+					 "detailedExplosionFlashRadius":500,
+					 "useDetailedExplosion":true
+					 },
+	"armingTime":0,
+		"engineSpec":{"turnAcc":0,
+    				  "turnRate":0,
+    				  "acc":999999999,
+    				  "dec":300},
+    	"engineSlots":[{"id":"ES1",
+    					"loc":[-10, 0],
+    				    #"style":"TORPEDO_ATROPOS",
+    				    "style":"CUSTOM",
+    					"styleSpec":{
+    						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+    						"engineColor":[255,150,100,255],
+    						"glowSizeMult":2.0,
+    						"glowAlternateColor":[255,200,0,255],
+    						"contrailDuration":2,
+    						"contrailWidthMult":1,
+    						"contrailWidthAddedFractionAtEnd":2,  # can be negative. makes trail spread out/narrow at the end
+    						"contrailMinSeg":5, # min segment length, in pixels
+    						"contrailMaxSpeedMult":.0f,
+    						"contrailAngularVelocityMult":0.5f,
+    						"contrailSpawnDistMult":.5, # how far away from engine it starts
+    						"contrailColor":[155,100,70,75],
+    						"type":"GLOW" # GLOW or SMOKE; additive or regular blend mode
+    					},
+    				    "width":0,
+    				    "length":0,
+    				    "angle":180.0}]
+    }
+	"fadeTime":0.5, # fadeout duration
+
+}
+

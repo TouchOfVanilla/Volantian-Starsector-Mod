@@ -6,7 +6,7 @@
     "aOrAn":"a",
     "isOrAre":"is",
     "defaultRadius": 220, # used if radius<0 in addCustomEntity()
-    "customDescriptionId":"derelict_cryosleeper",
+    "customDescriptionId":"arkship_ontos",
     "interactionImage":"graphics/illustrations/cryosleeper_interior.jpg",
     "icon":"graphics/icons/cryosleeper.png",
     "iconWidth":32,

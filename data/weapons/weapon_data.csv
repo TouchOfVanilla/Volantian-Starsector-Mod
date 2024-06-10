@@ -19,10 +19,13 @@ Halon Mass Interceptor System,vol_halon,2,,1100,500,700,,,0,75,10,10,1,1,ENERGY,
 Azorian Lance,vol_azorian_lance,3,,8000,1000,1000,,0,0,7,25,,,,KINETIC,,2000,0.5,1,1,4,,,,,10000,,,,,,,FIRE_WHEN_INEFFICIENT,"energy20, beam15, LR, rare_bp, hist1t, merc, ind",,Volantian,,Suppression,,,,,Halves the arc of shields for a short time on hit. Decreases the turn rate of omni-shields.,,,,,27
 Azorian Storm Needler,vol_azorian_stormneedler,3,,6500,700,,120,,20,15,28,,,,FRAGMENTATION,45,,0,0.1,1,,10,10,10,10,,1200,,,20,,,,"kinetic19, VRI_bp, rare_bp, hist1t, merc, ind",,Volantian,,Anti Shield,,,,,,,,,,8.5
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#vic crossmod weapon,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Azorian Laidlaw Accelerator,vol_laidlaw,3,,6500,1000,,425,,30,7,26,,,,KINETIC,800,,0.75,3.25,,,0,0,0,0,,3500,,,,,,"STRIKE, USE_VS_FRIGATES",energy20,,Reclaimed,,Shieldcracker,,,,,%s Projectile hits create 3 arcs dealing %s fragmentation damage each.,Extremely fast projectiles. | 100,,,,6.9
 #built in,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Mani-class Torpedo,vol_mani,1,,,1000,,3000,,30,30,,2,0.05,1,ENERGY,0,,0,2,1,,0,0,0,0,,150,100,8,400,,,"STRIKE, DO_NOT_CONSERVE","missile0, no_sell, no_drop, no_drop_salvage, restricted",,Volantian,,Strike/Destroy,Slow,None,,,Useful tool to %s enemy ships,dismantle,,,TRUE,88
 Ultraheavy Gauss Cannon,vol_ultraheavygauss,3,,100000,1500,,2200,,700,3,,,,,KINETIC,3000,,1,4.5,,,,,,,,1500,,,400,,,"STRIKE, USE_VS_FRIGATES","kinetic20, no_sell, no_drop, no_drop_salvage, restricted",,Remnant,,Anti Shield,,,,,,,,,,6
-"""Myrmidon"" Heavy Pulse Cannon",vol_myrmidon,3,,7500,800,,4000,,600,4,30,,,,FRAGMENTATION,4000,,1.33,4.6,1,0.33,,,,,,750,,,500,,,"STRIKE, USE_VS_FRIGATES","energy20, no_sell, no_drop, no_drop_salvage, restricted",,Remnant,,General,,,,,,,,,,23
+"""Myrmidon"" Heavy Pulse Cannon",vol_myrmidon,3,,7500,800,,3600,,600,4,30,,,,FRAGMENTATION,4000,,1.33,4.6,1,0.33,,,,,,750,,,500,,,"STRIKE, USE_VS_FRIGATES","energy20, no_sell, no_drop, no_drop_salvage, restricted",,Remnant,,General,,,,,,,,,,23
+"""Partisan"" Azorian Heavy Shardlance",vol_shardlance,3,,100000,1500,,2200,,700,3,,,,,KINETIC,3000,,1,4.5,,,,,,,,4000,,,400,,,"STRIKE, USE_VS_FRIGATES","kinetic20, no_sell, no_drop, no_drop_salvage, restricted",,Remnant,,Anti Shield,,,,,,,,,,6
 #fighter weapons,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Katti Fusion Torpedo (Single),vol_katti_single,1,,,1500,,1500,,20,10,1,1,,,ENERGY,0,,0,1,1,0,0,0,0,0,,100,40,8,350,,,STRIKE,"strike8, no_sell, no_drop, no_drop_salvage, restricted",,Volantian,,Strike,Medium,None,,,Second-stage hits on hull or armor create additional explosion dealing %s High Explosive damage,700,,,TRUE,75
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

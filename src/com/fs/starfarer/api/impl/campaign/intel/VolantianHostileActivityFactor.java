@@ -21,6 +21,8 @@ import com.fs.starfarer.api.impl.campaign.procgen.StarSystemGenerator;
 import com.fs.starfarer.api.ui.LabelAPI;
 import com.fs.starfarer.api.ui.TooltipMakerAPI;
 import com.fs.starfarer.api.util.Misc;
+import data.scripts.VRILunaSettings;
+import data.scripts.VRI_CrossmodPlugins;
 import data.scripts.VRI_ModPlugin;
 import exerelin.campaign.intel.fleets.RaidListener;
 import exerelin.utilities.NexUtilsFaction;
@@ -34,6 +36,10 @@ public class VolantianHostileActivityFactor extends BaseHostileActivityFactor im
 
     public static float VRI_ANGY_LY_DIST = 10f;
     public static String VolantianIncursionDefeated = "$vriIncursion_defeated";
+
+    public static boolean VICexists = Global.getSector().getFaction("vic") != null;
+
+
 
     public VolantianHostileActivityFactor(HostileActivityEventIntel intel) {
         super(intel);
@@ -64,13 +70,16 @@ public class VolantianHostileActivityFactor extends BaseHostileActivityFactor im
         return new BaseFactorTooltip() {
             public void createTooltip(TooltipMakerAPI tooltip, boolean expanded, Object tooltipParam) {
                 float opad = 10.0F;
-                tooltip.addPara("The Volantian Reclamation Initiative seeks enforce its revanchistic claims on worlds in former Volantian systems. Volantian fleets will probe your defenses as the polity prepares for further hostile action.", 0.0F);
+                tooltip.addPara("The Volantian Reclamation Initiative seeks to enforce its revanchistic claims on the Persean sector. The polity will impose its authority if it sees an opportunity to.", 0.0F);
             }
         };
     }
 
     public boolean shouldShow(BaseEventIntel intel) {
-        return this.getProgress(intel) > 0;
+        if (VRILunaSettings.HABoolean() == true){
+            return this.getProgress(intel) > 0;
+        }
+        return false;
     }
 
     public Color getNameColor(float mag) {
@@ -112,14 +121,21 @@ public class VolantianHostileActivityFactor extends BaseHostileActivityFactor im
         float small = 0.0F;
         float opad = 10.0F;
         small = 8.0F;
-        info.addPara("You've received intel that the VRI is planning an incursion towards your colonies encroaching on former Volantian territory. Their goal is to encase your colony in an impenetrable shell of mines, effectively cutting it off from the sector at large.", small, Misc.getNegativeHighlightColor(), new String[]{"cutting it off from the sector at large."});
+        info.addPara("You've received intel that the VRI is planning an incursion towards your colonies. Their goal is to encase them in an impenetrable shell of mines, effectively cutting them off from the sector at large.", small, Misc.getNegativeHighlightColor(), new String[]{"cutting them off from the sector at large."});
         LabelAPI label = info.addPara("If the incursion force is defeated, you can expect the Volantian polity to recognize your colonial holdings and tolerate further expansion.", opad);
         Color c = Global.getSector().getFaction("vri").getBaseUIColor();
         stage.beginResetReqList(info, true, "crisis", opad);
-        info.addPara("You go to %s and cede ownership of your offending colonies", 0.0F, c, new String[]{"Ontos"});
-        info.addPara("You %s your colonies within 10 light years of Volantian star systems", 0.0F, c, new String[]{"abandon", "10 light years"});
-        stage.endResetReqList(info, false, "crisis", -1, -1);
-        this.addBorder(info, Global.getSector().getFaction("vri").getBaseUIColor());
+        if (intel.getActivityCause(VolantianHostileActivityFactor.class, RevanchismVolantianHostileActivityCause.class).shouldShow()) {
+            info.addPara("You go to %s and cede ownership of your offending colonies", 0.0F, c, new String[]{"Ontos"});
+            info.addPara("You %s your colonies within 10 light years of Volantian star systems", 0.0F, c, new String[]{"abandon", "10 light years"});
+            stage.endResetReqList(info, false, "crisis", -1, -1);
+            this.addBorder(info, Global.getSector().getFaction("vri").getBaseUIColor());
+        } else if (intel.getActivityCause(VolantianHostileActivityFactor.class, VICVolantianHostileActivityCause.class).shouldShow()) {
+            info.addPara("You %s all VIC revitalization centers on your colonies", 0.0F, c, new String[]{"shut down"});
+            stage.endResetReqList(info, false, "crisis", -1, -1);
+            this.addBorder(info, Global.getSector().getFaction("vri").getBaseUIColor());
+        }
+
     }
 
     public String getEventStageIcon(HostileActivityEventIntel intel, BaseEventIntel.EventStageData stage) {
@@ -156,6 +172,7 @@ public class VolantianHostileActivityFactor extends BaseHostileActivityFactor im
     }
 
     public static StarSystemAPI findIncursionTarget(HostileActivityEventIntel intel, BaseEventIntel.EventStageData stage) {
+        if (intel.getActivityCause(VolantianHostileActivityFactor.class, RevanchismVolantianHostileActivityCause.class).shouldShow()){
         Iterator var5 = Misc.getPlayerSystems(false).iterator();
         while (var5.hasNext()) {
             StarSystemAPI system = (StarSystemAPI) var5.next();
@@ -165,7 +182,17 @@ public class VolantianHostileActivityFactor extends BaseHostileActivityFactor im
                 return system;
             }
         }
-        return null;
+        }
+        if (intel.getActivityCause(VolantianHostileActivityFactor.class, VICVolantianHostileActivityCause.class).shouldShow()) {
+            Iterator var5 = Misc.getPlayerMarkets(false).iterator();
+            while (var5.hasNext()) {
+                MarketAPI market = (MarketAPI) var5.next();
+                if (market.hasIndustry("vic_revCenter")){
+                    return market.getStarSystem();
+                }
+            }
+        }
+            return null;
     }
 
     public MarketAPI getIncursionSource(HostileActivityEventIntel intel, BaseEventIntel.EventStageData stage, StarSystemAPI target) {
@@ -228,7 +255,7 @@ public class VolantianHostileActivityFactor extends BaseHostileActivityFactor im
 
     @Override
     public void reportPlayerColonizedPlanet(PlanetAPI planet) {
-
+        VRI_ModPlugin.addVolantianColonyCrisis();
     }
 
     @Override
@@ -244,6 +271,7 @@ public class VolantianHostileActivityFactor extends BaseHostileActivityFactor im
         setDefeatedIncursion(true);
         Misc.adjustRep("hegemony", 0.4f, (TextPanelAPI) null);
         Misc.adjustRep("tritachyon", 0.2f, (TextPanelAPI) null);
+        if (VRI_CrossmodPlugins.isVICEnabled) Misc.adjustRep("vic", 0.4f, (TextPanelAPI) null);
     }
 
     public void notifyFactorRemoved() {
@@ -263,5 +291,17 @@ public class VolantianHostileActivityFactor extends BaseHostileActivityFactor im
         if (!value) {
             Global.getSector().getMemoryWithoutUpdate().unset(VolantianIncursionDefeated);
         }
+    }
+
+    public static boolean doesVRICrisisNeedInit() {
+        if (HostileActivityEventIntel.get() != null) {
+            if (HostileActivityEventIntel.get().getActivityCause(VolantianHostileActivityFactor.class, RevanchismVolantianHostileActivityCause.class) == null){
+                return true;
+            }
+            if (HostileActivityEventIntel.get().getActivityCause(VolantianHostileActivityFactor.class, VICVolantianHostileActivityCause.class) == null){
+                return true;
+            }
+        }
+        return false;
     }
 }

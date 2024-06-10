@@ -86,7 +86,7 @@
 				"maxColonyDistance":5,
     "colonyTargetValuator":"exerelin.campaign.colony.IndustrialColonyTargetValuator",
     
-    "specialForcesNamerClass":"com.fs.starfarer.api.impl.campaign.VRISGTNamer",
+    "specialForcesNamerClass":"com.fs.starfarer.api.impl.campaign.VRISTGNamer",
 				
 
 	"startShipsCombatLarge":[

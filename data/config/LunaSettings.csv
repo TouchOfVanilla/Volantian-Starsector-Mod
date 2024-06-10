@@ -17,3 +17,6 @@ Make sure to set a condition for your input checks to not accept numbers of 0, a
 The defaultValue decides which one is selected by default, the secondaryValue creates the list of choices with a comma seperated String. 
 Can be retrieved as a String.",,,Examples
 ,,,,,,,,
+,,,,,,,,
+vri_HAtoggle,Hostile Activity and Colony Crisis,Boolean,true,,"If false, disables VRI hostile activity and colony crisis factors and events.",,,General
+vri_Arkshiptoggle,Arkship Ontos Movement,Boolean,true,,"If false, prevents Arkship Ontos from moving across star systems.",,,General

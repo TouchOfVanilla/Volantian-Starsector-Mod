@@ -225,7 +225,8 @@ public class Royce {
                                 Industries.FUELPROD,
                                 Industries.HEAVYBATTERIES,
                                 Industries.STARFORTRESS_HIGH,
-                                Industries.CRYOSANCTUM
+                                Industries.CRYOSANCTUM,
+                                "VRI_slipspace_drive"
                         )
                 ),
                 //tariffs

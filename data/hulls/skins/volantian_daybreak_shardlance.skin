@@ -1,0 +1,14 @@
+{
+  "baseHullId": "volantian_daybreak",
+  "baseValueMult": 1,
+  "descriptionId": "volantian_daybreak",
+  "descriptionPrefix": "Fanatics of the Luddic Path have made this ship their own, stripping out all unnecessary furnishing and transforming it into a haphazard vehicle of holy war.",
+  "fighterBays": 0,
+  "fpMod": 0,
+  "restoreToBaseHull": false,
+  "skinHullId": "volantian_daybreak_shardlance",
+  "spriteName": "graphics/ships/daybreak/daybreak.png",
+  "builtInWeapons": {
+      "WS0007": "vol_shardlance"
+    },
+}

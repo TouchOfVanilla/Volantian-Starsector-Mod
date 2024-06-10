@@ -12,6 +12,7 @@ public class VRI_CrossmodPlugins {
         FactionAPI vic = Global.getSector().getFaction("vic");
 
         vri.makeCommodityIllegal("vic_genetech");
+        vri.addKnownWeapon("vol_laidlaw",false);
         isVICEnabled = true;
 
     }

@@ -20,7 +20,7 @@ public class VRI_weapon_myrm implements EveryFrameWeaponEffectPlugin, OnHitEffec
         Vector2f firepoint = weapon.getFirePoint(0);
         float oppositeangle = weapon.getCurrAngle() - 180;
 
-        Vector2f arcdest = MathUtils.getRandomPointInCone(firepoint, 70, oppositeangle - 3, oppositeangle + 3);
+        Vector2f arcdest = MathUtils.getPoint(firepoint, 70, oppositeangle);
         //time between arcs first min second max
 
         if (weapon.isFiring()) {

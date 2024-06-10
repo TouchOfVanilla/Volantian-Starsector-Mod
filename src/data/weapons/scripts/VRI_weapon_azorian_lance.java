@@ -74,12 +74,16 @@ public class VRI_weapon_azorian_lance implements BeamEffectPlugin {
             float effectLevel = (timeOnTarget / inOutTime);
 
             //this is just yoinked directly
-            if (target.getShield() != null && target.getShield().getType().equals(ShieldAPI.ShieldType.FRONT) && unfolding) {
+            if (target.getShield() != null && target.getShield().getType().equals(ShieldAPI.ShieldType.FRONT) && !unfolding) {
                 target.getMutableStats().getShieldArcBonus().modifyMult("azorian_lance", target.getShield().getArc()/2);
-                target.getShield().setActiveArc(target.getShield().getArc()/2);
-            } else if (target.getShield() != null && target.getShield().getType().equals(ShieldAPI.ShieldType.OMNI) && unfolding) {
+                if (!unfolding) {
+                    target.getShield().setActiveArc(target.getShield().getArc() / 2);
+                }
+            } else if (target.getShield() != null && target.getShield().getType().equals(ShieldAPI.ShieldType.OMNI)) {
                 target.getMutableStats().getShieldArcBonus().modifyMult("azorian_lance", target.getShield().getArc()/2);
-                target.getShield().setActiveArc(target.getShield().getArc()/2);
+                if (!unfolding) {
+                    target.getShield().setActiveArc(target.getShield().getArc() / 2);
+                }
                 target.getMutableStats().getShieldTurnRateMult().modifyMult("azorian_lance", .5f);
             } else if (target.getShield().isOff()){
                 target.setDefenseDisabled(true);
@@ -105,8 +109,8 @@ public class VRI_weapon_azorian_lance implements BeamEffectPlugin {
                 Vector2f arcEnd = MathUtils.getPointOnCircumference(target.getShieldCenterEvenIfNoShield(), target.getShield().getRadius(), arcStartAngle - arcDistance);
 
                 Global.getCombatEngine().spawnEmpArcVisual(arcStart, target, arcEnd, target, 10,
-                        new Color(0, 255, 207, 255),
-                        new Color(0, 255, 207, 255));
+                        new Color(0, 255, 207, 125),
+                        new Color(100, 255, 207, 185));
             }
 
             //if we're done, remove the listener & unmodify the bonuses

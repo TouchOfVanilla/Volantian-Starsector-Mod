@@ -1,0 +1,4 @@
+id,type,frame,magnitude,map,path
+volantian_radiant_vri,ship,,,material,graphics/shaders/radiant_vri/radiant_vri_material.png
+volantian_radiant_vri,ship,,1,normal,graphics/shaders/radiant_vri/radiant_vri_normal.png
+volantian_radiant_vri,ship,,,surface,graphics/shaders/radiant_vri/radiant_vri_surface.png

@@ -6,21 +6,21 @@ import lunalib.lunaSettings.LunaSettings;
 
 public class VRILunaSettings {
 
-    public static boolean BlancheBoolean(){
-        Boolean blanche = false;
+    public static boolean HABoolean(){
+        Boolean HostileActivity = true;
         if (Global.getSettings().getModManager().isModEnabled("lunalib"))
         {
-            blanche = LunaSettings.getBoolean("TouchOfVanilla_vri","vri_blanchetoggle");
+            HostileActivity = LunaSettings.getBoolean("TouchOfVanilla_vri","vri_HAtoggle");
         }
-        return blanche;
+        return HostileActivity;
     }
 
-    public static boolean VestigeBoolean(){
-        Boolean vesties = false;
+    public static boolean ArkshipBoolean(){
+        Boolean Movement = true;
         if (Global.getSettings().getModManager().isModEnabled("lunalib"))
         {
-             vesties = LunaSettings.getBoolean("TouchOfVanilla_vri","vri_vestietoggle");
+             Movement = LunaSettings.getBoolean("TouchOfVanilla_vri","vri_Arkshiptoggle");
         }
-        return vesties;
+        return Movement;
     }
 }

@@ -43,5 +43,5 @@
       ]
     },
     "fireSoundOne":"vol_myrm_charge",
-  "fireSoundTwo": "plasma_cannon_fire"
+  "fireSoundTwo": "vol_myrm_fire"
 }

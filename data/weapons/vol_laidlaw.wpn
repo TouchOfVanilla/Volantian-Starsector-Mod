@@ -1,0 +1,66 @@
+{
+  "id": "vol_laidlaw",
+  "specClass": "projectile",
+  "projectileSpecId": "vol_laidlawaccelerator_shot",
+      "everyFrameEffect": "data.weapons.scripts.VRI_laidlawaccelerator",
+        "onHitEffect": "data.weapons.scripts.VRI_laidlawaccelerator",
+  "type": "HYBRID",
+    "mountTypeOverride": "BALLISTIC",
+  "size": "LARGE",
+  "displayArcRadius": 450,
+  "turretSprite": "graphics/weapons/vol_heavy_laidlaw_base_turret.png",
+  "turretGlowSprite": "graphics/weapons/vol_heavy_laidlaw_glow_turret.png",
+  "turretGunSprite": "graphics/weapons/vol_heavy_laidlaw_barrel_turret.png",
+  "hardpointSprite": "graphics/weapons/vol_heavy_laidlaw_base_hardpoint.png",
+  "hardpointGlowSprite": "graphics/weapons/vol_heavy_laidlaw_glow_hardpoint.png",
+  "hardpointGunSprite": "graphics/weapons/vol_heavy_laidlaw_barrel_hardpoint.png",
+  "glowColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "visualRecoil": 12,
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "turretOffsets": [
+    37,
+    4.5,
+    37,
+    -4.5
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    45.5,
+    -4.5,
+    45.5,
+    4.5
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "barrelMode": "LINKED",
+  "animationType": "GLOW_AND_FLASH",
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": 50,
+    "spread": 10,
+    "particleSizeMin": 60,
+    "particleSizeRange": 24,
+    "particleDuration": 0.12,
+    "particleCount": 18,
+    "particleColor": [
+      255,
+      255,
+      255,
+      255
+    ]
+  },
+  "fireSoundOne": "vol_laidlawaccel_charge",
+  "fireSoundTwo": "vol_laidlawaccel_shot"
+}
