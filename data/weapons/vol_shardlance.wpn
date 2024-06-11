@@ -6,7 +6,7 @@
   "size": "LARGE",
   "everyFrameEffect": "data.weapons.scripts.VRI_weapon_shardlance",
   "turretSprite": "graphics/weapons/shardlance_turret_base.png",
-  "turretGlowSprite": "graphics/weapons/vol_rembig_turret_glow.png",
+  #"turretGlowSprite": "graphics/weapons/shardlance_turret_glow.png",
   "turretGunSprite": "graphics/weapons/shardlance_turret_sides.png",
   "hardpointSprite": "graphics/weapons/vol_rembig_turret_base.png",
   "glowColor": [
@@ -50,6 +50,6 @@
       100
     ]
   },
-  "fireSoundOne": "vol_myrm_charge",
-  "fireSoundTwo": "vol_myrm_fire"
+  #"fireSoundOne": "vol_myrm_charge",
+  "fireSoundTwo": "vol_shardlance_fire"
 }

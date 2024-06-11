@@ -195,6 +195,14 @@
 		{"file": "sounds/vol_needler_hit_2.ogg", "pitch": 1.0, "volume": 0.15},
 		{"file": "sounds/vol_needler_hit_2.ogg", "pitch": 1.2, "volume": 0.15},
 	],
+	"vol_shardlance_fire":[
+		{"file": "sounds/vol_shardlance_fire.ogg", "pitch": 0.8, "volume": 0.15},
+		{"file": "sounds/vol_shardlance_fire.ogg", "pitch": 1.0, "volume": 0.15},
+		{"file": "sounds/vol_shardlance_fire.ogg", "pitch": 1.2, "volume": 0.15},
+		{"file": "sounds/vol_shardlance_fire.ogg", "pitch": 0.8, "volume": 0.15},
+		{"file": "sounds/vol_shardlance_fire.ogg", "pitch": 1.0, "volume": 0.15},
+		{"file": "sounds/vol_shardlance_fire.ogg", "pitch": 1.2, "volume": 0.15},
+	],
 	"vol_vestie_phase_dive":[
 		{"file": "sounds/vol_vestie_phase_dive.ogg", "pitch": 0.9, "volume": 1},
 		{"file": "sounds/vol_vestie_phase_dive.ogg", "pitch": 0.95, "volume": 1},

@@ -33,6 +33,7 @@ public class VRI_weapon_shardlance implements EveryFrameWeaponEffectPlugin {
 
         if (weapon.isFiring()){
             loc.set(weaponloc);
+            
         }
         if (fired){
             loc.set(Misc.interpolateVector(weaponloc, targetloc, weapon.getChargeLevel()));
