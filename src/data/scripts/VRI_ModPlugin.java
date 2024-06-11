@@ -27,6 +27,7 @@ import java.util.Map;
 
 import lunalib.lunaRefit.LunaRefitManager;
 import org.apache.log4j.Logger;
+import org.dark.shaders.light.LightData;
 import org.dark.shaders.util.ShaderLib;
 import org.dark.shaders.util.TextureData;
 
@@ -168,6 +169,7 @@ public class VRI_ModPlugin extends BaseModPlugin implements PlayerColonizationLi
         if (hasGlib){
             ShaderLib.init();
             TextureData.readTextureDataCSV("data/config/vri_texture_data.csv");
+            LightData.readLightDataCSV("data/config/vri_light_data.csv");
         }
     }
     public void initPlanetConditions(){
