@@ -16,7 +16,8 @@
 "vol_trail_zappy": "graphics/trails/fx/vol_trail_zappy.png",
 "vol_trail_smooth": "graphics/trails/fx/vol_trail_smoothish.png",
 "vol_rapture_mark": "graphics/fx/vol_rapture_mark.png",
-	"vol_shardlance_recoil": "graphics/weapons/shardlance_turret_recoil.png"
+	"vol_shardlance_recoil": "graphics/weapons/shardlance_turret_recoil.png",
+	"vol_myrmidon_explosion": "graphics/fx/vol_myrmidon_explosion.png",
 },
 "characters": {
 "blanche": "graphics/portraits/blanche1.png",

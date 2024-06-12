@@ -25,7 +25,7 @@ Azorian Laidlaw Accelerator,vol_laidlaw,3,,6500,1000,,425,,30,7,26,,,,KINETIC,80
 Mani-class Torpedo,vol_mani,1,,,1000,,3000,,30,30,,2,0.05,1,ENERGY,0,,0,2,1,,0,0,0,0,,150,100,8,400,,,"STRIKE, DO_NOT_CONSERVE","missile0, no_sell, no_drop, no_drop_salvage, restricted",,Volantian,,Strike/Destroy,Slow,None,,,Useful tool to %s enemy ships,dismantle,,,TRUE,88
 Ultraheavy Gauss Cannon,vol_ultraheavygauss,3,,100000,1500,,2200,,700,3,,,,,KINETIC,3000,,1,4.5,,,,,,,,1500,,,400,,,"STRIKE, USE_VS_FRIGATES","kinetic20, no_sell, no_drop, no_drop_salvage, restricted",,Remnant,,Anti Shield,,,,,,,,,,6
 """Myrmidon"" Heavy Pulse Cannon",vol_myrmidon,3,,7500,800,,3600,,600,4,30,,,,FRAGMENTATION,4000,,1.33,4.6,1,0.33,,,,,,750,,,500,,,"STRIKE, USE_VS_FRIGATES","energy20, no_sell, no_drop, no_drop_salvage, restricted",,Remnant,,General,,,,,,,,,,23
-"""Partisan"" Azorian Heavy Shardlance",vol_shardlance,3,,100000,1500,,2200,,700,3,,,,,KINETIC,3000,,1,4.5,,,,,,,,4000,,,400,,,"STRIKE, USE_VS_FRIGATES","kinetic20, no_sell, no_drop, no_drop_salvage, restricted",,Remnant,,Anti Shield,,,,,,,,,,6
+"""Partisan"" Azorian Heavy Shardlance",vol_shardlance,3,,100000,1200,,2800,,700,3,,,,,FRAGMENTATION,2500,,1,4.5,,,,,,,,4000,,,400,,,"STRIKE, USE_VS_FRIGATES","kinetic20, no_sell, no_drop, no_drop_salvage, restricted",,Remnant,,Anti Shield,,,,,,,,,,6
 #fighter weapons,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Katti Fusion Torpedo (Single),vol_katti_single,1,,,1500,,1500,,20,10,1,1,,,ENERGY,0,,0,1,1,0,0,0,0,0,,100,40,8,350,,,STRIKE,"strike8, no_sell, no_drop, no_drop_salvage, restricted",,Volantian,,Strike,Medium,None,,,Second-stage hits on hull or armor create additional explosion dealing %s High Explosive damage,700,,,TRUE,75
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
