@@ -5,26 +5,29 @@
 	#"sprite":"graphics/missiles/.png",
 	#"size":[16,28],
 	#"center":[8,14],
+		"onHitEffect": "data.weapons.scripts.VRI_weapon_shardlance",
 	"sprite":"graphics/missiles/vol_crystal.png",
 	"size":[14,85],
 	"center":[7,50],
 	"collisionRadius":20,
 	"collisionClass":"PROJECTILE_FF",
-	"explosionColor":[255,100,100,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionColor":[255,100,100,0],  # purely visual, will get a white additively blended core on top of this color
 	"explosionRadius":0, # purely visual
+	"fizzleOnReachingWeaponRange":true,
+
 	"explosionSpec":{"duration":0.1f, # not visual
-					 "radius":175,
-					 "coreRadius":75, # full damage within core radius
+					 "radius":0,
+					 "coreRadius":0, # full damage within core radius
 					 "collisionClass":HITS_SHIPS_AND_ASTEROIDS,
 					 "collisionClassByFighter":HITS_SHIPS_AND_ASTEROIDS,
 					 "particleSizeMin":5.0,
 					 "particleSizeRange":3.0,
 					 "particleDuration":1,
 					 "particleCount":200,
-					 "particleColor":[255,155,155,255],
-					 "explosionColor":[255,100,100,255],
-					 "detailedExplosionFlashColorFringe":[255,100,100,255],
-					 "detailedExplosionFlashRadius":500,
+					 "particleColor":[255,155,155,0],
+					 "explosionColor":[255,100,100,0],
+					 "detailedExplosionFlashColorFringe":[255,100,100,0],
+					 "detailedExplosionFlashRadius":0,
 					 "useDetailedExplosion":true
 					 },
 	"armingTime":0,
@@ -53,9 +56,9 @@
     					},
     				    "width":0,
     				    "length":0,
-    				    "angle":180.0}]
-    }
-	"fadeTime":0.5, # fadeout duration
-
+    				    "angle":180.0,
+    }],
+    "flameoutTime":0.02,
+	"fadeTime":0.01, # fadeout duration
 }
 

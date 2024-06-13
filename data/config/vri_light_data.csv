@@ -1,0 +1,11 @@
+id,type,size,intensity,fadeout,color,offset,hit size,hit intensity,hit fadeout,hit color,flash size,flash intensity,flash fadeout,flash color,flash offset,chance,fighter dim
+vol_gaussian_shot,projectile,90,0.15,0.15,"[50,50,255]",,150,0.35,0.5,"[50,50,255]",110,0.15,0.1,"[50,50,255]",,0.75,TRUE
+vol_laidlawaccelerator_shot,projectile,90,0.15,0.2,"[68,235,160]",,150,0.35,0.75,"[68,235,160]",125,0.2,0.4,"[68,235,160]",,1,TRUE
+vol_monoblade_shot,projectile,125,0.2,0.25,"[255,0,0]",,150,0.25,0.5,"[255,0,0]",150,0.2,0.1,"[255,0,0]",,0.5,TRUE
+vol_myrm_shot,projectile,100,0.3,0.2,"[245,169,184]",,175,0.65,1,"[245,169,184]",125,0.3,0.2,"[245,169,184]",,1,TRUE
+vol_shardlance_shot,projectile,90,0.15,0.2,"[68,235,160]",,150,0.35,0.75,"[68,235,160]",125,0.2,0.4,"[68,235,160]",,1,TRUE
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+vol_azorian_beam,beam,40,1.4,,"[0,255,207]",,125,0.7,,"[0,255,207]",65,0.7,,"[125,10,155]",,1,TRUE
+vol_azorian_lance,beam,40,1.4,,"[0,255,207]",,125,0.7,,"[0,255,207]",65,0.7,,"[125,10,155]",,1,TRUE
+vol_phosphenelance,beam,40,1.4,,"[0,255,207]",,125,0.7,,"[0,255,207]",65,0.7,,"[125,10,155]",,1,TRUE

@@ -50,6 +50,6 @@
       100
     ]
   },
-  #"fireSoundOne": "vol_myrm_charge",
+  "fireSoundOne": "vol_shardlance_charge",
   "fireSoundTwo": "vol_shardlance_fire"
 }

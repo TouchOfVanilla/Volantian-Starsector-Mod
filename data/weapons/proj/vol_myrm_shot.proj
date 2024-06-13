@@ -2,6 +2,7 @@
 	"id":"vol_myrm_shot",
 	"specClass":"projectile",
 	"spawnType":"BALLISTIC_AS_BEAM",
+	"onHitEffect":"data.weapons.scripts.VolMyrmOnHit",
 	"collisionClass":"RAY",
 	"collisionClassByFighter":"RAY_FIGHTER",
 	"length":100.0,
