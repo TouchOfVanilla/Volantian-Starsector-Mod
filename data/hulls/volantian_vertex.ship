@@ -1,0 +1,90 @@
+{
+  "hullName": "Vertex",
+  "hullId": "volantian_vertex",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/fatfuck.png",
+  "style": "HIGH_TECH",
+  "height": 115,
+  "width": 83,
+  "center": [40, 41],
+  "collisionRadius": 65,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 54,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 229,
+      "angle": 70,
+      "locations": [9, 18]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 229,
+      "angle": -70,
+      "locations": [9, -18]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -5, 8,
+        -5, -9.5
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-22.5, 28.5],
+      "length": 13.5,
+      "width": 4,
+      "angle": 180,
+      "contrailSize": 4,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-22.5, -28.5],
+      "length": 13.5,
+      "width": 4,
+      "angle": -180,
+      "contrailSize": 4,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-25, 24.5],
+      "length": 13,
+      "width": 4,
+      "angle": 180,
+      "contrailSize": 4,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-25, -24.5],
+      "length": 13,
+      "width": 4,
+      "angle": -180,
+      "contrailSize": 4,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -35.5, -9.5,
+    -10, -35.5,
+    21, -28,
+    37.5, -10.5,
+    37.5, 10.5,
+    21, 28,
+    -10, 35.5,
+    -35.5, 9.5
+  ]
+}
