@@ -4,14 +4,23 @@ import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.*;
 import com.fs.starfarer.api.campaign.econ.EconomyAPI;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
+import com.fs.starfarer.api.impl.campaign.DerelictShipEntityPlugin;
 import com.fs.starfarer.api.impl.campaign.ids.Factions;
 import com.fs.starfarer.api.impl.campaign.intel.events.HostileActivityEventIntel;
+import com.fs.starfarer.api.impl.campaign.procgen.themes.RemnantThemeGenerator;
+import com.fs.starfarer.api.impl.campaign.procgen.themes.ThemeGenContext;
+import com.fs.starfarer.api.impl.campaign.procgen.themes.Themes;
+import com.fs.starfarer.api.impl.campaign.rulecmd.salvage.special.ShipRecoverySpecial;
 import com.fs.starfarer.api.impl.campaign.shared.SharedData;
+import com.fs.starfarer.api.impl.campaign.world.TTBlackSite;
 import data.scripts.VRI_CrossmodPlugins;
 import data.world.systems.*;
+import exerelin.utilities.NexUtilsAstro;
 import org.apache.log4j.Logger;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
 
 import static org.lazywizard.lazylib.MathUtils.getRandomNumberInRange;
 
@@ -108,5 +117,20 @@ public class VRIGen implements SectorGeneratorPlugin {
         if (Global.getSettings().getModManager().isModEnabled("vic")){
             VRI_CrossmodPlugins.initVICCrossmod();
         }
+    }
+    public static void addEstragon(SectorAPI sector){
+        Iterator<StarSystemAPI> stariter = sector.getStarSystems().iterator();
+        ArrayList<StarSystemAPI> validstars = new ArrayList<StarSystemAPI>();
+        while (stariter.hasNext()){
+            StarSystemAPI star = stariter.next();
+            if (star.isProcgen()){
+                validstars.add(star);
+            }
+        }
+        Collections.shuffle(validstars);
+        StarSystemAPI targetstar = validstars.get(0);
+        SectorEntityToken entity = targetstar.getPlanets().get(0);
+        TTBlackSite.addDerelict(targetstar, entity, "volantian_estragon_Elite", "TTS Boymoder", "volantian_paragon_trans", ShipRecoverySpecial.ShipCondition.PRISTINE, entity.getRadius() +300, true);
+        log.info("estrogen paragon is in" + targetstar.getName());
     }
 }

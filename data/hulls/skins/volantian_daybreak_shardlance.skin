@@ -2,7 +2,7 @@
   "baseHullId": "volantian_daybreak",
   "baseValueMult": 1,
   "descriptionId": "volantian_daybreak",
-  "descriptionPrefix": "Fanatics of the Luddic Path have made this ship their own, stripping out all unnecessary furnishing and transforming it into a haphazard vehicle of holy war.",
+  "descriptionPrefix": "This Daybreak's Myrmidon pulse cannon has been replaced with an Azorian shardlance.",
   "fighterBays": 0,
   "fpMod": 0,
   "restoreToBaseHull": false,

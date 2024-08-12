@@ -1,0 +1,25 @@
+{
+	# multiplier for how often hulls show up in the faction's fleets
+	"hullFrequency":{
+		"tags":{
+		},
+		"hulls":{
+
+		}
+	},
+
+	"knownShips":{
+		"tags":[],
+		"hulls":[
+	"volantian_daybreak_shardlance"
+
+		],
+	},
+	# listing ships here will make the faction mostly use them even if other hulls become available
+	"priorityShips":{
+		"tags":[],
+		"hulls":[
+
+		],
+	}
+}

@@ -3,7 +3,7 @@
 	"name":"Volantian Reclamation Initiative", # Displayed to the player
 	"author":"TouchofVanilla",
     "utility":"false",
-	"version":"0.6",
+	"version":"0.6.1",
 	"description":"The VRI is a relatively new faction built atop the ruins of the old Volantian Empire.",
     "gameVersion": "0.97a-RC6",
   	"jars":["jars/vri.jar"],
@@ -16,6 +16,14 @@
       {
         "id": "MagicLib",
         "name": "MagicLib"
+      },
+{
+        "id": "nexerelin",
+        "name": "Nexerelin"
+      },
+{
+        "id": "lunalib",
+        "name": "LunaLib"
       },
       {
         "id": "shaderLib",

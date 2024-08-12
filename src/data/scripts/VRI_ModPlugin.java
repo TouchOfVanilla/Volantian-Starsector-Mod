@@ -139,6 +139,7 @@ public class VRI_ModPlugin extends BaseModPlugin implements PlayerColonizationLi
         initPlanetConditions();
         setListenersIfNeeded();
         setScriptsIfNeeded();
+        VRIGen.addEstragon(Global.getSector());
     }
 
 

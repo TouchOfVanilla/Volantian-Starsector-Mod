@@ -1,0 +1,11 @@
+{
+  "baseHullId": "paragon",
+  "baseValueMult": 1,
+  "descriptionId": "paragon",
+  "descriptionPrefix": "This hull is much prettier, braver, and stronger than other examples of its class.",
+  "fighterBays": 0,
+  "fpMod": 0,
+  "restoreToBaseHull": false,
+  "skinHullId": "volantian_estragon",
+  "spriteName": "graphics/ships/estragon.png",
+}

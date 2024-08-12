@@ -149,17 +149,17 @@ public class VRI_ArkshipScript implements EconomyTickListener, InvasionListener 
     public static boolean isSystemSafe(StarSystemAPI system){
         FactionAPI vri = Global.getSector().getFaction("vri");
         FactionAPI faction = NexUtilsFaction.getSystemOwner(system);
-        if (faction.isHostileTo(vri)){
             float facsyssize = 0f;
             Iterator<MarketAPI> marketiter = Misc.getMarketsInLocation(system).iterator();
             while (marketiter.hasNext()){
                 MarketAPI market = marketiter.next();
-                facsyssize = facsyssize + market.getSize();
+                if (market.getFaction().isHostileTo(vri)) {
+                    facsyssize = facsyssize + market.getSize();
+                }
             }
             if (facsyssize >= 8){
                 return false;
             }
-        }
         return true;
     }
 

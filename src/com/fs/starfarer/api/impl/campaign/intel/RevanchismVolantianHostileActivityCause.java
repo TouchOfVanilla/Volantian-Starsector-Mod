@@ -16,6 +16,7 @@ import org.apache.log4j.Logger;
 
 import java.util.Iterator;
 
+import static com.fs.starfarer.api.Global.getSector;
 import static com.fs.starfarer.api.impl.campaign.intel.VolantianHostileActivityFactor.VolantianIncursionDefeated;
 
 public class RevanchismVolantianHostileActivityCause extends BaseHostileActivityCause2 {
@@ -75,6 +76,7 @@ public class RevanchismVolantianHostileActivityCause extends BaseHostileActivity
         float progress = 0;
         // return total point contribution
         FactionAPI vri = Global.getSector().getFaction("vri");
+        MarketAPI ontos = Global.getSector().getEntityById("vri_cryosleeper").getMarket();
         Iterator playermarketiter = Global.getSector().getEconomy().getMarketsCopy().iterator();
         while (playermarketiter.hasNext()) {
             MarketAPI playermarket = (MarketAPI) playermarketiter.next();
@@ -86,6 +88,11 @@ public class RevanchismVolantianHostileActivityCause extends BaseHostileActivity
                     if (market.getFaction().getId().equals("vri")) {
                         StarSystemAPI vrisystem = market.getStarSystem();
                         float lydist = Misc.getDistanceLY(vrisystem.getHyperspaceAnchor(), system.getHyperspaceAnchor());
+                        if (ontos != null) {
+                            if (market == ontos) {
+                                lydist = 100;
+                            }
+                        }
                         if (lydist <= VRI_ANGY_LY_DIST) {
                             progress = progress + lydist;
                         }
@@ -123,7 +130,10 @@ public class RevanchismVolantianHostileActivityCause extends BaseHostileActivity
 
     public float getMagnitudeContribution(StarSystemAPI system) {
         //return a value less than 1
-        return 0.7f;
+        if (this.shouldShow()) {
+            return 0.7f;
+        }
+        return 0;
     }
 
     public static boolean isPlayerVRICommissioned() {
