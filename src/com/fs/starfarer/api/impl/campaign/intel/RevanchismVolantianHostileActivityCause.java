@@ -2,6 +2,7 @@ package com.fs.starfarer.api.impl.campaign.intel;
 
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.FactionAPI;
+import com.fs.starfarer.api.campaign.SectorEntityToken;
 import com.fs.starfarer.api.campaign.StarSystemAPI;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
 import com.fs.starfarer.api.impl.campaign.ids.Factions;
@@ -76,7 +77,7 @@ public class RevanchismVolantianHostileActivityCause extends BaseHostileActivity
         float progress = 0;
         // return total point contribution
         FactionAPI vri = Global.getSector().getFaction("vri");
-        MarketAPI ontos = Global.getSector().getEntityById("vri_cryosleeper").getMarket();
+        SectorEntityToken ontosent = Global.getSector().getEntityById("vri_cryosleeper");
         Iterator playermarketiter = Global.getSector().getEconomy().getMarketsCopy().iterator();
         while (playermarketiter.hasNext()) {
             MarketAPI playermarket = (MarketAPI) playermarketiter.next();
@@ -87,10 +88,14 @@ public class RevanchismVolantianHostileActivityCause extends BaseHostileActivity
                     MarketAPI market = (MarketAPI) marketiter.next();
                     if (market.getFaction().getId().equals("vri")) {
                         StarSystemAPI vrisystem = market.getStarSystem();
-                        float lydist = Misc.getDistanceLY(vrisystem.getHyperspaceAnchor(), system.getHyperspaceAnchor());
-                        if (ontos != null) {
-                            if (market == ontos) {
-                                lydist = 100;
+                        if (!isValidStar(vrisystem)) continue;
+
+                            float lydist = Misc.getDistanceLY(vrisystem.getHyperspaceAnchor(), system.getHyperspaceAnchor());
+                        if (ontosent != null) {
+                            if (ontosent.getMarket() != null) {
+                                if (market == ontosent.getMarket()) {
+                                    lydist = 100;
+                                }
                             }
                         }
                         if (lydist <= VRI_ANGY_LY_DIST) {
@@ -105,6 +110,12 @@ public class RevanchismVolantianHostileActivityCause extends BaseHostileActivity
             progress = 0f;
         }
         return (int) progress;
+    }
+    public boolean isValidStar(StarSystemAPI star){
+        if (star == Global.getSector().getStarSystem("Royce")) return true;
+        if (star == Global.getSector().getStarSystem("Uelyst")) return true;
+        if (star == Global.getSector().getStarSystem("Avery")) return true;
+        return false;
     }
 
 

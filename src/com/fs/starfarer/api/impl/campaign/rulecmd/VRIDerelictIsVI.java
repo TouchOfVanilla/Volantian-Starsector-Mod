@@ -21,9 +21,12 @@ public class VRIDerelictIsVI extends BaseCommandPlugin {
                 log.info("custom plugin is a derelict ship");
                 if (((DerelictShipEntityPlugin) (dialog.getInteractionTarget().getCustomPlugin())).getData() != null) {
                     log.info("custom plugin data is not null");
-                    if (((DerelictShipEntityPlugin) (dialog.getInteractionTarget().getCustomPlugin())).getData().ship.getVariant().getHullSpec().isBuiltInMod("sixth")) {
-                        log.info("its a vi bote");
-                        return true;
+                    if (((DerelictShipEntityPlugin) (dialog.getInteractionTarget().getCustomPlugin())).getData().ship.variant != null) {
+                        log.info("ship variant is not null");
+                        if (((DerelictShipEntityPlugin) (dialog.getInteractionTarget().getCustomPlugin())).getData().ship.getVariant().getHullSpec().isBuiltInMod("sixth")) {
+                            log.info("its a vi bote");
+                            return true;
+                        }
                     }
                 }
             }

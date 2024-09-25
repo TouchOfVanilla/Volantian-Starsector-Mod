@@ -3,7 +3,7 @@
 	"name":"Volantian Reclamation Initiative", # Displayed to the player
 	"author":"TouchofVanilla",
     "utility":"false",
-	"version":"0.6.1",
+	"version":"0.6.1a",
 	"description":"The VRI is a relatively new faction built atop the ruins of the old Volantian Empire.",
     "gameVersion": "0.97a-RC6",
   	"jars":["jars/vri.jar"],

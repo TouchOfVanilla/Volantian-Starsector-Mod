@@ -10,10 +10,7 @@ import com.fs.starfarer.api.impl.campaign.VRI_ArkshipScript;
 import com.fs.starfarer.api.impl.campaign.ids.Conditions;
 import com.fs.starfarer.api.impl.campaign.ids.FleetTypes;
 import com.fs.starfarer.api.impl.campaign.ids.Industries;
-import com.fs.starfarer.api.impl.campaign.intel.events.BaseEventIntel;
-import com.fs.starfarer.api.impl.campaign.intel.events.BaseFactorTooltip;
-import com.fs.starfarer.api.impl.campaign.intel.events.BaseHostileActivityFactor;
-import com.fs.starfarer.api.impl.campaign.intel.events.HostileActivityEventIntel;
+import com.fs.starfarer.api.impl.campaign.intel.events.*;
 import com.fs.starfarer.api.impl.campaign.intel.group.*;
 import com.fs.starfarer.api.impl.campaign.intel.raid.RaidIntel;
 import com.fs.starfarer.api.impl.campaign.missions.FleetCreatorMission;
@@ -25,7 +22,9 @@ import data.scripts.VRILunaSettings;
 import data.scripts.VRI_CrossmodPlugins;
 import data.scripts.VRI_ModPlugin;
 import exerelin.campaign.intel.fleets.RaidListener;
+import exerelin.utilities.NexUtils;
 import exerelin.utilities.NexUtilsFaction;
+import org.apache.log4j.Logger;
 import org.lwjgl.util.vector.Vector2f;
 
 import java.awt.*;
@@ -36,6 +35,7 @@ public class VolantianHostileActivityFactor extends BaseHostileActivityFactor im
 
     public static float VRI_ANGY_LY_DIST = 10f;
     public static String VolantianIncursionDefeated = "$vriIncursion_defeated";
+    private static Logger log = Global.getLogger(VolantianHostileActivityFactor.class);
 
     public static boolean VICexists = Global.getSector().getFaction("vic") != null;
 
@@ -167,28 +167,36 @@ public class VolantianHostileActivityFactor extends BaseHostileActivityFactor im
             stage.rollData = null;
             return this.startIncursion(source, target, stage, this.getRandomizedStageRandom(3));
         } else {
+            if (source != null) log.info("source is null");
+            if (target != null) log.info("target is null");
             return false;
         }
     }
 
     public static StarSystemAPI findIncursionTarget(HostileActivityEventIntel intel, BaseEventIntel.EventStageData stage) {
-        if (intel.getActivityCause(VolantianHostileActivityFactor.class, RevanchismVolantianHostileActivityCause.class).shouldShow()){
-        Iterator var5 = Misc.getPlayerSystems(false).iterator();
-        while (var5.hasNext()) {
-            StarSystemAPI system = (StarSystemAPI) var5.next();
-            StarSystemAPI vri = RevanchismVolantianHostileActivityCause.getClosestVRISystem(system);
-            float dist = Misc.getDistanceLY(vri.getHyperspaceAnchor(), system.getHyperspaceAnchor());
-            if (dist <= VRI_ANGY_LY_DIST) {
-                return system;
+        HostileActivityCause2 RevanchismCause = intel.getActivityCause(VolantianHostileActivityFactor.class, RevanchismVolantianHostileActivityCause.class);
+        HostileActivityCause2 VICCause = intel.getActivityCause(VolantianHostileActivityFactor.class, VICVolantianHostileActivityCause.class);
+        if (RevanchismCause != null){
+        if (RevanchismCause.shouldShow()) {
+            Iterator var5 = Misc.getPlayerSystems(false).iterator();
+            while (var5.hasNext()) {
+                StarSystemAPI system = (StarSystemAPI) var5.next();
+                StarSystemAPI vri = RevanchismVolantianHostileActivityCause.getClosestVRISystem(system);
+                float dist = Misc.getDistanceLY(vri.getHyperspaceAnchor(), system.getHyperspaceAnchor());
+                if (dist <= VRI_ANGY_LY_DIST) {
+                    return system;
+                }
             }
         }
         }
-        if (intel.getActivityCause(VolantianHostileActivityFactor.class, VICVolantianHostileActivityCause.class).shouldShow()) {
-            Iterator var5 = Misc.getPlayerMarkets(false).iterator();
-            while (var5.hasNext()) {
-                MarketAPI market = (MarketAPI) var5.next();
-                if (market.hasIndustry("vic_revCenter")){
-                    return market.getStarSystem();
+        if (VICCause != null) {
+            if (VICCause.shouldShow()) {
+                Iterator var5 = Misc.getPlayerMarkets(false).iterator();
+                while (var5.hasNext()) {
+                    MarketAPI market = (MarketAPI) var5.next();
+                    if (market.hasIndustry("vic_revCenter")) {
+                        return market.getStarSystem();
+                    }
                 }
             }
         }
@@ -199,13 +207,12 @@ public class VolantianHostileActivityFactor extends BaseHostileActivityFactor im
         FactionAPI vri = Global.getSector().getFaction("vri");
         MarketAPI schmarket = null;
 
-        Iterator<MarketAPI> marketiter = Global.getSector().getEconomy().getMarketsCopy().iterator();
+        Iterator<MarketAPI> marketiter = NexUtilsFaction.getFactionMarkets("vri").iterator();
         while (marketiter.hasNext()) {
             MarketAPI marker = marketiter.next();
-            if (marker.getFaction().equals(vri)) {
                 if (marker.hasIndustry(Industries.HIGHCOMMAND)) {
                     if (!marker.getIndustry(Industries.HIGHCOMMAND).isDisrupted()) {
-                        if (!marker.getName().equals("Arkship Ontos")) return marker;
+                        return marker;
                     }
                 }
                 if (marker.hasIndustry(Industries.MILITARYBASE)) {
@@ -214,7 +221,6 @@ public class VolantianHostileActivityFactor extends BaseHostileActivityFactor im
                     }
                 }
             }
-        }
         return null;
     }
 

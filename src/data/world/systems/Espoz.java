@@ -123,19 +123,11 @@ public class Espoz {
                 2, // name offset - next planet will be <system name> <roman numeral of this parameter + 1>
                 true, // whether to use custom or system-name based names
                 true); // whether to allow habitable worlds
-        system.autogenerateHyperspaceJumpPoints(true, false);
         SectorEntityToken MakeshiftRelay = system.addCustomEntity("vri_comm_relay_makeshift", // unique id
                 "Visegrad Relay", // name - if null, defaultName from custom_entities.json will be used
                 "comm_relay_makeshift", // type of object, defined in custom_entities.json
                 "hegemony"); // faction
         MakeshiftRelay.setCircularOrbitPointingDown(Visegrad, 180f, 600, 265);
-        system.autogenerateHyperspaceJumpPoints(true, true);
-        JumpPointAPI jumpPoint1 = Global.getFactory().createJumpPoint(
-                "espoz_center_jump",
-                "Inner System Jump Point");
-
-        jumpPoint1.setCircularOrbit(espoz, 10, 1250, 100f);
-        jumpPoint1.setStandardWormholeToHyperspaceVisual();
 
         PlanetAPI Aether = system.addPlanet(
                 "aether",
@@ -195,6 +187,7 @@ public class Espoz {
             true
     );
         Chesapeake.setCustomDescriptionId("vri_chesapeake"); //reference descriptions.csv
-
+        system.autogenerateHyperspaceJumpPoints(true, true);
     }
+
 }

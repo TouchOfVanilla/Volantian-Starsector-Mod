@@ -1,0 +1,241 @@
+{
+  "Viridian optimal": {
+    "portrait": "vol_portrait1",
+    "personality": "Martial",
+    "battle_personality": "Aggressive",
+    "level": 12,
+    "isMale": false,
+    "fief": "vri_cryosleeper_market",
+    "ranking": 2,
+    "lore": "Viridian optimal has been in command of The Shield Of Volantian for nearly 35 years. in this time, she has seen a lot of change to the Volantian Reclamation, and has prevented many attacks and disruptions from effecting her faction. in recent years, mush of her political expertise has been spent attempting to mend the recent split between factions, headed by Ultraviolet Superlative and Infrared Ghostwheel.",
+    "fleetName": "The Shield Of Volantian",
+    "faction": "vri",
+    "flagship": "volantian_ionos_vri_Standard",
+    "shipPref": {
+      "volantian_ionos_vri_Standard": 8,
+
+      "volantian_radiant_vri_Standard": 4,
+      "volantian_radiant_vri_Strike": 4,
+
+      "volantian_pyralis_vri_Standard":3,
+      "volantian_pyralis_vri_Support": 3,
+
+      "volantian_medusa_vri_Elite": 3,
+      "volantian_medusa_vri_Standard": 3,
+
+      "volantian_lumen_vri_Standard": 2
+
+    }
+  },
+  "Ultraviolet Superlative": {
+    "portrait": "vol_portrait2",
+    "personality": "Martial",
+    "battle_personality": "Aggressive",
+    "level": 10,
+    "isMale": false,
+    "fief": "vri_planet_Volantis_market",
+    "ranking": 1,
+    "lore": "Ultraviolet Superlative has long held large parts of the VRI in contempt. unsatisfied with they way how the faction focuses on uncovering old Remament technology, as apposed to developing new technology. Her long arguments and manipulation of events have been enough to drive a wedge between the faction. The 2 camps that emerged from that split have spent countless hours arguing about what direction the VRI should move in, to the frustration of the many moderate voices that care little for this issue",
+    "fleetName": "Ultraviolet Superlatives Fleet",
+    "faction": "vri",
+    "flagship": "volantian_ionos_vri_Standard",
+    "shipPref": {
+      "volantian_ionos_vri": 3,
+
+      "volantian_sentinel_vri_Standard": 4,
+
+      "volantian_gauntlet_vri_Standard": 4,
+
+      "volantian_cressida_vri_Standard": 3,
+      "volantian_cressida_vri_Strike": 3,
+
+      "volantian_sunder_vri_Elite": 2,
+      "volantian_sunder_vri_Standard": 2,
+
+      "volantian_metatron_vri_Elite": 1,
+
+      "volantian_sandalphon_vri_Elite": 3,
+      "volantian_sandalphon_vri_Standard": 1
+    }
+  },
+  "Infrared Ghostwheel": {
+    "portrait": "vol_portrait3",
+    "personality": "Calculating",
+    "battle_personality": "Aggressive",
+    "level": 11,
+    "isMale": false,
+    "fief": "vri_nocturne_market",
+    "ranking": 1,
+    "lore": "Infrared Ghostwheel is in charge of defending and assisting __ in its effort to salvage scraps of the old Volantian Empire. When Ultraviolet Superlative first suggested abandoning the reclamation of old remamnet ships, Infrared Ghostwheel was one of the first to strongly resist the suggestion. in recent years, Infrared Ghostwheel has grown somewhat extreme in her view of reclaimed remament ships being superior, and has began to lead a faction within the VRI that is attempting to push for larger reclamation efforts on the remanent ships. Her classes with Ultraviolet Superlative have become something to behold, leaving many headaches in there wake",
+    "fleetName": "The Grand Reclamation",
+    "faction": "vri",
+    "flagship": "volantian_radiant_vri_Strike",
+    "shipPref": {
+      "volantian_radiant_vri_Strike": 5,
+      "volantian_radiant_vri_Standard": 5,
+
+
+      "volantian_chromatic_vri_Standard": 3,
+      "volantian_chromatic_vri_Strike": 3,
+
+      "volantian_pyralis_vri_Standard": 3,
+      "volantian_pyralis_vri_Support": 3,
+
+
+      "volantian_prismatic_vri_Standard": 3,
+      "volantian_prismatic_vri_Strike": 3,
+
+      "volantian_scintilla_vri_Strike": 5,
+      "volantian_scintilla_vri_Support": 5,
+
+      "volantian_fulgent_vri_Standard": 2,
+      "volantian_fulgent_vri_Strike": 2,
+
+
+      "volantian_lumen_vri_Standard": 4,
+
+      "volantian_glimmer_vri_Standard": 4
+    }
+  },
+  "Brown Ascendant": {
+    "portrait": "vol_portrait5",
+    "personality": "Martial",
+    "battle_personality": "Aggressive",
+    "level": 9,
+    "isMale": true,
+    "fief": null,
+    "ranking": 0,
+    "lore": "Once the head of a powerful organization within VRI space, his fall from grace was slow and dreadful. Starting with there obsession with the 'temporal shell' ship system, this powerful man decided the only way forward for the Volantian Reclamation Initiative was to focus Immense resources into creating ships armed with this powerful ship system. Ultimately, this would lead to his organization becoming completely bankrupt, with nothing to show for it. Forced out of the organization do to lack of funds, he took the discarded scraps of many different ships projects and put them together himself into a prototype ship: the 'metatron'. Creating the first prototype put Brown Ascendant into considerable debt. Something made worse when no one was willing to believe that he had created a working prototype. This is what lead Brown Ascendant to becoming a star lord, flying his prototype ship into combat against the enemy's of the VRI. Although Brown Ascendant has choosing to remain a star lord after his rise back into power, he continues to promote the use of temporal manipulation systems to this day.",
+    "fleetName": "Brown Ascendants Fleet",
+    "faction": "vri",
+    "flagship": "volantian_metatron_vri_Elite",
+    "shipPref": {
+      "volantian_metatron_vri_Elite": 50,
+      "volantian_metatron_vri_Standard": 50,
+
+      "volantian_sandalphon_vri_Elite": 8,
+
+      "volantian_medusa_vri_Elite": 6,
+
+      "volantian_ionos_vri_Standard": 1
+
+
+    }
+  },
+  "Icterine Xerxes": {
+    "portrait": "vol_portrait6",
+    "personality": "calculating",
+    "battle_personality": "Reckless",
+    "level": 9,
+    "isMale": true,
+    "fief": "vri_planet_Desmond_market",
+    "ranking": 0,
+    "lore": "once a patrol officer Icterine Xerxes proved himself as an extremely combatant patrol officer, dealing with smugglers, spies trying to steal the VRI technological secrates, and the occasional incursion. suffering very few losses. over time, Icterine Xerxes found himself promoted until he could manage his own fleet. and in time, was promoted more still. today Icterine Xerxes is a well liked star lord, although not an influential one. none the less, he is an inspiration for the common patrol officer, as someone they can inspire to",
+    "fleetName": "Icterine Xerxes Fleet",
+    "faction": "vri",
+    "flagship": "volantian_sentinel_vri_Standard",
+    "shipPref": {
+      "volantian_sentinel_vri": 30,
+
+      "volantian_cressida_vri_Standard": 8,
+      "volantian_cressida_vri_Strike": 8,
+
+      "volantian_sunder_vri_Elite": 5,
+      "volantian_sunder_vri_Standard": 5,
+
+      "volantian_medusa_vri_Elite": 5,
+      "volantian_medusa_vri_Standard": 5,
+
+      "volantian_sandalphon_vri_Elite": 5,
+      "volantian_sandalphon_vri_Standard": 5,
+
+      "volantian_wolf_vri_Elite": 5
+    }
+  },
+  "Ecru Unthinkable": {
+    "portrait": "vol_portrait7",
+    "personality": "Upstanding",
+    "battle_personality": "Reckless",
+    "level": 10,
+    "isMale": true,
+    "fief": "vri_planet_Azor_market",
+    "ranking": 0,
+    "lore": "'they call him Ecru Unthinkable, for he never gives up on justice. no matter how unthinkable it might be'. Ecru Unthinkable truly does strive to do the best he can for his people, going through grate risk to root out corruption. his frank nature commonly gets him in trouble, and he is forced to depend on others within the faction to finish dealing with whatever trouble he found this time. Regardless, Ecru Unthinkable finds himself quick popular among both the citizens, and military. although the latter does shack in fear and sometimes frustration whenever he opens coms, worried about whatever random nar do wells he has gotten in his sights this time. and worried over the work Ecru Unthinkable will pressure them to do, so they can deal with this all the quicker",
+    "fleetName": "Ecru Unthinkables Fleet",
+    "faction": "vri",
+    "flagship": "volantian_pyralis_vri_Standard",
+    "shipPref": {
+      "volantian_pyralis_vri_Standard": 5,
+      "volantian_pyralis_vri_Support": 5,
+
+      "volantian_gauntlet_vri_Standard": 8,
+
+      "volantian_scintilla_vri_Strike": 15,
+
+      "volantian_metatron_vri_Elite": 1,
+
+      "volantian_glimmer_vri_Standard": 8
+    }
+  },
+  "Indigo Unequaled": {
+    "portrait": "vol_portrait10",
+    "personality": "Quarrelsome",
+    "battle_personality": "Steady",
+    "level": 10,
+    "isMale": true,
+    "fief": "vri_planet_suba1_market",
+    "ranking": 0,
+    "lore": "Indigo Unequaled inherited his fleet form his mother nearly 20 years ago. since then, Indigo Unequaled has gone on a string of misadventures, trying to prove that whoever he dislikes is up to no good. dispute Indigo Unequaleds nature, the VRI continue to allow him to stay in the faction. likely do to his compliance as a fleet commander",
+    "fleetName": "Indigo Unequaleds Fleet",
+    "faction": "vri",
+    "flagship": "volantian_ionos_vri_Standard",
+    "shipPref": {
+      "volantian_ionos_vri_Standard": 10,
+
+      "volantian_chromatic_vri_Standard": 3,
+      "volantian_chromatic_vri_Strike": 3,
+
+      "volantian_gauntlet_vri_Standard": 5,
+
+      "volantian_cressida_vri_Standard": 2,
+      "volantian_cressida_vri_Strike": 2,
+
+      "volantian_scintilla_vri_Strike": 4,
+      "volantian_scintilla_vri_Support": 4,
+
+      "volantian_glimmer_vri_Standard": 10,
+
+      "volantian_lumen_vri_Standard": 10
+    }
+  },
+  "Russet Splendorous": {
+    "portrait": "vol_portrait4",
+    "personality": "Calculating",
+    "battle_personality": "Steady",
+    "level": 12,
+    "isMale": false,
+    "fief": null,
+    "ranking": 0,
+    "lore": "Russet Splendorous is a well known scientist, who has worked on many different projects for the Volantian Reclamation Initiative. mostly working on old rearmament vessels. after choosing to pressure the path of becoming a star lord, Russet Splendorous chose a rare fleet composition, only consisting of said vessels. do to this action, it is offline assumed that Russet Splendorous is a puppet of Infrared Ghostwheel, who is well known for her increasingly extreme attitude and distrust for none remament vessels. Russet Splendorous claims a far more emotional story: that she simply loves the nature of the old remament vessels. she loves to tinker and modify them. and the ability to do so undisturbed is the sole reason why she became a starlord. or so she clams.",
+    "fleetName": "Russet Splendorous Fleet",
+    "faction": "vri",
+    "flagship": "volantian_radiant_vri_Standard",
+    "shipPref": {
+      "volantian_radiant_vri_Standard": 2,
+      "volantian_radiant_vri_Strike": 3,
+
+      "volantian_pyralis_vri_Standard": 4,
+      "volantian_pyralis_vri_Support": 4,
+
+      "volantian_fulgent_vri_Standard": 5,
+      "volantian_fulgent_vri_Strike": 5,
+
+      "volantian_prismatic_vri_Standard": 5,
+      "volantian_prismatic_vri_Strike": 5,
+
+      "volantian_lumen_vri_Standard": 8,
+
+      "volantian_glimmer_vri_Standard": 8
+    }
+  }
+}
