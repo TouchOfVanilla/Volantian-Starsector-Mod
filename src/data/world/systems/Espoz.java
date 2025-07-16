@@ -119,10 +119,11 @@ public class Espoz {
         Visegrad.setCustomDescriptionId("vri_visegrad"); //reference descriptions.csv
         StarSystemGenerator.addOrbitingEntities(system, espoz, StarAge.OLD,
                 3, 5, // min/max entities to add
-                3500, // radius to start adding at
+                4000, // radius to start adding at
                 2, // name offset - next planet will be <system name> <roman numeral of this parameter + 1>
                 true, // whether to use custom or system-name based names
-                true); // whether to allow habitable worlds
+                true); // whether to allow h
+        // habitable worlds
         SectorEntityToken MakeshiftRelay = system.addCustomEntity("vri_comm_relay_makeshift", // unique id
                 "Visegrad Relay", // name - if null, defaultName from custom_entities.json will be used
                 "comm_relay_makeshift", // type of object, defined in custom_entities.json
@@ -188,6 +189,7 @@ public class Espoz {
     );
         Chesapeake.setCustomDescriptionId("vri_chesapeake"); //reference descriptions.csv
         system.autogenerateHyperspaceJumpPoints(true, true);
+        VRIGen.cleanup(system);
     }
 
 }

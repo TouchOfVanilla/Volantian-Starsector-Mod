@@ -3,7 +3,7 @@
     "fluxCapacitors": 35,
     "fluxVents": 50,
     "goalVariant": true,
-    "hullId": "volantian_estragon",
+    "hullId": "v0lantian_paragon_trAns",
     "hullMods": [
         "stabilizedshieldemitter",
         "hardenedshieldemitter",
@@ -13,7 +13,7 @@
     ],
     "permaMods": [],
     "sMods": [],
-    "variantId": "volantian_estragon_Elite",
+    "variantId": "estragon_volantian_Elite",
     "weaponGroups": [
         {
             "autofire": false,

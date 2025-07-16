@@ -52,7 +52,11 @@ public class VRIAzorianCoreAdminSkill {
         }
 
         public void unapply(MarketAPI market, String id) {
-            market.getStats().getDynamic().getMod("fleet_quality_mod").unmodify(id);
+            if (market != null) {
+                if (market.getStats() != null) {
+                    market.getStats().getDynamic().getMod("fleet_quality_mod").unmodify(id);
+                }
+            }
         }
 
         public String getEffectDescription(float level) {

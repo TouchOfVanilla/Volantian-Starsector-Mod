@@ -1,10 +1,12 @@
-package com.fs.starfarer.api.impl.campaign.econ.impl;
+package com.fs.starfarer.api.campaign;
 
-import com.fs.starfarer.api.Global;
-import com.fs.starfarer.api.campaign.SpecialItemData;
+
 import com.fs.starfarer.api.campaign.econ.Industry;
 import com.fs.starfarer.api.campaign.econ.InstallableIndustryItemPlugin;
 import com.fs.starfarer.api.campaign.listeners.ListenerManagerAPI;
+import com.fs.starfarer.api.impl.campaign.econ.impl.BaseInstallableItemEffect;
+import com.fs.starfarer.api.impl.campaign.econ.impl.InstallableItemEffect;
+import com.fs.starfarer.api.impl.campaign.econ.impl.ItemEffectsRepo;
 import com.fs.starfarer.api.ui.TooltipMakerAPI;
 import com.fs.starfarer.api.util.Misc;
 

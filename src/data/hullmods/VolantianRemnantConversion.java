@@ -50,7 +50,7 @@ public class VolantianRemnantConversion extends BaseHullMod {
 		Iterator weaponiter = (ship.getHullSpec().getAllWeaponSlotsCopy().iterator());
 		while (weaponiter.hasNext()){
 			WeaponSlotAPI weaponslot = (WeaponSlotAPI) weaponiter.next();
-			if (weaponslot.getWeaponType().equals(WeaponAPI.WeaponType.DECORATIVE)){
+			if (weaponslot.getWeaponType().equals(WeaponAPI.WeaponType.BUILT_IN) || weaponslot.getWeaponType().equals(WeaponAPI.WeaponType.DECORATIVE)){
 				SLOT = weaponslot;
 			}
 		}
@@ -59,12 +59,18 @@ public class VolantianRemnantConversion extends BaseHullMod {
 		if (decoMap.containsKey(HULLID)){
 			WEAPON = Global.getSettings().getWeaponSpec(decoMap.get(HULLID));
 		}
-		if (ship.getVariant().hasHullMod(HullMods.AUTOMATED)){
-			ship.getVariant().addWeapon(SLOT.getId(), WEAPON.getWeaponId());
-		} else {
-			ship.getVariant().clearSlot(SLOT.getId());
+		if (SLOT != null && WEAPON != null){
+			if (ship.getVariant().hasHullMod(HullMods.AUTOMATED)) {
+				if (ship.getVariant().getWeaponId(SLOT.getId()) != null) {
+					if (!ship.getVariant().getWeaponId(SLOT.getId()).equals(WEAPON.getWeaponId())) {
+						ship.getVariant().addWeapon(SLOT.getId(), WEAPON.getWeaponId());
+					}
+				}
+			}
+			if (ship.getFleetMember() != null) {
+				ship.getFleetMember().getFleetData().getFleet().getCargo().removeWeapons(WEAPON.getWeaponId(), 99);
+			}
 		}
-
 	}
 
 	public String getDescriptionParam(int index, HullSize hullSize) {

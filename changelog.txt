@@ -1,0 +1,13 @@
+Changes:
+-Updated for Starsector 0.98a-RC7
+-Switched to Java 17
+-Added a cool hidden ship to be found out in the sector
+-Tweaked some descriptions
+-Decreased prices of certain volantian hulls
+-Removed the sandalphon
+
+
+Fixes:
+
+-Fixed the azorian core admin crash
+-Fixed VRC re-automation deco slot and crashing issues

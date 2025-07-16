@@ -9,7 +9,7 @@ import com.fs.starfarer.api.campaign.listeners.ListenerManagerAPI;
 import com.fs.starfarer.api.campaign.listeners.PlayerColonizationListener;
 import com.fs.starfarer.api.impl.campaign.VRICampaignPluginImpl;
 import com.fs.starfarer.api.impl.campaign.VRI_ArkshipScript;
-import com.fs.starfarer.api.impl.campaign.econ.impl.VRItemEffectsRepo;
+import com.fs.starfarer.api.campaign.VRItemEffectsRepo;
 import com.fs.starfarer.api.impl.campaign.ids.Conditions;
 import com.fs.starfarer.api.impl.campaign.intel.RevanchismVolantianHostileActivityCause;
 import com.fs.starfarer.api.impl.campaign.intel.VICVolantianHostileActivityCause;
@@ -26,12 +26,13 @@ import java.util.Iterator;
 import java.util.Map;
 
 import lunalib.lunaRefit.LunaRefitManager;
+
+import lunalib.lunaUtil.campaign.LunaCampaignRenderingPlugin;
 import org.apache.log4j.Logger;
 import org.dark.shaders.light.LightData;
 import org.dark.shaders.util.ShaderLib;
 import org.dark.shaders.util.TextureData;
 
-import static org.lazywizard.lazylib.MathUtils.getRandomNumberInRange;
 
 public class VRI_ModPlugin extends BaseModPlugin implements PlayerColonizationListener {
     private static Logger log = Global.getLogger(VRI_ModPlugin.class);
@@ -63,6 +64,7 @@ public class VRI_ModPlugin extends BaseModPlugin implements PlayerColonizationLi
     public static float TETHER_SYSTEM_X_COORDS = 2f;
 
     public VRI_ModPlugin() {
+
     }
 
     public void setListenersIfNeeded() {
@@ -139,7 +141,7 @@ public class VRI_ModPlugin extends BaseModPlugin implements PlayerColonizationLi
         initPlanetConditions();
         setListenersIfNeeded();
         setScriptsIfNeeded();
-        VRIGen.addEstragon(Global.getSector());
+        VRIGen.addTransShips(Global.getSector());
     }
 
 
@@ -165,6 +167,7 @@ public class VRI_ModPlugin extends BaseModPlugin implements PlayerColonizationLi
         arkgneisisExists = Global.getSettings().getModManager().isModEnabled("ArkLeg");
 
         LunaRefitManager.addRefitButton(new ReAutoRefitButton());
+
 
         Boolean hasGlib = Global.getSettings().getModManager().isModEnabled("shaderLib");
         if (hasGlib){

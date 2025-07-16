@@ -154,10 +154,9 @@ public class Avery {
         MarketAPI Tally_market = Tally.getMarket();
         Tally_market.setPlanetConditionMarketOnly(true);
         Tally_market.addCondition(Conditions.VERY_COLD);
-        Tally_market.addCondition(Conditions.RARE_ORE_ULTRARICH);
-        Tally_market.addCondition(Conditions.ORE_ULTRARICH);
-        Tally_market.addCondition(Conditions.VOLATILES_PLENTIFUL);
-        Tally_market.addCondition(Conditions.ORGANICS_ABUNDANT);
+        Tally_market.addCondition(Conditions.RARE_ORE_MODERATE);
+        Tally_market.addCondition(Conditions.ORE_RICH);
+        Tally_market.addCondition(Conditions.VOLATILES_ABUNDANT);
         Tally_market.addCondition(Conditions.LOW_GRAVITY);
         Tally_market.addCondition(Conditions.RUINS_EXTENSIVE);
         Tally_market.setPrimaryEntity(Tally);
@@ -326,6 +325,7 @@ public class Avery {
         system.setBackgroundTextureFilename("graphics/backgrounds/vribg1.jpg");
 
         system.autogenerateHyperspaceJumpPoints(true, false);
+        VRIGen.cleanup(system);
     }
 }
 

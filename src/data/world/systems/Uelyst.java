@@ -119,7 +119,6 @@ public class Uelyst implements FleetEventListener {
                 //junk and chatter
                 false);
         SubA1_market.getIndustry(Industries.MINING).setSpecialItem(new SpecialItemData(Items.PLASMA_DYNAMO, null));
-        SubA1_market.getIndustry(Industries.REFINING).setSpecialItem(new SpecialItemData(Items.CATALYTIC_CORE, null));
         SubA1_market.setSurveyLevel(MarketAPI.SurveyLevel.FULL);
         SubA1.setCustomDescriptionId("vri_SubA1"); //reference descriptions.csv
         //Geir's Slab
@@ -200,9 +199,7 @@ public class Uelyst implements FleetEventListener {
                 true,
                 //junk and chatter
                 true);
-        Geir_market.getIndustry(Industries.LIGHTINDUSTRY).setSpecialItem(new SpecialItemData(Items.BIOFACTORY_EMBRYO, null));
-        Geir_market.getIndustry(Industries.MEGAPORT).setSpecialItem(new SpecialItemData(Items.FULLERENE_SPOOL, null));
-        Geir_market.getIndustry(Industries.FARMING).setSpecialItem(new SpecialItemData(Items.SOIL_NANITES, null));
+
         Geir_market.setSurveyLevel(MarketAPI.SurveyLevel.FULL);
         Geir.setCustomDescriptionId("vri_planet_Geir"); //reference descriptions.csv
 
@@ -356,7 +353,7 @@ public class Uelyst implements FleetEventListener {
         system.addEntity(jumpPoint2);
 
         system.autogenerateHyperspaceJumpPoints(true, false);
-
+        VRIGen.cleanup(system);
     }
 
     @Override

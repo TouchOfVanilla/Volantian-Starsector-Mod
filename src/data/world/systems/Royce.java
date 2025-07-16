@@ -322,7 +322,6 @@ public class Royce {
                 false,
                 //junk and chatter
                 true);
-        Desmond_market.getIndustry(Industries.MINING).setSpecialItem(new SpecialItemData(Items.MANTLE_BORE, null));
         Desmond_market.setSurveyLevel(MarketAPI.SurveyLevel.FULL);
         Desmond.setCustomDescriptionId("vri_planet_Desmond"); //reference descriptions.csv
         //Asteroid field
@@ -408,6 +407,7 @@ public class Royce {
         system.addEntity(jumpPoint2);
 
         system.autogenerateHyperspaceJumpPoints(true, false);
+        VRIGen.cleanup(system);
     }
 
 }

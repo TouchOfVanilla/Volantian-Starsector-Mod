@@ -1,0 +1,10 @@
+{
+  "baseHullId": "astral",
+  "baseValueMult": 1,
+  "descriptionId": "astral",
+  "descriptionPrefix": "This hull is cool.",
+  "fpMod": 0,
+  "restoreToBaseHull": false,
+  "skinHullId": "trans_volantian_astral", #i know where you live
+  "spriteName": "graphics/ships/tEstral.png",
+}

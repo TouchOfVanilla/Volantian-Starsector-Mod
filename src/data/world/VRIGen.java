@@ -7,12 +7,15 @@ import com.fs.starfarer.api.campaign.econ.MarketAPI;
 import com.fs.starfarer.api.impl.campaign.DerelictShipEntityPlugin;
 import com.fs.starfarer.api.impl.campaign.ids.Factions;
 import com.fs.starfarer.api.impl.campaign.intel.events.HostileActivityEventIntel;
+import com.fs.starfarer.api.impl.campaign.procgen.NebulaEditor;
 import com.fs.starfarer.api.impl.campaign.procgen.themes.RemnantThemeGenerator;
 import com.fs.starfarer.api.impl.campaign.procgen.themes.ThemeGenContext;
 import com.fs.starfarer.api.impl.campaign.procgen.themes.Themes;
 import com.fs.starfarer.api.impl.campaign.rulecmd.salvage.special.ShipRecoverySpecial;
 import com.fs.starfarer.api.impl.campaign.shared.SharedData;
+import com.fs.starfarer.api.impl.campaign.terrain.HyperspaceTerrainPlugin;
 import com.fs.starfarer.api.impl.campaign.world.TTBlackSite;
+import com.fs.starfarer.api.util.Misc;
 import data.scripts.VRI_CrossmodPlugins;
 import data.world.systems.*;
 import exerelin.utilities.NexUtilsAstro;
@@ -118,7 +121,7 @@ public class VRIGen implements SectorGeneratorPlugin {
             VRI_CrossmodPlugins.initVICCrossmod();
         }
     }
-    public static void addEstragon(SectorAPI sector){
+    public static void addTransShips(SectorAPI sector){
         Iterator<StarSystemAPI> stariter = sector.getStarSystems().iterator();
         ArrayList<StarSystemAPI> validstars = new ArrayList<StarSystemAPI>();
         while (stariter.hasNext()){
@@ -130,7 +133,21 @@ public class VRIGen implements SectorGeneratorPlugin {
         Collections.shuffle(validstars);
         StarSystemAPI targetstar = validstars.get(0);
         SectorEntityToken entity = targetstar.getPlanets().get(0);
-        TTBlackSite.addDerelict(targetstar, entity, "volantian_estragon_Elite", "TTS Boymoder", "volantian_paragon_trans", ShipRecoverySpecial.ShipCondition.PRISTINE, entity.getRadius() +300, true);
-        log.info("estrogen paragon is in" + targetstar.getName());
+        TTBlackSite.addDerelict(targetstar, entity, "estragon_volantian_Elite", "TTS Trogen", "v0lantian_paragon_trAns", ShipRecoverySpecial.ShipCondition.PRISTINE, entity.getRadius() +300, true);
+        //log.info("estrogen paragon is in" + targetstar.getName());
+        Collections.shuffle(validstars);
+        targetstar = validstars.get(0);
+        entity = targetstar.getPlanets().get(0);
+        TTBlackSite.addDerelict(targetstar, entity, "volantian_testostral_Elite", "TTS Tosterone", "trans_volantian_astral", ShipRecoverySpecial.ShipCondition.PRISTINE, entity.getRadius() +300, true);
+        //log.info("testosterone astral is in" + targetstar.getName());
+    }
+    public static void cleanup(StarSystemAPI system){
+        HyperspaceTerrainPlugin plugin = (HyperspaceTerrainPlugin) Misc.getHyperspaceTerrain().getPlugin();
+        NebulaEditor editor = new NebulaEditor(plugin);
+        float minRadius = plugin.getTileSize() * 2f;
+
+        float radius = system.getMaxRadiusInHyperspace();
+        editor.clearArc(system.getLocation().x, system.getLocation().y, 0, radius + minRadius * 0.5f, 0f, 360f);
+        editor.clearArc(system.getLocation().x, system.getLocation().y, 0, radius + minRadius, 0f, 360f, 0.25f);
     }
 }

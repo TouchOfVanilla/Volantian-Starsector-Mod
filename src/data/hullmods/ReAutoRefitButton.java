@@ -67,7 +67,7 @@ public class ReAutoRefitButton extends BaseRefitButton {
         Iterator weaponiter = (member.getHullSpec().getAllWeaponSlotsCopy().iterator());
         while (weaponiter.hasNext()){
             WeaponSlotAPI weaponslot = (WeaponSlotAPI) weaponiter.next();
-            if (weaponslot.getWeaponType().equals(WeaponAPI.WeaponType.DECORATIVE)){
+            if (weaponslot.getWeaponType().equals(WeaponAPI.WeaponType.DECORATIVE) || weaponslot.getWeaponType().equals(WeaponAPI.WeaponType.BUILT_IN)){
                 SLOT = weaponslot;
             }
         }
@@ -78,14 +78,15 @@ public class ReAutoRefitButton extends BaseRefitButton {
         }
 
         if (!variant.hasHullMod(HullMods.AUTOMATED)) {
-            //Always use the provided ShipVariantAPI instead of calling member.getVariant(), as modifying the variant assigned to the member causes issues while in the refit screen.
-            variant.addPermaMod(HullMods.AUTOMATED);
-            variant.addWeapon(SLOT.getId(), WEAPON.getWeaponId());
-            //Has to be called after modifying the variant
-            refreshVariant();
-            //We want the button to dissapear after installing the hullmod, so refresh the list to make shouldShow() run again.
-            refreshButtonList();
-            return;
+                //Always use the provided ShipVariantAPI instead of calling member.getVariant(), as modifying the variant assigned to the member causes issues while in the refit screen.
+                variant.addPermaMod(HullMods.AUTOMATED);
+                variant.addWeapon(SLOT.getId(), WEAPON.getWeaponId());
+                //Has to be called after modifying the variant
+                refreshVariant();
+                //We want the button to dissapear after installing the hullmod, so refresh the list to make shouldShow() run again.
+                refreshButtonList();
+                return;
+
         }
         if (variant.hasHullMod(HullMods.AUTOMATED)) {
             //Always use the provided ShipVariantAPI instead of calling member.getVariant(), as modifying the variant assigned to the member causes issues while in the refit screen.
@@ -96,6 +97,7 @@ public class ReAutoRefitButton extends BaseRefitButton {
             //We want the button to dissapear after installing the hullmod, so refresh the list to make shouldShow() run again.
             refreshButtonList();
         }
+        member.getFleetData().getFleet().getCargo().removeWeapons(WEAPON.getWeaponId(), 99);
     }
     @Override
     public boolean isClickable(FleetMemberAPI member, ShipVariantAPI variant, MarketAPI market) {

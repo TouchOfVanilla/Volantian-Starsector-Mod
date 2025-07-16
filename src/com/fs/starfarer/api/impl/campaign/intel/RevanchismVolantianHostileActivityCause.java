@@ -89,6 +89,7 @@ public class RevanchismVolantianHostileActivityCause extends BaseHostileActivity
                     if (market.getFaction().getId().equals("vri")) {
                         StarSystemAPI vrisystem = market.getStarSystem();
                         if (!isValidStar(vrisystem)) continue;
+                        if (vrisystem.getHyperspaceAnchor() == null)continue;
 
                             float lydist = Misc.getDistanceLY(vrisystem.getHyperspaceAnchor(), system.getHyperspaceAnchor());
                         if (ontosent != null) {
@@ -142,7 +143,7 @@ public class RevanchismVolantianHostileActivityCause extends BaseHostileActivity
     public float getMagnitudeContribution(StarSystemAPI system) {
         //return a value less than 1
         if (this.shouldShow()) {
-            return 0.7f;
+            return 0.2f;
         }
         return 0;
     }

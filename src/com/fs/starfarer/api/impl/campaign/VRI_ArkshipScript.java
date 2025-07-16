@@ -84,6 +84,18 @@ public class VRI_ArkshipScript implements EconomyTickListener, InvasionListener 
             log.info("arkship slipspace drive is charging");
             return;
         }
+        if (market.getStarSystem() == null){
+            log.info("market star system is null");
+            return;
+        }
+        if (market.getStarSystem().getStar() == null){
+            log.info("market star is null");
+            return;
+        }
+        if (market.getStarSystem().getHyperspaceAnchor() == null){
+            log.info("hyperspace anchor is null");
+            return;
+        }
         ontos.removeIndustry(Industries.STARFORTRESS_HIGH, null, false);
         ontos.getConnectedEntities().clear();
         ark.getStarSystem().removeEntity(ark);
